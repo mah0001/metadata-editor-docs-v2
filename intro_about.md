@@ -24,12 +24,3 @@ The Metadata Editor supports the documentation of a wide range of structured dat
 Video Recordings: Speech-to-text algorithms allow the automatic transcription of video and audio recordings, making them discoverable and analyzable as structured data. The Metadata Editor supports a schema incorporating elements from Dublin Core and videoObject from Schema.org.
    - **Research Projects and Scripts**: Research projects and related scripts for data transformation, analysis, and visualization are essential for reproducibility and transparency. The Metadata Editor includes a dedicated schema for documenting research projects and scripts.
 
-## Acknowledgments
-
-The Metadata Editor application was developed by Mehmood Asghar (Senior Data Engineer, World Bank, lead developer) with Olivier Dupriez (Deputy Chief Statistician, World Bank, project manager). 
-
-The application was in part inspired by the Nesstar Publisher software application (by the Norwegian Social Science Data Archive). 
-
-The application benefited from feedback from many colleagues who reviewed and tested it, including Tefera Bekele, Cathrine Machingauta, Rochelle O'Hagan, and Matthew Welch. 
-
-A team at Outsourcify Ltd (Thailand) supported the development of the user interface. 
