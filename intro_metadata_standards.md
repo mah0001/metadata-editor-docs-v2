@@ -28,7 +28,7 @@ The study description section of the DDI Codebook includes sub-groups of element
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME-UG_intro_DDI_study_desc_elements.png)
 
-Figure 2 - Sub-groups of the Study Description group of the DDI Codebook
+*Figure 2 - Sub-groups of the Study Description group of the DDI Codebook*
 
 Each element within a metadata standard or schema encompasses the following attributes:
 - *Key*: This denotes the standardized name assigned to the element and must remain constant.
