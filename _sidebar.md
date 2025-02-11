@@ -22,9 +22,10 @@
     * [Quick start (video)](quick-start_video.md)
     * [Quick start (scripts)](quick-start_script.md)
 
-* Metadata schemas and templates
+* Metadata templates
    
-   * [Schemas and templates](templates_overview.md)
+   * [Purpose of templates](templates_purpose.md)
+   * [Designing templates](templates_design.md)
    * [Managing templates](templates_managing.md)
 
 * Managing projects, collections, and users
