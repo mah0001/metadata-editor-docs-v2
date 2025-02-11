@@ -73,4 +73,4 @@ The schemas or standards implemented in the Metadata Editor are the following:
 | Programs and scripts       | Custom-designed schema                          | 
 | External resources         | Dublin Core                                     |
 
-
+The Metadata Editor can also export metadata to schema.org format, and to SDMX compliant metadata for indicators.
