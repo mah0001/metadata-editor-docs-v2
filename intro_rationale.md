@@ -1,4 +1,4 @@
-# Rationale
+# Rationale and objective
 
 The volume and diversity of data available to researchers, policymakers, and analysts are expanding rapidly. However, despite the proliferation of data resources, many valuable datasets remain underutilized due to challenges in discovering, understanding, and effectively using them. Without proper documentation, even high-quality data can be difficult to interpret, integrate, or trust. To fully realize the potential of data, it must be findable, interpretable, accessible, and reusable. High-quality metadata is essential to achieving these objectives.
 
@@ -14,4 +14,4 @@ To address these challenges, the ***Metadata Editor*** provides an open-source s
 - **Improve Data Quality and Interoperability** – ensuring that metadata aligns with established standards, facilitating data integration across systems, and supporting data governance and quality assurance frameworks.
 - **Prepare Data for the AI Era** – enabling structured, machine-readable metadata that improves the discoverability, interpretability, and automation of data processing, making datasets more useful for AI applications and advanced analytics.
 
-By streamlining metadata creation and ensuring adherence to international standards, the Metadata Editor contributes to the modernization of data dissemination. It enables organizations to provide and disseminate credible, high-quality, and accessible data.
+By streamlining metadata creation and ensuring adherence to international standards, the Metadata Editor aims to contribute to the modernization of data dissemination. It enables organizations to provide and disseminate credible, high-quality, and accessible data.
