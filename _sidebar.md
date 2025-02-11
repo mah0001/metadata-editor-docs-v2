@@ -1,9 +1,9 @@
 * Introduction
 
     * [About](intro_about.md)
-    * [Rationale and objectives](intro_rationale.md)
+    * [Rationale and objective](intro_rationale.md)
     * [Introduction to metadata standards](intro_metadata_standards.md)
-    * [How to generate standard-compliant metadata?](intro_metadata_creation.md)
+    * [How to generate metadata?](intro_metadata_creation.md)
     
 * Installation and upgrade
   
