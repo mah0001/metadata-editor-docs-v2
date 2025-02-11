@@ -1,13 +1,13 @@
 * Introduction
 
-    * [About](about.md)
-    * [Rationale and objectives](rationale.md)
-    * [Introduction to metadata standards](introduction_metadata_standards.md)
+    * [About](intro_about.md)
+    * [Rationale and objectives](intro_rationale.md)
+    * [Introduction to metadata standards](intro_metadata_standards.md)
     
 * Installation and upgrade
   
-    * [Technical specifications](technical_specifications.md)
-    * [Installation and upgrade](installation.md)
+    * [Technical specifications](tech_technical_specifications.md)
+    * [Installation and upgrade](tech_installation.md)
  
 * Quick start
   
@@ -23,7 +23,7 @@
 * Metadata schemas and templates
    
    * [Schemas and templates](templates_overview.md)
-   * [Managing templates](managing_templates.md)
+   * [Managing templates](templates_managing.md)
 
 * Managing projects, collections, and users
   
@@ -33,17 +33,18 @@
 
 * Documenting data
 
-    * [General instructions](general_instructions.md)
-    * [Microdata](template-manager/microdata.md)
-    * [Document](template-manager/document.md)
-    * [Database](template-manager/database.md)
-    * [Indicator/time series](template-manager/indicator.md)
-    * [Statistical table](template-manager/table.md)
-    * [Geographic dataset or service](template-manager/geographic.md)
-    * [Image](template-manager/image.md)
-    * [Video](template-manager/video.md)
-    * [Research project and scripts](template-manager/script.md)
-    * [External resource](template-manager/external_resource.md)
+    * [General instructions](documenting_general_instructions.md)
+    * [Microdata](documenting_microdata.md)
+    * [Document](documenting_document.md)
+    * [Database](documenting_database.md)
+    * [Indicator/time series](documenting_indicator.md)
+    * [Statistical table](documenting_table.md)
+    * [Geographic dataset or service](documenting_geographic.md)
+    * [Image](documenting_image.md)
+    * [Video](documenting_video.md)
+    * [Research project and scripts](documenting_script.md)
+    * [External resources](documenting_external_resource.md)
+    * [Administrative metadata](documenting_administrative metadata.md)
 
 * Publishing data and metadata 
 
