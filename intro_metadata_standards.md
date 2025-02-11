@@ -1,4 +1,4 @@
-# Introduction to metadata and metadata standards
+# Introduction to metadata 
 
 Data producers who seek to ensure that their data are discoverable, visible, and usable must provide data users with rich and structured metadata—information that elucidates the context, quality, and characteristics of the underlying data. Comprehensive and structured metadata not only enhance the trustworthiness of the data but also enable advanced search functionalities that empower users to locate, assess, utilize, and repurpose the data effectively and responsibly. 
 
