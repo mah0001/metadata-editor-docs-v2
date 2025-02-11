@@ -3,6 +3,7 @@
     * [About](intro_about.md)
     * [Rationale and objectives](intro_rationale.md)
     * [Introduction to metadata standards](intro_metadata_standards.md)
+    * [How to generate standard-compliant metadata?](intro_metadata_creation.md)
     
 * Installation and upgrade
   
