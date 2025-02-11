@@ -10,3 +10,5 @@
     Github
   </a>
 </p>
+
+Github pages: https://mah0001.github.io/metadata-editor-docs-v2/#/
