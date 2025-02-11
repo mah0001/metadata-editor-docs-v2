@@ -6,7 +6,7 @@
     
 * Installation and upgrade
   
-    * [Technical_specifications](technical_specifications.md)
+    * [Technical specifications](technical_specifications.md)
     * [Installation and upgrade](installation.md)
  
 * Quick start
