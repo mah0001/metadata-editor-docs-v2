@@ -20,7 +20,7 @@ Structured metadata refers to metadata that is organized in a predefined and con
 
 Elements within all metadata standards are organized into groups and sub-groups. For instance, the DDI Codebook metadata standard, which is utilized for documenting microdata, comprises four primary sections (Figure 1): document description (doc_desc; metadata about the metadata), study description (study_desc; details regarding the study itself), file description (data_files; information pertaining to each data file), and variable description (variables; data at the level of each variable).
 
-![image](https://github.com/ihsn/editor/assets/35276300/7fcbee1a-53bd-464e-86b4-a5c8f89947f4)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/81a015bbed08324f3337e3850fea270c1bc67e9e/img/ME-UG_intro_DDI_elements_groupings.png}
 Figure 1 - Main groupings of the DDI Codebook metadata standard
 
 The study description section of the DDI Codebook includes sub-groups of elements that document the authorship of the study (authoring_entity), the processes involved in implementing the study (study_development), and other relevant aspects (Figure 2).
