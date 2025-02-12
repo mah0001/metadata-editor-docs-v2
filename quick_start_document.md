@@ -85,7 +85,7 @@ This option will allow you to generate a ZIP file containing all metadata and re
 
 ***Export metadata to JSON***
 
-Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSO file will look like this:
+Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_action_JSON_exported.png)
 
