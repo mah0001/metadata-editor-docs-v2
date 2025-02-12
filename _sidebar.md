@@ -16,6 +16,7 @@
     * [Overview](quick-start_overview.md)
     * [Quick start (document)](quick-start_document.md)
     * [Quick start (indicator)](quick-start_indicator.md)
+    * [Quick start (database)](quick-start_database.md)
     * [Quick start (microdata)](quick-start_microdata.md)
     * [Quick start (geographic dataset)](quick-start_geographic.md)
     * [Quick start (image)](quick-start_image.md)
