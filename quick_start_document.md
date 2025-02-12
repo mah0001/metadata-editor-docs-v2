@@ -1,8 +1,8 @@
 # Quick-start: Document
 
-In this example, we will document a book titled "The Analysis of Household Surveys: A Microeconometric Approach to Development Policy" by Angus Deaton (2019). This book is freely available from the World Bank's Open Knowledge Repository at http://hdl.handle.net/10986/30394. We assume that you want to publicize the book in a data catalog, and provide a link to the book (not redistribute it in your own catalog).
+In this example, we will document a book titled "The Analysis of Household Surveys: A Microeconometric Approach to Development Policy" by Angus Deaton (2019). This book is freely available from the World Bank's Open Knowledge Repository at http://hdl.handle.net/10986/30394. We assume that you want to publish information on the book in a data catalog, with a link to the World Bank's Open Knowledge Repository (i.e., we assume that you not plan to make the book directly available from your catalog).
 
-To begin, log in with your username and password, and navigate to the "My projects" page of the Metadata Editor. This page displays all the projects you have created and those that have been shared with you by others. If you are using the application for the first time, the project list will be empty. 
+To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all the projects you have previously created and those that have been shared with you by others. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/8881df36-49cb-4b47-8acd-9f0ba8237727)
 
