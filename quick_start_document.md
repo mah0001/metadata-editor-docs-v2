@@ -56,11 +56,9 @@ After entering all available information, click on SAVE. the **Preview** page sh
 
 The next step is to provide users with a link to the book or an option to download the PDF version directly from your catalog. This information on the location of the book, along with any related files and links, is referred to as "External resources." To add external resources, select "External resources" in the navigation tree and click on CREATE RESOURCE. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_preview_page.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_resource.png)
 
 This will open a new resource page where you can describe the resource. Most elements are optional, but at a minimum, you should enter the **resource type** (select *Document, Technical* from the drop down), the title including subtitle (*The Analysis of Household Surveys: A Microeconometric Approach to Development Policy*), the author (Angus Deaton), and the date (in ISO format: 2019-01-16). To provide users with access to the book, add the external permanent link (http://documents.worldbank.org/curated/en/593871468777303124) to the document in **Resource attachment**. 
-
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/E_UG_v1-0-0_quick_start_document_create_resource.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_url_resource_attachement.png)
 
@@ -81,10 +79,12 @@ When you open this project, a menu of options is available to you.
 
 
 ***Export package (ZIP)***
+
 This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
 
 
 ***Export metadata to JSON***
+
 Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSO file will look like this:
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_action_JSON_exported.png)
