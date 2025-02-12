@@ -10,7 +10,7 @@ The dataset we will document is a synthetic dataset representing a sample househ
 - Survey questionnaire and survey documentation, in MS-Excel format.
    - A simplified survey questionnaire (file *synthetic_survey_questionnaire.xlsx*, with sheets "Household form EN" for variables collected at the household level, and "Individual form EN" for variables collected at the individual level.)
    - A simplified technical report, with information on the sampling design (file *synthetic_survey_info.xlsx*, sheet "Survey info")
-- Other: *survey_logo.JPG* (a logo for the survey, in JPG format)
+- Other: *synthetic_data_logo.JPG* (a logo for the survey, in JPG format)
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. Otherwise, the existing projects will be listed.
 
