@@ -168,7 +168,7 @@ To create external resources, click on "External resources" in the navigation tr
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_list_external_resources.png)
 
 
-**Step 5: Export and publish metadata**
+**Step 6: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
