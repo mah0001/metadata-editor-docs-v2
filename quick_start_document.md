@@ -16,7 +16,7 @@ A new project page will open in a new tab.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_new_project_home.png)
 
-We will use the cover page of the book as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). We captured a screenshot of the cover page and saved it in file *deaton_survey_analysis.jpg* (you can capture a document cover page with any screen capture tool, and save the image file in JPEG or PNG format). Click on the edit button in the screenshot image, and select the image file when prompted. 
+We will use the cover page of the book as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). We captured a screenshot of the cover page and saved it in file *document_cover_deaton_survey_analysis.jpg* (you can capture a document cover page with any screen capture tool, and save the image file in JPEG or PNG format). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/0e8117c1-9ea5-4408-9f26-d0b218f78a77)
 
