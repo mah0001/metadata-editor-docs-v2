@@ -1,26 +1,28 @@
 # Quick-start: Microdata
 
-In this Quick Start example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. The example only illustrates a few core features of the Metadata Editor. For a complete overview of the software's features, please refer to the "Microdata" section in the "Documenting Data" chapter.
+In this example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. The example is only intended to illustrate a few core features of the Metadata Editor. For a complete overview of the software's features, please refer to the "Microdata" section in the "Documenting Data" chapter.
 
-The dataset we will document is a synthetic dataset representing a sample household survey for a fictional country. The dataset, along with its related resources, can be found in the "Demo/Microdata" folder in the GitHub repository. Download and save the content of this folder in a local folder of your choice. The materials provided include:
+The dataset we will document is a synthetic dataset representing a sample household survey for a fictional country. The files needed to reproduce the example are provided in a folder named quick_start_files/microdata. Download and save the content of this folder in a local folder of your choice. The materials provided include:
 
-- Stata (version 17) data files. All variables and values have been labeled in the Stata files:
-   - *training_survey_data_hh.dta* (household-level data file, in Stata 17 format, with 47 variables and 7,975 observations). 
-   - *training_survey_data_ind.dta* (individual-level data file, in Stata 17 format, with 26 variables and 30,986 observations). 
-- Survey questionnaire and survey documentation, in the MS-Excel file *synthetic_survey_questionnaire_info.xlsx*. This file contains:
-   - A simplified survey questionnaire (in sheets "Household form EN" for variables collected at the household level, and "Individual form EN" for variables collected at the individual level.)
-   - A simplified technical survey report, with information on the sampling design (in sheet "Survey info")
+- Two data files in Stata 17 format. All variables and values have been labeled in the Stata files. 
+   - *WLD_2023_SYNTH-SVY-HLD-EN_v01_M.dta* (household-level data file containing 49 variables and 8,000 observations). 
+   - *WLD_2023_SYNTH-SVY-IND-EN_v01_M.dta* (individual-level data file containing 27 variables and 32,396 observations). 
+- Survey questionnaire and survey documentation, in MS-Excel format.
+   - A simplified survey questionnaire (file *synthetic_survey_questionnaire.xlsx*, with sheets "Household form EN" for variables collected at the household level, and "Individual form EN" for variables collected at the individual level.)
+   - A simplified technical report, with information on the sampling design (file *synthetic_survey_info.xlsx*, sheet "Survey info")
 - Other: *survey_logo.JPG* (a logo for the survey, in JPG format)
 
-To begin, log in with your username and password, and navigate to the "My projects" page of the Metadata Editor. This page displays all the projects you have created and those that have been shared with you by others. If you are using the application for the first time, the project list will be empty. 
+To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. Otherwise, the existing projects will be listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/8881df36-49cb-4b47-8acd-9f0ba8237727)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_project_list_start.png)
 
-Click on "Create project" and select "Microdata" when prompted.
+Click on "CREATE NEW PROJECT" and select "Microdata" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/ihsn/editor/assets/35276300/f52bcdc3-c677-4a72-90f4-a3d1da3b65ac)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_new_project_home.png)
 
 You can change the image that will be used as a thumbnail for the project (optional). The demo materials contain an image file named *survey_logo.jpg*. Click on the edit button and select this file (or another jpg file of your choice)".
 
