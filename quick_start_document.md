@@ -2,23 +2,25 @@
 
 In this example, we will document a book titled "The Analysis of Household Surveys: A Microeconometric Approach to Development Policy" by Angus Deaton (2019). This book is freely available from the World Bank's Open Knowledge Repository at http://hdl.handle.net/10986/30394. We assume that you want to publish information on the book in a data catalog, with a link to the World Bank's Open Knowledge Repository (i.e., we assume that you not plan to make the book directly available from your catalog).
 
-To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all the projects you have previously created and those that have been shared with you by others. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
+The only file you need to reproduce this Quick-Start example is the image file of the book's cover page (or feel free to use another image).
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/8881df36-49cb-4b47-8acd-9f0ba8237727)
+To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
-Click on "Create project" and select "Document" when prompted.
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_project_page.png)
 
-![image](https://github.com/ihsn/editor/assets/35276300/f52bcdc3-c677-4a72-90f4-a3d1da3b65ac)
+Click on "CREATE NEW PROJECT" and select "Document" when prompted to indicate the type of resource you will be documenting.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/5a4011ad-54de-42da-8f43-0c04f7e1eac0)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_new_project_home.png)
 
-We will use the cover page of the book as a thumbnail (in the Metadata Editor, and in a NADA catalog). We captured a screenshot of the cover page and saved it in file *deaton_survey_analysis.jpg*]. Click on the edit button in the screenshot image, and select the image file when prompted. 
+We will use the cover page of the book as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). We captured a screenshot of the cover page and saved it in file *deaton_survey_analysis.jpg* (you can capture a document cover page with any screen capture tool, and save the image file in JPEG or PNG format). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/0e8117c1-9ea5-4408-9f26-d0b218f78a77)
 
-We will use the default metadata template provided, so there is no need to "Switch template". 
+We will use the default metadata template provided, so there is no need to switch template. 
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. We recommend entering the name of the person who generated the metadata, and the date the metadata was created using the ISO format YYYY-MM-DD. Then click on SAVE.
 
