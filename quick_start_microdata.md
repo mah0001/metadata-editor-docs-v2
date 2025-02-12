@@ -187,6 +187,11 @@ This option will allow you to generate a ZIP file containing all metadata and re
 Export metadata compliant with the DDI Codebook as an XML file. 
 
 
+**Export RDF/XML** and **Export RDF/XML**
+
+These options allow you to export the metadata related to external resources in JSON or XML format.
+
+
 **PDF documentation**
 
 A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
@@ -202,7 +207,5 @@ If you have a NADA catalog and the credentials to publish content in it, you can
 
 The dataset will now be listed and made discoverable in the NADA catalog. The microdata will be available to users, under the access policy you selected.
 
-**Export RDF/XML** and **Export RDF/XML**
-
-These options allow you to export the metadata related to external resources in JSON or XML format.
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_microdata_in_NADA.png)
 
