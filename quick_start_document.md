@@ -21,7 +21,7 @@ A new project page will open in a new tab.
 
 We will use the cover page of the book as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). We captured a screenshot of the cover page and saved it in file *documen/cover_deaton_survey_analysis.jpg* (you can capture a document cover page with any screen capture tool, and save the image file in JPEG or PNG format). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/0e8117c1-9ea5-4408-9f26-d0b218f78a77)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_edit_thumbnail.png)
 
 We will use the default metadata template provided, so there is no need to switch template. 
 
@@ -30,11 +30,11 @@ We will use the default metadata template provided, so there is no need to switc
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter the name of the person who generated the metadata, and the date the metadata was created using the ISO format YYYY-MM-DD. Then click on SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/2f09c488-ef54-4763-8d22-19f127ffe6a7)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_metadata_information_save.png)
 
 You can now start entering the metadata related to the book itself in the "Document Description" section. In the navigation tree, first select "Title statement" and enter the required **primary ID** (a unique identifier of your choice, e.g., JD_DOC_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another document). Also enter the (optional) **other identifiers** for the document, including the DOI (* 10.1596/ 978-1-4648-1331-3*) and the ISBN (* 978-1-4648-1352-8*). Then enter the **title**, which is a required element (*The Analysis of Household Surveys*) and **subtitle** (*A Microeconometric Approach to Development Policy*) of the book. 
 
-![image](https://github.com/mah0001/metadata-editor-docs/assets/35276300/e01b77ec-6ca3-4cbe-be49-07cdf8f606df)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_title_statement.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements. 
 
