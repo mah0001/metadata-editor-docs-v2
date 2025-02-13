@@ -38,7 +38,7 @@ Exporting the template will create a JSON copy of it, which can be saved as a fi
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_export_json.png)
 
-Exported templates can be imported in the metadata Editor by clicking on IMPORT.
+Exported templates can be imported in the metadata Editor by clicking on **IMPORT TEMPLATE**.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_import.png)
 
