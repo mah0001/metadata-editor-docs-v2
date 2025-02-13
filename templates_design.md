@@ -74,5 +74,19 @@ This option allows template administrators to edit the unique identifier of the 
 
 ## Editing a template
 
+**Description page**
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description page.png)
+
+**Navigation bar**
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_navigation_bar.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_element_types.png)
+
+
+
+
+
 
 
