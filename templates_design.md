@@ -48,13 +48,19 @@ Delete the selected template (only available for custom templates, not for core 
 
 **PREVIEW**
 
+Preview will generate an HTML version of the template, which will open in a web browser.
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_preview.png)
 
 **TABLE**
 
+This option will generate a tabular description of the template, which can be copy/pasted in MS-Excel if needed.
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_table.png)
 
 **PDF**
+
+The PDF option generates a PDF version of the template. If the template contains detailed descriptions of all metadata elements, and examples of content, the PDF file may serve as a useful instruction guide for data curators.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_PDF.png)
 
