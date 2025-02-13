@@ -72,19 +72,26 @@ This option will provide a history of changes to the template since its creation
 
 This option allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
 
+
 ## Editing a template
 
 **Description page**
 
 The **Description** page of the template is where you provide the main identification information of the template. It includes the following elements: 
-- **name**
-- **version**
+- **Type**
 - **Language**
+- **Name**
+- **Version**
+- **Organization**
+- **Author**
 - **Description**
+- **Instructions**
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description_page.png)
 
 **Navigation bar**
+
+[description of the navigation bar - Explain that it matches what data curators will see when entering metadata]
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_navigation_toolbar.png)
 
@@ -92,13 +99,40 @@ The **Description** page of the template is where you provide the main identific
 
 **Customizing the template**
 
-**Group**
+**Groupings**
+
+Metadata are grouped by container (not editable; hardcoded in metadata standard). Within containers, elements can be organized by group and sub-groups. Groups can be created, labeled, deleted, moved.
+Purpose is to provide a structure that will be logical to data curators.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_group.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_available_elements.png)
 
 **Element**
+
+Metadata elements are placed within groups. Elements typically come from the metadata standard for the data type. A list of available elements is provided, from which template designers can pick. Additional, custom elements can be added.
+
+- To add an element from the standard: select from Available elements (then edit)
+- To drop an element from the standard: back to the pool
+- To create a new element
+- To move an element up or down within the group
+- To move elements from one group to another (copy/paste)
+
+To edit elements:
+
+- Key
+- Label
+- Type
+- Status
+- Description
+- Field properties (for arrays)
+- Display (for text elements)
+- Controlled vocabulary
+- Default
+- Validation rules
+- JSON
+
+
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_display.png)
 
@@ -111,6 +145,6 @@ The **Description** page of the template is where you provide the main identific
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_json.png)
 
 
-
+### Administrative metadata templates
 
 
