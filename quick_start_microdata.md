@@ -163,7 +163,7 @@ The summary statistics that are displayed in the Metadata Editor will be part of
 
 Once you have entered the variable-level metadata for both files, you can finalize the documentation of the dataset by documenting and attaching external resources to the survey metadata. External resources include all materials you want to make accessible to users when you publish the dataset in a catalog. This may include the microdata files if you want to disseminate them (openly or under restrictions). In this example, we will load the dataset and the two Excel files that contain respectively the questionnaire and the information on the survey. The two Stata files will be uploaded as one single ZIP file). Note that you could provide the data in more than one format, for example, you could also export then share a version of the files in CSV and SPSS formats for user convenience.
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For each resource, select the file type ("Document, Questionnaire", "Document, Technical", and "Microdata"), give each resource a short title, and upload the corresponding file. The click "SAVE." You will now have three external resources listed.
+To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For each resource, select the file type ("Document, Questionnaire", "Document, Technical", and "Microdata"), give each resource a short title, and upload the corresponding file. Then click "SAVE." You will now have three external resources listed.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_list_external_resources.png)
 
