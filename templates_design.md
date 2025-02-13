@@ -26,13 +26,21 @@ The purpose of these various functions is as follows:
 
 **DUPLICATE**
 
+Clicking on DUPLICATE will generate an editable copy of the selected template. The duplicated template can then be fully customized, and saved under a new name.
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_duplicate.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_duplicate_list.png)
 
-**EXPORT**
+**EXPORT** (and IMPORT)
+
+Exporting the template will create a JSON copy of it, which can be saved as a file with [.json] extension. Exporting templates allows sharing them with other organizations, who can IMPORT templates in their own instance of the Metadata Editor.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_export_json.png)
+
+Exported templates can be imported in the metadata Editor by clicking on IMPORT.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_import.png)
 
 **DELETE**
 
@@ -52,9 +60,11 @@ Delete the selected template (only available for custom templates, not for core 
 
 **REVISIONS**
 
+This option will provide a history of changes to the template since its creation.
 
 **UUID**
 
+This option allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
 
 ## Editing a template
 
