@@ -6,7 +6,7 @@ Templates can be designed and edited using the Template Manager tool in Metadata
 
 More than one template can be developed for a given metadata standard, although it is recommended to keep their number small to maximize consistency and to minimize the burden of maintaining a collection of templates.
 
-## Template list
+## Template list and actions on templates
 
 You access the Template Manager by clicking on TEMPLATES in the top menu of the Metadata editor. This will open a page showing all available templates by type of data. The list can be filtered by selecting a data **Type** in the left frame.
 
