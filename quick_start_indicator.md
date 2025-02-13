@@ -66,37 +66,84 @@ Then proceed with the other sections in the navigation tree and fill out the rel
   
 With this information in hand, you can now start documenting the indicator. The content of the WDI metadata and the additional elements can be entered in the Metadata Editor template in the following elements: 
 
-| From World Bank           | In the metadata template                        | 
-| ------------------------- | ----------------------------------------------- | 
-| ID                        |                                                 |
-| Name                     |                                                 |
-| Source                     |                           | 
-| License                     |                           |
-| Development Relevance                     |                           | 
-| General comments                     |                           |
-| Limitations and Exceptions                     |                           | 
-| Long Definition                    |                           |
-| Periodicity                     |                           | 
-| Related source links                     |                           |
-| Short definition                      |                           | 
-| Statistical Concept and Methodology                     |                           |
-| Topic                     |                           | 
-| Unit of measure                     |                           |
-| Database ID                     |                           | 
-| URL of CC BY-4.0 license                     |                           |
-| SDG framework                     |                           |
-| SDG custodian                    |                           |
-| SDG goal                    |                           |
-| SDG target                    |                           |
-| SDG indicator                     |                           |
-| Time coverage                     |                           |
-| Geographic coverage                     |                           |
+| From World Bank           | In the metadata template (Indicator description)                          | 
+| ------------------------- | ------------------------------------------------------------------------- | 
+| ID                        | Title statement / Primary ID                                              |
+| WDI indicator ID          | Title statement / Other identifiers                                       |
+| Name                      | Title statement / Name                                                    |
+| Source                    | Sources, concepts and methods / Notes on data source                      | 
+| License                   | Access and use / License                                                  |
+| Development Relevance     | Sources, concepts and methods / Relevance                                 | 
+| General comments          | Sources, concepts and methods / Notes on data source                      |
+| Limitations and Exceptions| Quality / Limitations                                                     | 
+| Long Definition           | Sources, concepts and methods / Definition long                           |
+| Periodicity               | Description / Methodology                                                 | 
+| Related source links      | Sources, concepts and methods / Data source                               |
+| Short definition          | Sources, concepts and methods / Definition short                          | 
+| Stat, Concept and Method. | Sources, concepts and methods / Methodology                               |
+| Topic                     | Description / Topics                                                      | 
+| Unit of measure           | Description / Measurement unit                                            |
+| Database ID               | Indicator description / Title statement /  Database ID                    | 
+| URL of CC BY-4.0 license  | Access and use / License (URL)                                            |
+| SDG framework             | Standards and frameworks / Frameworks / Name + Abbreviation               |
+| SDG custodian             | Standards and frameworks / Frameworks / Custodian                         |
+| SDG goal                  | Standards and frameworks / Frameworks / Goal ID + Name + Description      |
+| SDG target                | Standards and frameworks / Frameworks / Target ID + Name + Description    |
+| SDG indicator             | Standards and frameworks / Frameworks / Indicator ID + Name + Description |
+| Time coverage             | Geographic and time coverage / Time coverage                              |
+| Geographic coverage       | Geographic and time coverage / Countries                                  |
+
 
 **Step 3: Add information on related resources**
+
+Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the World Bank Poverty and Inequality Platform website. 
+
+To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(Poverty and Inequality Platform (PIP))*, and enter the URL *(https://pip.worldbank.org/home)*. Then click "SAVE." You will now have two external resources listed.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_external_resource_PIP.png)
 
 
 **Step 4: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_open_actions_menu.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicators_actions_menu.png)
+
+**Export package (ZIP)**
+
+This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+
+**Export JSON**
+
+Export metadata as a JSON file. 
+
+**Export MSD (SDMX/XML 3.0)**
+
+Export a metadata structure definition compliant with the SDMX 3.0 standard.   
+
+**Export MetadataSet (SDMX/JSON)**
+
+Export a metadataset compliant with the SDMX 3.0 standard.  
+
+**Export RDF/XML** and **Export RDF/XML**
+
+These options allow you to export the metadata related to external resources in JSON or XML format.
+
+**PDF documentation**
+
+A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_metadata_in_PDF.png)
+
+**Publish to NADA**
+
+If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
+
+The indicator will now be listed and made discoverable in the NADA catalog, with a linl to the PIP platform. 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
 
