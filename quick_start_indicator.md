@@ -2,7 +2,8 @@
 
 In this example, we will document an indicator produced by the World Bank, and published in the Bank's Poverty and Inequality Platform (PIP) and World Development Indicators (WDI): the *Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)*.
 
-The only file you need to reproduce this Quick-Start example is the image file of the that will be used as (optional) thumbnail: *poverty_thumbnail.jpg*.
+The only files you need to reproduce this Quick-Start example are the image file that will be used as (optional) thumbnail (*poverty_thumbnail.jpg*) and the CSV file containing the list of countries for which the data are available in the WDI database (CSV file downloaded from https://api.worldbank.org/v2/en/indicator/SI.POV.DDAY?downloadformat=excel on 13 February 2025).
+
 The metadata we will enter in the Metadata Editor is the metadata provided by the World Bank at https://data.worldbank.org/indicator/SI.POV.DDAY?locations=US (downloaded on 12 February 2025). We will complement this metadata with information extracted from the data itself, e.g., to obtain the geographic and time coverage. We will also doument the fact that this indicator is one of the Sustainable Development Goals.
 
 
@@ -54,37 +55,42 @@ Then proceed with the other sections in the navigation tree and fill out the rel
 **Additional useful information**
 - ***Database ID***: WDI
 - ***URL of CC BY-4.0 license***: https://creativecommons.org/licenses/by/4.0/
-- ***SDG Goal, target corresopnding to the indicator***:
+- ***SDG Goal, target corresponding to the indicator***:
    - *Framework*: Sustainable Development Goals (SDG)
    - *Custodian*: United Nations
    - *Goal 1*: No poverty (End poverty in all forms by 2030) 
    - *Target 1.1*: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day
    - *Indicator 1.1.1*: Proportion of the population living below the international poverty line by sex, age, employment status and geographical location (urban/rural)    
 - ***Time coverage***: 1963 to 2023 (as of February 2025)
-- ***Geographic coverage***: 266 countries and regions; the list (names and codes) can be cop[y/pasted from an Excel file available from the World Bank website at https://api.worldbank.org/v2/en/indicator/SI.POV.DDAY?downloadformat=excel
+- ***Geographic coverage***: 266 countries and regions; the list (names and codes) will be copy/pasted from the CSV file provided.
   
-With this information in hand, you can now start documenting the indicator. 
+With this information in hand, you can now start documenting the indicator. The content of the WDI metadata and the additional elements can be entered in the Metadata Editor template in the following elements: 
 
-The metadata elements in the template maps to the content of the Excel file as follows: 
 | From World Bank           | In the metadata template                        | 
 | ------------------------- | ----------------------------------------------- | 
 | ID                        |                                                 |
-| Title                     |                                                 |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-|                      |                           | 
-|                      |                           |
-
+| Name                     |                                                 |
+| Source                     |                           | 
+| License                     |                           |
+| Development Relevance                     |                           | 
+| General comments                     |                           |
+| Limitations and Exceptions                     |                           | 
+| Long Definition                    |                           |
+| Periodicity                     |                           | 
+| Related source links                     |                           |
+| Short definition                      |                           | 
+| Statistical Concept and Methodology                     |                           |
+| Topic                     |                           | 
+| Unit of measure                     |                           |
+| Database ID                     |                           | 
+| URL of CC BY-4.0 license                     |                           |
+| SDG framework                     |                           |
+| SDG custodian                    |                           |
+| SDG goal                    |                           |
+| SDG target                    |                           |
+| SDG indicator                     |                           |
+| Time coverage                     |                           |
+| Geographic coverage                     |                           |
 
 **Step 3: Add information on related resources**
 
