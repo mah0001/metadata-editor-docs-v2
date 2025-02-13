@@ -3,13 +3,13 @@
 ## Simplifying the use of metadata standards
 
 Metadata standards include more metadata elements than needed by any user for documenting a specific dataset. The reason is that standards are developed to address many use cases and meet the needs of diverse organizations. To simplify their usage, **metadata templates** are created and used. Metadata templates are tailored subsets of the metadata standard's elements, designed for particular purposes or user groups while maintaining compliance with the standard. Metadata templates allow for customization in several dimensions:
-- ***Label:*** The labels provided in the metadata standard can be replaced with labels that conform to the Bank's lexicon or stipulations.
+- ***Label:*** The labels provided in the metadata standard can be replaced with labels that conform to an organization's lexicon or stipulations.
 - ***Status:*** Metadata elements can be designated as required or recommended. Declaring a metadata element as required will not prevent the metadata from being saved when no content is provided, but it will prevent it from being validated by applications that require such validation. It serves as a useful quality control. Only a minimal number of elements are required in the metadata standards themselves. Elements not required by the standard can be designated as required in the templates. It is however advised against making numerous elements mandatory and to label those not crucial for the functioning of the data management system as recommended rather than required.
 - ***Description/Instructions:*** Tailored descriptions and instructions can be provided for each metadata element. These descriptions can be compiled and used to produce the guidelines to data curators.
-- ***Controlled vocabularies:*** Controlled vocabularies can be specified for some metadata elements. These controlled vocabularies must adhere to standardized code lists utilized at the Bank. See section 3.3.2.
+- ***Controlled vocabularies:*** Controlled vocabularies can be specified for some metadata elements. 
 - ***Default values:*** Default values can be provided for selected elements, albeit these are infrequently utilized.
 - ***Validation rules:*** Customized validation rules can be set, using regular expressions, value ranges, or others, to guarantee metadata coherence and uniformity.
-- ***Adding elements:*** Elements that are not part of a standard can be added in templates (see section 3.4). 
+- ***Adding elements:*** Elements that are not part of a standard can be added in templates. 
 
 These various customization options help tailor standards to specific use cases. They also enable the creation of templates in different languages. The Metadata Editor provides a Template Manager tool to generate such templates. 
 
