@@ -6,10 +6,11 @@
     * [Introduction to metadata standards](intro_metadata_standards.md)
     * [How to generate metadata?](intro_metadata_creation.md)
     
-* Installation and upgrade
+* Installation, upgrade, and permission setting
   
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation and upgrade](tech_installation.md)
+    * [Setting roles and permissions](tech_roles_permissions.md)
  
 * Quick start
   
