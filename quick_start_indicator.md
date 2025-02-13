@@ -109,7 +109,7 @@ In the project page, a menu of options will be available to you.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicators_actions_menu.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_actions_menu.png)
 
 **Export package (ZIP)**
 
