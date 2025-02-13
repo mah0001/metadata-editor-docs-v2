@@ -143,7 +143,7 @@ If you have a NADA catalog and the credentials to publish content in it, you can
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
 
-The indicator will now be listed and made discoverable in the NADA catalog, with a linl to the PIP platform. 
+The indicator will now be listed and made discoverable in the NADA catalog, with a link to the PIP platform. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
 
