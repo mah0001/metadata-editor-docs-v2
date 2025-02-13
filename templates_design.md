@@ -76,6 +76,12 @@ This option allows template administrators to edit the unique identifier of the 
 
 **Description page**
 
+The **Description** page of the template is where you provide the main identification information of the template. It includes the following elements: 
+- **name**
+- **version**
+- **Language**
+- **Description**
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description_page.png)
 
 **Navigation bar**
@@ -84,7 +90,25 @@ This option allows template administrators to edit the unique identifier of the 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_element_types.png)
 
+**Customizing the template**
 
+**Group**
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_group.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_available_elements.png)
+
+**Element**
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_display.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_controlled_vocabulary.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_default.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_validation_rules.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_json.png)
 
 
 
