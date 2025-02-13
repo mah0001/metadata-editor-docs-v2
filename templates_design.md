@@ -76,7 +76,7 @@ This option allows template administrators to edit the unique identifier of the 
 
 **Description page**
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description page.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description_page.png)
 
 **Navigation bar**
 
