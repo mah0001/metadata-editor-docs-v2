@@ -1,5 +1,7 @@
 # Designing templates
 
+*This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section.*
+
 Data curators will rarely make use of all elements of a metadata standard when documenting a dataset. Many elements may not be relevant in the context of an organization. Typically, data curators will document datasets using metadata templates, i.e. customized subsets of metadata elements extracted from a metadata standard. 
 
 Templates can be designed and edited using the Template Manager tool in Metadata Editor. Not all users of the Metadata Editor will have the credentials to creating and edit templates; this is a specific role that must be assigned to users. Templates should be created and maintained by an administrator of the data curation team, then made available to all data curators. 
@@ -150,32 +152,20 @@ When you select a metadata element in the navigation tree, all information about
      
      ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_display.png)
      
-- ***CONTROLLED VOCABULARY:***
+- ***CONTROLLED VOCABULARY:*** A controled vocabulary (or code list) A controlled vocabulary, or *code list*, is a predefined and structured set of terms (with corresponding codes) that are consistently used to populate specific metadata elements. Controlled vocabularies may be applied to some metadata elements to ensure uniformity and precision. Utilizing controlled vocabularies helps ensure that the same concept is consistently represented by the same term across various records, thereby reducing ambiguity and enhancing searchability and interoperability. A controled vocabulary will typically provide, for each term, a code and a label. The Template Manager allows defining which column should be used as value: the *Code*, the *Label*, or both (*Label with code*). When a controlled vocabulary is entered, a green dot appears next to the title of the tab.
   
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_controlled_vocabulary.png)
   
-- ***DEFAULT:***
+- ***DEFAULT:*** A default value can be provided for an element. This will rarely be used. Default values will not be automatically entered in the metadata; instead, the data curator will have the option to "Add default values" when documenting a dataset.
   
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_default.png)
   
-- ***VALIDATION RULES:***
+- ***VALIDATION RULES:*** Validation rules can be set for a metadata element, to control quality. The content entered for the element by the data curator will be validated against this set of rules, and Validation errors will be shown in the project home page. Validation rules can be of different types: regex (regular expression), min or max (minimum or maximum value, for numeric files), max_length (maximum number of characters in the entry), alpha (only letters accepted), alpha_num (only alphanumeric characters allowed), numeric (numeric value must be entered), is_uri (entry must be a URI). When one or multiple validation rules are entered, a green dot appears next to the title of the tab.
   
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_validation_rules.png)
   
-- ***JSON:***
+- ***JSON:*** The JSON version of the element description. This is not an editable content. 
   
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_json.png)
-
-
-
-
-
-
-
-
-
-
-
-### Administrative metadata templates
 
 
