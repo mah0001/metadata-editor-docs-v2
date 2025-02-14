@@ -10,6 +10,7 @@
   
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation and upgrade](tech_installation.md)
+    * [Setting roles and permissions](tech_roles_permissions.md)
  
 * Quick start
   
@@ -29,11 +30,10 @@
    * [Designing templates](templates_design.md)
    * [Managing templates](templates_managing.md)
 
-* Managing projects, collections, and users
+* Managing projects and collections
   
    * [Managing projects](managing_projects.md)
    * [Managing collections](managing_collections.md)
-   * [Managing users and permissions](managing_permissions.md)
 
 * Documenting data
 
