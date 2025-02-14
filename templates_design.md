@@ -75,74 +75,105 @@ This option allows template administrators to edit the unique identifier of the 
 
 ## Editing a template
 
-**Description page**
+### escription page ###
 
 The **Description** page of the template is where you provide the main identification information of the template. It includes the following elements: 
-- **Type**
-- **Language**
-- **Name**
-- **Version**
-- **Organization**
-- **Author**
-- **Description**
-- **Instructions**
+- **Type**: The type of data to which the template applies (microdata, indicator, database, geographic dataset, document, etc.) 
+- **Language**: The language of the template
+- **Name**: The name of the template.
+- **Version**: The version of the template.
+- **Organization**: The organization that developed the template or for whom the template was developed.
+- **Author**: The author(s) of the template.
+- **Description**: A brief description of the template.
+- **Instructions**: A set of instructions related to the template. This mainly intended to generate useful content for the PDF version of the template, which can then serve as an instruction guide to data curators. The content of this element can be plainn text or formatted text (using markdown syntax). 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_description_page.png)
 
-**Navigation bar**
+### Navigation tree ###
 
-[description of the navigation bar - Explain that it matches what data curators will see when entering metadata]
+The Template Manager navigation frame shows the structure and content of the template. This structure and content will define the metadata entry pages that data curators who enter metadata will see. There is a perfect match between the navigation tree in the Template Manager and the navigation tree in the user's page of the Metadata editor.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_navigation_toolbar.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_to_editor.png)
+
+The navigation tree in the Template Manager indicates the type of element using the following icons:
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_element_types.png)
 
-**Customizing the template**
+The navigation frame contains a toolbar used to edit the structure and content of the template. The available tools are the following:
 
-**Groupings**
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_navigation_toolbar.png)
 
-Metadata are grouped by container (not editable; hardcoded in metadata standard). Within containers, elements can be organized by group and sub-groups. Groups can be created, labeled, deleted, moved.
-Purpose is to provide a structure that will be logical to data curators.
+
+### Customizing the template ###
+
+**Groupings** 
+
+Metadata are grouped by *container*. Containers are the main group of metadata elements. They are not editable; containers are hardcoded in the respective metadata standards. Within containers, elements can be organized by *group* and *sub-group* ("sections"). Groups and sub-groups are user-defined. The purpose of the grouping is to organize the metadata elements in a way that will be user-friendly to data curators who will enter the metadata. All metadata elements in a template must be placed in a user-defined group (they cannot be placed directly under a container).
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_group.png)
 
+Groups and subgroups are created by clicking on the [+] button in the navigation bar (the button is only active when a container or group is activated in the navigation tree). When a new group is created, change replace the *Untitled* label with a short label of your choice, and provide a brief description of it (optional). You can move the group up or down the navigation tree by using the Up and Down arrows.
+
+You can delete a group by clicking on the [-] button. The group and all its elements will be removed from the navigation tree. All elements that were included in the tree will also be removed. The elements that belong to the standard will be put back to the list of available elements (see below), but their customization will be lost. The additional elements that may have been included in the group (elements that do not belong to the standard) will be lost. 
+
+**List of available elements**
+
+Templates are intended to be a customized organization of metadata elements from a metadata standard (with possible addition of new elements not found in the standard). A template is therefore created mainly by selecting elements from the list of elements available in the metadata standard, and placing them in the structure shown in the navigation bar. The list of available elements (which contains all elements from the metadata standard that have not yet been selected, i.e. not found in the navigation bar) is shown in the right frame of the Template Manager, **when a group is selected in the navigation bar**. An option is provided to **show all elements**. The list of available elements is the pool of metadata elements from the metadata standard that can be added to the template. 
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_available_elements.png)
 
-**Element**
+**Adding metadata elements**
 
-Metadata elements are placed within groups. Elements typically come from the metadata standard for the data type. A list of available elements is provided, from which template designers can pick. Additional, custom elements can be added.
+The elements included in the template will typically come from the metadata standard for the data type. Some may be created as *additional* elements.
 
-- To add an element from the standard: select from Available elements (then edit)
-- To drop an element from the standard: back to the pool
-- To create a new element
-- To move an element up or down within the group
-- To move elements from one group to another (copy/paste)
+Metadata elements must be placed within groups or sub-groups (not directly under a container).  
 
-To edit elements:
+- To add an element from the standard: In the navigation tree, select the group in which you want to add the element. Then select the element from the list of available elements by clicking on the + button next to the element. The element will now be listed in the group. You can move the element up or down the list within the group. You can remove the element from the navigation tree by selecting it and clicking on the [-] button in the toolbar. the element is sent back to the list of available elements, with its default description (i.e. customizations will be lost). You can also copy/paste elements to move them from one group to another (within the same container). To do this, select the element(s) to be copied, and click on the **Copy** button in the toolbar (the elements included in the clipboard will be marked in the navigation tree). Select the group where the elements have to be pasted, and click on the **Paste** button.  
 
-- Key
-- Label
-- Type
-- Status
-- Description
-- Field properties (for arrays)
-- Display (for text elements)
-- Controlled vocabulary
-- Default
-- Validation rules
-- JSON
+To edit metadata elements:
+
+When you select a metadata element in the navigation tree, all information about the element is displayed in the right frame. Some of this information can be edited. The information includes the following:
+
+- ***Key:*** The key is the unique identifier of the element in the metadata standard. This information is not editable, except for additional elements created by the user. 
+- ***Label:*** The label of the element can be edited. It should be short and informative.
+- ***Type:*** The type of element. A metadata element can be a text field, an array, a nested array, or a simple array.
+- ***Status:*** Each element can be categorized as:
+   - ***Required*** (or not): Required means that metadata for any dataset must contain information for this element. Metadata that fauil to include content for a required element will not be validated (validation errors will be displayed).
+   - ***Recommended*** (or not): This status is mainly used to facilitate metadata entry by data curators and for quality assurance.
+   - ***Private*** (or not): Some metadata may be useful to the organization who generates the metadata, but not be part of the metadata to be published. Metadata elements marked as private may be excluded from the metadata files exported from the Metadata Editor.  
+   - ***Read-only*** (or not).
+- ***Description:*** The description of the metadata element should provide a clear indication of what data curators are expected to enter in the field. The instructions will be displayed as "help" in the metadata entry pages. By default, the instructions are those that are provided in the metadata standard description. They can be customized. 
+- ***Field properties:*** This information only applies to elements of type "array" and "nested_array". Arrays contain multiple elements. The *Field properties* is where the content of the array is selected and edited. 
+- ***DISPLAY:*** This tab contains information that only applies to elements of type "text". The following information can be edited:
+   - ***Data type:*** This indicates the type of content expected in the element: string (text), number, integer, or boolean.
+   - ***Display:*** This indicates the *Data Type*, and *Display options*: how the field will appear in the metadata entry pages, with the following options: "text" (one-line text field), "text area" (multi-line text field), "date" (date in ISO format; the metadata entry page will show a calendar from which the data curator can select a date); "dropdown" (one-line text field with a drop down from which the data curator must select an entry, with no option to enter free text); and "dropdown-custom" (one-line text field with a drop down list, but allowing data curators to enter content other than what the dropdown suggests). The content of the dropdown lists is defined by the *controlled vocabulary* for the element (see below). For selected text fields, the *DISPLAY* tab will also contain information on *Input format* which indicates whether formatted text can be entered for the element. By default, only non-formatted text is allowed. But exceptions can be made to allow Markdown, LaTex, or HTML content to be entered by the data curator. LaTex allows capturing formulas.
+     
+     ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_display.png)
+     
+- ***CONTROLLED VOCABULARY:***
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_controlled_vocabulary.png)
+  
+- ***DEFAULT:***
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_default.png)
+  
+- ***VALIDATION RULES:***
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_validation_rules.png)
+  
+- ***JSON:***
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_json.png)
 
 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_display.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_controlled_vocabulary.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_default.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_validation_rules.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_customizing_element_json.png)
+
+
 
 
 ### Administrative metadata templates
