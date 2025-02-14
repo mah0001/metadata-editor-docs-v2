@@ -1,4 +1,4 @@
-# Quick-start: Indicator
+# Quick start: Indicator
 
 In this example, we will document an indicator produced by the World Bank, and published in the Bank's Poverty and Inequality Platform (PIP) and World Development Indicators (WDI): the *Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)*.
 
