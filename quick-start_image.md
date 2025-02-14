@@ -47,16 +47,15 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 - ***Format:*** JPG
 - ***License:*** CC BY-NC-ND 2.0 (URL: https://creativecommons.org/licenses/by-nc-nd/2.0/)
 
-| From World Bank           | In the metadata template (Indicator description)                          | 
-| ------------------------- | ------------------------------------------------------------------------- | 
-| Resource type             | DCMI / Image description / Resource type                                  |
-| Taken on                  | DCMI / Image description / Date                                           |
-| Title                     | DCMI / Image description / Title                                      | 
-| Description               | DCMI / Image description / Caption                                                 |
-| Format                    | DCMI / Image description / Format                     |
-
-| Tags                      | DCMI / Image description /                      |
-| (derived from title)      |
-| Photographer              | DCMI / Authors and rights / Creator                                | 
-| License                   | License / License                                | 
+| From World Bank           | In the metadata template (Indicator description)     | 
+| ------------------------- | -----------------------------------------------------| 
+| Resource type             | DCMI / Image description / Resource type             |
+| Taken on                  | DCMI / Image description / Date                      |
+| Title                     | DCMI / Image description / Title                     | 
+| Description               | DCMI / Image description / Caption                   |
+| Format                    | DCMI / Image description / Format                    |
+| Tags                      | DCMI / Image description /                           |
+| (derived from title)      | DCMI / Country                                       |
+| Photographer              | DCMI / Authors and rights / Creator                  | 
+| License                   | License / License (name and URL)                     | 
 
