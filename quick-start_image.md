@@ -42,20 +42,71 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 - ***Description:*** Tomato stand in market near Ramallah’s main mosque
 - ***Photographer:*** Arne Hoel / World Bank
 - ***Taken on:*** October 12, 2012 (2012-10-12 in ISO format)
-- ***Tags:*** Middle East; Private Sector Development; West Bank & Gaza; market; West Bank and Gaza; Food; Tomato; Tomatoes; Development; World Bank; Urban
+- ***Tags:*** Middle East; Private Sector Development; West Bank & Gaza; market; Food; Tomato
 - ***Resource type:*** Digital photo
 - ***Format:*** JPG
 - ***License:*** CC BY-NC-ND 2.0 (URL: https://creativecommons.org/licenses/by-nc-nd/2.0/)
 
-| From World Bank           | In the metadata template (Indicator description)     | 
+This information can be entered in the Metadata Editor as follows:
+
+| From World Bank           | In the metadata template                             | 
 | ------------------------- | -----------------------------------------------------| 
 | Resource type             | DCMI / Image description / Resource type             |
 | Taken on                  | DCMI / Image description / Date                      |
 | Title                     | DCMI / Image description / Title                     | 
 | Description               | DCMI / Image description / Caption                   |
 | Format                    | DCMI / Image description / Format                    |
-| Tags                      | DCMI / Image description /                           |
+| Tags                      | DCMI / Image description / Keywords (keyword)        |
 | (derived from title)      | DCMI / Country                                       |
-| Photographer              | DCMI / Authors and rights / Creator                  | 
+| Photographer (name)       | DCMI / Authors and rights / Creator                  | 
+| Photographer (affiliation)| DCMI / Authors and rights / Publisher                | 
 | License                   | License / License (name and URL)                     | 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_metadata.png)
+
+
+**Step 3: Add information on related resources**
+
+Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the link to the Flickr album. 
+
+To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank Flickr Album)*, and enter the URL *(https://www.flickr.com/photos/worldbank/14131666634/in/album-72157626025379650)*. Then click "SAVE." You will now have two external resources listed.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_external_resource_flickr.png)
+
+
+**Step 4: Export and publish metadata**
+
+In the project page, a menu of options will be available to you.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_open_actions_menu.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_actions_menu.png)
+
+**Export package (ZIP)**
+
+This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+
+**Export JSON**
+
+Export metadata as a JSON file. 
+
+**Export RDF/XML** and **Export RDF/XML**
+
+These options allow you to export the metadata related to external resources in JSON or XML format.
+
+**PDF documentation**
+
+A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_metadata_in_PDF.png)
+
+**Publish to NADA**
+
+If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_publish_to_NADA.png)
+
+The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_indicator_in_NADA.png)
 
