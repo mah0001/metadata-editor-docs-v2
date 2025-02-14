@@ -28,7 +28,7 @@
    
    * [Purpose of templates](templates_purpose.md)
    * [Designing templates](templates_design.md)
-   * [Adminisrtative metadata templates](templates_administrative.md)
+   * [Administrative metadata templates](templates_administrative.md)
 
 * Managing projects and collections
   
