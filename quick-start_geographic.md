@@ -15,13 +15,11 @@ Click on "CREATE NEW PROJECT" and select "Geospatial" when prompted to indicate 
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_new_project_home.png)
-
 We will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
 
-Geographic datasets are of two main types: *raster data*, and *vector data*. The same metadata standard is used for documenting all types of geographic datasets, but different templates have been developed for raster and vector data. In this example, we will use the template GEOSPATIAL VECTOR DATASET 1.0 (default template).
+In this example, we will use the template IHSN ISO 19139-Datasets Template v01 EN (default template for geographic data). There is thus no need to change the template.
 
 
 **Step 2: Enter metadata**
@@ -34,42 +32,53 @@ You can now start entering the metadata related to the geographic dataset itself
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
 
-Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the World Bank Flickr album:
-- ***Title:*** Market near Ramallah’s main mosque
-- ***ID:*** Hoel_121012_DSC_3684
-- ***Description:*** Tomato stand in market near Ramallah’s main mosque
-- ***Photographer:*** Arne Hoel / World Bank
-- ***Taken on:*** October 12, 2012 (2012-10-12 in ISO format)
-- ***Tags:*** Middle East; Private Sector Development; West Bank & Gaza; market; Food; Tomato
-- ***Resource type:*** Digital photo
-- ***Format:*** JPG
-- ***License:*** CC BY-NC-ND 2.0 (URL: https://creativecommons.org/licenses/by-nc-nd/2.0/)
+Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the HDX website (see "Additional information" section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The template is a bit complex, due to the complexity of the underlying ISO metadata standard.
+- ***Language:*** English
+- ***Title:*** Outline of camps of Rohingya refugees in Cox's Bazar, Bangladesh
+- ***Description:*** This spatial database contains the outline of the camps, settlements, and sites where Rohingya refugees are staying in Cox's Bazar, Bangladesh.
+- ***Time period of the dataset:*** January 20, 2018-April 05, 2024
+- ***Modified:*** 19 May 2024
+- ***Expected update frequency:*** As needed
+- ***Location:*** Bangladesh
+- ***Source:*** RRRC, Inter Sector Coordination Group (ISCG), Site Management Sector, UNHCR, IOM
+- ***Contributor:*** Inter Sector Coordination Group (ISCG)
+- ***Methodology:*** These polygons were digitized through a combination of methodologies, originally using VHR satellite imagery and GPS points collected in the field, verified and amended according to Shelter-CCCM Sector, RRRC, Camp in Charge (CiC) officers inputs, with technical support from other partners.
+- ***Caveats/Comments:*** The camps are continuously expanding, and Camp Boundaries are structured around the GoB, RRRC official governance structure of the camps, taking into account the potential new land allocation. The database is kept as accurate as possible, given these challenges.
+- ***License:*** Public Domain / No Restrictions (https://data.humdata.org/faqs/licenses)
+- ***Tags:*** geodata ; populated places-settlements ; refugee crisis ; refugees 
+- ***File formats:*** Geodatabase; SHP; KML
+- ***Content of the layers:*** district, upazilla, union, campssid (camp's ID), campname (camp name), smsdcamp, npmcamp, camplabel (camp label), settlement, centroidx (X coordinate of centroid), centroidy (Y coordinate of centroid), areaacres (surface area in acres), areasqm (surface area in square meters), areasqkm (surface area in square kilometers). See:
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_layers_info.png)
 
 This information can be entered in the Metadata Editor as follows:
 
-| From World Bank           | In the metadata template                             | 
-| ------------------------- | -----------------------------------------------------| 
-| Resource type             | DCMI / Image description / Resource type             |
-| Taken on                  | DCMI / Image description / Date                      |
-| Title                     | DCMI / Image description / Title                     | 
-| Description               | DCMI / Image description / Caption                   |
-| Format                    | DCMI / Image description / Format                    |
-| Tags                      | DCMI / Image description / Keywords (keyword)        |
-| (derived from title)      | DCMI / Country                                       |
-| Photographer (name)       | DCMI / Authors and rights / Creator                  | 
-| Photographer (affiliation)| DCMI / Authors and rights / Publisher                | 
-| License                   | License / License (name and URL)                     | 
-
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_metadata.png)
+| Information from HDX      | Corresponding element in the metadata template                            | 
+| ------------------------- | --------------------------------------------------------------------------| 
+| Language                  | Description / Introduction / Language                                     |
+| Title                     | Description / Identification / Citation / Title                           |
+| Description               | Description / Identification / Abstract, purpose,credit,status / Abstract |
+| Time period of the dataset| Description / Identification / Citation / Date (creation and lastUpdate)  | 
+| Modified                  | Description / Identification / Citation / Date (released)                 |
+| Expected update frequency | Description / Identification / Resource maintenance / Frequency           |
+| Location                  | Description / Identification / Extent / Geographic element (Geo. descr.)  |
+| Source                    | Description / Identification / Citation / Responsible party / Org. name   |
+| Contributor               | Description / Identification / Abstract, purpose,credit,status / Credit   | 
+| Methodology               | Description / Identification / Abstract, purpose,credit,status / Abstract | 
+| Caveats/Comments          | Description / Data quality / Lineage statement (scope = Dataset)          | 
+| License                   | Description / Identification / Resource constraints / Legal (license)     | 
+| Tags                      | Description / Descriptive keywords / Keywords (Keyword column)            | 
+| File formats              | Description / Resource format / Name (enter as 3 resource formts)         | 
+| Content of the layers     | Description / Feature catalogue / Name (for the 14 features)              | 
 
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the link to the Flickr album. 
+Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank Flickr Album)*, and enter the URL *(https://www.flickr.com/photos/worldbank/14131666634/in/album-72157626025379650)*. Then click "SAVE." You will now have two external resources listed.
+To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click "SAVE." You will now have the external resource listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_external_resource_flickr.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
 
 
 **Step 4: Export and publish metadata**
