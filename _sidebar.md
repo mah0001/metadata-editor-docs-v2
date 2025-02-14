@@ -11,6 +11,10 @@
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation and upgrade](tech_installation.md)
     * [Setting roles and permissions](tech_roles_permissions.md)
+
+* Login, logout, password
+
+    * [Login, logout, and password](user_login.md)  
  
 * Quick start
   
