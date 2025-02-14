@@ -1,4 +1,4 @@
-# Overview
+# Quick start: Overview
 
 The Quick Start examples provide a fast and effective way to familiarize yourself with the Metadata Editor and experiment with creating standard-compliant metadata. Designed as step-by-step walkthroughs, these examples guide you through the core features of the application, allowing you to practice metadata creation with pre-provided sample files. Each example focuses on a specific data type supported by the Metadata Editor and includes all necessary materials for replication. 
 
