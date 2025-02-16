@@ -55,3 +55,16 @@ From the *My projects* page, you can perform the following actions:
 
 ## The project "Home page"
 
+When you click on a project title in the *My projects* page, or when you create a new project, a *project home page* will open. If you are already in a project page, the Project home page can be accessed by clicking on **Home** in the navigation tree.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
+
+The *Project home page* contains the following frames:
+- The **navigation tree**, which corresponds to the template you have selected to document the dataset.
+- A **header**, which provides core information on the project: data type, date when the project was created and last modified, identification of the project owner, project identifier (user defined and system-generated identifier), version and status.  
+- The **selection of templates** box, which allows you to select which template is used to document the data, and to add administrative metadata.
+- The **project validation** box, which lists all violations, if any, of the standard requirements (under *schema validation*) or of the user-defined validation rules (imposed not by the standard but by the template; under *template validation*). 
+- The **Collaborators** box, which lists all other registered users, if any, who have access to the project, with their role (View, Edit, Admin).
+- The **Collections** box, which lists the collections the project belongs to, if any.
+- The **file management** box, which provides information on the files related to the project, and the space they occupy on the server. These are the files that are stored on the server that hosts the Metadata Editor. Particular attention should be paid to data files listed in this box, to ensure compliance with security and access rules. This will usually apply to microdata; to automatically generate a data dictionary and summary statistics at variable level, the Metadata Editor requires that the data files be uploaded to the server. The option is provided to keep the data on the server, or to delete them from it. Confidential or otherwise sensitive data should be dropped, to avoid data being made accessible to collaborators or stored on a server that may not have been accredited to hosting such data. 
+
