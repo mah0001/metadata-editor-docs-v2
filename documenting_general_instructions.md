@@ -48,13 +48,20 @@ A search box is also provided, allowing users to search a metadata element based
 
 ## Tags
 
-The navigation tree for all data types contains a
 
 ## Project validation ##
 
+***Schema validation***
+
+***Template validation***
+
+
 ## Collaborators ##
 
+
+
 ## Collections ##
+
 
 ## File manager ##
 
