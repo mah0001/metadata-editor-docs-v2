@@ -21,7 +21,7 @@ To **create a new collection at root level**, click on "CREATE NEW COLLECTION". 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_edit_popup.png)
 
-To **create a sub-collection**, open the Options menu for the collection and select ADD SUB-COLLECTION.
+To **create a sub-collection**, open the Options menu for the collection and select ADD SUB-COLLECTION. Provide a name and description.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_subcollection_dots.png)
 
@@ -34,7 +34,7 @@ The **DELETE** button allows you to delete a collection. Note that, because coll
 
 ## Setting permissions for a collection
 
-Use the "MANAGE ACCESS" option to add/edit the list of users you want to share the collection with, and their role. All users listed in this list will be able to view, and possibly edit, all entries listed in this collection.
+Use the "MANAGE ACCESS" option to add/edit the list of users you want to share the collection with, and their role. From this page, you can add or remove users, or edit their roles. All users who appear in this list will be able to view, and possibly edit and delete, all entries listed in this collection (depending on the roles thay are given).
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_permissions.png)
 
