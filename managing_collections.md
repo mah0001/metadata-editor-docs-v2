@@ -12,7 +12,7 @@ But the primary and most important role of collections is to help manage permiss
 
 To access the collection management page of the Metadata Editor, click on "COLLECTIONS" in the main menu. Note that this command button will only be visible to users who have credentials to manage collections. 
 
-ME_UG_v1-0-0_managing_collections_home.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_home.png)
 
 
 ## Creating, editing, or deleting a collection
@@ -21,13 +21,13 @@ Creating collections requires credentials. The administrator of the system has f
 
 To **create a new collection at root level**, click on "CREATE NEW COLLECTION". Give your collection a short title, and (optional) a description.
 
-ME_UG_v1-0-0_managing_collections_edit_popup.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_edit_popup.png)
 
 To **create a sub-collection**, open the Options menu for the collection and select ADD SUB-COLLECTION.
 
-ME_UG_v1-0-0_managing_collections_subcollection_dots.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_subcollection_dots.png)
 
-ME_UG_v1-0-0_managing_collections_subcollection_menu.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_subcollection_menu.png)
 
 The **EDIT** button allows you to edit the name of description of an existing collection.
 
@@ -38,7 +38,7 @@ The **DELETE** button allows you to delete a collection. Note that, because coll
 
 Use the "MANAGE ACCESS" option to add/edit the list of users you want to share the collection with, and their role. All users listed in this list will be able to view, and possibly edit, all entries listed in this collection.
 
-ME_UG_v1-0-0_managing_collections_permissions.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_permissions.png)
 
 
 ## Adding projects to a collection
@@ -49,4 +49,4 @@ ME_UG_v1-0-0_managing_collections_add_to_collection_project_homepage.png
 
 The collections to which an entry belongs will be listed in the *My projects* page. To remove an entry from a collection, click on the "X" next to the collection name.
 
-ME_UG_v1-0-0_managing_collections_collection_in_MyProjects.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_collection_in_MyProjects.png)
