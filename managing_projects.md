@@ -14,7 +14,7 @@ When the Metadata Editor is installed on a stand-alone personal computer, the cr
 
 The projects in the *My projects* page can be filtered by data type, collection (if any), and ownership (which distinguishes project you created from those created by someone else but that you have been granted access to). Projects can also be searched by keyword (note that the search only looks for keywords in the title of the project, not in its full metadata). 
 
-From the *My projects page*, you can perform the following actions:
+From the *My projects* page, you can perform the following actions:
 
 - **Create a new project**, by clicking on the CREATE NEW PROJECT button. You will be asked to select a data type, then a new project page will open for an *untitled* project, with you as owner. You can start entering content for that project in that page. The new project will now be listed in the *My project page*.
   
@@ -22,7 +22,7 @@ From the *My projects page*, you can perform the following actions:
   
 - **Open an existing project**: Click on the project title to open the project page, where you can edit or view the project.
 
-- **ACtions on a project**: Several actions can be performed on a selected project. A menu of options is provided when clicking on the Options button.
+- **Actions on a project**: Several actions can be performed on a selected project. A menu of options is provided when clicking on the Options button.
 
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_actions_on_project.png)
 
