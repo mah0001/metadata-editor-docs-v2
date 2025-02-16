@@ -1,7 +1,5 @@
 # Managing collections
 
-# Managing collections
-
 When a project is created, it is only visible to its owner (creator). Projects can be shared with other registered users of the Metadata Editor, with different levels of permission (View, Edit, or Admin). This allows project owners to invite specific individuals to collaborate on a project. Refer to the section *Managing projects*.
 
 Another option to share projects and establish collaborations is to publish projects in *Collections*. Collections (and sub-collections) are virtual containers. A project can belong to more than one collection. 
