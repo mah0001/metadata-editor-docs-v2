@@ -41,9 +41,9 @@ Use the "MANAGE ACCESS" option to add/edit the list of users you want to share t
 
 ## Adding projects to a collection
 
-A project can be added to a collection by clicking the option "ADD TO COLLECTION" available in the My projects" page, or in the Project home page (box "Collections"). Refer to the section on **Managing projects** and **Documenting data**.
+A project can be added to a collection by clicking the option "ADD TO COLLECTION" available from the *My projects* page, or in the *Project home page* (see box "Collections"). Refer to the section on **Managing projects** and **Documenting data** for more information.
 
-ME_UG_v1-0-0_managing_collections_add_to_collection_project_homepage.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_add_to_collection_project_homepage.png)
 
 The collections to which an entry belongs will be listed in the *My projects* page. To remove an entry from a collection, click on the "X" next to the collection name.
 
