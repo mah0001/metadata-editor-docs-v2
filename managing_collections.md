@@ -45,6 +45,6 @@ A project can be added to a collection by clicking the option "ADD TO COLLECTION
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_add_to_collection_project_homepage.png)
 
-The collections to which an entry belongs will be listed in the *My projects* page. To remove an entry from a collection, click on the "X" next to the collection name.
+The collections to which an project belongs will be listed in the *My projects* page. To remove an entry from a collection, click on the "X" next to the collection name.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_collections_collection_in_MyProjects.png)
