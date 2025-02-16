@@ -45,8 +45,7 @@ From the *My projects* page, you can perform the following actions:
     
   - **EXPORT PACKAGE (ZIP)**: Exporting the package means generating a ZIP file containing all materials (data, metadata, and related resources) associated with the project. You may use this option to generate files for archiving, or to create packages that you can share with another organization (who can then *IMPORT* the package into their own instance of the Metadata Editor.
     
-  - **LOCK & VERSION** a project against editing.
-
+  - **LOCK & VERSION**: Locking and versioning a project means protecting the metadata against further editing, and assigning a version identification to the locked metadata. This option allows projects to be reviewed and endoresed under an organization's metadata governance mechanism. When a reviewer with credentials to *Lock & version* metadata locks a project, s/he is asked to provide a version number based on semantic versioning rules, and to enter information on the version being locked. Once locked, the metadata cannot be edited anymore. But an editable copy remains available for further editing (and possibly being subsequently locked as a new version). All locked version of a project are preserved and listed in the Metadata Editor. Information on who locked a project, and when (timestamp), is automatically generated.
   
 - **Batch actions on projects**: You can select multiple projects using the check boxes next to the project titles, and apply an action to all selected project. In this version of the Metadata Editor, the only available batch action is to add the selected projects to a colection (see section on Managing collections.   
 
@@ -60,11 +59,11 @@ When you click on a project title in the *My projects* page, or when you create 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
 
 The *Project home page* contains the following frames:
-- The **navigation tree**, which corresponds to the template you have selected to document the dataset.
-- A **header**, which provides core information on the project: data type, date when the project was created and last modified, identification of the project owner, project identifier (user defined and system-generated identifier), version and status.  
-- The **selection of templates** box, which allows you to select which template is used to document the data, and to add administrative metadata.
-- The **project validation** box, which lists all violations, if any, of the standard requirements (under *schema validation*) or of the user-defined validation rules (imposed not by the standard but by the template; under *template validation*). 
+- The **Navigation tree**, which corresponds to the template you have selected to document the dataset.
+- A **Header**, which provides core information on the project: data type, date when the project was created and last modified, identification of the project owner, project identifier (user defined and system-generated identifier), version and status.  
+- The **Selection of templates** box, which allows you to select which template is used to document the data, and to add administrative metadata.
+- The **Project validation** box, which lists all violations, if any, of the standard requirements (under *schema validation*) or of the user-defined validation rules (imposed not by the standard but by the template; under *template validation*). 
 - The **Collaborators** box, which lists all other registered users, if any, who have access to the project, with their role (View, Edit, Admin).
 - The **Collections** box, which lists the collections the project belongs to, if any.
-- The **file management** box, which provides information on the files related to the project, and the space they occupy on the server. These are the files that are stored on the server that hosts the Metadata Editor. Particular attention should be paid to data files listed in this box, to ensure compliance with security and access rules. This will usually apply to microdata; to automatically generate a data dictionary and summary statistics at variable level, the Metadata Editor requires that the data files be uploaded to the server. The option is provided to keep the data on the server, or to delete them from it. Confidential or otherwise sensitive data should be dropped, to avoid data being made accessible to collaborators or stored on a server that may not have been accredited to hosting such data. 
+- The **File management** box, which provides information on the files related to the project, and the space they occupy on the server. These are the files that are stored on the server that hosts the Metadata Editor. Particular attention should be paid to data files listed in this box, to ensure compliance with security and access rules. This will usually apply to microdata; to automatically generate a data dictionary and summary statistics at variable level, the Metadata Editor requires that the data files be uploaded to the server. The option is provided to keep the data on the server, or to delete them from it. Confidential or otherwise sensitive data should be dropped, to avoid data being made accessible to collaborators or stored on a server that may not have been accredited to hosting such data. 
 
