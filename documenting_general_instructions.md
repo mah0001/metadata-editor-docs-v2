@@ -80,6 +80,9 @@ How to add: see section ...
 Purpose
 How to add: see section ...
 
+## Diagnostics ##
+
+
 ## Exporting metadata ##
 
 
