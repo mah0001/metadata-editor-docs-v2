@@ -63,7 +63,9 @@ Detailed data dictionary. Some metadata imported from data files. But can add a 
 - Is weight
 - Apply weights
 - Summary stats selection
+      - STATISTICS
 - Variable metadata (select fields; block selection ; spread metadata)
+     - DOCUMENTATION
 - Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
 - Apply default
 - Value labels: Generate categories from statistics
@@ -80,7 +82,14 @@ How to
 - Specific case of microdata
 - Format for microdata
 
+### Importing metadata ###
+
+
+### Spreading metadata ###
+
+
 ### Diagnostic
+
 
 ### Export metadata
 
