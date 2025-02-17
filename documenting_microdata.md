@@ -1,6 +1,7 @@
 # Documenting microdata
 
-Microdata is ...
+**Defining microdata**
+
 Standard in the Metadata Editor is the DDI Codebook
 For external resources, template based on Dublin Core
 Export DDI JSON or XML, and other formats 
