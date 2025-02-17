@@ -11,6 +11,23 @@ Administrative metadata, not in DDI
 
 Recommendations on preparing the data and documentation.
 
+- Prepare your data files.
+   - All variables labeled, values also
+   - Drop direct identifiers if you plan to share the data
+   - Check unique IDs
+   - Check relationships
+   - Missing values
+   - Drop junk variables
+   - Weights in all data files
+   - File names
+
+  - Prepare the related materials to be included as external resources
+     - Questionnaire in original format and PDF (CAPI: generate PDF)
+     - Interviewer manual (original + PDF)
+     - Technical documentation on sampling, etc
+     - Survey report
+     - Scripts
+
 ## Create a project
 
 See quick start: Microdata
