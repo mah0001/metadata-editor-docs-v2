@@ -105,11 +105,11 @@ How to add: see section ...
 
 ## Canceling changes ##
 
-ME_UG_v1-0-0_documenting_general_cancel_changes.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
 
 ## Change log ##
 
-ME_UG_v1-0-0_documenting_general_change_log.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_change_log.png)
 
-ME_UG_v1-0-0_documenting_general_change_log_example.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
