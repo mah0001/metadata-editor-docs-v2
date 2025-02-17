@@ -172,22 +172,20 @@ An option is also provided to copy/paste content in the list of value labels. Th
    - ***Min, Max, and Decimal point***
      
    - ***Missing***
-
   
-- Apply weights
-- Summary stats selection
-      - STATISTICS
-- Variable metadata (select fields; block selection ; spread metadata)
-     - DOCUMENTATION
 - Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
 - Apply default
-- Value labels: Generate categories from statistics
-- Value labels: copy/paste
 
 ### Variable groupings
 
 Purpose
 How to
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_create.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_select_item.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_selection.png)
 
 ### External resources
 - Recommendations
@@ -197,12 +195,26 @@ How to
 
 ### Importing metadata ###
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu_access.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_import_project_metadata.png)
+
 
 ### Spreading metadata ###
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_spread_metadata_icon.png)
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_spread_metadata.png)
 
 ### Diagnostic
 
 
 ### Export metadata
+
+
+### Publish metadata ###
+
+
 
