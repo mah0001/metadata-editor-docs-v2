@@ -103,9 +103,13 @@ How to add: see section ...
 
 ## Help ##
 
+## Canceling changes ##
 
+ME_UG_v1-0-0_documenting_general_cancel_changes.png
 
+## Change log ##
 
+ME_UG_v1-0-0_documenting_general_change_log.png
 
-
+ME_UG_v1-0-0_documenting_general_change_log_example.png
 
