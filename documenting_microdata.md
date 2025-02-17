@@ -54,7 +54,7 @@ Click IMPORT, select files.
 - Guess variable types
 - Data on server ! Can be removed. Needed if weighting or change statistics. Can see size, delete.
 
-ME_UG_v1-0-0_documenting_microdata_list_data_files.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_list_data_files.png)
 
 **Reordering data files**
 
@@ -68,7 +68,7 @@ Remove them from the project. All related metadata will be removed.
 Clear data. Keep all metadata, but do not store data on server. Cannot refresh statistics anymore.
 
 **Replacing data files**
-ME_UG_v1-0-0_documenting_microdata_refresh_replace_data_files.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_refresh_replace_data_files.png)
 
 **Refreshing summary statistics**
 
