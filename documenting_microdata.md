@@ -43,13 +43,35 @@ Highly recommended.
 Cataloguing and referential metadata. Standard requires at least an ID and title.
 Maximize content.
 
-### Import data files
-- Python in background
-- Format supported
+### Importing data files
+
+Click IMPORT, select files. 
+
+- Python in background (Pandas)
+- Format supported: ...
 - Generate summary stats (unweighted)
 - Imports metadata: variable names, variable labels, value labels
 - Guess variable types
 - Data on server ! Can be removed. Needed if weighting or change statistics. Can see size, delete.
+
+ME_UG_v1-0-0_documenting_microdata_list_data_files.png
+
+**Reordering data files**
+
+
+**Exporting data files**
+
+**Deleting data files**
+Remove them from the project. All related metadata will be removed.
+
+**Removing data files from server**
+Clear data. Keep all metadata, but do not store data on server. Cannot refresh statistics anymore.
+
+**Replacing data files**
+ME_UG_v1-0-0_documenting_microdata_refresh_replace_data_files.png
+
+**Refreshing summary statistics**
+
 
 ### File description
 
