@@ -308,14 +308,21 @@ External resources will be part of the project ZIP package (when the ZIP package
 
 ### Importing metadata ###
 
+In the main menu, an option is provided to **Import project metadata**. This allows you to import the metadata exported from another project (DDI/XML or JSON file exported from another project of type *microdata*). This option will be particularly useful when you have dataset that belong to a same series that share common study description or data dictionary. For example, if a country conducts a monthly labor force survey using the same questionnaire over time, most of the metadata will be common to all instances of the survey. Only a few fields will need to be edited (temporal coverage, summary statistics, and a few others). In such case, the most effective way to document a new instance of the survey is to load the dataset for the latest survey, apply metadata from the previous instance, and edit the few metadata elements that need to be updated.
+
+This option will also be used to import metadata compliant with the DDI codebook that may have been generated using another tool. For example, is a survey was conducted by CAPI interview (using tablets) using the Survey Solutions CAPI application, a DDI containing the literal questions, universe, interviewers instructions (stored in the CAPI questionnaire) can be generated. This information can be imported in the Metadata Editor, avoiding the tedious process of copy/pasting this information.
+
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu_access.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu.png)
+
+The components of the metadata to be imported can be selected. 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_import_project_metadata.png)
 
 
 ### Spreading metadata ###
+
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_spread_metadata_icon.png)
 
