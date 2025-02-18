@@ -82,9 +82,9 @@ The metadata entered for this section should be as comprehensive as possible. Yo
 
 Note that all dates should preferably be entered in ISO format (YYYY-MM-DD or YYYY-MM or YYYY).
 
-Refer to **General instructions** for information on importing metadata from an existing project, spreading metadata across files, and copy/pasting content in fields that allow it.
+Refer to **General instructions** for information on importing metadata from an existing project, and on copy/pasting content in fields that allow it.
 
-By default, all content entered in the metadata entry page will  consist of text (which will be saved in XML or JSON format). A few fields may allow entering formatted content (markdown, HTML, or LaTex formulas); which fields allow for such formating is determined in the template design.
+By default, all content entered in the metadata entry page will consist of plain text (which will be saved in XML or JSON format). A few fields may allow entering formatted content (markdown, HTML, or LaTex formulas); which fields allow for such formating is determined in the template design.
 
 
 ### Data files
@@ -271,26 +271,40 @@ The Metadata Editor allows you to view the content of the data files, by clickin
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_view_data.png)
 
 
-
 ### Variable groupings
 
-Purpose
-How to
+Variables in a dataset are automatically grouped by data file. But for the convenience of users, they can also be grouped based on other criteria, e.g., by theme. These groupings will not alter the data structure in any way; variable goupings are strictly virtual. UIn this virtual grouping system:
+- A variable can belong to more than a group
+- Not all variables need to belong to a group
+- A group can include variables from multiple files
 
+Variable groups can be very useful for data discoverability, if variables are grouped by theme and if variable groups are defined. For example, a group of variables containing variables *age in month*, *sex*, *wheight in grams*, and *height in cm* could be created and named "Anthropometric measures*, with a description informing users that these variables could be used to generate indicators like percentage of children stunting or wasting. This metadata, when indexed in data catalog, will improve the discoverability of the data by adding useful semantic content to the description of variables.
+
+To group variables:
+- Create a group (or subgroup) and give it a name.
+- Select the variables (from any of the imported data files) to be included.
+- Add a description of the group.
+   
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_create.png)
-
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_select_item.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_selection.png)
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_select_item.png)
+
+
 ### Provenance ###
+
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability.
 
 
 ### External resources
-- Recommendations
-- How to add
-- Specific case of microdata
-- Format for microdata
+
+External resources are all materials (and links) that relate to the dataset. This includes documents and reports, scripts, photos and videos, data files, and any other resource available in digital format. These materials and links are added to the documentation of a dataset in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
+
+External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
+
+External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
+
 
 ### Importing metadata ###
 
