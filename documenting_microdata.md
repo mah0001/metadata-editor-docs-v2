@@ -133,18 +133,33 @@ Clicking on a file name in the navigation tree will open the *File description* 
 
 ### Variables
 
-**Variable description**
+The variable description section of the DDI Codebook standard provides you with a solution to create a very detailed data dictionary. While some of the variable-level metadata will be imported from the data files, the DDI Codebook contains many elements that can enrich the data dictionary. This additional information is very useful both for discoverability and for increased usability of the data. 
 
-Detailed data dictionary. Some metadata imported from data files. But can add a lot. Very useful for discoverability and usability.  
+After importing a data file in the Metadata Editor, you can access information on the variable it contains by clicking on *Variables* below the file name in the navigation tree. This will open the *Variables* page, which contains four frames: 
+- ***Variables:*** This frame provides the list of variables in the data file, with their name and label.
+- ***Variable categories:*** This frame described the categories (value labels) for a categorical variable selected in the list of variables.
+- ***Variable description:*** This frame contains information on the status and type of the variable selected in the variable list, on its range, and on missing values.
+- ***Statistics, weights, documentation, and json:*** This frame is used to edit the documentation of the selected variable(s), select the summary statistics to be included in the metadata, and apply sampling weights if needed.
+
+These four frames are described in detail below.
+
 
 - **Variable list**
 
-Variable name, variable label, icons showing the status. 
-    ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_list_frame.png)
-    
-Can edit variable label. Should all have one, all variables should have a different label.
+The variable list displays the list of variables in the selected data file, with their name and label. 
 
-**Toolbar**:
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_list_frame.png)
+
+A search bar is provided to locate variables of interest (keyword search on variable name and label).
+   - The variable labels can be edited (double click on the label to edit it). All variables should have a specific label.
+   - The variable names cannot be edited.
+   - A set of icons provides information on the status of each variable, as follows:
+
+      ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_list_icons.png)
+
+The icons shown on top of the list allow some actions on variables:
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_buttons_variable_list.png)
+
    - ***Refresh stats***
    
    - ***Change case***
@@ -155,39 +170,6 @@ Can edit variable label. Should all have one, all variables should have a differ
    
    - ***Delete selection***
 
-**Status Icons**
-   - Numeric [1]
-   - Character [A]
-   - Has categories (tooltip will tell you how many)
-   - Weighted
-   - Needs refreshing statistics
-     
-Tip: block selection
-
-- **Variable documentation**
-
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
-
-   ***Toolbar***
-     - > < >> <<
-
-   ***Settings***
-
-   ***Statistics***
-
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_statistics.png)
-
-   ***Weights***
-
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_weights.png)
-
-   ***Documentation***
-
-   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
-
-   ***JSON***
-
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_json.png)
 
 
 - **Variable categories** (value labels)
@@ -225,6 +207,33 @@ An option is also provided to copy/paste content in the list of value labels. Th
   
 - Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
 - Apply default
+
+
+
+- **Variable documentation**
+
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
+
+   ***Toolbar***
+     - > < >> <<
+
+   ***Settings***
+
+   ***Statistics***
+
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_statistics.png)
+
+   ***Weights***
+
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_weights.png)
+
+   ***Documentation***
+
+   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
+
+   ***JSON***
+
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_json.png)
 
 
 **View data**
