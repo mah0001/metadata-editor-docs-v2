@@ -171,75 +171,96 @@ The icons shown on top of the variable list perform the following actions on var
 
    - ***Spread metadata:*** In many micro-datasets, a small number of variables will be common to all data files. For example, in a sample household survey, the household identifier, and the variables that indicate the geographic location of the household, may be repeated in all files. In such case, you can document the variables in one data file, select these common variables, and "spread metadata" to automatically apply the metadata to variables with the same name in other data files. 
    
-   - ***Delete selection:***
-
+   - ***Delete selection:*** The Metadata Editor is not a data editor; data files cannot be modified, with the exception that variables can be deleted from a data file. This option is provided to drop variables like temporary variables or direct identifiers that may have been accidentally left in the data files. To drop variables, select them in the variable list (using the Shift and Ctrl key as useful to select multiple variables), then click on the **Delete selection** icon. 
 
 
 - **Variable categories** (value labels)
   
-  When the data are imported, if they are detected as being categorical variables, the *Variable categories* will be automatically populated. If value labels are included in the data file, they will be imported. These labels can be edited in the *Variable categories* frame. Codes can also be added if necessary.
-  If the categories were not detected when the data were imported, the Metadata Editor provides an option to automatically *Create categories*. This option is accessed by clicking on the icon at the top of the frame. When this icon is clicked, the application will extract a list of all codes found for the variables in the data, and create a list of categories. The labels corresponding to each category can then be added by the data curator. An icon is also provided to *Clear all* categories in the list.
+  When the data are imported, the Metadata Editor makes a best guess about their type. If a variable is identified as categorical, the *Variable categories* will be automatically populated with codes and value labels. These codes and labels can be edited in the *Variable categories* frame. Codes can also be added if necessary.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels.png)
-
-Categories can be removed from the list by clicking on the trash icon.
-
-The *Variable categories* frame contains the following icon toolbar:
+  The *Variable categories* frame contains the following icon toolbar:
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_toolbar_categories.png)
 
-An option is also provided to copy/paste content in the list of value labels. This allows for example to copy code lists from an application like MS-Excel and to paste them in the *Variable categories* grid. The pasted information can either *replace* existing content of the grid (if any), or *append* content to it.  
+  If a categorical variable was not identified as such when the data were imported, the Metadata Editor provides an option to automatically *Create categories*. This option is accessed by clicking on the **Create categories** icon at the top of the frame. The application will then extract a list of codes found for the variables in the data, and pre-populate the list of categories with the codes. The labels corresponding to each category can then be added by the data curator. An option (**Clear all** icon) is also provided to remove all content from the list of categories.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels.png)
+
+   A category can be removed from the list by clicking on the trash icon.
+
+   An option is also provided to copy/paste content in the list of value labels. This allows for example to copy code lists from an application like MS-Excel and to paste them in the *Variable categories* grid. The pasted information can either *replace* existing content of the grid (if any), or be *appended* to it.  
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_access.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_menu.png)
 
+
 - **Variabe information**
 
+The **Variable information** frame provides options to taga variable as being a sample weight, to edit the type of the variable, the range, and the format of the data it contains, and to inform the application of values to be rteated as missing values.   
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_information.png)
 
    - ***Is weight***
 
+      The **Is weigh** toggle is used to tag variables that are sample weights, if any.  
     ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_weights.png)
 
    - ***Interval type***
-     Continuous or discrete
+      For numeric variables, the *interval type* can be set to *Continuous* or *Discrete*. This will impact how the data are documented and what summary statistics are produced (frequencies will not be calculated for continuous variables; variable categories will only be created for discrete variables). When data are imported, the application makes a best guess about the interval type. the data curator should browse through all variables to ensure the interval type has been properly set. 
 
    - ***Type***
-     Numeric, character, fixed
+     This option informs the system of the format type of the variable, with options *numeric*, *character* (string variables), and *fixed*.
 
    - ***Min, Max, and Decimal point***
+      A range of valid values can be entered in this element; values outside the range will trigger a validation error.   
      
    - ***Missing***
+      The proper use of data requires proper treatment of missing values. The application (and data users) needs to know what values in the data files are to be considered as *missing*. When data are imported from Stata or SPSS, if the system missing values were used in the origial files, the missing values will be showns as *. But other values may represent missing values. In some survey datasets, the code 99 for example may be used to represent "unknown or unreported age*. When such values (other than system-missing) are used, they must be indicated as representing missing data, otherwise the summary statistics will be incorrect (e.g., 99 would be treated as a valid age eventhough it means "unreported"). One or multiple values representing *missing* can be entered for the variable. 
   
-- Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
-- Apply default
-
 
 - **Variable documentation**
 
+   The last frame of the Variable page is one where most of the additional metadata related to variables will be entered.
+  
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
 
-   ***Toolbar***
+   ***Header bar***
+   The header bar of the frame shows the name and label of the variable selected in the Variable list. It also shows four icons, which allow you browse variables without having to select them in the Variable list. 
 
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_navigate_variables.png)
-
-   ***Settings***
-
+  
    ***Statistics***
 
+   The STATISTICS tab shows the summary statistics generated by the application when the data are imported (or when the statistics are refreshed). If you have applied weighting coefficients (see **Weights** below), the summary statistics will include both weighted and unweighted statistics. Otherwise, the statistics are unweighted. Keep in mind to properly document values that should be interpreted as missing values, to ensure that statistics like means and standard deviations are valid (see **Missing** above).
+
+   The option is offered in this tab to select the summary statistics to be included in the metadata. Uncheck the statistics that you do not want to store in the metadata. For example, you do not want to keep statistics like mean or standard deviation for categorical variables. Only keep statistics that are meaningful. Note that you may select a group of variables in the *Variable list* and apply a selection to all selected variables at once.
+
+  Note that summary statistics that will be stored in the metadata are statistics for each variable taken independently. No cross tabulation is possible.
+  
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_statistics.png)
 
    ***Weights***
+
+  If the dataset is a sample survey for which sample weights have been calculated, you should tag all variables that are sample weights (see **Weights** above). Variables that have been tagged as being weights can then be used to generate weighted statistics in tab STATISTICS. To do that, select the variables for which you want to generate weighted statistics (this should not include variables like unique identifiers or the weighting variables themselves). Use the Shift or Ctrl keys to select multiple variables in the list. Then click on *select weight variable*. The list of variables in the data file that have been tagged as weights will be displayed. Select the one to be used as weight, then close the selection popup menu. A green dot will appear next to the tab name, to indicate that a weight has been applied to the variable. The variable used as weight will be shown in the tab. An option to *remove* or *change* the weight is provided. A red icon will appear in the variable list to indicate that a change has been applied to the variable that requires refreshing the summary statistics. After you refresh the summary statistics, the STATISTICS tab will display the weighted values.  
 
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_weights.png)
 
    ***Documentation***
 
-   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
+   The DOCUMENTATION tab is where you will enter variable-level metadata that will enrich the data dictionary. In this page, you will find a form allowing you to enter information on each variable like literal questions (for surveys), universe, concepts, interviewers' instructions, methodology, derivation and imputation, and more.
+ 
+  A **Settings** menu allows you to select the metadata elements to be used to document variables. This selection will reduce the length of the form used to enter the metadata. The only purpose of this selection is to nake the metadata entry page shorter and more convenient to use, by focusing only on the metadata elements for which content may be provided.
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_metadata_settings.png)
+
+  Note that you may select multiple variables in the *Variable list* (using the Shift or Ctrl key) and paste content in one of these metadata elements. It will then be pasted in the metadata for all selected variables. The existing metadata for other fields will be left unchanged.
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
 
    ***JSON***
 
+   This last tab is only intended to display a JSON version of the variable metadata.
+  
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_json.png)
 
 
@@ -294,5 +315,9 @@ How to
 
 ### Publish metadata ###
 
+
+
+- Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
+- Apply default
 
 
