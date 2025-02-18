@@ -181,6 +181,10 @@ The icons shown on top of the list allow some actions on variables:
 
 Categories can be removed from the list by clicking on the trash icon.
 
+The *Variable categories* frame contains the following icon toolbar:
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_toolbar_categories.png)
+
 An option is also provided to copy/paste content in the list of value labels. This allows for example to copy code lists from an application like MS-Excel and to paste them in the *Variable categories* grid. The pasted information can either *replace* existing content of the grid (if any), or *append* content to it.  
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_access.png)
@@ -209,13 +213,13 @@ An option is also provided to copy/paste content in the list of value labels. Th
 - Apply default
 
 
-
 - **Variable documentation**
 
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
 
    ***Toolbar***
-     - > < >> <<
+
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_navigate_variables.png)
 
    ***Settings***
 
