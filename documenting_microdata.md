@@ -323,22 +323,12 @@ The components of the metadata to be imported can be selected.
 
 ### Spreading metadata ###
 
+Spreading metadata consists of copying the metadata for one or multiple variables selected in the variable list, then clicking on the **Spread metadata** icon. The metadata entered for the selected variables will automatically be applied to the variables that have the same name, in the other data files. The metadata fields to be spread can be selected.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_spread_metadata_icon.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_spread_metadata.png)
 
-### Diagnostic
 
-
-### Export metadata
-
-
-### Publish metadata ###
-
-
-
-- Import metadata from existing file (use case: DDI from Survey Solutions; similar survey)
-- Apply default
 
 
