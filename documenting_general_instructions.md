@@ -1,6 +1,8 @@
 # General instructions
 
-This section provides instructions related to the aspects of data documentation that apply to all data types. The next sections will then provide information specific to each data type.
+This section provides instructions related to the aspects of data documentation that apply to all data types. Instructions specific to each data type is provided in the subsequent sections.
+
+## The "My projects" page
 
 Every dataset documented in the Metadata Editor is a **project**. A **project** therefore corresponds to a dataset or digital resource that needs to be documented. What a project includes depends on the type of data.
 - For microdata, a project is one or a collection of data files, with all related resources.
@@ -10,6 +12,12 @@ Every dataset documented in the Metadata Editor is a **project**. A **project** 
 - For research and scripts, a project corresponds to one or multiple scripts and outputs.
 - For images, a project corresponds to one image (which may be available in multiple formats and resolutions)
 - For videos, a project corresponds to one single video. 
+
+The "My projects" page is accessed by clicking on PROJECTS in the top menu.
+
+
+
+## Creating a project
 
 For all data types, the documentation process for a new project consists of: 
 1. Creating a project (by clicking on CREATE NEW PROJECT of IMPORT in the *My Projects* page. Refer to the Quick Start examples.
@@ -24,9 +32,8 @@ When a project has already been created, its content can be edited by clicking o
   
 This work can be made collaborative, by sharing the project with other data curators or publishing the project in one or multiple collection(s); see section **Managing projects** and **Managing collections**. A project will be edited by one or multiple data curators. It may be reviewed, locked and versioned. A system expert may then add administrative metadata (this is usually not done by the data curators; it is a specific  role).
 
-The following describes the features of the project management that appliues to all types of projects.
 
-## Project Home Page
+## The project "Home page"
 
 ### Header
 
