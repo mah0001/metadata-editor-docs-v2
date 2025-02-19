@@ -38,32 +38,40 @@ This work can be made collaborative, by sharing the project with other data cura
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_project_home_page_components.png)
 
-### Header
+
+## Title and menu bar
+
+The title and menu bar will display the project title ("untitled" untill you added a project title and saved the metadata), the SAVE button, and a button (triple dots) that opens the project main menu).
+The icon shown in from of the proect title indicates the data type of the project.
+
+
+## Header
 
 The header frame in the *Project home page* provides information on the project identifiers (the editable user-defined primary identifier, and the read-only system-generated unique identifier), on the project owner (typically the project creator, or the user to whom the ownership was transferred), and on the dates the project was created and last modified. The Header also provides an option to select an image (JPG or PNG file) to be used as thumbnail. The thumbnail will be used in the Metadata Editor, and in NADA catalogs if the metadata are published in NADA. 
+
 
 ## Template selection
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_template_selection.png)
 
-***Project template***
+- ***Project template***
 
-Datasets are documented based o templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements (refer to the **Templates** section). The template will determine what data curators see in the navigation tree of the Project pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see **Designing templates**). 
+  Datasets are documented based o templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements (refer to the **Templates** section). The template will determine what data curators see in the navigation tree of the Project pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see **Designing templates**). 
 
-The data curator can select another template available in the Metadata Editor. The list of available templates is also selected by the system administrator. 
+  The data curator can select another template available in the Metadata Editor. The list of available templates is also selected by the system administrator. 
 
-Changing the template used for an existing project will NOT impact the content of the metadata that has already been entered. No information is lost when a less comprehensive template is selected; all metadata already captured is preserved, even if it is not displayed when the new template is used. 
+  Changing the template used for an existing project will NOT impact the content of the metadata that has already been entered. No information is lost when a less comprehensive template is selected; all metadata already captured is preserved, even if it is not displayed when the new template is used. 
 
-***Administrative metadata templates***
+- ***Administrative metadata templates***
 
-select one or multiple administrative metadata templates (optional). See **Administrative** metadata below, and *Administrative metadata templates* in **Designing templates** for more information on the purpose and use of administrative metadata.
+  Select one or multiple administrative metadata templates (optional). See **Administrative** metadata below, and *Administrative metadata templates* in **Designing templates** for more information on the purpose and use of administrative metadata.
+
 
 ## Navigation tree
 
-The navigation tree shown in the Project pages reflects the content of the selected template. In a template, metadata elements can be tagged as *required* or *recommended*. The navigation frame provides an option to filter elements, to display only required fields or recommended fields. It also provides an option to only display **empty fields**, i.e. metadata elements for which no content has been provided.
+The navigation tree shown in the Project page reflects the content of the selected templates. In a template, metadata elements can be tagged as *required* or *recommended*. The navigation frame provides an option to filter elements, to display only required fields or recommended fields. It also provides an option to only display **empty fields**, i.e. metadata elements for which no content has been provided.
 
 A search box is also provided, allowing users to search a metadata element based on keywords found in the element label.
-
 
 
 ## Project validation ##
@@ -92,9 +100,6 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ## File manager ##
 
-
-
-## Locking and versioning projects ##
 
 
 ## Common elements in the navigation tree 
@@ -153,42 +158,44 @@ Some elements apply to all data types, some are specific to the data type.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
 
-***Export package***
+- ***Export package***
 
-***Export DDI Codebook*** (applies to project of type *microdata* only)
+- ***Export DDI Codebook*** (applies to project of type *microdata* only)
 
-***Export JSON***
+- ***Export JSON***
 
-***Export MSD (SDMX/XML 3.0)*** (applies to project of type *indicator* only)
+- ***Export MSD (SDMX/XML 3.0)*** (applies to project of type *indicator* only)
 
-***Export Metadataset (SDMX/JSON)*** (applies to project of type *indicator* only)
+- ***Export Metadataset (SDMX/JSON)*** (applies to project of type *indicator* only)
 
-***Publish to NADA***
+- ***Lock & version** 
 
-***PDF documentation***
+- ***Publish to NADA***
 
-***Change log***
+- ***PDF documentation***
 
-***Diagnostic***
+- ***Change log***
 
-***Applying default values from template***
+- ***Diagnostic***
 
-***Import project metadata***
+- ***Applying default values from template***
 
-***Import external resources***
+- ***Import project metadata***
 
-***Export RDF/XML***
+- ***Import external resources***
 
-***Export RDF/JSON***
+- ***Export RDF/XML***
 
-
+- ***Export RDF/JSON***
 
 
 ## Help ##
 
-## Canceling changes ##
+
+## Canceling changes (Undo) ##
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
+
 
 ## Change log ##
 
