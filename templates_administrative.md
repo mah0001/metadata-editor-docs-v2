@@ -1,4 +1,4 @@
-# Administratiove metadata templates
+# Administrative metadata templates
 
 The templates page includes all administrative metadata templates. By default, the Metadata Editor includes a core starter template named “Core administrative metadata”. This core template is not editable and cannot be used except to be duplicated and modified for creating new templates.
 
@@ -41,6 +41,7 @@ A popup menu will open, with the option to share the template itself (tab SHARE)
 
 In any project where the template is activated, the administrative template will be displayed in the navigation bar. Authorized users listed in ACL will be able to enter and edit content.
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_administrative_in_project.png)
 
 
 
