@@ -36,6 +36,8 @@ This work can be made collaborative, by sharing the project with other data cura
 
 ## The project "Home page"
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_project_home_page_components.png)
+
 ### Header
 
 The header frame in the *Project home page* provides information on the project identifiers (the editable user-defined primary identifier, and the read-only system-generated unique identifier), on the project owner (typically the project creator, or the user to whom the ownership was transferred), and on the dates the project was created and last modified. The Header also provides an option to select an image (JPG or PNG file) to be used as thumbnail. The thumbnail will be used in the Metadata Editor, and in NADA catalogs if the metadata are published in NADA. 
@@ -44,7 +46,7 @@ The header frame in the *Project home page* provides information on the project 
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_template_selection.png)
 
-### Project template
+***Project template***
 
 Datasets are documented based o templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements (refer to the **Templates** section). The template will determine what data curators see in the navigation tree of the Project pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see **Designing templates**). 
 
@@ -52,8 +54,9 @@ The data curator can select another template available in the Metadata Editor. T
 
 Changing the template used for an existing project will NOT impact the content of the metadata that has already been entered. No information is lost when a less comprehensive template is selected; all metadata already captured is preserved, even if it is not displayed when the new template is used. 
 
-### Administrative metadata templates
+***Administrative metadata templates***
 
+select one or multiple administrative metadata templates (optional). See **Administrative** metadata below, and *Administrative metadata templates* in **Designing templates** for more information on the purpose and use of administrative metadata.
 
 ## Navigation tree
 
@@ -61,13 +64,6 @@ The navigation tree shown in the Project pages reflects the content of the selec
 
 A search box is also provided, allowing users to search a metadata element based on keywords found in the element label.
 
-## Tags
-
-All metadata standards and schemas supported by the Metadata Editor include a **Tags** element (this element is not part of all standards; it has been added to standards that did not include it). This element enables the implementation of filters (facets) in data cataloguing applications, in a flexible manner. The tags metadata element is repeatable (meaning that more than one tag can be attached to a dataset) and contains two sub-elements to capture a tag (word or phrase), and the tag_group (if any) it belongs to.
-
-To illustrate the use of tags, let’s assume that you want to indicate whether a dataset is available free of charge or for a fee, and another tag that indicates whether the dataset meets differebntial privacy or not. None of the metadata schemas contains an element specifically designed to indicate the “free” or “for a fee” nature of the dataset, or "differentially private" or not. But this information can be captured in a tag “Free” or “For a fee” within a tag group that could be named “free_or_fee”, and "Differentially private" or "Not differentially private" in a tag group that could be named "differential_privacy". This information becomes part of the metadata, abd can be used by catalog administrators to create customized filtering options (facets) in their user interfaces. 
-
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_tags.png)
 
 
 ## Project validation ##
@@ -103,13 +99,21 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ## Common elements in the navigation tree 
 
-### Preview metadata ###
+***Home and preview***
 
 
-### Information on metadata ###
+***Information on metadata (or Document description)***
+
+***Tags***
+
+All metadata standards and schemas supported by the Metadata Editor include a **Tags** element (this element is not part of all standards; it has been added to standards that did not include it). This element enables the implementation of filters (facets) in data cataloguing applications, in a flexible manner. The tags metadata element is repeatable (meaning that more than one tag can be attached to a dataset) and contains two sub-elements to capture a tag (word or phrase), and the tag_group (if any) it belongs to.
+
+To illustrate the use of tags, let’s assume that you want to indicate whether a dataset is available free of charge or for a fee, and another tag that indicates whether the dataset meets differebntial privacy or not. None of the metadata schemas contains an element specifically designed to indicate the “free” or “for a fee” nature of the dataset, or "differentially private" or not. But this information can be captured in a tag “Free” or “For a fee” within a tag group that could be named “free_or_fee”, and "Differentially private" or "Not differentially private" in a tag group that could be named "differential_privacy". This information becomes part of the metadata, abd can be used by catalog administrators to create customized filtering options (facets) in their user interfaces. 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_tags.png)
 
 
-### External resources ###
+***External resources***
 
 **External resources** are not a specific type of data. They are resources of any type (data, document, web page, or any other type of resource that can be provided as an electronic file or a web link) that can be attached as a "related resource" to a catalog entry. A metadata schema that is intentionally kept very simple, based on the Dublin Core standard, is used to describe these resources. 
 
@@ -131,12 +135,12 @@ To add an external resource, click on *External resources* in the navigation tre
 
 The *Resource type* element is very important; it will determine how the resource is published in a NADA catalog. Particular attention must be paid to resources of type *Microdata*. When publishing the resource in a NADA catalog, resources of type *Microdata* will not automatically be made available to users of the catalog; the access policy selected when publishing the project in NADA will apply. This could be "Open data" or "Direct access", which will make the data downloadable without restriction, but it could be another access policy such as "Licensed access" which would require that users request access to the data. 
 
-### Provenance ###
+***Provenance***
 
 
-### Administrative metadata ###
+***Administrative metadata***
 
-Administrative metadata consists of information needed by systems or systems administrators to determine how a dataset should be published in a particular data dissemination platform. This information is not intended to be used or visible by the data users; they only serve an internal purpose for the organization that crates the data. For that reason, when a project metadata is exported, administrative metadata is by default not included. 
+**Administrative metadata** will only appear in the navigation tree if administrative metadata templates have been selected in the **Template selection**. Administrative metadata consists of information needed by systems or systems administrators to determine how a dataset should be published in a particular data dissemination platform. This information is not intended to be used or visible by the data users; they only serve an internal purpose for the organization that crates the data. For that reason, when a project metadata is exported, administrative metadata is by default not included. 
 
 The content of the administrative metadata is determined by the administrative metadata template(s) selected for the project. If the project (meta)data is intended to be published in multiple platforms, multiple templates will be used for the project.
 
@@ -145,23 +149,39 @@ The content of the administrative metadata section is not intended to be entered
 
 ## Options menu ##
 
+Some elements apply to all data types, some are specific to the data type.
 
-***Applying default values***
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
 
+***Export package***
+
+***Export DDI Codebook*** (applies to project of type *microdata* only)
+
+***Export JSON***
+
+***Export MSD (SDMX/XML 3.0)*** (applies to project of type *indicator* only)
+
+***Export Metadataset (SDMX/JSON)*** (applies to project of type *indicator* only)
+
+***Publish to NADA***
+
+***PDF documentation***
+
+***Change log***
 
 ***Diagnostic***
 
-
-***Exporting metadata***
-
+***Applying default values from template***
 
 ***Import project metadata***
 
-
 ***Import external resources***
 
+***Export RDF/XML***
 
-***Applying default values***
+***Export RDF/JSON***
+
+
 
 
 ## Help ##
