@@ -42,11 +42,18 @@ The header frame in the *Project home page* provides information on the project 
 
 ## Template selection
 
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_template_selection.png)
+
+### Project template
+
 Datasets are documented based o templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements (refer to the **Templates** section). The template will determine what data curators see in the navigation tree of the Project pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see **Designing templates**). 
 
 The data curator can select another template available in the Metadata Editor. The list of available templates is also selected by the system administrator. 
 
 Changing the template used for an existing project will NOT impact the content of the metadata that has already been entered. No information is lost when a less comprehensive template is selected; all metadata already captured is preserved, even if it is not displayed when the new template is used. 
+
+### Administrative metadata templates
+
 
 ## Navigation tree
 
@@ -56,19 +63,35 @@ A search box is also provided, allowing users to search a metadata element based
 
 ## Tags
 
+All metadata standards and schemas supported by the Metadata Editor include a **Tags** element (this element is not part of all standards; it has been added to standards that did not include it). This element enables the implementation of filters (facets) in data cataloguing applications, in a flexible manner. The tags metadata element is repeatable (meaning that more than one tag can be attached to a dataset) and contains two sub-elements to capture a tag (word or phrase), and the tag_group (if any) it belongs to.
+
+To illustrate the use of tags, let’s assume that you want to indicate whether a dataset is available free of charge or for a fee, and another tag that indicates whether the dataset meets differebntial privacy or not. None of the metadata schemas contains an element specifically designed to indicate the “free” or “for a fee” nature of the dataset, or "differentially private" or not. But this information can be captured in a tag “Free” or “For a fee” within a tag group that could be named “free_or_fee”, and "Differentially private" or "Not differentially private" in a tag group that could be named "differential_privacy". This information becomes part of the metadata, abd can be used by catalog administrators to create customized filtering options (facets) in their user interfaces. 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_tags.png)
+
 
 ## Project validation ##
 
-***Schema validation***
+The Project home page contains a frame titled **Project validation**, which will indicate whether the metadata that has been entered and saved violates some of the requirements of the standard itself or of the validation rules defined in the template used to document the dataset.
 
-***Template validation***
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_project_validation.png)
+
+- ***Schema validation*** lists the violations of requirements of the metadata standard.
+- ***Template validation*** lists the violations of custom validation rules defined in the metadata template.
+
+Clicking on a validation error will take you to the element that needs to be edited.
 
 
 ## Collaborators ##
 
+The frame **Collaborators** in the project Home page will show the list of collaborators who have access to the project, with information on their permission level (View, Edit, Admin, Owner). If you are the owner or administrator of the project, you may edit this list (adding or removing collaborators) from the list by clicking on the icon on top of the frame.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_collaborators.png)
 
 
 ## Collections ##
+
+The frame **Collections** in the project Home page will show the list of collections to which the project belongs. If you are the owner or administrator of the project, you may edit this list (adding or removing collections) from the list by clicking on the icon on top of the frame.
 
 
 ## File manager ##
@@ -78,38 +101,67 @@ A search box is also provided, allowing users to search a metadata element based
 ## Locking and versioning projects ##
 
 
-## External resources
+## Common elements in the navigation tree 
 
-What is an external resource.
-How to add: see section ...
-
-## Administrative metadata
-
-Purpose
-How to add: see section ...
-
-## Applying default values ##
+### Preview metadata ###
 
 
-## Diagnostics ##
+### Information on metadata ###
 
 
-## Exporting metadata ##
+### External resources ###
+
+**External resources** are not a specific type of data. They are resources of any type (data, document, web page, or any other type of resource that can be provided as an electronic file or a web link) that can be attached as a "related resource" to a catalog entry. A metadata schema that is intentionally kept very simple, based on the Dublin Core standard, is used to describe these resources. 
+
+The table below shows some examples of the kind of external resources that may be attached to the metadata of different data types.
+
+| Data type          | Examples of resources that may be documented and published as external resources  |
+| ------------------ | ------------------------------------------------------------ |
+| Document           | MS-Excel version of tables included in a publication ; PDF/DOC version of the publication ; visualizations files (scripts and image) for visualizations included in the publication ; link to electronic annexes |
+| Microdata          | survey questionnaire ; survey report ; technical documentation (sampling, etc.) ; data entry application ; survey budget in Excel ; microdata files in different formats ; link to an external website|
+| Geographic dataset | link to an interactive web application ; technical documentation in PDF ; data analysis scripts ; publicly accessible data files |
+| Time series        | link to a database query interface ; technical documents ; link to external websites ; visualization scripts |
+| Tables             | link to an organization website ; tabulation scripts | electronic copy of the table |
+| Images             | image files in different formats and resolutions ; link to a photo album application ; link to a photographer website |
+| Audio recordings   | audio file in MP3 or other format ; transcript in PDF |
+| Videos             | video file in WAV or other format ; transcript in PDF |
+| Scripts            | publication ; link to a package/library web page ; link to datasets | 
+
+To add an external resource, click on *External resources* in the navigation tree. This will open the **External resource** page which lists all external resources already added. The click on CREATE RESOURCE. This will open a new page, where information on the resource can be added. Enter at least the title, type, and upload a file or provuide a URL. Then SAVE.
+
+The *Resource type* element is very important; it will determine how the resource is published in a NADA catalog. Particular attention must be paid to resources of type *Microdata*. When publishing the resource in a NADA catalog, resources of type *Microdata* will not automatically be made available to users of the catalog; the access policy selected when publishing the project in NADA will apply. This could be "Open data" or "Direct access", which will make the data downloadable without restriction, but it could be another access policy such as "Licensed access" which would require that users request access to the data. 
+
+### Provenance ###
 
 
-## Import project metadata ##
+### Administrative metadata ###
+
+Administrative metadata consists of information needed by systems or systems administrators to determine how a dataset should be published in a particular data dissemination platform. This information is not intended to be used or visible by the data users; they only serve an internal purpose for the organization that crates the data. For that reason, when a project metadata is exported, administrative metadata is by default not included. 
+
+The content of the administrative metadata is determined by the administrative metadata template(s) selected for the project. If the project (meta)data is intended to be published in multiple platforms, multiple templates will be used for the project.
+
+The content of the administrative metadata section is not intended to be entered by data curators. They will typically be entered by system administrators. Entering administrative metadata therefore requires a specific riole/permission (see *Setting roles and permissions**).
 
 
-## Import external resources ##
+## Options menu ##
 
 
-## Applying default values ##
+***Applying default values***
 
 
-## Preview ##
+***Diagnostic***
 
 
-## Information on metadata ##
+***Exporting metadata***
+
+
+***Import project metadata***
+
+
+***Import external resources***
+
+
+***Applying default values***
 
 
 ## Help ##
