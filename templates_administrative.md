@@ -18,9 +18,11 @@ Start adding the metadata elements you need. Select the *Metadata* folder in the
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_administrative_field_types.png)
 
 Once create, add the following information on the metadata element:
-- ***Key***: The *Key* defines the JSON path that will be used for storing the metadata. This is the identifier of the metadata element. It can only contain alphanumeric values.
+- ***Key***: The *Key* defines the JSON path that will be used for storing the metadata. This is the identifier of the metadata element. It can only contain alphanumeric values. The key must be unique to each metadata element within the template.
 - ***Label***: Give a label to the new element (replace "untitled")
 - All other components of the page are identical to project templates. See section **Designing templates**.
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_administrative_field_new_elements.png)
 
 
 **Defining who can enter content in administrative templates**
@@ -36,3 +38,9 @@ To access the screen, click on SHARE in the template menu (accessed by clicking 
 A popup menu will open, with the option to share the template itself (tab SHARE), and to enter the list of collaborators authorized to enter content when the template is used in a project (in tab ACL). Add the collaborators, making sure to give them **Edit** permission.
 
 (![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_administrative_share_popup.png)
+
+In any project where the template is activated, the administrative template will be displayed in the navigation bar. Authorized users listed in ACL will be able to enter and edit content.
+
+
+
+
