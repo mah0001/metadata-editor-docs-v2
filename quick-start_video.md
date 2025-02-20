@@ -28,7 +28,7 @@ On the left navigation tree, select "Metadata information / Information on metad
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
 
-You can now start entering the metadata related to the video itself. In the navigation tree, first select "Title statement" under "Vdeo description", and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_VDO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also, enter the title of the video: "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights".
+You can now start entering the metadata related to the video itself. In the navigation tree, first select "Title statement" under "Video description", and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_VDO_001; if you want to publish the video in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also, enter the title of the video: "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights".
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_identifier.png)
 
