@@ -28,7 +28,7 @@ The Metadata Editor offers two options (two standards) to document images: the D
 
 **Step 2: Enter metadata**
 
-On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
+On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the image and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_metadata_information_save.png)
 
