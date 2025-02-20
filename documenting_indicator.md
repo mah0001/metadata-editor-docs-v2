@@ -1,7 +1,34 @@
 # Documenting indicators
 
 
-## Data structure definition
+## Creating a new project
+
+
+## Populating metadata
+
+Refer to the general instructions.
+
+
+### Metadata information
+
+
+### Indicator description
+
+Where AI can help
+Specificity of the definition
+
+Database ID
+
+Enter formulas (if template allows)
+
+
+### DataCite
+
+
+### Tags
+
+
+### Data structure definition
 
 The data structure definition (DSD) allows you to describe how the data are organized in the data file. This is the structural metadata for the indicator. The DSD in the Metadata Editor follows the SDMX standard.
 
@@ -42,3 +69,19 @@ A data structure definition consists of providing the following information abou
 - ***Time period format:*** Time period format is used to indicate the format of the date in the column identified as Time period. In our Option 2 example, Time period format is "YYYY" as we have data by year.
 - ***Codelist:***
 - ***Codelist reference:***
+
+
+### External resources
+
+
+### Administrative metadata
+
+
+### Locking and versioning
+
+
+## Export and use metadata
+
+
+
+
