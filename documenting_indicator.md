@@ -21,7 +21,9 @@ Organizations make their own decisions on how to organize their indicators. Usin
 
 Properly documenting the data structure of an indicator provides users (and machines) with the information they need to query and use the data.
 
-A data structire definition consists of providing the following information about the indicator:
+ME_UG_v1-0-0_documenting_indicator_data_structure_definition.png
+
+A data structure definition consists of providing the following information about the indicator:
 - ***Name:***
 - ***Label:***
 - ***Description:***
