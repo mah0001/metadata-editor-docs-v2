@@ -40,7 +40,7 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 - ***Date published:*** 2025-01-23 (in ISO format YYYY-MM-DD)
 - ***Geographic coverage:*** Not specific, so we will enter "World" (code WLD)
 - ***Video URL:*** https://youtu.be/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ
-- ***Embed URL:*** <iframe width="1236" height="695" src="https://www.youtube.com/embed/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ" title="Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> *Note: This information can be obtained by right-clicking on the video in Youtube. It will open a menu, in which you will find an option to "Copy embed code".
+- ***Embed URL:*** https://www.youtube.com/embed/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ *(Note: This information can be obtained by right-clicking on the video in Youtube. It will open a menu, in which you will find an option to "Copy embed code". Select only the URL (src) part of it.)*
   
   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_youtube_embed_code.png) 
 
@@ -54,22 +54,22 @@ This information can be entered in the Metadata Editor as follows:
 
 | Information               | In the metadata template                             | 
 | ------------------------- | -----------------------------------------------------| 
-| Description             |              |
-| Genre                  |                       |
-| Keywords                     |                      | 
-| Language               |                    |
-| Date published                    |                     |
-| Geographic coverage                      |         |
-| Video URL       |                  | 
-| Embed URL|                 | 
-|                   |                      | 
+| Description               |                    |
+| Genre                     |                       |
+| Keywords                  |                      | 
+| Language                  |                    |
+| Date published            |                     |
+| Geographic coverage       |                  |
+| Video URL                 |                   | 
+| Embed URL                 |                | 
+
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata.png)
 
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the video by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: a link to the World Bank YouTube channel. 
+Once you have entered the metadata, you can finalize the documentation of the video by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the video in a catalog. In this example, we will add one external resource: a link to the World Bank YouTube channel. 
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank YouTube channel)*, and enter the URL *(https://www.youtube.com/worldbank)*. Then click "SAVE." You will now have two external resources listed.
 
@@ -80,9 +80,9 @@ To create external resources, click on "External resources" in the navigation tr
 
 In the project page, a menu of options will be available to you.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_open_actions_menu.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_actions_menu.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_actions_menu.png)
 
 **Export package (ZIP)**
 
@@ -96,17 +96,19 @@ Export metadata as a JSON file.
 
 These options allow you to export the metadata related to external resources in JSON or XML format.
 
-**PDF documentation**
-
-A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
-
 **Publish to NADA**
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_publish_to_NADA.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_publish_to_NADA.png)
 
-The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
+The video will now be listed and made discoverable in the NADA catalog, with a link to the YouTube channel. The video can be viewed from within the NADA page.  
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_indicator_in_NADA.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_in_NADA.png)
+
+**PDF documentation**
+
+A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+
+
 
