@@ -74,7 +74,7 @@ This information can be entered in the Metadata Editor as follows:
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
+Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the dataset in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
 
 To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click "SAVE." You will now have the external resource listed.
 
@@ -113,5 +113,5 @@ If you have a NADA catalog and the credentials to publish content in it, you can
 
 The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_indicator_in_NADA.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
 
