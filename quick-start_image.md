@@ -32,7 +32,7 @@ On the left navigation tree, select "Metadata information / Information on metad
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_metadata_information_save.png)
 
-You can now start entering the metadata related to the image itself. In the navigation tree, first select "Image identifiers" and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_IMG_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also enter the (optional) **other identifiers** for the image. In this example, we have the identifier provided in the World Bank Flickr album: *Hoel_121012_DSC_3684*.  
+You can now start entering the metadata related to the image itself. In the navigation tree, first select "Image identifiers" and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_IMG_001; if you want to publish the image in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also enter the (optional) **other identifiers** for the image. In this example, we have the identifier provided in the World Bank Flickr album: *Hoel_121012_DSC_3684*.  
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_identifiers.png)
 
