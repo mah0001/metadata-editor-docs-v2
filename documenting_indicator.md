@@ -19,3 +19,29 @@ Typically, a data file for an indicator will look like one of the two options be
 
 Organizations make their own decisions on how to organize their indicators. Using dimensions has the advantage of reducing the number of indicators. But it makes data discovery (indexing and search in data catalogs) somewhat more complex. In some cases, the use of dimensions is the only practical option. For example, data on population by age group (with 9 age groups + total), sex (2 options + total), and urban/rural (2 options with total) would require 10 x 3 x 3 = 90 different indicators. Maintaining a single indicator "population" with 3 dimensions would be more efficient (one indicator can have multiple dimensions).
 
+Properly documenting the data structure of an indicator provides users (and machines) with the information they need to query and use the data.
+
+A data structire definition consists of providing the following information about the indicator:
+- ***Name:***
+- ***Label:***
+- ***Description:***
+- ***Data type:***
+  - ***String:***
+  - ***Integer:***
+  - ***Float:***
+  - ***Date:***
+  - ***Boolean:***
+- ***Column type:***
+  - ***Dimension:***
+  - ***Time period:***
+  - ***Measure:***
+  - ***Attribute:***
+  - ***Indicator ID:***
+  - ***Indicator name:***
+  - ***Annotation:***
+  - ***Geography:***
+  - ***Observation value:***
+  - ***Periodicity:***
+- ***Time period format:***
+- ***Codelist:***
+- ***Codelist reference:***
