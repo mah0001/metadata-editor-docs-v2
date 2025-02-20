@@ -18,7 +18,7 @@
  
 * Quick start
   
-    * [Overview](quick-start_overview.md)
+    * [Quick start overview](quick-start_overview.md)
     * [Quick start (document)](quick-start_document.md)
     * [Quick start (indicator)](quick-start_indicator.md)
     * [Quick start (microdata)](quick-start_microdata.md)
