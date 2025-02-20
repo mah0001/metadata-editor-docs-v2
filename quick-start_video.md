@@ -26,48 +26,54 @@ We will use the screenshot image as a thumbnail (which will be displayed in the 
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the video and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_metadata_information_save.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
 
-You can now start entering the metadata related to the image itself. In the navigation tree, first select "Image identifiers" and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_IMG_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also enter the (optional) **other identifiers** for the image. In this example, we have the identifier provided in the World Bank Flickr album: *Hoel_121012_DSC_3684*.  
+You can now start entering the metadata related to the video itself. In the navigation tree, first select "Title statement" under "Vdeo description", and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_VDO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also, enter the title of the video: "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights".
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_identifiers.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_identifier.png)
 
-Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the World Bank Flickr album:
-- ***Title:*** Market near Ramallah’s main mosque
-- ***ID:*** Hoel_121012_DSC_3684
-- ***Description:*** Tomato stand in market near Ramallah’s main mosque
-- ***Photographer:*** Arne Hoel / World Bank
-- ***Taken on:*** October 12, 2012 (2012-10-12 in ISO format)
-- ***Tags:*** Middle East; Private Sector Development; West Bank & Gaza; market; Food; Tomato
-- ***Resource type:*** Digital photo
-- ***Format:*** JPG
-- ***License:*** CC BY-NC-ND 2.0 (URL: https://creativecommons.org/licenses/by-nc-nd/2.0/)
+Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the World Bank Youtube channel:
+- ***Description:*** New methods are paving the way for faster data and insight. Get an in-depth look at how AI and machine learning are reshaping food security analytics to deliver actionable information for humanitarian aid, policy-making, and crisis response. From conflict-affected regions to global inflation trends, discover how data-driven solutions—such as the Joint Monitoring Report (JMR), Real-Time Prices (RTP), and the World Food Security Outlook (WFSO)—generate crucial information to provide timely assistance where it matters most.
+- ***Genre***: Documentary
+- ***Keywords:*** Extract keywords you find relevant from the transcript or from the description of the video provided in the Youtube channel. Some suggestions:  "Food Security", "Famine", "Nutrition data", "Food crisis", "Global Alliance for Food security", "Dry corridor", "El Nino", "Hunger".
+- ***Language:*** English (code EN)
+- ***Date published:*** 2025-01-23 (in ISO format YYYY-MM-DD)
+- ***Geographic coverage:*** Not specific, so we will enter "World" (code WLD)
+- ***Video URL:*** https://youtu.be/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ
+- ***Embed URL:*** <iframe width="1236" height="695" src="https://www.youtube.com/embed/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ" title="Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> *Note: This information can be obtained by right-clicking on the video in Youtube. It will open a menu, in which you will find an option to "Copy embed code".
+  
+  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_youtube_embed_code.png) 
 
+- ***Transcript:*** *(Copy/pasted, and edited for formatting, from the Youtube channel)*: "In 2022 as 250 million people faced food crises, the G7 presidency and the Worldbank Group came together to launch the Global Alliance for Food Security, mobilising a swift, coordinated response to the growing global hunger crisis. Working alongside international partners, we transformed food and nutrition security data systems by introducing advanced country level assessment and prediction tools. The World Food Security Outlook was developed to enhance understanding of global food and nutrition security. Using machine learning to analyse data from various sources and project food security up to six years in advance. Instead of waiting for crises to emerge, we can now utilise these insights to proactively address and mitigate potential impacts. Additionally, we've created tools to monitor prices of household items and unofficial exchange rates in real time across many locations. This aids in understanding rapid changes in food and fuel affordability, and identifying areas of urgent need.
+Furthermore, second layer monitoring tools like the Joint Monitoring Report build on these new data sources to provide more in-depth insights into complex conflict affected areas. These innovations aim to provide precise, timely, and actionable food and nutrition security data to guide Worldbank programming and partner actions. For instance, in the Dry Corridor, the World Food Security Outlook has brought together government, humanitarian and development leaders to assess risks, scale up early action, strengthen safety nets, and adjust agricultural planning for El Nino impacts. In the Horn of Africa, real time prices track water and staple food prices during droughts. Enabling the identification of operational and funding gaps in real time. The shift towards machine learning and real time data is already transforming food security analysis.
+Through the Joint Monitoring report, humanitarian and development partners now follow the same data driven approach to collectively recognise emerging crises early and enhance crisis preparedness. These first of their kind reports are speeding up response times and strengthening evidence based decision making, demonstrating how data driven tools deliver transparent, robust and high frequency analysis at a fraction of the cost of traditional food and nutrition security updates. Join the fight against hunger. Explore real time crises and the world food security outlook at microdata.worldbank.org. For more insights and our progress on Sustainable Development Goal 2, visit worldbank.org."
+
+   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_youtube_transcript.png)
+  
 This information can be entered in the Metadata Editor as follows:
 
-| From World Bank           | In the metadata template                             | 
+| Information               | In the metadata template                             | 
 | ------------------------- | -----------------------------------------------------| 
-| Resource type             | DCMI / Image description / Resource type             |
-| Taken on                  | DCMI / Image description / Date                      |
-| Title                     | DCMI / Image description / Title                     | 
-| Description               | DCMI / Image description / Caption                   |
-| Format                    | DCMI / Image description / Format                    |
-| Tags                      | DCMI / Image description / Keywords (keyword)        |
-| (derived from title)      | DCMI / Country                                       |
-| Photographer (name)       | DCMI / Authors and rights / Creator                  | 
-| Photographer (affiliation)| DCMI / Authors and rights / Publisher                | 
-| License                   | License / License (name and URL)                     | 
+| Description             |              |
+| Genre                  |                       |
+| Keywords                     |                      | 
+| Language               |                    |
+| Date published                    |                     |
+| Geographic coverage                      |         |
+| Video URL       |                  | 
+| Embed URL|                 | 
+|                   |                      | 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_metadata.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata.png)
 
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the link to the Flickr album. 
+Once you have entered the metadata, you can finalize the documentation of the video by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: a link to the World Bank YouTube channel. 
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank Flickr Album)*, and enter the URL *(https://www.flickr.com/photos/worldbank/14131666634/in/album-72157626025379650)*. Then click "SAVE." You will now have two external resources listed.
+To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank YouTube channel)*, and enter the URL *(https://www.youtube.com/worldbank)*. Then click "SAVE." You will now have two external resources listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_external_resource_flickr.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_external_resource_youtube.png)
 
 
 **Step 4: Export and publish metadata**
