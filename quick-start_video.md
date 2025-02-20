@@ -1,6 +1,6 @@
 # Quick start: Video
 
-In this example, we will document a video titled "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights" published on the World Bank Youtube channel  (https://www.youtube.com/watch?v=px1EeqpKDUI&list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ)). The only file you need to reproduce this Quick-Start example is the image file *.../image/video_food_security.jpg*, a screenshot of the video introduction (feel free to use another image of your choice).
+In this example, we will document a video titled "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights" published on the World Bank Youtube channel  (https://www.youtube.com/watch?v=px1EeqpKDUI&list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ)). The only file you need to reproduce this Quick-Start example is the image file *.../video/video_food_security.jpg*, a screenshot of the video introduction (feel free to use another image of your choice).
 
 
 **Step 1: Create a new project and add a thumbnail**
