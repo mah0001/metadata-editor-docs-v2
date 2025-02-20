@@ -33,12 +33,14 @@ You can now start entering the metadata related to the video itself. In the navi
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_identifier.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the World Bank Youtube channel:
+- ***Author:*** World Bank
 - ***Description:*** New methods are paving the way for faster data and insight. Get an in-depth look at how AI and machine learning are reshaping food security analytics to deliver actionable information for humanitarian aid, policy-making, and crisis response. From conflict-affected regions to global inflation trends, discover how data-driven solutions—such as the Joint Monitoring Report (JMR), Real-Time Prices (RTP), and the World Food Security Outlook (WFSO)—generate crucial information to provide timely assistance where it matters most.
 - ***Genre***: Documentary
 - ***Keywords:*** Extract keywords you find relevant from the transcript or from the description of the video provided in the Youtube channel. Some suggestions:  "Food Security", "Famine", "Nutrition data", "Food crisis", "Global Alliance for Food security", "Dry corridor", "El Nino", "Hunger".
 - ***Language:*** English (code EN)
 - ***Date published:*** 2025-01-23 (in ISO format YYYY-MM-DD)
 - ***Geographic coverage:*** Not specific, so we will enter "World" (code WLD)
+- ***Duration:*** PT3M25S (3 minutes and 25 seconds). The duration must be entered in ISO8601 format.
 - ***Video URL:*** https://youtu.be/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ
 - ***Embed URL:*** https://www.youtube.com/embed/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ *(Note: This information can be obtained by right-clicking on the video in Youtube. It will open a menu, in which you will find an option to "Copy embed code". Select only the URL (src) part of it.)*
   
@@ -52,17 +54,19 @@ Through the Joint Monitoring report, humanitarian and development partners now f
   
 This information can be entered in the Metadata Editor as follows:
 
-| Information               | In the metadata template                             | 
-| ------------------------- | -----------------------------------------------------| 
-| Description               |                    |
-| Genre                     |                       |
-| Keywords                  |                      | 
-| Language                  |                    |
-| Date published            |                     |
-| Geographic coverage       |                  |
-| Video URL                 |                   | 
-| Embed URL                 |                | 
-
+| Information               | In the metadata template                                   | 
+| ------------------------- | -----------------------------------------------------------| 
+| Author                    | Video description / Authors and contributors / Creator     |
+| Description               | Video description / Content / Description                  |
+| Genre                     | Video description / Content / Genre                        |
+| Keywords                  | Video description / Content / Keywords                     | 
+| Language                  | Video description / Content / Languages                    |
+| (derived)                 | Video description / Status ("Published")                   |
+| Date published            | Video description / Dates and version / Date published     |
+| Geographic coverage       | Video description / Geographic and time coverage / Country |
+| Video URL                 | Video description / Access and rights / Video URL          | 
+| Embed URL                 | Video description / Access and rights / Embed URL          | 
+| Duration                  | Video description / Technical information / Duration       |
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata.png)
 
