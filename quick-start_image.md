@@ -67,7 +67,7 @@ This information can be entered in the Metadata Editor as follows:
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the link to the Flickr album. 
+Once you have entered the metadata, you can finalize the documentation of the image by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the image in a catalog. In this example, we will add one external resource: the link to the Flickr album. 
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank Flickr Album)*, and enter the URL *(https://www.flickr.com/photos/worldbank/14131666634/in/album-72157626025379650)*. Then click "SAVE." You will now have two external resources listed.
 
@@ -106,5 +106,5 @@ If you have a NADA catalog and the credentials to publish content in it, you can
 
 The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_indicator_in_NADA.png)
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_image_in_NADA.png)
 
