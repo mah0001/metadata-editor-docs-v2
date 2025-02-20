@@ -109,6 +109,7 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ***Information on metadata (or Document description)***
 
+
 ***Tags***
 
 All metadata standards and schemas supported by the Metadata Editor include a **Tags** element (this element is not part of all standards; it has been added to standards that did not include it). This element enables the implementation of filters (facets) in data cataloguing applications, in a flexible manner. The tags metadata element is repeatable (meaning that more than one tag can be attached to a dataset) and contains two sub-elements to capture a tag (word or phrase), and the tag_group (if any) it belongs to.
@@ -140,7 +141,15 @@ To add an external resource, click on *External resources* in the navigation tre
 
 The *Resource type* element is very important; it will determine how the resource is published in a NADA catalog. Particular attention must be paid to resources of type *Microdata*. When publishing the resource in a NADA catalog, resources of type *Microdata* will not automatically be made available to users of the catalog; the access policy selected when publishing the project in NADA will apply. This could be "Open data" or "Direct access", which will make the data downloadable without restriction, but it could be another access policy such as "Licensed access" which would require that users request access to the data. 
 
+***Data Cite***
+
+DataCite is a service that offers Fabrica as a DOI and metadata management service allowing organizations to register and manage DOIs for their data products (see https://datacite.org/create-dois/). With Fabrica, organizations can assign DOIs, maintain accurate and FAIR metadata, and ensure persistent links for long-term accessibility and citation of their valuable research outputs. Generating a DOI requires that a core set of metadata be provided to the DOI registration service. This section of the navigation tree contains the elements that are needed for that purpose. This section is only used when you plan to issue a DOI for the dataset. 
+
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_data_cite.png)
+
+
 ***Provenance***
+
 
 
 ***Administrative metadata***
