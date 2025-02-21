@@ -32,12 +32,11 @@ We will use the default metadata template provided, so there is no need to switc
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the indicator and when. Enter your name in *Metadata producers* and the date in ISO format (YYYY-MM-DD) in *Production date*. Then click on SAVE.
 
-You can now start entering the metadata related to the indicator itself in the "Indicator description" section. In the navigation tree, first select "Title statement" and enter the required **primary ID** (a unique identifier of your choice, e.g., JD_IND_001; if you want to publish the indicator in a NADA catalog, make sure that this same identifier is not used by another user or for another document). Also enter the (optional) **other identifiers** for the indicator (enter the WDI indicator: @@@@@@@@@). Then enter the **title** of the indicator, which is also a required element. Then click SAVE.
+You can now start entering the metadata related to the indicator itself in the "Indicator description" section. In the navigation tree, first select "Title statement" and enter the required **primary ID** (a unique identifier of your choice, e.g., JD_IND_001; if you want to publish the indicator in a NADA catalog, make sure that this same identifier is not used by another user or for another document). Also enter the (optional) **other identifiers** for the indicator (enter the WDI indicator identifier: SI.POV.DDAY). Then enter the **title** of the indicator, which is also a required element. Then click SAVE.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_title_statement.png)
 
 Then proceed with the other sections in the navigation tree and fill out the relevant metadata elements using the following information copied from the World Bank website:
-- ***ID***: SI.POV.DDAY
 - ***Name***: Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)
 - ***Source***: World Bank, Poverty and Inequality Platform. Data are based on primary household survey data obtained from government statistical agencies and World Bank country departments. Data for high-income economies are mostly from the Luxembourg Income Study database. For more information and methodology, please see pip.worldbank.org.
 - ***License***:  CC BY-4.0 
