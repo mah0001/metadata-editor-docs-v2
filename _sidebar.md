@@ -9,7 +9,8 @@
 * Installation, upgrade, and permission setting
   
     * [Technical specifications](tech_technical_specifications.md)
-    * [Installation and upgrade](tech_installation.md)
+    * [Installation](tech_installation.md)
+    * [Upgrading](tech_upgrading.md)
     * [Setting roles and permissions](tech_roles_permissions.md)
 
 * Login, logout, password
