@@ -1,4 +1,4 @@
-# Installation and upgrade
+# Installation 
 
 ## Installation requirements
 
