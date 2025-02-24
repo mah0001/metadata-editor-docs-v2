@@ -4,7 +4,7 @@
 
 The Metadata Editor was designed in compliance with internationalization best practice. The software can easily be translated to other languages by any user, using the translation tool provided. 
 
-If the application is not available in your language, you may cerate a translation using a user interface. This requires administrator privileges. If you have been assiged a role as administrator, the *Site administration* item will appear in the menu that opens when you click on your name. Clisk on *Settings* then select *Translate* in the *Site administration* main menu.  
+If the application is not available in your language, you may cerate a translation using a user interface. This requires System administrator privileges. If you have been assiged a role as System administrator, the *Site administration* item will appear in the menu that opens when you click on your name. Clisk on *Settings* then select *Translate* in the *Site administration* main menu.  
 
 ME_UG_v1-0-0_translation_site_administration_menu.png
 
