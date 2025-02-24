@@ -20,6 +20,8 @@ The DDI Alliance developed the DDI-Codebook for organizing the content, presenta
 
 The DDI Alliance publishes the DDI-Codebook as an XML schema. We present in this Guide a JSON implementation of the schema, which is used in our R package NADAR and Python Library PyNADA. The NADA cataloguing application works with both the XML and the JSON version. 
 
+The technical description of the JSON schema used for the documentation of microdata is available at [https://worldbank.github.io/metadata-schemas/#tag/](https://worldbank.github.io/metadata-schemas/#tag/Microdata)
+
 ### Dublin Core for documenting external resources
 
 For documenting external resources, a template based on the Dublin Core standard is used. See sections **General instructions** and **External resources**.
