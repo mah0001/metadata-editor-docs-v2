@@ -48,7 +48,7 @@ Before you start documenting a micro-dataset, it is highly recommended to carefu
 
 ## Create a project
 
-The first step in documenting a dataset is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. This will open a new, untitled *project home page*. 
+The first step in documenting a dataset is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. Select *Microdata* as data type. This will open a new, untitled *project home page*. 
 
 In that page, select the Template you want to use to document the dataset. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on *Switch template* in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
@@ -56,6 +56,8 @@ In that page, select the Template you want to use to document the dataset. A def
 ## Document the dataset
 
 Once a project has been created, you can start entering metadata and subsequently import the data files (assuming you want to include file and variable-level documentation, which is not mandatory), or you can first import the data files then add metadata. The sequence in which you document the dataset does not matter. 
+
+Refer to the **General instructions** for instructions on sections common to all data types.
 
 The DDI Codebook metadata standard used to document microdata has the following sections (*containers*), which will be found in any template designed based on that standard:
 - **Document description:** This section contains metadata on the metadata (to capture information on who documented the dataset, when, etc.)
