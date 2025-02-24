@@ -2,13 +2,17 @@
 
 ## Translating the Metadata Editor software application
 
-The Metadata Editor can be translated to other languages. To create translations, navigate to site administration and then under the “Settings” menu, click on “Translate”. 
+The Metadata Editor was designed in compliance with internationalization best practice. The software can easily be translated to other languages by any user, using the translation tool provided. 
 
-Translations are done using a user interface as described below. The output of a translation will consist of a series of PHP files (with extension [.php]) that can be uploaded on the server where the Editor is installed. Instructions on where to save these files, and on how to activate a new language, are provided below.  
+If the application is not available in your language, you may cerate a translation using a user interface. This requires administrator privileges. If you have been assiged a role as administrator, the *Site administration* item will appear in the menu that opens when you click on your name. Clisk on *Settings* then select *Translate* in the *Site administration* main menu.  
+
+ME_UG_v1-0-0_translation_site_administration_menu.png
+
+Instructions on how to translate the software are provided below. The output of a translation will consist of a series of PHP files (with extension [.php]) that can be uploaded on the server where the Metadata Editor is installed. Instructions on where to save these files, and on how to activate a new language, are provided below. Thes etranslation files can be shared with other organizations that use the Metadata Editor. You are thus encouraged to share them, and to inform the World Bank about the availability of your translation. 
 
 The Metadata Editor supports translation into any UTF8-encoded language, including Arabic, Chinese, German, and Russian. For right-to-left languages like Arabic, the UI must be adjusted for correct display. Translations only affect the labels, not the UI layout. 
 
-Note:  The application allows translation from English to English. This option is used to modify the display of labels/text in the Editor interface. It allows site administrators to adapt the user interface to specific terms used in their organization. 
+Note:  The application allows translation from a language to itself, e.g., from English to English. This option can be used to modify the display of labels/text in the Editor interface. It allows site administrators to adapt the user interface to specific terms used in their organization. 
 
 [image]
 
