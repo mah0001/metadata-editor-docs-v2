@@ -14,9 +14,12 @@ The following roles are pre-defined, which apply to specific **Projects**:
 - **Member**. A *member* does not have any permission. This is the default role that is assigned when a user registers on the Metadata Editor (or is automatically registered when an organization's authentication system is configured to provide access to all authenticated staff members). Members will only obtain a set of permissions when a system administrator grants them specific roles. 
 - **Viewer**. The member is authorized to view the project (and export metadata), but NOT to export data or modify the project in any way. 
 - **Editor**. This role allows users to have full access to create and manage projects their own projects or any projects shared with them. The role allows view only access to templates and collections. The users can view, print (PDF, HTML preview), export to JSON all available templates but cannot make any changes to the templates or create new templates. For projects, users can view all available templates and change the template used by the project. 
-- **Owner**. 
-- **Co-owner**. 
-- **Reviewer**. 
+- **Owner**. The owner of a project is by default the member who created the project. The owner has full permissions on the project (edit, delete, share). Ownership can be transferred.
+- **Owner with locking**. The owner of a project is by default the member who created the project. The owner has full permissions on the project (edit, delete, share). Ownership can be transferred.
+- **Co-owner**. A co-owner of a project has the same permissions as the owner.
+- **Co-owner with locking**. A co-owner of a project has the same permissions as the owner.
+- **Editor and Reviewer**. An Editor and Reviewer has all permissions that an Editor has, plus te permission to lock and version projects.
+- **Reviewer**. A Reviewer can view a project and lock/version it, but does not have Editor permissions.
 
 For collections: The roles allow the user to manage collections such as create, edit, delete and add users to a collection. For adding projects to a collection, a user must have both admin/owner access to the project and admin/edit role for the collection. 
 
@@ -24,8 +27,10 @@ For administrative data:
 
 NOTE: Publisher: For publishing, permissions are set not in the Metadata Editor but in the cataloguing application.
 
+
 ## Permission levels in API
 
+The permissions are reflected in the API key(s) of the user. What a user can (or cannot) do in the Metadata Editor, s/he can (or cannot) do programmatically using her/his API key.
 
 
 ## Defining a new role
