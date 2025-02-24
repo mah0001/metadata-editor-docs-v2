@@ -2,9 +2,9 @@
 
 The Metadata Editor operates as a centralized metadata production and management system. It allows the collaborative creation, editing, and deletion of projects. In this context, it is essential to clearly define what each user's role and permissions are. This is defined by (i) controling who can access the Metadata Editor (who are the "members"), and (ii) defining the role of each member. The Metadata editor provides tools for defining roles, and for assigning them to members. The users and roles management system is accessible only to system administrators. It is accessed from the *Site administration* menu.
 
-ME_UG_v1-0-0_permission_users_menu_settings.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_permission_users_menu_settings.png)
 
-ME_UG_v1-0-0_permission_users_roles_button.png
+![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_permission_users_roles_button.png)
 
 ## Descriptions of pre-defined roles and permission levels
 
