@@ -1,12 +1,27 @@
 # Permissions and roles
 
-The Metadata Editor operates as a centralized metadata production and management system. It allows the collaborative creation, editing, and deletion of projects. In this context, it is essential to clearly define what each user's role and permissions are. This is defined by (i) controling who can access the Metadata Editor (who are the "members"), and (ii) defining the role of each member. The Metadata editor provides tools for defining roles, and for assigning them to members. The users and roles management system is accessible only to system administrators. It is accessed from the *Site administration* menu.
+The Metadata Editor operates as a centralized metadata production and management system. It allows the collaborative creation, editing, and deletion of projects. In this context, it is essential to clearly define what each user's role and permissions are. This is defined by (i) controlling who can access the Metadata Editor (who are the "members"), and (ii) defining the role of each member. The Metadata editor provides tools for defining roles, and for assigning them to members. The users and roles management system is accessible only to system administrators. It is accessed from the *Site administration* menu.
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_permission_users_menu_settings.png)
 
 ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_permission_users_roles_button.png)
 
-## Descriptions of pre-defined roles and permission levels
+## Global permission settings and account activation
+
+**Member**
+
+The Metadata Editor is a web-based application. It is accessed by entering a URL in a web browser. Everyone with access to this URL can open the URL. Typically, the Metadata Editor will be installed on an intranet, not internet. If the person is not registered as a "Member" of the Metadata Editor, opening this link will not provide any access to any information. A person becomes a member when the system administrator register that person, either by activating an organization's authentication system, or by manually registering members in the system.   
+
+A registered member can login to the application. By default, members have no access to any information until their account is activated by the system administrator. When a member logs-in, if her/his account has not been activated, a page will be shown allowing her/him to request activation.
+
+When an account is activated, the system administrator gives the member a role as "Viewer" (the member will not have any active role in the Metadata Editor; s/he will only be able to see projects that have been shared with her/him) or as "Contributor" (the member will be able to create and edit peojects; what s/he can do will be determined by her/his status for each project or collection).
+
+**Collection manager** 
+
+The system administrator can assign the role of "Collection manager" to some members. Collection managers will be allowed to create and edit collections, and to manage permissions associated with collections.
+
+
+## Roles and permissions at project level 
 
 A set of pre-defined roles is provided by default in the Metadata Editor. Each role come with a specific set of permissions. The roles can be edited, and new ones can be created. When creating new roles, be aware that only one role can be assigned to a member.
 
