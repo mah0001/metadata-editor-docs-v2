@@ -38,7 +38,16 @@ The following roles are pre-defined, which apply to specific **Projects**:
 
 For collections: The roles allow the user to manage collections such as create, edit, delete and add users to a collection. For adding projects to a collection, a user must have both admin/owner access to the project and admin/edit role for the collection. 
 
-For administrative data:
+## Defining a new role
+
+The editor allows creating new custom roles. To create a new role, go to users under site administration and then click on the navigation link for “User Roles”. 
+Who can do that? How?
+
+
+## Roles and permissions at collection level 
+
+
+## Roles and permissions for administrative data:
 
 NOTE: Publisher: For publishing, permissions are set not in the Metadata Editor but in the cataloguing application.
 
@@ -46,25 +55,5 @@ NOTE: Publisher: For publishing, permissions are set not in the Metadata Editor 
 ## Permission levels in API
 
 The permissions are reflected in the API key(s) of the user. What a user can (or cannot) do in the Metadata Editor, s/he can (or cannot) do programmatically using her/his API key.
-
-
-## Defining a new role
-
-The editor allows creating new custom roles. To create a new role, go to users under site administration and then click on the navigation link for “User Roles”. 
-Who can do that? How?
-
-
-## Assigning roles to users
-
-***Assigning a role***
-
-***Changing roles***
-
-
-
-## Setting a default role
-
-When an organization gives access to all staff (through corporate authentication system): ...
-
 
 
