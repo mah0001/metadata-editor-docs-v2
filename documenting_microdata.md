@@ -66,7 +66,7 @@ The DDI Codebook metadata standard used to document microdata has the following 
 - **Variable description:** The section contains the documentation of each variable, with elements like variable name and label, value labels, literal questions and interviwer instructions, universe, summary statistics, and more.
 - **Variable groups:** This optional section provides a way to organize variables into groups other than the data files, e.g., grouping of variables by theme. Variable grouping is intended to increase the convenience to users, and possibly the online discoverability of data (if useful group descriptions are provided).
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_DDI_containers.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_DDI_containers.png)
 
 The container **Tags** is not part of the DDI Codebook standard. It is a container that has been added to all metadata standards used by the Metadata Editor. Refer to **General instructions** for information on tags.
 
@@ -103,7 +103,7 @@ To import data files, select *Data files* in the navigation tree, and click IMPO
 
 The imported data files will now be listed in the navigation tree. Summary information on the imported data files is displayed in the *Data files* page. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_list_data_files.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_list_data_files.png)
 
 IMPORTANT: The CSV version of the data will be stored on the server that hosts the Metadata Editor. **All collaborators on your project will be able to see and download the data.** If the data are confidential and sensitive, they may be removed from the server at any time. See ***Removing data files from server*** below.  
 
@@ -127,7 +127,7 @@ If you want to preserve the imported metadata on a data file but remove the data
 
 You can replace a data file by selecting the option **Replace file** in the option menu for a data file in the *Data files* page. You can only replace a data file with a data file that has the exact same structure (same variables, in the same order). The application will replace the data, but leave the metadata already entered in the Metadata Editor untouched. Replacing a data file is thus a solution to "refresh the data" (and summary statistics) without losing updated metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_refresh_replace_data_files.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_refresh_replace_data_files.png)
 
 **Refreshing summary statistics**
 
@@ -137,7 +137,7 @@ Some actions on data files (modifying *Categories description* or applying weigh
 
 Clicking on a file name in the navigation tree will open the *File description* page where the information on the data file can be entered.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_data_file_description.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_data_file_description.png)
 
 
 ### Variables
@@ -156,22 +156,22 @@ These four frames are described in detail below.
 
 The variable list displays the list of variables in the selected data file, with their name and label. A search bar is provided to locate variables of interest (keyword search on variable name and label).
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_list_frame.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_list_frame.png)
 
    - The variable labels can be edited (double click on a label to edit it). All variables should have a specific label.
    - The variable names cannot be edited.
    - A set of icons provides information on the status of each variable, as follows:
 
-      ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_list_icons.png)
+      ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_list_icons.png)
 
 The icons shown on top of the variable list perform the following actions on variables:
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_buttons_variable_list.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_buttons_variable_list.png)
 
    - ***Refresh statistics:*** Instructs the Metadata Editor to re-read the data files and update the summary statistics for all variables. You will want to refresh the summary statistics after performing actions like applying sample weights or modifying the value labels (categories) of some variables. Note that this will not be possible if you have cleared the data from the server.
    
    - ***Change case:*** This allows you to change the case of the variable names and/or variable labels (changing them to uppercase, lowercase, or sentence case). Note that changing variable names is not always a good idea; some software like Stata or R are case sensitive; changing the case of a variable name is equivalent to changing the variable name, which means that some scripts written to run on the original data will not run anymore on data with renamed variables.
      
-     ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_change_case.png)
+     ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_change_case.png)
 
    - ***Spread metadata:*** In many micro-datasets, a small number of variables will be common to all data files. For example, in a sample household survey, the household identifier, and the variables that indicate the geographic location of the household, may be repeated in all files. In such case, you can document the variables in one data file, select these common variables, and "spread metadata" to automatically apply the metadata to variables with the same name in other data files. 
    
@@ -184,30 +184,30 @@ The icons shown on top of the variable list perform the following actions on var
 
   The *Variable categories* frame contains the following icon toolbar:
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_toolbar_categories.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_toolbar_categories.png)
 
   If a categorical variable was not identified as such when the data were imported, the Metadata Editor provides an option to automatically *Create categories*. This option is accessed by clicking on the **Create categories** icon at the top of the frame. The application will then extract a list of codes found for the variables in the data, and pre-populate the list of categories with the codes. The labels corresponding to each category can then be added by the data curator. An option (**Clear all** icon) is also provided to remove all content from the list of categories.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_value_labels.png)
 
    A category can be removed from the list by clicking on the trash icon.
 
    An option is also provided to copy/paste content in the list of value labels. This allows for example to copy code lists from an application like MS-Excel and to paste them in the *Variable categories* grid. The pasted information can either *replace* existing content of the grid (if any), or be *appended* to it.  
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_access.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_access.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_menu.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_menu.png)
 
 
 - **Variabe information**
 
 The **Variable information** frame provides options to taga variable as being a sample weight, to edit the type of the variable, the range, and the format of the data it contains, and to inform the application of values to be rteated as missing values.   
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_information.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_information.png)
 
    - ***Is weight***
 
       The **Is weigh** toggle is used to tag variables that are sample weights, if any.  
-    ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_weights.png)
+    ![image](img/ME_UG_v1-0-0_documenting_microdata_weights.png)
 
    - ***Interval type***
       For numeric variables, the *interval type* can be set to *Continuous* or *Discrete*. This will impact how the data are documented and what summary statistics are produced (frequencies will not be calculated for continuous variables; variable categories will only be created for discrete variables). When data are imported, the application makes a best guess about the interval type. the data curator should browse through all variables to ensure the interval type has been properly set. 
@@ -226,12 +226,12 @@ The **Variable information** frame provides options to taga variable as being a 
 
    The last frame of the Variable page is one where most of the additional metadata related to variables will be entered.
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_frame.png)
 
    ***Header bar***
    The header bar of the frame shows the name and label of the variable selected in the Variable list. It also shows four icons, which allow you browse variables without having to select them in the Variable list. 
 
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_navigate_variables.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_navigate_variables.png)
   
    ***Statistics***
 
@@ -241,13 +241,13 @@ The **Variable information** frame provides options to taga variable as being a 
 
   Note that summary statistics that will be stored in the metadata are statistics for each variable taken independently. No cross tabulation is possible.
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_statistics.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_statistics.png)
 
    ***Weights***
 
   If the dataset is a sample survey for which sample weights have been calculated, you should tag all variables that are sample weights (see **Weights** above). Variables that have been tagged as being weights can then be used to generate weighted statistics in tab STATISTICS. To do that, select the variables for which you want to generate weighted statistics (this should not include variables like unique identifiers or the weighting variables themselves). Use the Shift or Ctrl keys to select multiple variables in the list. Then click on *select weight variable*. The list of variables in the data file that have been tagged as weights will be displayed. Select the one to be used as weight, then close the selection popup menu. A green dot will appear next to the tab name, to indicate that a weight has been applied to the variable. The variable used as weight will be shown in the tab. An option to *remove* or *change* the weight is provided. A red icon will appear in the variable list to indicate that a change has been applied to the variable that requires refreshing the summary statistics. After you refresh the summary statistics, the STATISTICS tab will display the weighted values.  
 
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_weights.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_weights.png)
 
    ***Documentation***
 
@@ -255,24 +255,24 @@ The **Variable information** frame provides options to taga variable as being a 
  
   A **Settings** menu allows you to select the metadata elements to be used to document variables. This selection will reduce the length of the form used to enter the metadata. The only purpose of this selection is to nake the metadata entry page shorter and more convenient to use, by focusing only on the metadata elements for which content may be provided.
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_metadata_settings.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_metadata_settings.png)
 
   Note that you may select multiple variables in the *Variable list* (using the Shift or Ctrl key) and paste content in one of these metadata elements. It will then be pasted in the metadata for all selected variables. The existing metadata for other fields will be left unchanged.
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_documentation.png)
 
    ***JSON***
 
    This last tab is only intended to display a JSON version of the variable metadata.
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_json.png)
+  ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_documentation_json.png)
 
 
 **View data**
 
 The Metadata Editor allows you to view the content of the data files, by clicking on "Data" under the data file name in the navigation tree. You can view and export the data from this page, but you cannot edit the data. The Metadata Editor is not a data editor; changes to the data files must be made outside the Metadata Editor.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_view_data.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_view_data.png)
 
 
 ### Variable groupings
@@ -289,11 +289,11 @@ To group variables:
 - Select the variables (from any of the imported data files) to be included.
 - Add a description of the group.
    
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_create.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_groups_create.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_selection.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_groups_selection.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_groups_select_item.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_groups_select_item.png)
 
 
 ### Provenance ###
@@ -316,22 +316,22 @@ In the main menu, an option is provided to **Import project metadata**. This all
 
 This option will also be used to import metadata compliant with the DDI codebook that may have been generated using another tool. For example, is a survey was conducted by CAPI interview (using tablets) using the Survey Solutions CAPI application, a DDI containing the literal questions, universe, interviewers instructions (stored in the CAPI questionnaire) can be generated. This information can be imported in the Metadata Editor, avoiding the tedious process of copy/pasting this information.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu_access.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu_access.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu.png)
 
 The components of the metadata to be imported can be selected. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_import_project_metadata.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_import_project_metadata.png)
 
 
 ### Spreading metadata ###
 
 Spreading metadata consists of copying the metadata for one or multiple variables selected in the variable list, then clicking on the **Spread metadata** icon. The metadata entered for the selected variables will automatically be applied to the variables that have the same name, in the other data files. The metadata fields to be spread can be selected.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_spread_metadata_icon.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_spread_metadata_icon.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_microdata_variable_spread_metadata.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_variable_spread_metadata.png)
 
 
 

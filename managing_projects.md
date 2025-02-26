@@ -8,7 +8,7 @@ Projects are listed in the *My projects* page. This page is the default page of 
 
 The projects you see in the *My projects* page are the projects you have access to (as owner, editor, or viewer). The list of projects you see is thus based on your credentials. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_projects_list_page.png)
+![image](img/ME_UG_v1-0-0_managing_projects_projects_list_page.png)
 
 When the Metadata Editor is installed on a stand-alone personal computer, the credentials will not impact the list of projects you can see; all projects will be listed in the Projects page as you are the owner of all projects created on your PC. But when the application is installed on a server, using it will require login, and each user will have some roles and permissions and the list will be specific to the profile of the user. 
 
@@ -24,14 +24,14 @@ From the *My projects* page, you can perform the following actions:
 
 - **Actions on a project**: Several actions can be performed on a selected project. A menu of options is provided when clicking on the Options button.
 
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_actions_on_project.png)
+  ![image](img/ME_UG_v1-0-0_managing_projects_actions_on_project.png)
 
   The actions that can be taken from this menu are the following:
   - **SHARE**: To share the project with one or multiple registered users of the Metadata Editor. You will be asked to select the users, and the level of access you want to provide them with (View, Edit, Administrator). These users will then see your project in their own *My projects* page.
     
-    ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_share_project.png)
+    ![image](img/ME_UG_v1-0-0_managing_projects_share_project.png)
 
-    ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_actions_on_project_list.png)
+    ![image](img/ME_UG_v1-0-0_managing_projects_actions_on_project_list.png)
     
   - **ADD TO COLLECTION**: To add the project to a collection. When clicking on this option, a popup screen will open, asking you to select the collection(s). See section *Managing collections* for information on the purpose of adding projects to one or multiple collection(s).
     
@@ -49,14 +49,14 @@ From the *My projects* page, you can perform the following actions:
   
 - **Batch actions on projects**: You can select multiple projects using the check boxes next to the project titles, and apply an action to all selected project. In this version of the Metadata Editor, the only available batch action is to add the selected projects to a colection (see section on Managing collections.   
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_batch_action.png)
+![image](img/ME_UG_v1-0-0_managing_projects_batch_action.png)
 
 
 ## The project "Home page"
 
 When you click on a project title in the *My projects* page, or when you create a new project, a *project home page* will open. If you are already in a project page, the Project home page can be accessed by clicking on **Home** in the navigation tree.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
+![image](img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
 
 The *Project home page* contains the following frames:
 - The **Navigation tree**, which corresponds to the template you have selected to document the dataset.

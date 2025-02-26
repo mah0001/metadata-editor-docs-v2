@@ -36,7 +36,7 @@ This work can be made collaborative, by sharing the project with other data cura
 
 ## The project "Home page"
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_project_home_page_components.png)
+![image](img/ME_UG_v1-0-0_documenting_project_home_page_components.png)
 
 
 ## Title and menu bar
@@ -52,7 +52,7 @@ The header frame in the *Project home page* provides information on the project 
 
 ## Template selection
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_template_selection.png)
+![image](img/ME_UG_v1-0-0_documenting_general_template_selection.png)
 
 - ***Project template***
 
@@ -78,7 +78,7 @@ A search box is also provided, allowing users to search a metadata element based
 
 The Project home page contains a frame titled **Project validation**, which will indicate whether the metadata that has been entered and saved violates some of the requirements of the standard itself or of the validation rules defined in the template used to document the dataset.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_project_validation.png)
+![image](img/ME_UG_v1-0-0_documenting_general_project_validation.png)
 
 - ***Schema validation*** lists the violations of requirements of the metadata standard.
 - ***Template validation*** lists the violations of custom validation rules defined in the metadata template.
@@ -90,7 +90,7 @@ Clicking on a validation error will take you to the element that needs to be edi
 
 The frame **Collaborators** in the project Home page will show the list of collaborators who have access to the project, with information on their permission level (View, Edit, Admin, Owner). If you are the owner or administrator of the project, you may edit this list (adding or removing collaborators) from the list by clicking on the icon on top of the frame.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_collaborators.png)
+![image](img/ME_UG_v1-0-0_documenting_general_collaborators.png)
 
 
 ## Collections ##
@@ -116,7 +116,7 @@ All metadata standards and schemas supported by the Metadata Editor include a **
 
 To illustrate the use of tags, let’s assume that you want to indicate whether a dataset is available free of charge or for a fee, and another tag that indicates whether the dataset meets differebntial privacy or not. None of the metadata schemas contains an element specifically designed to indicate the “free” or “for a fee” nature of the dataset, or "differentially private" or not. But this information can be captured in a tag “Free” or “For a fee” within a tag group that could be named “free_or_fee”, and "Differentially private" or "Not differentially private" in a tag group that could be named "differential_privacy". This information becomes part of the metadata, abd can be used by catalog administrators to create customized filtering options (facets) in their user interfaces. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_tags.png)
+![image](img/ME_UG_v1-0-0_documenting_general_tags.png)
 
 
 ***External resources***
@@ -145,7 +145,7 @@ The *Resource type* element is very important; it will determine how the resourc
 
 DataCite is a service that offers Fabrica as a DOI and metadata management service allowing organizations to register and manage DOIs for their data products (see https://datacite.org/create-dois/). With Fabrica, organizations can assign DOIs, maintain accurate and FAIR metadata, and ensure persistent links for long-term accessibility and citation of their valuable research outputs. Generating a DOI requires that a core set of metadata be provided to the DOI registration service. This section of the navigation tree contains the elements that are needed for that purpose. This section is only used when you plan to issue a DOI for the dataset. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_data_cite.png)
+![image](img/ME_UG_v1-0-0_documenting_general_data_cite.png)
 
 
 ***Provenance***
@@ -165,7 +165,7 @@ The content of the administrative metadata section is not intended to be entered
 
 Some elements apply to all data types, some are specific to the data type.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
+![image](img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
 
 - ***Export package***
 
@@ -203,12 +203,12 @@ Some elements apply to all data types, some are specific to the data type.
 
 ## Canceling changes (Undo) ##
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
+![image](img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
 
 
 ## Change log ##
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_change_log.png)
+![image](img/ME_UG_v1-0-0_documenting_general_change_log.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
+![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 

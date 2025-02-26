@@ -7,17 +7,17 @@ In this example, we will document a geographic dataset extracted from the Humani
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_project_page.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_project_page.png)
 
 Click on "CREATE NEW PROJECT" and select "Geospatial" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
 We will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
 
 In this example, we will use the template IHSN ISO 19139-Datasets Template v01 EN (default template for geographic data). There is thus no need to change the template.
 
@@ -26,11 +26,11 @@ In this example, we will use the template IHSN ISO 19139-Datasets Template v01 E
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
 You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select "Description / Introduction" and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the HDX website (see "Additional information" section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The template is a bit complex, due to the complexity of the underlying ISO metadata standard.
 - ***Language:*** English
@@ -49,7 +49,7 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 - ***File formats:*** Geodatabase; SHP; KML
 - ***Content of the layers:*** district, upazilla, union, campssid (camp's ID), campname (camp name), smsdcamp, npmcamp, camplabel (camp label), settlement, centroidx (X coordinate of centroid), centroidy (Y coordinate of centroid), areaacres (surface area in acres), areasqm (surface area in square meters), areasqkm (surface area in square kilometers). See:
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_layers_info.png)
+  ![image](img/ME_UG_v1-0-0_quick_start_geographic_layers_info.png)
 
 This information can be entered in the Metadata Editor as follows:
 
@@ -78,16 +78,16 @@ Once you have entered the metadata, you can finalize the documentation of the da
 
 To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click "SAVE." You will now have the external resource listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
 
 
 **Step 4: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_open_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_actions_menu.png)
 
 **Export package (ZIP)**
 
@@ -109,9 +109,9 @@ A PDF version of the metadata can be automatically created. Select PDF documenta
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_publish_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_publish_to_NADA.png)
 
 The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
 
