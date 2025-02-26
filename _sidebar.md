@@ -56,7 +56,7 @@
 
 * Publishing data and metadata 
 
-    * [Publish metadata](publish.md)
+    * [Publish metadata](publish_metadata.md)
     * [Publish data](publish_data.md)
    
 * Tools for administrators
