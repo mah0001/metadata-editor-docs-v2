@@ -7,30 +7,30 @@ In this example, we will document a video titled "Reshaping Food Security Analyt
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_project_page.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_project_page.png)
 
 Click on "CREATE NEW PROJECT" and select "Video" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_new_project_home.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_new_project_home.png)
 
 We will use the screenshot image as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_edit_thumbnail.png)
 
 
 **Step 2: Enter metadata**
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the video and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
 
 You can now start entering the metadata related to the video itself. In the navigation tree, first select "Title statement" under "Video description", and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_VDO_001; if you want to publish the video in a NADA catalog, make sure that this same identifier is not used by another user or for another image). Also, enter the title of the video: "Reshaping Food Security Analytics: An In-Depth Look at Emerging Solutions for Rapid Insights".
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_identifier.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_identifier.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the World Bank Youtube channel:
 - ***Author:*** World Bank
@@ -44,13 +44,13 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 - ***Video URL:*** https://youtu.be/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ
 - ***Embed URL:*** https://www.youtube.com/embed/px1EeqpKDUI?list=PLopq6yGfmFAu3tscprzTPpoPrP1q0E9XZ *(Note: This information can be obtained by right-clicking on the video in Youtube. It will open a menu, in which you will find an option to "Copy embed code". Select only the URL (src) part of it.)*
   
-  ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_youtube_embed_code.png) 
+  ![image](img/ME_UG_v1-0-0_quick_start_video_youtube_embed_code.png) 
 
 - ***Transcript:*** *(Copy/pasted, and edited for formatting, from the Youtube channel)*: "In 2022 as 250 million people faced food crises, the G7 presidency and the Worldbank Group came together to launch the Global Alliance for Food Security, mobilising a swift, coordinated response to the growing global hunger crisis. Working alongside international partners, we transformed food and nutrition security data systems by introducing advanced country level assessment and prediction tools. The World Food Security Outlook was developed to enhance understanding of global food and nutrition security. Using machine learning to analyse data from various sources and project food security up to six years in advance. Instead of waiting for crises to emerge, we can now utilise these insights to proactively address and mitigate potential impacts. Additionally, we've created tools to monitor prices of household items and unofficial exchange rates in real time across many locations. This aids in understanding rapid changes in food and fuel affordability, and identifying areas of urgent need.
 Furthermore, second layer monitoring tools like the Joint Monitoring Report build on these new data sources to provide more in-depth insights into complex conflict affected areas. These innovations aim to provide precise, timely, and actionable food and nutrition security data to guide Worldbank programming and partner actions. For instance, in the Dry Corridor, the World Food Security Outlook has brought together government, humanitarian and development leaders to assess risks, scale up early action, strengthen safety nets, and adjust agricultural planning for El Nino impacts. In the Horn of Africa, real time prices track water and staple food prices during droughts. Enabling the identification of operational and funding gaps in real time. The shift towards machine learning and real time data is already transforming food security analysis.
 Through the Joint Monitoring report, humanitarian and development partners now follow the same data driven approach to collectively recognise emerging crises early and enhance crisis preparedness. These first of their kind reports are speeding up response times and strengthening evidence based decision making, demonstrating how data driven tools deliver transparent, robust and high frequency analysis at a fraction of the cost of traditional food and nutrition security updates. Join the fight against hunger. Explore real time crises and the world food security outlook at microdata.worldbank.org. For more insights and our progress on Sustainable Development Goal 2, visit worldbank.org."
 
-   ![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_youtube_transcript.png)
+   ![image](img/ME_UG_v1-0-0_quick_start_video_youtube_transcript.png)
   
 This information can be entered in the Metadata Editor as follows:
 
@@ -68,7 +68,7 @@ This information can be entered in the Metadata Editor as follows:
 | Embed URL                 | Video description / Access and rights / Embed URL          | 
 | Duration                  | Video description / Technical information / Duration       |
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_metadata.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_metadata.png)
 
 
 **Step 3: Add information on related resources**
@@ -77,16 +77,16 @@ Once you have entered the metadata, you can finalize the documentation of the vi
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank YouTube channel)*, and enter the URL *(https://www.youtube.com/worldbank)*. Then click "SAVE." You will now have two external resources listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_external_resource_youtube.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_external_resource_youtube.png)
 
 
 **Step 4: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_open_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_actions_menu.png)
 
 **Export package (ZIP)**
 
@@ -104,11 +104,11 @@ These options allow you to export the metadata related to external resources in 
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_publish_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_publish_to_NADA.png)
 
 The video will now be listed and made discoverable in the NADA catalog, with a link to the YouTube channel. The video can be viewed from within the NADA page.  
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_video_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_video_in_NADA.png)
 
 **PDF documentation**
 

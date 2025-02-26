@@ -16,19 +16,19 @@ The dataset we will document is a synthetic dataset representing a sample househ
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. Otherwise, the existing projects will be listed. In the screenshot below, we see that one project was already created.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_project_list_start.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_project_list_start.png)
 
 Click on "CREATE NEW PROJECT" and select "Microdata" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_new_project_home.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_new_project_home.png)
 
 You can change the image that will be used as a thumbnail for the project (optional). The demo materials contain an image file named *synthetic_data_logo.jpg*. Click on the edit button and select this file (or another jpg file of your choice)".
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_edit_thumbnail.png)
 
 We will use the default metadata template to document the dataset, so there is no need to switch template. You are now ready to start documenting the dataset.
 
@@ -36,13 +36,13 @@ We will use the default metadata template to document the dataset, so there is n
 
 In the section "Document description / Metadata preparation", enter information on the metadata. This information is optional. Enter your name and the date the metadata was created, then click SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_document_description_save.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_document_description_save.png)
 
 You can now start entering the metadata related to the survey itself in the "Study Description" section. You will find the relevant information in the Excel file *synthetic_survey_info.xlsx*. In the navigation tree, first select "Study description / Identification", enter the relevant information on the survey. First, enter the **title** of the dataset and enter the required primary ID (a unique identifier of your choice, e.g., JD_MICRO_001; if you want to publish the survey in a NADA catalog, make sure that this same identifier is not used by another user or for another entry in NADA). 
 
 Then browse the navigation tree and find the most appropriate elements for each piece of information contained in the Excel file; populate other sections of the metadata accordingly. All information contained in the Survey info sheet sheet should be captured. The (?) icon next to each element label will display a description of the element. Click SAVE periodically or after you enter the metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_study_description_save.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_study_description_save.png)
 
 The metadata elements in the template maps to the content of the Excel file as follows: 
 | In Excel file             | In the metadata template                        | 
@@ -75,34 +75,34 @@ The metadata elements in the template maps to the content of the Excel file as f
 
 When all available information on "Study description" is entered, click on "Data files" in the navigation bar. On the Data files page, click "IMPORT FILES", select the two Stata data files to be imported, then click "IMPORT".
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_import_data.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_import_data.png)
 
 The Editor will read and import the data files, and extract all available metadata from the files (variable list, names, variable labels, value labels). It will also generate summary statistics.
 
 The "Data files" page will display your two files, which are also now listed in the navigation bar under "Data files".
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_imported_data_files_list.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_imported_data_files_list.png)
 
 You can preview the data by clicking "Data", but note that the data cannot be edited in the Metadata Editor.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_view_data.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_view_data.png)
 
 You can also view summary statistics for all variables by clicking on *Variables* for a selected file in the navigation tree, and selecting tab STATISTICS.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_summary_statistics_no_weight.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_summary_statistics_no_weight.png)
 
 You will now document the data files and the variables they contain.
 
 First, click on the filename of a data file in the navigation tree and add a brief description of the file and click SAVE (you must save before moving to another page). Do that for both data files. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_data_file_description.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_data_file_description.png)
 
 
 **Step 4: Document the variables**
 
 Next, we will add or edit the variable-level information. In the navigation bar, select "Variables" for one of the data files. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_variable_list.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_variable_list.png)
 
 The page displays the list of variables in the selected file, along with multiple options to edit and complete the metadata related to the variables. On this page, you can:
 
@@ -127,13 +127,13 @@ You will now add metadata for each variable. Most of the relevant metadata at th
 - **Pre-question**, **literal question**, and **post-question** as formulated in the questionnaire (for collected variables, not for derived variables)
 - **Derivation** or **imputation** methods (for derived variables)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_variable_documentation.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_variable_documentation.png)
 
 Useful tip: When the information is the same for multiple variable, you can enter it for more than one variable by selecting multiple variables (using the Shift or Ctrl key) and entering information for the relevant element(s). For example, the three variables related to education in the individual dataset have the same universe ("Population aged 6 and above"). The three variables can be selected, and the information entered in "Universe" will be automatically applied to all three variables.
 
 After entering all available variable-level metadata, you may want to set and apply the weighting variable. In the dataset, two variables are used as weighting coefficients: *hhweight* (found in both files) and *popweight* found in the household-level file. Make sure that in both files, the variables are set as weights. An icon 'w' will be added in the variable list to indicate this status. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_set_variables_as_weights.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_set_variables_as_weights.png)
 
 Once the weighting variables have been identified and tagged, you may use them to generate weighted summary statistics. Proceed as follows:
 
@@ -146,15 +146,15 @@ Once the weighting variables have been identified and tagged, you may use them t
 
 You will see that red icons have been added in the list of variables, indicating that the summary statistics for these variables need to be refreshed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_red_icons_weights.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_red_icons_weights.png)
 
 For each file, click on the *Refresh stats" button. The summary statistics will be recalculated to include weighted estimates.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_refresh_statistics_button.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_refresh_statistics_button.png)
 
 The summary statistics will now display both the unweighted and weighted values.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_weighted_statistics.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_weighted_statistics.png)
 
 The summary statistics that are displayed in the Metadata Editor will be part of the saved metadata. As a last step in documenting variables, you should browse the variables to verify that the selected summary statistics for each variable are indeed meaningful. Statistics like means or standard deviations should not be included for categorical variables.
 
@@ -165,16 +165,16 @@ Once you have entered the variable-level metadata for both files, you can finali
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For each resource, select the file type ("Document, Questionnaire", "Document, Technical", and "Microdata"), give each resource a short title, and upload the corresponding file. Then click "SAVE." You will now have three external resources listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_list_external_resources.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_list_external_resources.png)
 
 
 **Step 6: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_open_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_actions_menu.png)
 
 
 **Export package (ZIP)**
@@ -196,16 +196,16 @@ These options allow you to export the metadata related to external resources in 
 
 A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_metadata_in_PDF.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_metadata_in_PDF.png)
 
 
 **Publish to NADA**
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_publish_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_publish_to_NADA.png)
 
 The dataset will now be listed and made discoverable in the NADA catalog. The microdata will be available to users, under the access policy you selected.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_microdata_microdata_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_microdata_in_NADA.png)
 

@@ -15,7 +15,7 @@ These various customization options help tailor standards to specific use cases.
 
 Templates will automatically generate the metadata entry pages that the data curators will see when they document a dataset.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_template_entry_screen.png)
+![image](img/ME_UG_v1-0-0_template_entry_screen.png)
 
 Templates offer flexibility and convenience, but coherence across an organization should be maintained. Ideally, each data type would use a unique template. However, multiple templates per data type are allowable for specialized cases, though this number should be minimized.
 

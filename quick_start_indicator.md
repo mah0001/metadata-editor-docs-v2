@@ -11,19 +11,19 @@ The metadata we will enter in the Metadata Editor is the metadata provided by th
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_project_list.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_project_list.png)
 
 Click on "CREATE NEW PROJECT" and select "Indicator" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_new_project_home.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_new_project_home.png)
 
 We will use the image *poverty_thumbnail.jpg* as a thumbnail (or feel free to select your own JPG or PNG file). It will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA. Click on the edit button in the screenshot image, and select the image file when prompted. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_edit_thumbnail.png)
 
 We will use the default metadata template provided, so there is no need to switch template. 
 
@@ -34,7 +34,7 @@ On the left navigation tree, select "Metadata information / Information on metad
 
 You can now start entering the metadata related to the indicator itself in the "Indicator description" section. In the navigation tree, first select "Title statement" and enter the required **primary ID** (a unique identifier of your choice, e.g., JD_IND_001; if you want to publish the indicator in a NADA catalog, make sure that this same identifier is not used by another user or for another document). Also enter the (optional) **other identifiers** for the indicator (enter the WDI indicator identifier: SI.POV.DDAY). Then enter the **title** of the indicator, which is also a required element. Then click SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_title_statement.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_title_statement.png)
 
 Then proceed with the other sections in the navigation tree and fill out the relevant metadata elements using the following information copied from the World Bank website:
 - ***Name***: Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)
@@ -99,16 +99,16 @@ Once you have entered the metadata, you can finalize the documentation of the in
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(Poverty and Inequality Platform (PIP))*, and enter the URL *(https://pip.worldbank.org/home)*. Then click "SAVE." You will now have an external resources listed.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_external_resource_PIP.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_external_resource_PIP.png)
 
 
 **Step 4: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_open_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_open_actions_menu.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_actions_menu.png)
 
 **Export package (ZIP)**
 
@@ -134,15 +134,15 @@ These options allow you to export the metadata related to external resources in 
 
 A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_metadata_in_PDF.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_metadata_in_PDF.png)
 
 **Publish to NADA**
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
 
 The indicator will now be listed and made discoverable in the NADA catalog, with a link to the PIP platform. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
 

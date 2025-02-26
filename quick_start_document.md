@@ -9,19 +9,19 @@ The only file you need to reproduce this Quick-Start example is the image file o
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_project_page.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_project_page.png)
 
 Click on "CREATE NEW PROJECT" and select "Document" when prompted to indicate the type of resource you will be documenting.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_new_project_home.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_new_project_home.png)
 
 We will use the cover page of the book as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). We captured a screenshot of the cover page and saved it in file *documen/cover_deaton_survey_analysis.jpg* (you can capture a document cover page with any screen capture tool, and save the image file in JPEG or PNG format). Click on the edit button in the screenshot image, and select the image file when prompted. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_edit_thumbnail.png)
 
 We will use the default metadata template provided, so there is no need to switch template. 
 
@@ -30,11 +30,11 @@ We will use the default metadata template provided, so there is no need to switc
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter the name of the person who generated the metadata, and the date the metadata was created using the ISO format YYYY-MM-DD. Then click on SAVE.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_metadata_information_save.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_metadata_information_save.png)
 
 You can now start entering the metadata related to the book itself in the "Document Description" section. In the navigation tree, first select "Title statement" and enter the required **primary ID** (a unique identifier of your choice, e.g., JD_DOC_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another document). Also enter the (optional) **other identifiers** for the document, including the DOI (* 10.1596/ 978-1-4648-1331-3*) and the ISBN (* 978-1-4648-1352-8*). Then enter the **title**, which is a required element (*The Analysis of Household Surveys*) and **subtitle** (*A Microeconometric Approach to Development Policy*) of the book. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_title_statement.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_title_statement.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements. 
 
@@ -49,33 +49,33 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 
 After entering all available information, click on SAVE. the **Preview** page shows all information you have entered.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_preview_page.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_preview_page.png)
 
 
 **Step 3: Provide a link to the document**
 
 The next step is to provide users with a link to the book or an option to download the PDF version directly from your catalog. This information on the location of the book, along with any related files and links, is referred to as "External resources." To add external resources, select "External resources" in the navigation tree and click on CREATE RESOURCE. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_create_resource.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_create_resource.png)
 
 This will open a new resource page where you can describe the resource. Most elements are optional, but at a minimum, you should enter the **resource type** (select *Document, Technical* from the drop down), the title including subtitle (*The Analysis of Household Surveys: A Microeconometric Approach to Development Policy*), the author (Angus Deaton), and the date (in ISO format: 2019-01-16). To provide users with access to the book, add the external permanent link (http://documents.worldbank.org/curated/en/593871468777303124) to the document in **Resource attachment**. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_url_resource_attachement.png)
+![image](img/ME_UG_v1-0-0_quick_start_url_resource_attachement.png)
 
 Then click SAVE. The document will now be listed as an external resource.
 
 With this, you have completed the documentation of the book. The "Projects" page will show this new entry. You may at any time go back to it to edit or complete the metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_project_page_with_project.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_project_page_with_project.png)
 
 
 **Step 4: Export and publish metadata**
 
 When you open this project, a menu of options is available to you. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_actions.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_actions.png)
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_actions_menu.png)
 
 
 ***Export package (ZIP)***
@@ -87,23 +87,23 @@ This option will allow you to generate a ZIP file containing all metadata and re
 
 Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_action_JSON_exported.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_action_JSON_exported.png)
 
 
 ***Generate a PDF version of the metadata***
 
 A PDF verion of the metadata can be automatically created. Select **PDF documentation** then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_exported_to_PDF.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_exported_to_PDF.png)
 
 
 ***Publish metadata in a NADA catalog***
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH. 
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_action_export_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_action_export_to_NADA.png)
 
 The book will now be listed and made discoverable in the NADA catalog.
 
-![image](https://github.com/mah0001/metadata-editor-docs-v2/blob/main/img/ME_UG_v1-0-0_quick_start_document_Deaton_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_document_Deaton_in_NADA.png)
 
