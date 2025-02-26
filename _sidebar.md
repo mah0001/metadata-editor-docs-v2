@@ -18,14 +18,14 @@
  
 * Quick start
   
-    * [Quick start overview](quick-start_overview.md)
-    * [Quick start (document)](quick-start_document.md)
-    * [Quick start (indicator)](quick-start_indicator.md)
-    * [Quick start (microdata)](quick-start_microdata.md)
-    * [Quick start (geographic dataset)](quick-start_geographic.md)
-    * [Quick start (image)](quick-start_image.md)
-    * [Quick start (video)](quick-start_video.md)
-    * [Quick start (scripts)](quick-start_script.md)
+    * [Quick start overview](quick_start_overview.md)
+    * [Quick start (document)](quick_start_document.md)
+    * [Quick start (indicator)](quick_start_indicator.md)
+    * [Quick start (microdata)](quick_start_microdata.md)
+    * [Quick start (geographic dataset)](quick_start_geographic.md)
+    * [Quick start (image)](quick_start_image.md)
+    * [Quick start (video)](quick_start_video.md)
+    * [Quick start (scripts)](quick_start_script.md)
 
 * Metadata templates
    
