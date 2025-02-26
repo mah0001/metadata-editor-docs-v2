@@ -15,5 +15,9 @@ Running on PC
 
 Compatibility with browsers:
 
+License
+
+
+
 
 
