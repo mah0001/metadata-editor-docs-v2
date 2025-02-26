@@ -11,8 +11,7 @@
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation](tech_installation.md)
     * [Upgrading](tech_upgrading.md)
-    * [Setting roles and permissions](tech_roles_permissions.md)
-
+    
 * Login, logout, password
 
     * [Login, logout, and password](user_login.md)  
@@ -34,10 +33,11 @@
    * [Designing templates](templates_design.md)
    * [Administrative metadata templates](templates_administrative.md)
 
-* Managing projects and collections
+* Managing projects, collections, and users
   
    * [Managing projects](managing_projects.md)
    * [Managing collections](managing_collections.md)
+   * [Setting roles and permissions](tech_roles_permissions.md)
 
 * Documenting data
 
