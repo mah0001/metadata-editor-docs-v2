@@ -77,3 +77,7 @@
 * Providing feedback
 
     * [Feedback and contacts](feedback.md)
+ 
+* Useful resources
+
+    * [Resources and links](useful_resources.md)
