@@ -56,8 +56,8 @@
 
 * Publishing data and metadata 
 
-    * [Publish metadata](publish_metadata.md)
-    * [Publish data](publish_data.md)
+    * [Publish to NADA](publish_to_nada.md)
+    * [Publish to other platforms](publish_to_other_platforms.md)
    
 * Tools for administrators
 
