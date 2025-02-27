@@ -63,11 +63,14 @@ It offers the following options:
 - **Public use files** Registered users will be able to download the data after accepting a disclaimer statement. 
 - **Licensed data files** Registered users will have to submit a request for accessing the data, which will be processed by the NADA administrators. Data will be available for download after the user has been approved.
 - **Data accessible only in data enclave** Data are not accessible from the NADA catalog. They are only accessible on-site. When this option is selected, the microdata file(s) should not be published to NADA.
-- **Data accessible from external repository** Data are not accessible from the NADA catalog but from an external website. When this option is selected, the microdata file(s) should not be published to NADA. The URL to the external catalog must be provided (see below).
+- **Data accessible from external repository** Data are not accessible from the NADA catalog but from an external website. When this option is selected, the microdata file(s) should not be published to NADA. The URL to the external catalog must be provided.
+- 
+  ![image](img/ME_UG_v1-0-0_publish_to_nada_data_access_external_repository.png)
+  
 - **Data not available** Data are not accessible from the NADA catalog or from any other source. When this option is selected, the microdata file(s) should not be published to NADA.
 - **Open access** Data are accessible under an open license (the most permissive option).
 
-![image](img/ME_UG_v1-0-0_publish_to_nada_data_access_external_repository.png)
+
 
 
 
