@@ -56,7 +56,7 @@ If you want to make your data files available to users in your NADA catalog, you
 
 A specific data access policy will be applied to all external resources identified as *microdata*. The ***Data access*** option provided in the **Publish to NADA** page is where you control how visitors of the NADA catalog will be able to access the data files. 
 
-![image](ME_UG_v1-0-0_publish_to_nada_data_access_options.png)
+![image](img/ME_UG_v1-0-0_publish_to_nada_data_access_options.png)
 
 It offers the following options:
 - **Direct access** Users will be able to download the data after accepting a disclaimer statement. No registration is needed.
@@ -67,7 +67,7 @@ It offers the following options:
 - **Data not available** Data are not accessible from the NADA catalog or from any other source. When this option is selected, the microdata file(s) should not be published to NADA.
 - **Open access** Data are accessible under an open license (the most permissive option).
 
-![image](ME_UG_v1-0-0_publish_to_nada_data_access_external_repository.png)
+![image](img/ME_UG_v1-0-0_publish_to_nada_data_access_external_repository.png)
 
 
 
