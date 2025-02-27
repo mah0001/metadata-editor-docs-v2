@@ -8,7 +8,7 @@ Publishing metadata to NADA requires a NADA API key with permissions to publish 
 
 **API keys must always be kept strictly confidential. Your permissions and roles are embedded in the key; by sharing your API key, you would share your permissions. If you accidentally share or publish your key (for example in a script), you should immediately DELETE the key and issue a new one (in your Prifile page in NADA).**
 
-ME_UG_v1-0-0_publish_to_nada_generate_api_key.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_generate_api_key.png)
 
 If you have a NADA API key that grants you permission to publish your metadata (and possibly data) in NADA, you will have to first configure a data catalog (the one in which you plan to publish the metadata) in the Metadata Editor. Then you can publish metadata from any project to the NADA catalog.
 
@@ -16,15 +16,15 @@ If you have a NADA API key that grants you permission to publish your metadata (
 
 In the project page of a project you own, co-own, or collaborate on, click on Publish to NADA in the project main menu. 
 
-ME_UG_v1-0-0_publish_to_nada_menu_publish.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_menu_publish.png)
 
 In the **Catalog** frame, you will have the option to *Select* a NADA catalog among those you will have configured. If you have not configured any catalog yet, or to add a new one, click on **Configure new catalog**.
 
-ME_UG_v1-0-0_publish_to_nada_configure_link.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_configure_link.png)
 
 The catalog configuration page will be displayed, where you must enter a short name for your catalog, its URL, and your NADA API key (which must be kept strictly confidential). 
 
-ME_UG_v1-0-0_publish_to_nada_configure_new_catalog.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_configure_new_catalog.png)
 
 
 ## Publishing metadata in NADA
@@ -35,7 +35,7 @@ To publish metadata in NADA, click on "Publish to NADA" in the Project page menu
 - ***Data access*** You may publish your data in NADA, and set the access policy for the dataset. See the next section.
 - ***Collection*** If the selected NADA catalog contains collections, this option allows you to select the collection in which you want to publish your metadata. A list of collections (if any) available in the selected NADA catalog will be displayed as a drop-down menu. The project will then be "owned" by this collection. Note that a same project can be shown in multiple collections in a NADA catalog; only one collection will "own" (and administer) the project, the others will only "borrow" it. Publishing a project in multiple collections is done in NADA, not in the Metadata editor.  
 
-ME_UG_v1-0-0_publish_to_nada_publish_frame_1.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_publish_frame_1.png)
 
 In the **External resources** frame, select the files you want to upload to NADA. the files will be accessible to the visitors of the NADA catalog. Indicate whether you want to overwrite the files if they are already found in the NADA catalog.
 
@@ -46,6 +46,6 @@ In **Options**, select what information you want to publish:
 
 Then click **PUBLISH**. If your metadata is valid (contains mo validation errors), and your API key provides you with the necessary privileges on the NADA catalog, the metadata and related materials will now be published in the catalog. 
   
-ME_UG_v1-0-0_publish_to_nada_publish_frame_2.png
+![image](img/ME_UG_v1-0-0_publish_to_nada_publish_frame_2.png)
 
 ## Publishing metadata in NADA
