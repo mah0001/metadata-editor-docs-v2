@@ -199,7 +199,9 @@ Some elements apply to all data types, some are specific to the data type.
 
   ![image](img/ME_UG_v1-0-0_documenting_general_apply_default_values_options.png)
   
-- ***Import project metadata***
+- ***Import project metadata*** This option will allow you to select a metadata file (JSON) and import its content in your project. For microdata, you will be provided with an option to select the components of the metadata you want to import.
+
+  ![image](img/ME_UG_v1-0-0_documenting_general_import_project_metadata.png)
 
 - ***Import external resources*** This option allows you to import an external resource that has been exported from another project as a RDF/JSON file (see below). Select the RDF/JSON file and click IMPORT FILE.
 
