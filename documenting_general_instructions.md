@@ -151,9 +151,7 @@ DataCite is a service that offers Fabrica as a DOI and metadata management servi
 
 ![image](img/ME_UG_v1-0-0_documenting_general_data_cite.png)
 
-
 ***Provenance***
-
 
 
 ***Administrative metadata***
@@ -171,11 +169,13 @@ Some elements apply to all data types, some are specific to the data type.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
 
-- ***Export package***
+- ***Export package*** A project contains the metadata you enter, the data files you may have imported (for microdata), the project thumbnail, and possibly external resources of different types. The Metadata Editor stores this information in a database and on the webserver that hosts the Editor. You may export a *package* that contains all materials related to the project. This package will consist of a ZIP file containing all files (including the metadata you entered, even if you did not export them). The ZIp file can be archived, or shared. A package can be imported in the Metadata Editor.     
 
-- ***Export DDI Codebook*** (applies to project of type *microdata* only)
+- ***Export DDI Codebook*** This option ony applies to project of type *microdata*. It will generate a DDI Codebook file (XML format) containing the metadata, **not including** the external resources. 
 
-- ***Export JSON***
+- ***Export JSON*** This option applies to project of all types. It will generate a metadata file in JSON format. The file will contain the core metadata and other components based on the options you will select: including external resources, including metadata elements marked as *private* in the metadata template,  and including the administrative metadata.
+
+  ![image](img/ME_UG_v1-0-0_documenting_general_json_export_options.png)
 
 - ***Export MSD (SDMX/XML 3.0)*** (applies to project of type *indicator* only)
 
@@ -183,36 +183,40 @@ Some elements apply to all data types, some are specific to the data type.
 
 - ***Lock & version** 
 
-- ***Publish to NADA***
+- ***Publish to NADA*** This option allows you to publish your metadata (and related materials, optionally including data) to a NADA catalog. See chapter **Publish to NADA** for more information.
 
-- ***PDF documentation***
+- ***PDF documentation*** This option will generate a formatted PDF document containing the project metadata.
 
-- ***Change log***
+- ***Change log*** This option will open a page that shows all actions taken o the project, with identification of who took the action (change log). This option can be used to undo some actions.
+    
+  ![image](img/ME_UG_v1-0-0_documenting_general_change_log.png)
+
+  ![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
 - ***Diagnostic***
 
-- ***Applying default values from template***
+- ***Applying default values from template*** If the template used for documenting the dataset contains default values, this option will allow you to apply them to your project. Default values are not imputed in a project unless this option is selected. When you apply default value, you will be offered to apply default values to all metadata elements for which a default value exists, or only to metadata elements that do not contain any information (this option will protect information you may have entered against overwriting).
 
+  ![image](img/ME_UG_v1-0-0_documenting_general_apply_default_values_options.png)
+  
 - ***Import project metadata***
 
-- ***Import external resources***
+- ***Import external resources*** This option allows you to import an external resource that has been exported from another project as a RDF/JSON file (see below). Select the RDF/JSON file and click IMPORT FILE.
 
-- ***Export RDF/XML***
+- ***Export RDF/XML*** This option will export the metadata related to the external resources as an RDF/XML file.
 
-- ***Export RDF/JSON***
+- ***Export RDF/JSON*** This option will export the metadata related to the external resources as an RDF/JSON file.
 
 
 ## Help ##
+
+The metadata entry pages will show a [?] icon next to the title of all metadata elements. Clicking on this icon will show the instructions for the element, extracted from the selected metadata template.
+
+![image](img/ME_UG_v1-0-0_documenting_general_help_button.png)
 
 
 ## Canceling changes (Undo) ##
 
 ![image](img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
 
-
-## Change log ##
-
-![image](img/ME_UG_v1-0-0_documenting_general_change_log.png)
-
-![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
