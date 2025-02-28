@@ -100,6 +100,10 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ## File manager ##
 
+![image](img/ME_UG_v1-0-0_documenting_general_files_documentation.png)
+
+![image](img/ME_UG_v1-0-0_documenting_general_files_list.png)
+
 
 
 ## Common elements in the navigation tree 
