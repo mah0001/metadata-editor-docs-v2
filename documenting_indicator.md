@@ -25,13 +25,15 @@ The technical description of the JSON schema used for the documentation of indic
 For documenting external resources, a template based on the Dublin Core standard is used. See sections **General instructions** and **External resources**.
 
 
-## Create a project
+## Documenting the indicator
+
+### Create a project
 
 The first step in documenting an indicator is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. Select *Indicator* as data type. This will open a new, untitled *project home page*. 
 
 In that page, select the Template you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on *Switch template* in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
-## Document the indicator
+## Describe the indicator
 
 Refer to the general instructions for instructions on components common to all data types.
 Refer to the Guide to data Curators.
@@ -39,24 +41,27 @@ Print a copy of the template, or use the Help icons.
 
 ### Metadata information
 
+The **Metadata information** section of the navigation tree contains elements intended to document the metadata being generated ("metadata about the metadata"). All content in this section is optional; it is however good and recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the Document description provides transparency and clarity on the origin of the metadata.
 
 ### Indicator description
 
 The documentation of an indicator is a straightforward process. The navigation tree provides access to various metadata entry pages where the information about the indicator can be captured.
 
+Consult the *Guide to Data Curators* or print the Metadata Editor template for instructions on the content of each metadata element. 
+
 Some fields may require looking at the datafiles:
-- Geographic coverage: copy/paste if possible. Only include countries/geographies for which data are available (do not copy/paste a code list of countries).
-- Time coverage: enter the minimum and maximum only, even if there are missing values in between.
-  
-AI can help:
-- Keywords
-- Definition
-- Relevance
-- Specificity of the definition
+- **Geographic coverage**: If your data are related to a single country, the information can easily be entered manually. If you have a multi-country database of indicators, the best option to fill this element is to tabulate your data by country, with the country code and country name included in the table. You may then copy/paste the columns containing the country code and country name in the Metadata Editor. Only include in the list the countries/geographies for which data are available for the indicator. Do not copy/paste a standard code list.
+- **Time coverage**: Enter the range of rime (minimum and maximum) for which data are available. 
 
-Database ID: important for link to database-level metadata
+You may take advantage of generative AI tools like ChatGPT or equivalent to suggest content for selected fields. For example, generative AI can help:
+- Suggest **keywords** (ask ChatGPT to "Please suggest 20 keywords related to an indicator titled (*enter the title of the indicator here*) defined as (*enter the definition of the indicator here*).
+- Propose a **definition** (ask ChatGPT to either *Suggest a definition for a statistical indicator titled (...)*) or to *Improve the following definition of a statistical indicator titled (title) and currently defined as (definition)*. 
+- Propose a description of the indicator's **relevance** (ask ChatGPT to either *Please describe the relevance of a statistical indicator titled (...) and defined as (definition). In the description, indicate to whom and for what purposes the indicator is relevant.* 
+Do not blindly accept suggestions formulated by AI models. Carefully review and improve (or reject) the proposed content.
 
-Enter formulas (if template allows)
+The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
+
+By default, all elements of a metadata standards will contain unformatted text. If the template allows it, some elements may however include formulas or formatted text. Formulas must be entered using the LaTex language. Formatted text may be HTML or markdown formatted text. 
 
 ### DataCite
 
