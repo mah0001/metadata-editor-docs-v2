@@ -199,9 +199,9 @@ The icons shown on top of the variable list perform the following actions on var
 ![image](img/ME_UG_v1-0-0_documenting_microdata_value_labels_copy_paste_menu.png)
 
 
-- **Variabe information**
+- **Variable information**
 
-The **Variable information** frame provides options to taga variable as being a sample weight, to edit the type of the variable, the range, and the format of the data it contains, and to inform the application of values to be rteated as missing values.   
+The **Variable information** frame provides options to tag a variable as being a sample weight, to edit the type of the variable, the range, and the format of the data it contains, and to inform the application of values to be treated as missing values.   
 ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_information.png)
 
    - ***Is weight***
@@ -277,12 +277,12 @@ The Metadata Editor allows you to view the content of the data files, by clickin
 
 ### Variable groupings
 
-Variables in a dataset are automatically grouped by data file. But for the convenience of users, they can also be grouped based on other criteria, e.g., by theme. These groupings will not alter the data structure in any way; variable goupings are strictly virtual. UIn this virtual grouping system:
+Variables in a dataset are automatically grouped by data file. But for the convenience of users, they can also be grouped based on other criteria, e.g., by theme. These groupings will not alter the data structure in any way; variable groupings are strictly virtual. In this virtual grouping system:
 - A variable can belong to more than a group
 - Not all variables need to belong to a group
 - A group can include variables from multiple files
 
-Variable groups can be very useful for data discoverability, if variables are grouped by theme and if variable groups are defined. For example, a group of variables containing variables *age in month*, *sex*, *wheight in grams*, and *height in cm* could be created and named "Anthropometric measures*, with a description informing users that these variables could be used to generate indicators like percentage of children stunting or wasting. This metadata, when indexed in data catalog, will improve the discoverability of the data by adding useful semantic content to the description of variables.
+Variable groups can be very useful for data discoverability, if variables are grouped by theme and if variable groups are defined. For example, a group of variables containing variables *age in month*, *sex*, *weight in grams*, and *height in cm* could be created and named "Anthropometric measures*, with a description informing users that these variables could be used to generate indicators like percentage of children stunting or wasting. This metadata, when indexed in data catalog, will improve the discoverability of the data by adding useful semantic content to the description of variables.
 
 To group variables:
 - Create a group (or subgroup) and give it a name.

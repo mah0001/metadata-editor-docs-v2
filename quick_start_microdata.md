@@ -45,6 +45,7 @@ Then browse the navigation tree and find the most appropriate elements for each 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_study_description_save.png)
 
 The metadata elements in the template maps to the content of the Excel file as follows: 
+
 | In Excel file             | In the metadata template                        | 
 | ------------------------- | ----------------------------------------------- | 
 | Title                     | Identification / Title                          | 
@@ -207,5 +208,5 @@ If you have a NADA catalog and the credentials to publish content in it, you can
 
 The dataset will now be listed and made discoverable in the NADA catalog. The microdata will be available to users, under the access policy you selected.
 
-![image](img/ME_UG_v1-0-0_quick_start_microdata_microdata_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_microdata_in_NADA.png)
 
