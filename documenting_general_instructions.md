@@ -110,6 +110,10 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ***Home and preview***
 
+**Home** opens the project home page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
+
+**Preview** shows all metadata entered for the project in one single page, in a non-editable page.
+
 
 ***Information on metadata (or Document description)***
 
@@ -152,6 +156,12 @@ DataCite is a service that offers Fabrica as a DOI and metadata management servi
 ![image](img/ME_UG_v1-0-0_documenting_general_data_cite.png)
 
 ***Provenance***
+
+ Projects can easily be shared across organizations. They can be shrared by tranferring ZIP packages or via API. When a project is published in a catalog like NADA, a project can be imported into the Metadata Editor from the NADA catalog using the API. This means that projects found in an instance of the Metadata Editor are not always created in tht same instance of the application. When projects are obtained from an external source, it is important to keep track of (i) from where the project originated, and (ii) from where the project was imported, which may be different from the originating repository. To maintain traceability, all metadata standards supported by the Metadata EEditor include a common *Provenance* section with two main components: (i) original repository, and (ii) source repository.  
+
+![image](img/ME_UG_v1-0-0_documenting_general_provenance.png)
+
+The goal is to preserve information on at least the name, URL, and identifier of the original catalog, and the name, URL, identifier of the repository from which the project was imported, and its identifier and date/time when it was harvested.   
 
 
 ***Administrative metadata***
