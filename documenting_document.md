@@ -1,2 +1,270 @@
 # Documenting a publication of report
 
+Documents in a data catalog can appear as “data” in the catalog, or as “related resources” attached to other datasets. The schema we describe here is the schema used for documents that will be listed as catalog entries and made searchable, not those that will be attached to datasets as external resources and for which the “external resource” metadata schema must be used (see Documenting: general instrictions").
+
+Librarians have developed specific standards to describe and catalog documents. The [MARC 21](https://www.loc.gov/marc/bibliographic/) (**MA**chine-**R**eadable **C**ataloging) standard used by the United States Library of Congress is one of them. It provides a detailed structure for documenting bibliographic resources, and is the recommended standard for well-resourced document libraries.
+
+For the purpose of cataloguing documents in a less-specialized repository intended to accommodate data of multiple types, we built our schema on a simpler but also highly popular standard, the **Dublin Core Metadata Element Set**. We will refer to this metadata specification, developed by the [Dublin Core Metadata Initiative](https://dublincore.org/), as the *Dublin Core*. The Dublin Core became an ISO standard (ISO 15836) in 2009. It consists of a list of fifteen core metadata elements, to which more specialized elements can be added. These fifteen elements, with a definition extracted from the Dublin Core [website](https://dublincore.org/), are the following:
+
+|No | Element name         | Description                                                     | 
+|-- | -------------------- | --------------------------------------------------------------- | 
+|1  | contributor          | An entity responsible for making contributions to the resource. |
+|2  | coverage             | The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. |
+|3  | creator              | An entity primarily responsible for making the resource.         |
+|4  | date                 | A point or period of time associated with an event in the life cycle of the resource. |
+|5  | description          | An account of the resource. |
+|6  | format               | The file format, physical medium, or dimensions of the resource. |
+|7  | identifier           | An unambiguous reference to the resource within a given context. |
+|8  | language             | A language of the resource.                                      |
+|9  | publisher            | An entity responsible for making the resource available.         |
+|10 | relation             | A related resource.                                              |
+|11 | rights               | Information about rights held in and over the resource.          |
+|12 | source               | A related resource from which the described resource is derived. |
+|13 | subject              | The topic of the resource.                                       |
+|14 | title                | A name given to the resource.                                    |
+|15 | type                 | The nature or genre of the resource.                             |
+
+Due to its simplicity and versatility, this standard is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC 21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
+
+MARC 21 and the Dublin Core are used to document a resource (typically, the electronic file containing the document) and its content. Another schema, [BibTex](https://en.wikipedia.org/wiki/BibTeX), has been developed for the specific purpose of recording bibliographic citations. BibTex is a list of fields that may be used to generate bibliographic citations compliant with different bibliography styles. It applies to documents of multiple types: books, articles, reports, etc.  
+
+The metadata schema we propose to document publications and reports is a combination of Dublin Core, MARC 21, and BibTex elements. The technical documentation of the schema and its API is available at https://ihsn.github.io/nada-api-redoc/catalog-admin/#tag/Documents.
+
+## Documenting the publication or report
+
+### Create a project
+
+The first step in documenting a publication or report is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. Select *Document* as data type. This will open a new, untitled project *home page*. 
+
+In that page, edit the thumbnail and replace it with a screenshot of the document cover page (recommended, not required).
+
+Then select (in the *Template* frame) the project template you want to use to document the publication or report. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
+
+### Enter metadata
+
+The proposed schema comprises two main blocks of elements, **`metadata_information`** and **`document_description`**. It also contains the `tags` element common to all our schemas. The `repository_id`, `published` and `overwrite` items in the schema are not metadata elements *per se*, but parameters used when publishing the metadata in a NADA catalog. 
+
+#### Metadata information
+
+The **`metadata_information`** section contains information not related to the document itself but to its metadata. In other words, it contains "metadata on the metadata". This information is optional but we recommend to enter content at least in the `name` and `date` sub-elements, which indicate who generated the metadata and when. This information is not useful to end-users of document catalogs, but is useful to catalog administrators for two reasons:
+
+  - metadata compliant with standards are intended to be shared and used by inter-operable applications. Data catalogs offer opportunities to harvest (pull) information from other catalogs, or to publish (push) metadata in other catalogs. Metadata information helps to keep track of the provenance of metadata.
+  
+  - metadata for a same document may have been generated by more than one person or organization, or one version of the metadata can be updated and replaced with a new version. The `metadata information` helps catalog administrators distinguish and manage different versions of the metadata.
+
+#### Document description
+
+The **`document_description`** block contains the metadata elements used to describe the document. We provide below instructions or recommendations for some of the metadata elements of the metadata schema.
+
+The `title_statement` is a required group of five elements, two of which are required:
+
+- **`idno`** (Required): A unique identifier of the document, which serves as the "primary ID". `idno` is a unique identification number used to identify the database. A unique identifier is required for cataloguing purpose, so this element is declared as "Required". The identifier will allow users to cite the indicator/series properly. The identifier must be unique within the catalog. Ideally, it should also be globally unique; the recommended option is to obtain a Digital Object Identifier (DOI) for the study. Alternatively, the `idno` can be constructed by an organization using a consistent scheme. Note that the schema allows you to provide more than one identifier for a same study (in element `identifiers`); a catalog-specific identifier is thus not incompatible with a globally unique identifier like a DOI. The `idno` should not contain blank spaces.
+- **`title`** (Required): The title of the book, report, paper, or other document. Pay attention to the use of capitalization in the title, to ensure consistency across documents listed in your catalog. Pay attention to the consistent use of capitalization in the title. It is recommended to use sentence capitalization.  
+- **`sub_title`**: The document subtitle can be used when there is a need to distinguish characteristics of a document. Pay attention to the consistent use of capitalization in the subtitle. 
+- **`alternate_title`**: An alternate version of the title, possibly an abbreviated version. For example, the World Bank’s World Development Report is often referred to as the WDR; the alternate title for the “World Development Report 2021” could then be “WDR 2021”.<br>
+- **`translated_title`**: A translation of the title of the document. Special characters should be properly displayed, such as accents and other stress marks or different alphabets.<br>
+    
+- **`authors`**: The authors should be listed in the same order as they appear in the source itself, which is not necessarily alphabetical.
+  - **`first_name`** The first name of the author. <br>
+  - **`initial`** The initials of the author. <br>
+  - **`last_name`** The last name of the author. <br>
+  - **`affiliation`** The affiliation of the author. <br>
+  - **`author_id`** The author ID in a registry of academic researchers such as the [Open Researcher and Contributor ID (ORCID)](https://orcid.org/). <br>
+     - **`type`** The type of ID, i.e. the identification of the registry that assigned the author's identifier, for example "ORCID". <br>
+     - **`id`** The ID of the author in the registry mentioned in `type`.<br><br>
+  - **`full_name`** The full name of the author. This element should only be used when the first and last name of an author cannot be distinguished, i.e. when elements `first_name` and `last_name` cannot be filled out. This element can also be used when the author of a document is an organization or other type of entity.
+
+- - **`editors`** If the source is a text within an edited volume, it should be listed under the name of the author of the text used, not under the name of the editor. The name of the editor should however be provided in the bibliographic citation, in accordance with a [reference style](https://awelu.srv.lu.se/sources-and-referencing/using-a-reference-style/elements-of-the-reference-list/). 
+  - **`first_name`** The first name of the editor.<br>
+  - **`initial`** The initials of the editor.<br>
+  - **`last_name`** The last name of the editor.<br>
+  - **`affiliation`** The affiliation of the editor.<br><br>
+
+- **`date_created`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was produced. This can be different from the date the document was published, made available, and from the temporal coverage. The document "Nigeria - Displacement Report" by the International Organization for Migration (IOM) shown below provides an example of this. The document was produced in November 2020 (`date_created`), refers to events that occurred between 21 September and 10 October 2021 (`temporal_coverage`), and was published (`date_published`) on 28 January 2021. 
+
+- **`date_available`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was made available. This is different from the date it was published (see element `date_published` below). This element will not be used frequently. 
+
+- **`date_modified`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was last modified. 
+
+- **`date_published`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was published.
+
+- **`identifiers`** This element is used to enter document identifiers (IDs) other than the catalog ID entered in the `title_statement` (`idno`). It can for example be a Digital Object Identifier (DOI), an International Standard Book Number (ISBN), or an International Standard Serial Number (ISSN). The ID entered in the `title_statement` can be repeated here (the `title_statement` does not provide a `type` parameter; if a DOI, ISBN, ISSN, or other standard reference ID is used as `idno`, it is recommended to repeat it here with the identification of its `type`). 
+  - **`type`** The type of identifier, for example "DOI", "ISBN", or "ISSN".
+  - **`identifier`** The identifier itself. <br><br>
+
+- **`type`** This describes the nature of the resource. It is recommended practice to select a value from a controlled vocabulary, which could for example include the following options: "article", "book", "booklet", "collection", "conference proceedings", "manual", "master thesis", "patent", "PhD thesis", "proceedings", "technical report", "working paper", "website", "other". Specialized agencies may want to create their own controlled vocabularies; for example, a national statistical agency may need options like "press release", "methodology document", "protocol", or "yearbook". The `type` element can be used to create a "Document type" facet (filter) in a data catalog. If the controlled vocabulary is such that it contains values that are not mutually exclusive (i.e. if a document could possibly have more than one type), the element `type` cannot be used as it is not repeatable. In such case, the solution is to provide the type of document as `tags`, in a `tag_group` that could for example be named *type* or *document_type*. Note also that the Dublin Core provides a controlled vocabulary (the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)) for the `type` element, but this vocabulary is related to the types of resources (dataset, event, image, software, sound, etc.), not the type of document which is what we are interested in here. 
+
+- **`status`** The status of the document. The status of the document should (but does not have to) be provided using a controlled vocabulary, for example with the following options: "first draft", "draft", "reviewed draft", "final draft", "final". Most documents published in a catalog will likely be "final".
+
+- **`description`** This element is used to provide a brief description of the document (not an abstract, which would be provided in the field `abstract`). It should not be used to provide content that is contained in other, more specific elements. As stated in the [Dublin Core Usage Guide](https://www.dublincore.org/specifications/dublin-core/usageguide/elements/), "Since the `description` field is a potentially rich source of indexable terms, care should be taken to provide this element when possible. Best practice recommendation for this element is to use full sentences, as description is often used to present information to users to assist in their selection of appropriate resources from a set of search results." 
+
+- **`toc`** The table of content of the document, provided as a single string element, i.e. with no structure (an structured alternative is provided with the field `toc_structured` described below). This element is also a rich source of indexable terms which can contribute to document discoverability; care should thus be taken to use it (or the `toc_structured` alternative) whenever possible.
+
+- **`toc_structured`** This element is used as an alternative to `toc` to provide a <u>structured</u> table of content. The element contains a repeatable block of sub-elements which provides the possibility to define a hierarchical structure:
+  - **`id`** A unique identifier for the element of the table of content. For example, the `id` for Chapter 1 could be "1" while the `id` for section 1 of chapter 1 would be "11".
+  - **`parent_id`** The `id` of the parent section (e.g., if the table of content is divided into chapters, themselves divided into sections, the `parent_id` of a section would be the id of the chapter it belongs to.)
+  - **`name`** The label of this section of the table of content (e.g., the chapter or section title)
+
+- **`abstract`** The abstract is a summary of the document, usually about one or two paragraph(s) long (around 150 to 300 words).
+
+- **`scope`** A textual description of the topics covered in the document, which complements (but does not duplicate) the elements `description` and `topics` available in the schema.
+
+- **`ref_country`** The list of countries (or regions) covered by the document, if applicable. This is a repeatable block of two elements:
+  - **`name`** The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with.
+  - **`code`** The country/region code. It is recommended to use a standard list of countries codes, such as the [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+The field `ref_country` will often be used as a filter (facet) in data catalogs. When a document is related to only part of a country, we still want to capture this information in the metadata. For example, the `ref_country` element for the document ["Sewerage and sanitation : Jakarta and Manila"](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/880091468095971513/sewerage-and-sanitation-jakarta-and-manila) will list "Indonesia" (code IDN) and "Philippines" (code PHL). 
+
+  Considering the importance of the geographic coverage of a document as a filter, the `ref_country` element deserves particular attention. The document title will often but not always provide the necessary information. Using R, Python or other programming languages, a list of all countries mentioned in a document can be automatically extracted, with their frequencies. This approach (which requires a lookup file containing a list of all countries in the world with their different denominations and spelling) can be used to extract the information needed to populate the `ref_country` element (not all countries in the list will have to be included; some threshold can be set to only include countries that are "significantly" mentioned in a document). Tools like the R package [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) are available to facilitate this process.   
+
+  When a document is related to a region (not to specific countries), or when it is related to a topic but not a specific geographic area, the `ref_country` might still be applicable. Try and extract (possibly using a script that parses the document) information on the countries mentioned in the document. For example, `ref_country` for the World Bank document ["The investment climate in South Asia"](http://documents1.worldbank.org/curated/en/242391468114239381/pdf/715140v10ESW0P0Climate0I0OCR0Needed.pdf) should include Afghanistan (mentioned 81 times in the document), Bangladesh (113), Bhutan (94), India (148), Maldives (62), Nepal (64), Pakistan (103), and Sri Lanka (98), but also China (not a South-Asian country, but mentioned 63 times in the document).
+
+  If a document is not specific to any country, the element `ref_country` would be ignored (not included in the metadata) if the content of the document is not related to any geographic area (for example, the user's guide of a software application), or would contain "World" (code WLD) if the document is related but not specific to countries (for example, a document on "Climate change mitigation").
+
+- **`geographic_units`** A list of geographic units covered in the document, other than the countries listed in `ref_country`.
+  - **`name`** The name of the geographic unit.
+  - **`code`** The code of the geographic unit.
+  - **`type`** The type of the geographic unit (e.g., "province", "state", "district", or "town").<br>
+
+- **`bbox`** This element is used to define one or multiple geographic bounding box(es), which are the rectangular fundamental geometric description of the geographic coverage of the data. A bounding box is defined by west and east longitudes and north and south latitudes, and includes the largest geographic extent of the dataset’s geographic coverage. The bounding box provides the geographic coordinates of the top left (north/west) and bottom-right (south/east) corners of a rectangular area. This element can be used in catalogs as the first pass of a coordinate-based search. The valid range of latitude in degrees is -90 and +90 for the southern and northern hemisphere, respectively. Longitude is in the range -180 and +180 specifying coordinates west and east of the Prime Meridian, respectively. This element will rarely be used for documenting publications. Bounding boxes are an optional element, but when a bounding box is defined, all four coordinates are required. 
+
+- **`spatial_coverage`** This element provides another space for capturing information on the spatial coverage of a document, which complements the `ref_country`, `geographic_units`, and `bbox` elements. It can be used to qualify the geographic coverage of the document, in the form of a free text. For example, a report on refugee camps in the Cox's Bazar district of Bangladesh would have Bangladesh as reference country, "Cox's Bazar" as a geographic unit, and "Rohingya's refugee camps" as spatial coverage. 
+
+- **`temporal_coverage`** Not all documents have a specific time coverage. When they do, it can be specified in this element.
+  
+- **`publication_frequency`** Some documents are published regularly. The frequency of publications can be documented using this element. It is recommended to use a controlled vocabulary, for example the [PRISM Publishing Frequency Vocabulary](http://prismstandard.org/vocabularies/3.0/pubfrequency.xml) which identifies standard publishing frequencies for a serial or periodical publication.
+
+   | Frequency    | Description                       |
+   |--------------|-----------------------------------|
+   | annually     | Published once a year             |
+   | semiannually | Published twice a year            |
+   | quarterly    | Published every 3 months, or once a quarter|
+   | bimonthly    | Published twice a month           |
+   | monthly      | Published once a month            |
+   | biweekly     | Published twice a week            |
+   | weekly       | Published once a week             |
+   | daily        | Published every day               |
+   | continually  | Published continually as new content is added; typical of websites and blogs, typically several times a day|
+   | irregularly  | Published on an irregular schedule, such as every month except July and August|
+   | other        | Published on another schedule not enumerated in this controlled vocabulary |
+
+- **`languages`** The language(s) in which the document is written. For the language codes and names, the use of the ISO 639-2 standard is recommended. This is a block of two elements (at least one must be provided for each language):
+  - **`name`** The name of the language.
+  - **`code`** The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.
+
+- **`license`** Information on the license(s) attached to the document, which defines the terms of use.
+  - **`name`** The name of the license (e.g., CC-BY 4.0).
+  - **`uri`** The URL of the license, where detailed information on the license can be obtained.
+ 
+- **`bibliographic_citation`** The bibliographic citation provides relevant information about the author and the publication. When using the element `bibliographic_citation`, the citation is provided as a single item. It should be provided in a standard style: Modern Language Association ([MLA](https://www.mla.org/)), American Psychological Association ([APA](https://apastyle.apa.org/)), or [Chicago](https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/chicago_manual_of_style_17th_edition.html). Note that the schema provides an itemized list of all elements (BibTex fields) required to build a citation in a format of their choice. 
+  - **`style`** The citation style, e.g. "MLA", "APA", or "Chicago".
+  - **`citation`** The citation in the style mentioned in `style`. <br><br>
+
+  The elements that are required to form a complete bibliographic citation depend on the type of document. The table below, adapted from the [BibTex templates](https://www.bibtex.com/format/), provides a list of required and optional fields by type of document:
+
+   | Document type                      | Required fields                   | Optional fields                      |
+   |------------------------------------|-----------------------------------|--------------------------------------|
+   | Article from a journal or magazine | author, title, journal, year  | volume, number, pages, month, note, key  |
+   | Book with an explicit publisher    | author or editor, title, publisher, year | volume, series, address, edition, month, note, key  |
+   | Printed and bound document without a named publisher or sponsoring institution | title  | author, howpublished, address, month, year, note, key  |
+   | Part of a book (chapter and/or range of pages) | author or editor, title, chapter and/or pages, publisher, year | volume, series, address, edition, month, note, key  |
+   | Part of a book with its own title | author, title, book title, publisher, year | editor, pages, organization, publisher, address, month, note, key  |
+   | Article in a conference proceedings | author, title, book title, year | editor, pages, organization, publisher, address, month, note, key  |
+   | Technical documentation | title | author, organization, address, edition, month, year, key  |
+   | Master's thesis | author, title, school, year | address, month, note, key  |
+   | Ph.D. thesis | author, title, school, year | address, month, note, key  |
+   | Proceedings of a conference | title, year | editor, publisher, organization, address, month, note, key  |
+   | Report published by a school or other institution, usually numbered within a series | author, title, institution, year | type, number, address, month, note, key |  
+   | Document with an author and title, but not <br>formally published | author, title, note | month, year, key |
+
+  - **`chapter`** A chapter (or section) number. This element is only used to document a resource which has been extracted from a book.   
+  - **`edition`** The edition of a book - for example "Second". When a book has no edition number/name present, it can be assumed to be a first edition. If the edition is other than the first, information on the edition of the book being documented must be mentioned in the citation. The edition can be identified by a number, a label (such as “Revised edition” or “Abridged edition”), and/or a year. The first letter of the label should be capitalized.
+  - **`institution`** The sponsoring institution of a technical report. For citations of Master's and Ph.D. thesis, this will be the name of the school.
+  - **`journal`** A journal name. Abbreviations are provided for many journals.
+  - **`volume`** The volume of a journal or multi-volume book. Periodical publications, such as scholarly journals, are published on a regular basis in installments that are called issues. A volume usually consists of the issues published during one year.
+  - **`number`** The number of a journal, magazine, technical report, or of a work in a series. An issue of a journal or magazine is usually identified by its `volume` (see previous element) and `number`; the organization that issues a technical report usually gives it a number; and sometimes books are given numbers in a named series.
+  - **`pages`** One or more page numbers or range of numbers, such as 42-111 or 7,41,73-97 or 43+ (the `+' indicates pages following that don't form a simple range).
+  - **`series`** The name of a series or set of books. When citing an entire book, the title field gives its title and an optional series field gives the name of a series or multi-volume set in which the book is published.
+  - **`publisher`** The entity responsible for making the resource available. For major publishing houses, the information can be omitted. For small publishers, providing the complete address is recommended. If the company is a university press, the abbreviation UP (for University Press) can be used. The publisher is not stated for journal articles, working papers, and similar types of documents.
+  - **`publisher_address`** The address of the publisher. For major publishing houses, just the city is given. For small publishers, the complete address can be provided.
+  - **`annote`** An annotation. This element will not be used by standard bibliography styles like the MLA, APA or Chicago, but may be used by others that produce an annotated bibliography.
+  - **`booktitle`** Title of a book, part of which is being cited. If you are documenting the book itself, this element will not be used; it is only used when <u>part of a book</u> is being documented. 
+  - **`crossref`** The catalog identifier ("database key") of another catalog entry being cross referenced. This element may be used when multiple entries refer to a same publication, to avoid duplication. 
+  - **`howpublished`** The `howpublished` element is used to store the notice for unusual publications. The first word should be capitalized. For example, "WebPage", or "Distributed at the local tourist office". 
+  - **`key`** A key is a field used for alphabetizing, cross referencing, and creating a label when the `author' information is missing. 
+  - **`organization`** The organization that sponsors a conference or that publishes a manual.
+  - **`url`** The URL of the document, preferably a permanent URL.
+
+- **`translators`** Information on translators, for publications that are translations of publication originally created in another language.
+  - **`first_name`** The first name of the translator.
+  - **`initial`** The initials of the translator.
+  - **`last_name`** The last name of the translator.
+  - **`affiliation`** The affiliation of the translator. <br>
+
+- **`contributors`** These elements are used to acknowledge contributions to the production of the document, other than the ones for which specific metadata elements are provided (like `autors` or `translators`).
+  - **`first_name`** The first name of the contributor.
+  - **`initial`** The initials of the contributor.
+  - **`last_name`** The last name of the contributor. If the contributor is an organization, enter the name of the organization here.
+  - **`affiliation`** The affiliation of the contributor. 
+  - **`contribution`** A brief description of the specific contribution of the person to the document, e.g. "Design of the cover page", or "Proofreading".<br> 
+
+- **`contacts`** Contact information for a person or organization that can be contacted for inquiries related to the document.
+  - **`name`** The name of the contact. This can be a person or an organization..
+  - **`role`** The specific role of the person or organization mentioned in `contact`.
+  - **`affiliation`** The affiliation of the contact person. 
+  - **`email`** The email address of the contact person or organization. Personal emails should be avoided.<br> 
+  - **`telephone`** The telephone number for the contact person or organization. Personal phone numbers should be avoided.<br> 
+  - **`uri`** A link to an on-line resource related to the contact person or organization.<br> 
+
+- **`rights`** A statement on the rights associated with the document (others than the copyright, which should be described in the element `copyright` described below). 
+
+- **`copyright`** A statement and identifier indicating the legal ownership and rights regarding use and re-use of all or part of the resource. If the document is protected by a copyright, enter the information on the person or organization who owns the rights.
+
+- **`usage_terms`** This element is used to provide a description of the legal terms or other conditions that a person or organization who wants to use or reproduce the document has to comply with. 
+
+- **`disclaimer`** A disclaimer limits the liability of the author(s) and/or publisher(s) of the document. A standard legal statement should be used for all documents from a same agency. 
+
+- **`security_classification`** Information on the security classification attached to the document. The different levels of classification indicate the degree of sensitivity of the content of the document. This field should make use of a controlled vocabulary, specific or adopted by the organization that curates or disseminates the document. Such a vocabulary could contain the following levels: `public, internal only, confidential, restricted, strictly confidential` 
+
+- **`access_restrictions`** A textual description of access restrictions that apply to the document.
+
+- **`keywords`** A list of keywords that provide information on the core content of the document. Keywords provide a convenient solution to improve the discoverability of the document, as it allows terms and phrases not found in the document itself to be indexed and to make a document discoverable by text-based search engines. A controlled vocabulary can be used (although not required), such as the [UNESCO Thesaurus](http://vocabularies.unesco.org/browser/thesaurus/en/). The list provided here can combine keywords from multiple controlled vocabularies and user-defined keywords.  
+  - **`name`** The keyword itself.
+  - **`vocabulary`** The controlled vocabulary (including version number or date) from which the keyword is extracted, if any.
+  - **`uri`** The URL of the controlled vocabulary from which the keyword is extracted, if any.<br>
+
+- **`themes`** A list of themes covered by the document. A controlled vocabulary will preferably be used. The list provided here can combine themes from multiple controlled vocabularies and user-defined themes. Note that `themes` will rarely be used as the elements `topics` and `disciplines` are more appropriate for most uses. This is a block of five fields:
+  - **`id`** The ID of the theme, taken from a controlled vocabulary.
+  - **`name`** The name (label) of the theme, preferably taken from a controlled vocabulary.
+  - **`parent_id`** The parent ID of the theme (ID of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
+  - **`uri`** The URL to the controlled vocabulary used, if any. <br>
+
+- **`topics`**Information on the topics covered in the document. A controlled vocabulary will preferably be used, for example the [CESSDA Topics classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification), a typology of topics available in 11 languages; or the [Journal of Economic Literature (JEL) Classification System](https://en.wikipedia.org/wiki/JEL_classification_codes), or the [World Bank topics classification](https://documents.worldbank.org/en/publication/documents-reports/docadvancesearch). The list provided here can combine topics from multiple controlled vocabularies and user-defined topics. The element is a block of five fields: 
+  - **`id`** The identifier of the topic, taken from a controlled vocabulary.
+  - **`name`** The name (label) of the topic, preferably taken from a controlled vocabulary.
+  - **`parent_id`** The parent identifier of the topic (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
+  - **`uri`** The URL to the controlled vocabulary used, if any.
+ 
+- **`disciplines`** Information on the academic disciplines related to the content of the document. A controlled vocabulary will preferably be used, for example the one provided by the list of academic fields in [Wikipedia](https://en.wikipedia.org/wiki/List_of_academic_fields). The list provided here can combine disciplines from multiple controlled vocabularies and user-defined disciplines. This is a block of five elements: 
+  - **`id`** The identifier of the discipline, taken from a controlled vocabulary.
+  - **`name`** The name (label) of the discipline, preferably taken from a controlled vocabulary.
+  - **`parent_id`** The parent identifier of the discipline (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
+  - **`uri`** The URL to the controlled vocabulary used, if any.<br><br>
+
+- **`audience`** Information on the intended audience for the document, i.e. the category or categories of users for whom the resource is intended in terms of their interest, skills, status, or other.
+
+- **`mandate`** The legislative or other mandate under which the resource was produced.
+
+- **`pricing`** The current price of the document in any defined currency. As this information is subject to regular change, it will often not be included in the document metadata.
+
+- **`relations`** References to related resources with a specification of the type of relationship.
+  - **`name`** The related resource. Recommended practice is to identify the related resource by means of a URL. If this is not possible or feasible, a string conforming to a formal identification system may be provided.
+  - **`type`** The type of relationship. The use of a controlled vocabulary is recommended. The Dublin Core proposes the following vocabulary: {`isPartOf, hasPart, isVersionOf, isFormatOf, hasFormat, references, isReferencedBy, isBasedOn, isBasisFor, replaces, isReplacedBy, requires, isRequiredBy`}.<br>
+
+
+
+
+
+
