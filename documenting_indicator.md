@@ -114,7 +114,7 @@ A data structure definition consists of providing the following information abou
 - ***Codelist reference:***
 
 
-### Provenance ###
+### Provenance
 
 The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
 
