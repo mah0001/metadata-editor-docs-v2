@@ -271,6 +271,29 @@ The field `ref_country` will often be used as a filter (facet) in data catalogs.
   - **`type`** The type of relationship. The use of a controlled vocabulary is recommended. The Dublin Core proposes the following vocabulary: {`isPartOf, hasPart, isVersionOf, isFormatOf, hasFormat, references, isReferencedBy, isBasedOn, isBasisFor, replaces, isReplacedBy, requires, isRequiredBy`}. 
 
 
+#### DataCite
+
+See section "Documenting - General instructions".
+
+#### Tags
+
+See section "Documenting - General instructions".
+
+
+#### Provenance 
+
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
+
+
+#### External resources
+
+External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
+
+External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
+
+External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
+
+
 
 
 
