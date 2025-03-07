@@ -112,10 +112,13 @@ The frame **Collections** in the project Home page will show the list of collect
 
 **Home** opens the project home page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
 
+
 **Preview** shows all metadata entered for the project in one single page, in a non-editable page.
 
 
 ***Information on metadata (or Document description)***
+
+All metadata standards and schemas supported by the Metadata Editor include a set of elements intended to document the metadata itself. This set of elements is found in section *Document description* in the DDI (microdata), and *Metadata information* for other types of data. Although these elements are all optional, it is good practice to enter content in this section, if only on the author of the metadata and on the date it was generated. This information is not useful to the data users, but will be useful to catalog administrators to ensure traceability of the information stored in the metadata.
 
 
 ***Tags***
@@ -203,7 +206,7 @@ Some elements apply to all data types, some are specific to the data type.
 
   ![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
-- ***Diagnostic***
+- ***Diagnostic*** This option will open an HTML page that provides a diganostic of the metadata for the project. The disgnostic will cover both the issues of required or recommended information that may be missing, errors in schema and template validation (also shown in the project Home page), and diagnostic based on other criteria based on good practice. 
 
 - ***Applying default values from template*** If the template used for documenting the dataset contains default values, this option will allow you to apply them to your project. Default values are not imputed in a project unless this option is selected. When you apply default value, you will be offered to apply default values to all metadata elements for which a default value exists, or only to metadata elements that do not contain any information (this option will protect information you may have entered against overwriting).
 
