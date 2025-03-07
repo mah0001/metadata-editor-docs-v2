@@ -65,9 +65,11 @@ By default, all elements of a metadata standards will contain unformatted text. 
 
 ### DataCite
 
+See section "Documenting - General instructions".
 
 ### Tags
 
+See section "Documenting - General instructions".
 
 ### Data structure definition
 
@@ -114,7 +116,7 @@ A data structure definition consists of providing the following information abou
 
 ### Provenance ###
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability.
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
 
 
 ### External resources
