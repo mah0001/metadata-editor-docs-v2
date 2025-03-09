@@ -68,6 +68,8 @@ These elements are included in the default template for the DCMI option.
 
 Create a new project by clicking on CREATE NEW PROJECT in the *My projects* page, and select option *Image* as data type.
 
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_create_new_project_type_selection.png)
+
 In the new *project home page*, select a DCMI template (one DCMI template is provided with the application).
 
 ![image](img/ME_UG_v1-0-0_documenting_image_dcmi_project_home_page.png)
@@ -91,17 +93,27 @@ Edit the thumbnail by selecting an image. It is highly recommended to select the
 
 ### Fill out the *License* section
 
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_license.png)
+
 
 ### Fill out the *Albums* section
+
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_album.png)
 
 
 ### Fill out the *Tags* section
 
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_tags.png)
+
 
 ### Add the external resources
 
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_external_resources.png)
+
 
 ### Add information on provenance
+
+![image](img/ME_UG_v1-0-0_documenting_image_dcmi_provenance.png)
 
 
 ### Save and export metadata
@@ -282,18 +294,26 @@ The `sceneCodes` describe the scene of a photo content. The [IPTC Scene-NewsCode
 
 ### Fill out the *License* section
 
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_license.png)
+
 
 ### Fill out the *Albums* section
+
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_album.png)
 
 
 ### Fill out the *Tags* section
 
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_tags.png)
+
 
 ### Add the external resources
 
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_external_resources.png)
 
 ### Add information on provenance
 
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_provenance.png)
 
 ### Save and export metadata
 
