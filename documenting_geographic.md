@@ -4,14 +4,11 @@
 
 To make geographic information discoverable and to facilitate their dissemination and use, the ISO Technical Committee on Geographic Information/Geomatics (ISO/TC211) created a set of metadata standards to describe geographic **datasets** (ISO 19115), geographic **data structures** (ISO 19115-2 / ISO 19110), and geographic **data services** (ISO 19119). These standards have been "unified" into a common XML specification (ISO 19139). This set of standards, known as the ISO 19100 series, served as the cornerstone of multiple initiatives to improve the documentation and management of geographic information such as the [Open Geospatial Consortium (OGC)](https://www.ogc.org/), the [US Federal Geographic Data Committee (FDGC)](https://www.fgdc.gov/), the [European INSPIRE directive](https://inspire.ec.europa.eu), or more recently the [Research Data Alliance (RDA)](https://rd-alliance.org/), among others.
 
-The ISO 19100 standards have been designed to cover the large scope of geographic information. The level of detail they provide goes beyond the needs of most data curators. What we present in this Guide is a subset of the standards, which focuses on what we consider as the core requirements to describe and catalog geographic datasets and services. References and links to resources where more detailed information can be found are provided in appendix.
-
+The ISO 19100 standards have been designed to cover the large scope of geographic information. The level of detail they provide goes beyond the needs of most data curators. What we use in the Metadata Editor is a subset of the standards, which focuses on what we consider as the most relevant metadata elements to describe and catalog geographic datasets and services. 
                                                   
-## Geographic information metadata standards
+Geographic information metadata standards cover three types of resources: (i) datasets (which can be of vector or raster type), (ii) data structure definitions, and (iii) data services. Each one of these three components is the object of a specific standard. To support their implementation, a common XML specification (ISO 19139) covering the three standards has been developed. The geographic metadata standard is however a very complex standard. Its use requires expertise not only in data documentation, but also in the use of geospatial data. We provide in this chapter some information that readers who are not familiar with geographic data may find useful to better understand the purpose and use of the geographic metadata standards.
 
-Geographic information metadata standards cover three types of resources: i) datasets, ii) data structure definitions, and iii) data services. Each one of these three components is the object of a specific standard. To support their implementation, a common XML specification (ISO 19139) covering the three standards has been developed. The geographic metadata standard is however, by far, the most complex and "specialized" of all schemas described in this Guide. Its use requires expertise not only in data documentation, but also in the use of geospatial data. We provide in this chapter some information that readers who are not familiar with geographic data may find useful to better understand the purpose and use of the geographic metadata standards.
-
-### Documenting geographic datasets - The ISO 19115 standard
+## Documenting geographic datasets - The ISO 19115 standard
 
 **Geographic datasets** "identify and depict geographic locations, boundaries and characteristics of features on the surface of the earth. They include geographic coordinates (e.g., latitude and longitude) and data associated to geographic locations (...)". (Source: https://www.fws.gov/gis/)
 
@@ -24,7 +21,7 @@ The ISO 19115 standard defines the structure and content of the metadata to be u
    - https://gisgeography.com/spatial-data-types-vector-raster/
    - https://datacarpentry.org/organization-geospatial/02-intro-vector-data/index.html]
 
-**Vector data** 
+### Vector data 
 
 Vector data are comprised of **points**, **lines**, and **polygons** (areas). 
 
@@ -48,7 +45,7 @@ The figure below provides an example of vector data extracted from [Open Street 
 ![image](img/ME_UG_v1-0-0_documenting_geographic_vector_OSM.png)
 
 
-**Raster data**
+### Raster data
 
 **Raster data** are made up of pixels, also referred to as *grid cells*. Satellite imagery and other remote sensing data are raster datasets. Grid cells in raster data are usually (but not necessarily) regularly-spaced and square. Data stored in a raster format is arranged in a grid without storing the coordinates of each cell (pixel). The coordinates of the corner points and the spacing of the grid can be used to calculate (rather than to store) the coordinates of each location in a grid.
 
@@ -60,11 +57,7 @@ The difference between vector and raster data, and between different types of ve
 
 ![image](img/ME_UG_v1-0-0_documenting_geographic_vector_raster.png)
 
-In GIS applications, vector and raster data are often combined into multi-layer datasets, as shown in the figure below extracted from the [County of San Bernardino (US) website](http://sbcounty.gov/). 
-
-![image](img/ME_UG_v1-0-0_documenting_geographic_GIS_layers.png)
-
-We may occasionally want to convert raster data into vector data. For example, a building footprint layer (vector data, composed of polygons) can be derived from a satellite image (raster data). Such conversions can be implemented in a largely automated manner using machine learning algorithms. 
+Raster data are sometimes converted into vector data. For example, a building footprint layer (vector data, composed of polygons) can be derived from a satellite image (raster data). Such conversions can be implemented in a largely automated manner using machine learning algorithms. 
 
 ![image](img/ME_UG_v1-0-0_documenting_geographic_image_to_vector.png)
 
@@ -97,17 +90,24 @@ The example below shows the spatial distribution of the Ethiopian population in 
 ![image](img/ME_UG_v1-0-0_documenting_geographic_worldpop_ethiopia.png)
 
 
-### Describing data structures - The ISO 19115-2 and ISO 19110 standards
+### Combining vector and raster data in GIS applications
+
+In GIS applications, vector and raster data are often combined into multi-layer datasets, as shown in the figure below extracted from the [County of San Bernardino (US) website](http://sbcounty.gov/). 
+
+![image](img/ME_UG_v1-0-0_documenting_geographic_GIS_layers.png)
+
+
+## Describing data structures - The ISO 19115-2 and ISO 19110 standards
 
 The ISO 19115-2 provides the necessary metadata elements to describe the structure of raster data. The ISO 19115-1 standard does not provide all necessary metadata elements needed to describe the structure of vector datasets. The description of data structures for vector data (also referred to as *feature types*) is therefore often omitted. The ISO 19110 standard solves that issue, by providing the means to document the structure of vector datasets (column names and definitions, codes and value labels, measurement units, etc.), which will contribute to making the data more discoverable and usable.
 
 
-### Describing data services - The ISO 19119 standard
+## Describing data services - The ISO 19119 standard
 
 More and more data are disseminated not in the form of datasets, but as data services via web applications. "Geospatial services provide the technology to create, analyze, maintain, and distribute geospatial data and information." (https://www.fws.gov/gis/) The ISO 19119 standard provides the elements to document such services.
 
 
-### Unified metadata specification - The ISO/TS 19139 standard
+## Unified metadata specification - The ISO/TS 19139 standard
 
 The three metadata standards previously described - ISO 19115 for vector and raster datasets, ISO 19110 for vector data structures, and ISO 19119 for data services, provide a set of concepts and definitions useful to describe the geographic information. To facilitate their practical implementation, a digital specification, which defines how this information is stored and organized in an electronic metadata file, is required. The ISO/TS 19139 standard, an XML specification of the ISO 19115/10110/19119/, was created for that purpose.
 
@@ -115,15 +115,39 @@ The ISO/TS 19139 is a standard used worldwide to describe geographic information
 
 ISO 19139-compliant metadata can be generated and edited using specialized metadata editors such as [CatMDEdit](http://catmdedit.sourceforge.net/) or [QSphere](https://www.fgdc.gov/organization/working-groups-subcommittees/mwg/iso-metadata-editors-registry/qsphere), or using programmatic tools like Java Apache SIS or the R packages [geometa](https://cran.r-project.org/web/packages/geometa/index.html) and [geoflow](https://github.com/eblondel/geoflow), among others.
 
-The ISO 19139 specification is complex. To enable and simplify its use in our NADA cataloguing application, we produced a JSON version of (part of) the standard. We selected the elements we considered most relevant for our purpose, and organized them into the JSON schema described below. For data curators with limited expertise in XML and geographic data documentation, this JSON schema will make the production of metadata compliant with the ISO 19139 standard easier. 
-
+The ISO 19139 specification is complex. To enable and simplify its use in the Metadata Editor and NADA cataloguing applications, we produced a JSON version of (part of) the standard. We selected the elements we considered most relevant for our purpose, and organized them into the JSON schema described below. For data curators with limited expertise in XML and geographic data documentation, this JSON schema will make the production of metadata compliant with the ISO 19139 standard easier. 
 
 ## Documenting a geographic vector dataset
+
+To document a geographic vector dataset in the Metadata Editor, it is recommended to use a metadata template developed for vector dataset. A template for vector dataset is included in the Metadata Editor, which can be customized using the Template Manager.
+
+### Prepare/extract information
+### Create a project
+### Import data
+### Add metadata
+### Generate gallery
 
 
 ## Documenting a geographic raster dataset
 
+To document a geographic raster dataset in the Metadata Editor, it is recommended to use a metadata template developed for raster dataset. A template for raster dataset is included in the Metadata Editor, which can be customized using the Template Manager.
+
+### Prepare/extract information
+### Create a project
+### Import data
+### Add metadata
+### Generate gallery
+
 
 ## Documenting a geographic data service
 
+To document a geographic data service in the Metadata Editor, it is recommended to use a metadata template developed for geographic data service. A template for geographic data service is included in the Metadata Editor, which can be customized using the Template Manager.
+
+### Prepare/extract information
+### Create a project
+### Add metadata
+### Generate gallery
+
+
+## Generating metadata using geometa (R package)
 
