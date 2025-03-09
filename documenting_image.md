@@ -147,7 +147,7 @@ Edit the thumbnail by selecting an image. It is highly recommended to select the
 
 ### Fill out the sections under IPTC
 
-![image](img/ME_UG_v1-0-0_documenting_image_iptc_image_description.png)
+![image](img/ME_UG_v1-0-0_documenting_image_iptc_metadata.png)
 
 
 The `sceneCodes` describe the scene of a photo content. The [IPTC Scene-NewsCodes](http://cv.iptc.org/newscodes/scene) controlled vocabulary (published under a Creative Commons Attribution (CC BY) 4.0 license) should be used, where a scene is represented as a string of 6 digits.<br>
