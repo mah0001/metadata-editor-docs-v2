@@ -26,3 +26,6 @@ Video Recordings: Speech-to-text algorithms allow the automatic transcription of
 
 The technical documentation of the metadata standards supported by the Metadata Editor is available at https://worldbank.github.io/metadata-schemas/ where structures and information on each metadata element are provided.
 
+This User Guide is licensed under a Creative Commons Attribution- NonCommercial- NoDerivatives 4.0 International License. See https://creativecommons.org/licenses/by-nc-nd/4.0/ 
+
+![image](img/ME_UG_v1-0-0_introduction_cc_by_logo.png)
