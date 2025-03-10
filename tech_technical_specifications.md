@@ -1,9 +1,11 @@
 # Technical specifications
 
 Developed in PHP x
-Framework:
+Framework: 
 Libraries:
 Use Python X in background:
+
+ViewJS for user interface
 
 Internationalization:
 
