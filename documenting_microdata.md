@@ -177,7 +177,6 @@ The icons shown on top of the variable list perform the following actions on var
    
    - ***Delete selection:*** The Metadata Editor is not a data editor; data files cannot be modified, with the exception that variables can be deleted from a data file. This option is provided to drop variables like temporary variables or direct identifiers that may have been accidentally left in the data files. To drop variables, select them in the variable list (using the Shift and Ctrl key as useful to select multiple variables), then click on the **Delete selection** icon. 
 
-
 - **Variable categories** (value labels)
   
   When the data are imported, the Metadata Editor makes a best guess about their type. If a variable is identified as categorical, the *Variable categories* will be automatically populated with codes and value labels. These codes and labels can be edited in the *Variable categories* frame. Codes can also be added if necessary.
@@ -298,7 +297,7 @@ To group variables:
 
 ### Provenance ###
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability.
+The **Provenance** container is used to document how, from where, and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions" for more information.
 
 
 ### External resources
@@ -308,6 +307,8 @@ External resources are all materials (and links) that relate to the dataset. Thi
 External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
 
 External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
+
+See also section "Documentation - General instructions".
 
 
 ### Importing metadata ###
