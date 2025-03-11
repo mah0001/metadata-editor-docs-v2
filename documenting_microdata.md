@@ -66,7 +66,7 @@ The DDI Codebook metadata standard used to document microdata has the following 
 - **Variable description:** The section contains the documentation of each variable, with elements like variable name and label, value labels, literal questions and interviwer instructions, universe, summary statistics, and more.
 - **Variable groups:** This optional section provides a way to organize variables into groups other than the data files, e.g., grouping of variables by theme. Variable grouping is intended to increase the convenience to users, and possibly the online discoverability of data (if useful group descriptions are provided).
 
-![image](img/ME_UG_v1-0-0_documenting_microdata_DDI_containers.png)
+   ![image](img/ME_UG_v1-0-0_documenting_microdata_DDI_containers.png)
 
 The container **Tags** is not part of the DDI Codebook standard. It is a container that has been added to all metadata standards used by the Metadata Editor. Refer to **General instructions** for information on tags.
 
@@ -308,7 +308,7 @@ External resources that have already been created for another project can also b
 
 External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
 
-See also section "Documentation - General instructions".
+See also chapter **General instructions**.
 
 
 ### Importing metadata ###
@@ -335,5 +335,29 @@ Spreading metadata consists of copying the metadata for one or multiple variable
 ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_spread_metadata.png)
 
 
+### Exporting metadata
+
+The project options menu allows you to export the metadata into different formats:
+
+![image](img/ME_UG_v1-0-0_documenting_microdata_import_metadata_menu_access.png)
+
+![image](img/ME_UG_v1-0-0_documenting_microdata_export_metadata.png)
+
+- **Export package (ZIP)**: A project contains the metadata you enter, the data files you may have imported (for microdata), the project thumbnail, and possibly external resources of different types. The Metadata Editor stores this information in a database and on the webserver that hosts the Editor. You may export a *package* that contains all materials related to the project. This package will consist of a ZIP file containing all files (including the metadata you entered, even if you did not export them). The ZIP file can be archived, or shared. A package can be imported in the Metadata Editor. 
+- **Export DDI Codebook**: This option will generate a DDI Codebook 2.5 file (XML format) containing the metadata, **not including** the metadata related to external resources. 
+- **Export JSON**: This option will generate a metadata file in JSON format. The file will contain the core metadata and other components based on the options you will select: including external resources, including metadata elements marked as *private* in the metadata template,  and including the administrative metadata.
+- **PDF documentation**: This option will generate a formatted PDF document containing the project metadata, including metadata on external resources.
+- **Export RDF/XML**: This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / XML file.
+- **Export RDF/JSON**: This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / JSON file.
+
+
+### Change log
+
+This option will open a page that shows all actions taken on the project, with identification of who took the action (change log). This option can be used to undo some actions. See chapter **General instructions** for more information.
+
+
+### Publish to NADA
+
+This option in the Project home page options menu allows you to publish your metadata (and related materials, optionally including data) to a NADA catalog. See chapter **Publish to NADA** for more information.
 
 
