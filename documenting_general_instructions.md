@@ -182,45 +182,45 @@ Some elements apply to all data types, some are specific to the data type.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
 
-- ***Export package*** A project contains the metadata you enter, the data files you may have imported (for microdata), the project thumbnail, and possibly external resources of different types. The Metadata Editor stores this information in a database and on the webserver that hosts the Editor. You may export a *package* that contains all materials related to the project. This package will consist of a ZIP file containing all files (including the metadata you entered, even if you did not export them). The ZIp file can be archived, or shared. A package can be imported in the Metadata Editor.     
+- ***Export package*** A project contains the metadata you enter, the data files you may have imported (for microdata), the project thumbnail, and possibly external resources of different types. The Metadata Editor stores this information in a database and on the webserver that hosts the Editor. You may export a *package* that contains all materials related to the project. This package will consist of a ZIP file containing all files (including the metadata you entered, even if you did not export them). The ZIP file can be archived, or shared. A package can be imported in the Metadata Editor.     
 
-- ***Export DDI Codebook*** This option ony applies to project of type *microdata*. It will generate a DDI Codebook file (XML format) containing the metadata, **not including** the external resources. 
+- ***Export DDI Codebook*** This option ony applies to project of type *microdata*. It will generate a DDI Codebook file (XML format) containing the metadata, **not including** the metadata related to external resources. 
 
 - ***Export JSON*** This option applies to project of all types. It will generate a metadata file in JSON format. The file will contain the core metadata and other components based on the options you will select: including external resources, including metadata elements marked as *private* in the metadata template,  and including the administrative metadata.
 
   ![image](img/ME_UG_v1-0-0_documenting_general_json_export_options.png)
 
-- ***Export MSD (SDMX/XML 3.0)*** (applies to project of type *indicator* only)
+- ***Export MSD (SDMX/XML 3.0):*** (applies to project of type *indicator* only)
 
-- ***Export Metadataset (SDMX/JSON)*** (applies to project of type *indicator* only)
+- ***Export Metadataset (SDMX/JSON):*** (applies to project of type *indicator* only)
 
-- ***Lock & version** 
+- ***Lock & version:** 
 
-- ***Publish to NADA*** This option allows you to publish your metadata (and related materials, optionally including data) to a NADA catalog. See chapter **Publish to NADA** for more information.
+- ***Publish to NADA:*** This option allows you to publish your metadata (and related materials, optionally including data) to a NADA catalog. See chapter **Publish to NADA** for more information.
 
-- ***PDF documentation*** This option will generate a formatted PDF document containing the project metadata.
+- ***PDF documentation:*** This option will generate a formatted PDF document containing the project metadata, including metadata on external resources.
 
-- ***Change log*** This option will open a page that shows all actions taken o the project, with identification of who took the action (change log). This option can be used to undo some actions.
+- ***Change log:*** This option will open a page that shows all actions taken on the project, with identification of who took the action (change log). This option can be used to undo some actions.
     
   ![image](img/ME_UG_v1-0-0_documenting_general_change_log.png)
 
   ![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
-- ***Diagnostic*** This option will open an HTML page that provides a diganostic of the metadata for the project. The disgnostic will cover both the issues of required or recommended information that may be missing, errors in schema and template validation (also shown in the project Home page), and diagnostic based on other criteria based on good practice. 
+- ***Diagnostic:*** This option will open an HTML page that provides a diganostic of the metadata for the project. The disgnostic will cover both the issues of required or recommended information that may be missing, errors in schema and template validation (also shown in the project Home page), and diagnostic based on other criteria based on good practice. 
 
-- ***Applying default values from template*** If the template used for documenting the dataset contains default values, this option will allow you to apply them to your project. Default values are not imputed in a project unless this option is selected. When you apply default value, you will be offered to apply default values to all metadata elements for which a default value exists, or only to metadata elements that do not contain any information (this option will protect information you may have entered against overwriting).
+- ***Applying default values from template:*** If the template used for documenting the dataset contains default values, this option will allow you to apply them to your project. Default values are not imputed in a project unless this option is selected. When you apply default value, you will be offered to apply default values to all metadata elements for which a default value exists, or only to metadata elements that do not contain any information (this option will protect information you may have entered against overwriting).
 
   ![image](img/ME_UG_v1-0-0_documenting_general_apply_default_values_options.png)
   
-- ***Import project metadata*** This option will allow you to select a metadata file (JSON) and import its content in your project. For microdata, you will be provided with an option to select the components of the metadata you want to import.
+- ***Import project metadata:*** This option will allow you to select a metadata file (JSON) and import its content in your project. For microdata, you will be provided with an option to select the components of the metadata you want to import.
 
   ![image](img/ME_UG_v1-0-0_documenting_general_import_project_metadata.png)
 
-- ***Import external resources*** This option allows you to import an external resource that has been exported from another project as a RDF/JSON file (see below). Select the RDF/JSON file and click IMPORT FILE.
+- ***Import external resources:*** This option allows you to import an external resource that has been exported from another project as a RDF/JSON file (see below). Select the Resource Description Framework (RDF) / JSON file and click IMPORT FILE.
 
-- ***Export RDF/XML*** This option will export the metadata related to the external resources as an RDF/XML file.
+- ***Export RDF/XML:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / XML file.
 
-- ***Export RDF/JSON*** This option will export the metadata related to the external resources as an RDF/JSON file.
+- ***Export RDF/JSON:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / JSON file.
 
 
 ## Help ##
