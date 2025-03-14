@@ -36,31 +36,49 @@ You can now start entering the metadata related to the project itself. In the na
 
 Then proceed with the other sections in the navigation tree and fill out the following elements. 
 
-- ****: 
-- **** (in ISO format YYYY-MM-DD): 
+- **Identifier**: create/enter your own identifier
+- **Title**: Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers
+- **Date**: October 2024 (2024-10 in ISO format)
+- **Website**: https://github.com/worldbank/double-jeopardy-in-llms
+- **Authors**: Aivin V. Solatorio, Gabriel Stefanini Vicente, Holly Krambeck, Olivier Dupriez (all affiliated with the World Bank)
 - **Abstract** *(extracted from the working paper)*: Artificial Intelligence (AI), particularly large language models (LLMs), holds the potential to bridge language and information gaps, which can benefit the economies of developing nations. However, our analysis of FLORES-200, FLORES+, Ethnologue, and World Development Indicators data reveals that these benefits largely favor English speakers. Speakers of languages in low-income and lower-middle-income countries face higher costs when using OpenAI's GPT models via APIs because of how the system processes the input -- tokenization. Around 1.5 billion people, speaking languages primarily from lower-middle-income countries, could incur costs that are 4 to 6 times higher than those faced by English speakers. Disparities in LLM performance are significant, and tokenization in models priced per token amplifies inequalities in access, cost, and utility. Moreover, using the quality of translation tasks as a proxy measure, we show that LLMs perform poorly in low-resource languages, presenting a double jeopardy of higher costs and poor performance for these users. We also discuss the direct impact of fragmentation in tokenizing low-resource languages on climate. This underscores the need for fairer algorithm development to benefit all linguistic groups.
-- ****: 
-- ****: 
-- ****: 
-- ****: 
-- ****: 
+- **Geographic coverage**: World (WLD) 
+- **Keywords**: Large Language Models (LLMs), Low-resource languages, Inequity in access, Tokenization
+- **Project output**: Working paper published on ArXiv, titled "Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers", by Aivin V. Solatorio, Gabriel Stefanini Vicente, Holly Krambeck, and Olivier Dupriez. Absrtact of the output is same as abstract for the project.
+- **Data**: The list of datasets used in the project is provided in the GitHub repository:
+  -  ***FLORES-200 and FLORES+*** : A multilingual dataset covering 100 languages, with 1,000 sentences per language. Used for evaluating translation quality and computing the tokenization premium relative to English. (URL: https://github.com/facebookresearch/flores)
+  -  ***Ethnologue*** : Provides linguistic data, including the number of speakers, geographic distribution, and writing systems. We use Ethnologue to estimate the number of speakers for each language. (URL: https://www.ethnologue.com/)
+  -  ***World Bank, World Development Indicators (WDI)*** : Contains socio-economic data at the country level. Specifically, we use the GDP per capita in current US$ (NY.GDP.PCAP.CD) and the annual population growth rates (SP.POP.GROW) indicators to compute the population-weighted GDP for each language and for aligning population estimates to 2022 based on historical figures from Ethnologue. (URL: https://datacatalog.worldbank.org/dataset/world-development-indicators)
+  -  ***OpenAI GPT-4o and GTP-4 Turbo APIs*** : Used to assess the reduced utility of LLMs for non-English speakers. We applied translation with different prompting methods to generate reference translations for FLORES sentences. The LLM translated non-English sentences into English, with the original English sentences serving as a benchmark for evaluating translation quality. (URL: https://openai.com/api/)
+- **Software**: Python 3.0 
+- **Scripts**: Python notebooks (all under Mozilla Mozilla Public License / URL: https://www.mozilla.org/en-US/MPL/):
+  - ***Tokenization of FLORES dataset*** (compute-premium-costs.ipynb): Computes the tokenization premium for the FLORES dataset. The calculation of the population-weighted GDP for each language is also done in this notebook.
+  - ***Back-translation task for the FLORES dataset*** (back-translation-task.ipynb): Generates the back-translation task for the FLORES dataset. The notebook implements the batched translation strategy for the translation task and uses the OpenAI GPT-4o API.
+  - ***Additional analysis of the results (analysis.ipynb)***: Notebook for additional analysis of the results. Key visualizations are generated in this notebook, including the comparison of the tokenization premiums between two different tokenizers (GPT-4o vs. GPT-4 Turbo).
+- **Technology environment and requirement**: This work has been developed using a MacBook Pro with an M1 Pro processor and 64GB of RAM. No GPU is needed for the computations. Access to the OpenAI API is required.
+- **Instructions for reproducibility**:  
+- **Github repo**: double-jeopardy-in-llms (URL: https://github.com/worldbank/double-jeopardy-in-llms/tree/main)
+- **Licensing**: Mozilla Public License (URL: https://www.mozilla.org/en-US/MPL/)
 
-| From arXiv or GitHub      | In the metadata template                                                  | 
+This information is entered in the metadata template as follows:  
+
+| Information               | In the metadata template                                                  | 
 | ------------------------- | ------------------------------------------------------------------------- | 
-| ID                        |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
-|                           |                                                                           |
+| Identifier                | Project description / Title statement / Primary ID                        |
+| Title                     | Project description / Title statement / Title                             |
+| Website                   | Project description / Title statement / Project website                   |
+| Date                      | Project description / Version statement / Project completion date         |
+| Authors                   | Project description / Authors and contributors / Authoring entity         |
+| Abstract                  | Project description / Scope and coverage / Abstract                       |
+| Geographic coverage       | Project description / Scope and coverage / Geographic areas               |
+| Keywords                  | Project description / Scope and coverage / Keywords                       |
+| Project output            | Project description / Processes and output / Output                       |
+| Data                      | Project description / Data / Datasets                                     |
+| Software                  | Project description / Methods, Software and scripts / Software            |
+| Scripts                   | Project description / Methods, Software and scripts / Scripts             |
+| GitHub repo               | Project description / Methods, Software and scripts / Repository          |
+| Licensing                 | Project description / Access and rights / License                         |
+
 
 After entering all available information, click on SAVE. the **Preview** page shows all information you have entered.
 
@@ -71,7 +89,7 @@ After entering all available information, click on SAVE. the **Preview** page sh
 
 Once you have entered the metadata, you can finalize the documentation of the project by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the project in a catalog. In this example, we will add two external resources: a link to the GitHub repository, and a link to the working paper. 
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For the GitHub repository, select the resource type (""), give it a short title *()*, and enter the URL *()*. Then click "SAVE." You will now have two external resources listed. For the working paper repository, select the resource type (""), give it a short title *()*, and enter the URL *()*. Then click "SAVE." You will now have two external resources listed.
+To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For the GitHub repository, select the resource type ("Website"), give it a short title *(GitHub repository: double-jeopardy-in-llms)*, and enter the URL *(https://github.com/worldbank/double-jeopardy-in-llms/tree/main)*. Then click "SAVE." For the working paper repository, select the resource type ("Document, analytical"), enter the title *(Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers)*, and enter the URL *(https://arxiv.org/abs/2410.10665)*. You may also enter the name of the authors, date (2024-10-14), and abstract. Then click "SAVE." You will now have two external resources listed.
 
 ![image](img/ME_UG_v1-0-0_quick_start_scripts_external_resource_PIP.png)
 
