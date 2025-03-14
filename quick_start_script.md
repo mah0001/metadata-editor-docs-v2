@@ -84,17 +84,21 @@ In the project page, a menu of options will be available to you.
 
 ![image](img/ME_UG_v1-0-0_quick_start_scripts_actions_menu.png)
 
+
 **Export package (ZIP)**
 
 This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+
 
 **Export JSON**
 
 Export metadata as a JSON file. 
 
+
 **Export RDF/XML** and **Export RDF/XML**
 
 These options allow you to export the metadata related to external resources in JSON or XML format.
+
 
 **PDF documentation**
 
