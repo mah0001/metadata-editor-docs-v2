@@ -82,7 +82,7 @@ This information is entered in the metadata template as follows:
 
 After entering all available information, click on SAVE. the **Preview** page shows all information you have entered.
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_preview_page.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_preview_page.png)
 
 
 **Step 3: Add information on related resources**
@@ -91,16 +91,16 @@ Once you have entered the metadata, you can finalize the documentation of the pr
 
 To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". For the GitHub repository, select the resource type ("Website"), give it a short title *(GitHub repository: double-jeopardy-in-llms)*, and enter the URL *(https://github.com/worldbank/double-jeopardy-in-llms/tree/main)*. Then click "SAVE." For the working paper repository, select the resource type ("Document, analytical"), enter the title *(Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers)*, and enter the URL *(https://arxiv.org/abs/2410.10665)*. You may also enter the name of the authors, date (2024-10-14), and abstract. Then click "SAVE." You will now have two external resources listed.
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_external_resource_PIP.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_external_resource.png)
 
 
 **Step 4: Export and publish metadata**
 
 In the project page, a menu of options will be available to you.
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_open_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_open_actions_menu.png)
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_actions_menu.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_actions_menu.png)
 
 
 **Export package (ZIP)**
@@ -122,17 +122,18 @@ These options allow you to export the metadata related to external resources in 
 
 A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_metadata_in_PDF.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_metadata_in_PDF.png)
+
 
 **Publish to NADA**
 
 If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_publish_to_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_publish_to_NADA.png)
 
-The indicator will now be listed and made discoverable in the NADA catalog, with a link to the PIP platform. 
+The project will now be listed and made discoverable in the NADA catalog. 
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_indicator_in_NADA.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_indicator_in_NADA.png)
 
 
 
