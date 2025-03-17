@@ -73,6 +73,7 @@
 
     * [Developers](developers.md)
     * [Translators](translators.md)
+    * [Email configuratinos](configurations_email.md)
 
 * Providing feedback
 
