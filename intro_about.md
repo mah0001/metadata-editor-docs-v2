@@ -22,7 +22,7 @@ The Metadata Editor supports the documentation of a wide range of structured dat
    - **Text**: Collections of documents (e.g., books, reports, manuals) form corpora that can be structured using natural language processing (NLP). The Metadata Editor supports a schema combining elements from Dublin Core, MARC21 (Library of Congress), and BibTeX.
    - **Images**: Digital images can be analyzed with machine learning techniques for classification and object detection. The Metadata Editor provides two metadata schema options: Dublin Core with imageObject elements from Schema.org and IPTC.
 Video Recordings: Speech-to-text algorithms allow the automatic transcription of video and audio recordings, making them discoverable and analyzable as structured data. The Metadata Editor supports a schema incorporating elements from Dublin Core and videoObject from Schema.org.
-   - **Videos**: 
+   - **Videos**: the Metadata Editor uses a metadata schema built on videoobject from schema.org.
    - **Research Projects and Scripts**: Research projects and related scripts for data transformation, analysis, and visualization are essential for reproducibility and transparency. The Metadata Editor includes a dedicated schema for documenting research projects and scripts.
 
 The technical documentation of the metadata standards supported by the Metadata Editor is available at https://worldbank.github.io/metadata-schemas/ where structures and information on each metadata element are provided.
