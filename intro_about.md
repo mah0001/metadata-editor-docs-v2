@@ -8,7 +8,7 @@ The Metadata Editor can be deployed as a stand-alone desktop application or as a
 
 Built with a modular architecture, the Metadata Editor is developed using PHP and leverages APIs for seamless integration with other data systems. It incorporates Python libraries such as Pandas and GeoPandas to support the ingestion of datasets in various formats, extract metadata automatically, and generate summary statistics, making metadata creation both efficient and precise.
 
-**Data Types and Metadata Standards Supported**
+## Data Types and Metadata Standards Supported
 
 The Metadata Editor supports the documentation of a wide range of structured data types, using established metadata standards and schemas:
 
@@ -30,3 +30,21 @@ The technical documentation of the metadata standards supported by the Metadata 
 This User Guide is licensed under a Creative Commons Attribution- NonCommercial- NoDerivatives 4.0 International License. See https://creativecommons.org/licenses/by-nc-nd/4.0/ 
 
 ![image](img/ME_UG_v1-0-0_introduction_cc_by_logo.png)
+
+
+## Open source license and disclaimer 
+
+- **License**
+  
+The software ABC is published as open-source software under the MIT License (https://opensource.org/license/mit).
+
+**Disclaimer**
+
+The Metadata Editor is provided "as is", without any warranties or guarantees, express or implied. The World Bank makes no representations regarding the accuracy, reliability, completeness, or suitability of the software for any particular purpose.
+
+Users assume full responsibility for the installation, configuration, and use of the application. The World Bank shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use or inability to use the software.
+
+By using the Metadata Editor, users acknowledge and accept that they are solely responsible for ensuring that their use of the application complies with applicable laws, policies, and data governance requirements.
+
+Nothing herein shall constitute or be considered to be a limitation upon or a waiver of the privileges and immunities of any of the member institutions of The Work Bank Group, which are specifically reserved.
+
