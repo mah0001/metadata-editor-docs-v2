@@ -34,7 +34,7 @@ This User Guide is licensed under a Creative Commons Attribution- NonCommercial-
 
 ## Open source license and disclaimer 
 
-- **License**
+**License**
   
 The software ABC is published as open-source software under the MIT License (https://opensource.org/license/mit).
 
