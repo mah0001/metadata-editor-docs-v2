@@ -1,43 +1,58 @@
 # Installation on a server
 
-[why good to install on server]
+The Metadata Editor can be installed on a server or on a stand-alone personal computer (PC). For installation on a PC, see the section *Installation on a personnal computer*. 
 
-## Hardware requirements
+## Why Install on a Server?
 
+Installing the Metadata Editor on a web server provides several advantages:
+- **Collaboration**: Multiple users can work on metadata simultaneously.
+- **Scalability**: Allows for efficient handling of larger datasets and multiple concurrent users.
+- **Accessibility**: Users can access the application from any device with a browser.
+- **Centralization of metadata**: If the Metadata Editor runs on an organization's server (typically, on its intranet), all metadata will be stored ina central location. the Metadata Editor can therefore operate as a corporate metadata repository.
+- **Permission control**: Running the application on a server allows configuration of an organization's user authentication system.
+- **Security**: Centralizing the generation and storage of the metadata on a server facilitates the management of backups and implementation of other security measures. 
 
-## Software requirements
+## System Requirements
 
-The Metadata Editor requires PHP with a MySQL or MariaDB database. For data import/export, Python 3 is required.
+### Hardware Requirements
 
-### Web server
+Ensure your server meets the following minimum specifications:
+- CPU: Dual-core processor or higher
+- RAM: At least 4 GB (8 GB recommended for larger datasets)
+- Storage: Minimum 20 GB of free disk space
 
+### Software Requirements
+
+To run the Metadata Editor, you will need:
+
+**Web Server**:
 - Apache 2.4 or later
 - IIS 6/7.x or later
 - NGINX
+- PHP: Version 8.1 or later, with the following required extensions:
+  - xsl
+  - xml
+  - mbstring
+  - mysqli
 
-### PHP (8.1 or later)
+**Database**:
+- MySQL 8.x or MariaDB. The database is not provided in the Metadata Editor package. The selected database application must be downloaded from its respective repository or website.
 
-Required PHP extensions:
-- xsl
-- xml
-- mbstring
-- mysqli
-
-### Supported databases
-
-- MySQL 8.x or MariaDb
-
-### Python (3.12)
-A Python/FastApi backend REST API service for data import/export, summary statistics for Stata, SPSS and CSV files.
+**Python**:
+- Python 3.12 or later is required for running the FastAPI backend for data import/export and generating summary statistics for Stata, SPSS, and CSV files.
 
 
-## Downloading the source code
+### Downloading and Installing the Metadata Editor Application
 
-The editor installation requires the following:
-- Metadata Editor (PHP application with MySQL database)
-- Python backend API
+**Required Components**
 
-Follow the steps to download and install editor frontend and backend app. The resulting folder structure will look like this:
+To install the Metadata Editor, you need:
+- Metadata Editor: PHP application with a MySQL/MariaDB database.
+- PyDataTools: Python backend API for data import/export and summary statistics.
+
+**Folder Structure** 
+
+After installation, your directory structure should look like this:
 
 ```
 metadata_editor
@@ -46,9 +61,11 @@ metadata_editor
 +--pydatatools
 ```
 
-For downloading the source code, you can either download the zipped packages or use Git.
+**Downloading the Source Code**
 
-**Option 1 (Use git):** Navigate to the web server folder where you want to setup the project and run the following commands:
+- ***Option 1: Using Git***
+
+Navigate to the web server directory where you want to install the project and run:
 
 ```
 $ mkdir metadata_editor
@@ -58,33 +75,29 @@ $ git clone https://github.com/ihsn/editor
 $ git clone https://github.com/mah0001/pydatatools
 ```
 
-**option 2 (Zip packages):** Download the zip packages and unzip to create the above folder structure.
+- ***Option 2: Using Zip Packages***
 
-- Metadata editor: https://github.com/ihsn/editor/archive/refs/heads/main.zip
-- PyDataTools: https://github.com/mah0001/pydatatools/archive/refs/heads/main.zip
- 
+   Download the zipped packages and extract them to create the required folder structure:
 
-## Configuring the database
+     - Metadata editor: https://github.com/ihsn/editor/archive/refs/heads/main.zip
+    - PyDataTools: https://github.com/mah0001/pydatatools/archive/refs/heads/main.zip
+  
 
-The Metadata Editor comes with a web based installer. Before you can run the installer:
+**Configuring the Database**
 
- - Create a new database (e.g. metadata_editor)
- - Create a database user account with password and limit user access to the metadata editor database only
-   
+Step 1: Create Database and User
+- Create a new database (e.g., metadata_editor).
+- Create a database user with a secure password.
+- Grant this user access to the metadata_editor database.
 
-### Updating the database configuration
-
-1. Open `editor/application/config` folder and rename/copy `database.sample.php` to `database.php`
-2. Open `database.php` file in a text editor like Notepad or Notepad++, and fill:
-
-`hostname` - ip address or the machine name where database is hosted
-
-`username` - database user name 
-
-`password` - database password
-
-`database` - database name
-
+Step 2: Update Database Configuration
+- Navigate to the editor/application/config/ folder.
+- Copy or rename database.sample.php to database.php.
+- Open database.php in a text editor and update the following fields:
+   - `hostname` - ip address or the machine name where database is hosted
+   - `username` - database user name 
+   - `password` - database password
+   - `database` - database name
 
 ```php
 
@@ -113,9 +126,9 @@ $db['default'] = array(
 
 ```
 
-3. Save the file
+Save the file.
 
-### Setting folder permissions
+**Setting Folder Permissions**
 
 Run the following commands to set read/write permissions for the folders where the data will be stored:
 
@@ -124,43 +137,41 @@ $ chmod -R 775 datafiles files logs
 ```
 
 
-### Running the installer
+**Running the Installer**
 
-- Open web browser to the location of the Editor installation. For example: http://your-domain/editor-folder-name, or http://localhost/editor-folder-name.
-
-- Check that all settings are marked with a green tick and fix any that are not on your webserver before running the installer.
-
-- Click on the Install Database button and complete the form to create an initial Site Administrator account.
-
-
-**Note:** Create a complex password at least 12 characters long with some uppercase, punctuation and numbers to aid security of your site. 
+- Open a web browser and navigate to the Editor installation URL. For example: http://your-domain/editor-folder-name, or http://localhost/editor-folder-name.
+- Check that all settings are marked with a green tick and fix any that are not on your webserver before running the installer. 
+- Click on the `Install Database` button and complete the form to create an initial Site Administrator account.
+ 
+⚠️ Note: Use a complex password (at least 12 characters, including uppercase, numbers, and special characters) to enhance security.
 
 
-## Installing Pydatatools (Python/FastApi)
+**Installing and Configuring PyDataTools (Python/FastAPI)**
 
-The Pydatatools application requires Python. Install **Python 3.12** from here, https://www.python.org/downloads/.
+- ***Step 1: Install Python*** 
 
-If you have not downloaded the `Pydatatools` yet, download from Github - https://github.com/mah0001/pydatatools
+  Download and install Python 3.12 from https://www.python.org/downloads/.
 
+- ***Step 2: Install Dependencies***
 
-### Installing dependencies
+  Navigate to the pydatatools folder and run:
 
-To install the packages and libraries required by the `Pydatatools`, navigate to the `pydatatools` folder and run from command line:
+  ```python
+	$ pip install -r requirements.txt
+  ```
 
-```python
+- ***Step 3: Run the FastAPI Service***
 
-  $ pip install -r requirements.txt
+  To start the FastAPI service, run:
 
-```
+   ```
+	$ nohup python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
 
+   ```
 
-## Running/starting Pydatatools
-To start the FastAPI service, first navigate to the folder `pydatatools` via command line and run:
-
-```
-$ nohup python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
-```
-
-## Configuring a user authentication system
+The Metadata Editor and PyDataTools should now be operational. This completes the installation process. 
 
 
+### Configuring a User Authentication System
+
+Configure a user authentication system by:
