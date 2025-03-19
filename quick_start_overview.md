@@ -7,7 +7,7 @@ If you have an installed NADA catalog and have administrator credentials, you wi
 These examples are intentionally simplified to provide an overview of the application's core functionalities and do not cover all available features. For a more comprehensive understanding, refer to the *Documenting Data* chapters.
 
 
-**Available Quick Start Examples**
+## Available Quick Start Examples
 
 We provide a dedicated quick start example for each supported data type:
 
@@ -20,7 +20,7 @@ We provide a dedicated quick start example for each supported data type:
 - ***Video*** – Metadata for a video file.
 
 
-**Getting Started**
+## Getting Ready
 
 Before starting, ensure that:
 
