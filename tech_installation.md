@@ -1,6 +1,11 @@
-# Installation 
+# Installation on a server
 
-## Installation requirements
+[why good to install on server]
+
+## Hardware requirements
+
+
+## Software requirements
 
 The Metadata Editor requires PHP with a MySQL or MariaDB database. For data import/export, Python 3 is required.
 
@@ -26,7 +31,7 @@ Required PHP extensions:
 A Python/FastApi backend REST API service for data import/export, summary statistics for Stata, SPSS and CSV files.
 
 
-## Download application source code
+## Downloading the source code
 
 The editor installation requires the following:
 - Metadata Editor (PHP application with MySQL database)
@@ -59,7 +64,7 @@ $ git clone https://github.com/mah0001/pydatatools
 - PyDataTools: https://github.com/mah0001/pydatatools/archive/refs/heads/main.zip
  
 
-## Configure database
+## Configuring the database
 
 The Metadata Editor comes with a web based installer. Before you can run the installer:
 
@@ -67,7 +72,7 @@ The Metadata Editor comes with a web based installer. Before you can run the ins
  - Create a database user account with password and limit user access to the metadata editor database only
    
 
-### Update database configuration
+### Updating the database configuration
 
 1. Open `editor/application/config` folder and rename/copy `database.sample.php` to `database.php`
 2. Open `database.php` file in a text editor like Notepad or Notepad++, and fill:
@@ -110,7 +115,7 @@ $db['default'] = array(
 
 3. Save the file
 
-### Set folder permissions
+### Setting folder permissions
 
 Run the following commands to set read/write permissions for the folders where the data will be stored:
 
@@ -131,13 +136,14 @@ $ chmod -R 775 datafiles files logs
 **Note:** Create a complex password at least 12 characters long with some uppercase, punctuation and numbers to aid security of your site. 
 
 
-## Install Pydatatools (Python/FastApi)
+## Installing Pydatatools (Python/FastApi)
 
 The Pydatatools application requires Python. Install **Python 3.12** from here, https://www.python.org/downloads/.
 
 If you have not downloaded the `Pydatatools` yet, download from Github - https://github.com/mah0001/pydatatools
 
-### Install dependencies
+
+### Installing dependencies
 
 To install the packages and libraries required by the `Pydatatools`, navigate to the `pydatatools` folder and run from command line:
 
@@ -147,7 +153,8 @@ To install the packages and libraries required by the `Pydatatools`, navigate to
 
 ```
 
-## Run/start Pydatatools
+
+## Running/starting Pydatatools
 To start the FastAPI service, first navigate to the folder `pydatatools` via command line and run:
 
 ```
