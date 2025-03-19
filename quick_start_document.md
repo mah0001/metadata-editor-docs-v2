@@ -92,14 +92,14 @@ In the *Project* page, a menu of options is available to you.
 
 - ***Generate a PDF version of the metadata***
 
-  A PDF verion of the metadata can be automatically created. Select **PDF documentation** then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+  A PDF verion of the metadata can be automatically created. Select *PDF documentation* then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_exported_to_PDF.png)
 
 
 - ***Publish metadata in a NADA catalog***
 
-  If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH. 
+  If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`. 
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_action_export_to_NADA.png)
 
