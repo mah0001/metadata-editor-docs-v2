@@ -25,7 +25,7 @@ Video Recordings: Speech-to-text algorithms allow the automatic transcription of
    - **Videos**: the Metadata Editor uses a metadata schema built on videoobject from schema.org.
    - **Research Projects and Scripts**: Research projects and related scripts for data transformation, analysis, and visualization are essential for reproducibility and transparency. The Metadata Editor includes a dedicated schema for documenting research projects and scripts.
 
-In addition to these metadata standards and schemas, the Metadata Editor allows exporting metadata templates as SDMX Metadata Structure Definitions and the metadata themselves as SDMX metadatasets. An option to export metadata to schema.org [https://schema.org/](https://schema.org/), Croissant [https://github.com/mlcommons/croissant](https://github.com/mlcommons/croissant), and [https://www.w3.org/TR/vocab-dcat-3/]DCAT (https://www.w3.org/TR/vocab-dcat-3/) is also provided for some types of data.
+In addition to these metadata standards and schemas, the Metadata Editor allows exporting metadata templates as SDMX Metadata Structure Definitions and the metadata themselves as SDMX metadatasets. An option to export metadata to schema.org (https://schema.org/), Croissant (https://github.com/mlcommons/croissant), and DCAT (https://www.w3.org/TR/vocab-dcat-3/) is also provided for some types of data.
 
 The technical documentation of the metadata standards supported by the Metadata Editor is available at https://worldbank.github.io/metadata-schemas/ where structures and information on each metadata element are provided.
 
