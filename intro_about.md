@@ -32,7 +32,7 @@ The technical documentation of the metadata standards supported by the Metadata 
 
 ## Open source license and disclaimer 
 
-**License**
+**Software license**
   
 The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit).
 
