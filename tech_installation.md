@@ -160,3 +160,7 @@ To start the FastAPI service, first navigate to the folder `pydatatools` via com
 ```
 $ nohup python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
 ```
+
+## Configuring a user authentication system
+
+
