@@ -29,20 +29,17 @@ Structured metadata helps maximizing the utility of data assets, as its predicta
 - **Enhancing interoperability across systems**. Structured metadata enables automated harvesting and extraction of information across different platforms, fostering connections and relationships between assets stored in various systems. This interconnected approach improves data accessibility, consistency, and integration.
 - **Supporting long-term data preservation**, as its clear organization aids in maintaining accessibility and usability over time.
 
-Structured metadata contains *metadata elements*, each representing a specific piece of information about a dataset (metadata elements can for example be the dataset title or geographic coverage, producer, a variable name or variable label, etc.) Elements within all metadata standards are organized into groups and sub-groups. For instance, the DDI Codebook metadata standard, which is utilized for documenting microdata, comprises four primary sections (Figure 1): document description (doc_desc; metadata about the metadata), study description (study_desc; details regarding the study itself), file description (data_files; information pertaining to each data file), and variable description (variables; data at the level of each variable).
+Structured metadata contains *metadata elements*, each representing a specific piece of information about a dataset (metadata elements can for example be the dataset title or geographic coverage, producer, a variable name or variable label, etc.) Elements within all metadata standards are organized into groups and sub-groups. For instance, the DDI Codebook metadata standard, which is utilized for documenting microdata, comprises four primary sections: document description (`doc_desc`; metadata about the metadata), study description (`study_desc`; details regarding the study itself), file description (`data_files`; information pertaining to each data file), and variable description (`variables`; data at the level of each variable).
 
 ![image](img/ME-UG_intro_DDI_elements_groupings.png)
 
-*Figure 1 - Main groupings of the DDI Codebook metadata standard*
    
-The *study description* section of the DDI Codebook includes sub-groups of elements that document the authorship of the study (authoring_entity), the processes involved in implementing the study (study_development), and other relevant aspects (Figure 2).
+The *study description* section of the DDI Codebook includes sub-groups of elements that document the authorship of the study (`authoring_entity`), the processes involved in implementing the study (`study_development`), and other relevant aspects.
 
 ![image](img/ME-UG_intro_DDI_study_desc_elements.png)
 
-*Figure 2 - Sub-groups of the Study Description group of the DDI Codebook*
-
 Each metadata element within a metadata standard or schema encompasses the following attributes:
-- ***Key***: This denotes the standardized name assigned to the element and must remain constant (the *key* cannot be edited or translated).
+- ***Key***: This denotes the standardized name assigned to the element and must remain constant (the key cannot be edited or translated).
 - ***Type***: Metadata elements can be various types like text (string), numbers (numeric), arrays, or Booleans (logical). If an element is an array, its sub-elements can be any of the other types. Arrays are used for elements with sub-elements, like a country element including a name and a code. The type is defined by the standard and cannot be altered.
 - ***Label***: A brief title for the element. While each element or sub-element has a default label, which can be modified to fit an organization's specific terminology.
 - ***Repeatable status***: Shows if the element can accept multiple entries. For instance, the "nation" element used to describe the geographic coverage of a dataset is *repeatable* since a dataset can possibly cover multiple countries, but the "title" element is *not repeatable* as a dataset is expected to have one and only one primary title. The status of an element is defined in the metadata standard and cannot be altered.
