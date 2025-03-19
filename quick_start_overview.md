@@ -7,26 +7,26 @@ If you have an installed NADA catalog and have administrator credentials, you wi
 These examples are intentionally simplified to provide an overview of the application's core functionalities and do not cover all available features. For a more comprehensive understanding, refer to the *Documenting Data* chapters.
 
 
-## Available Quick Start Examples
+## Quick Start Examples
 
 We provide a dedicated quick start example for each supported data type:
 
-- ***Document*** – Metadata for a working paper.
-- ***Microdata*** – A synthetic survey dataset, including variable-level documentation.
-- ***Indicator and Database*** – Metadata for a statistical indicator and its source database.
-- ***Geographic Dataset*** – Metadata for both vector (shapefile) and raster datasets.
-- ***Scripts*** – Documentation of analytical scripts used in data processing.
-- ***Image*** – Metadata for a digital photograph.
-- ***Video*** – Metadata for a video file.
+- ***Document*** – Documenting a publication (in this case, a book).
+- ***Microdata*** – Documenting a survey dataset (a synthetic survey dataset composed of a household-level and individual data files provided in Stata format).
+- ***Indicator and Database*** – Documenting a statistical indicator and its source database.
+- ***Geographic Dataset*** – Documenting a vector dataset (provided in shapefile format) and a raster dataset (provided in geotiff format).
+- ***Scripts*** – Documentation of a research project with multiple related scripts.
+- ***Image*** – Documenting a digital photograph from a World Bank photo album.
+- ***Video*** – Documenting a video.
 
 
 ## Getting Ready
 
-Before starting, ensure that:
+Before starting, please ensure that:
 
-- You have the Metadata Editor installed on your system (server or PC), with data curator or administrator role that will allow you to create new projects.
-- You have a NADA catalog with the necessary credentials (only needed if you want to experiment publishing metadata in a NADA catalog).
-- You have downloaded the required example files from ... Insert Download Link ... and saved them in a dedicated folder. If you unzip the file provided on GitHub, you will have a folder with the following structure (which is not imposed by the Metadata Editor):
+- You have the Metadata Editor installed on your system (server or PC), with an *Editor* role that allows you to create new projects.
+- You have access to a test NADA catalog with the necessary credentials to publish metadata (this is only needed if you want to experiment publishing metadata in a NADA catalog).
+- You have downloaded the required example files from ... Insert Download Link ... and saved them in a dedicated folder on your PC (the files do not have to be on the server that hosts the Metadata Editor). If you unzip the file provided on GitHub, you will have a folder with the following structure (which is not imposed by the Metadata Editor; all you need is access to the files):
   ![image](img/ME_UG_v1-0-0_quick_start_intro_list_demo_files.png)
 
 Once ready, follow the step-by-step instructions provided in each example to practice creating, editing, and publishing metadata using the Metadata Editor.
