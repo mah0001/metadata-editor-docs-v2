@@ -1,6 +1,6 @@
 # Installation on a server
 
-The Metadata Editor can be installed on a server or on a stand-alone personal computer (PC). For installation on a PC, see the section *Installation on a personnal computer*. 
+The Metadata Editor can be installed on a server or on a stand-alone personal computer (PC). For installation on a PC, see the section *Installation on a personal computer*. 
 
 ## Why Install on a Server?
 
