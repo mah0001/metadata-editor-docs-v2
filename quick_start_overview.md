@@ -25,6 +25,10 @@ We provide a dedicated quick start example for each supported data type:
 Before starting, ensure that:
 
 - You have the Metadata Editor installed on your system (server or PC), with data curator or administrator role that will allow you to create new projects.
-- You have downloaded the required example files from [Insert Download Link] and saved them in a dedicated folder.
-Once ready, follow the step-by-step instructions provided in each example to practice creating, editing, and managing metadata in the Metadata Editor.
-- You have a NADA catalog with the necessary credentials  (only needed if you want to experiment publishing metadata in a NADA catalog).
+- You have a NADA catalog with the necessary credentials (only needed if you want to experiment publishing metadata in a NADA catalog).
+- You have downloaded the required example files from ... Insert Download Link ... and saved them in a dedicated folder. If you unzip the file provided on GitHub, you will have a folder with the following structure (which is not imposed by the Metadata Editor):
+  ![image](img/ME_UG_v1-0-0_quick_start_intro_list_demo_files.png)
+
+Once ready, follow the step-by-step instructions provided in each example to practice creating, editing, and publishing metadata using the Metadata Editor.
+
+
