@@ -96,7 +96,7 @@ Note: The geographic coverage for the indicator consists of a large number of co
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_copy_paste_dots.png)
 
-![image](img/E_UG_v1-0-0_quick_start_indicator_paste_countries.png)
+![image](img/ME_UG_v1-0-0_quick_start_indicator_paste_countries.png)
 
 
 **Step 3: Add information on related resources**
