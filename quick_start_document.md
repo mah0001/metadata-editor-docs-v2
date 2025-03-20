@@ -96,23 +96,28 @@ In the *Project* page, a menu of options is available to you.
   This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
 
 
-- ***Export metadata to JSON***
+- ***Export JSON***
 
   Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_action_JSON_exported.png)
 
 
-- ***Generate a PDF version of the metadata***
+- ***Export RDF/XML** and **Export RDF/XML***
+
+  These options allow you to export the metadata related to external resources in JSON or XML format.
+
+  
+- ***PDF documentation***
 
   A PDF verion of the metadata can be automatically created. Select *PDF documentation* then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_exported_to_PDF.png)
 
 
-- ***Publish metadata in a NADA catalog***
+- ***Publish to NADA***
 
-  If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`. 
+  If you have a NADA catalog and the credentials to publish content in it, you can also `Publish to NADA`. Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`. 
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_action_export_to_NADA.png)
 
