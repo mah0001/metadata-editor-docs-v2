@@ -8,21 +8,21 @@ For the purpose of cataloguing documents in a less-specialized repository intend
 
 |No | Element name         | Description                                                     | 
 |-- | -------------------- | --------------------------------------------------------------- | 
-|1  | contributor          | An entity responsible for making contributions to the resource. |
-|2  | coverage             | The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. |
-|3  | creator              | An entity primarily responsible for making the resource.         |
-|4  | date                 | A point or period of time associated with an event in the life cycle of the resource. |
-|5  | description          | An account of the resource. |
-|6  | format               | The file format, physical medium, or dimensions of the resource. |
-|7  | identifier           | An unambiguous reference to the resource within a given context. |
-|8  | language             | A language of the resource.                                      |
-|9  | publisher            | An entity responsible for making the resource available.         |
-|10 | relation             | A related resource.                                              |
-|11 | rights               | Information about rights held in and over the resource.          |
-|12 | source               | A related resource from which the described resource is derived. |
-|13 | subject              | The topic of the resource.                                       |
-|14 | title                | A name given to the resource.                                    |
-|15 | type                 | The nature or genre of the resource.                             |
+|1  | `contributor`        | An entity responsible for making contributions to the resource. |
+|2  | `coverage`           | The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant. |
+|3  | `creator`            | An entity primarily responsible for making the resource.         |
+|4  | `date`               | A point or period of time associated with an event in the life cycle of the resource. |
+|5  | `description`        | An account of the resource. |
+|6  | `format`             | The file format, physical medium, or dimensions of the resource. |
+|7  | `identifier`         | An unambiguous reference to the resource within a given context. |
+|8  | `language`           | A language of the resource.                                      |
+|9  | `publisher`          | An entity responsible for making the resource available.         |
+|10 | `relation`           | A related resource.                                              |
+|11 | `rights`             | Information about rights held in and over the resource.          |
+|12 | `source`             | A related resource from which the described resource is derived. |
+|13 | `subject`            | The topic of the resource.                                       |
+|14 | `title`              | A name given to the resource.                                    |
+|15 | `type`               | The nature or genre of the resource.                             |
 
 Due to its simplicity and versatility, this standard is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC 21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
 
