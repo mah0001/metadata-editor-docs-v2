@@ -19,7 +19,7 @@ To begin, open the Metadata Editor link and log in with your username and passwo
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_project_list_start.png)
 
-Click on "CREATE NEW PROJECT" and select "Microdata" when prompted to indicate the type of resource you will be documenting.
+Click on `CREATE NEW PROJECT` and select *Microdata* when prompted to indicate the type of resource you will be documenting.
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
@@ -27,69 +27,70 @@ A new project page will open in a new tab.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_new_project_home.png)
 
-You can change the image that will be used as a thumbnail for the project (optional). The demo materials contain an image file named *synthetic_data_logo.jpg*. Click on the edit button and select this file (or another jpg file of your choice)".
+You can change the image that will be used as a thumbnail for the project (optional). You may use the provided image (*synthetic_data_logo.jpg*) or another jpg or png file of your choice. Click on the edit button and select the image file.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_edit_thumbnail.png)
 
 We will use the default metadata template to document the dataset, so there is no need to switch template. You are now ready to start documenting the dataset.
 
+
 **Step 2: Add information on metasdata production and document the survey itself (section Study Description)**
 
-In the section "Document description / Metadata preparation", enter information on the metadata. This information is optional. Enter your name and the date the metadata was created, then click SAVE.
+In the section *Document description / Metadata preparation*, enter the (optional) information on the metadata. Enter your `name` and the `date` the metadata was created (in ISO format), then click `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_document_description_save.png)
 
-You can now start entering the metadata related to the survey itself in the "Study Description" section. You will find the relevant information in the Excel file *synthetic_survey_info.xlsx*. In the navigation tree, first select "Study description / Identification", enter the relevant information on the survey. First, enter the **title** of the dataset and enter the required primary ID (a unique identifier of your choice, e.g., JD_MICRO_001; if you want to publish the survey in a NADA catalog, make sure that this same identifier is not used by another user or for another entry in NADA). 
+You can now start entering the metadata related to the survey itself in the *Study Description* section. You will find the relevant information in the Excel file *synthetic_survey_info.xlsx*. In the navigation tree, first select *Study description / Identification*, enter the relevant information on the survey. First, enter the `title` of the dataset and enter the required `Primary ID` (a unique identifier of your choice, e.g., JD_MICRO_001; if you want to publish the survey in a NADA catalog, make sure that this same identifier is not used by another user or for another entry in NADA). 
 
-Then browse the navigation tree and find the most appropriate elements for each piece of information contained in the Excel file; populate other sections of the metadata accordingly. All information contained in the Survey info sheet sheet should be captured. The (?) icon next to each element label will display a description of the element. Click SAVE periodically or after you enter the metadata.
+Then browse the navigation tree and find the most appropriate elements for each piece of information contained in the Excel file; populate other sections of the metadata accordingly. All information contained in the Survey info sheet sheet should be captured. The (?) icon next to each element label will display a description of the element. Click `SAVE` periodically or after you enter the metadata.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_study_description_save.png)
 
-The metadata elements in the template maps to the content of the Excel file as follows: 
+The metadata elements in the template correspond to the content of the Excel file *synthetic_survey_info.xlsx* as follows: 
 
-| In Excel file             | In the metadata template                        | 
-| ------------------------- | ----------------------------------------------- | 
-| Title                     | Identification / Title                          | 
-| Acronym                   | Identification / Alternate title                | 
-| Country / code            | Universe and geographic coverage / Country      | 
-| Producer                  | Producers and sponsors / Primary producer       | 
-| Funding                   | Producers and sponsors / Funding agencies       | 
-| Dates of data collection  | Data collection / Dates of data collection      | 
-| Abstract                  | Overview / Abstract                             | 
-| Series                    | Identification / Series information             | 
-| Universe                  | Universe and geographic coverage / Universe     | 
-| Geographic coverage       | Universe and geographic coverage / Geo. coverage| 
-| Topics                    | Scope / Topics (itemize the list)               | 
-| Sampling                  | Sampling / Response rates                       | 
-| Sample frame              | Sampling / Sample frame / Name                  | 
-| Sample design             | Sampling / Sampling procedure                   | 
-| Weighting                 | Sampling / Weighting                            | 
-| Mode of data collection   | Data collection / Mode of data collection       | 
-| Interviewer's training    | Data collection / Collector training            | 
-| Fieldwork organization    | Data collection / Control operations            | 
-| Data processing           | Data processing / Data processing               | 
-| Standard compliance       | Quality standards / Standard compliance         | 
-| Version of dataset        | Version / Version name                          | 
-| Citation requirement      | Data access / Citation requirement              | 
+| In synthetic_survey_info.xlsx | In the metadata template (Study description)      | 
+| ----------------------------- | ------------------------------------------------- | 
+| Title                         | Identification / `Title`                          | 
+| Acronym                       | Identification / `Alternate title`                | 
+| Country / code                | Universe and geographic coverage / `Country`      | 
+| Producer                      | Producers and sponsors / `Primary producer`       | 
+| Funding                       | Producers and sponsors / `Funding agencies`       | 
+| Dates of data collection      | Data collection / `Dates of data collection`      | 
+| Abstract                      | Overview / `Abstract`                             | 
+| Series                        | Identification / `Series information`             | 
+| Universe                      | Universe and geographic coverage / `Universe`     | 
+| Geographic coverage           | Universe and geographic coverage / `Geo. coverage`| 
+| Topics                        | Scope / `Topics` (itemize the list)               | 
+| Sampling                      | Sampling / `Response rates`                       | 
+| Sample frame                  | Sampling / `Sample frame / Name`                  | 
+| Sample design                 | Sampling / `Sampling procedure`                   | 
+| Weighting                     | Sampling / `Weighting`                            | 
+| Mode of data collection       | Data collection / `Mode of data collection`       | 
+| Interviewer's training        | Data collection / `Collector training`            | 
+| Fieldwork organization        | Data collection / `Control operations`            | 
+| Data processing               | Data processing / `Data processing`               | 
+| Standard compliance           | Quality standards / `Standard compliance`         | 
+| Version of dataset            | Version / `Version name`                          | 
+| Citation requirement          | Data access / `Citation requirement`              | 
 
 
 **Step 3: Import and document the data files (section Study Description)**
 
-When all available information on "Study description" is entered, click on "Data files" in the navigation bar. On the Data files page, click "IMPORT FILES", select the two Stata data files to be imported, then click "IMPORT".
+When all available information on *Study description* is entered, click on *Data files* in the navigation bar. On the Data files page, click *IMPORT FILES*, select the two Stata data files to be imported, then click *IMPORT*.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_import_data.png)
 
 The Editor will read and import the data files, and extract all available metadata from the files (variable list, names, variable labels, value labels). It will also generate summary statistics.
 
-The "Data files" page will display your two files, which are also now listed in the navigation bar under "Data files".
+The *Data files* page will display your two files, which are also now listed in the navigation bar under *Data files*.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_imported_data_files_list.png)
 
-You can preview the data by clicking "Data", but note that the data cannot be edited in the Metadata Editor.
+You can preview the data by clicking *Data*, but note that the data cannot be edited in the Metadata Editor.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_view_data.png)
 
-You can also view summary statistics for all variables by clicking on *Variables* for a selected file in the navigation tree, and selecting tab STATISTICS.
+You can also view summary statistics for all variables by clicking on *Variables* for a selected file in the navigation tree, and selecting tab `STATISTICS`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_summary_statistics_no_weight.png)
 
@@ -125,9 +126,9 @@ We will assume for this example that all variable and value labels are good as i
 
 You will now add metadata for each variable. Most of the relevant metadata at the variable level (other than the metadata extracted automatically from the imported data files) will typically be found in the survey questionnaire and the interviewer manual. The "DOCUMENTATION" tab displays the metadata for the variable(s) selected in the list of variables. The following variable-level information will be added:
 
-- **Universe** of the variable
-- **Pre-question**, **literal question**, and **post-question** as formulated in the questionnaire (for collected variables, not for derived variables)
-- **Derivation** or **imputation** methods (for derived variables)
+- `Universe` of the variable
+- `Pre-question`, `Literal question`, and `Post-question` as formulated in the questionnaire (for collected variables, not for derived variables)
+- `Derivation` or `Imputation` methods (for derived variables)
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_variable_documentation.png)
 
@@ -196,14 +197,14 @@ These options allow you to export the metadata related to external resources in 
 
 **PDF documentation**
 
-A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_metadata_in_PDF.png)
 
 
 **Publish to NADA**
 
-If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_publish_to_NADA.png)
 
