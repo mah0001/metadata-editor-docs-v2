@@ -23,7 +23,7 @@ You will use the cover page of the book as a thumbnail. Note that providing a th
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_edit_thumbnail.png)
 
-Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a *metadata template*. When you create a new project, a default teplate is automatically selected. We will use this template, so there is no need to switch template. 
+Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template. 
 
 
 **Step 2: Enter metadata**
