@@ -48,7 +48,7 @@ You can now proceed with the other sections in the navigation tree and fill out 
 - ***Related Source Links***: World Bank, Poverty and Inequality Platform: pip.worldbank.org
 - ***Short Definition***: Poverty headcount ratio at $2.15 a day is the percentage of the population living on less than $2.15 a day at 2017 international prices.
 - ***Statistical Concept and Methodology***: International comparisons of poverty estimates entail both conceptual and practical problems. Countries have different definitions of poverty, and consistent comparisons across countries can be difficult. Local poverty lines tend to have higher purchasing power in rich countries, where more generous standards are used, than in poor countries. Since World Development Report 1990, the World Bank has aimed to apply a common standard in measuring extreme poverty, anchored to what poverty means in the world's poorest countries. The welfare of people living in different countries can be measured on a common scale by adjusting for differences in the purchasing power of currencies. The commonly used $1 a day standard, measured in 1985 international prices and adjusted to local currency using purchasing power parities (PPPs), was chosen for World Development Report 1990 because it was typical of the poverty lines in low-income countries at the time. As differences in the cost of living across the world evolve, the international poverty line has to be periodically updated using new PPP price data to reflect these changes. The last change was in September 2022, when we adopted $2.15 as the international poverty line using the 2017 PPP. Poverty measures based on international poverty lines attempt to hold the real value of the poverty line constant across countries, as is done when making comparisons over time. The $3.65 poverty line is derived from typical national poverty lines in countries classified as Lower Middle Income. The $6.85 poverty line is derived from typical national poverty lines in countries classified as Upper Middle Income. Early editions of World Development Indicators used PPPs from the Penn World Tables to convert values in local currency to equivalent purchasing power measured in U.S dollars. Later editions used 1993, 2005, and 2017 consumption PPP estimates produced by the World Bank. The current extreme poverty line is set at $2.15 a day in 2017 PPP terms, which represents the mean of the poverty lines found in 15 of the poorest countries ranked by per capita consumption. The new poverty line maintains the same standard for extreme poverty - the poverty line typical of the poorest countries in the world - but updates it using the latest information on the cost of living in developing countries. As a result of revisions in PPP exchange rates, poverty rates for individual countries cannot be compared with poverty rates reported in earlier editions. The statistics reported here are based on consumption data or, when unavailable, on income surveys.
-- ***Topic***: Poverty: Poverty rates
+- ***Topic***: Poverty; Poverty rates
 - ***Unit of Measure***: %
 
 **Additional useful information**
@@ -95,54 +95,61 @@ With this information in hand, you can now start documenting the indicator. The 
 
 **Step 3: Add information on related resources**
 
-Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: the World Bank Poverty and Inequality Platform website. 
+Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: a link to the World Bank Poverty and Inequality Platform website. 
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(Poverty and Inequality Platform (PIP))*, and enter the URL *(https://pip.worldbank.org/home)*. Then click "SAVE." You will now have an external resources listed.
+To create an external resource, click on "External resources" in the navigation tree and then click on `Create resource`. Select the resource type from the drop down (in this case, *Web Site*), give it a short title *(Poverty and Inequality Platform (PIP))*, and enter the URL *(https://pip.worldbank.org/home)*. Then click `SAVE`. You will now have an external resources listed.
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_external_resource_PIP.png)
 
 
 **Step 4: Export and publish metadata**
 
-In the project page, a menu of options will be available to you.
+In the *Project* page, a menu of options is available to you.
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_open_actions_menu.png)
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_actions_menu.png)
 
-**Export package (ZIP)**
 
-This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+- ***Export package (ZIP)***
 
-**Export JSON**
+  This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
 
-Export metadata as a JSON file. 
 
-**Export MSD (SDMX/XML 3.0)**
+- ***Export JSON***
 
-Export a metadata structure definition compliant with the SDMX 3.0 standard.   
+  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. 
 
-**Export MetadataSet (SDMX/JSON)**
 
-Export a metadataset compliant with the SDMX 3.0 standard.  
+- ***Export MSD (SDMX/XML 3.0)***
 
-**Export RDF/XML** and **Export RDF/XML**
+  Export a metadata structure definition compliant with the SDMX 3.0 standard.   
 
-These options allow you to export the metadata related to external resources in JSON or XML format.
 
-**PDF documentation**
+- ***Export MetadataSet (SDMX/JSON)***
 
-A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+  Export a metadataset compliant with the SDMX 3.0 standard.  
+
+
+- ***Export RDF/XML** and **Export RDF/XML***
+
+  These options allow you to export the metadata related to external resources in JSON or XML format.
+
+
+- ***PDF documentation***
+
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_metadata_in_PDF.png)
 
-**Publish to NADA**
 
-If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+- ***Publish to NADA***
 
-![image](img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
+  If you have a NADA catalog and the credentials to publish content in it, you can also `Publish to NADA`. Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`.
 
-The indicator will now be listed and made discoverable in the NADA catalog, with a link to the PIP platform. 
+  ![image](img/ME_UG_v1-0-0_quick_start_indicator_publish_to_NADA.png)
 
-![image](img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
+  The indicator will now be listed and made discoverable in the NADA catalog, with a link to the World Bank PIP platform. 
+
+  ![image](img/ME_UG_v1-0-0_quick_start_indicator_indicator_in_NADA.png)
 
