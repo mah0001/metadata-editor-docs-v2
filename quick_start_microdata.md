@@ -1,16 +1,17 @@
 # Quick start: Microdata
 
-In this example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. The example is only intended to illustrate a few core features of the Metadata Editor. For a complete overview of the software's features, please refer to the "Microdata" section in the "Documenting Data" chapter.
+In this example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. This quick-start example only illustrates a few core features of the Metadata Editor. For a complete description of the features available for microdata documentation, please refer to section "Documenting Microdata".
 
-The dataset we will document is a synthetic dataset representing a sample household survey for a fictional country. The files needed to reproduce the example are provided in a folder named quick_start_files/microdata. Download and save the content of this folder in a local folder of your choice. The materials provided include:
+The dataset we will document is a synthetic household survey dataset created for a fictional country. The files needed to reproduce the example are provided in folder *.../quick_start_files/microdata*. Download and save the content of this folder in a local folder of your choice. The materials provided include:
 
-- Two data files in Stata 17 format. All variables and values have been labeled in the Stata files. 
-   - *WLD_2023_SYNTH-SVY-HLD-EN_v01_M.dta* (household-level data file containing 49 variables and 8,000 observations). 
-   - *WLD_2023_SYNTH-SVY-IND-EN_v01_M.dta* (individual-level data file containing 27 variables and 32,396 observations). 
+- Two data files in Stata 17 format. All variables and values have been labeled in the Stata files. The two data files are related. Variable *hid* (an identifier unique to each household) provides a key that allows merging the data files.
+   - *WLD_2023_SYNTH-SVY-HLD-EN_v01_M.dta* : a household-level data file containing 49 variables and 8,000 observations. 
+   - *WLD_2023_SYNTH-SVY-IND-EN_v01_M.dta* : an individual-level data file containing 27 variables and 32,396 observations. 
 - Survey questionnaire and survey documentation, in MS-Excel format.
-   - A simplified survey questionnaire (file *synthetic_survey_questionnaire.xlsx*, with sheets "Household form EN" for variables collected at the household level, and "Individual form EN" for variables collected at the individual level.)
-   - A simplified technical report, with information on the sampling design (file *synthetic_survey_info.xlsx*, sheet "Survey info")
+   - A simplified survey questionnaire (file *synthetic_survey_questionnaire.xlsx*, with sheets *Household form EN* for variables collected at the household level, and *Individual form EN* for variables collected at the individual level.)
+   - A simplified technical report, with information on the sampling design (file *synthetic_survey_info.xlsx*, sheet *Survey info*)
 - Other: *synthetic_data_logo.jpg* (a logo for the survey, in JPG format)
+
 
 **Step 1: Create a new project and add a thumbnail**
 
