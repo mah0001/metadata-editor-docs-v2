@@ -118,7 +118,9 @@ In the *Project* page, a menu of options is available to you.
 
 - ***Export JSON***
 
-  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. 
+  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
+
+  ![image](img/ME_UG_v1-0-0_quick_start_indicator_action_JSON_exported.png)
 
 
 - ***Export MSD (SDMX/XML 3.0)***
