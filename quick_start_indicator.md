@@ -92,6 +92,12 @@ With this information in hand, you can now start documenting the indicator. The 
 | Time coverage             | Geographic and time coverage / `Time coverage`                              |
 | Geographic coverage       | Geographic and time coverage / `Countries`                                  |
 
+Note: The geographic coverage for the indicator consists of a large number of countries (266 countries and economies), which must be itemized in the metadata. Entering the country names and codes manually would be tedious. Instead, you may use the copy/paste functionality of the Metadata Editor. The list of countries and country codes is available in the CSV file *SI.POV.DDAY_countries_data.csv*. Copy this list (only including the country names and codes). Select the `Geographic and time coverage / Countries' element in the navigation tree, then click on the copy/paste icon (tripple dots). Select `Paste (Replace)` of `Paste (Append`). The 266 countries and economies will now be in the metadata.   
+
+![image](img/ME_UG_v1-0-0_quick_start_indicator_copy_paste_dots.png)
+
+![image](img/E_UG_v1-0-0_quick_start_indicator_paste_countries.png)
+
 
 **Step 3: Add information on related resources**
 
