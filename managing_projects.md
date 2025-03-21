@@ -4,7 +4,7 @@ A ***project*** corresponds to a "dataset" of any type. It can correspond to a s
 
 ## The "My projects" page
 
-Projects are listed in the *My projects* page. This page is the default page of the Metadata Editor. Other main pages are the *Collections* and *Templates* pages, only accessible to users with credentiels to manage collections and templates.  
+Projects are listed in the *My projects* page. This page is the default page of the Metadata Editor. Other main pages are the *Collections* and *Templates* pages, only accessible to users with credentials to manage collections and templates.  
 
 The projects you see in the *My projects* page are the projects you have access to (as owner, editor, or viewer). The list of projects you see is thus based on your credentials. 
 
