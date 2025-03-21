@@ -9,6 +9,7 @@ To begin, open the Metadata Editor in your web browser (the URL is determined by
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_project_page.png)
 
+
 Click on `CREATE NEW PROJECT` and select *Video* when prompted to indicate the type of resource you will be documenting.
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
@@ -17,14 +18,14 @@ A new project page will open in a new tab.
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_new_project_home.png)
 
-We will use the screenshot image *video_food_security.jpg* as a thumbnail (but feel free so select another JPG or PNG image file). . Note that providing a thumbnail is not required, but recommended. The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the metadata is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted.  
+We will use the screenshot image *video_food_security.jpg* as a thumbnail (but feel free so select another JPG or PNG image file). Note that providing a thumbnail is not required, but recommended. The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the metadata is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted.  
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_edit_thumbnail.png)
 
 
 ## Step 2: Enter metadata
 
-In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the publication and when. All information in this section is optional. Enter your `name` (as metadata creator) and the `date` of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
+In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the publication and when. All information in this section is optional. Enter your `name` (as metadata producer) and the `date` of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
 
@@ -51,7 +52,7 @@ Through the Joint Monitoring report, humanitarian and development partners now f
 
    ![image](img/ME_UG_v1-0-0_quick_start_video_youtube_transcript.png)
   
-This information can be entered in the Metadata Editor as follows:
+This information can be entered in the Metadata Editor template in the following elements: 
 
 | Information               | In the metadata template                                     | 
 | ------------------------- | ------------------------------------------------------------ | 
@@ -69,21 +70,23 @@ This information can be entered in the Metadata Editor as follows:
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_metadata.png)
 
-After entering all available information, click on SAVE. Click on *Preview* in the navigation tree to view all information you have entered so far.
+After entering all available information, click on `SAVE`. Click on *Preview* in the navigation tree to view all information you have entered so far.
 
 
 ## Step 3: Add information on related resources
 
-Once you have entered the metadata, you can finalize the documentation of the video by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the video in a catalog. In this example, we will add one external resource: a link to the World Bank YouTube channel. 
+Once you have entered the metadata, you can finalize the documentation of the video by documenting and attaching external resources. External resources include all materials (files and links) that you want to make accessible to users when you publish the video in a catalog. In this example, we will add one external resource: a link to the World Bank YouTube channel. 
 
-To create external resources, click on "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(World Bank YouTube channel)*, and enter the URL *(https://www.youtube.com/worldbank)*. Then click "SAVE." You will now have two external resources listed.
+To create an external resource, click on *External resources* in the navigation tree and then click on `Create resource`. Select the resource type ("Web Site"), give it a short `title` *(Video in the World Bank YouTube channel)*, and enter the `URL` in `Resource attachment` *(https://www.youtube.com/worldbank)*. 
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_external_resource_youtube.png)
+
+Then click `SAVE`. The video will now be listed as an external resource.
 
 
 ## Step 4: Export and publish metadata
 
-In the project page, a menu of options will be available to you.
+In the *Project* page, a menu of options is available to you. 
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_open_actions_menu.png)
 
@@ -92,12 +95,14 @@ In the project page, a menu of options will be available to you.
 
 - ***Export package (ZIP)***
 
-  This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+  This option allows you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can then import it in their own Metadata Editor.
 
 
 - ***Export JSON***-
 
-  Export metadata as a JSON file. 
+  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
+
+  ![image](img/ME_UG_v1-0-0_quick_start_video_action_JSON_exported.png)
 
 
 - ***Export RDF/XML*** and ***Export RDF/XML***
@@ -105,20 +110,22 @@ In the project page, a menu of options will be available to you.
   These options allow you to export the metadata related to external resources in JSON or XML format.
 
 
+- ***PDF documentation***
+
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
+
+  ![image](img/ME_UG_v1-0-0_quick_start_video_exported_to_PDF.png)
+  
+
 - ***Publish to NADA***
 
-  If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+  If you have a NADA catalog and the credentials to publish content in it, you can also *Publish to NADA*. Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`.
 
   ![image](img/ME_UG_v1-0-0_quick_start_video_publish_to_NADA.png)
 
   The video will now be listed and made discoverable in the NADA catalog, with a link to the YouTube channel. The video can be viewed from within the NADA page.  
 
   ![image](img/ME_UG_v1-0-0_quick_start_video_in_NADA.png)
-
-
-- ***PDF documentation***
-
-  A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
 
 
 
