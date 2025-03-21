@@ -9,6 +9,7 @@ To begin, open the Metadata Editor link and log in with your username and passwo
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_project_page.png)
 
+
 Click on `CREATE NEW PROJECT` and select "Geospatial" when prompted to indicate the type of resource you will be documenting.
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
