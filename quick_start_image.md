@@ -23,16 +23,16 @@ We will use the image itself as a thumbnail. Providing a thumbnail is not requir
 
 ![image](img/ME_UG_v1-0-0_quick_start_image_edit_thumbnail.png)
 
-The Metadata Editor offers two options (corresopnding to two metadata standards) to document images: the Dublin Core (DCMI), or the IPTC. The decision to use one or the other option is made by selecting a DCMI-based or IPTC-based template. An image should not be documented using both options. In this Quick-start example, we will use the default DCMI metadata template, so there is no need to switch template. 
+The Metadata Editor offers two options to document images, corresponding to two different metadata standards: the Dublin Core (DCMI), or the IPTC. The decision to use one or the other option is made by selecting a DCMI-based or IPTC-based template. An image should not be documented using both options. In this Quick-start example, we will use the default DCMI metadata template, so there is no need to switch template (if the template shown in the *Template selection* frame is not the DCMI template, click on the template name and select a DCMI template from the list). 
 
 
 ## Step 2: Enter metadata
 
-In the navigation tree, select Metadata information / Information on metadata to enter information on who documented the image and when. All information in this section is optional. Enter your name (as `metadata creator`) and the `date` of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
+In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the image and when. All information in this section is optional. Enter your name (as `metadata creator`) and the `date` of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_image_metadata_information_save.png)
 
-You can now start entering the metadata related to the image itself. In the navigation tree, first select *Image identifiers* and enter the required `Primary ID` (if you want to publish the image in a NADA catalog, make sure that the identifier is not used by another user or for another project). Also enter the (optional) `Other identifiers` for the image. In this example, we have the identifier provided in the World Bank Flickr album: *Hoel_121012_DSC_3684*.  
+You can now start entering the metadata related to the image itself. In the navigation tree, first select *Image identifiers* and enter the required `Primary ID` (if you want to publish the image in a NADA catalog, make sure that the identifier is not used by another user or for another project). Also enter the (optional) `Other identifiers` for the image. In this example, we have one other identiofier, the one provided in the World Bank Flickr album: *Hoel_121012_DSC_3684*.  
 
 ![image](img/ME_UG_v1-0-0_quick_start_image_identifiers.png)
 
@@ -87,12 +87,14 @@ In the project page, a menu of options will be available to you.
 
 - ***Export package (ZIP)***
 
-  This option allows you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+  This option allows you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can then import it in their own Metadata Editor.
 
 
 - ***Export JSON***
 
-  Export metadata as a JSON file. 
+  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this: 
+
+  ![image](img/ME_UG_v1-0-0_quick_start_image_json_metadata.png)
 
 
 - ***Export RDF/XML*** and ***Export RDF/XML***
