@@ -24,7 +24,7 @@ Documenting a dataset (or a document in this case) consists of entering metadata
 
 ## Step 2: Enter metadata
 
-On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
+On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the dataset and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
