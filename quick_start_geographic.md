@@ -5,22 +5,21 @@ In this example, we will document a geographic dataset extracted from the Humani
 
 ## Step 1: Create a new project and add a thumbnail
 
-To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
+To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The *My projects* page will be displayed, showing all projects you have previously created and those that have been shared with you by other data curators, if any. If you are using the application for the first time and no project has been shared with you, the project list will be empty.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_project_page.png)
 
-
-Click on `CREATE NEW PROJECT` and select "Geospatial" when prompted to indicate the type of resource you will be documenting.
+Click on `CREATE NEW PROJECT` and select *Geospatial* when prompted to indicate the type of resource you will be documenting (in this case a geographic dataset).
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
 A new project page will open in a new tab.
 
-We will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (which will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA). Click on the edit button in the screenshot image, and select the image file when prompted. 
+You will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (or you may select another JPG or PNG image file of your choice). Note that providing a thumbnail is not required, but recommended. The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the project is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
 
-In this example, we will use the template IHSN ISO 19139-Datasets Template v01 EN (default template for geographic data). There is thus no need to change the template.
+Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a metadata template. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
 
 
 ## Step 2: Enter metadata
