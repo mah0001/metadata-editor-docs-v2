@@ -1,17 +1,17 @@
 # Quick start: Research projects and scripts
 
-In this example, we will document a research project titled "Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers". The scripts related to the project are available on GitHub in repository "". A working paper was published on arXiv, available at https://arxiv.org/abs/2410.10665. The data used for the project are not open data.
+In this Quick start example, we will document a research project titled *Double Jeopardy and Climate Impact in the Use of Large Language Models: Socio-economic Disparities and Reduced Utility for Non-English Speakers*. The scripts related to the project are available in the following GitHub repository: https://github.com/worldbank/double-jeopardy-in-llms. A working paper was published on arXiv, available at https://arxiv.org/abs/2410.10665. The project used three datasets, one of which is available as open data.
 
-The only file you need to reproduce this Quick-Start example is the image file *.../scripts/image_computer.jpg* (or select any another JPG or PNG image of your choice).
+The only file you need to reproduce this Quick-Start example is the image file *.../quick_start_files/scripts/llm_jeopardy_research.jpg* (or select any another JPG or PNG image of your choice).
 
 
-**Step 1: Create a new project and add a thumbnail**
+## Step 1: Create a new project and add a thumbnail
 
-To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
+To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The *My projects* page will be displayed, showing all projects you have previously created and those that have been shared with you by other data curators, if any. If you are using the application for the first time and no project has been shared with you, the project list will be empty.
 
 ![image](img/ME_UG_v1-0-0_quick_start_scripts_project_page.png)
 
-Click on "CREATE NEW PROJECT" and select "Script" when prompted to indicate the type of resource you will be documenting.
+Click on `CREATE NEW PROJECT` and select *Script* when prompted to indicate the type of resource you will be documenting (a research project and scripts).
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
@@ -19,14 +19,14 @@ A new project page will open in a new tab.
 
 ![image](img/ME_UG_v1-0-0_quick_start_scripts_new_project_home.png)
 
-We will use the *image_computer.jpg* image (or an image of your choice) as a thumbnail. The image will be displayed in the Metadata Editor and in the NADA catalog if the metadata is published in NADA. Click on the edit button in the screenshot image, and select the image file when prompted. 
+We will use the *llm_jeopardy_research.jpg* image (or an image of your choice) as a thumbnail. Note that providing a thumbnail is not required, but recommended. The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the metadata is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted.  
 
 ![image](img/ME_UG_v1-0-0_quick_start_scripts_edit_thumbnail.png)
 
 
 **Step 2: Enter metadata**
 
-On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the research project, and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
+On the left navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the research project, and when. Enter your `name`, and the `date` of the day in ISO format (YYYY-MM-DD). Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_script_metadata_information_save.png)
 
