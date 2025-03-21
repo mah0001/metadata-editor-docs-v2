@@ -110,7 +110,7 @@ In the *Project* page, a menu of options is available to you.
   
 - ***PDF documentation***
 
-  A PDF verion of the metadata can be automatically created. Select *PDF documentation* then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
+  A PDF version of the metadata can be automatically created. Select *PDF documentation* then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
 
   ![image](img/ME_UG_v1-0-0_quick_start_document_exported_to_PDF.png)
 
