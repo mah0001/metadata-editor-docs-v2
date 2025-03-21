@@ -21,7 +21,7 @@ A new project page will open in a new tab.
 
 We will use the *llm_jeopardy_research.jpg* image (or an image of your choice) as a thumbnail. Note that providing a thumbnail is not required, but recommended. The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the metadata is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted.  
 
-![image](img/ME_UG_v1-0-0_quick_start_scripts_edit_thumbnail.png)
+![image](img/ME_UG_v1-0-0_quick_start_script_edit_thumbnail.png)
 
 
 ## Step 2: Enter metadata
