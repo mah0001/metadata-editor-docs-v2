@@ -24,9 +24,9 @@
     * [Quick start (indicator)](quick_start_indicator.md)
     * [Quick start (microdata)](quick_start_microdata.md)
     * [Quick start (geographic dataset)](quick_start_geographic.md)
+    * [Quick start (scripts)](quick_start_script.md)
     * [Quick start (image)](quick_start_image.md)
     * [Quick start (video)](quick_start_video.md)
-    * [Quick start (scripts)](quick_start_script.md)
 
 * Metadata templates
    
