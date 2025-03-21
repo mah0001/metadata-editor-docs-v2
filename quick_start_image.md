@@ -65,7 +65,7 @@ This information can be entered in the Metadata Editor as follows:
 ![image](img/ME_UG_v1-0-0_quick_start_image_metadata.png)
 
 
-## Step 3: Add information on related resources
+## Step 3: Add external resources
 
 Once you have entered the descriptive metadata, you can finalize the documentation of the image by documenting and attaching *external resources*. External resources include all materials you want to make accessible to users when you publish the image in a catalog. In this example, we will only add one external resource: the link to the Flickr album. 
 
@@ -102,12 +102,12 @@ In the project page, a menu of options will be available to you.
 
 - ***PDF documentation***
 
-  A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata. Note that such a PDF document is more relevant for data types other than images.
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata. Note that such a PDF document is more relevant for data types other than images.
 
 
 - ***Publish to NADA***
 
-  If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+  If you have a NADA catalog and the credentials to publish content in it, you can also `Publish to NADA`. Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`.
 
   ![image](img/ME_UG_v1-0-0_quick_start_image_publish_to_NADA.png)
 
