@@ -7,7 +7,7 @@ The metadata we will enter in the Metadata Editor is the metadata published by t
 The only files you need to reproduce this Quick-start example are the image file that will be used as thumbnail (*.../quick_start_files/indicator/poverty_thumbnail.jpg*) and the CSV file (*quick_start_files/indicator/SI.POV.DDAY_countries_data*) that contains the list of countries and years for which the data are available in the WDI database (CSV file extracted from an Excel file downloaded on 13 February 2025 from the World Bank website at https://api.worldbank.org/v2/en/indicator/SI.POV.DDAY?downloadformat=excel).
 
 
-**Step 1: Create a new project and add a thumbnail**
+## Step 1: Create a new project and add a thumbnail
 
 To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The *My projects* page will be displayed, showing all projects you have previously created and those that have been shared with you by other users of the Metadata Editor, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
@@ -28,7 +28,7 @@ We will use the image *poverty_thumbnail.jpg* as a thumbnail (or feel free to se
 Documenting an indicator consists of entering information about the indicator in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
 
 
-**Step 2: Enter metadata**
+## Step 2: Enter metadata
 
 In the navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the indicator and when. Enter your name in `Metadata producers` and the date of the day in ISO format (YYYY-MM-DD) in `Production date`. Then click on `SAVE`.
 
@@ -99,7 +99,7 @@ Note: The geographic coverage for the indicator consists of a large number of co
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_paste_countries.png)
 
 
-**Step 3: Add information on related resources**
+## Step 3: Add information on related resources
 
 Once you have entered the metadata, you can finalize the documentation of the indicator by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the indicator in a catalog. In this example, we will add one external resource: a link to the World Bank Poverty and Inequality Platform website. 
 
@@ -108,7 +108,7 @@ To create an external resource, click on "External resources" in the navigation 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_external_resource_PIP.png)
 
 
-**Step 4: Export and publish metadata**
+## Step 4: Export and publish metadata
 
 In the *Project* page, a menu of options is available to you.
 
