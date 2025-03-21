@@ -3,13 +3,13 @@
 In this example, we will document a geographic dataset extracted from the Humanitarian Data Exchange (HDX) website. This dataset provides an outline of camps of Rohingya refugees in Cox's Bazar, Bangladesh. The only file you need to reproduce this Quick-Start example is the image file *.../image/HDX_BGD_camps_thumbnail.jpg* (feel free to use any another PNG or JPG image file of your choice).
 
 
-**Step 1: Create a new project and add a thumbnail**
+## Step 1: Create a new project and add a thumbnail
 
 To begin, open the Metadata Editor link and log in with your username and password. The "My projects" page will be displayed, showing all projects you have previously created and those that have been shared with you by others, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_project_page.png)
 
-Click on "CREATE NEW PROJECT" and select "Geospatial" when prompted to indicate the type of resource you will be documenting.
+Click on `CREATE NEW PROJECT` and select "Geospatial" when prompted to indicate the type of resource you will be documenting.
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
@@ -22,7 +22,7 @@ We will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (which wil
 In this example, we will use the template IHSN ISO 19139-Datasets Template v01 EN (default template for geographic data). There is thus no need to change the template.
 
 
-**Step 2: Enter metadata**
+## Step 2: Enter metadata
 
 On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the publication and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
 
@@ -72,7 +72,7 @@ This information can be entered in the Metadata Editor as follows:
 | Content of the layers     | Description / Feature catalogue / Name (for the 14 features)              | 
 
 
-**Step 3: Add information on related resources**
+## Step 3: Add external resources
 
 Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the dataset in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
 
@@ -81,7 +81,7 @@ To create an external resource, select "External resources" in the navigation tr
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
 
 
-**Step 4: Export and publish metadata**
+## Step 4: Export and publish metadata
 
 In the project page, a menu of options will be available to you.
 
@@ -89,29 +89,29 @@ In the project page, a menu of options will be available to you.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_actions_menu.png)
 
-**Export package (ZIP)**
+- ***Export package (ZIP)***
 
-This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
+  This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
 
-**Export JSON**
+- ***Export JSON***
 
-Export metadata as a JSON file. 
+  Export metadata as a JSON file. 
 
-**Export RDF/XML** and **Export RDF/XML**
+- ***Export RDF/XML*** and ***Export RDF/XML***
 
-These options allow you to export the metadata related to external resources in JSON or XML format.
+  These options allow you to export the metadata related to external resources in JSON or XML format.
 
-**PDF documentation**
+- ***PDF documentation***
 
-A PDF version of the metadata can be automatically created. Select PDF documentation then click on GENERATE PDF. When the PDF is generated, click on DOWNLOAD PDF. You will obtain a bookmarked PDF file with all entered metadata.
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata. Such PDF file are not very useful for images; they are more relevant for other types of data.
 
-**Publish to NADA**
+- ***Publish to NADA***
 
-If you have a NADA catalog and the credentials to publish content in it, you can also "Publish to NADA". Select a configured NADA catalog, select the options as shown in the screenshot below, and click PUBLISH.
+  If you have a NADA catalog and the credentials to publish content in it, you can also `Publish to NADA`. Select a configured NADA catalog, select the options as shown in the screenshot below, and click `PUBLISH`.
 
-![image](img/ME_UG_v1-0-0_quick_start_geographic_publish_to_NADA.png)
+  ![image](img/ME_UG_v1-0-0_quick_start_geographic_publish_to_NADA.png)
 
-The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
+  The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
 
-![image](img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
+  ![image](img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
 
