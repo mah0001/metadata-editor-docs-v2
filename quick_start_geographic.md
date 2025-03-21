@@ -19,24 +19,24 @@ You will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (or you m
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
 
-Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a metadata template. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
+Documenting a dataset consists of entering metadata in metadata entry forms defined by a metadata template. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
 
 
 ## Step 2: Enter metadata
 
-On the left navigation tree, select "Metadata information / Information on metadata" to enter optional elements used to capture information on who documented the dataset and when. Enter your name, and the date in ISO format (YYYY-MM-DD). Then click on SAVE.
+On the left navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the dataset and when. Enter your name, and the date of the day in ISO format (YYYY-MM-DD). Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
-You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select *Description / Introduction* and enter the required `Primary ID` (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). 
+You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select *Description / Introduction* and enter the required `Primary ID` (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another project). 
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
 
-Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the HDX website (see *Additional information* section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The template is a bit complex, due to the complexity of the underlying ISO metadata standard.
+Then proceed with the other sections in the navigation tree and fill out the following elements using the information provided in the HDX website, also provided below (see *Additional information* section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The metadata template is a bit complex, due to the complexity of the underlying ISO 19139 metadata standard.
 - ***Language:*** English
 - ***Title:*** Outline of camps of Rohingya refugees in Cox's Bazar, Bangladesh
 - ***Description:*** This spatial database contains the outline of the camps, settlements, and sites where Rohingya refugees are staying in Cox's Bazar, Bangladesh.
-- ***Time period of the dataset:*** January 20, 2018-April 05, 2024
+- ***Time period of the dataset:*** January 20, 2018 - April 05, 2024
 - ***Modified:*** 19 May 2024
 - ***Expected update frequency:*** As needed
 - ***Location:*** Bangladesh
@@ -72,38 +72,52 @@ This information can be entered in the Metadata Editor as follows:
 | Content of the layers     | Description / Feature catalogue / `Name` (for the 14 features)              | 
 
 
+After entering all available information, click on `SAVE`. Click on *Preview* in the navigation tree to view all information you have entered so far.
+
+
 ## Step 3: Add external resources
 
-Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the dataset in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
+You can now finalize the documentation of the dataset by documenting and attaching *external resources*. External resources include all materials (files or links) you want to make accessible to users when you publish the dataset in a catalog. In this example, we will only add one resource: a link to the HDX website. 
 
-To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click `SAVE`. You will now have the external resource listed.
+To create an external resource, select *External resources* in the navigation tree and then click on `Create resource`. Most elements available to describe an external resource are optional, but at a minimum, you should enter the `Resource type` ("Web Site" in this case), the `Title` *(HDX Data Platform)*, and the URL in the section *Resource attachment*. *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click `SAVE`. You will now have the external resource listed.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
+
+With this, you have completed the documentation of the dataset (note that in practice, you would generate more detailed metadata than what we did in this example). The *My Projects* page will show this new entry. You may at any time go back to it to edit or complete the metadata.
 
 
 ## Step 4: Export and publish metadata
 
-In the project page, a menu of options will be available to you.
+In the *Project* page, a menu of options is available to you.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_open_actions_menu.png)
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_actions_menu.png)
 
+
 - ***Export package (ZIP)***
 
   This option will allow you to generate a ZIP file containing all metadata and resources related to the project. This package can be shared with others, who can import it in their own Metadata Editor.
 
+
 - ***Export JSON***
 
-  Export metadata as a JSON file. 
+  Export metadata to JSON will generate a JSON file containing the metadata. The option is provided to include all elements or only the non-private ones. The JSON file will look like this:
+  
+  ![image](img/ME_UG_v1-0-0_quick_start_geographic_json_metadata.png)
+
 
 - ***Export RDF/XML*** and ***Export RDF/XML***
 
   These options allow you to export the metadata related to external resources in JSON or XML format.
 
+
 - ***PDF documentation***
 
-  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata. 
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata.
+
+  ![image](img/ME_UG_v1-0-0_quick_start_geographic_pdf_metadata.png)
+
 
 - ***Publish to NADA***
 
