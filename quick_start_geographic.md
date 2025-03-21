@@ -103,7 +103,7 @@ In the project page, a menu of options will be available to you.
 
 - ***PDF documentation***
 
-  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata. Such PDF file are not very useful for images; they are more relevant for other types of data.
+  A PDF version of the metadata can be automatically created. Select PDF documentation then click on `GENERATE PDF`. When the PDF is generated, click on `DOWNLOAD PDF`. You will obtain a bookmarked PDF file with all entered metadata. 
 
 - ***Publish to NADA***
 
