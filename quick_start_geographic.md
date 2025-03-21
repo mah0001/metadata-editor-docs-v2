@@ -28,11 +28,11 @@ On the left navigation tree, select "Metadata information / Information on metad
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
-You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select "Description / Introduction" and enter the required **Primary ID** (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). 
+You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select *Description / Introduction* and enter the required `Primary ID` (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another image). 
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
 
-Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the HDX website (see "Additional information" section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The template is a bit complex, due to the complexity of the underlying ISO metadata standard.
+Then proceed with the other sections in the navigation tree and fill out the following elements using the following information provided in the HDX website (see *Additional information* section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The template is a bit complex, due to the complexity of the underlying ISO metadata standard.
 - ***Language:*** English
 - ***Title:*** Outline of camps of Rohingya refugees in Cox's Bazar, Bangladesh
 - ***Description:*** This spatial database contains the outline of the camps, settlements, and sites where Rohingya refugees are staying in Cox's Bazar, Bangladesh.
@@ -53,30 +53,30 @@ Then proceed with the other sections in the navigation tree and fill out the fol
 
 This information can be entered in the Metadata Editor as follows:
 
-| Information from HDX      | Corresponding element in the metadata template                            | 
-| ------------------------- | --------------------------------------------------------------------------| 
-| Language                  | Description / Introduction / Language                                     |
-| Title                     | Description / Identification / Citation / Title                           |
-| Description               | Description / Identification / Abstract, purpose,credit,status / Abstract |
-| Time period of the dataset| Description / Identification / Citation / Date (creation and lastUpdate)  | 
-| Modified                  | Description / Identification / Citation / Date (released)                 |
-| Expected update frequency | Description / Identification / Resource maintenance / Frequency           |
-| Location                  | Description / Identification / Extent / Geographic element (Geo. descr.)  |
-| Source                    | Description / Identification / Citation / Responsible party / Org. name   |
-| Contributor               | Description / Identification / Abstract, purpose,credit,status / Credit   | 
-| Methodology               | Description / Identification / Abstract, purpose,credit,status / Abstract | 
-| Caveats/Comments          | Description / Data quality / Lineage statement (scope = Dataset)          | 
-| License                   | Description / Identification / Resource constraints / Legal (license)     | 
-| Tags                      | Description / Descriptive keywords / Keywords (Keyword column)            | 
-| File formats              | Description / Resource format / Name (enter as 3 resource formts)         | 
-| Content of the layers     | Description / Feature catalogue / Name (for the 14 features)              | 
+| Information from HDX      | Corresponding element in the metadata template                              | 
+| ------------------------- | ----------------------------------------------------------------------------| 
+| Language                  | Description / Introduction / `Language`                                     |
+| Title                     | Description / Identification / Citation / `Title`                           |
+| Description               | Description / Identification / Abstract, purpose,credit,status / `Abstract` |
+| Time period of the dataset| Description / Identification / Citation / `Date` (creation and lastUpdate)  | 
+| Modified                  | Description / Identification / Citation / `Date` (released)                 |
+| Expected update frequency | Description / Identification / Resource maintenance / `Frequency`           |
+| Location                  | Description / Identification / Extent / `Geographic element` (Geo. descr.)  |
+| Source                    | Description / Identification / Citation / Responsible party / `Org. name`   |
+| Contributor               | Description / Identification / Abstract, purpose,credit,status / `Credit`   | 
+| Methodology               | Description / Identification / Abstract, purpose,credit,status / `Abstract` | 
+| Caveats/Comments          | Description / Data quality / `Lineage statement` (scope = Dataset)          | 
+| License                   | Description / Identification / Resource constraints / `Legal` (license)     | 
+| Tags                      | Description / Descriptive keywords / `Keywords` (Keyword column)            | 
+| File formats              | Description / Resource format / `Name` (enter as 3 resource formats)        | 
+| Content of the layers     | Description / Feature catalogue / `Name` (for the 14 features)              | 
 
 
 ## Step 3: Add external resources
 
 Once you have entered the metadata, you can finalize the documentation of the dataset by documenting and attaching external resources. External resources include all materials you want to make accessible to users when you publish the dataset in a catalog. In this example, we will only add one resource: a link to the HDX data platform. 
 
-To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click "SAVE." You will now have the external resource listed.
+To create an external resource, select "External resources" in the navigation tree and then click on "Create resource". Select the resource type ("Web Site"), give it a short title *(HDX Data Platform)*, and enter the URL *(https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh)*. Then click `SAVE`. You will now have the external resource listed.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_external_resource_hdx.png)
 
@@ -111,7 +111,7 @@ In the project page, a menu of options will be available to you.
 
   ![image](img/ME_UG_v1-0-0_quick_start_geographic_publish_to_NADA.png)
 
-  The image will now be listed and made discoverable in the NADA catalog, with a link to the Flickr Album. 
+  The dataset will now be listed and made discoverable in the NADA catalog. 
 
   ![image](img/ME_UG_v1-0-0_quick_start_geographic_in_NADA.png)
 
