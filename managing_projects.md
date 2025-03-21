@@ -1,6 +1,6 @@
 # Managing projects
 
-A ***project*** corresponds to a "dataset" of any type. It can correspond to a survey or census microdataset, an administrative dataset, a geographic dataset (or servive), a document, a statistical table, an indicator, a database, a video, an image, or a research project with its associated scripts. 
+A ***project*** corresponds to a "dataset" of any type. It can correspond to a survey or census microdataset, an administrative dataset, a geographic dataset (or service), a document, a statistical table, an indicator, a database, a video, an image, or a research project with its associated scripts. 
 
 ## The "My projects" page
 
