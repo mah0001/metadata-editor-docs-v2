@@ -5,7 +5,7 @@ In this example, we will document a book titled *The Analysis of Household Surve
 In theis Quick-start exercise, we assume that you want to publish information on the book in a data catalog, with a link to the World Bank's Open Knowledge Repository (i.e., we assume that you not plan to make the book directly available from your catalog). The only file you need to reproduce this Quick-Start example is the image file of the book's cover page (file *.../quick_start_files/document/cover_deaton_survey_analysis.jpg*), although you may use another image file of your choice.
 
 
-**Step 1: Create a new project and add a thumbnail**
+## Step 1: Create a new project and add a thumbnail
 
 To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The *My projects* page will be displayed, showing all projects you have previously created and those that have been shared with you by other data curators, if any. If you are using the application for the first time and no project has been shared with you, the project list will be empty.
 
@@ -26,7 +26,7 @@ You will use the cover page of the book as a thumbnail. Note that providing a th
 Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template. 
 
 
-**Step 2: Enter metadata**
+## Step 2: Enter metadata
 
 In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the publication and when. All information in this section is optional. Enter your name (as metadata creator) and the date of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
 
@@ -65,7 +65,7 @@ After entering all available information, click on `SAVE`. Click on *Preview* in
 ![image](img/ME_UG_v1-0-0_quick_start_document_preview_page.png)
 
 
-**Step 3: Provide a link to the document**
+## Step 3: Provide a link to the document
 
 The next step is to add a link (URL) to the book. Another option would be to upload the book in PDF; but in this exercise, we assume you do not want to distribute the book but only to list it in a catalog with a link to an external repository. This information, along with any other related files and links you may want to attach to the metadata, is referred to as *External resources*. To add external resources, click on *External resources* in the navigation tree and click on `CREATE RESOURCE`. 
 
@@ -82,7 +82,7 @@ With this, you have completed the documentation of the book. The *My Projects* p
 ![image](img/ME_UG_v1-0-0_quick_start_document_project_page_with_project.png)
 
 
-**Step 4: Export and publish metadata**
+## Step 4: Export and publish metadata
 
 In the *Project* page, a menu of options is available to you. 
 
