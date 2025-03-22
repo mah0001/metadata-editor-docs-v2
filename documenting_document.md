@@ -99,9 +99,37 @@ The **`document_description`** block contains the metadata elements used to desc
   - **`type`** The type of identifier, for example "DOI", "ISBN", or "ISSN".
   - **`identifier`** The identifier itself.   
 
-- **`type`** This describes the nature of the resource. It is recommended practice to select a value from a controlled vocabulary, which could for example include the following options: "article", "book", "booklet", "collection", "conference proceedings", "manual", "master thesis", "patent", "PhD thesis", "proceedings", "technical report", "working paper", "website", "other". Specialized agencies may want to create their own controlled vocabularies; for example, a national statistical agency may need options like "press release", "methodology document", "protocol", or "yearbook". The `type` element can be used to create a "Document type" facet (filter) in a data catalog. If the controlled vocabulary is such that it contains values that are not mutually exclusive (i.e. if a document could possibly have more than one type), the element `type` cannot be used as it is not repeatable. In such case, the solution is to provide the type of document as `tags`, in a `tag_group` that could for example be named *type* or *document_type*. Note also that the Dublin Core provides a controlled vocabulary (the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)) for the `type` element, but this vocabulary is related to the types of resources (dataset, event, image, software, sound, etc.), not the type of document which is what we are interested in here. 
+- **`type`** This describes the nature of the resource. It is highly recommended to select a value from a controlled vocabulary (which should then be embedded in the metadata template), which could for example include the following options:
+  - "article"
+  - "book"
+  - "booklet"
+  - "collection"
+  - "conference proceedings"
+  - "manual"
+  - "master thesis"
+  - "patent"
+  - "PhD thesis"
+  - "proceedings"
+  - "technical report"
+  - "working paper"
+  - "website"
+  - "other".
+  
+  Specialized agencies may want to create their own controlled vocabularies; for example, a national statistical agency may need options like
+  - "press release"
+  - "methodology document"
+  - "protocol"
+  - "yearbook".
+  
+  The `type` element can be used to create a "Document type" facet (filter) in a data catalog. If the controlled vocabulary is such that it contains values that are not mutually exclusive (i.e. if a document could possibly have more than one type), the element `type` cannot be used as it is not repeatable. In such case, the solution is to provide the type of document as `tags`, in a `tag_group` that could for example be named *type* or *document_type*. Note also that the Dublin Core provides a controlled vocabulary (the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)) for the `type` element, but this vocabulary is related to the types of resources (dataset, event, image, software, sound, etc.), not the type of document which is what we are interested in here. 
 
-- **`status`** The status of the document. The status of the document should (but does not have to) be provided using a controlled vocabulary, for example with the following options: "first draft", "draft", "reviewed draft", "final draft", "final". Most documents published in a catalog will likely be "final".
+- **`status`** The status of the document. The status of the document should (but does not have to) be provided using a controlled vocabulary, for example with the following options:
+  - "first draft"
+  - "draft"
+  - "reviewed draft"
+  - "final draft"
+  - "final".
+ Most documents published in a catalog will likely be "final".
 
 - **`description`** This element is used to provide a brief description of the document (not an abstract, which would be provided in the field `abstract`). It should not be used to provide content that is contained in other, more specific elements. As stated in the [Dublin Core Usage Guide](https://www.dublincore.org/specifications/dublin-core/usageguide/elements/), "Since the `description` field is a potentially rich source of indexable terms, care should be taken to provide this element when possible. Best practice recommendation for this element is to use full sentences, as description is often used to present information to users to assist in their selection of appropriate resources from a set of search results." 
 
@@ -118,10 +146,11 @@ The **`document_description`** block contains the metadata elements used to desc
 
 - **`ref_country`** The list of countries (or regions) covered by the document, if applicable. This is a repeatable block of two elements:
   - **`name`** The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with.
-  - **`code`** The country/region code. It is recommended to use a standard list of countries codes, such as the [ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
-The field `ref_country` will often be used as a filter (facet) in data catalogs. When a document is related to only part of a country, we still want to capture this information in the metadata. For example, the `ref_country` element for the document ["Sewerage and sanitation : Jakarta and Manila"](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/880091468095971513/sewerage-and-sanitation-jakarta-and-manila) will list "Indonesia" (code IDN) and "Philippines" (code PHL). 
+  - **`code`** The country/region code. It is recommended to use a standard list of countries codes, such as the [ISO 3166] (https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
-  Considering the importance of the geographic coverage of a document as a filter, the `ref_country` element deserves particular attention. The document title will often but not always provide the necessary information. Using R, Python or other programming languages, a list of all countries mentioned in a document can be automatically extracted, with their frequencies. This approach (which requires a lookup file containing a list of all countries in the world with their different denominations and spelling) can be used to extract the information needed to populate the `ref_country` element (not all countries in the list will have to be included; some threshold can be set to only include countries that are "significantly" mentioned in a document). Tools like the R package [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) are available to facilitate this process.   
+    Considering the importance of the geographic coverage of a document as a filter, the `ref_country` element deserves particular attention. Consistency in the use of country codes and country names is essential in a data catalog. The field `ref_country` will often be used as a filter (facet) in data catalogs. Therefore, make sure that you do not refer to a same country using different names (for example, the Democratic Republic of Congo should not be named "Congo, D.R." in some instances and "Congo, Dem.Rep." or "Democratic Republic of congo" in other instances). When a document is related to only part of a country, we still want to capture this information in the metadata. For example, the `ref_country` element for the document ["Sewerage and sanitation : Jakarta and Manila"](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/880091468095971513/sewerage-and-sanitation-jakarta-and-manila) will list "Indonesia" (code IDN) and "Philippines" (code PHL). 
+
+  The document title will often but not always provide the necessary information. Using R, Python or other programming languages, a list of all countries mentioned in a document can be automatically extracted, with their frequencies. This approach (which requires a lookup file containing a list of all countries in the world with their different denominations and spelling) can be used to extract the information needed to populate the `ref_country` element (not all countries in the list will have to be included; some threshold can be set to only include countries that are "significantly" mentioned in a document). Tools like the R package [countrycode](https://cran.r-project.org/web/packages/countrycode/index.html) are available to facilitate this process.
 
   When a document is related to a region (not to specific countries), or when it is related to a topic but not a specific geographic area, the `ref_country` might still be applicable. Try and extract (possibly using a script that parses the document) information on the countries mentioned in the document. For example, `ref_country` for the World Bank document ["The investment climate in South Asia"](http://documents1.worldbank.org/curated/en/242391468114239381/pdf/715140v10ESW0P0Climate0I0OCR0Needed.pdf) should include Afghanistan (mentioned 81 times in the document), Bangladesh (113), Bhutan (94), India (148), Maldives (62), Nepal (64), Pakistan (103), and Sri Lanka (98), but also China (not a South-Asian country, but mentioned 63 times in the document).
 
