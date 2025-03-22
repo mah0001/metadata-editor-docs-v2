@@ -4,19 +4,30 @@ Two metadata schemas are employed to document indicators and their respective da
 
 ## Metadata schemas
 
-Indicators are summary measures related to key issues or phenomena, derived from observed facts. Indicators form time series when they are provided for a specific geography and with a temporal ordering, i.e. when their values are provided with an ordered annual, quarterly, monthly, daily, or other time reference. 
+### Metadata schema for documenting indicators
 
-The World Bank developed its metadata standard for documenting indicators by compiling and structuring metadata elements utilized by various organizations, including the Bank itself, United Nations agencies, International Monetary Fund (IMF), Organisation for Economic Co-operation and Development (OECD), and Eurostat. 
+Indicators are summary measures that capture key issues or phenomena, derived from observed data. When indicators are presented for a specific geographic area and include a temporal dimension — such as annual, quarterly, monthly, or daily values — they form time series.
 
-The standard is compatible with the Statistical Data and Metadata Exchange (SDMX) standard. SDMX is a data exchange standard designed to facilitate machine-to-machine data exchanges. It provides a framework for structuring metadata through Metadata Structure Definitions (MSDs), but it does not specify the content of MSDs. Consequently, the Bank’s metadata standard complements and can be integrated within the SDMX framework effectively. The Metadata Editor offers a tool to export metadata templates as MSDs and the indicators' metadata as meta-datasets. This enables the metadata produced using the Metadata Editor to be incorporated into SDMX-compliant data management and dissemination systems.
+To facilitate standardized documentation of indicators, the World Bank developed a metadata standard by compiling and structuring metadata elements commonly used by various organizations, including the World Bank itself, United Nations agencies, the International Monetary Fund (IMF), the Organisation for Economic Co-operation and Development (OECD), and Eurostat.
 
-The World Bank metadata standard also includes a section for documenting the data structure (structural metadata), which outlines how the indicator is organized in the data file or database. This data structure aligns with the SDMX data structure definition (DSD). The data structure details the columns of an indicator dataset (assuming the data are provided in long format). It defines the specific role of each column (in a manner compatible with SDMX) and provides the associated metadata.
+The World Bank metadata schema aligns with the Statistical Data and Metadata Exchange standard (SDMX), a standard designed to enable machine-to-machine data exchanges.  
+- The *descriptive and reference metadata* component of the World Bank schema aligns with SDMX Metadata Structure Definitions (MSDs). MSDs provide a framework for structuring metadata, but do not define the metadata elements to be included. The World Bank’s schema therefore complements SDMX by specifying detailed content that can be incorporated into SDMX MSDs and metadatasets.
+- The *structural metadata* in the World Bank schema, which describes how indicator data are organized in the data file or database, aligns with the SDMX Data Structure Definitions (DSDs). 
 
-The technical description of the schema is available at https://worldbank.github.io/metadata-schemas/#tag/Timeseries.
+The Metadata Editor supports this integration by offering tools to:
+- Export metadata templates as MSDs – ensuring compatibility with SDMX metadata structures.
+- Export indicator metadata as meta-datasets – enabling seamless incorporation of metadata into SDMX-compliant systems.
 
-The metadata schema is complemented by another schema developed to document a database of indicators (i.e.a collection of indicators). The main objective of documenting a database is to provide additional information for each indicator. The metadata schema used to document an indicator contains one element to store the identifier of a database, which establishes the link between an indicator metadata and the related database metadata. 
+### Metadata schema for documenting databases of indicators
 
+In addition to documenting individual indicators, the World Bank has developed a complementary metadata schema for documenting databases of indicators (i.e., collections of indicators). This schema provides additional metadata at the database level, which enriches the contextual information available for each indicator.
+
+To establish a clear link between an indicator and its associated database, the indicator metadata schema includes a dedicated element that stores the database identifier, enabling seamless association between indicator metadata and database metadata.
+
+In data catalogs like a NADA catalog, the metadata on indicators and the raleted databases can be combined.
+ 
 ![image](img/ME_UG_documenting_indicator_indicator_database_nada.png)
+
 
 ## Documenting an indicator
 
@@ -24,9 +35,9 @@ This section describes in detail the process of documenting an indicator, and th
 
 ### Create a new project
 
-The first step in documenting an indicator is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Indicator* as data type. This will open a new, untitled *Project page*. 
+The first step in documenting an indicator is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page, then selecting *Indicator* as data type when prompted. This will open a new, untitled indicator *Project page*. 
 
-In that page, select the Template you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the `Switch template` icon in the *Templates* frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
+In that page, **select the template** you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the `Switch template` icon in the *Templates* frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
 ### Information on metadata
 
@@ -34,36 +45,34 @@ The *Metadata information* section in the navigation tree (in the *Project page*
 
 ### Indicator description (descriptive metadata)
 
-The documentation of an indicator is a straightforward process. The navigation tree provides access to various metadata entry pages where the information about the indicator can be captured. These metadata entry pages are defined by the selected template. The template includes a description of each metadata element it contains, which are used as instructions to data curators. The template can be printed as PDF and used as a reference document by data curators. The instructions are also provided in the metadata entry pages, by clicking on the (?) icon next to each element's name.
+The documentation of an indicator is a relatively straightforward process. The navigation tree in the *Project page* provides access to various metadata entry pages where the information about the indicator can be captured. These metadata entry pages are defined by the selected template. 
 
-We provide here some guidance on a selection of key metadata elements.
+The template includes a description of each metadata element it contains, which can be used as instructions to data curators. Templates can be exported to PDF format, and used as a reference documents by data curators. The instructions contained in templates are also displayed in the metadata entry pages, by clicking on the `?` icon shown next to each metadata element's label.
 
-- **`idno`** A unique identifier (ID) for the indicator. This is a required element. Most agencies and databases will have a coherent coding convention to generate their indicators IDs.                                      
+We provide below some guidance on a selection of the metadata elements found in the metadata schema. A small number of these elements are marked as *required*. When documenting an indicator, it is advised to provide the most compoehensive information possible. 
 
-- **`doi`** A Digital Object Identifier (DOI) for the the indicator.                                         
+- **`idno`** A unique identifier (ID) for the indicator. This is a required element. Most agencies will (and should) use a coherent coding convention to generate their indicators identifiers.                                      
 
-- **`name`** The name (label) of the indicator. Note that a field `alias` is provided (see below) to capture alternative names for the indicator. 
+- **`doi`** A Digital Object Identifier (DOI) for the the indicator. See the *Documenting data - General instructions* section of the User Guide for more information on DOIs.                                         
 
-- **`database_id`** The unique identifier of the database the indicator belongs to. This field must correspond to the element `database_description > title_statement > idno` of the database schema described above. This is the only field that is needed to establish the link between the database metadata and the indicator metadata.
+- **`name`** The name (label) of the indicator. Note that a field `aliases` is provided (see below) to capture alternative names for the indicator. 
+
+- **`database_id`** The unique identifier of the database the indicator belongs to. This field must correspond to the element `database_description > title_statement > idno` in the database schema. This is the field that will be used to establish the link between the database metadata and the indicator metadata.
 
 - **`aliases`** An indicator can be referred to using different names. The `aliases` element is provided to capture the multiple names and labels that may be associated with (i.e synomyms of) the documented indicator.
 
-- **`alternate_identifiers`** The element `idno` described above is the reference unique identifier for the catalog in which the metadata is intended to be published. But the same indicator/metadata may be published in other catalogs. For example, a data catalog may publish metadata for indicator extracted from the World Bank World Development Indicators (WDI) database. And the WDI itself contains indicators generated and published by other organizations, such as the World Health Organization or UNICEF. Catalog administrators may want to assign a unique identifier specific to their catalog (the `idno` element), but keep track of the identifier of the indicator or indicator in other catalogs or databases. The `alternate_identifiers` element serves that purpose. 
+- **`alternate_identifiers`** The element `idno` described above is the reference unique identifier for the catalog in which the metadata is intended to be published. But the same indicator/metadata may be published in other catalogs. For example, a data catalog may publish metadata for indicator extracted from the World Bank World Development Indicators (WDI) database. And the WDI itself contains indicators generated and published by other organizations, such as the World Health Organization or UNICEF. Catalog administrators may want to assign a unique identifier specific to their catalog (the `idno` element), but keep track of the identifier of the indicator or indicator in other catalogs or databases. The `alternate_identifiers` element serves that purpose. It includes the following sub-elements: 
   - **`name`** This element will be used to provide the identifier. 
   - **`database`** The name of the database (or catalog) where this alternative identifier is used, e.g. "IMF, International Financial Statistics (IFS)". 
   - **`uri`** A link (URL) to the database mentioned in `database`.  
   - **`notes`** Any additional information on the alternate identifier.   
 
-- **`measurement_unit`** The unit of measurement. Note that in many databases the measurement unit will also be mentioned in the indicator name. In the World Bank's World Development Indicators for example, indicators are named as follows: 
-   - CO2 emissions (kg per 2010 US$ of GDP)
-   - GDP per capita (current US$)
-   - GDP per capita (current LCU)
-   - Population density (people per sq. km of land area)
+- **`measurement_unit`** The unit of measurement. Note that in many databases the measurement unit will also be mentioned in the indicator name. The World Bank's World Development Indicators (WDI) for example, contains indicators named as follows: "CO2 emissions (kg per 2010 US$ of GDP)", "GDP per capita (current US$)", "GDP per capita (current LCU)", or "Population density (people per sq. km of land area)".
  
-- **`dimensions`** An indicator can be made available at different levels of disaggregation. For example, an indicator containing annual estimates of the indicator "Resident population (mid-year)" can be provided by country, by urban/rural area of residence, by sex, by age group. This field is used to document such disaggregations. It is used only when the `Data Structure Definition` is not documented (see below the section on structural metadata). Documenting the Data Structured Definition is the preferred way of documenting the dimensions of an indicator. 
+- **`dimensions`** An indicator can be made available with different levels of disaggregation. For example, an indicator containing annual estimates of the "Resident population (mid-year)" can be provided by urban/rural area of residence, by sex, and by age group. The `dimension` element may be used to document such disaggregations. Note that the element should only be used when the `Data Structure Definition` of the indicator is not documented (see below the section on structural metadata). Documenting the Data Structured Definition is the preferred way of documenting the dimensions of an indicator. 
   - **`name`** The name of the dimension.
   - **`label`** The label of the dimension, for example "sex", or "urban/rural".
-  - **`description`** A description of the dimension (for example, if the label was "age group", the description can provide detailed information on the age groups, e.g. "The age groups in the database are 0-14, 15-49, 50-64, and 65+ years old".)  
+  - **`description`** A description of the dimension (for example, if the label is "age group", the description can provide detailed information on the age groups, e.g. "The age groups in the database are 0-14, 15-49, 50-64, and 65+ years old".)  
 
 - **`release_calendar`** Information on when updates for the indicators can be expected. This will usually not consist of exact dates (which would have to be updated regularly), but of more general information like "Every first Monday of the Month", or "Every year on June 30", or "The last week of each quarter". 
 
@@ -89,8 +98,7 @@ We provide here some guidance on a selection of key metadata elements.
 
 - **`data_collection`** This group of elements can be used to document data collection activities that led to or allowed the production of the indicator. This element will typically be used for the description of surveys or censuses. 
 Note: the schema also contains an element "sources". That element will be used to document the organization and/or main data production program from which the indicator is derived. 
-  - **`data_source`** 
-  A concise and standardized name (label) for the data source, e.g. "National Labor Force Survey, 1st quarter 2022". If multiple data sources were used, they can all be listed here. Note that if an indicator has values obtained from many different sources, the source for each value (or group of values) will not be part of the indicator metadata, but will be stored as an attribute in the data file where the information can be associated with a specific observation ("cell note" or group of observation (e.g. attached to an indicator for avv values for a same year or for a same area).
+  - **`data_source`** A concise and standardized name (label) for the data source, e.g. "National Labor Force Survey, 1st quarter 2022". If multiple data sources were used, they can all be listed here. Note that if an indicator has values obtained from many different sources, the source for each value (or group of values) will not be part of the indicator metadata, but will be stored as an attribute in the data file where the information can be associated with a specific observation ("cell note" or group of observation (e.g. attached to an indicator for avv values for a same year or for a same area).
   - **`method`** Brief information on the data collection method, e.g. :Sample household survey".
   - **`period`** Information on the period of the data collection, e.g. "January to March 2022".  
   - **`note`** Additional information on the data collection.
@@ -103,7 +111,7 @@ Note: the schema also contains an element "sources". That element will be used t
 
 - **`missing`** Information on missing values in the indicator or indicator. This information can be related to treatment of missing values, to the cause(s) of missing values, and others.
 
-- **`validation_rules`** Description of the set of rules (itemized) used to validate values for the indicator, e.g. "Is within range 0-100", or "Is the sum of indicatorX + indicator Y".
+- **`validation_rules`** Description of the set of rules (itemized) used to validate values for the indicator, e.g. "Is within range 0-100", or "Is the sum of indicator X + indicator Y".
 
 - **`quality_checks`** Data may have gone through data quality checks to assure that the values are reasonable and coherent, which can be described in this element. These quality checks may include checking for outlying values or other. A brief description of such quality control procedures will contribute to reinforcing the credibility of the data being disseminated. 
 
@@ -140,11 +148,11 @@ Note: the schema also contains an element "sources". That element will be used t
 
 - **`mandate`**
    - **`mandate`** Description of the institutional mandate or of a set of rules or other formal set of instructions assigning responsibility as well as the authority to an organization for the collection, processing, and dissemination of statistics for this indicator. 
-	- **`URI`** A link to a resource (document, website) describing the mandate. 
+   - **`URI`** A link to a resource (document, website) describing the mandate. 
 
-- **`time_periods`** The time period covers the entire span of data available for the indicator. The time period has a start and an end and is reported according to the periodicity provided in a previous element. 
-  - **`start`** The initial date of the indicator in the dataset. The start date should be entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).
-  - **`end`** The end date is the latest date for which an estimate for the indicator is available. The end date should be entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).
+- **`time_periods`** The time period covers the entire span of data available for the indicator. The time period has a start and an end and is reported according to the periodicity provided in a previous element. The dates should be entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).
+  - **`start`** The initial date of the indicator in the dataset. 
+  - **`end`** The end date is the latest date for which an estimate for the indicator is available. 
   - **`notes`** Additional information on the time period.  
 
 - **`ref_country`** A list of countries or economies for which data are available in the indicator. This element is somewhat redundant with the next element (`geographic_units`) which may also contain a list of countries. Identifying geographic areas of type "country" is important to enable filters and facets in data catalogs (country names are among the most frequent queries submitted to catalogs).
@@ -261,11 +269,12 @@ Note 2: the schema also contains an element "data_collection" that would be used
   - **`affiliation`** The organization or affiliation of the contact person mentioned in `name`. 
   - **`email`** The email address of the person or organization mentioned in `name`. Avoid using personal email accounts; the use of an anonymous email is recommended (e.g, "helpdesk@....org")
   - **`telephone`** The phone number of the person or organization mentioned in `name`.
-  - **`uri`** The URI of the agency (typically, a URL to a "contact us" web page).   
+  - **`uri`** The URI of the agency (typically, a URL to a "Contact us" web page).   
 
 - The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
 - **Geographic coverage**: If your data are related to a single country, the information can easily be entered manually. If you have a multi-country database of indicators, the best option to fill this element is to tabulate your data by country, with the country code and country name included in the table. You may then copy/paste the columns containing the country code and country name in the Metadata Editor. Only include in the list the countries/geographies for which data are available for the indicator. Do not copy/paste a standard code list.
 - **Time coverage**: Enter the range of rime (minimum and maximum) for which data are available. 
+
 
 ### Use of AI to enhance descriptive metadata
 
@@ -274,9 +283,6 @@ You may take advantage of generative AI tools like ChatGPT or equivalent to sugg
 - Propose a **definition** (ask ChatGPT to either *Suggest a definition for a statistical indicator titled (...)*) or to *Improve the following definition of a statistical indicator titled (title) and currently defined as (definition)*. 
 - Propose a description of the indicator's **relevance** (ask ChatGPT to either *Please describe the relevance of a statistical indicator titled (...) and defined as (definition). In the description, indicate to whom and for what purposes the indicator is relevant.* 
 Do not blindly accept suggestions formulated by AI models. Carefully review and improve (or reject) the proposed content.
-
-
-By default, all elements of a metadata standards will contain unformatted text. If the template allows it, some elements may however include formulas or formatted text. Formulas must be entered using the LaTex language. Formatted text may be HTML or markdown formatted text. 
 
 ### Data structure (structural metadata)
 
