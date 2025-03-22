@@ -1,71 +1,103 @@
 # Translation of the software and templates
 
-
 ## Translating the Metadata Editor software application
 
-The Metadata Editor was designed in compliance with internationalization best practice. The software can easily be translated to other languages by any user, using the translation tool provided. 
+The Metadata Editor is designed following internationalization best practices and can be easily translated into other languages using the built-in translation tool.
 
-If the application is not available in your language, you may cerate a translation using a user interface. This requires System administrator privileges. If you have been assiged a role as System administrator, the *Site administration* item will appear in the menu that opens when you click on your name. Clisk on *Settings* then select *Translate* in the *Site administration* main menu.  
+Translations generate a set of PHP files (.php extension), which must be uploaded to the server where the Metadata Editor is installed. Instructions on where to save these files and how to activate a new language are provided in the following sections.
+
+Translation files can be shared with other organizations using the Metadata Editor. You are encouraged to share your translations and inform the Metadata Editor maintenance team at the World Bank of their availability. Validated translations provided as open materials may be published in the Metadata Editor GitHub repository.
+
+
+### Supported languages
+
+The Metadata Editor supports translation into any UTF-8 encoded language, including Arabic, Chinese, and Russian.
+
+- For right-to-left (RTL) languages like Arabic, the user interface (UI) must be adjusted to ensure correct display.
+- Translations only affect the labels and text, not the overall UI layout.
+
+Note: The application also allows translation from a language to itself (e.g., from English to English). This option can be used to modify the display of labels or text to align with specific terminology used by your organization.
+
+
+### Adding a new language
+
+If the application is not available in your language, you can create a translation through the user interface. This requires System Administrator privileges. If you have been assigned this role, a *Site Administration* option will appear in the menu when you click on your name.
 
 ![image](img/ME_UG_v1-0-0_translation_site_administration_menu.png)
 
-Instructions on how to translate the software are provided below. The output of a translation will consist of a series of PHP files (with extension [.php]) that can be uploaded on the server where the Metadata Editor is installed. Instructions on where to save these files, and on how to activate a new language, are also provided below. These translation files can be shared with other organizations that use the Metadata Editor. You are thus encouraged to share them, and to inform the World Bank about the availability of your translation (validated translations, if provded as open materials, may be published in the World Bank repository). 
-
-The Metadata Editor supports translation into any UTF8-encoded language, including Arabic, Chinese, and Russian. For right-to-left languages like Arabic, the User Interface (UI) must be adjusted for correct display. Translations only affect the labels, not the UI layout. 
-
-Note:  The application allows translation from a language to itself, e.g., from English to English. This option can be used to modify the display of labels/text in the Editor interface. It allows site administrators to adapt the user interface to specific terms used in their organization. 
-
-![image](img/ME_UG_v1-0-0_translation_site_administration_translate_menu_item.png)
-
-
-### Adding a new translation 
-
-To create a translation for a new language, a new folder must be created in the `application/languages` folder on the server or computer where the application is installed. For example, to create a new translation for `Spanish`, a folder named `Spanish` must be created. No UI is provided to create a new folder.
+To add a new language, a folder must be created in the application/languages directory on the server where the Metadata Editor is installed. For example, to create a Spanish translation, create a folder named Spanish.
 
 ![image](img/ME_UG_v1-0-0_translation_create_folder.png)
 
-Once the folder is created, it will be available on the translations page UI. 
+No UI is provided for creating this folder; it must be done manually.
+
+Once the folder is created, it will appear in the *Translations* section of the UI.
 
 ![image](img/ME_UG_v1-0-0_translation_list_languages_with_spanish.png)
 
-Select the added language and click "Edit". 
 
-![image](img/ME_UG_v1-0-0_translation_spanish_translate_general.png)
+### Creating or editing a translation
 
-The items for which no translation is available will be displayed with a red background. Enter your translation in the box. Note that if the length of the translation is significantly longer than the text in English, the text may not display properly in the interface (when used in menus, buttons, or other locations with limited space). 
+To create or edit a translation:
+1. Click on `Settings`.
+2. Select `Translate` from the *Site Administration* menu.
+3. Select the language from the translations page.
+4. Click `Edit`.
+5. Items without a translation will be highlighted in red. Enter your translation in the text box.
+   
+  ![image](img/ME_UG_v1-0-0_translation_spanish_translate_red_fields.png)
 
-![image](img/ME_UG_v1-0-0_translation_spanish_translate_red_fields.png)
+6. If the translation is significantly longer than the original text, it may not display properly in limited-space areas such as buttons and menus.
 
-After translating a section, make sure to **Save** your work. 
-
-
-### Activating a new translation 
-
-To activate the new translation as the main language for the Metadata Editor, use the Settings/language option provided in the site administration menu.  
-
-![image](img/ME_UG_v1-0-0_translation_site_administration_settings_menu_item.png)
-
-Select the language to be used from the list of available translations. This will make the new language the new default language for your instance of the Metadata Editor.
-
-![image](img/ME_UG_v1-0-0_translation_site_administration_settings_language_selection.png)
+After translating each section, `Save` your work.
 
 
-### Using multiple languages 
+### Importing a translation
 
-The Metadata Editor allows enabling more than one language by modifying the configuration settings. One language will be the primary/default one, the other one(s) will be available for selection by the user of the Metadata Editor. This is done by editing the file *application/config/config.php* (no user interface is provided for this). Edit the *supported_languages* line of the file as follows. 
 
-![image](img/ME_UG_v1-0-0_translation_site_translation_multiple_language_setting.png)
 
-When there is more than one language selected, a dropdown menu will be shown in the site navigation main menu, allowing users to select the language of the UI. 
+### Activating a translation
+
+To activate a new translation as the default language:
+
+1. Open `Settings` from the *Site Administration* menu.
+
+   ![image](img/ME_UG_v1-0-0_translation_site_administration_settings_menu_item.png)
+
+2. Select `Language`.
+
+  ![image](img/ME_UG_v1-0-0_translation_site_administration_settings_language_selection.png)
+
+3. Choose the desired language from the list of available translations.
+
+This will set the new language as the default for your instance of the Metadata Editor.
+
+
+### Enabling multiple languages
+
+The Metadata Editor supports enabling multiple languages, allowing users to switch between them. To enable multiple languages:
+
+1. Edit the the *supported_languages* line of the application/config/config.php file as follows. 
+
+ ![image](img/ME_UG_v1-0-0_translation_site_translation_multiple_language_setting.png)
+
+3. Modify the supported_languages line to include the desired languages.
+
+Note: No user interface is provided for this task. Once configured, a dropdown menu will appear in the site navigation menu, allowing users to select their preferred language.
 
 ![image](img/ME_UG_v1-0-0_translation_site_translation_language_selection_for_user.png)
 
 
-## Translating the metadata templates
+## Translating metadata templates
 
-If you translate the Metadata Editor, you will likely also want to translate the metadata templates, as the templates also define the UI that data curators will see when they use the application. To translate a template, use the Template Manager (see section on **Designing templates**). First, duplicate the template you want to translate, then translate all labels, instructions, and controlled vocabularies. Set templates translated into your language as the default templates.   
+When translating the Metadata Editor, you may also want to translate the metadata templates, as they also define the User Interface (UI) seen by data curators.
 
+To translate templates:
 
+1. Open the *Template Manager* (see the section on *Designing Templates*).
+2. Duplicate the template you want to translate.
+3. Translate all labels, instructions, and controlled vocabularies.
+4. Set the translated template as the default for your language.
 
-
+By translating both the UI and the templates, you ensure a seamless experience for users across different languages.
 
