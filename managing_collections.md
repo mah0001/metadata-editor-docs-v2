@@ -1,14 +1,14 @@
 # Managing collections
 
-When a project is created, it is only visible to its owner (creator). Projects can be shared with other registered users of the Metadata Editor, with different levels of permission (View, Edit, or Admin). This allows project owners to invite specific individuals to collaborate on a project. Refer to the section *Managing projects*.
+When a project is created, it is initially visible only to its owner (creator). However, projects can be shared with other registered users of the Metadata Editor, granting different levels of permission (View, Edit, or Admin). This enables project owners to invite specific individuals to collaborate. For further details, refer to the section *Managing Projects*.
 
-Another option to share projects and establish collaborations is to publish projects in *Collections*. Collections (and sub-collections) are virtual containers. A project can belong to more than one collection. 
+Another way to share projects and foster collaboration is by publishing them in *Collections*. Collections (and sub-collections) serve as virtual containers, allowing projects to be grouped based on themes, teams, or other organizational criteria. A project can belong to multiple collections simultaneously.
 
-Collections provide a convenient solution to organize projects by theme, by team, or by other types of criteria. This may be useful when the Metadata Editor contains a large number of projects. In the *My projects* page, the list of projects can be filtered by collection. The organization of projects by collections also provides an easy way for metadata administrators to generate summary information for specific groups of projects (refer to section *Administrator tools*.
+Collections are particularly useful for organizing projects when the Metadata Editor contains a large number of them. On the *My Projects* page, users can filter project lists by collection. Additionally, collections enable metadata administrators to generate summary reports for specific project groups (refer to the section *Administrator Tools*).
 
-But the primary and most important role of collections is to help manage permissions. In many cases, an organization will want to assign roles on projects not to specific individuals, but to teams. Permissions on projects can be assigned not only at the project level (with the SHARE option - see *Managing projects*) but also at the collection level. For each collection, the list of collaborators is defined. All collaborators who have access to the collection will automatically have access to all projects published in that collection.
+The primary and most significant role of collections is to facilitate permission management. Organizations often prefer to assign roles to teams rather than individual users. Permissions can be granted at both the project level (using the `SHARE` option, see section *Managing Projects*) and the collection level. Each collection has a defined list of collaborators, and all users with access to a collection automatically gain access to all projects published within it.
 
-To access the collection management page of the Metadata Editor, click on "COLLECTIONS" in the main menu. Note that this command button will only be visible to users who have credentials to manage collections. 
+To access the collection management page in the Metadata Editor, click on `COLLECTIONS` in the main menu. 
 
 ![image](img/ME_UG_v1-0-0_managing_collections_home.png)
 
