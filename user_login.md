@@ -1,26 +1,39 @@
 # User login and profile
 
-The administrator(s) of the Metadata Editor within an organization define who can have access to the application. Accounts can be created for users individually, or by configuring an organization's authentication system to automatically register all members of the organization as authorized users of the Metadata Editor.
+Access to the Metadata Editor is managed by the system administrator(s) within your organization. User accounts can be created individually or by configuring the organization's authentication system to automatically register all members as authorized users (using a Single Sign-On - SSO).
 
-If you have access to the application, you must login to access it. Open the application URL (specific to your organization) and Login (enter your email or user name and password).
+## Logging In and Out
 
-In the application's top menu, click on your user name to open a menu with the following options:
+To access the Metadata Editor (login):
+
+- Open the application URL provided by your organization.
+- Enter your email or username and password to log in.
+
+To logout:
+
+Click on `Logout`. Note that you will be automatically logged out after [X minutes] of inactivity.
+
+
+## Editing your user profile, password, and API key
+
+After logging in, click on your username in the top menu to open a dropdown menu with the following options:
 
 ![image](img/ME_UG_v1-0-0_user_menu.png)
 
+- `Profile` and API key
 
-- **Profile**: This opens a page displaying your profile, with an option to edit it. It also provides a function to generate an API key. You will only need an API key if you plan to manage metadata programmatically using the Metadata Editor's API and a programming language like R or Python. Refer to the section on the "Metadata Editor API". It is essential that you keep your API key(s) confidential. The API key embeds information on your profile and permissions. If you have reasons to believe that the API key has been compromised, immediately delete it and generate a new one.
+  Clicking on `Profile` opens a page displaying your profile details with an option to edit them.
 
   ![image](img/ME_UG_v1-0-0_user_profile.png)
-   
-- **Password**: Use this link to change your password.
 
-  ![image](img/ME_UG_v1-0-0_user_change_password.png)
-  
-- **Site administration**: This page is only available if you have administrator credentials. It opens a page that provides a dashboard about the projects you have access to.
+  You can also generate an API key from this page. An API key is required only if you plan to manage metadata programmatically using the Metadata Editor’s API with a programming language such as R or Python.
 
-- **Logout**: Use this command to logout from the application. By default, users will be logged out of the Metadata Editor after an inactive period of [X minutes].
+  Important: Keep your API key confidential, as it embeds information about your profile and permissions. If you suspect that your API key has been compromised, delete it immediately and generate a new one. Refer to the section on [Metadata Editor API] for more details.
 
+- `Password`
 
+  Opens a page where you can change your password.
 
+- `Site administration`
 
+  Available only to users with administrator credentials. Opens a dashboard displaying information about the projects you can access.
