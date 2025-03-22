@@ -1,8 +1,8 @@
 # Documenting a publication of report
 
-Documents in a data catalog can appear as “data” in the catalog, or as “related resources” attached to other datasets. The schema we describe here is the schema used for documents that will be listed as catalog entries and made searchable, not those that will be attached to datasets as external resources and for which the “external resource” metadata schema must be used (see Documenting: general instrictions").
+The schema we describe here is the schema used for documents that will be listed as catalog entries and made searchable, not those that will be attached to datasets as external resources and for which the “external resource” metadata schema must be used (see Documenting: General instructions").
 
-Librarians have developed specific standards to describe and catalog documents. The [MARC 21](https://www.loc.gov/marc/bibliographic/) (**MA**chine-**R**eadable **C**ataloging) standard used by the United States Library of Congress is one of them. It provides a detailed structure for documenting bibliographic resources, and is the recommended standard for well-resourced document libraries.
+Librarians have developed specific standards to describe and catalog documents. The [MARC21](https://www.loc.gov/marc/bibliographic/) (**MA**chine-**R**eadable **C**ataloging) standard used by the United States Library of Congress is one of them. It provides a detailed structure for documenting bibliographic resources, and is the recommended standard for well-resourced document libraries.
 
 For the purpose of cataloguing documents in a less-specialized repository intended to accommodate data of multiple types, we built our schema on a simpler but also highly popular standard, the **Dublin Core Metadata Element Set**. We will refer to this metadata specification, developed by the [Dublin Core Metadata Initiative](https://dublincore.org/), as the *Dublin Core*. The Dublin Core became an ISO standard (ISO 15836) in 2009. It consists of a list of fifteen core metadata elements, to which more specialized elements can be added. These fifteen elements, with a definition extracted from the Dublin Core [website](https://dublincore.org/), are the following:
 
@@ -24,11 +24,11 @@ For the purpose of cataloguing documents in a less-specialized repository intend
 |14 | `title`              | A name given to the resource.                                    |
 |15 | `type`               | The nature or genre of the resource.                             |
 
-Due to its simplicity and versatility, this standard is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC 21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
+Due to its simplicity and versatility, this standard is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
 
 MARC 21 and the Dublin Core are used to document a resource (typically, the electronic file containing the document) and its content. Another schema, [BibTex](https://en.wikipedia.org/wiki/BibTeX), has been developed for the specific purpose of recording bibliographic citations. BibTex is a list of fields that may be used to generate bibliographic citations compliant with different bibliography styles. It applies to documents of multiple types: books, articles, reports, etc.  
 
-The metadata schema we propose to document publications and reports is a combination of Dublin Core, MARC 21, and BibTex elements. The technical documentation of the schema and its API is available at https://ihsn.github.io/nada-api-redoc/catalog-admin/#tag/Documents.
+The metadata schema we propose to document publications and reports is a combination of Dublin Core, MARC21, and BibTex elements. The technical documentation of the schema and its API is available at https://ihsn.github.io/nada-api-redoc/catalog-admin/#tag/Documents.
 
 ## Documenting the publication or report
 
@@ -37,7 +37,7 @@ See the **Quick start: Document** chapter for a quick introduction to the docume
 
 ### Create a project
 
-The first step in documenting a publication or report is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. Select *Document* as data type. This will open a new, untitled project *home page*. 
+The first step in documenting a publication or report is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Document* as data type. This will open a new, untitled *Project* home page. 
 
 ![image](img/ME_UG_v1-0-0_documenting_document_project_home_page.png)
 
@@ -71,71 +71,64 @@ The **`document_description`** block contains the metadata elements used to desc
 
 - **`translated_title`**: A translation of the title of the document. Special characters should be properly displayed, such as accents and other stress marks or different alphabets. 
 
-- **`authors`**: The authors should be listed in the same order as they appear in the source itself, which is not necessarily alphabetical.
-  - **`first_name`** The first name of the author.  
-  - **`initial`** The initials of the author.  
-  - **`last_name`** The last name of the author.  
-  - **`affiliation`** The affiliation of the author.  
-  - **`author_id`** The author ID in a registry of academic researchers such as the [Open Researcher and Contributor ID (ORCID)](https://orcid.org/).  
-     - **`type`** The type of ID, i.e. the identification of the registry that assigned the author's identifier, for example "ORCID".  
-     - **`id`** The ID of the author in the registry mentioned in `type`.  
-  - **`full_name`** The full name of the author. This element should only be used when the first and last name of an author cannot be distinguished, i.e. when elements `first_name` and `last_name` cannot be filled out. This element can also be used when the author of a document is an organization or other type of entity.
+- **`authors`**: The authors should be listed in the same order as they appear in the source itself, which is not necessarily alphabetical. The information on authors include each author's `first_name`, `initials`, `last_name`, `affiliation`, and `author_id`. The author ID is an identifier in a registry of academic researchers such as the [Open Researcher and Contributor ID (ORCID)](https://orcid.org/). This is a repeatable element, as a person may have multiple IDs. When entered in the Metadata Editor, this information should therefore include the `type` of identifier (for example "ORCID") and the identifier itself (`id`). An option is also provided to enter the author's `full_name`. This element should only be used when the first and last name of an author cannot be distinguished, i.e. when elements `first_name` and `last_name` cannot be filled out. This element can also be used when the author of a document is an entity, not a person.
 
-- **`editors`** If the source is a text within an edited volume, it should be listed under the name of the author of the text used, not under the name of the editor. The name of the editor should however be provided in the bibliographic citation, in accordance with a [reference style](https://awelu.srv.lu.se/sources-and-referencing/using-a-reference-style/elements-of-the-reference-list/). 
-  - **`first_name`** The first name of the editor. 
-  - **`initial`** The initials of the editor. 
-  - **`last_name`** The last name of the editor. 
-  - **`affiliation`** The affiliation of the editor.  
+- **`editors`** If the source is a text within an edited volume, it should be listed under the name of the author of the text used, not under the name of the editor. The name of the editor should however be provided in the bibliographic citation, in accordance with a [reference style](https://awelu.srv.lu.se/sources-and-referencing/using-a-reference-style/elements-of-the-reference-list/). The information on an editor includes the editor's `first_name`, `initial`, `last_name`, and `affiliation`.  
 
-- **`date_created`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was produced. This can be different from the date the document was published, made available, and from the temporal coverage. The document "Nigeria - Displacement Report" by the International Organization for Migration (IOM) shown below provides an example of this. The document was produced in November 2020 (`date_created`), refers to events that occurred between 21 September and 10 October 2021 (`temporal_coverage`), and was published (`date_published`) on 28 January 2021. 
+- **`date_created`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was produced. This can be different from the date the document was published, made available, and from the temporal coverage. 
 
-- **`date_available`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was made available. This is different from the date it was published (see element `date_published` below). This element will not be used frequently. 
+- **`date_available`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was made available. This is different from the date it was published (see element `date_published` below).
 
 - **`date_modified`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was last modified. 
 
 - **`date_published`** The date, preferably entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY), when the document was published.
 
-- **`identifiers`** This element is used to enter document identifiers (IDs) other than the catalog ID entered in the `title_statement` (`idno`). It can for example be a Digital Object Identifier (DOI), an International Standard Book Number (ISBN), or an International Standard Serial Number (ISSN). The ID entered in the `title_statement` can be repeated here (the `title_statement` does not provide a `type` parameter; if a DOI, ISBN, ISSN, or other standard reference ID is used as `idno`, it is recommended to repeat it here with the identification of its `type`). 
-  - **`type`** The type of identifier, for example "DOI", "ISBN", or "ISSN".
-  - **`identifier`** The identifier itself.   
+- **`identifiers`** This element is used to enter document identifiers (IDs) other than the catalog ID entered in the `title_statement` (`idno`). It can for example be a Digital Object Identifier (DOI), an International Standard Book Number (ISBN), or an International Standard Serial Number (ISSN). The ID entered in the `title_statement` can be repeated here (the `title_statement` does not provide a `type` parameter; if a DOI, ISBN, ISSN, or other standard reference ID is used as `idno`, it is recommended to repeat it here with the identification of its `type`). The information on an identifier includes two components: the `type` of identifier (for example "DOI", "ISBN", or "ISSN"), and the `identifier` itself.   
 
-- **`type`** This describes the nature of the resource. It is highly recommended to select a value from a controlled vocabulary (which should then be embedded in the metadata template), which could for example include the following options:
-  - "article"
-  - "book"
-  - "booklet"
-  - "collection"
-  - "conference proceedings"
-  - "manual"
-  - "master thesis"
-  - "patent"
-  - "PhD thesis"
-  - "proceedings"
-  - "technical report"
-  - "working paper"
-  - "website"
-  - "other".
+- **`type`** This describes the nature of the resource. It is highly recommended to select a value from a controlled vocabulary. The vocabulary can be entered in the metadata template (see section *Designing templates*), and could for example include the following options:
+  - article
+  - book
+  - booklet
+  - collection
+  - conference proceedings
+  - manual
+  - master thesis
+  - patent
+  - PhD thesis
+  - proceedings
+  - technical report
+  - working paper
+  - website
+  - other
   
-  Specialized agencies may want to create their own controlled vocabularies; for example, a national statistical agency may need options like
-  - "press release"
-  - "methodology document"
-  - "protocol"
-  - "yearbook".
+  Specialized agencies may want to create more specific controlled vocabularies. For example, a national statistical agency may use options like:
+  - Statistical Yearbooks
+  - Survey and Census Reports 
+  - Analytical and Thematic Reports 
+  - Statistical Bulletins 
+  - News Releases
+  - Methodological and Technical Reports
+  - Metadata and Documentation Reports
+  - Annual Reports
+  - Administrative Documents
+  - Legal Documents
+  - Tenders
   
   The `type` element can be used to create a "Document type" facet (filter) in a data catalog. If the controlled vocabulary is such that it contains values that are not mutually exclusive (i.e. if a document could possibly have more than one type), the element `type` cannot be used as it is not repeatable. In such case, the solution is to provide the type of document as `tags`, in a `tag_group` that could for example be named *type* or *document_type*. Note also that the Dublin Core provides a controlled vocabulary (the [DCMI Type Vocabulary](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7)) for the `type` element, but this vocabulary is related to the types of resources (dataset, event, image, software, sound, etc.), not the type of document which is what we are interested in here. 
 
 - **`status`** The status of the document. The status of the document should (but does not have to) be provided using a controlled vocabulary, for example with the following options:
-  - "first draft"
-  - "draft"
-  - "reviewed draft"
-  - "final draft"
-  - "final".
+  - first draft
+  - draft
+  - reviewed draft
+  - final draft
+  - final
  Most documents published in a catalog will likely be "final".
 
 - **`description`** This element is used to provide a brief description of the document (not an abstract, which would be provided in the field `abstract`). It should not be used to provide content that is contained in other, more specific elements. As stated in the [Dublin Core Usage Guide](https://www.dublincore.org/specifications/dublin-core/usageguide/elements/), "Since the `description` field is a potentially rich source of indexable terms, care should be taken to provide this element when possible. Best practice recommendation for this element is to use full sentences, as description is often used to present information to users to assist in their selection of appropriate resources from a set of search results." 
 
 - **`toc`** The table of content of the document, provided as a single string element, i.e. with no structure (an structured alternative is provided with the field `toc_structured` described below). This element is also a rich source of indexable terms which can contribute to document discoverability; care should thus be taken to use it (or the `toc_structured` alternative) whenever possible.
 
-- **`toc_structured`** This element is used as an alternative to `toc` to provide a <u>structured</u> table of content. The element contains a repeatable block of sub-elements which provides the possibility to define a hierarchical structure:
+- **`toc_structured`** This element is used as an alternative to `toc` to provide a structured table of content. The element contains a repeatable block of sub-elements which provides the possibility to define a hierarchical structure:
   - **`id`** A unique identifier for the element of the table of content. For example, the `id` for Chapter 1 could be "1" while the `id` for section 1 of chapter 1 would be "11".
   - **`parent_id`** The `id` of the parent section (e.g., if the table of content is divided into chapters, themselves divided into sections, the `parent_id` of a section would be the id of the chapter it belongs to.)
   - **`name`** The label of this section of the table of content (e.g., the chapter or section title)
@@ -156,10 +149,7 @@ The **`document_description`** block contains the metadata elements used to desc
 
   If a document is not specific to any country, the element `ref_country` would be ignored (not included in the metadata) if the content of the document is not related to any geographic area (for example, the user's guide of a software application), or would contain "World" (code WLD) if the document is related but not specific to countries (for example, a document on "Climate change mitigation").
 
-- **`geographic_units`** A list of geographic units covered in the document, other than the countries listed in `ref_country`.
-  - **`name`** The name of the geographic unit.
-  - **`code`** The code of the geographic unit.
-  - **`type`** The type of the geographic unit (e.g., "province", "state", "district", or "town"). 
+- **`geographic_units`** A list of geographic units covered in the document, other than the countries listed in `ref_country`. The geographic units will be identified by their `name`, `code`, and `type` (for example, "province", "state", "district", or "town"). 
 
 - **`bbox`** This element is used to define one or multiple geographic bounding box(es), which are the rectangular fundamental geometric description of the geographic coverage of the data. A bounding box is defined by west and east longitudes and north and south latitudes, and includes the largest geographic extent of the dataset’s geographic coverage. The bounding box provides the geographic coordinates of the top left (north/west) and bottom-right (south/east) corners of a rectangular area. This element can be used in catalogs as the first pass of a coordinate-based search. The valid range of latitude in degrees is -90 and +90 for the southern and northern hemisphere, respectively. Longitude is in the range -180 and +180 specifying coordinates west and east of the Prime Meridian, respectively. This element will rarely be used for documenting publications. Bounding boxes are an optional element, but when a bounding box is defined, all four coordinates are required. 
 
@@ -183,13 +173,9 @@ The **`document_description`** block contains the metadata elements used to desc
    | irregularly  | Published on an irregular schedule, such as every month except July and August|
    | other        | Published on another schedule not enumerated in this controlled vocabulary |
 
-- **`languages`** The language(s) in which the document is written. For the language codes and names, the use of the ISO 639-2 standard is recommended. This is a block of two elements (at least one must be provided for each language):
-  - **`name`** The name of the language.
-  - **`code`** The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.
+- **`languages`** The language(s) in which the document is written. For the language codes and names, the use of the ISO 639-2 standard is recommended. This is a block of two elements (at least one must be provided for each language): `name` (the name of the language), and `code`. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.
 
-- **`license`** Information on the license(s) attached to the document, which defines the terms of use.
-  - **`name`** The name of the license (e.g., CC-BY 4.0).
-  - **`uri`** The URL of the license, where detailed information on the license can be obtained.
+- **`license`** Information on the license(s) attached to the document, which defines the terms of use. A license is identified by its `name` (for example, CC BY 4.0 International) and `uri` (the URL of the license, where detailed information on the license can be obtained).
  
 - **`bibliographic_citation`** The bibliographic citation provides relevant information about the author and the publication. When using the element `bibliographic_citation`, the citation is provided as a single item. It should be provided in a standard style: Modern Language Association ([MLA](https://www.mla.org/)), American Psychological Association ([APA](https://apastyle.apa.org/)), or [Chicago](https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/chicago_manual_of_style_17th_edition.html). Note that the schema provides an itemized list of all elements (BibTex fields) required to build a citation in a format of their choice. 
   - **`style`** The citation style, e.g. "MLA", "APA", or "Chicago".
@@ -311,19 +297,11 @@ See section "Documenting - General instructions".
 
 #### Provenance 
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section *Documenting - General instructions*.
 
 
 #### External resources
 
-External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
+External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on *External resources* in the navigation tree, then on `CREATE RESOURCE`. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
 
-External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
-
-External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
-
-
-
-
-
-
+External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. Then click on `IMPORT` in the External resources page, and select the file. 
