@@ -36,7 +36,7 @@ Documenting a dataset (or a document in this case) consists of entering metadata
 
 **Step 2: Add descriptive metadata**
 
-In the section *Document description / Metadata preparation*, enter the (optional) information on the metadata. Enter your name (as metadata creator) and the date of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
+In the section *Document description / Metadata preparation*, enter the (optional) information on the metadata. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the dataset, was produced. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_document_description_save.png)
 
