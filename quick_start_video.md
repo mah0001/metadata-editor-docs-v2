@@ -25,7 +25,7 @@ We will use the screenshot image *video_food_security.jpg* as a thumbnail (but f
 
 ## Step 2: Enter metadata
 
-In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the publication and when. All information in this section is optional. Enter your `name` (as metadata producer) and the `date` of the day in ISO format YYYY-MM-DD (this is the date when the metadata, not the video, was produced). Then click on `SAVE`.
+In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the publication and when. All information in this section is optional. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the video, was produced. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_video_metadata_information_save.png)
 
