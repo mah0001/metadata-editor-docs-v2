@@ -1,55 +1,54 @@
-# Documenting indicators
+# Documenting indicators and databases
 
-Two metadata standards are employed to document indicators and their respective databases. The first standard is utilized to individually document each indicator. The second standard is applied to document collections or databases of indicators.
+Two metadata schemas are employed to document indicators and their respective databases. The first schema is utilized to individually document each indicator. The second standard is applied to document collections or databases of indicators. We refer to these metadata as schemas and not standards, as they have been developed by the World Bank and are not maintained by an international community. 
 
-## Metadata standards
-
-### World Bank metadata schema for documenting the indicator
+## Metadata schemas
 
 Indicators are summary measures related to key issues or phenomena, derived from observed facts. Indicators form time series when they are provided for a specific geography and with a temporal ordering, i.e. when their values are provided with an ordered annual, quarterly, monthly, daily, or other time reference. 
 
-The World Bank developed its metadata standard for documenting indicators by compiling and structuring metadata elements utilized by various organizations, including the Bank itself, UN agencies, IMF, OECD, and Eurostat. The standard includes elements such as a unique identifier, label, definition, methodology information, details about the data producer and source, geographic and temporal coverage, a list of relevant keywords or topics, and information on known data limitations, among others.
+The World Bank developed its metadata standard for documenting indicators by compiling and structuring metadata elements utilized by various organizations, including the Bank itself, United Nations agencies, International Monetary Fund (IMF), Organisation for Economic Co-operation and Development (OECD), and Eurostat. 
 
 The standard is compatible with the Statistical Data and Metadata Exchange (SDMX) standard. SDMX is a data exchange standard designed to facilitate machine-to-machine data exchanges. It provides a framework for structuring metadata through Metadata Structure Definitions (MSDs), but it does not specify the content of MSDs. Consequently, the Bank’s metadata standard complements and can be integrated within the SDMX framework effectively. The Metadata Editor offers a tool to export metadata templates as MSDs and the indicators' metadata as meta-datasets. This enables the metadata produced using the Metadata Editor to be incorporated into SDMX-compliant data management and dissemination systems.
 
-The World Bank metadata standard also includes a section for documenting the data structure (structural metadata), which outlines how the indicator is organized in the data file or database (Figure 14). This data structure aligns with the SDMX data structure definition (DSD). The data structure details the columns of an indicator dataset (assuming the data are provided in long format). It defines the specific role of each column (in a manner compatible with SDMX) and provides the associated metadata.
+The World Bank metadata standard also includes a section for documenting the data structure (structural metadata), which outlines how the indicator is organized in the data file or database. This data structure aligns with the SDMX data structure definition (DSD). The data structure details the columns of an indicator dataset (assuming the data are provided in long format). It defines the specific role of each column (in a manner compatible with SDMX) and provides the associated metadata.
 
-The technical description of the JSON schema used for the documentation of indicators is available at https://worldbank.github.io/metadata-schemas/#tag/Timeseries.
+The technical description of the schema is available at https://worldbank.github.io/metadata-schemas/#tag/Timeseries.
 
-### World Bank metadata schema for documenting the database (optional)
+The metadata schema is complemented by another schema developed to document a database of indicators (i.e.a collection of indicators). The main objective of documenting a database is to provide additional information for each indicator. The metadata schema used to document an indicator contains one element to store the identifier of a database, which establishes the link between an indicator metadata and the related database metadata. 
 
-The technical description of the JSON schema used for the documentation of indicators is available at https://worldbank.github.io/metadata-schemas/#tag/Timeseries/operation/createTimeseriesDb.
+IN NADA: example
 
-### Dublin Core for documenting external resources
+## Documenting an indicator
 
-For documenting external resources, a template based on the Dublin Core standard is used. See sections **General instructions** and **External resources**.
+This section describes in detail the process of documenting an indicator, and the various functionalities provided in the Metadata Editor for generating and publishing indicators metadata. The section focuses on the functionalities specific to the documentation of indicators. Refer to the *General instructions* for guidance on the components of the application that are common to all data types.
 
+### Create a new project
 
-## Documenting the indicator
+The first step in documenting an indicator is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Indicator* as data type. This will open a new, untitled *Project page*. 
 
-### Create a project
+In that page, select the Template you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the `Switch template` icon in the *Templates* frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
-The first step in documenting an indicator is to create a new project. You do that by clicking on CREATE NEW PROJECT in the *My projects* page. Select *Indicator* as data type. This will open a new, untitled *project home page*. 
+### Information on metadata
 
-In that page, select the Template you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on *Switch template* in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
+The *Metadata information* section in the navigation tree (in the *Project page*) contains elements intended to document the metadata being generated, i.e., metadata about the metadata. All content in this section is optional; it is however recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the Document description provides transparency and clarity on the origin of the metadata.
 
-## Describe the indicator
+### Descriptive metadata
 
-Refer to the general instructions for instructions on components common to all data types.
-Refer to the Guide to data Curators.
-Print a copy of the template, or use the Help icons.
+The documentation of an indicator is a straightforward process. The navigation tree provides access to various metadata entry pages where the information about the indicator can be captured. These metadata entry pages are defined by the selected template. The template includes a description of each metadata element it contains, which are used as instructions to data curators. The template can be printed as PDF and used as a reference document by data curators. The instructions are also provided in the metadata entry pages, by clicking on the (?) icon next to each element's name.
 
-### Metadata information
+We provide here some guidance on a selection of key metadata elements.
 
-The **Metadata information** section of the navigation tree contains elements intended to document the metadata being generated ("metadata about the metadata"). All content in this section is optional; it is however good and recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the Document description provides transparency and clarity on the origin of the metadata.
+id
+other ids
+name
+aliases
+definition short / long
+relevance
+method (formula?)
+sources
+concepts
+limitations
 
-### Indicator description
-
-The documentation of an indicator is a straightforward process. The navigation tree provides access to various metadata entry pages where the information about the indicator can be captured.
-
-Consult the *Guide to Data Curators* or print the Metadata Editor template for instructions on the content of each metadata element. 
-
-Some fields may require looking at the datafiles:
 - **Geographic coverage**: If your data are related to a single country, the information can easily be entered manually. If you have a multi-country database of indicators, the best option to fill this element is to tabulate your data by country, with the country code and country name included in the table. You may then copy/paste the columns containing the country code and country name in the Metadata Editor. Only include in the list the countries/geographies for which data are available for the indicator. Do not copy/paste a standard code list.
 - **Time coverage**: Enter the range of rime (minimum and maximum) for which data are available. 
 
@@ -63,15 +62,7 @@ The metadata element **Database ID** is important if you want to link the descri
 
 By default, all elements of a metadata standards will contain unformatted text. If the template allows it, some elements may however include formulas or formatted text. Formulas must be entered using the LaTex language. Formatted text may be HTML or markdown formatted text. 
 
-### DataCite
-
-See section "Documenting - General instructions".
-
-### Tags
-
-See section "Documenting - General instructions".
-
-### Data structure definition
+### Structural metadata
 
 The data structure definition (DSD) allows you to describe how the data are organized in the data file. This is the structural metadata for the indicator. The DSD in the Metadata Editor follows the SDMX standard.
 
@@ -114,11 +105,6 @@ A data structure definition consists of providing the following information abou
 - ***Codelist reference:***
 
 
-### Provenance
-
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
-
-
 ### External resources
 
 External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
@@ -128,12 +114,35 @@ External resources that have already been created for another project can also b
 External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
 
 
+### Provenance
+
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section "Documenting - General instructions".
+
+
+
+### DataCite
+
+See section "Documenting - General instructions".
+
+
+### Tags
+
+See section "Documenting - General instructions".
+
+
+
+
 ## Database-level metadata
 
-Not to be documented for each indicator
+Not to be documented for each indicator.
 Document once, give it an ID, and enter it in each indicator in field *databaseID*. When published in NADA, this will create a one-to-many relationship.
 
+### Create new project
 
+### Information on metadata
 
+### Descriptive metadata
+
+### Export and publish
 
 
