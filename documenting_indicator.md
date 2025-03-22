@@ -16,7 +16,7 @@ The technical description of the schema is available at https://worldbank.github
 
 The metadata schema is complemented by another schema developed to document a database of indicators (i.e.a collection of indicators). The main objective of documenting a database is to provide additional information for each indicator. The metadata schema used to document an indicator contains one element to store the identifier of a database, which establishes the link between an indicator metadata and the related database metadata. 
 
-IN NADA: example
+ME_UG_documenting_indicator_indicator_database_nada.png
 
 ## Documenting an indicator
 
@@ -38,42 +38,244 @@ The documentation of an indicator is a straightforward process. The navigation t
 
 We provide here some guidance on a selection of key metadata elements.
 
-- id
-- doi
-- name
-- display name
-- authoring_entity
-- The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
-- database_name
-- date_last_update
-- date_released
-- version_statement
-- aliases
-- alternate_identifiers
-- measurement_unit
-- power_code
-- release_calendar
-- periodicity
-- definition_short
-- definition_long
-- statistical_concept
-- concepts
-- methodology and methodology_reference
-- derivation
-- imputation
-- seasonal_adjustments
-- adjustments
-- missing
-- validation_rules
-- 
-- relevance
-- method (formula?)
-- sources
-- concepts
-= limitations
+- **`idno`** A unique identifier (ID) for the series. This is a required element. Most agencies and databases will have a coherent coding convention to generate their series IDs.                                      
 
+- **`doi`** A Digital Object Identifier (DOI) for the the series.                                         
+
+- **`name`** The name (label) of the series. Note that a field `alias` is provided (see below) to capture alternative names for the series. 
+
+- **`database_id`** The unique identifier of the database the series belongs to. This field must correspond to the element `database_description > title_statement > idno` of the database schema described above. This is the only field that is needed to establish the link between the database metadata and the indicator metadata.
+
+- **`aliases`** A series or an indicator can be referred to using different names. The `aliases` element is provided to capture the multiple names and labels that may be associated with (i.e synomyms of) the documented series or indicator.
+
+- **`alternate_identifiers`** The element `idno` described above is the reference unique identifier for the catalog in which the metadata is intended to be published. But the same indicator/metadata may be published in other catalogs. For example, a data catalog may publish metadata for series extracted from the World Bank World Development Indicators (WDI) database. And the WDI itself contains series generated and published by other organizations, such as the World Health Organization or UNICEF. Catalog administrators may want to assign a unique identifier specific to their catalog (the `idno` element), but keep track of the identifier of the series or indicator in other catalogs or databases. The `alternate_identifiers` element serves that purpose. 
+  - **`alternate_identifiers`** An identifier for the series other than the identifier entered in `idno` (note that the identifier entered in `idno` can be included in this list, if it is useful to provide it with a type identifier (see `name` element below) which is not provided in `idno`. This can be the identifier of the indicator in another database/catalog, or a global unique identifier.
+  - **`name`** This element will be used to define the type of identifier. This will typically be used to flag DOIs by entering "Digital Object Identifier (DOI)".
+  - **`database`** The name of the database (or catalog) where this alternative identifier is used, e.g. "IMF, International Financial Statistics (IFS)". 
+  - **`uri`** A link (URL) to the database mentioned in `database`.  
+  - **`notes`** Any additional information on the alternate identifier.   
+
+- **`languages`** *[Optional ; Repeatable]*    
+An indicator or time series can be made available at different levels of disaggregation. For example, an indicator containing estimates of the "Population" of a country by year can be available by sex. The data curators in such case will have two options: (i) create and document three separate indicators, namely "Population, Total", "Population, Female", and "Population, Male"; or create a single indicator "Population" and attach a *dimension* "sex" to it, with values "Total", "Female", and "Male". The `dimensions` are features (or "variables") that define the different levels of disaggregation within an indicator/series. The element `dimensions` is used to provide an itemized list of disaggregations that correspond exactly to the published data. Note that when an indicator is available at two "non-overlapping" levels of disaggregation, it should be split into two indicators. For example, if the Population indicator is available by male/female and by urban/rural, but not by male/urban/male/rural/female urban/female rural, it should be treated as two separate indicators ("Population by sex" with dimension sex = "male / female" and "Population by area of residence" with dimension area = "urban / rural".) Note also that another element in the schema, `disaggregation`, is also provided, in which a narrative description of the actual or recommended disaggregations can be documented. 
+  - **`name`** The name of the language.
+  - **`code`** The code of the language, preferably the ISO code.  
+
+- **`measurement_unit`** The unit of measurement. Note that in many databases the measurement unit will be included in the series name/label. In the World Bank's World Development Indicators for example, series are named as follows: 
+     - CO2 emissions (kg per 2010 US$ of GDP)
+   - GDP per capita (current US$)
+   - GDP per capita (current LCU)
+   - Population density (people per sq. km of land area)
+   
+  In such case, the name of the series should not be changed, but the measurement unit may be extracted from it and stored in element `measurement_unit`.  
+ 
+- **`dimensions`** An indicator or time series can be made available at different levels of disaggregation. For example, a time series containing annual estimates of the indicator "Resident population (mid-year)" can be provided by country, by urban/rural area of residence, by sex, by age group. The data curator has to make a decision on how to organize such data. One option is to create an indicator "Resident population (mid-year)" and to define a set of "dimensions" for the breakdowns. The dimensions would in such case be the year, the country, the area of residence, the sex, and the age group. Some of the dimensions would have to be provided with a code list (or 'controlled vocabulary", for example stating that F means "Female", M" means male, and T means "Total" for the dimension *sex*). Another option would be to create multiple indicators (e.g., creating three distinct indicators "Resident population, male (mid-year)", "Resident population, female (mid-year)", "Resident population, total (mid-year)" and using year, country, area of residence, and age group as dimensions). The element `dimensions` is used to provide an itemized list of disaggregations that correspond to the published data. Note that another element in the schema, `disaggregation`, is also provided, in which a narrative description of the actual or recommended disaggregations can be documented. Note also that in the SDMX standard, dimensions are listed in the *Data Structure Definition" and are complemented by *code lists* that provide the related controlled vocabularies.
+  - **`name`** The name of the dimension.
+  - **`label`** The label of the dimension, for example "sex", or "urban/rural".
+  - **`description`** A description of the dimension (for example, if the label was "age group", the description can provide detailed information on the age groups, e.g. "The age groups in the database are 0-14, 15-49, 50-64, and 65+ years old".)  
+
+- **`release_calendar`** Information on when updates for the indicators can be expected. This will usually not consist of exact dates (which would have to be updated regularly), but of more general information like "Every first Monday of the Month", or "Every year on June 30", or "The last week of each quarter". 
+
+- **`periodicity`** The periodicity of the series. It is recommended to use a controlled vocabulary with values like *annual*, *quarterly*, *monthly*, *daily*, etc. 
+
+- **`base_period`** The base period for the series. This field will only apply to series that require a base year (or other reference time) used as a benchmark, like a Consumer Price Index (CPI) which will have a value of 100 for a reference base year. 
+
+- **`definition_short`** A short definition of the series. The short definition captures the essence of the series. 
+                                                          
+- **`definition_long`** A long(er) version of the definition of the series. If only one definition is available (not a short/long version), it is recommended to capture it in the `definition_short` element. ALternatively, the same definition can be stored in both `definition_short` and `definition_long`.
+                                                         
+- **`definition_references`** This element is provided to link to an external resources from which the definition was extracted. 
+  - **`source`** The source of the definition (title, or label).
+  - **`uri`** A link (URL) to the source of the definition.
+  - **`note`** This element provides for annotating or explaining the reason the reference has been included as part of the metadata.  
+
+- **`statistical_concept`** This element allows to insert a reference of the series with content of a statistical character. This can include coding concepts or standards that are applied to render the data statistically relevant.
+                                                   
+- **`concepts`** This repeatable element can be used to document concepts related to the indicators or time series (other than the main statistical concept that may have been entered in `statisticsl_concept`). For example, the concept of *malnutrition* could be documented in relation to the indicators "Prevalence of stunting" and "Prevalence of wasting".
+  - **`name`** A concise and standardized name (label) for the concept.
+  - **`definition`** The definition of the concept. 
+  - **`uri`** A link (URL) to a resource providing more detailed information on the concept.   
+
+- **`data_collection`** This group of elements can be used to document data collection activities that led to or allowed the production of the indicator. This element will typically be used for the description of surveys or censuses. 
+Note: the schema also contains an element "sources". That element will be used to document the organization and/or main data production program from which the indicator is derived. 
+  - **`data_source`** 
+  A concise and standardized name (label) for the data source, e.g. "National Labor Force Survey, 1st quarter 2022". If multiple data sources were used, they can all be listed here. Note that is a time series has values obtained from many different sources, the source for each value (or group of values) will not be part of the indicator/series metadata, but will be stored as an attribute in the data file where the information can be associated with a specific observation ("cell note" or group of observation (e.g. attached to an indicator for avv values for a same year or for a same area).
+  - **`method`** Brief information on the data collection method, e.g. :Sample household survey".
+  - **`period`** Information on the period of the data collection, e.g. "January to March 2022".  
+  - **`note`** Additional information on the data collection.
+  - **`uri`** *[Optional ; Not repeatable ; String]*  
+  A link to a resource (website, document) where more information on the data collection can be found.
+
+- **`imputation`** Data may have been imputed to account for data gaps or for other reasons (harmonization/standardization, and others). If imputations have been made, this element provides the space for their description.
+
+- **`adjustments`** Description of any adjustments with respect to use of standard classifications and harmonization of breakdowns for age group and other dimensions, or adjustments made for compliance with specific international or national definitions.
+
+- **`missing`** Information on missing values in the series or indicator. This information can be related to treatment of missing values, to the cause(s) of missing values, and others.
+
+- **`validation_rules`** Description of the set of rules (itemized) used to validate values for the indicator, e.g. "Is within range 0-100", or "Is the sum of indicatorX + indicator Y".
+
+- **`quality_checks`** Data may have gone through data quality checks to assure that the values are reasonable and coherent, which can be described in this element. These quality checks may include checking for outlying values or other. A brief description of such quality control procedures will contribute to reinforcing the credibility of the data being disseminated. 
+
+- **`quality_note`** Additional notes or an overall statement on data quality. These could for example cover non-standard quality notes and/or information on independent reviews on the data quality.
+ 
+- **`sources_discrepancies`** This element is used to describe and explain why the data in the series may be different from the data for the same series published in other sources. International organizations, for example, may apply different techniques to make data obtained from national sources comparable across countries, in which cases the data published in international databases may differ from the data published in national, official databases.
+                                                        
+- **`series_break`** Breaks in statistical series occur when there is a change in the standards, sources of data, or reference year used in the compilation of a series. Breaks in series must be well documented. The documentation should include the reason(s) for the break, the time it occured, and information on the impact on comparability of data over time.
+
+- **`limitation`** This element is used to communicate to the user any limitations or exceptions in using the data. The limitations may result from the methodology, from issues of quality or consistency in the data source, or other. 
+                                                                 
+- **`themes`** Themes provide a general idea of the research that might guide the creation and/or demand for the series. A theme is broad and is likely also subject to a community based definition or list. A controlled vocabulary should be used. This element will rarely be used (the element `topics` described below will be used more often).
+  - **`id`** The unique identifier of the theme. It can be a sequential number, or the ID of the theme in a controlled vocabulary.
+  - **`name`** The label of the theme associated with the data. 
+  - **`parent_id`** When a hierarchical (nested) controlled vocabulary is used, the `parent_id` field can be used to indicate a higher-level theme to which this theme belongs.
+  - **`vocabulary`** The name of the controlled vocabulary used, if any. 
+  - **`uri`** A link to the controlled vocabulary mentioned in field `vocabulary'.
+  
+- **`topics`** The `topics` field indicates the broad substantive topic(s) that the indicator/series covers. A topic classification facilitates referencing and searches in electronic survey catalogs. Topics should be selected from a standard controlled vocabulary such as the [Council of European Social Science Data Archives (CESSDA) topics classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification).  
+  - **`id`** The unique identifier of the topic. It can be a sequential number, or the ID of the topic in a controlled vocabulary.
+  - **`name`** The label of the topic associated with the data.  
+  - **`parent_id`** When a hierarchical (nested) controlled vocabulary is used, the `parent_id` field can be used to indicate a higher-level topic to which this topic belongs.
+  - **`vocabulary`** The name of the controlled vocabulary used, if any. 
+  - **`uri`** A link to the controlled vocabulary mentioned in field `vocabulary`.  
+
+- **`disciplines`** Information on the academic disciplines related to the content of the document. A controlled vocabulary will preferably be used, for example the one provided by the list of academic fields in [Wikipedia](https://en.wikipedia.org/wiki/List_of_academic_fields). This is a block of five elements:
+  - **`id`** The ID of the discipline, preferably taken from a controlled vocabulary.
+  - **`name`** The name (label) of the discipline, preferably taken from a controlled vocabulary.
+  - **`parent_id`** The parent ID of the discipline (ID of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
+  - **`uri`** The URL to the controlled vocabulary used, if any.  
+ 
+- **`relevance`** This field documents the relevance of an indicator or series in relation to a social imperative or policy objective. 
+
+- **`mandate`**
+   - **`mandate`** Description of the institutional mandate or of a set of rules or other formal set of instructions assigning responsibility as well as the authority to an organization for the collection, processing, and dissemination of statistics for this indicator. 
+	- **`URI`** A link to a resource (document, website) describing the mandate. 
+
+- **`time_periods`** The time period covers the entire span of data available for the series. The time period has a start and an end and is reported according to the periodicity provided in a previous element. 
+  - **`start`** The initial date of the series in the dataset. The start date should be entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).
+  - **`end`** The end date is the latest date for which an estimate for the indicator is available. The end date should be entered in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).
+  - **`notes`** Additional information on the time period.  
+
+- **`ref_country`** A list of countries or economies for which data are available in the series. This element is somewhat redundant with the next element (`geographic_units`) which may also contain a list of countries. Identifying geographic areas of type "country" is important to enable filters and facets in data catalogs (country names are among the most frequent queries submitted to catalogs).
+  - **`name`** The name of the country.
+  - **`code`** The code of the country. The use of the [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) codes is recommended. 
+                             
+- **`geographic_units`** List of geographic units (regions, countries, states, provinces, etc.) for which data are available for the series.
+  - **`name`** Name of the geographic unit e.g. "World, "Africa", "Afghanistan", "OECD countries", "Bangkok".
+  - **`code`** Code of the geographic unit. The [ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)  code is preferred when the unit is a country.
+  - **`type`** Type of geographic unit e.g. "country", "state", "region", "province", "city", etc.   
+
+- **`bbox`** This element is used to define one or multiple bounding box(es), which are the rectangular fundamental geometric description of the geographic coverage of the data. A bounding box is defined by west and east longitudes and north and south latitudes, and includes the largest geographic extent of the dataset's geographic coverage. The bounding box provides the geographic coordinates of the top left (north/west) and bottom-right (south/east) corners of a rectangular area. This element can be used in catalogs as the first pass of a coordinate-based search. This element is optional, but if the `bound_poly` element (see below) is used, then the `bbox` element must be included.
+  - **`west`** West longitude of the bounding box.
+  - **`east`** East longitude of the bounding box.
+  - **`south`** South latitude of the bounding box.
+  - **`north`** North latitude of the bounding box.
+                                   
+- **`aggregation_method`** The `aggregation_method` element describes how values can be aggregated from one geographic level (for example, a country) to a higher-level geographic area (for example, a group of country defined based on a geographic criteria (region, world) or another criteria (low/medium/high-income countries, island countries, OECD countries, etc.). The aggregation method can be simple (like "sum" or "population-weighted average") or more complex, involving weighting of values. 
+                                                
+- **`disaggregation`** This element is intended to inform users that an indicator or series is available at various levels of disaggregation. The related series should be listed (by andme and/or identifier). For indicator "Population, total" for example, one may inform the user that the indicator is also available (in other series) by sex, urban/rural, and age group (in series "Population, male" and "Population, female", etc.).
+                                                          
+- **`license`** The license refers to the accessibility and terms of use associated with the data. Providing a license and a link to the terms of the license allos data users to determine, with full clarity, what they can and cannot do with the data.
+  - **`name`** The name of the license, e.g. "Creative Commons Attribution 4.0 International license (CC-BY 4.0)".
+  - **`uri`** The URL of a website where the licensed is described in detail, for example "https://creativecommons.org/licenses/by/4.0/". 
+  - **`note`** Any additional information on the license.  
+
+- **`confidentiality`** A statement of confidentiality for the series. 
+                                                                                
+- **`confidentiality_status`** This indicates a confidentiality status for the series. A controlled vocabulary should be used with possible options "public", "official use only", "confidential", "strictly confidential". When all series are made publicly available, and belong to a database that has an open or public access policy, this element can be ignored.
+
+- **`confidentiality_note`** This element is reserved for additional notes regarding confidentiality of the data. This could involve references to specific laws and circumstances regarding the use of data. 
+                                                 
+- **`links`** This element provides links to online resources of any type that could be useful to the data users. This can be links to description of methods and reference documents, analytics tools, visualizations, data sources, or other. 
+  - **`type`** This element allows to classify the link that is provided. 
+  - **`description`** A description of the link that is provided. 
+  - **`uri`** The uri (URL) to the described resource.  
+ 
+- **`api_documentation`** Increasingly, data are made accessible via Application Programming Interfaces (APIs). The API associated with a series must be documented. The documentation will usually not be specific to a series, but apply to all series in a same database.
+  - **`description`** This element will not contain the API documentation itself, but information on what documentation is available.
+  - **`uri`** The URL of the API documentation.  
+ 
+- **`authoring_entity`** This set of five elements is used to identify the organization(s) or person(s) who are the main producers/curators of the indicator. Note that a similar element is provided at the database level. The authoring_entity for the indicator can be different from the authoring_entity of the database. For example, the World Bank is the authoring entity for the World Development Indicators database, which contains indicators obtained from the International Monetary Fund, World Health Organization, and other organizations that are thus the authoring entitis for specific indicators.  
+  - **`name`** The name of the person or organization who is responsible for the production of the indicator or series. Write the name in full (use the element `abbreviation` to capture the acronym of the organization, if relevant). 
+  - **`affiliation`** The affiliation of the person or organization mentioned in `name`.  
+  - **`abbreviation`** Abbreviated name (acronym) of the organization mentioned in `name`.
+  - **`email`** The public email contact of the person or organizations mentioned in `name`. It is good practice to provide a service account email address, not a personal one.
+  - **`uri`** A link (URL) to the website of the entity mentioned in `name`.   
+                                                                 
+- **`sources`** This element provides information on the source(s) of data that were used to generate the indicator. A source can refer to an organization (e.g., "Source: World Health Organization"), or to a dataset (e.g., for a national poverty headcount indicator, the sources will likely be a list of sample household surveys). In `sources`, we are mainly interested in the latter. When a series in a database is a series extracted from another database (e.g., when the World Bank World Development Indicators include a series from the World Health Organization in its database), the source organization should be mentioned in the `authoring_entity` element of the schema. The `sources` element is a repeatable element. 
+Note 1: In some cases, the source of a specific value in a database will be stored as an attribute of the data file (e.g., as a "footnote" attached to a specific cell. If the sources are listed in the data file, they may but do not need to be stored in the metadata. 
+Note 2: the schema also contains an element "data_collection" that would be used to describe a specific data collection activity from which an indicator is derived. 
+  - **`id`** This element records the unique identifier of a source. It is a required element. If the source does not have a specific unique identifier, a sequential number can be used. If the source is a dataset or database that has its own unique identifier (possibly a DOI), this identifier should be used. 
+  - **`name`** The name (title, or label) of the source. 
+  - **`organization`** The organization responsible for the source data.  
+  - **`type`** The type of source, e.g. "household survey", "administrative data", or "external database".  
+  - **`note`** This element can be used to provide additional information regarding the source data.  
+
+- **`sources_note`** Additional information on the source(s) of data used to generate the series or indicator.
+
+- **`keywords`** Words or phrases that describe salient aspects of a data collection's content. Can be used for building keyword indexes and for classification and retrieval purposes. A controlled vocabulary can be employed. Keywords should be selected from a standard thesaurus, preferably an international, multilingual thesaurus.  
+  - **`name`** Keyword (or phrase). Keywords summarize the content or subject matter of the study. 
+  - **`vocabulary`** Controlled vocabulary from which the keyword is extracted, if any.  
+  - **`uri`** The URI of the controlled vocabulary used, if any.
+
+- **`acronyms`** The `acronyms` element is used to document the meaning of all acronyms used in the metadata of a series. If some acronyms are well known (like "GDP", or "IMF" for example), others may be less obvious or could be uncertain (does "PPP" mean "public-private partnership", or "purchasing power parity"?). In any case, providing a list of acronyms with their meaning will help users and make your metadata more discoverable. Note that acronyms should not include country codes used in the documentation of the geographic coverage of the data. 
+  - **`acronym`** An acronym referenced in the series metadata (e.g. "GDP").
+  - **`expansion`** The expansion of the acronym, i.e. the full name or title that it represents (e.g., "Gross Domestic Product").
+  - **`occurrence`** This numeric element can be used to indicate the number of times the acronym is mentioned in the metadata. The element will rarely be used.  
+
+- **`errata`** This element is used to provide information on detected errors in the data or metadata for the series, and on the measures taken to remedy them. 
+  - **`date`** The date the erratum was published. 
+  - **`description`** A description of the error and remedy measures.  
+                                                        
+- **`notes`** This element is open and reserved for explanatory notes deemed useful to the users of the data. Notes should account for additional information that might help: replicate the series; access the data and research area, or discoverability in general. 
+  - **`note`** The note itself.  
+
+- **`related_indicators`** This element allows to reference indicators that are often associated with the indicator being documented.
+  - **`code`** The code for the indicator that is referenced in the document. It will likely be an ID that is used by that indicator.
+  - **`label`** The name or label of the indicator that is associated with the indicator being documented.
+  - **`uri`** A link to the related indicator.  
+
+- **`compliance`** For some indicators, international standards have been established. This is for example the case of indicators like the unemployment or unemployment rate, for which the International Conference of Labour Statisticians defines the standards concepts and methods. The `compliance` element is used to document the compliance of a series with one or multiple national or international standards.  
+  - **`standard`** The name of the standard that the series complies with. This name will ideally include a label and a version or a date. For example: "International Standard Industrial Classification of All Economic Activities (ISIC) Revision 4, published in 2007"
+  - **`abbreviation`** The acronym of the standard that the series complies with.
+  - **`custodian`** The organization that maintains the standard that is being used for compliance. For example: "United Nations Statistics Division".
+  - **`uri`** A link to a public website site where information on the compliance standard can be obtained. For example: "https://unstats.un.org/unsd/classifications/Family/Detail/27  
+
+- **`framework`** Some national, regional, and international agencies develop monitoring frameworks, with goals, targets, and indicators. Some well-known examples are the [Millennium Development Goals](https://www.un.org/millenniumgoals/) and the [Sustainable Development Goals](https://sdgs.un.org/goals) which establish international goals for human development, or the World Summit for Children (1990) which set international goals in the areas of child survival, development and protection, supporting sector goals such as women’s health and education, nutrition, child health, water and sanitation, basic education, and children in difficult circumstances. The `framework` element is used to link an indicator or series to the framework, goal, and target associated with it. 
+  - **`name`** The name of the framework. 
+  - **`abbreviation`** The abreviation of the name of the framework. 
+  - **`custodian`** The name of the organization that is the official custodian of the framework.
+  - **`description`** A brief description of the framework. 
+  - **`goal_id`** The identifier of the Goal that the indicator or series is associated with.
+  - **`goal_name`** The name (label) of the Goal that the indicator or series is associated with.  
+  - **`goal_description`** A brief description of the Goal that the indicator or series is associated with.
+  - **`target_id`** The identifier of the Target that the indicator or series is associated with.
+  - **`target_name`** The name (label) of the Target that the indicator or series is associated with.
+  - **`target_description`** A brief description of the Target that the indicator or series is associated with.
+  - **`indicator_id`** The identifier of the indicator, as provided in the framework (this is not the `idno` identifier).
+  - **`indicator_name`** The name of the indicator, as provided in the framework (which may be different from the name provided in `name`)
+  - **`indicator_description`** A brief description of the indicator, as provided in the framework.
+  - **`uri`** A link to a website providing detailed information on the framework, its goals, targets, and indicators.
+  - **`notes`** Any additional information on the relationship between the indicator/series and the framework.  
+
+- **`series_group`** The group(s) the indicator belongs to. Groups can be create to organize indicators/series by theme, producer, or other.  
+  - **`name`** The name of the group.
+  - **`description`** A brief description of the group.
+  - **`version`** The version of the grouping.
+  - **`uri`** A link to a public website site where information on the grouping can be obtained.  
+
+- **`contacts`** The `contacts` element provides the public interface for questions associated with the production of the indicator or time series.  
+  - **`name`** The name of the contact person that should be contacted. Instead of the name of an individual (which would be subject to change and require frequent update of the metadata), a title can be provided here (e.g. "data helpdesk"). 
+  - **`role`** The specific role of the contact person mentioned in `name`. This will be used when multiple contacts are listed, and is intended to help users direct their questions and requests to the right contact person.      
+  - **`affiliation`** The organization or affiliation of the contact person mentioned in `name`. 
+  - **`email`** The email address of the person or organization mentioned in `name`. Avoid using personal email accounts; the use of an anonymous email is recommended (e.g, "helpdesk@....org")
+  - **`telephone`** The phone number of the person or organization mentioned in `name`.
+  - **`uri`** The URI of the agency (typically, a URL to a "contact us" web page).   
+
+- The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
 - **Geographic coverage**: If your data are related to a single country, the information can easily be entered manually. If you have a multi-country database of indicators, the best option to fill this element is to tabulate your data by country, with the country code and country name included in the table. You may then copy/paste the columns containing the country code and country name in the Metadata Editor. Only include in the list the countries/geographies for which data are available for the indicator. Do not copy/paste a standard code list.
 - **Time coverage**: Enter the range of rime (minimum and maximum) for which data are available. 
+
+### Use of AI to enhance descriptive metadata
 
 You may take advantage of generative AI tools like ChatGPT or equivalent to suggest content for selected fields. For example, generative AI can help:
 - Suggest **keywords** (ask ChatGPT to "Please suggest 20 keywords related to an indicator titled (*enter the title of the indicator here*) defined as (*enter the definition of the indicator here*).
@@ -124,7 +326,6 @@ A data structure definition consists of providing the following information abou
 - ***Time period format:*** Time period format is used to indicate the format of the date in the column identified as Time period. In our Option 2 example, Time period format is "YYYY" as we have data by year.
 - ***Codelist:***
 - ***Codelist reference:***
-
 
 ### Data notes
 
@@ -179,4 +380,7 @@ Document once, give it an ID, and enter it in each indicator in field *databaseI
 
 ### Export and publish
 
+Save as ZIP package
+Export metadata in different formats
+Publish to NADA
 
