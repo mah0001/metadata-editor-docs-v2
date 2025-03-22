@@ -152,7 +152,11 @@ To add an external resource, click on *External resources* in the navigation tre
 
 The *Resource type* element is very important; it will determine how the resource is published in a NADA catalog. Particular attention must be paid to resources of type *Microdata*. When publishing the resource in a NADA catalog, resources of type *Microdata* will not automatically be made available to users of the catalog; the access policy selected when publishing the project in NADA will apply. This could be "Open data" or "Direct access", which will make the data downloadable without restriction, but it could be another access policy such as "Licensed access" which would require that users request access to the data. 
 
-***Data Cite***
+***Data Cite for issuing DOIs***
+
+A Digital Object Identifier (DOI) is a unique, persistent identifier assigned to a digital object, such as a research article, dataset, report, or other scholarly content. It provides a permanent link to the object, ensuring that it can always be reliably located, even if the URL or hosting platform changes. DOIs facilitate accurate citation, improve discoverability, and promote long-term access to digital resources, making them essential for maintaining the integrity and traceability of academic and scientific work.
+
+A DOI is issued by a DOI Registration Agency (RA), which is a member of the International DOI Foundation (IDF). When a publisher, data repository, or other content provider wants to assign a DOI to a digital object, they register the object with an RA, such as Crossref or DataCite. The content provider submits metadata about the object, including its title, authors, publication date, and a URL where the object can be accessed. The RA assigns a unique DOI, which is permanently linked to the metadata and the URL. This ensures that even if the object's location changes, the DOI remains a persistent identifier that redirects users to the correct location.
 
 DataCite is a service that offers Fabrica as a DOI and metadata management service allowing organizations to register and manage DOIs for their data products (see https://datacite.org/create-dois/). With Fabrica, organizations can assign DOIs, maintain accurate and FAIR metadata, and ensure persistent links for long-term accessibility and citation of their valuable research outputs. Generating a DOI requires that a core set of metadata be provided to the DOI registration service. This section of the navigation tree contains the elements that are needed for that purpose. This section is only used when you plan to issue a DOI for the dataset. 
 
@@ -235,3 +239,6 @@ The metadata entry pages will show a [?] icon next to the title of all metadata 
 ![image](img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
 
 
+## Formatting metadata
+
+Depends on template. Some elements may authorize LaTex formulas or markdown content. See *Designing templates*.
