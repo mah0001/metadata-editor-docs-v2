@@ -32,22 +32,45 @@ In that page, select the Template you want to use to document the indicator. A d
 
 The *Metadata information* section in the navigation tree (in the *Project page*) contains elements intended to document the metadata being generated, i.e., metadata about the metadata. All content in this section is optional; it is however recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the Document description provides transparency and clarity on the origin of the metadata.
 
-### Descriptive metadata
+### Indicator description (descriptive metadata)
 
 The documentation of an indicator is a straightforward process. The navigation tree provides access to various metadata entry pages where the information about the indicator can be captured. These metadata entry pages are defined by the selected template. The template includes a description of each metadata element it contains, which are used as instructions to data curators. The template can be printed as PDF and used as a reference document by data curators. The instructions are also provided in the metadata entry pages, by clicking on the (?) icon next to each element's name.
 
 We provide here some guidance on a selection of key metadata elements.
 
-id
-other ids
-name
-aliases
-definition short / long
-relevance
-method (formula?)
-sources
-concepts
-limitations
+- id
+- doi
+- name
+- display name
+- authoring_entity
+- The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
+- database_name
+- date_last_update
+- date_released
+- version_statement
+- aliases
+- alternate_identifiers
+- measurement_unit
+- power_code
+- release_calendar
+- periodicity
+- definition_short
+- definition_long
+- statistical_concept
+- concepts
+- methodology and methodology_reference
+- derivation
+- imputation
+- seasonal_adjustments
+- adjustments
+- missing
+- validation_rules
+- 
+- relevance
+- method (formula?)
+- sources
+- concepts
+= limitations
 
 - **Geographic coverage**: If your data are related to a single country, the information can easily be entered manually. If you have a multi-country database of indicators, the best option to fill this element is to tabulate your data by country, with the country code and country name included in the table. You may then copy/paste the columns containing the country code and country name in the Metadata Editor. Only include in the list the countries/geographies for which data are available for the indicator. Do not copy/paste a standard code list.
 - **Time coverage**: Enter the range of rime (minimum and maximum) for which data are available. 
@@ -58,11 +81,10 @@ You may take advantage of generative AI tools like ChatGPT or equivalent to sugg
 - Propose a description of the indicator's **relevance** (ask ChatGPT to either *Please describe the relevance of a statistical indicator titled (...) and defined as (definition). In the description, indicate to whom and for what purposes the indicator is relevant.* 
 Do not blindly accept suggestions formulated by AI models. Carefully review and improve (or reject) the proposed content.
 
-The metadata element **Database ID** is important if you want to link the description of the indicator to the description of the database to which the indicator belong. The DatabaseID must correspond to the PrimaryID element in a database metadata (see section below on *Documenting the database*).
 
 By default, all elements of a metadata standards will contain unformatted text. If the template allows it, some elements may however include formulas or formatted text. Formulas must be entered using the LaTex language. Formatted text may be HTML or markdown formatted text. 
 
-### Structural metadata
+### Data structure (structural metadata)
 
 The data structure definition (DSD) allows you to describe how the data are organized in the data file. This is the structural metadata for the indicator. The DSD in the Metadata Editor follows the SDMX standard.
 
@@ -105,13 +127,12 @@ A data structure definition consists of providing the following information abou
 - ***Codelist reference:***
 
 
-### External resources
+### Data notes
 
-External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
 
-External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
+### DataCite
 
-External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
+See section "Documenting - General instructions".
 
 
 ### Provenance
@@ -120,14 +141,22 @@ The **Provenance** container is used to document how and when the dataset was ac
 
 
 
-### DataCite
-
-See section "Documenting - General instructions".
-
-
 ### Tags
 
 See section "Documenting - General instructions".
+
+
+### Additional
+
+
+
+### External resources
+
+External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Click on **External resources** in the navigation tree, then on CREATE RESOURCE. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
+
+External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
+
+External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
 
 
 
@@ -139,9 +168,12 @@ Document once, give it an ID, and enter it in each indicator in field *databaseI
 
 ### Create new project
 
+
 ### Information on metadata
 
+
 ### Descriptive metadata
+
 
 ### Export and publish
 
