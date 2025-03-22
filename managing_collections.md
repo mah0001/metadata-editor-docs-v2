@@ -15,36 +15,37 @@ To access the collection management page in the Metadata Editor, click on `COLLE
 
 ## Creating, editing, or deleting a collection
 
-Creating collections requires credentials. The administrator of the system has full authority to create collections. Only the system administrator can create collections at the root level. Other users who are given credentials can create sub-collections of a specific root-level collection. Up to two sub-levels of collections can be created. 
+Creating collections requires specific credentials. The system administrator has full authority to create collections, including those at the root level. Other authorized users can create sub-collections under a designated root-level collection. Up to two sub-levels of collections can be created.
 
-To **create a new collection at root level**, click on "CREATE NEW COLLECTION". Give your collection a short title, and (optional) a description.
+To create a new root-level collection, click on `CREATE NEW COLLECTION`. Enter a short title and an optional description for the collection.
 
 ![image](img/ME_UG_v1-0-0_managing_collections_edit_popup.png)
 
-To **create a sub-collection**, open the Options menu for the collection and select ADD SUB-COLLECTION. Provide a name and description.
+To create a sub-collection, open the *Options* menu for the parent collection and select `ADD SUB-COLLECTION`. Enter a name and description.
 
 ![image](img/ME_UG_v1-0-0_managing_collections_subcollection_dots.png)
 
 ![image](img/ME_UG_v1-0-0_managing_collections_subcollection_menu.png)
 
-The **EDIT** button allows you to edit the name of description of an existing collection.
 
-The **DELETE** button allows you to delete a collection. Note that, because collections are only virtual containers of projects, deleting a collection does not impact the projects themselves.
+The `EDIT` button allows modification of the name and description of an existing collection.
+
+The `DELETE` button removes a collection. Since collections serve as virtual containers, deleting a collection does not affect the projects within it.
 
 
 ## Setting permissions for a collection
 
-Use the "MANAGE ACCESS" option to add/edit the list of users you want to share the collection with, and their role. From this page, you can add or remove users, or edit their roles. All users who appear in this list will be able to view, and possibly edit and delete, all entries listed in this collection (depending on the roles thay are given).
+To manage access, use the `MANAGE ACCESS` option to add or modify users and their roles. This feature allows you to grant or revoke access and adjust user roles. All users in the access list can view, edit, or delete collection entries, depending on their assigned roles.
 
 ![image](img/ME_UG_v1-0-0_managing_collections_permissions.png)
 
 
 ## Adding projects to a collection
 
-A project can be added to a collection by clicking the option "ADD TO COLLECTION" available from the *My projects* page, or in the *Project home page* (see box "Collections"). Refer to the section on **Managing projects** and **Documenting data** for more information.
+A project can be added to a collection from the *My Projects* page or the *Project* home page by selecting `ADD TO COLLECTION`. For additional details, refer to the sections *Managing Projects* and *Documenting Data*.
 
 ![image](img/ME_UG_v1-0-0_managing_collections_add_to_collection_project_homepage.png)
 
-The collections to which an project belongs will be listed in the *My projects* page. To remove an entry from a collection, click on the "X" next to the collection name.
+The collections to which a project belongs are displayed on the My Projects page. To remove a project from a collection, click the "X" next to the collection name.
 
 ![image](img/ME_UG_v1-0-0_managing_collections_collection_in_MyProjects.png)
