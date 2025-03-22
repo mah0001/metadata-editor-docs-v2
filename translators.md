@@ -31,7 +31,7 @@ To add a new language, a folder must be created in the application/languages dir
 
 No UI is provided for creating this folder; it must be done manually.
 
-Once the folder is created, it will appear in the *Translations* section of the UI.
+Once the folder is created, it will appear in the *Translate* section of the UI.
 
 ![image](img/ME_UG_v1-0-0_translation_list_languages_with_spanish.png)
 
@@ -43,11 +43,9 @@ To create or edit a translation:
 2. Select `Translate` from the *Site Administration* menu.
 3. Select the language from the translations page.
 4. Click `Edit`.
-5. Items without a translation will be highlighted in red. Enter your translation in the text box.
+5. Items without a translation will be highlighted in red. Enter your translation in the text box. Note that if the translation is significantly longer than the original text, it may not display properly in limited-space areas such as buttons and menus.
    
   ![image](img/ME_UG_v1-0-0_translation_spanish_translate_red_fields.png)
-
-6. If the translation is significantly longer than the original text, it may not display properly in limited-space areas such as buttons and menus.
 
 After translating each section, `Save` your work.
 
