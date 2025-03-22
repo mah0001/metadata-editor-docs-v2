@@ -77,11 +77,11 @@ The Metadata Editor supports enabling multiple languages, allowing users to swit
 
 1. Edit the the *supported_languages* line of the application/config/config.php file as follows. 
 
- ![image](img/ME_UG_v1-0-0_translation_site_translation_multiple_language_setting.png)
+   ![image](img/ME_UG_v1-0-0_translation_site_translation_multiple_language_setting.png)
 
 3. Modify the supported_languages line to include the desired languages.
 
-Note: No user interface is provided for this task. Once configured, a dropdown menu will appear in the site navigation menu, allowing users to select their preferred language.
+Once configured, a dropdown menu will appear in the site navigation menu, allowing users to select their preferred language.
 
 ![image](img/ME_UG_v1-0-0_translation_site_translation_language_selection_for_user.png)
 
@@ -93,9 +93,9 @@ When translating the Metadata Editor, you may also want to translate the metadat
 To translate templates:
 
 1. Open the *Template Manager* (see the section on *Designing Templates*).
-2. Duplicate the template you want to translate.
+2. `Duplicate` the template you want to translate, and edit the description of the copy (including the name and language information).
 3. Translate all labels, instructions, and controlled vocabularies.
-4. Set the translated template as the default for your language.
+4. Set a translated template as the default for your language.
 
 By translating both the UI and the templates, you ensure a seamless experience for users across different languages.
 
