@@ -30,7 +30,7 @@ Documenting an indicator consists of entering information about the indicator in
 
 ## Step 2: Enter metadata
 
-In the navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the indicator and when. Enter your name in `Metadata producers` and the date of the day in ISO format (YYYY-MM-DD) in `Production date`. Then click on `SAVE`.
+In the navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the indicator and when. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the indicator, was produced. Then click on `SAVE`.
 
 You can now start entering the metadata related to the indicator itself in the "Indicator description" section. In the navigation tree, first select `Title statement` and enter the required `Primary ID`, a unique identifier of your choice, e.g., JD_IND_001 (if you want to publish the indicator in a NADA catalog, make sure that the identifier is not used by another user or for another project). Also enter the (optional) `Other identifiers` for the indicator (enter the WDI indicator identifier: SI.POV.DDAY), and the indicator `title`, which is a required element. Then click `SAVE`.
 
