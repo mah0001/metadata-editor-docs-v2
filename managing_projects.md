@@ -75,7 +75,7 @@ Clicking on a project title in the *My Projects* page, or creating a new project
 
 ![image](img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
 
-The Project Home Page contains the following sections:
+The *Project* home page contains the following sections:
 
 - **Navigation Tree**: Displays the metadata structure defined by the selected template for documenting the dataset.
 
