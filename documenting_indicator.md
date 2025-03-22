@@ -114,7 +114,6 @@ A data structure definition consists of providing the following information abou
 - ***Column type:*** The type of column, with the following options:
   - ***Dimension:*** In our Option 2 example, column "sex" is a dimension.
   - ***Time period:*** The column indicates the time period to which the observation value applies. In our Option 2 example, "year" is a time period.
-  - ***Measure:*** 
   - ***Attribute:*** 
   - ***Indicator ID:*** The column is the indicator unique identifier. Only one column can be an Indicator ID. In our Option 2 example, "IndicatorID" is the Indicator ID.
   - ***Indicator name:*** The column is the name (or title) of the indicator. In our Option 2 example, "Name" is the Indicator ID.
@@ -157,6 +156,9 @@ External resources are all materials (and links) that relate to the indicator. T
 External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. The click on IMPORT in the External resources page, and select the file. 
 
 External resources will be part of the project ZIP package (when the ZIP package is generated - See the main menu). 
+
+
+### Export and publish
 
 
 
