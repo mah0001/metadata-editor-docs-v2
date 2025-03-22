@@ -28,7 +28,7 @@ The Metadata Editor offers two options to document images, corresponding to two 
 
 ## Step 2: Enter metadata
 
-In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the image and when. All information in this section is optional. Enter your name (as `metadata creator`) and the `date` of the day in ISO format YYYY-MM-DD. Then click on `SAVE`.
+In the navigation tree, select *Metadata information / Information on metadata* to enter information on who documented the image and when. All information in this section is optional. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the image, was produced. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_image_metadata_information_save.png)
 
