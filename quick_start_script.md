@@ -26,7 +26,7 @@ We will use the *llm_jeopardy_research.jpg* image (or an image of your choice) a
 
 ## Step 2: Enter metadata
 
-On the left navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the research project, and when. Enter your `name`, and the `date` of the day in ISO format (YYYY-MM-DD). Then click on `SAVE`.
+On the left navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the research project, and when. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the research work, was produced. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_script_metadata_information_save.png)
 
