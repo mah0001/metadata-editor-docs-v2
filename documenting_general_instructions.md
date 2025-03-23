@@ -13,7 +13,7 @@ Every dataset documented in the Metadata Editor is a **project**. A **project** 
 - For images, a project corresponds to one image (which may be available in multiple formats and resolutions)
 - For videos, a project corresponds to one single video. 
 
-The "My projects" page is accessed by clicking on PROJECTS in the top menu.
+The "My projects" page is accessed by clicking on `PROJECTS` in the top menu.
 
 See the **Managing projects** section for a detailed description of this page.
 
