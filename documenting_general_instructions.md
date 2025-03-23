@@ -245,35 +245,35 @@ Metadata is intended to be used in many applications. It is therefore essential 
 
 For example: 
 
-- Plain text (no formatting): 
+- ***Plain text (no formatting):*** 
 
   The Metadata Editor is compatible with Version 2.5 of the DDI Codebook metadata standard.
 
-- Formatted text entered as markdown: 
+- ***Formatted text entered as markdown:***
 
   ```
   The Metadata Editor is compatible with **Version 2.5** of the *DDI Codebook* metadata standard.
   ```
 
-- Formatted text entered as HTML:
+- ***Formatted text entered as HTML:***
 
   ```
   <p>The Metadata Editor is compatible with <strong>Version 2.5</strong> of the <em>DDI Codebook</em> metadata standard.</p>
   ```
 
-- Formatted text, as displayed in a web broswer:
+- ***Formatted text, as rendered in a web broswer:***
 
   The Metadata Editor is compatible with **Version 2.5** of the *DDI Codebook* metadata standard.
 
 
 Formatting metadata elements in the Metadata Editor may also consist of entering LaTex formulas, which is a way of capturing complex formulas in plain text format, leaving it to other applications like web browsers to render the LaTex content into readable formulas. For example:
 
-- Variance formula as entered in the Metadata Editor:
+- ***Variance formula as entered in the Metadata Editor:***
   
   ```latex
   \text{Variance: } \sigma^2 = \frac{\sum_{i=1}^{n} (x_i - \mu)^2}{n}
   ```
 
-- Variance formula as rendered in a web browser
+- ***Variance formula as rendered in a web browser:***
 
   ![image](img/ME_UG_v1-0-0_documenting_general_variance_formula.png)
