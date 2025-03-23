@@ -41,8 +41,7 @@ This work can be made collaborative, by sharing the project with other data cura
 
 ## Title and menu bar
 
-The title and menu bar will display the project title ("untitled" untill you added a project title and saved the metadata), the SAVE button, and a button (triple dots) that opens the project main menu).
-The icon shown in from of the proect title indicates the data type of the project.
+The title and menu bar will display the project title (*untitled* untill you added a project title and saved the metadata), the `SAVE` button, and a button (triple dots) that opens the project main menu). The icon shown in front of the project title indicates the data type of the project.
 
 
 ## Header
@@ -56,7 +55,7 @@ The header frame in the *Project home page* provides information on the project 
 
 - ***Project template***
 
-  Datasets are documented based o templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements (refer to the **Templates** section). The template will determine what data curators see in the navigation tree of the Project pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see **Designing templates**). 
+  Datasets are documented based on templates. Templates are customized subsets of the metadata elements available from the metadata standard, possibly complemented by user-defined additional elements. The template will determine what data curators see in the navigation tree of the *Project* pages, and the metadata entry pages. A default template is automatically selected when a new project is created (the template to be used as default is selected by the system administrator; see section *Designing templates*). 
 
   The data curator can select another template available in the Metadata Editor. The list of available templates is also selected by the system administrator. 
 
@@ -64,19 +63,19 @@ The header frame in the *Project home page* provides information on the project 
 
 - ***Administrative metadata templates***
 
-  Select one or multiple administrative metadata templates (optional). See **Administrative** metadata below, and *Administrative metadata templates* in **Designing templates** for more information on the purpose and use of administrative metadata.
+  Select one or multiple administrative metadata templates (optional). See *Administrative metadata* below, and *Administrative metadata templates* in *Designing templates* for more information on the purpose and use of administrative metadata.
 
 
 ## Navigation tree
 
-The navigation tree shown in the Project page reflects the content of the selected templates. In a template, metadata elements can be tagged as *required* or *recommended*. The navigation frame provides an option to filter elements, to display only required fields or recommended fields. It also provides an option to only display **empty fields**, i.e. metadata elements for which no content has been provided.
+The navigation tree shown in the *Project* page reflects the content of the selected templates. In a template, metadata elements can be tagged as *required* or *recommended*. The navigation frame provides an option to filter elements, to display only required fields or recommended fields. It also provides an option to only display *empty fields*, i.e. metadata elements for which no content has been provided.
 
 A search box is also provided, allowing users to search a metadata element based on keywords found in the element label.
 
 
-## Project validation ##
+## Project validation
 
-The Project home page contains a frame titled **Project validation**, which will indicate whether the metadata that has been entered and saved violates some of the requirements of the standard itself or of the validation rules defined in the template used to document the dataset.
+The *Project home* page contains a frame titled *Project validation*, which will indicate whether the metadata that has been entered and saved violates some of the requirements of the standard itself or of the validation rules defined in the template used to document the dataset.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_project_validation.png)
 
@@ -86,16 +85,16 @@ The Project home page contains a frame titled **Project validation**, which will
 Clicking on a validation error will take you to the element that needs to be edited.
 
 
-## Collaborators ##
+## Collaborators
 
-The frame **Collaborators** in the project Home page will show the list of collaborators who have access to the project, with information on their permission level (View, Edit, Admin, Owner). If you are the owner or administrator of the project, you may edit this list (adding or removing collaborators) from the list by clicking on the icon on top of the frame.
+The frame *Collaborators* in the *Project home* page will show the list of collaborators who have access to the project, with information on their permission level (View, Edit, Admin, Owner). If you are the owner or administrator of the project, you may edit this list (adding or removing collaborators) from the list by clicking on the icon on top of the frame.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_collaborators.png)
 
 
-## Collections ##
+## Collections
 
-The frame **Collections** in the project Home page will show the list of collections to which the project belongs. If you are the owner or administrator of the project, you may edit this list (adding or removing collections) from the list by clicking on the icon on top of the frame.
+The frame *Collections* in the *Project home* page will show the list of collections to which the project belongs. If you are the owner or administrator of the project, you may edit this list (adding or removing collections) from the list by clicking on the icon on top of the frame.
 
 
 ## File manager ##
@@ -110,7 +109,7 @@ The frame **Collections** in the project Home page will show the list of collect
 
 ***Home and preview***
 
-**Home** opens the project home page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
+**Home** opens the *Project home* page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
 
 
 **Preview** shows all metadata entered for the project in one single page, in a non-editable page.
