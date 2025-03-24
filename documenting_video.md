@@ -27,7 +27,7 @@ If you plan to publish the video metadata in a NADA catalog, with a possibility 
 
 ### Create a new project
 
-The first step in documenting a video in the Metadata Editor is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page, then selecting *Video* as data type when prompted. This will open a new, untitled indicator *Project* page.
+The first step in documenting a video in the Metadata Editor is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page, then selecting *Video* as data type when prompted. This will open a new, untitled *Project* page.
 
 In that page, select the template you want to use to document the video. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template title in the *Templates* frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
