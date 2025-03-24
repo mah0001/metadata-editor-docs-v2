@@ -4,7 +4,7 @@ The Metadata Editor application was developed by Mehmood Asghar (Senior Data Eng
 
 The application was in part inspired by the Nesstar Publisher software application (by the Norwegian Social Science Data Archive). 
 
-The application benefited from feedback from many colleagues who reviewed and tested it, including Tefera Bekele and Cathrine Machingauta. 
+The application benefited from feedback from many colleagues who reviewed and tested it, including Tefera Bekele and Cathrine Machingauta (World Bank data scientists). 
 
 A team at Outsourcify Ltd (Thailand) supported the development of the user interface. 
 
