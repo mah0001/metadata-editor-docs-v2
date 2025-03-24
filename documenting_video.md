@@ -17,9 +17,6 @@ Machine learning speech-to-text solutions are available (although not for all la
 
 Transcriptions of videos published on Youtube are available on-line (the example below was extracted from https://www.youtube.com/watch?v=Axs8NPVYmms).
 
-### Publish the video
-
-
 
 ## Documenting the video
 
@@ -50,20 +47,20 @@ The `video_description` section contains all elements that will be used to descr
 - **`genre`** The genre of the video, broadcast channel or group. This is a VideoObject element. A controlled vocabulary can be used.
  
 - **`keywords`** A list of keywords that provide information on the core content of the video. Keywords provide a convenient solution to improve the discoverability of the video, as it allows terms and phrases not found elsewhere in the video metadata to be indexed and to make the video discoverable by text-based search engines. A controlled vocabulary will preferably be used (although not required), such as the [UNESCO Thesaurus](http://vocabularies.unesco.org/browser/thesaurus/en/). The list can combine keywords from multiple controlled vocabularies, and user-defined keywords.  
-  - **`name`** The keyword itself.<br>
+  - **`name`** The keyword itself. 
   - **`vocabulary`** The controlled vocabulary (including version number or date) from which the keyword is extracted, if any.
-  - **`uri`**  The URL of the controlled vocabulary from which the keyword is extracted, if any.<br><br>
+  - **`uri`**  The URL of the controlled vocabulary from which the keyword is extracted, if any.  
 
-- **`topics`** Information on the topics covered in the video. A controlled vocabulary will preferably be used, for example the [CESSDA Topics classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification), a typology of topics available in 11 languages; or the [Journal of Economic Literature (JEL) Classification System](https://en.wikipedia.org/wiki/JEL_classification_codes), or the [World Bank topics classification](https://documents.worldbank.org/en/publication/documents-reports/docadvancesearch). Note that you may use more than one controlled vocabulary. This element is a block of five fields:<br> 
-  - **`id`** The identifier of the topic, taken from a controlled vocabulary.<br>
-  - **`name`** The name (label) of the topic, preferably taken from a controlled vocabulary.<br>
-  - **`parent_id`** The parent identifier of the topic (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.<br>
-  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.<br>
-  - **`uri`** The URL to the controlled vocabulary used, if any. <br><br>
+- **`topics`** Information on the topics covered in the video. A controlled vocabulary will preferably be used, for example the [CESSDA Topics classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification), a typology of topics available in 11 languages; or the [Journal of Economic Literature (JEL) Classification System](https://en.wikipedia.org/wiki/JEL_classification_codes), or the [World Bank topics classification](https://documents.worldbank.org/en/publication/documents-reports/docadvancesearch). Note that you may use more than one controlled vocabulary. This element is a block of five fields:  
+  - **`id`** The identifier of the topic, taken from a controlled vocabulary. 
+  - **`name`** The name (label) of the topic, preferably taken from a controlled vocabulary. 
+  - **`parent_id`** The parent identifier of the topic (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used. 
+  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any. 
+  - **`uri`** The URL to the controlled vocabulary used, if any.   
  
-- **`persons`** A list of persons who appear in the video.<br>
-  - **`name`** The name of the person.<br>
-  - **`role`** The role of the person mentioned in `name`.<br><br>   
+- **`persons`** A list of persons who appear in the video. 
+  - **`name`** The name of the person. 
+  - **`role`** The role of the person mentioned in `name`.     
  
 - **`main_entity`**  Indicates the primary entity described in the video. This element maps to the element `mainEntity` in VideoObject. 
  
@@ -75,8 +72,8 @@ The `video_description` section contains all elements that will be used to descr
  
 - **`status`** The status of the video in terms of its stage in a lifecycle. A controlled vocabulary should be used. Example terms include {`Incomplete, Draft, Published, Obsolete`}. Some organizations define a set of terms for the stages of their publication lifecycle. This element maps to the element *creativeWorkStatus* in VideoObject. 
 
-- **`country`** The list of countries (or regions) covered by the video, if applicable. This refers to the <u>content</u> of the video, not to the country where the video was released. This is a repeatable block of two elements:<br>
-  - **`name`** The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with.<br>
+- **`country`** The list of countries (or regions) covered by the video, if applicable. This refers to the <u>content</u> of the video, not to the country where the video was released. This is a repeatable block of two elements: 
+  - **`name`** The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with. 
   - **`code`** The country/region code (entered as a string, even for numeric codes). It is recommended to use a standard list of countries and regions, such as the ISO country list ([ISO 3166](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)).
  
 - **`spatial_coverage`** Indicates the place(s) which are depicted or described in the video. This element maps to the element `contentLocation` in VideoObject. This element complements the `ref_country` element. It can be used to qualify the geographic coverage of the video, in the form of a free text. 
@@ -90,14 +87,14 @@ The `video_description` section contains all elements that will be used to descr
 - **`audience`** A brief description of the intended audience of the video, i.e. the group for whom it was created.
  
 - **`bbox`** This element is used to define one or multiple bounding box(es), which are the (rectangular) fundamental geometric description of the geographic coverage of the video. A bounding box is defined by west and east longitudes and north and south latitudes, and includes the largest geographic extent of the video's geographic coverage. The bounding box provides the geographic coordinates of the top left (north/west) and bottom-right (south/east) corners of a rectangular area. This element can be used in catalogs as the first pass of a coordinate-based search. 
-  - **`west`** West longitude of the box<br>
-  - **`east`** East longitude of the box<br>
-  - **`south`** South latitude of the box<br>
-  - **`north`** North latitude of the box<br>
+  - **`west`** West longitude of the box 
+  - **`east`** East longitude of the box 
+  - **`south`** South latitude of the box 
+  - **`north`** North latitude of the box 
  
-- **`language`** Most videos will only be provided in one language. This is however a repeatable field, to allow for more than one language to be listed. For the language code, ISO codes will preferably be used. The language refers to the language in which the video is published. This is a block of two elements (at least one must be provided for each language):<br>
-  - **`name`** The name of the language.<br>
-  - **`code`** The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings. <br><br>
+- **`language`** Most videos will only be provided in one language. This is however a repeatable field, to allow for more than one language to be listed. For the language code, ISO codes will preferably be used. The language refers to the language in which the video is published. This is a block of two elements (at least one must be provided for each language): 
+  - **`name`** The name of the language. 
+  - **`code`** The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.   
  
 - **`creator`** Organization or person who created/authored the video. 
  
@@ -113,26 +110,26 @@ The `video_description` section contains all elements that will be used to descr
   - **`affiliation`** Affiliation of the person/unit.
   - **`email`** E-mail address of the person.
   - **`telephone`** A phone number that can be called to obtain information or provide feedback on the table. This should never be a personal phone number; a corporate number (typically of a data help desk) should be provided.
-  - **`uri`** A link to a website where contact information for `name` can be found.<br><br>
+  - **`uri`** A link to a website where contact information for `name` can be found.  
      
 - **`contributors`** Identifies the person(s) and/or organization(s) who contributed to the production of the video. The `role` attribute allows defining what the specific contribution of the identified person or organization was. 
-  - **`name`** The name of the contributor (person or organization). <br>
-  - **`affiliation`** The affiliation of the contributor. <br>
-  - **`abbr`** The abbreviation for the institution which has been listed as the affiliation of the contributor. <br>      
-  - **`role`** The specific role of the contributor. This could for example be "Cameraman", "Sound engineer", etc.<br>
-  - **`uri`** A URI (link to a website, or email address) for the contributor. <br><br>
+  - **`name`** The name of the contributor (person or organization).  
+  - **`affiliation`** The affiliation of the contributor.  
+  - **`abbr`** The abbreviation for the institution which has been listed as the affiliation of the contributor.        
+  - **`role`** The specific role of the contributor. This could for example be "Cameraman", "Sound engineer", etc. 
+  - **`uri`** A URI (link to a website, or email address) for the contributor.   
 
-- **`sponsors`** This element is used to list the funders/sponsors of the video. If different funding agencies financed different stages of the production process, use the "role" attribute to distinguish them.<br>
-  - **`name`** The name of the sponsor (person or organization)<br>
-  - **`abbr`** The abbreviation (acronym) of the sponsor.<br>
-  - **`grant`** The grant (or contract) number.<br>
-  - **`role`** The specific role of the sponsor. <br><br>
+- **`sponsors`** This element is used to list the funders/sponsors of the video. If different funding agencies financed different stages of the production process, use the "role" attribute to distinguish them. 
+  - **`name`** The name of the sponsor (person or organization) 
+  - **`abbr`** The abbreviation (acronym) of the sponsor. 
+  - **`grant`** The grant (or contract) number. 
+  - **`role`** The specific role of the sponsor.   
         
-- **`translators`** Organization or person who adapted the video to different languages. This element maps to the element *translator* in VideoObject.<br>
-  - **`first_name`** The first name of the translator.<br>
-  - **`initial`** The initials of the translator.<br>
-  - **`last_name`** The last name of the translator.<br>
-  - **`affiliation`** The affiliation of the translator. <br><br>
+- **`translators`** Organization or person who adapted the video to different languages. This element maps to the element *translator* in VideoObject. 
+  - **`first_name`** The first name of the translator. 
+  - **`initial`** The initials of the translator. 
+  - **`last_name`** The last name of the translator. 
+  - **`affiliation`** The affiliation of the translator.   
  
 - **`is_based_on`** A resource from which this video is derived or from which it is a modification or adaption. This element maps to the element *isBasedOn* in VideoObject. 
  
@@ -145,28 +142,23 @@ The `video_description` section contains all elements that will be used to descr
 - **`video_url`** URL of the video. This element maps to the element *url* in VideoObject.
  
 - **`embed_url`** A URL pointing to a player for a specific video. For example, "https://www.youtube.com/embed/7Aif1xjstws". To be embedded, a video must be hosted on a video sharing platform like Youtube (www.youtube.com). To obtain the "embed link" from youtube, click on the "Share" button, then "Embed". In the result box, select the content of the element `src = `.
-
-  <br>
+   
   ![](./images/ReDoc_videos_46.JPG){width=100%}
-  <br>
  
 - **`encoding_format`** The video file format, typically expressed using a MIME format. This element corresponds to the "encodingFormat" element of VideoObject and maps to the element *format* of the Dublin Core.
  
 - **`duration`** The duration of the item (movie, audio recording, event, etc.) in ISO 8601 format. ISO 8601 durations are expressed using the following format, where (n) is replaced by the value for each of the date and time elements that <u>follows</u> the (n). For example: (3)H means 3 hours.
-- 
-  :::note
-  **`P(n)Y(n)M(n)DT(n)H(n)M(n)S`**
-  
-  Where:<br>
-  - P is the **Period designator** and is always placed at the beginning of the duration<br>
-   - (n)Y represents the number of years<br>
-   - (n)M represents the number of months<br>
-   - (n)W represents the number of weeks<br>
-   - (n)D represents the number of days<br>
-  - T is the **Time designator** and always precedes the time components<br>
-   - (n)H represents the number of hours<br>
-   - (n)M represents the number of minutes<br>
-   - (n)S represents the number of seconds<br>
+    
+  Duration in ISO 8601 format is in the form:  **`P(n)Y(n)M(n)DT(n)H(n)M(n)S`** where: 
+  - P is the **Period designator** and is always placed at the beginning of the duration 
+    - (n)Y represents the number of years 
+    - (n)M represents the number of months 
+    - (n)W represents the number of weeks 
+    - (n)D represents the number of days 
+  - T is the **Time designator** and always precedes the time components 
+    - (n)H represents the number of hours 
+    - (n)M represents the number of minutes 
+    - (n)S represents the number of seconds 
   
   For example, **P1Y2M20DT3H30M8S** represents a duration of one year, two months, twenty days, three hours, thirty minutes, and eight seconds.
   
@@ -174,10 +166,8 @@ The `video_description` section contains all elements that will be used to descr
   
   As *M* can represent both Month and Minutes, the time designator *T* is used. For example, "P1M" is a one-month duration and "PT1M" is a one-minute duration.
   
-  This information on the ISO 8601 was adapted from [wikipedia](https://en.wikipedia.org/wiki/ISO_8601) where more detailed information can be found.
-  :::
-  
-  
+  *This information on the ISO 8601 was adapted from [wikipedia](https://en.wikipedia.org/wiki/ISO_8601) where more detailed information can be found.*
+   
 - **`rights`** A textual description of the rights associated to the video. If a copyright is available, the three following elements will be used instead of this element. 
  
 - **`copyright_holder`** The party holding the legal copyright to the video. This element corresponds to the "copyrightHolder" element of VideoObject.
@@ -190,18 +180,18 @@ The `video_description` section contains all elements that will be used to descr
  
 - **`citation`** This element provides a required or recommended citation of the audio file.
  
-- **`transcript`** The transcript of the video content, provided as a text. Note that if the text is very long, an alternative is to save it in a separate text file and to make it available in a data catalog as an external resource.<br>
-  - **`language_name`** The name of the language of the transcript.<br>
-  - **`language_code`** The code of the language of the transcript, preferably the ISO code.<br>
+- **`transcript`** The transcript of the video content, provided as a text. Note that if the text is very long, an alternative is to save it in a separate text file and to make it available in a data catalog as an external resource. 
+  - **`language_name`** The name of the language of the transcript. 
+  - **`language_code`** The code of the language of the transcript, preferably the ISO code. 
   - **`text`** The transcript itself. Adding the transcript in the metadata will make the video much more discoverable, as the content of the transcription can be indexed in catalogs.
 
 - **`media`** A description of the media on which the recording is stored (other than the online file format); e,g., "CD-ROM".    
  
-- **`album`** When a video is published in a catalog containing many other videos, it may be desirable to organize them by album. Albums are collections of videos organized by theme, period, location, or other criteria. One video can belong to more than one album. Albums are "virtual collections". <br>
-  - **`name`**  The name (label) of the album. <br>
-  - **`description`** A brief description of the album.<br>
-  - **`owner`** The owner of the album.<br>
-  - **`uri`** A link (URL) to the album.<br>
+- **`album`** When a video is published in a catalog containing many other videos, it may be desirable to organize them by album. Albums are collections of videos organized by theme, period, location, or other criteria. One video can belong to more than one album. Albums are "virtual collections".  
+  - **`name`**  The name (label) of the album.  
+  - **`description`** A brief description of the album. 
+  - **`owner`** The owner of the album. 
+  - **`uri`** A link (URL) to the album. 
 
 
 ### etc
