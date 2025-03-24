@@ -39,11 +39,11 @@ The first step in documenting an indicator is to create a new project. You do th
 
 In that page, **select the template** you want to use to document the indicator. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the *Templates* frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
-### Information on metadata
+### Enter information on metadata
 
 The *Metadata information* section in the navigation tree (in the *Project page*) contains elements intended to document the metadata being generated, i.e., metadata about the metadata. All content in this section is optional; it is however recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the Document description provides transparency and clarity on the origin of the metadata.
 
-### Indicator description (descriptive metadata)
+### Enter the indicator description (descriptive metadata)
 
 The documentation of an indicator is a relatively straightforward process. The navigation tree in the *Project page* provides access to various metadata entry pages where the information about the indicator can be captured. These metadata entry pages are defined by the selected template. 
 
@@ -51,7 +51,7 @@ The template includes a description of each metadata element it contains, which 
 
 We provide below some guidance on a selection of the metadata elements found in the metadata schema. A small number of these elements are marked as *required*. When documenting an indicator, it is advised to provide the most compoehensive information possible. 
 
-- **`idno`** A unique identifier (ID) for the indicator. This is a required element. Most agencies will (and should) use a coherent coding convention to generate their indicators identifiers.                                      
+- **`idno`** A unique identifier (ID) for the indicator. This is a required element. Most agencies will (and should) use a coherent coding convention to generate their indicators identifiers
 
 - **`doi`** A Digital Object Identifier (DOI) for the the indicator. See the *Documenting data - General instructions* section of the User Guide for more information on DOIs.                                         
 
