@@ -567,15 +567,15 @@ https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded
 
 ### Fill out the *License* section
 
-
+Enter the name and URL of the license under which the image is published (if any).
 
 ### Fill out the *Albums* section
 
-
+Enter information on the name, description, owner, and URL of the online album(s) in which the image is published. 
 
 ### Fill out the *Tags* section
 
-
+See section *Documenting data - General instructions*.
 
 ### Add the external resources
 
@@ -594,7 +594,7 @@ See also section *Documentation - General instructions*.
 
 ### Add information on provenance
 
-The **Provenance** container is used to document how, frow where, and when the image was acquired. It is used to ensure traceability. See section "Documenting - General instructions" for more information.
+The **Provenance** container is used to document how, frow where, and when the image was acquired. It is used to ensure traceability. See section *Documenting data - General instructions* for more information.
 
 
 ## Save and export metadata (DCMI or IPTC)
