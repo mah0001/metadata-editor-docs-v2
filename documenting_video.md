@@ -4,18 +4,23 @@
 
 The metadata schema implemented in the Metadata Editor to document video files is a combination of elements extracted from the [Dublin Core Metadata Initiative](https://dublincore.org/) (DCMI) and from the [VideoObject (from schema.org)](https://schema.org/VideoObject) schemas.  
 
-The Dublin Core is a generic and versatile standard, which we also use (in an augmented form) for the documentation of *Documents* (Chapter 4), *Images* (Chapter 9), and *Audio* files (chapter 10). It contains 15 core elements, to which we added a selection of elements from VideoObject. We also included the elements `keywords`, `topics`, `tags`, `datacite`, `provenance` and `additional` that are found in all standards supported by the Metadata Editor. 
+The Dublin Core is a generic and versatile standard, which we also use (in an augmented form) for the documentation of *Documents* and *Images*. It contains 15 core elements, to which we added a selection of elements from *VideoObject*. We also included the elements `keywords`, `topics`, `tags`, `datacite`, `provenance` and `additional` that are found in all standards supported by the Metadata Editor. 
 
 
-## Preparing for the documentation
+## Preparing for the documentation and publishing of the video
 
 ### Generate a transcription
 
 Videos typically come with limited metadata. To make them more discoverable, a transcription of the video content can be generated, stored, and indexed in the catalog. The metadata schema we propose includes an element `transcription` that can store transcriptions (and possibly their automatically-generated translations) in the video metadata. Word embedding models and topic models can be applied to the transcriptions to further augment the metadata. This will significantly increase the discoverability of the resource, and offer the possibility to apply semantic searchability on video metadata. 
 
-Machine learning speech-to-text solutions are available (although not for all languages) to automatically generate transcriptions at a low cost. This includes commercial applications like [Whisper by openAI](https://openai.com/research/whisper), [Microsoft Azure](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/), or [Amazon Transcribe](https://aws.amazon.com/transcribe/pricing/). Open source solutions in Python also exist. 
+Machine learning speech-to-text solutions are available (although not for all languages) to automatically generate transcriptions at a low cost. This includes commercial applications like [Whisper by openAI](https://openai.com/research/whisper), [Microsoft Azure](https://azure.microsoft.com/en-us/services/cognitive-services/speech-to-text/), or [Amazon Transcribe](https://aws.amazon.com/transcribe/pricing/). Open source Python solutions also exist. 
 
-Transcriptions of videos published on Youtube are available on-line (the example below was extracted from https://www.youtube.com/watch?v=Axs8NPVYmms).
+Transcriptions of videos published on Youtube are available on-line (see the example provided in the description of the `Embed URL` element below).
+
+
+### Publish your video online
+
+If you plan to publish the video metadata in a NADA catalog, with a possibility for the catalo users to view the video directly in NADA (i.e., if you want to embed the video in the NADA cataloguing page), the video must be published in a video streaming site like YouTube. NADA can embed a published video, but is not a video streaming application. 
 
 
 ## Documenting the video
