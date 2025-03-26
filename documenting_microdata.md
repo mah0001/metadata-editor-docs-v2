@@ -268,7 +268,88 @@ Provides structured information on the agency that authorized the study, the dat
   - **`end`** Date the data collection ended  (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).<br>
   - **`cycle`** Identification of the cycle of data collection. The `cycle` attribute permits specification of the relevant cycle, wave, or round of data. For example, a household consumption survey could visit households in four phases (one per quarter). Each quarter would be a cycle, and the specific dates of data collection for each quarter would be entered.<br>
 
+- **`time_method`** The time method or time dimension of the data collection. A controlled vocabulary can be used. The entries for this element may include "panel survey", "cross-section", "trend study", or "time-series".
 
+- **`frequency`** For data collected at more than one point in time, the frequency with which the data were collected.<br>
+
+- **`time_periods`** This refers to the time period (also known as span) covered by the data, not the dates of data collection.<br> 
+  - **`start`** The start date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).<br>
+  - **`end`** The end date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). Indicate open-ended dates with two decimal points (..)<br>
+  - **`cycle`** The `cycle` attribute permits specification of the relevant cycle, wave, or round of data.<br><br>
+
+- **`sources`** A description of sources used for developing the methodology of the data collection.  
+  - **`name`** The name and other information on the source. For example, "United States Internal Revenue Service Quarterly Payroll File"<br>
+  - **`origin`** For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified. This may not be relevant to survey data.
+  - **`characteristics`** Assessment of characteristics and quality of source material. This may not be relevant to survey data.<br><br> 
+
+- **`coll_mode`** The mode of data collection is the manner in which the interview was conducted or information was gathered. Ideally, a controlled vocabulary will be used to constrain the entries in this field (which could include items like "telephone interview", "face-to-face paper and pen interview", "face-to-face computer-assisted interviews (CAPI)", "mail questionnaire", "computer-aided telephone interviews (CATI)", "self-administered web forms", "measurement by sensor", and others. <br>
+  This is a <u>repeatable</u> field, as some data collection activities implement multi-mode data collection (for example, a population census can offer respondents the options to submit information via web forms, telephone interviews, mailed forms, or face-to-face interviews. Note that in the API description (see screenshot above), the element is described as having type "null", not {}. This is due to the fact that the element can be entered either as a list (repeatable element) or as a string.<br>
+
+- **`data_collectors`** The entity (individual, agency, or institution) responsible for administering the questionnaire or interview or compiling the data.
+  - **`name`** In most cases, we will record here the name of the agency, not the name of interviewers. Only in the case of very small-scale surveys, with a very limited number of interviewers, the name of persons will be included as well.
+  - **`affiliation`** The affiliation of the data collector mentioned in `name`. 
+  - **`abbr`** The abbreviation given to the agency mentioned in `name`. 
+  - **`role`** The specific role of the person or agency mentioned in `name`.<br><br>
+
+  - **`collector_training`** Describes the training provided to data collectors including interviewer training, process testing, compliance with standards etc. This set of elements is repeatable, to capture different aspects of the training process. 
+  - **`type`** The type of training being described. For example, "Training of interviewers", "Training of controllers", "Training of cartographers", "Training on the use of tablets for data collection", etc.<br>
+  - **`training`** A brief description of the training. This may include information on the dates and duration, audience, location, content, trainers, issues, etc.<br>
+
+- **`control_operations`** This element will provide information on the oversight of the data collection, i.e. on methods implemented to facilitate data control performed by the primary investigator or by the data archive.<br>
+
+- **`act_min`** A summary of actions taken to minimize data loss. This includes information on actions such as follow-up visits, supervisory checks, historical matching, estimation, etc. Note that this element does not have to include detailed information on response rates, as a specific metadata element is provided for that purpose in section `analysis_info / response_rate` (see below).<br>
+
+- **`coll_situation`** A description of noteworthy aspects of the data collection situation. Includes information on factors such as cooperativeness of respondents, duration of interviews, number of call-backs, etc. 
+  
+  
+**DATA PROCESSING**
+
+
+  
+
+
+
+
+
+- **`notes`** *[Optional ; Not repeatable ; String]* <br>
+
+  This element is provided to document any specific situations, observations, or events that occurred during data collection. Consider stating such items like: <br>         
+    - Was a training of enumerators held? (elaborate) <br>
+    - Was a pilot survey conducted? <br>
+    - Did any events have a bearing on the data quality? (elaborate) <br>
+    - How long did an interview take on average? <br>
+    - In what language(s) were the interviews conducted? <br>
+    - Were there any corrective actions taken by management when problems occurred in the field? <br>
+
+```{r, indent="  ", eval=F, echo=T}
+my_ddi <- list(
+  doc_desc = list(
+    # ... 
+  ),
+  study_desc = list(
+    # ... ,
+    study_info = list(
+      # ... ,
+      
+      notes = "The pre-test for the survey took place from August 15, 2006 - August 25, 2006 and included 14 interviewers who would later become supervisors for the main survey.
+Each interviewing team comprised of 3-4 female interviewers (no male interviewers were used due to the sensitivity of the subject matter), together with a field editor and a supervisor and a driver. A total of 52 interviewers, 14 supervisors and 14 field editors were used. Training of interviewers took place at the headquarters of the Statistics Office from July 1 to July 12, 2006.
+Data collection took place over a period of about 6 weeks from September 2, 2006 until October 17, 2006. Interviewing took place everyday throughout the fieldwork period, although interviewing teams were permitted to take one day off per week.
+Interviews averaged 35 minutes for the household questionnaire (excluding water testing), 23 minutes for the women's questionnaire, and 27 for the under five children's questionnaire (excluding the anthropometry). Interviews were conducted primarily in English, but occasionally used local translation.
+Six staff members of the Statistics Office provided overall fieldwork coordination and supervision." 
+    
+      # ...
+    ),
+  # ...
+)    
+```
+<br>
+
+
+
+      
+
+          
+ 
 
 
 
@@ -604,65 +685,6 @@ This section contains the metadata elements needed to describe the core elements
 
 
 
-- **`time_periods`** *[Optional ; Repeatable]* <br>
-This refers to the time period (also known as span) covered by the data, not the dates of data collection.<br> 
-
-```json
-"time_periods": [
-  {
-    "start": "string",
-    "end": "string",
-    "cycle": "string"
-  }
-]
-```
-<br>
-
-  - **`start`** *[Required ; Not repeatable ; String]* <br>
-  The start date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY).<br>
-  - **`end`** *[Required ; Not repeatable ; String]* <br>
-  The end date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). Indicate open-ended dates with two decimal points (..)<br>
-  - **`cycle`** *[Optional ; Not repeatable ; String]* <br>
-  The `cycle` attribute permits specification of the relevant cycle, wave, or round of data.<br><br>
-
-
-
-
-
-
-
-- **`notes`** *[Optional ; Not repeatable ; String]* <br>
-
-  This element is provided to document any specific situations, observations, or events that occurred during data collection. Consider stating such items like: <br>         
-    - Was a training of enumerators held? (elaborate) <br>
-    - Was a pilot survey conducted? <br>
-    - Did any events have a bearing on the data quality? (elaborate) <br>
-    - How long did an interview take on average? <br>
-    - In what language(s) were the interviews conducted? <br>
-    - Were there any corrective actions taken by management when problems occurred in the field? <br>
-
-```{r, indent="  ", eval=F, echo=T}
-my_ddi <- list(
-  doc_desc = list(
-    # ... 
-  ),
-  study_desc = list(
-    # ... ,
-    study_info = list(
-      # ... ,
-      
-      notes = "The pre-test for the survey took place from August 15, 2006 - August 25, 2006 and included 14 interviewers who would later become supervisors for the main survey.
-Each interviewing team comprised of 3-4 female interviewers (no male interviewers were used due to the sensitivity of the subject matter), together with a field editor and a supervisor and a driver. A total of 52 interviewers, 14 supervisors and 14 field editors were used. Training of interviewers took place at the headquarters of the Statistics Office from July 1 to July 12, 2006.
-Data collection took place over a period of about 6 weeks from September 2, 2006 until October 17, 2006. Interviewing took place everyday throughout the fieldwork period, although interviewing teams were permitted to take one day off per week.
-Interviews averaged 35 minutes for the household questionnaire (excluding water testing), 23 minutes for the women's questionnaire, and 27 for the under five children's questionnaire (excluding the anthropometry). Interviews were conducted primarily in English, but occasionally used local translation.
-Six staff members of the Statistics Office provided overall fieldwork coordination and supervision." 
-    
-      # ...
-    ),
-  # ...
-)    
-```
-<br>
 
 - **`quality_statement`** *[Optional ; Not Repeatable]* <br>
 This section lists the specific standards complied with during the execution of this study, and provides the option to formulate a general statement on the quality of the data. Any known quality issue should be reported here. Such issues are better reported by the data producer or curator, not left to the secondary analysts to discover. Transparency in reporting quality issues will increase credibility and reputation of the data provider.
@@ -978,39 +1000,6 @@ A block of metadata elements used to describe the methodology employed in a data
   - **`instru_development_type`** *[Optional ; Repeatable ; String]* <br>   
 
   The instrument development type. This element will be used when a pre-defined list of options (controlled vocabulary) is available.
-
-  - **`sources`** *[Optional ; Repeatable]* <br>   
-  A description of sources used for developing the methodology of the data collection.  
-
-```json
-"sources": [
-  {
-    "name": "string",
-    "origin": "string",
-    "characteristics": "string"
-  }
-]
-```
-<br>
-
-  - **`name`** *[Optional ; Not repeatable ; String]* <br> 
-  The name and other information on the source. For example, "United States Internal Revenue Service Quarterly Payroll File"<br>
-  - **`origin`** *[Optional ; Not repeatable ; String]* <br>
-  For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified. This may not be relevant to survey data.
-  - **`characteristics`** *[Optional ; Not repeatable ; String]* <br>
-  Assessment of characteristics and quality of source material. This may not be relevant to survey data.<br><br> 
-
-  - **`coll_situation`** *[Optional ; Not repeatable ; String]* <br>
-
-  A description of noteworthy aspects of the data collection situation. Includes information on factors such as cooperativeness of respondents, duration of interviews, number of call-backs, etc. 
-  
-  - **`act_min`** *[Optional ; Not repeatable ; String]* <br>
-
-  A summary of actions taken to minimize data loss. This includes information on actions such as follow-up visits, supervisory checks, historical matching, estimation, etc. Note that this element does not have to include detailed information on response rates, as a specific metadata element is provided for that purpose in section `analysis_info / response_rate` (see below).<br>
-
-  - **`control_operations`** *[Optional ; Not repeatable ; String]* <br>
-
-  This element will provide information on the oversight of the data collection, i.e. on methods implemented to facilitate data control performed by the primary investigator or by the data archive.<br>
 
   
 
