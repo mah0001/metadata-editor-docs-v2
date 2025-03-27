@@ -166,25 +166,25 @@ We provide below a description of the metadata elements contained in the `Study 
 
 **PRODUCERS AND SPONSORS**
 
-**`authoring_entity`** (**) The name and affiliation of the person, corporate body, or agency responsible for the study’s substantive and intellectual content (the "authoring entity" or “primary investigator”). Generally, in a survey, the authoring entity will be the institution implementing the survey. Repeat the element for each authoring entity, and enter the `affiliation` when relevant. If various institutions have been equally involved as main investigators, then should all be listed. This only includes the agencies responsible for the implementation of the study, not sponsoring agencies or entities providing technical assistance (for which other metadata elements are available). The order in which authoring entities are listed is discretionary. It can be alphabetic or by significance of contribution. Individual persons can also be mentioned, if not prohibited by privacy protection rules. 
+**`Primary producer/investigator`** (*authoring_entity*) The name and affiliation of the person, corporate body, or agency responsible for the study’s substantive and intellectual content (the "authoring entity" or “primary investigator”). Generally, in a survey, the authoring entity will be the institution implementing the survey. Repeat the element for each authoring entity, and enter the `affiliation` when relevant. If various institutions have been equally involved as main investigators, then should all be listed. This only includes the agencies responsible for the implementation of the study, not sponsoring agencies or entities providing technical assistance (for which other metadata elements are available). The order in which authoring entities are listed is discretionary. It can be alphabetic or by significance of contribution. Individual persons can also be mentioned, if not prohibited by privacy protection rules. 
 - **`name`** The name of the person, corporate body, or agency responsible for the work's substantive and intellectual content. The primary investigator will in most cases be an institution, but could also be an individual in the case of small-scale academic surveys. If persons are mentioned, use the appropriate format of *Surname, First name*.
 - **`affiliation`** The affiliation of the person, corporate body, or agency mentioned in `name`.
 
-- **`producers`** (**) This field is provided to list other interested parties and persons that have played a significant but not the leading technical role in implementing and producing the data (which will be listed in `authoring_entity`), and not the financial sponsors (which will be listed in `funding_agencies`).
+- **`Other producers`** (*producers*) This field is provided to list other interested parties and persons that have played a significant but not the leading technical role in implementing and producing the data (which will be listed in `authoring_entity`), and not the financial sponsors (which will be listed in `funding_agencies`).
   - **`name`** The name of the person or organization.
   - **`abbr`** The official abbreviation of the organization mentioned in `name`.
   - **`affiliation`** The affiliation of the person or organization mentioned in `name`.
   - **`role`** A succinct description of the specific contribution by the person or organization in the production of the data.  
 
-- **`funding_agencies`** (**) The source(s) of funds for the production of the study. If different funding agencies sponsored different stages of the production process, use the `role` attribute to distinguish them. 
+- **`Funding agencies`** (*funding_agencies*) The source(s) of funds for the production of the study. If different funding agencies sponsored different stages of the production process, use the `role` attribute to distinguish them. 
   - **`name`** The name of the funding agency.
   - **`abbr`** The abbreviation (acronym) of the funding agency mentioned in `name`.
   - **`grant`** The grant number. If an agency has provided more than one grant, list them all separated with a ";".
   - **`role`** The specific contribution of the funding agency mentioned in `name`. This element is used when multiple funding agencies are listed to distinguish their specific contributions.  
 
-- **`study_budget`** (**) This is a free-text field, not a structured element. The budget of a study will ideally be described by budget line. The currency used to describe the budget should be specified. This element can also be used to document issues related to the budget (e.g., documenting possible under-run and over-run).
+- **`Budget`** (*study_budget*) This is a free-text field, not a structured element. The budget of a study will ideally be described by budget line. The currency used to describe the budget should be specified. This element can also be used to document issues related to the budget (e.g., documenting possible under-run and over-run).
 
-- **`oth_id`** (**) This element is used to acknowledge any other people and organizations that have in some form contributed to the study. This does not include other producers which should be listed in `producers`, and financial sponsors which should be listed in the element `funding_agencies`.
+- **`Other contributors`** (*oth_id*) This element is used to acknowledge any other people and organizations that have in some form contributed to the study. This does not include other producers which should be listed in `producers`, and financial sponsors which should be listed in the element `funding_agencies`.
   - **`name`** The name of the person or organization.
   - **`affiliation`** The affiliation of the person or organization mentioned in `name`.
   - **`role`** A brief description of the specific role of the person or organization mentioned in `name`.
@@ -194,108 +194,109 @@ We provide below a description of the metadata elements contained in the `Study 
 
 Provides structured information on the agency that authorized the study, the date of authorization, and an authorization statement. This element will be used when a special legislation is required to conduct the data collection (for example a Census Act) or when the approval of an Ethics Board or other body is required to collect the data.
 
-- **`date`** (**) The date, preferably entered in ISO 8601 format (YYYY-MM-DD), when the authorization to conduct the study was granted. 
+- **`Authorization date`** (*date*) The date, preferably entered in ISO 8601 format (YYYY-MM-DD), when the authorization to conduct the study was granted. 
 
-- **`agency`** (**) Identification of the agency that authorized the study.
+- **`Authorizing agency`** (*agency*) Identification of the agency that authorized the study.
   - **`name`** Name of the agent or agency that authorized the study. 
   - **`affiliation`** The institutional affiliation of the authorizing agent or agency mentioned in `name`. 
   - **`abbr`** The abbreviation of the authorizing agent's or agency's name.  
   
-- **`authorization_statement`** (**) The text of the authorization (or a description and link to a document or other resource containing the authorization statement).  
+- **`Authorization statement`** (*authorization_statement*) The text of the authorization (or a description and link to a document or other resource containing the authorization statement).  
 
 
 **SAMPLING**
 
-- **`sample_frame`** (**) A description of the sample frame used for identifying the population from which the sample was taken. For example, a telephone book may be a sample frame for a phone survey. Or the listing of enumeration areas (EAs) of a population census can provide a sample frame for a household survey. In addition to the name, label and text describing the sample frame, this structure lists who maintains the sample frame, the period for which it is valid, a use statement, the universe covered, the type of unit contained in the frame as well as the number of units available, the reference period of the frame and procedures used to update the frame.
-  - **`name`** (**) The name (title) of the sample frame.  
-  - **`valid_period`** (**) Defines a time period for the validity of the sampling frame, using a list of events and dates.  
+- **`Sample frame`** A description of the sample frame used for identifying the population from which the sample was taken. For example, a telephone book may be a sample frame for a phone survey. Or the listing of enumeration areas (EAs) of a population census can provide a sample frame for a household survey. In addition to the name, label and text describing the sample frame, this structure lists who maintains the sample frame, the period for which it is valid, a use statement, the universe covered, the type of unit contained in the frame as well as the number of units available, the reference period of the frame and procedures used to update the frame.
+  - **`Name`** (*name*) The name (title) of the sample frame.  
+  - **`Valid periods`** (*valid_period*) Defines a time period for the validity of the sampling frame, using a list of events and dates.  
     - **`event`** The event can for example be `start` or `end`.
     - **`date`** The date corresponding to the event, entered in ISO 8601 format: YYYY-MM-DD.
-  - **`custodian`** (**) Custodian identifies the agency or individual responsible for creating and/or maintaining the sample frame.
-  - **`universe`** (**) A description of the universe of population covered by the sample frame. Age,nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, etc. The universe may consist of elements other than persons, such as housing units, court cases, deaths, countries, etc. In general, it should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is included in the sample frame.
-  - **`unit_type`** (**) The type of the sampling frame unit (for example "household", or "dwelling").
-  - **`is_primary`** (**) This boolean attribute (true/false) indicates whether the unit is primary or not.
-  - **`num_of_units`** (**) The number of units in the sample frame, possibly with information on its distribution (e.g. by urban/rural, province, or other).  
-  - **`update_procedure`** (**) This element is used to describe how and with what frequency the sample frame is updated. For example: "The lists and boundaries of enumeration areas are updated every ten years at the occasion of the population census cartography work. Listing of households in enumeration areas are updated as and when needed, based on their selection in survey samples."   
-  - **`reference_period`**  (**) Indicates the period of time in which the sampling frame was actually used for the study in question. Use ISO 8601 date format to enter the relevant date(s). 
+  - **`Custodian`** (*custodian*) Custodian identifies the agency or individual responsible for creating and/or maintaining the sample frame.
+  - **`Universe`** (*universe*) A description of the universe of population covered by the sample frame. Age,nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, etc. The universe may consist of elements other than persons, such as housing units, court cases, deaths, countries, etc. In general, it should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is included in the sample frame.
+  - **`Unit type`** (*unit_type*) The type of the sampling frame unit (for example "household", or "dwelling").
+  - **`Units are primary`** (*is_primary*) This boolean attribute (true/false) indicates whether the unit is primary or not.
+  - **`Number of units`** (*num_of_units*) The number of units in the sample frame, possibly with information on its distribution (e.g. by urban/rural, province, or other).  
+  - **`Update procedure`** (*update_procedure*) This element is used to describe how and with what frequency the sample frame is updated. For example: "The lists and boundaries of enumeration areas are updated every ten years at the occasion of the population census cartography work. Listing of households in enumeration areas are updated as and when needed, based on their selection in survey samples."   
+  - **`Reference periods`**  (*reference_period*) Indicates the period of time in which the sampling frame was actually used for the study in question. Use ISO 8601 date format to enter the relevant date(s). 
     - **`event`**  Indicates the type of event that the date corresponds to, e.g., "start", "end", "single".
     - **`date`**  The relevant date in ISO 8601 date/time format.  
 
-- **`sampling_procedure`** (**) This field only applies to sample surveys. It describes the type of sample and sample design used to select the survey respondents to represent the population. This section should include summary information that includes (but is not limited to): sample size (expected and actual) and how the sample size was decided; level of representation of the sample; sample frame used, and listing exercise conducted to update it; sample selection process (e.g., probability proportional to size or over sampling); stratification (implicit and explicit); design omissions in the sample; strategy for absent respondents/not found/refusals (replacement or not). Detailed information on the sample design is critical to allow users to adequately calculate sampling errors and confidence intervals for their estimates. To do that, they will need to be able to clearly identify the variables in the dataset that represent the different levels of stratification and the primary sampling unit (PSU).  
+- **`Sampling procedure`** (*sampling_procedure*) This field only applies to sample surveys. It describes the type of sample and sample design used to select the survey respondents to represent the population. This section should include summary information that includes (but is not limited to): sample size (expected and actual) and how the sample size was decided; level of representation of the sample; sample frame used, and listing exercise conducted to update it; sample selection process (e.g., probability proportional to size or over sampling); stratification (implicit and explicit); design omissions in the sample; strategy for absent respondents/not found/refusals (replacement or not). Detailed information on the sample design is critical to allow users to adequately calculate sampling errors and confidence intervals for their estimates. To do that, they will need to be able to clearly identify the variables in the dataset that represent the different levels of stratification and the primary sampling unit (PSU).  
   In publications and reports, the description of sampling design often contains complex formulas and symbols. As the XML and JSON formats used to store the metadata are plain text files, they cannot contain these complex representations. You may however provide references (title/author/date) to documents where such detailed descriptions are provided, and make sure that the documents (or links to the documents) are provided in the catalog where the survey metadata are published. 
 
-- **`sampling_deviation`** (**) Sometimes the reality of the field requires a deviation from the sampling design (for example due to difficulty to access to zones due to weather problems, political instability, etc). If for any reason, the sample design has deviated, this can be reported here. This element will provide information indicating the correspondence as well as the possible discrepancies between the sampled units (obtained) and available statistics for the population (age, sex-ratio, marital status, etc.) as a whole.   
+- **`Deviations from sample design`** (*sampling_deviation*) Sometimes the reality of the field requires a deviation from the sampling design (for example due to difficulty to access to zones due to weather problems, political instability, etc). If for any reason, the sample design has deviated, this can be reported here. This element will provide information indicating the correspondence as well as the possible discrepancies between the sampled units (obtained) and available statistics for the population (age, sex-ratio, marital status, etc.) as a whole.   
 
-- **`response_rate`** (**) The response rate is the percentage of sample units that participated in the survey based on the original sample size. Omissions may occur due to refusal to participate, impossibility to locate the respondent, or other reason. This element is used to provide a narrative description of the response rate, possibly by stratum or other criteria, and if possible with an identification of possible causes. If information is available on the causes of non-response (refusal/not found/other), it can be reported here. This field can also be used to describe non-responses in population censuses. 
+- **`Response rates`** (*response_rate*) The response rate is the percentage of sample units that participated in the survey based on the original sample size. Omissions may occur due to refusal to participate, impossibility to locate the respondent, or other reason. This element is used to provide a narrative description of the response rate, possibly by stratum or other criteria, and if possible with an identification of possible causes. If information is available on the causes of non-response (refusal/not found/other), it can be reported here. This field can also be used to describe non-responses in population censuses. 
 
-- **`weight`** (**) This field only applies to sample surveys. The use of sampling procedures may make it necessary to apply weights to produce accurate statistical results. Describe here the criteria for using weights in analysis of a collection, and provide a list of variables used as weighting coefficient. If more than one variable is a weighting variable, describe how these variables differ from each other and what the purpose of each one of them is.
+- **`Weighting`** (*weight*) This field only applies to sample surveys. The use of sampling procedures may make it necessary to apply weights to produce accurate statistical results. Describe here the criteria for using weights in analysis of a collection, and provide a list of variables used as weighting coefficient. If more than one variable is a weighting variable, describe how these variables differ from each other and what the purpose of each one of them is.
 
 
 **SURVEY INSTRUMENT**
 
-- **`research_instrument`** (**) The research instrument refers to the questionnaire or form used for collecting data. The following should be mentioned:  
+- **`Questionnaires`** (*research_instrument*) The research instrument refers to the questionnaire or form used for collecting data. The following should be mentioned:  
     - List of questionnaires and short description of each (all questionnaires must be provided as External Resources)  
     - In what language(s) was/were the questionnaire(s) available?  
     - Information on the questionnaire design process (based on a previous questionnaire, based on a standard model questionnaire, review by stakeholders). If a document was compiled that contains the comments provided by the stakeholders on the draft questionnaire, or a report prepared on the questionnaire testing, a reference to these documents can be provided here. 
 
-- **`instru_development`** (**) Describe any development work on the data collection instrument. This may include a description of the review process, standards followed, and a list of agencies/people consulted. 
+- **`Instrument development`** (*instru_development*) Describe any development work on the data collection instrument. This may include a description of the review process, standards followed, and a list of agencies/people consulted. 
 
-- **`method_notes`** (**) This element is provided to capture any additional relevant information on the data collection methodology, which could not fit in the previous metadata elements.
+- **`Notes on methodology`** (*method_notes*) This element is provided to capture any additional relevant information on the data collection methodology, which could not fit in the previous metadata elements.
 
 
 **DATA COLLECTION**
 
-- **`coll_dates`** (**) Contains the date(s) when the data were collected, which may be different from the date the data refer to (see `time_periods` above). For example, data may be collected over a period of 2 weeks (`coll_dates`) about household expenditures during a reference week (`time_periods`) preceding the beginning of data collection. Use the event attribute to specify the "start" and "end" for each period entered.  
+- **`Dates of data collection`** (*coll_dates*) Contains the date(s) when the data were collected, which may be different from the date the data refer to (see `time_periods` above). For example, data may be collected over a period of 2 weeks (`coll_dates`) about household expenditures during a reference week (`time_periods`) preceding the beginning of data collection. Use the event attribute to specify the "start" and "end" for each period entered.  
   - **`start`** Date the data collection started (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
   - **`end`** Date the data collection ended  (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
   - **`cycle`** Identification of the cycle of data collection. The `cycle` attribute permits specification of the relevant cycle, wave, or round of data. For example, a household consumption survey could visit households in four phases (one per quarter). Each quarter would be a cycle, and the specific dates of data collection for each quarter would be entered. 
 
-- **`time_method`** (**) The time method or time dimension of the data collection. A controlled vocabulary can be used. The entries for this element may include "panel survey", "cross-section", "trend study", or "time-series".
+- **`Time method`** (*time_method*) The time method or time dimension of the data collection. A controlled vocabulary can be used. The entries for this element may include "panel survey", "cross-section", "trend study", or "time-series".
 
-- **`frequency`** (**) For data collected at more than one point in time, the frequency with which the data were collected. 
+- **`Frequency`** (*frequency*) For data collected at more than one point in time, the frequency with which the data were collected. 
 
-- **`time_periods`** (**) This refers to the time period (also known as span) covered by the data, not the dates of data collection.  
+- **`Time periods`** (*time_periods*) This refers to the time period (also known as span) covered by the data, not the dates of data collection.  
   - **`start`** The start date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
   - **`end`** The end date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). Indicate open-ended dates with two decimal points (..) 
   - **`cycle`** The `cycle` attribute permits specification of the relevant cycle, wave, or round of data.  
 
-- **`sources`** (**) A description of sources used for developing the methodology of the data collection.  
+- **`Data collection sources`** (*sources*) A description of sources used for developing the methodology of the data collection.  
   - **`name`** The name and other information on the source. For example, "United States Internal Revenue Service Quarterly Payroll File" 
   - **`origin`** For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified. This may not be relevant to survey data.
   - **`characteristics`** Assessment of characteristics and quality of source material. This may not be relevant to survey data.   
 
-- **`coll_mode`** (**) The mode of data collection is the manner in which the interview was conducted or information was gathered. Ideally, a controlled vocabulary will be used to constrain the entries in this field (which could include items like "telephone interview", "face-to-face paper and pen interview", "face-to-face computer-assisted interviews (CAPI)", "mail questionnaire", "computer-aided telephone interviews (CATI)", "self-administered web forms", "measurement by sensor", and others.  
+- **`Mode of data collection`** (*coll_mode*) The mode of data collection is the manner in which the interview was conducted or information was gathered. Ideally, a controlled vocabulary will be used to constrain the entries in this field (which could include items like "telephone interview", "face-to-face paper and pen interview", "face-to-face computer-assisted interviews (CAPI)", "mail questionnaire", "computer-aided telephone interviews (CATI)", "self-administered web forms", "measurement by sensor", and others.  
   This is a <u>repeatable</u> field, as some data collection activities implement multi-mode data collection (for example, a population census can offer respondents the options to submit information via web forms, telephone interviews, mailed forms, or face-to-face interviews. Note that in the API description (see screenshot above), the element is described as having type "null", not {}. This is due to the fact that the element can be entered either as a list (repeatable element) or as a string. 
 
-- **`data_collectors`** (**) The entity (individual, agency, or institution) responsible for administering the questionnaire or interview or compiling the data.
+- **`Data collectors`** (*data_collectors*) The entity (individual, agency, or institution) responsible for administering the questionnaire or interview or compiling the data.
   - **`name`** In most cases, we will record here the name of the agency, not the name of interviewers. Only in the case of very small-scale surveys, with a very limited number of interviewers, the name of persons will be included as well.
   - **`affiliation`** The affiliation of the data collector mentioned in `name`. 
   - **`abbr`** The abbreviation given to the agency mentioned in `name`. 
   - **`role`** The specific role of the person or agency mentioned in `name`.  
 
-  - **`collector_training`** (**) Describes the training provided to data collectors including interviewer training, process testing, compliance with standards etc. This set of elements is repeatable, to capture different aspects of the training process. 
+  - **`Collector training`** (*collector_training*) Describes the training provided to data collectors including interviewer training, process testing, compliance with standards etc. This set of elements is repeatable, to capture different aspects of the training process. 
   - **`type`** The type of training being described. For example, "Training of interviewers", "Training of controllers", "Training of cartographers", "Training on the use of tablets for data collection", etc. 
   - **`training`** A brief description of the training. This may include information on the dates and duration, audience, location, content, trainers, issues, etc. 
 
-- **`control_operations`** (**) This element will provide information on the oversight of the data collection, i.e. on methods implemented to facilitate data control performed by the primary investigator or by the data archive. 
+- **`Control operations`** (*control_operations*) This element will provide information on the oversight of the data collection, i.e. on methods implemented to facilitate data control performed by the primary investigator or by the data archive. 
 
-- **`act_min`** (**) A summary of actions taken to minimize data loss. This includes information on actions such as follow-up visits, supervisory checks, historical matching, estimation, etc. Note that this element does not have to include detailed information on response rates, as a specific metadata element is provided for that purpose in section `analysis_info / response_rate` (see below). 
+- **`Supervision`** (*act_min*) A summary of actions taken to minimize data loss. This includes information on actions such as follow-up visits, supervisory checks, historical matching, estimation, etc. Note that this element does not have to include detailed information on response rates, as a specific metadata element is provided for that purpose in section `analysis_info / response_rate` (see below). 
 
-- **`coll_situation`** (**) A description of noteworthy aspects of the data collection situation. This element is provided to document any specific situations, observations, or events that occurred during data collection. Consider stating such items like:           
+- **`Notes on data collection`** (*coll_situation*) A description of noteworthy aspects of the data collection situation. This element is provided to document any specific situations, observations, or events that occurred during data collection. Consider stating such items like:           
     - Was a training of enumerators held? (elaborate)  
     - Was a pilot survey conducted?  
     - Did any events have a bearing on the data quality? (elaborate)  
     - How long did an interview take on average?  
     - In what language(s) were the interviews conducted?  
     - Were there any corrective actions taken by management when problems occurred in the field?    
+
   
 **DATA PROCESSING**
 
-- **`data_processing`** (**) This element is used to describe how data were electronically captured (e.g., entered in the field, in a centralized manner by data entry clerks, captured electronically using tablets and a CAPI application, via web forms, etc.). Information on devices and software used for data capture can also be provided here. Other data processing procedures not captured elsewhere in the documentation can be described here (tabulation, etc.)  
+- **`Data processing`** (*data_processing*) This element is used to describe how data were electronically captured (e.g., entered in the field, in a centralized manner by data entry clerks, captured electronically using tablets and a CAPI application, via web forms, etc.). Information on devices and software used for data capture can also be provided here. Other data processing procedures not captured elsewhere in the documentation can be described here (tabulation, etc.)  
   - **`type`** The type attribute supports better classification of this activity, including the optional use of a controlled vocabulary. The vocabulary could include options like “data capture”, “data validation”, “variable derivation”, “tabulation”, “data visualizations”, anonymization“, ”documentation", etc. 
   - **`description`** A description of a data processing task.
 
-- **`cleaning_operations`** (**) A description of the methods used to clean or edit the data, e.g., consistency checking, wild code checking, etc. The data editing should contain information on how the data was treated or controlled for in terms of consistency and coherence. This item does not concern the data entry phase but only the editing of data whether manual or automatic. It should provide answers to questions like: Was a hot deck or a cold deck technique used to edit the data? Were corrections made automatically (by program), or by visual control of the questionnaire? What software was used? If materials are available (specifications for data editing, report on data editing, programs used for data editing), they should be listed here and provided as external resources in data catalogs (the best documentation of data editing consists of well-documented reproducible scripts). 
+- **`Cleaning operations`** (*cleaning_operations*) A description of the methods used to clean or edit the data, e.g., consistency checking, wild code checking, etc. The data editing should contain information on how the data was treated or controlled for in terms of consistency and coherence. This item does not concern the data entry phase but only the editing of data whether manual or automatic. It should provide answers to questions like: Was a hot deck or a cold deck technique used to edit the data? Were corrections made automatically (by program), or by visual control of the questionnaire? What software was used? If materials are available (specifications for data editing, report on data editing, programs used for data editing), they should be listed here and provided as external resources in data catalogs (the best documentation of data editing consists of well-documented reproducible scripts). 
   
 
 **STUDY ACTIVITIES**
@@ -304,104 +305,104 @@ This section is used to describe the process that led to the production of the f
 
 Each activity will be documented separately. The [Generic Statistical Business Process Model (GSBPM)](https://statswiki.unece.org/display/GSBPM/Generic+Statistical+Business+Process+Model) provides a useful decomposition of such a process, which can be used to list the activities to be described. This is a repeatable set of metadata elements; each activity should be documented separately.
 
-- **`activity_type`** (**) The type of activity. A controlled vocabulary can be used, possibly comprising the main components of the GSBPM: `{Needs specification, Design, Build, Collect, Process, Analyze, Disseminate, Evaluate}`). 
+- **`Type`** (*activity_type*) The type of activity. A controlled vocabulary can be used, possibly comprising the main components of the GSBPM: `{Needs specification, Design, Build, Collect, Process, Analyze, Disseminate, Evaluate}`). 
 
-- **`activity_description`** (**) A brief description of the activity. 
+- **`Description`** (*activity_description*) A brief description of the activity. 
 
-- **`participants`** (**) A list of participants (persons or organizations) in the activity. This is a repeatable set of elements; each participant can be documented separately. 
+- **`Participants`** (*participants*) A list of participants (persons or organizations) in the activity. This is a repeatable set of elements; each participant can be documented separately. 
   - **`name`** Name of the participating person or organization. 
   - **`affiliation`** Affiliation of the person or organization mentioned in `name`. 
   - **`role`** Specific role (participation) of the person or organization mentioned in `name`.  
 
-- **`resources`** (**) A description of the data sources and other resources used to implement the activity. 
+- **`Resources`** (*resources*) A description of the data sources and other resources used to implement the activity. 
   - **`name`** The name of the resource. 
   - **`origin`** The origin of the resource mentioned in `name`. 
   - **`characteristics`** The characteristics of the resource mentioned in `name`.  
 
-- **`outcome`** (**) Description of the main outcome of the activity. 
+- **`Activity outcome`** (*outcome*) Description of the main outcome of the activity. 
 
 
 **QUALITY STANDARDS**
 
 This section lists the specific standards complied with during the execution of this study, and provides the option to formulate a general statement on the quality of the data. Any known quality issue should be reported here. Such issues are better reported by the data producer or curator, not left to the secondary analysts to discover. Transparency in reporting quality issues will increase credibility and reputation of the data provider.
 
-- **`compliance_description`** (**) A statement on compliance with standard quality assessment procedures. The list of these standards can be documented in the next element, `standards`.
+- **`Standard compliance`** (*compliance_description*) A statement on compliance with standard quality assessment procedures. The list of these standards can be documented in the next element, `standards`.
 
-- **`standards`** (**) An itemized list of quality standards complied with during the execution of the study. 
+- **`Quality standards`** (*standards*) An itemized list of quality standards complied with during the execution of the study. 
   - **`name`** The name of the quality standard, if such a standard was used. Include the date when the standard was published, and the version of the standard with which the study is compliant, and the "URI" attribute includes .  
   - **`producer`** The producer of the quality standard mentined in `name`.   
 
-- **`other_quality_statement`** (**) Any additional statement on the quality of the data, entered as free text. This can be independent of any particular quality standard. 
+- **`Other quality statement`** (*other_quality_statement*) Any additional statement on the quality of the data, entered as free text. This can be independent of any particular quality standard. 
 
 
 **DATA APPRAISAL**
 
-- **`sampling_error_estimates`** (**) Sampling errors are intended to measure how precisely one can estimate a population value from a given sample. For sampling surveys, it is good practice to calculate and publish sampling error. This field is used to provide information on these calculations (not to provide the sampling errors themselves, which should be made available in publications or reports). Information can be provided on which ratios/indicators have been subjected to the calculation of sampling errors, and on the software used for computing the sampling error. Reference to a report or other document where the results can be found can also be provided.  
+- **`Sampling errors`** (*sampling_error_estimates*) Sampling errors are intended to measure how precisely one can estimate a population value from a given sample. For sampling surveys, it is good practice to calculate and publish sampling error. This field is used to provide information on these calculations (not to provide the sampling errors themselves, which should be made available in publications or reports). Information can be provided on which ratios/indicators have been subjected to the calculation of sampling errors, and on the software used for computing the sampling error. Reference to a report or other document where the results can be found can also be provided.  
 
-- **`ex_post_evaluation`** (**) Ex-post evaluations are frequently done within large statistical or research organizations, in particular when a study is intended to be repeated. Such evaluations are recommended by the [Generic Statistical Business Process Model](https://statswiki.unece.org/display/GSBPM/Generic+Statistical+Business+Process+Model) (GSBPM). This section of the schema is used to describe the evaluation procedures and their outcomes. 
-  - **`type`** The `type` attribute identifies the type of evaluation with or without the use of a controlled vocabulary.  
-  - **`evaluation_process`** A description of the evaluation process. This may include information on the dates the evaluation was conducted, cost/budget, relevance, institutional or legal arrangements, et.  
-  - **`evaluator`** The evaluator element identifies the person(s) and/or organization(s) involved in the evaluation.  
+- **`Ex-post evaluation`** Ex-post evaluations are frequently done within large statistical or research organizations, in particular when a study is intended to be repeated. Such evaluations are recommended by the [Generic Statistical Business Process Model](https://statswiki.unece.org/display/GSBPM/Generic+Statistical+Business+Process+Model) (GSBPM). This section of the schema is used to describe the evaluation procedures and their outcomes. 
+  - **`Evaluation type`** (*type*) The `type` attribute identifies the type of evaluation with or without the use of a controlled vocabulary.  
+  - **`Evaluation process`** (*evaluation_process*) A description of the evaluation process. This may include information on the dates the evaluation was conducted, cost/budget, relevance, institutional or legal arrangements, et.  
+  - **`Evaluators`** (*evaluator*) The evaluator element identifies the person(s) and/or organization(s) involved in the evaluation.  
     - **`name`** The name of the person or organization involved in the evaluation. 
     - **`affiliation`** The affiliation of the individual or organization mentioned in `name`.  
     - **`abbr`** An abbreviation for the organization mentioned in `name`. 
     - **`role`** The specific role played by the individual or organization mentioned in `name` in the evaluation process. 
-  - **`completion_date`** The date the ex-post evaluation was completed.  
-  - **`outcomes`** A description of the outcomes of the evaluation. It may include a reference to an evaluation report. 
+  - **`Completion date`** (*completion_date*) The date the ex-post evaluation was completed.  
+  - **`Evaluation outcomes`** (*outcomes*) A description of the outcomes of the evaluation. It may include a reference to an evaluation report. 
 
-- **`data_appraisal`** (**) This section is used to report any other action taken to assess the reliability of the data, or any observations regarding data quality. Describe here issues such as response variance, interviewer and response bias, question bias, etc. For a population census, this can include information on the main results of a post enumeration survey (a report should be provided in external resources and mentioned here); it can also include relevant comparisons with data from other sources that can be used as benchmarks.  
+- **`Other data appraisal`** (*data_appraisal*) This section is used to report any other action taken to assess the reliability of the data, or any observations regarding data quality. Describe here issues such as response variance, interviewer and response bias, question bias, etc. For a population census, this can include information on the main results of a post enumeration survey (a report should be provided in external resources and mentioned here); it can also include relevant comparisons with data from other sources that can be used as benchmarks.  
 
 
 **DATA AVAILABILITY**
 
 This section describes the access conditions and terms of use for the dataset. This set of elements should be used when the access conditions are well-defined and are unlikely to change. An alternative option is to document the terms of use in the catalog where the data will be published, instead of "freezing" them in a metadata file. 
 
-- **`access_place`** (**) Name of the location where the data collection is currently stored. 
+- **`Location of dataset`** (*access_place*) Name of the location where the data collection is currently stored. 
 
-- **`access_place_url`** (**) The URL of the website of the location where the data collection is currently stored. 
+- **`URL for location of dataset`** (*access_place_url*) The URL of the website of the location where the data collection is currently stored. 
 
-- **`original_archive`** (**) Archive from which the data collection was obtained, if any (the originating archive). Note that the schema we propose provides an element `provenance`, which is not part of the DDI, that can be used to document the origin of a dataset. 
+- **`Archive where study is originally stored`** (*original_archive*) Archive from which the data collection was obtained, if any (the originating archive). Note that the schema we propose provides an element `provenance`, which is not part of the DDI, that can be used to document the origin of a dataset. 
 
-- **`coll_size`** (**) Extent of the collection. This is a summary of the number of physical files that exist in a collection. We will record here the number of files that contain data and note whether the collection contains other machine-readable documentation and/or other supplementary files and information such as data dictionaries, data definition statements, or data collection instruments. This element will rarely be used. 
+- **`Extent of collection`** (*coll_size*) Extent of the collection. This is a summary of the number of physical files that exist in a collection. We will record here the number of files that contain data and note whether the collection contains other machine-readable documentation and/or other supplementary files and information such as data dictionaries, data definition statements, or data collection instruments. This element will rarely be used. 
 
-- **`complete`** (**) This item indicates the relationship of the data collected to the amount of data coded and stored in the data collection. Information as to why certain items of collected information were not included in the data file stored by the archive should be provided here. Example: "Because of embargo provisions, data values for some variables have been masked. Users should consult the data definition statements to see which variables are under embargo." This element will rarely be used. 
+- **`Completeness`** (*complete*) This item indicates the relationship of the data collected to the amount of data coded and stored in the data collection. Information as to why certain items of collected information were not included in the data file stored by the archive should be provided here. Example: "Because of embargo provisions, data values for some variables have been masked. Users should consult the data definition statements to see which variables are under embargo." This element will rarely be used. 
 
-- **`file_quantity`** (**) The total number of physical files associated with a collection. This element will rarely be used. 
+- **`Number of files`** (*file_quantity*) The total number of physical files associated with a collection. This element will rarely be used. 
 
-- **`notes`** (**) Additional information on the dataset availability, not included in one of the elements above. 
+- **`Notes on data availability`** (*notes*) Additional information on the dataset availability, not included in one of the elements above. 
 
 
 **DEPOSITOR INFORMATION**
 
-- **`depositor`** (**) The name of the person (or institution) who provided this study to the archive storing it.  
+- **`Depositor`** (*depositor*) The name of the person (or institution) who provided this study to the archive storing it.  
   - **`name`**  The name of the depositor. It can be an individual or an organization.
   - **`abbr`** The official abbreviation of the organization mentioned in `name`.
   - **`affiliation`** The affiliation of the person or organization mentioned in `name`.
   - **`uri`** A URL to the depositor  
 
-- **`deposit_date`** (**) The date that the study was deposited with the archive that originally received it. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.  
+- **`Date of deposit`** (*deposit_date*) The date that the study was deposited with the archive that originally received it. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.  
 
 
 **DISTRIBUTOR INFORMATION**
 
-- **`distributors`** (**) The organization(s) designated by the author or producer to generate copies of the study output including any necessary editions or revisions.
+- **`Distributors`** (*distributors*) The organization(s) designated by the author or producer to generate copies of the study output including any necessary editions or revisions.
   - **`name`** The name of the distributor. It can be an individual or an organization.
   - **`abbr`** The official abbreviation of the organization mentioned in `name`. 
   - **`affiliation`** The affiliation of the person or organization mentioned in `name`. 
   - **`uri`** A URL to the ordering service or download facility on a Web site.  
 
-- **`distribution_date`** (**) The date that the study was made available for distribution/presentation. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.   
+- **`Date of distribution`** (*distribution_date*) The date that the study was made available for distribution/presentation. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.   
 
 
 **DATA ACCESS**
 
-- **`contact`** (**) Names and addresses of individuals responsible for the study. Individuals listed as contact persons will be used as resource persons regarding problems or questions raised by users. 
+- **`Access authority`** (*contact*) Names and addresses of individuals responsible for the study. Individuals listed as contact persons will be used as resource persons regarding problems or questions raised by users. 
   - **`name`** The name of the person or organization that can be contacted. 
   - **`affiliation`** The affiliation of the person or organization mentioned in `name`.
   - **`email`** An email address for the contact mentioned in `name`.  
   - **`uri`** A URL to the contact mentioned in `name`.  
 
-  - **`conf_dec`** (**) This element is used to determine if signing of a confidentiality declaration is needed to access a resource. We may indicate here what *Affidavit of Confidentiality* must be signed before the data can be accessed. Another option is to include this information in the next element (Access conditions). If there is no confidentiality issue, this field can be left blank.
+  - **`Confidentiality declaration`** (*conf_dec*) This element is used to determine if signing of a confidentiality declaration is needed to access a resource. We may indicate here what *Affidavit of Confidentiality* must be signed before the data can be accessed. Another option is to include this information in the next element (Access conditions). If there is no confidentiality issue, this field can be left blank.
     - **`txt`** A statement on confidentiality and limitations to data use. This statement does not replace a more comprehensive data agreement (see `Access condition`). An example of statement could be the following: "Confidentiality of respondents is guaranteed by Articles N to NN of the National Statistics Act of [date]. Before being granted access to the dataset, all users have to formally agree: 
       - To make no copies of any files or portions of files to which s/he is granted access except those authorized by the data depositor.  
       - Not to use any technique in an attempt to learn the identity of any person, establishment, or sampling unit not identified on public use data files.  
@@ -411,23 +412,23 @@ This section describes the access conditions and terms of use for the dataset. T
     - **`form_url`** The `"form_url` element is used to provide a link to an online confidentiality declaration form. 
     - **`form_id`** Indicates the number or ID of the confidentiality declaration form that the user must fill out.  
 
-- **`conditions`** (**) Indicates any additional information that will assist the user in understanding the access and use conditions of the data collection. 
+- **`Access conditions`** (*conditions*) Indicates any additional information that will assist the user in understanding the access and use conditions of the data collection. 
 
- - **`cit_req`** (**) A citation requirement that indicates the way that the dataset should be referenced when cited in any publication. Providing a citation requirement will guarantee that the data producer gets proper credit, and that results of analysis can be linked to the proper version of the dataset. The data access policy should explicitly mention the obligation to comply with the citation requirement. The citation should include at least the primary investigator, the name and abbreviation of the dataset, the reference year, and the version number. Include also a website where the data or information on the data is made available by the official data depositor. Ideally, the citation requirement will include a DOI (see the [DataCite](https://datacite.org/) website for recommendations). 
+ - **`Citation requirement`** (*cit_req*) A citation requirement that indicates the way that the dataset should be referenced when cited in any publication. Providing a citation requirement will guarantee that the data producer gets proper credit, and that results of analysis can be linked to the proper version of the dataset. The data access policy should explicitly mention the obligation to comply with the citation requirement. The citation should include at least the primary investigator, the name and abbreviation of the dataset, the reference year, and the version number. Include also a website where the data or information on the data is made available by the official data depositor. Ideally, the citation requirement will include a DOI (see the [DataCite](https://datacite.org/) website for recommendations). 
 
-- **`deposit_req`** (**) Information regarding data users' responsibility for informing archives of their use of data through providing citations to the published work or providing copies of the manuscripts.  
+- **`Deposit requirement`** (*deposit_req*) Information regarding data users' responsibility for informing archives of their use of data through providing citations to the published work or providing copies of the manuscripts.  
 
-- **`status`** (**) A statement of the data availability. An archive may need to indicate that a collection is unavailable because it is embargoed for a period of time, because it has been superseded, because a new edition is imminent, etc. This element will rarely be used. 
+- **`Availability status`** (*status*) A statement of the data availability. An archive may need to indicate that a collection is unavailable because it is embargoed for a period of time, because it has been superseded, because a new edition is imminent, etc. This element will rarely be used. 
 
-- **`spec_perm`** (**) This element is used to determine if any special permissions are required to access a resource.        
+- **`Special permissions`** (*spec_perm*) This element is used to determine if any special permissions are required to access a resource.        
     - **`txt`** A statement on the special permissions required to access the dataset. 
     - **`required`** The `required` is used to aid machine processing of this element. The default specification is "yes".   
     - **`form_url`** The `form_url` is used to provide a link to a special on-line permissions form.  
     - **`form_id`** The "form_id" indicates the number or ID of the special permissions form that the user must fill out.   
     
-- **`restrictions`** (**) Any restrictions on access to or use of the collection such as privacy certification or distribution restrictions should be indicated here. These can be restrictions applied by the author, producer, or distributor of the data. This element can for example contain a statement (extracted from the DDI documentation) like: "In preparing the data file(s) for this collection, the National Center for Health Statistics (NCHS) has removed direct identifiers and characteristics that might lead to identification of data subjects. As an additional precaution NCHS requires, under Section 308(d) of the Public Health Service Act (42 U.S.C. 242m), that data collected by NCHS not be used for any purpose other than statistical analysis and reporting. NCHS further requires that analysts not use the data to learn the identity of any persons or establishments and that the director of NCHS be notified if any identities are inadvertently discovered. Users ordering data are expected to adhere to these restrictions." 
+- **`Restrictions`** (*restrictions*) Any restrictions on access to or use of the collection such as privacy certification or distribution restrictions should be indicated here. These can be restrictions applied by the author, producer, or distributor of the data. This element can for example contain a statement (extracted from the DDI documentation) like: "In preparing the data file(s) for this collection, the National Center for Health Statistics (NCHS) has removed direct identifiers and characteristics that might lead to identification of data subjects. As an additional precaution NCHS requires, under Section 308(d) of the Public Health Service Act (42 U.S.C. 242m), that data collected by NCHS not be used for any purpose other than statistical analysis and reporting. NCHS further requires that analysts not use the data to learn the identity of any persons or establishments and that the director of NCHS be notified if any identities are inadvertently discovered. Users ordering data are expected to adhere to these restrictions." 
 
-- **`notes`** (**) Any additional information related to data access that is not contained in the specific metadata elements provided in the section "Data access and use".
+- **`Notes on access and use`** (*notes*) Any additional information related to data access that is not contained in the specific metadata elements provided in the section "Data access and use".
 
 
 **DISCLAIMER AND COPYRIGHT**
