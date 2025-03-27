@@ -37,6 +37,8 @@ To make data processing and analysis scripts more discoverable and usable, we pr
 
 ### Metadata information
 
+The Metadata information section in the navigation tree (in the Project page) contains elements intended to document the metadata being generated, i.e., metadata about the metadata. All content in this section is optional; it is however recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the `Information on metadata` provides transparency and clarity on the origin of the metadata.
+
 ![image](img/ME_UG_v1-0-0_documenting_script_metadata_information.png)
 
 
