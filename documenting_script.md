@@ -262,7 +262,7 @@ An alternative to this field is the `acknowledgment_statement` field (see below)
   - **`Type`** (*type*) Repository type e.g.GitHub, Bitbucket, etc.
   - **`URL`** (*uri*) URI of the project source code/script repository 
 
-- **`Reproducibility'**  
+- **`Reproducibility`**  
    - **`Technology environment`** (*technology_environment*) This field is used to provide a description (as detailed as possible) of the computational environment under which the scripts were implemented and are expected to be reproducible. A substantial challenge in reproducing analyses is installing and configuring the web of dependencies of specific versions of various analytical tools. Virtual machines (a computer inside a computer) enable you to efficiently share your entire computational environment with all the dependencies intact. (https://ropensci.github.io/reproducibility-guide/sections/introduction/) 
    - **`Technology requirements`** (*technology_requirements*) Software/hardware or other technology requirements needed to run the scripts and replicate the outputs
    - **`Reproduction instructions`** (*reproduction_instructions*) Instructions to secondary analysts who may want to reproduce the scripts.
