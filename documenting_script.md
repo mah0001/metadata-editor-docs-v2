@@ -64,7 +64,7 @@ We provide below a description of the metadata elements contained in the `Projec
 
 - **`Translated title`** (*translated_title*) A translated version of the title (this will be used for example when a catalog documents all entries in English, but wants to preserve the title of a project in its original language when the original language is not English).
 
-- **Project website`** (*project_website*) URL of the project website.
+- **`Project website`** (*project_website*) URL of the project website.
 
 
 **AUTHORS AND CONTRIBUTORS**
