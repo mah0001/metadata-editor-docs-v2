@@ -284,6 +284,7 @@ You may take advantage of generative AI tools like ChatGPT or equivalent to sugg
 - Propose a description of the indicator's **relevance** (ask ChatGPT to either *Please describe the relevance of a statistical indicator titled (...) and defined as (definition). In the description, indicate to whom and for what purposes the indicator is relevant.* 
 Do not blindly accept suggestions formulated by AI models. Carefully review and improve (or reject) the proposed content.
 
+
 ### Data structure (structural metadata)
 
 The data structure definition (DSD) allows you to describe how the data are organized in the data file. This is the structural metadata for the indicator. The DSD in the Metadata Editor follows the SDMX standard.
@@ -316,7 +317,7 @@ A data structure definition consists of providing the following information abou
   - ***Time period:*** The column indicates the time period to which the observation value applies. In our Option 2 example, "year" is a time period.
   - ***Attribute:*** 
   - ***Indicator ID:*** The column is the indicator unique identifier. Only one column can be an Indicator ID. In our Option 2 example, "IndicatorID" is the Indicator ID.
-  - ***Indicator name:*** The column is the name (or title) of the indicator. In our Option 2 example, "Name" is the Indicator ID.
+  - ***Indicator name:*** The column is the name (or title) of the indicator. In our Option 2 example, "Name" is the indicator name.
   - ***Annotation:*** 
   - ***Geography:*** The geographic area to which the value corresponds. In our example, column "country" is the geography.
   - ***Observation value:*** The observation value (the "data" itself). In our example, column "value" is the observation value.
@@ -324,6 +325,10 @@ A data structure definition consists of providing the following information abou
 - ***Time period format:*** Time period format is used to indicate the format of the date in the column identified as Time period. In our Option 2 example, Time period format is "YYYY" as we have data by year.
 - ***Codelist:***
 - ***Codelist reference:***
+
+All columns in the data file will be documented.
+
+![image](img/ME_UG_v1-0-0_documenting_indicator_data_structure_definition_list_columns.png)
 
 ### Data notes
 
