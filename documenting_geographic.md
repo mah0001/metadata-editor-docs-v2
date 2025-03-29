@@ -137,148 +137,173 @@ To document a geographic raster dataset in the Metadata Editor, it is recommende
 ### Import data
 ### Add metadata
 
+**INTRODUCTION**
+
 - **`Primary ID`** (*description/idno*) The "Primary ID" (also referred to as IDNO) is a unique identification number used to identify the study (geographic dataset or service). A unique identifier is required for cataloguing purpose, so this element is declared as "Required". The identifier will allow users to cite the study properly. The identifier must be unique within the catalog. Ideally, it should also be globally unique; the recommended option is to obtain a Digital Object Identifier (DOI) for the study. Alternatively, the "Primary ID" can be constructed by an organization using a consistent scheme. The identifier should not contain blank spaces.
 
 - **`Language`** (*description/language*) Main language used in the metadata description.
 
 - **`Character set`** (*characterSet*) The character set encoding used in the dataset.
-
-- **`Characterset code`** (*characterSet/codeListValue*) 
-
-- **`Codelist used`** (*characterSet/codeList*) 
+  - **`Characterset code`** (*characterSet/codeListValue*) 
+  - **`Codelist used`** (*characterSet/codeList*) 
 
 - **`Parent identifier`** (*description/parentIdentifier*) A geographic data resource can be a subset of a larger dataset. For example, an aquatic species distribution map can be part of a data collection covering all species, or the 2010 population census dataset of a country can be part of a dataset that includes all population censuses for that country since 1900. In such case, the parent identifier metadata element can be used to identify this higher-level resource. As for the fileIdentifier, the parentIdentifier must be a unique identifier persistent in time. In a data catalog, a parentIdentifier will allow the user to move from one dataset to another. The parentIdentifier is generally applied to datasets, although it may in some cases be used in data services descriptions.
 
 - **`Hierarchy level`** (*description/hierarchyLevel*) This is the type of resource being described by the metadata and it is filled in with a value from a classification of the resource based on its scope. The choice of Resource Type will be probably the first decision made by the user and it will define the metadata elements that should be filled.
 
-**``** (**) The hierarchy level defines the scope of the resource. It indicates whether the resource is a collection, a dataset, a series, a service, or another type of resource. The ISO 19139 provides a controlled vocabulary for this element. It is recommended but not mandatory to make use of it. The most relevant levels for the purpose of cataloguing geographic data and services are dataset (for both raster and vector data), service (a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behavior), and series. Series will be used when the data represent an ordered succession, in time or in space; this will typically apply to time series, but it can also be used to describe other types of series (e.g., a series of ocean water temperatures collected at a succession of depths).
+  The hierarchy level defines the scope of the resource. It indicates whether the resource is a collection, a dataset, a series, a service, or another type of resource. The ISO 19139 provides a controlled vocabulary for this element. It is recommended but not mandatory to make use of it. The most relevant levels for the purpose of cataloguing geographic data and services are dataset (for both raster and vector data), service (a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behavior), and series. Series will be used when the data represent an ordered succession, in time or in space; this will typically apply to time series, but it can also be used to describe other types of series (e.g., a series of ocean water temperatures collected at a succession of depths).
 
-**``** (**) NOTES
-**``** (**) - dataset: is an identifiable data that can be accessed separately. A dataset can be a part of a whole (series) or a segregate resource.
-**``** (**) - series: is a collection of resources or related datasets that share the same product specification.
-**``** (**) - service: technologies providing availability and access to spatial information, for example, web map services, web feature services, web coverage services, web processing services, catalogue web services, etc.
+  NOTES:
+  - dataset: is an identifiable data that can be accessed separately. A dataset can be a part of a whole (series) or a segregate resource.
+  - series: is a collection of resources or related datasets that share the same product specification.
+  - service: technologies providing availability and access to spatial information, for example, web map services, web feature services, web coverage services, web processing services, catalogue web services, etc.
 
 - **`Hierarchy level name`** (*description/hierarchyLevelName*) The "hierarchy level name" provides an alternative to describe hierarchy levels, using free text instead of a controlled vocabulary. The use of "hierarchy level" is preferred to the use of "hierarchy level name".
 
-- **`description/contact`** (*description/contact*) NOT-AVAILABLE
+- **`contact`** (*description/contact*) NOT-AVAILABLE
+  - **`Individual name`** (*description/contact/individualName*) The responsible party (person) in charge of the feature catalogue production.
+  - **`Organisation name`** (*description/contact/organisationName*) The responsible party (organization) in charge of the feature catalogue production.
+  - **`Position`** (*description/contact/positionName*) 
+  - **`Role`** (*description/contact/role*) Role of the person/organization. A recommended controlled vocabulary is provided by ISO 19139
+  - **`description/contact/contactInfo/address`** (*description/contact/contactInfo/address*) NOT-AVAILABLE
+  - **`Email`** (*description/contact/contactInfo/address/electronicMailAddress*) 
+  - **`description/contact/contactInfo/phone`** (*description/contact/contactInfo/phone*) NOT-AVAILABLE
+  - **`Voice`** (*description/contact/contactInfo/phone/voice*) 
+  - **`Facsimile`** (*description/contact/contactInfo/phone/facsimile*) 
+  - **`address`** (*description/contact/section-1676477188264/contactInfo/address*) NOT-AVAILABLE
+    - **`Delivery point`** (*description/contact/section-1676477188264/contactInfo/address/deliveryPoint*) Physical address - Street, building number, etc.
+    - **`City`** (*description/contact/section-1676477188264/contactInfo/address/city*) Physical address - City name
+    - **`Postal code`** (*description/contact/section-1676477188264/contactInfo/address/postalCode*) Physical address - Postal code
+    - **`Country`** (*description/contact/section-1676477188264/contactInfo/address/country*) Physical address - Country name
+  - **`onlineResource`** (*description/contact/section-1676477380255/contactInfo/onlineResource*) NOT-AVAILABLE
+    - **`Name`** (*description/contact/section-1676477380255/contactInfo/onlineResource/name*) Name of the online resource. In case of a geographic standard data services, this should be filled with the identifier of the resource as published in the service. Example, for an OGC Web Map Service (WMS), we will use the layer name.
+    - **`Description`** (*description/contact/section-1676477380255/contactInfo/onlineResource/description*) Description of the online resource
+    - **`URL`** (*description/contact/section-1676477380255/contactInfo/onlineResource/linkage*) URL of the online resource. In case of a geographic standard data services, only the base URL should be provided, without any service parameter.
+    - **`Protocol`** (*description/contact/section-1676477380255/contactInfo/onlineResource/protocol*) Web protocol used to get the resource, e.g., FTP, HTTP. In case of a basic HTTP, the ISO 19139 suggests the value "WWW:LINK-1.0-http–link". For geographic standard data services, it is recommended to fill this element with the appropriate protocol identifier. For an OGC Web Map Service (WMS) link for example, use "OGC:WMS-1.1.0-http-get-map"
+    - **`Function`** (*description/contact/section-1676477380255/contactInfo/onlineResource/function*) Function (purpose) of the online resource.
 
-- **`Individual name`** (*description/contact/individualName*) The responsible party (person) in charge of the feature catalogue production.
+- **`Date stamp`** (*description/dateStamp*) Date and time when the metadata record was created or updated. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00).
 
-- **`Organisation name`** (*description/contact/organisationName*) The responsible party (organization) in charge of the feature catalogue production.
-**`Position`** (*description/contact/positionName*) 
-**`Role`** (*description/contact/role*) Role of the person/organization. A recommended controlled vocabulary is provided by ISO 19139
-**`description/contact/contactInfo/address`** (*description/contact/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/contact/contactInfo/address/electronicMailAddress*) 
-**`description/contact/contactInfo/phone`** (*description/contact/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/contact/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/contact/contactInfo/phone/facsimile*) 
-**`description/contact/section-1676477188264/contactInfo/address`** (*description/contact/section-1676477188264/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/contact/section-1676477188264/contactInfo/address/deliveryPoint*) Physical address - Street, building number, etc.
-**`City`** (*description/contact/section-1676477188264/contactInfo/address/city*) Physical address - City name
-**`Postal code`** (*description/contact/section-1676477188264/contactInfo/address/postalCode*) Physical address - Postal code
-**`Country`** (*description/contact/section-1676477188264/contactInfo/address/country*) Physical address - Country name
-**`description/contact/section-1676477380255/contactInfo/onlineResource`** (*description/contact/section-1676477380255/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/contact/section-1676477380255/contactInfo/onlineResource/name*) Name of the online resource. In case of a geographic standard data services, this should be filled with the identifier of the resource as published in the service. Example, for an OGC Web Map Service (WMS), we will use the layer name.
-**`Description`** (*description/contact/section-1676477380255/contactInfo/onlineResource/description*) Description of the online resource
-**`URL`** (*description/contact/section-1676477380255/contactInfo/onlineResource/linkage*) URL of the online resource. In case of a geographic standard data services, only the base URL should be provided, without any service parameter.
-**`Protocol`** (*description/contact/section-1676477380255/contactInfo/onlineResource/protocol*) Web protocol used to get the resource, e.g., FTP, HTTP. In case of a basic HTTP, the ISO 19139 suggests the value "WWW:LINK-1.0-http–link". For geographic standard data services, it is recommended to fill this element with the appropriate protocol identifier. For an OGC Web Map Service (WMS) link for example, use "OGC:WMS-1.1.0-http-get-map"
-**`Function`** (*description/contact/section-1676477380255/contactInfo/onlineResource/function*) Function (purpose) of the online resource.
-**`Date stamp`** (*description/dateStamp*) Date and time when the metadata record was created or updated. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00).
-**``** (**) 
-**`Metadata standard version`** (*description/metadataStandardVersion*) The version of the metadata standard being used. It is good practice to enter the standard’s inception/revision year. ISO standards are revised with an average periodicity of 10-year. Although the ISO TC211 geographic information metadata standards have been reviewed, it is still accepted to refer to the original version of the standard as many information systems/catalogs still make use of that version. The recommended values are:
-**``** (**) - in the case of vector dataset metadata: ISO 19115:2003
-**``** (**) - in the case of grid/imagery dataset metadata: ISO 19115-2:2009
-**``** (**) - in the case of service metadata: ISO 19119:2005
-**`Metadata standard name`** (*description/metadataStandardName*) The name of the geographic metadata standard used to describe the resource. The recommended values are:
-**``** (**) - in the case of vector dataset metadata: ISO 19115 Geographic information - Metadata
-**``** (**) - in the case of grid/imagery dataset metadata: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data
-**``** (**) - in the case of service metadata: ISO 19119 Geographic information - Services
-**`Dataset URI`** (*description/dataSetURI*) A unique resource identifier for the dataset, such as a web link that uniquely identifies the dataset. The use of a Digital Object Identifier (DOI) is recommended.
-**`description/identificationInfo/citation`** (*description/identificationInfo/citation*) NOT-AVAILABLE
-**`Title`** (*description/identificationInfo/citation/title*) Title of the resource.
-**`Alternate title`** (*description/identificationInfo/citation/alternateTitle*) An alternate title (if applicable)
-**`Date`** (*description/identificationInfo/citation/date*) Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
-**``** (**) 
-**``** (**) The following types will often be used:
-**``** (**) - Date of publication: This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication. Date of publication differs from the temporal extent. For example, a dataset might have been published in March 2009 (2009-03-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
-**``** (**) - Date of last revision: This date describes when the resource was last revised, if the resource has been revised. Date of revision differs from the temporal extent. For example, a dataset might have been revised in April 2009 (2009-04-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
-**``** (**) - Date of creation: This date describes when the resource was created. Date of creation differs from the temporal extent. For example, a dataset might have been created in February 2009 (2009-02-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
-**`Date`** (*description/identificationInfo/citation/date/date*) The date, in ISO format.
-**`Type`** (*description/identificationInfo/citation/date/type*) The type of date should be provided, and selected from the controlled vocabulary proposed by the ISO 19139.
-**`Edition`** (*description/identificationInfo/citation/edition*) Edition of the resource.
-**`Edition date`** (*description/identificationInfo/citation/editionDate*) Edition date, in ISO format.
-**`Identifier`** (*description/identificationInfo/citation/identifier*) 
-**`Identifier`** (*description/identificationInfo/citation/identifier/code*) A value uniquely identifying an object within a namespace.
-**`Authority`** (*description/identificationInfo/citation/identifier/authority*) A unique persistent identifier for the metadata. If a DOI is available for the resource, the DOI should be entered here. The same file identifier should be used if no other persistent identifier is available.
-**`description/identificationInfo/citation/citedResponsibleParty`** (*description/identificationInfo/citation/citedResponsibleParty*) NOT-AVAILABLE
-**`Organisation name`** (*description/identificationInfo/citation/citedResponsibleParty/organisationName*) 
-**`Individual name`** (*description/identificationInfo/citation/citedResponsibleParty/individualName*) 
-**`Position`** (*description/identificationInfo/citation/citedResponsibleParty/positionName*) 
-**`Role`** (*description/identificationInfo/citation/citedResponsibleParty/role*) 
-**`description/identificationInfo/citation/citedResponsibleParty/contactInfo/address`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/city*) 
-**`Postal code`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/postalCode*) 
-**`Country`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/country*) 
-**`description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/name*) 
-**`Description`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/description*) 
-**`URL`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/linkage*) 
-**`Protocol`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/function*) 
-**`Presentation form`** (*description/identificationInfo/citation/presentationForm*) Form in which the resource is made available. The ISO 19139 recommends a controlled vocabulary. For a geospatial dataset or web-layer, the value "Map digital" will be preferred.
-**`description/identificationInfo/citation/series`** (*description/identificationInfo/citation/series*) NOT-AVAILABLE
-**`Series name`** (*description/identificationInfo/citation/series/name*) A description of the series, in case the resource is part of a series.
-**`Series issue`** (*description/identificationInfo/citation/series/issueIdentification*) A description of the series, in case the resource is part of a series.
-**`Series page`** (*description/identificationInfo/citation/series/page*) A description of the series, in case the resource is part of a series.
-**`Other citation details`** (*description/identificationInfo/citation/otherCitationDetails*) Any other citation details to specify.
-**`Collective title`** (*description/identificationInfo/citation/collectiveTitle*) A title in case the resource is part of a broader resource (e.g., data collection).
-**`ISBN`** (*description/identificationInfo/citation/ISBN*) International Standard Book Number (ISBN); an international standard identification number for uniquely identifying publications that are not intended to continue indefinitely.
-**`ISSN`** (*description/identificationInfo/citation/ISSN*) International Standard Serial Number (ISSN); an international standard for serial publications.
-**`description/identificationInfo`** (*description/identificationInfo*) NOT-AVAILABLE
-**`Abstract`** (*description/identificationInfo/abstract*) This is a brief narrative summary of the content of the resource. The abstract provides a clear and concise statement that enables the reader to understand the content of the data or service.
-**``** (**) 
-**``** (**) RECOMMENDATIONS
-**``** (**) 
-**``** (**) 1. The resource abstract is a succinct description that can include:
-**``** (**) - A brief summary with the most important details that summarize the data or service
-**``** (**) - Coverage: linguistic transcriptions of the extent or location in addition to the bounding box
-**``** (**) - Main attributes
-**``** (**) - Data sources
-**``** (**) - Legal references
-**``** (**) - Importance of the work
-**``** (**) 2. Do not use unexplained acronyms.
-**``** (**) 3. Summarize the most important details in the first sentence or first 100 characters.
-**``** (**) 
-**`Purpose`** (*description/identificationInfo/purpose*) 
-**`Credit`** (*description/identificationInfo/credit*) 
-**`Status`** (*description/identificationInfo/status*) 
-**`description/identificationInfo/pointOfContact`** (*description/identificationInfo/pointOfContact*) NOT-AVAILABLE
-**`Individual name`** (*description/identificationInfo/pointOfContact/individualName*) 
-**`Organisation name`** (*description/identificationInfo/pointOfContact/organisationName*) 
-**`Position`** (*description/identificationInfo/pointOfContact/positionName*) 
-**`Role`** (*description/identificationInfo/pointOfContact/role*) Function performed by the responsible party. Select all roles that best represent the function performed by the responsible party.
-**`description/identificationInfo/pointOfContact/contactInfo/phone`** (*description/identificationInfo/pointOfContact/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/identificationInfo/pointOfContact/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/identificationInfo/pointOfContact/contactInfo/phone/facsimile*) 
-**`description/identificationInfo/pointOfContact/contactInfo/address`** (*description/identificationInfo/pointOfContact/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/identificationInfo/pointOfContact/contactInfo/address/electronicMailAddress*) 
-**`description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/city*) 
-**`Postal code`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/postalCode*) 
-**`Country`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/country*) 
-**`description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/name*) 
-**`URL`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/function*) 
+- **`Metadata standard version`** (*description/metadataStandardVersion*) The version of the metadata standard being used. It is good practice to enter the standard’s inception/revision year. ISO standards are revised with an average periodicity of 10-year. Although the ISO TC211 geographic information metadata standards have been reviewed, it is still accepted to refer to the original version of the standard as many information systems/catalogs still make use of that version. The recommended values are:
+  - in the case of vector dataset metadata: ISO 19115:2003
+  - in the case of grid/imagery dataset metadata: ISO 19115-2:2009
+  - in the case of service metadata: ISO 19119:2005
+
+- **`Metadata standard name`** (*description/metadataStandardName*) The name of the geographic metadata standard used to describe the resource. The recommended values are:
+  - in the case of vector dataset metadata: ISO 19115 Geographic information - Metadata
+  - in the case of grid/imagery dataset metadata: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data
+  - in the case of service metadata: ISO 19119 Geographic information - Services
+
+- **`Dataset URI`** (*description/dataSetURI*) A unique resource identifier for the dataset, such as a web link that uniquely identifies the dataset. The use of a Digital Object Identifier (DOI) is recommended.
+
+
+**IDENTIFICATION** 
+
+***CITATION*** 
+
+- **`Title`** (*description/identificationInfo/citation/title*) Title of the resource.
+
+- **`Alternate title`** (*description/identificationInfo/citation/alternateTitle*) An alternate title (if applicable)
+
+- **`Date`** (*description/identificationInfo/citation/date*) Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
+  The following types will often be used:
+  - Date of publication: This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication. Date of publication differs from the temporal extent. For example, a dataset might have been published in March 2009 (2009-03-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+  - Date of last revision: This date describes when the resource was last revised, if the resource has been revised. Date of revision differs from the temporal extent. For example, a dataset might have been revised in April 2009 (2009-04-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+  - Date of creation: This date describes when the resource was created. Date of creation differs from the temporal extent. For example, a dataset might have been created in February 2009 (2009-02-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+  - **`Date`** (*description/identificationInfo/citation/date/date*) The date, in ISO format.
+  - **`Type`** (*description/identificationInfo/citation/date/type*) The type of date should be provided, and selected from the controlled vocabulary proposed by the ISO 19139.
+
+- **`Edition`** (*description/identificationInfo/citation/edition*) Edition of the resource.
+
+- **`Edition date`** (*description/identificationInfo/citation/editionDate*) Edition date, in ISO format.
+
+- **`Identifier`** (*description/identificationInfo/citation/identifier*) 
+  - **`Identifier`** (*description/identificationInfo/citation/identifier/code*) A value uniquely identifying an object within a namespace.
+  - **`Authority`** (*description/identificationInfo/citation/identifier/authority*) A unique persistent identifier for the metadata. If a DOI is available for the resource, the DOI should be entered here. The same file identifier should be used if no other persistent identifier is available.
+
+- **`ResponsibleParty`** (*description/identificationInfo/citation/citedResponsibleParty*) 
+  - **`Organisation name`** (*description/identificationInfo/citation/citedResponsibleParty/organisationName*) 
+  - **`Individual name`** (*description/identificationInfo/citation/citedResponsibleParty/individualName*) 
+  - **`Position`** (*description/identificationInfo/citation/citedResponsibleParty/positionName*) 
+  - **`Role`** (*description/identificationInfo/citation/citedResponsibleParty/role*) 
+  - **`Email`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
+  - **`Voice`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/voice*) 
+  - **`Facsimile`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/facsimile*) 
+  - **`address`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address*) NOT-AVAILABLE
+    - **`Delivery point`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/city*) 
+    - **`Postal code`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/country*) 
+  - **`onlineResource`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource*) NOT-AVAILABLE
+    - **`Name`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/name*) 
+    - **`Description`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/description*) 
+    - **`URL`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/linkage*) 
+    - **`Protocol`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478338407/contactInfo/onlineResource/function*) 
+
+- **`Presentation form`** (*description/identificationInfo/citation/presentationForm*) Form in which the resource is made available. The ISO 19139 recommends a controlled vocabulary. For a geospatial dataset or web-layer, the value "Map digital" will be preferred.
+
+- **`Series name`** (*description/identificationInfo/citation/series/name*) A description of the series, in case the resource is part of a series.
+
+- **`Series issue`** (*description/identificationInfo/citation/series/issueIdentification*) A description of the series, in case the resource is part of a series.
+
+- **`Series page`** (*description/identificationInfo/citation/series/page*) A description of the series, in case the resource is part of a series.
+
+- **`Other citation details`** (*description/identificationInfo/citation/otherCitationDetails*) Any other citation details to specify.
+
+- **`Collective title`** (*description/identificationInfo/citation/collectiveTitle*) A title in case the resource is part of a broader resource (e.g., data collection).
+
+- **`ISBN`** (*description/identificationInfo/citation/ISBN*) International Standard Book Number (ISBN); an international standard identification number for uniquely identifying publications that are not intended to continue indefinitely.
+
+- **`ISSN`** (*description/identificationInfo/citation/ISSN*) International Standard Serial Number (ISSN); an international standard for serial publications.
+
+
+**ABSTRACT, PURPOSE, CREDIT, STATUS**
+
+- **`Abstract`** (*description/identificationInfo/abstract*) This is a brief narrative summary of the content of the resource. The abstract provides a clear and concise statement that enables the reader to understand the content of the data or service.
+  RECOMMENDATIONS
+  1. The resource abstract is a succinct description that can include:
+    - A brief summary with the most important details that summarize the data or service
+    - Coverage: linguistic transcriptions of the extent or location in addition to the bounding box
+    - Main attributes
+    - Data sources
+    - Legal references
+    - Importance of the work
+  2. Do not use unexplained acronyms.
+  3. Summarize the most important details in the first sentence or first 100 characters.
+
+- **`Purpose`** (*description/identificationInfo/purpose*) 
+
+- **`Credit`** (*description/identificationInfo/credit*) 
+
+- **`Status`** (*description/identificationInfo/status*) 
+
+
+**POINT OF CONTACT**
+
+- **`Contact`**
+  - **`Individual name`** (*description/identificationInfo/pointOfContact/individualName*) 
+  - **`Organisation name`** (*description/identificationInfo/pointOfContact/organisationName*) 
+  - **`Position`** (*description/identificationInfo/pointOfContact/positionName*) 
+  - **`Role`** (*description/identificationInfo/pointOfContact/role*) Function performed by the responsible party. Select all roles that best represent the function performed by the responsible party.
+  - **`Voice`** (*description/identificationInfo/pointOfContact/contactInfo/phone/voice*) 
+  - **`Facsimile`** (*description/identificationInfo/pointOfContact/contactInfo/phone/facsimile*) 
+  - **`description/identificationInfo/pointOfContact/contactInfo/address`** (*description/identificationInfo/pointOfContact/contactInfo/address*) NOT-AVAILABLE
+  - **`Email`** (*description/identificationInfo/pointOfContact/contactInfo/address/electronicMailAddress*) 
+  - **`address`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address*) NOT-AVAILABLE
+    - **`Delivery point`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/city*) 
+    - **`Postal code`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/country*) 
+  - **`onlineResource`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource*) NOT-AVAILABLE
+    - **`Name`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/identificationInfo/pointOfContact/section-1676479717564/contactInfo/onlineResource/function*) 
+
+**RESOURCE MAINTENANCE**
+
 **`description/identificationInfo/resourceMaintenance`** (*description/identificationInfo/resourceMaintenance*) NOT-AVAILABLE
 **`Frequency`** (*description/identificationInfo/resourceMaintenance/maintenanceAndUpdateFrequency*) Maintenance and update frequency
 **`Date of next update`** (*description/identificationInfo/resourceMaintenance/dateOfNextUpdate*) Date of the next update of the resource in ISO format.
@@ -308,6 +333,10 @@ To document a geographic raster dataset in the Metadata Editor, it is recommende
 **`URL`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/linkage*) 
 **`Protocol`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/protocol*) 
 **`Function`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/function*) 
+
+
+**GRAPHIC OVERVIEW**
+
 **`Graphic overview`** (*description/identificationInfo/graphicOverview*) 
 **`File name`** (*description/identificationInfo/graphicOverview/fileName*) 
 **`File description`** (*description/identificationInfo/graphicOverview/fileDescription*) 
