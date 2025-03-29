@@ -135,6 +135,7 @@ To document a geographic raster dataset in the Metadata Editor, it is recommende
 ### Prepare/extract information
 ### Create a project
 ### Import data
+
 ### Add metadata
 
 **INTRODUCTION**
@@ -304,47 +305,43 @@ To document a geographic raster dataset in the Metadata Editor, it is recommende
 
 **RESOURCE MAINTENANCE**
 
-**`description/identificationInfo/resourceMaintenance`** (*description/identificationInfo/resourceMaintenance*) NOT-AVAILABLE
-**`Frequency`** (*description/identificationInfo/resourceMaintenance/maintenanceAndUpdateFrequency*) Maintenance and update frequency
-**`Date of next update`** (*description/identificationInfo/resourceMaintenance/dateOfNextUpdate*) Date of the next update of the resource in ISO format.
-**`User defined maintenance frequency`** (*description/identificationInfo/resourceMaintenance/userDefinedMaintenanceFrequency*) User defined maintenance frequency.
-**`Update scope`** (*updateScope*) 
-**`description/identificationInfo/resourceMaintenance/updateScope`** (*description/identificationInfo/resourceMaintenance/updateScope*) NOT-AVAILABLE
-**`Update scope`** (*description/identificationInfo/resourceMaintenance/updateScope/scope*) Update scope.
-**`Description`** (*description/identificationInfo/resourceMaintenance/updateScope/description*) Description of the update scope.
-**`Maintenance note`** (*description/identificationInfo/resourceMaintenance/maintenanceNote*) Maintenance note.
-**`description/identificationInfo/resourceMaintenance/contact`** (*description/identificationInfo/resourceMaintenance/contact*) NOT-AVAILABLE
-**`Individual name`** (*description/identificationInfo/resourceMaintenance/contact/individualName*) 
-**`Organisation name`** (*description/identificationInfo/resourceMaintenance/contact/organisationName*) 
-**`Position`** (*description/identificationInfo/resourceMaintenance/contact/positionName*) 
-**`Role`** (*description/identificationInfo/resourceMaintenance/contact/role*) 
-**`description/identificationInfo/resourceMaintenance/contact/contactInfo/address`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address/electronicMailAddress*) 
-**`description/identificationInfo/resourceMaintenance/contact/contactInfo/phone`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/phone/facsimile*) 
-**`Delivery point`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address/city*) 
-**`Country`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address/country*) 
-**`Postal code`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/address/postalCode*) 
-**`description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/name*) 
-**`Description`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/description*) 
-**`URL`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/linkage*) 
-**`Protocol`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/identificationInfo/resourceMaintenance/contact/contactInfo/onlineResource/function*) 
+- **`Frequency`** (*description/identificationInfo/resourceMaintenance/maintenanceAndUpdateFrequency*) Maintenance and update frequency
+
+- **`Date of next update`** (*description/identificationInfo/resourceMaintenance/dateOfNextUpdate*) Date of the next update of the resource in ISO format.
+
+- **`User defined maintenance frequency`** (*description/identificationInfo/resourceMaintenance/userDefinedMaintenanceFrequency*) User defined maintenance frequency.
+
+- **`Update scope`** (*updateScope*) 
+  - **`updateScope`** (*description/identificationInfo/resourceMaintenance/updateScope*) NOT-AVAILABLE
+    - **`Update scope`** (*description/identificationInfo/resourceMaintenance/updateScope/scope*) Update scope.
+    - **`Description`** (*description/identificationInfo/resourceMaintenance/updateScope/description*) Description of the update scope.
+
+- **`Maintenance note`** (*description/identificationInfo/resourceMaintenance/maintenanceNote*) Maintenance note.
+
+- **`contact`** (*description/identificationInfo/resourceMaintenance/contact*) NOT-AVAILABLE
 
 
 **GRAPHIC OVERVIEW**
 
-**`Graphic overview`** (*description/identificationInfo/graphicOverview*) 
-**`File name`** (*description/identificationInfo/graphicOverview/fileName*) 
-**`File description`** (*description/identificationInfo/graphicOverview/fileDescription*) 
-**`File type`** (*description/identificationInfo/graphicOverview/fileType*) 
-**`Keywords`** (*description/identificationInfo/descriptiveKeywords*) 
-**`Type`** (*description/identificationInfo/descriptiveKeywords/type*) Keywords type. The ISO 19139 provides a recommended controlled vocabulary.
-**`Keyword`** (*description/identificationInfo/descriptiveKeywords/keyword*) The keyword itself. When possible, existing vocabularies should be preferred to writing free-text keywords. An example of global vocabulary is the Global Change Master Directory that could be a valuable source to reference data domains / disciplines, or the UNESCO Thesaurus.
-**`Thesaurus name`** (*description/identificationInfo/descriptiveKeywords/thesaurusName*) A reference to a thesaurus (if applicable) from which the keywords are extracted. The thesaurus itself should then be documented as a citation.
+- **`Graphic overview`** (*description/identificationInfo/graphicOverview*) 
+  - **`File name`** (*description/identificationInfo/graphicOverview/fileName*) 
+  - **`File description`** (*description/identificationInfo/graphicOverview/fileDescription*) 
+  - **`File type`** (*description/identificationInfo/graphicOverview/fileType*) 
+
+
+**RESOURCE FORMAT**
+
+
+**DESCRIPTIVE KEYWORDS**
+
+- **`Keywords`** (*description/identificationInfo/descriptiveKeywords*) 
+  - **`Type`** (*description/identificationInfo/descriptiveKeywords/type*) Keywords type. The ISO 19139 provides a recommended controlled vocabulary.
+  - **`Keyword`** (*description/identificationInfo/descriptiveKeywords/keyword*) The keyword itself. When possible, existing vocabularies should be preferred to writing free-text keywords. An example of global vocabulary is the Global Change Master Directory that could be a valuable source to reference data domains / disciplines, or the UNESCO Thesaurus.
+  - **`Thesaurus name`** (*description/identificationInfo/descriptiveKeywords/thesaurusName*) A reference to a thesaurus (if applicable) from which the keywords are extracted. The thesaurus itself should then be documented as a citation.
+
+
+**
+
 **`description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints*) NOT-AVAILABLE
 **`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useLimitation*) 
 **`Access constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/accessConstraints*) Legal access constraints. The ISO 19139 provides a controlled vocabulary. These are the access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.
