@@ -1,4 +1,4 @@
-# Designing templates
+# Creating and editing templates
 
 *This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section.*
 
@@ -8,15 +8,19 @@ Templates can be designed and edited using the Template Manager tool in Metadata
 
 More than one template can be developed for a given metadata standard, although it is recommended to keep their number small to maximize consistency and to minimize the burden of maintaining a collection of templates.
 
-## Template list, and actions on templates
 
-You access the Template Manager by clicking on TEMPLATES in the top menu of the Metadata editor. This will open a page showing all available templates by type of data. The list can be filtered by selecting a data **Type** in the left frame.
+## Pre-designed templates and template list
+
+You access the Template Manager by clicking on `TEMPLATES` in the top menu of the Metadata editor. This will open a page showing all available templates by type of data. The list can be filtered by selecting a data **Type** in the left frame.
 
 ![image](img/ME_UG_v1-0-0_template_home_page.png)
 
-For each data type (for each metadata standard), the Template Manager provides one or multiple **core** templates which are non-editable. the core templates contain all elements of the corresponding metadata standard, with their default parameters. Typically, custom templates will be created by duplicating then editing the copy of a core template. 
+For each data type (for each metadata standard), the Template Manager provides one or multiple **core** templates which are non-editable. One of the core templates contains all elements of the corresponding metadata standard, with their default parameters. Other core templates are recommended subsets, provided with the Metadata Editor. Typically, custom templates will be created by duplicating then editing the copy of a core template. 
 
 The Template Manager allows the administrator of the system to select, for each data type, the template to be used by default (one default template per type, indicated by the radio button).
+
+
+## Actions on templates
 
 A set of options is available for any given template:
 
@@ -77,7 +81,8 @@ This option allows template administrators to edit the unique identifier of the 
 
 ## Editing a template
 
-### escription page ###
+
+### Description page 
 
 The **Description** page of the template is where you provide the main identification information of the template. It includes the following elements: 
 - **Type**: The type of data to which the template applies (microdata, indicator, database, geographic dataset, document, etc.) 
@@ -91,7 +96,8 @@ The **Description** page of the template is where you provide the main identific
 
 ![image](img/ME_UG_v1-0-0_template_description_page.png)
 
-### Navigation tree ###
+
+### Navigation tree 
 
 The Template Manager navigation frame shows the structure and content of the template. This structure and content will define the metadata entry pages that data curators who enter metadata will see. There is a perfect match between the navigation tree in the Template Manager and the navigation tree in the user's page of the Metadata editor.
 
@@ -106,7 +112,7 @@ The navigation frame contains a toolbar used to edit the structure and content o
 ![image](img/ME_UG_v1-0-0_template_navigation_toolbar.png)
 
 
-### Customizing the template ###
+### Customizing the template 
 
 **Groupings** 
 
@@ -169,7 +175,11 @@ When you select a metadata element in the navigation tree, all information about
   ![image](img/ME_UG_v1-0-0_template_customizing_element_json.png)
 
 
-### Creating additional fields ###
+### Creating additional fields 
 
 Metadata elements that are not provided by a metadata standard can be added as "additional fields". Such metadata elements are created and managed the same way as other metadata elements, except that a unique *Key* has to be provided, which will be the identifier of the newly created element.
+
+
+### Setting a template as default
+
 
