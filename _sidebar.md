@@ -37,7 +37,7 @@
   
    * [Managing projects](managing_projects.md)
    * [Managing collections](managing_collections.md)
-   * [Managing users: setting roles and permissions](tech_roles_permissions.md)
+   * [Managing users: roles and permissions](tech_roles_permissions.md)
 
 * Documenting data
 
