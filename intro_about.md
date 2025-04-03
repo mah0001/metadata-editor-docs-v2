@@ -30,18 +30,28 @@ In addition to these metadata standards and schemas, the Metadata Editor allows 
 The technical documentation of the metadata standards supported by the Metadata Editor is available at https://worldbank.github.io/metadata-schemas/ where structures and information on each metadata element are provided.
 
 
-## Open source license and disclaimer 
+## Licenses and Disclaimer 
 
-**Software license**
+
+### Software License
   
-The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit).
+The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit) with the following additional qualifications related to the World Bank's Privileges and Immunities:
 
-**Disclaimer**
+*provide text of IGO here*
 
-The Metadata Editor is provided "as is", without any warranties or guarantees, express or implied. The World Bank makes no representations regarding the accuracy, reliability, completeness, or suitability of the software for any particular purpose. Users assume full responsibility for the installation, configuration, and use of the application. The World Bank shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use or inability to use the software. By using the Metadata Editor, users acknowledge and accept that they are solely responsible for ensuring that their use of the application complies with applicable laws, policies, and data governance requirements. Nothing herein shall constitute or be considered to be a limitation upon or a waiver of the privileges and immunities of any of the member institutions of The Work Bank Group, which are specifically reserved.
 
-**User Guide** 
+### User Guide License 
 
 This User Guide is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0). See [https://creativecommons.org/licenses/by-nc-nd/4.0/ ](https://creativecommons.org/licenses/by/4.0/)
 
 ![image](img/ME_UG_v1-0-0_introduction_cc_by_logo.png)
+
+
+### Disclaimer
+
+The Metadata Editor is provided "as is", without any warranties or guarantees, express or implied. The World Bank makes no representations regarding the accuracy, reliability, completeness, or suitability of the software for any particular purpose. Users assume full responsibility for the installation, configuration, and use of the application. The World Bank shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use or inability to use the software. By using the Metadata Editor, users acknowledge and accept that they are solely responsible for ensuring that their use of the application complies with applicable laws, policies, and data governance requirements. Nothing herein shall constitute or be considered to be a limitation upon or a waiver of the privileges and immunities of any of the member institutions of The Work Bank Group, which are specifically reserved.
+
+
+## Use of AI
+
+AI was used in the development of this User Guide. Content drafted by the authors was submitted to ChatGPT (with GPT-4o or GPT 3.5) for copy editing, with a prompt to "Please improve the following draft of a section on [...] of the user guide of a specialized metadata editor software application." Additionally, Microsoft Copilot was also used to assiste in refining the text through its *Rewrite* function. No confidential or restricted information was uploaded on ChatGPT. The AI-generated text was reviewed and edited by the author(s) to ensure accuracy.
