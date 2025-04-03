@@ -6,9 +6,6 @@ The application was in part inspired by the Nesstar Publisher software applicati
 
 The application benefited from feedback from many colleagues who reviewed and tested it, including Tefera Bekele and Cathrine Machingauta (World Bank data scientists). 
 
-A team at Outsourcify Ltd (Thailand) supported the development of the user interface. 
 
 
-## Use of AI
 
-ChatGPT 4o and Microsoft Copilot's *Rewrite* tool were used as a copy editor, but not for substantive content suggestion or creation.
