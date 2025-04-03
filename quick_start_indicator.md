@@ -1,4 +1,4 @@
-# Quick start: Indicator
+# Quick Start: Indicator
 
 In this example, we will document an indicator produced by the World Bank, and published in the Bank's Poverty and Inequality Platform (PIP) and World Development Indicators (WDI): the *Poverty headcount ratio at $2.15 a day (2017 PPP) (% of population)*. The objective here is to document the indicator for cataloguing, not to publish the data.
 
@@ -7,7 +7,7 @@ The metadata we will enter in the Metadata Editor is the metadata published by t
 The only files you need to reproduce this Quick-start example are the image file that will be used as thumbnail (*.../quick_start_files/indicator/poverty_thumbnail.jpg*) and the CSV file (*quick_start_files/indicator/SI.POV.DDAY_countries_data*) that contains the list of countries and years for which the data are available in the WDI database (CSV file extracted from an Excel file downloaded on 13 February 2025 from the World Bank website at https://api.worldbank.org/v2/en/indicator/SI.POV.DDAY?downloadformat=excel).
 
 
-## Step 1: Create a new project and add a thumbnail
+## Step 1: Create a new project 
 
 To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The *My projects* page will be displayed, showing all projects you have previously created and those that have been shared with you by other users of the Metadata Editor, if any. If you are using the application for the first time and no project has been shared with you by other users of the Metadata Editor, the project list will be empty. 
 
@@ -17,15 +17,15 @@ Click on `CREATE NEW PROJECT` and select *Indicator* when prompted to indicate t
 
 ![image](img/ME_UG_v1-0-0_quick_start_document_create_project_types.png)
   
-A new project page will open in a new tab.
+A new *Project* page will open in a new tab.
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_new_project_home.png)
 
-We will use the image *poverty_thumbnail.jpg* as a thumbnail (or feel free to select your own JPG or PNG file). The thumbnail will be displayed in the Metadata Editor project list, and in the NADA catalog if the project is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted. 
+You can use the image *poverty_thumbnail.jpg* as a thumbnail, or your own JPG or PNG file. The thumbnail will be displayed in the Metadata Editor *My projects* list, and in the NADA catalog if the project is published in NADA. Click on the `edit` icon in the screenshot image, and select the image file when prompted. 
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_edit_thumbnail.png)
 
-Documenting an indicator consists of entering information about the indicator in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
+Documenting an indicator consists of entering information (metadata) about the indicator in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
 
 
 ## Step 2: Enter metadata
