@@ -51,8 +51,6 @@
     * [Image](documenting_image.md)
     * [Video](documenting_video.md)
     * [Research project and scripts](documenting_script.md)
-    * [External resources](documenting_external_resource.md)
-    * [Administrative metadata](documenting_administrative_metadata.md)
 
 * Publishing data and metadata 
 
