@@ -6,7 +6,7 @@
     * [Introduction to metadata standards](intro_metadata_standards.md)
     * [How to generate structured metadata?](intro_metadata_creation.md)
     
-* Specifications, installation and upgrade
+* Specifications, installation, and upgrade
   
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation](tech_installation.md)
