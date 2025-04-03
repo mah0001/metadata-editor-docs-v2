@@ -18,7 +18,7 @@ The "My projects" page is accessed by clicking on `PROJECTS` in the top menu.
 See the **Managing projects** section for a detailed description of this page.
 
 
-## Creating a project
+## Creating a new project
 
 For all data types, the documentation process for a new project consists of: 
 1. Creating a project (by clicking on `CREATE NEW PROJECT` of `IMPORT` in the *My Projects* page. Refer to the Quick Start examples.
@@ -38,18 +38,24 @@ This work can be made collaborative, by sharing the project with other data cura
 
 ![image](img/ME_UG_v1-0-0_documenting_project_home_page_components.png)
 
+### Home and preview
 
-## Title and menu bar
+**Home** opens the *Project home* page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
+
+**Preview** shows all metadata entered for the project in one single page, in a non-editable page.
+
+
+### Title and menu bar
 
 The title and menu bar will display the project title (*untitled* untill you added a project title and saved the metadata), the `SAVE` button, and a button (triple dots) that opens the project main menu). The icon shown in front of the project title indicates the data type of the project.
 
 
-## Header
+### Header
 
 The header frame in the *Project home page* provides information on the project identifiers (the editable user-defined primary identifier, and the read-only system-generated unique identifier), on the project owner (typically the project creator, or the user to whom the ownership was transferred), and on the dates the project was created and last modified. The Header also provides an option to select an image (JPG or PNG file) to be used as thumbnail. The thumbnail will be used in the Metadata Editor, and in NADA catalogs if the metadata are published in NADA. 
 
 
-## Template selection
+### Template selection
 
 ![image](img/ME_UG_v1-0-0_documenting_general_template_selection.png)
 
@@ -66,14 +72,14 @@ The header frame in the *Project home page* provides information on the project 
   Select one or multiple administrative metadata templates (optional). See *Administrative metadata* below, and *Administrative metadata templates* in *Designing templates* for more information on the purpose and use of administrative metadata.
 
 
-## Navigation tree
+### Navigation tree
 
 The navigation tree shown in the *Project* page reflects the content of the selected templates. In a template, metadata elements can be tagged as *required* or *recommended*. The navigation frame provides an option to filter elements, to display only required fields or recommended fields. It also provides an option to only display *empty fields*, i.e. metadata elements for which no content has been provided.
 
 A search box is also provided, allowing users to search a metadata element based on keywords found in the element label.
 
 
-## Project validation
+### Project validation
 
 The *Project home* page contains a frame titled *Project validation*, which will indicate whether the metadata that has been entered and saved violates some of the requirements of the standard itself or of the validation rules defined in the template used to document the dataset.
 
@@ -85,19 +91,19 @@ The *Project home* page contains a frame titled *Project validation*, which will
 Clicking on a validation error will take you to the element that needs to be edited.
 
 
-## Collaborators
+### Collaborators
 
 The frame *Collaborators* in the *Project home* page will show the list of collaborators who have access to the project, with information on their permission level (View, Edit, Admin, Owner). If you are the owner or administrator of the project, you may edit this list (adding or removing collaborators) from the list by clicking on the icon on top of the frame.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_collaborators.png)
 
 
-## Collections
+### Collections
 
 The frame *Collections* in the *Project home* page will show the list of collections to which the project belongs. If you are the owner or administrator of the project, you may edit this list (adding or removing collections) from the list by clicking on the icon on top of the frame.
 
 
-## File manager ##
+### File manager 
 
 ![image](img/ME_UG_v1-0-0_documenting_general_files_documentation.png)
 
@@ -105,22 +111,17 @@ The frame *Collections* in the *Project home* page will show the list of collect
 
 
 
-## Common elements in the navigation tree 
+## Common metadata sections  
 
-***Home and preview***
-
-**Home** opens the *Project home* page with its multiple frames, allowing project owners to select templates, manage files, and obtain summary information on the project.
+A few gruops of metadata elements are common to all metadata standards, and will be found in the navigation tree. 
 
 
-**Preview** shows all metadata entered for the project in one single page, in a non-editable page.
-
-
-***Information on metadata (or Document description)***
+### Information on metadata 
 
 All metadata standards and schemas supported by the Metadata Editor include a set of elements intended to document the metadata itself. This set of elements is found in section *Document description* in the DDI (microdata), and *Metadata information* for other types of data. Although these elements are all optional, it is good practice to enter content in this section, if only on the author of the metadata and on the date it was generated. This information is not useful to the data users, but will be useful to catalog administrators to ensure traceability of the information stored in the metadata.
 
 
-***Tags***
+### Tags
 
 All metadata standards and schemas supported by the Metadata Editor include a **Tags** element (this element is not part of all standards; it has been added to standards that did not include it). This element enables the implementation of filters (facets) in data cataloguing applications, in a flexible manner. The tags metadata element is repeatable (meaning that more than one tag can be attached to a dataset) and contains two sub-elements to capture a tag (word or phrase), and the tag_group (if any) it belongs to.
 
@@ -129,7 +130,7 @@ To illustrate the use of tags, let’s assume that you want to indicate whether 
 ![image](img/ME_UG_v1-0-0_documenting_general_tags.png)
 
 
-***External resources***
+### External resources
 
 **External resources** are not a specific type of data. They are resources of any type (data, document, web page, or any other type of resource that can be provided as an electronic file or a web link) that can be attached as a "related resource" to a catalog entry. A metadata schema that is intentionally kept very simple, based on the Dublin Core standard, is used to describe these resources. 
 
@@ -151,7 +152,8 @@ To add an external resource, click on *External resources* in the navigation tre
 
 The *Resource type* element is very important; it will determine how the resource is published in a NADA catalog. Particular attention must be paid to resources of type *Microdata*. When publishing the resource in a NADA catalog, resources of type *Microdata* will not automatically be made available to users of the catalog; the access policy selected when publishing the project in NADA will apply. This could be "Open data" or "Direct access", which will make the data downloadable without restriction, but it could be another access policy such as "Licensed access" which would require that users request access to the data. 
 
-***Data Cite for issuing DOIs***
+
+### DataCite 
 
 A Digital Object Identifier (DOI) is a unique, persistent identifier assigned to a digital object, such as a research article, dataset, report, or other scholarly content. It provides a permanent link to the object, ensuring that it can always be reliably located, even if the URL or hosting platform changes. DOIs facilitate accurate citation, improve discoverability, and promote long-term access to digital resources, making them essential for maintaining the integrity and traceability of academic and scientific work.
 
@@ -161,7 +163,8 @@ DataCite is a service that offers Fabrica as a DOI and metadata management servi
 
 ![image](img/ME_UG_v1-0-0_documenting_general_data_cite.png)
 
-***Provenance***
+
+### Provenance
 
  Projects can easily be shared across organizations. They can be shrared by tranferring ZIP packages or via API. When a project is published in a catalog like NADA, a project can be imported into the Metadata Editor from the NADA catalog using the API. This means that projects found in an instance of the Metadata Editor are not always created in tht same instance of the application. When projects are obtained from an external source, it is important to keep track of (i) from where the project originated, and (ii) from where the project was imported, which may be different from the originating repository. To maintain traceability, all metadata standards supported by the Metadata Editor include a common *Provenance* section with two main components: (i) original repository, and (ii) source repository.  
 
@@ -170,7 +173,7 @@ DataCite is a service that offers Fabrica as a DOI and metadata management servi
 The goal is to preserve information on at least the name, URL, and identifier of the original catalog, and the name, URL, identifier of the repository from which the project was imported, and its identifier and date/time when it was harvested.   
 
 
-***Administrative metadata***
+### Administrative metadata
 
 **Administrative metadata** will only appear in the navigation tree if administrative metadata templates have been selected in the **Template selection**. Administrative metadata consists of information needed by systems or systems administrators to determine how a dataset should be published in a particular data dissemination platform. This information is not intended to be used or visible by the data users; they only serve an internal purpose for the organization that crates the data. For that reason, when a project metadata is exported, administrative metadata is by default not included. 
 
@@ -179,11 +182,13 @@ The content of the administrative metadata is determined by the administrative m
 The content of the administrative metadata section is not intended to be entered by data curators. They will typically be entered by system administrators. Entering administrative metadata therefore requires a specific riole/permission (see *Setting roles and permissions**).
 
 
-## Options menu ##
+## Project-level tools and options 
 
-Some elements apply to all data types, some are specific to the data type.
+Some elements in the menu apply to all data types, some are specific to the data type.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_project_main_menu.png)
+
+### Saving and exporting project and metadata
 
 - ***Export package*** A project contains the metadata you enter, the data files you may have imported (for microdata), the project thumbnail, and possibly external resources of different types. The Metadata Editor stores this information in a database and on the webserver that hosts the Editor. You may export a *package* that contains all materials related to the project. This package will consist of a ZIP file containing all files (including the metadata you entered, even if you did not export them). The ZIP file can be archived, or shared. A package can be imported in the Metadata Editor.     
 
@@ -197,7 +202,17 @@ Some elements apply to all data types, some are specific to the data type.
 
 - ***Export Metadataset (SDMX/JSON):*** (applies to project of type *indicator* only)
 
-- ***Lock & version:** 
+- ***Export RDF/XML:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / XML file.
+
+- ***Export RDF/JSON:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / JSON file.
+
+
+### Locking and versioning
+
+- ***Lock & version:**
+
+
+### Publishing metadata
 
 - ***Publish to NADA:*** This option allows you to publish your metadata (and related materials, optionally including data) to a NADA catalog. See chapter **Publish to NADA** for more information.
 
@@ -209,7 +224,8 @@ Some elements apply to all data types, some are specific to the data type.
 
   ![image](img/ME_UG_v1-0-0_documenting_general_change_log_example.png)
 
-- ***Diagnostic:*** This option will open an HTML page that provides a diganostic of the metadata for the project. The disgnostic will cover both the issues of required or recommended information that may be missing, errors in schema and template validation (also shown in the project Home page), and diagnostic based on other criteria based on good practice. 
+
+### Importing metadata
 
 - ***Applying default values from template:*** If the template used for documenting the dataset contains default values, this option will allow you to apply them to your project. Default values are not imputed in a project unless this option is selected. When you apply default value, you will be offered to apply default values to all metadata elements for which a default value exists, or only to metadata elements that do not contain any information (this option will protect information you may have entered against overwriting).
 
@@ -221,19 +237,20 @@ Some elements apply to all data types, some are specific to the data type.
 
 - ***Import external resources:*** This option allows you to import an external resource that has been exported from another project as a RDF/JSON file (see below). Select the Resource Description Framework (RDF) / JSON file and click IMPORT FILE.
 
-- ***Export RDF/XML:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / XML file.
 
-- ***Export RDF/JSON:*** This option will export the metadata related to the external resources as an Resource Description Framework (RDF) / JSON file.
+### Other tools and options
+
+- ***Diagnostic:*** This option will open an HTML page that provides a diganostic of the metadata for the project. The disgnostic will cover both the issues of required or recommended information that may be missing, errors in schema and template validation (also shown in the project Home page), and diagnostic based on other criteria based on good practice. 
 
 
-## Help ##
+## Help 
 
 The metadata entry pages will show a [?] icon next to the title of all metadata elements. Clicking on this icon will show the instructions for the element, extracted from the selected metadata template.
 
 ![image](img/ME_UG_v1-0-0_documenting_general_help_button.png)
 
 
-## Canceling changes (Undo) ##
+## Canceling changes (Undo) 
 
 ![image](img/ME_UG_v1-0-0_documenting_general_cancel_changes.png)
 
