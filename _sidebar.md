@@ -9,9 +9,8 @@
 * Specifications, installation and upgrade
   
     * [Technical specifications](tech_technical_specifications.md)
-    * [Installation on a server](tech_installation.md)
+    * [Installation](tech_installation.md)
     * [Email configurations](configurations_email.md)
-    * [Installation on a standalone PC](tech_installation_pc.md)
     * [Upgrading](tech_upgrading.md)
     
 * Login, logout, password
