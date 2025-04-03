@@ -8,39 +8,39 @@ The Metadata Editor can be deployed as a stand-alone desktop application or as a
 
 Built with a modular architecture, the Metadata Editor is developed using PHP and leverages APIs for seamless integration with other data systems. It incorporates Python libraries such as Pandas and GeoPandas to support the ingestion of datasets in various formats, extract metadata automatically, and generate summary statistics, making metadata creation both efficient and precise.
 
-## Data Types and Metadata Standards Supported
+## Data types and metadata standards supported
 
 The Metadata Editor supports the documentation of a wide range of structured data types, using established metadata standards and schemas:
 
-- **For Structured Data**
+- **For structured data**
    - **Microdata**: Unit-level data on individuals, households, facilities, establishments, or other entities, derived from surveys, censuses, administrative records, or sensors. The Metadata Editor supports documentation using the Data Documentation Initiative (DDI) Codebook standard (version 2.5); see https://ddialliance.org/ddi-codebook.
-   - **Indicators and Databases of Indicators**: Summary measures derived from observed data, often stored as time series in databases. The Metadata Editor supports a bespoke World Bank metadata schema, built by compiling metadata elements used in multiple leading indicator databases.
-   - **Geographic Datasets and Geographic Data Services**: Data describing geographic locations, boundaries, and earth surface characteristics, provided as raster or vector datasets or as web services. The Metadata Editor supports ISO 19139 (and related ISO 19110/19115) metadata standards. See https://www.iso.org/standard/67253.html
-   - **Statistical Tables**: Aggregated statistical information presented in cross-tabulations, such as those in statistical yearbooks and census reports. The Metadata Editor supports a specific metadata schema developed by the International Household Survey Network (IHSN).
+   - **Indicators and databases of indicators**: Summary measures derived from observed data, often stored as time series in databases. The Metadata Editor supports a bespoke World Bank metadata schema, built by compiling metadata elements used in multiple leading indicator databases.
+   - **Geographic datasets and geographic data services**: Data describing geographic locations, boundaries, and earth surface characteristics, provided as raster or vector datasets or as web services. The Metadata Editor supports ISO 19139 (and related ISO 19110/19115) metadata standards. See https://www.iso.org/standard/67253.html
+   - **Statistical tables**: Aggregated statistical information presented in cross-tabulations, such as those in statistical yearbooks and census reports. The Metadata Editor supports a specific metadata schema developed by the International Household Survey Network (IHSN).
 
-- **For Unstructured Data**
+- **For unstructured data**
    - **Text**: Collections of documents (e.g., books, reports, manuals) form corpora that can be structured using natural language processing (NLP). The Metadata Editor supports a schema combining elements from Dublin Core (https://www.dublincore.org/), MARC21 from the US Library of Congress (https://www.loc.gov/marc/bibliographic/), and BibTeX (https://www.bibtex.org/).
    - **Images**: Digital images can be analyzed with machine learning techniques for classification and object detection. The Metadata Editor provides two metadata schema options: Dublin Core with imageObject elements from Schema.org and IPTC (https://iptc.org/).
 Video Recordings: Speech-to-text algorithms allow the automatic transcription of video and audio recordings, making them discoverable and analyzable as structured data. The Metadata Editor supports a schema incorporating elements from Dublin Core and videoObject from Schema.org (https://schema.org/).
    - **Videos**: the Metadata Editor uses a metadata schema built on videoobject from schema.org.
-   - **Research Projects and Scripts**: Research projects and related scripts for data transformation, analysis, and visualization are essential for reproducibility and transparency. The Metadata Editor includes a dedicated schema for documenting research projects and scripts.
+   - **Research projects and scripts**: Research projects and related scripts for data transformation, analysis, and visualization are essential for reproducibility and transparency. The Metadata Editor includes a dedicated schema for documenting research projects and scripts.
 
 In addition to these metadata standards and schemas, the Metadata Editor allows exporting metadata templates as SDMX Metadata Structure Definitions and the metadata themselves as SDMX metadatasets. An option to export metadata to schema.org (https://schema.org/), Croissant (https://github.com/mlcommons/croissant), and DCAT (https://www.w3.org/TR/vocab-dcat-3/) is also provided for some types of data.
 
 The technical documentation of the metadata standards supported by the Metadata Editor is available at https://worldbank.github.io/metadata-schemas/ where structures and information on each metadata element are provided.
 
 
-## Licenses and Disclaimer 
+## Licenses and disclaimer 
 
 
-### Software License
+### Software license
   
 The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit) with the following additional qualifications related to the World Bank's Privileges and Immunities:
 
 *provide text of IGO here*
 
 
-### User Guide License 
+### User Guide license 
 
 This User Guide is licensed under the Creative Commons Attribution 4.0 International license (CC BY 4.0). See [https://creativecommons.org/licenses/by-nc-nd/4.0/ ](https://creativecommons.org/licenses/by/4.0/)
 
