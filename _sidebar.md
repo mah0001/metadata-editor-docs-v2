@@ -10,7 +10,6 @@
   
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation](tech_installation.md)
-    * [Email configurations](configurations_email.md)
     * [Upgrading](tech_upgrading.md)
     
 * Login, logout, password
