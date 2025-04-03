@@ -1,8 +1,6 @@
-# Installation on a server
+# Installation 
 
 The Metadata Editor can be installed on a server or on a stand-alone personal computer (PC). For installation on a PC, see the section *Installation on a personal computer*. 
-
-## Why install on a server?
 
 Installing the Metadata Editor on a web server provides several advantages:
 - **Collaboration**: Multiple users can work on metadata simultaneously.
@@ -12,7 +10,9 @@ Installing the Metadata Editor on a web server provides several advantages:
 - **Permission control**: Running the application on a server allows configuration of an organization's user authentication system.
 - **Security**: Centralizing the generation and storage of the metadata on a server facilitates the management of backups and implementation of other security measures. 
 
-## System requirements
+
+## Installation on a server
+
 
 ### Hardware requirements
 
@@ -175,3 +175,9 @@ The Metadata Editor and PyDataTools should now be operational. This completes th
 ### Configuring a user authentication system
 
 Configure a user authentication system by:
+
+
+## Installing on a personnal computer
+
+
+
