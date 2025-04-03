@@ -25,7 +25,7 @@ You can use the image *poverty_thumbnail.jpg* as a thumbnail, or your own JPG or
 
 ![image](img/ME_UG_v1-0-0_quick_start_indicator_edit_thumbnail.png)
 
-Documenting an indicator consists of entering information (metadata) about the indicator in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
+Documenting an indicator consists of entering information (metadata) about the indicator in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use the template named *IHSN DDI 2.5 Template v01 EN*. If this is the template that shows in your screen, no action is needed. Otherwise, click on the template name, and select the template *IHSN DDI 2.5 Template v01 EN* in the list that will appear, then click `APPLY`. 
 
 
 ## Step 2: Enter metadata
