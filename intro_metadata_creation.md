@@ -2,11 +2,11 @@
 
 Standard-compliant metadata can be produced and edited through three main approaches: **using a Metadata Editor** software application, **programmatically** using a language like R or Python, or through **other metadata-enabled software** applications. Each approach offers distinct advantages depending on the level of automation, user expertise, and the specific type of data being documented.
 
-## Using a Metadata Editor
+## Using a metadata editor
    
 A metadata editor is a specialized software application designed to facilitate the creation, editing, and management of structured metadata in a user-friendly manner. This approach is particularly beneficial for non-programmers and for data types that require significant manual curation, such as microdata.
 
-The Metadata Editor provides an intuitive environment for documenting various types of data, including indicators, geographic datasets, microdata, and scripts. Users begin by selecting the relevant data type and choosing from predefined metadata templates based on internationally recognized standards. The Metadata Editor then automatically generates metadata entry forms tailored to the chosen template, allowing users to input metadata systematically.
+The World Bank Metadata Editor provides an intuitive environment for documenting various types of data, including indicators, geographic datasets, microdata, and scripts. Users begin by selecting the relevant data type and choosing from predefined metadata templates based on internationally recognized standards. The Metadata Editor then automatically generates metadata entry forms tailored to the chosen template, allowing users to input metadata systematically.
 
 Key features of the Metadata Editor include:
 
@@ -31,7 +31,7 @@ Metadata generated programmatically can be saved as JSON or XML, or published in
 To be compatible with the Metadata Editor, the metadata must be generated in compliance with the schemas outlined in [ReDoc URL].
 
 
-## Other Metadata-Enabled Software Applications
+## Other metadata-enabled software applications
 
 Several data management and survey processing tools integrate metadata standardization features. While these applications typically generate only a subset of required metadata elements, they offer valuable automated metadata extraction capabilities.
 
@@ -44,7 +44,7 @@ Examples include:
 While these tools generate essential metadata elements, they may not provide complete metadata coverage needed for full documentation. The metadata exported from such applications can be further edited, enriched, and completed using the Metadata Editor, ensuring full compliance with metadata standards.
 
 
-## Choosing the Right Approach
+## Choosing the right approach
 
 The choice of metadata generation method depends on the nature of the data, user expertise, and the level of automation required:
 
