@@ -2,7 +2,7 @@
 
 The Metadata Editor can be installed on a server or on a stand-alone personal computer (PC). For installation on a PC, see the section *Installation on a personal computer*. 
 
-## Why Install on a Server?
+## Why install on a server?
 
 Installing the Metadata Editor on a web server provides several advantages:
 - **Collaboration**: Multiple users can work on metadata simultaneously.
@@ -12,20 +12,20 @@ Installing the Metadata Editor on a web server provides several advantages:
 - **Permission control**: Running the application on a server allows configuration of an organization's user authentication system.
 - **Security**: Centralizing the generation and storage of the metadata on a server facilitates the management of backups and implementation of other security measures. 
 
-## System Requirements
+## System requirements
 
-### Hardware Requirements
+### Hardware requirements
 
 Ensure your server meets the following minimum specifications:
 - CPU: Dual-core processor or higher
 - RAM: At least 4 GB (8 GB recommended for larger datasets)
 - Storage: Minimum 20 GB of free disk space
 
-### Software Requirements
+### Software requirements
 
 To run the Metadata Editor, you will need:
 
-**Web Server**:
+**Web server**:
 - Apache 2.4 or later
 - IIS 6/7.x or later
 - NGINX
@@ -42,15 +42,15 @@ To run the Metadata Editor, you will need:
 - Python 3.12 or later is required for running the FastAPI backend for data import/export and generating summary statistics for Stata, SPSS, and CSV files.
 
 
-### Downloading and Installing the Metadata Editor Application
+### Downloading and installing the Metadata Editor 
 
-**Required Components**
+**Required components**
 
 To install the Metadata Editor, you need:
 - Metadata Editor: PHP application with a MySQL/MariaDB database.
 - PyDataTools: Python backend API for data import/export and summary statistics.
 
-**Folder Structure** 
+**Folder structure** 
 
 After installation, your directory structure should look like this:
 
@@ -61,7 +61,7 @@ metadata_editor
 +--pydatatools
 ```
 
-**Downloading the Source Code**
+**Downloading the source code**
 
 - ***Option 1: Using Git***
 
@@ -83,7 +83,7 @@ $ git clone https://github.com/mah0001/pydatatools
     - PyDataTools: https://github.com/mah0001/pydatatools/archive/refs/heads/main.zip
   
 
-**Configuring the Database**
+**Configuring the database**
 
 Step 1: Create Database and User
 - Create a new database (e.g., metadata_editor).
@@ -128,7 +128,7 @@ $db['default'] = array(
 
 Save the file.
 
-**Setting Folder Permissions**
+**Setting folder permissions**
 
 Run the following commands to set read/write permissions for the folders where the data will be stored:
 
@@ -137,7 +137,7 @@ $ chmod -R 775 datafiles files logs
 ```
 
 
-**Running the Installer**
+**Running the installer**
 
 - Open a web browser and navigate to the Editor installation URL. For example: http://your-domain/editor-folder-name, or http://localhost/editor-folder-name.
 - Check that all settings are marked with a green tick and fix any that are not on your webserver before running the installer. 
@@ -146,13 +146,13 @@ $ chmod -R 775 datafiles files logs
 ⚠️ Note: Use a complex password (at least 12 characters, including uppercase, numbers, and special characters) to enhance security.
 
 
-**Installing and Configuring PyDataTools (Python/FastAPI)**
+**Installing and configuring PyDataTools (Python/FastAPI)**
 
 - ***Step 1: Install Python*** 
 
   Download and install Python 3.12 from https://www.python.org/downloads/.
 
-- ***Step 2: Install Dependencies***
+- ***Step 2: Install dependencies***
 
   Navigate to the pydatatools folder and run:
 
@@ -160,7 +160,7 @@ $ chmod -R 775 datafiles files logs
 	$ pip install -r requirements.txt
   ```
 
-- ***Step 3: Run the FastAPI Service***
+- ***Step 3: Run the FastAPI service***
 
   To start the FastAPI service, run:
 
@@ -172,6 +172,6 @@ $ chmod -R 775 datafiles files logs
 The Metadata Editor and PyDataTools should now be operational. This completes the installation process. 
 
 
-### Configuring a User Authentication System
+### Configuring a user authentication system
 
 Configure a user authentication system by:
