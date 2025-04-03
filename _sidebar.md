@@ -12,7 +12,7 @@
     * [Installation](tech_installation.md)
     * [Upgrading](tech_upgrading.md)
     
-* Login, logout, password
+* Login, logout, and password
 
     * [Login, logout, and password](user_login.md)  
  
