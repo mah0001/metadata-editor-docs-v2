@@ -221,7 +221,7 @@ The Editor site administration includes a page to test email settings. Open the 
 If you have filled in the email configurations (`application/config/email.php`), the page will read all settings from there. Otherwise, fill the email settings and press the button `Send email` to see if your settings are correct. The page will print detailed messages for both success and failed emails.
 
 
-## Enable backups
+### Enable backups
 
 The Metadata Editor will operate as a central metadata repository. For a production level installation, it is therefore essential that you implement a proper backup system, with automatic backups as appropriate.
 
