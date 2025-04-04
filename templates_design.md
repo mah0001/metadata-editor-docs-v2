@@ -1,82 +1,91 @@
 # Creating and editing templates
 
-*This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section.*
+*This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section ***Administrative metadata templates***.
 
-Data curators will rarely make use of all elements of a metadata standard when documenting a dataset. Many elements may not be relevant in the context of an organization. Typically, data curators will document datasets using metadata templates, i.e. customized subsets of metadata elements extracted from a metadata standard. 
+Data curators will rarely make use of all elements available in a metadata standard. Many of the available elements may not be relevant in the context of a specific organization. Metadata templates provide a solution to define and tailor subsets of metadata elements available in a standard. 
 
-Templates can be designed and edited using the Template Manager tool in Metadata Editor. Not all users of the Metadata Editor will have the credentials to creating and edit templates; this is a specific role that must be assigned to users. Templates should be created and maintained by an administrator of the data curation team, then made available to all data curators. 
+Metadata templates are created and/or edited using the *Template Manager* tool in the Metadata Editor. 
 
-More than one template can be developed for a given metadata standard, although it is recommended to keep their number small to maximize consistency and to minimize the burden of maintaining a collection of templates.
+Not all users of the Metadata Editor will have the credentials to create or edit templates; this is a specific role that must be assigned to selected users in an organization. Templates should be created and maintained by one or multiple managers(s) of the data curation process. The metadata templates they create can then be made available to all data curators. 
+
+More than one template can be developed for each metadata standard (i.e., for each main data type). It is highly recommended to keep the number of metadata templates small. This will foster consistency in the metadata being produced, facilitate the work of data curators, and reduce the burden of maintaining a collection of templates.
 
 
 ## Pre-designed templates and template list
 
-You access the Template Manager by clicking on `TEMPLATES` in the top menu of the Metadata editor. This will open a page showing all available templates by type of data. The list can be filtered by selecting a data **Type** in the left frame.
+You access the **Template Manager** by clicking on `TEMPLATES` in the main menu of the Metadata editor. This will open a page showing all available templates by type of data. The list can be filtered by selecting a data *Type* in the left frame.
 
 ![image](img/ME_UG_v1-0-0_template_home_page.png)
 
-For each data type (for each metadata standard), the Template Manager provides one or multiple **core** templates which are non-editable. One of the core templates contains all elements of the corresponding metadata standard, with their default parameters. Other core templates are recommended subsets, provided with the Metadata Editor. Typically, custom templates will be created by duplicating then editing the copy of a core template. 
-
-The Template Manager allows the administrator of the system to select, for each data type, the template to be used by default (one default template per type, indicated by the radio button).
+For each main data type (i.e., for each metadata standard), the Metadata Editor provides one or multiple **core** templates which are non-editable. One of the core templates contains **all elements** of the corresponding metadata standard, with their default parameters (label, description, etc.). Other core templates are provided as suggested templates, which only contain what is considered as the most important metadata elements for a general use case. Typically, new templates will be created by generating a copy of a core template, then editing it. 
 
 
 ## Actions on templates
 
-A set of options is available for any given template:
+When clicking on a template *Title* in the list of templates, the *Template* page will open. 
+
+A set of options and actions is available in this page:
 
 ![image](img/ME_UG_v1-0-0_template_access_actions.png)
 
 ![image](img/ME_UG_v1-0-0_template_list_actions.png)
 
-The purpose of these various functions is as follows:
 
-**DUPLICATE**
+- **`DUPLICATE`**
 
-Clicking on DUPLICATE will generate an editable copy of the selected template. The duplicated template can then be fully customized, and saved under a new name.
+  Clicking on DUPLICATE will generate an editable copy of the selected template. Clicking on the title of the duplicated template in the list of templates will open this new template page. 
 
-![image](img/ME_UG_v1-0-0_template_duplicate.png)
+  ![image](img/ME_UG_v1-0-0_template_duplicate_list.png)
 
-![image](img/ME_UG_v1-0-0_template_duplicate_list.png)
+  The duplicated template can then be customized, and saved under a new name.
 
-**EXPORT** (and IMPORT)
+  ![image](img/ME_UG_v1-0-0_template_duplicate.png)
+ 
+- **`EXPORT`** (and IMPORT)
 
-Exporting the template will create a JSON copy of it, which can be saved as a file with [.json] extension. Exporting templates allows sharing them with other organizations, who can IMPORT templates in their own instance of the Metadata Editor.
+  Exporting the template will create a JSON copy of it, which can be saved as a file with [.json] extension. Exporting templates allows sharing them with other organizations, who can `IMPORT` templates in their own instance of the Metadata Editor.
 
-![image](img/ME_UG_v1-0-0_template_export_json.png)
+  ![image](img/ME_UG_v1-0-0_template_export_json.png)
 
-Exported templates can be imported in the metadata Editor by clicking on **IMPORT TEMPLATE**.
+  Exported templates can be imported in the metadata Editor by clicking on **IMPORT TEMPLATE**.
 
-![image](img/ME_UG_v1-0-0_template_import.png)
+  ![image](img/ME_UG_v1-0-0_template_import.png)
 
-**DELETE**
 
-Delete the selected template (only available for custom templates, not for core templates).
+- **`DELETE`**
 
-**PREVIEW**
+  Delete the selected template (only available for custom templates, not for core templates).
 
-Preview will generate an HTML version of the template, which will open in a web browser.
 
-![image](img/ME_UG_v1-0-0_template_preview.png)
+- **`PREVIEW`**
 
-**TABLE**
+  Preview will generate an HTML version of the template, which will open in a web browser.
 
-This option will generate a tabular description of the template, which can be copy/pasted in MS-Excel if needed.
+  ![image](img/ME_UG_v1-0-0_template_preview.png)
 
-![image](img/ME_UG_v1-0-0_template_table.png)
 
-**PDF**
+- **`TABLE`**
 
-The PDF option generates a PDF version of the template. If the template contains detailed descriptions of all metadata elements, and examples of content, the PDF file may serve as a useful instruction guide for data curators.
+  This option will generate a tabular description of the template, which can be copy/pasted in MS-Excel if needed.
 
-![image](img/ME_UG_v1-0-0_template_PDF.png)
+  ![image](img/ME_UG_v1-0-0_template_table.png)
 
-**REVISIONS**
 
-This option will provide a history of changes to the template since its creation.
+- **`PDF`**
 
-**UUID**
+  The PDF option generates a PDF version of the template. If the template contains detailed descriptions of all metadata elements, and examples of content, the PDF file may serve as a useful instruction guide for data curators.
 
-This option allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
+  ![image](img/ME_UG_v1-0-0_template_PDF.png)
+
+
+- **`REVISIONS`**
+
+  This option provides a history of changes to the template since its creation.
+
+
+- **`UUID`**
+
+  This option allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
 
 
 ## Editing a template
@@ -182,4 +191,5 @@ Metadata elements that are not provided by a metadata standard can be added as "
 
 ### Setting a template as default
 
+The Template Manager allows the administrator of the system to select, for each data type, the template to be used by default (one default template per type, indicated by the radio button).
 
