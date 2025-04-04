@@ -1,6 +1,6 @@
 # Creating and editing templates
 
-*This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section ***Administrative metadata templates***.
+> This section is about designing templates for the various data types. For the design of administrative metadata templates, see the next section ***Administrative metadata templates***.
 
 Data curators will rarely make use of all elements available in a metadata standard. Many of the available elements may not be relevant in the context of a specific organization. Metadata templates provide a solution to define and tailor subsets of metadata elements available in a standard. 
 
