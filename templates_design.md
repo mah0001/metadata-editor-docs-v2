@@ -22,9 +22,7 @@ For each main data type (i.e., for each metadata standard), the Metadata Editor 
 
 ## Actions on templates
 
-When clicking on a template *Title* in the list of templates, the *Template* page will open. 
-
-A set of options and actions is available in this page:
+A set of options and actions is available for each template in the *Template list* page (accessed by clicking on the three-dots icon):
 
 ![image](img/ME_UG_v1-0-0_template_access_actions.png)
 
@@ -33,21 +31,22 @@ A set of options and actions is available in this page:
 
 - **`DUPLICATE`**
 
-  Clicking on DUPLICATE will generate an editable copy of the selected template. Clicking on the title of the duplicated template in the list of templates will open this new template page. 
+  Generate an editable copy of the selected template. After duplicating a template, click on its title in Templates list to open the new template page for editing. 
 
   ![image](img/ME_UG_v1-0-0_template_duplicate_list.png)
 
-  The duplicated template can then be customized, and saved under a new name.
+  The duplicated template can be customized, and saved under a new name (edit the `Name` field in the *Template description* page, and click on `SAVE`).
 
   ![image](img/ME_UG_v1-0-0_template_duplicate.png)
- 
-- **`EXPORT`** (and IMPORT)
 
-  Exporting the template will create a JSON copy of it, which can be saved as a file with [.json] extension. Exporting templates allows sharing them with other organizations, who can `IMPORT` templates in their own instance of the Metadata Editor.
+ 
+- **`EXPORT`** (and `IMPORT`)
+
+  Create a JSON copy of a template, which can then be saved as a file with [.json] extension. Exporting templates allows sharing them with other organizations, who can `IMPORT` templates in their own instance of the Metadata Editor.
 
   ![image](img/ME_UG_v1-0-0_template_export_json.png)
 
-  Exported templates can be imported in the metadata Editor by clicking on **IMPORT TEMPLATE**.
+  Exported templates can be imported in the Metadata Editor by clicking on **`IMPORT TEMPLATE`**.
 
   ![image](img/ME_UG_v1-0-0_template_import.png)
 
@@ -59,33 +58,33 @@ A set of options and actions is available in this page:
 
 - **`PREVIEW`**
 
-  Preview will generate an HTML version of the template, which will open in a web browser.
+  Generate an HTML version of the template, which will open in a web browser.
 
   ![image](img/ME_UG_v1-0-0_template_preview.png)
 
 
 - **`TABLE`**
 
-  This option will generate a tabular description of the template, which can be copy/pasted in MS-Excel if needed.
+  Generate a tabular description of the template, which can fpr example be copy-pasted in MS-Excel if needed.
 
   ![image](img/ME_UG_v1-0-0_template_table.png)
 
 
 - **`PDF`**
 
-  The PDF option generates a PDF version of the template. If the template contains detailed descriptions of all metadata elements, and examples of content, the PDF file may serve as a useful instruction guide for data curators.
+  Generate a PDF version of the template. If the template contains detailed descriptions of all metadata elements, and examples of content, the PDF file can serve as a useful instruction guide for data curators.
 
   ![image](img/ME_UG_v1-0-0_template_PDF.png)
 
 
 - **`REVISIONS`**
 
-  This option provides a history of changes to the template since its creation.
+  Provide a history of changes to the template since its creation.
 
 
 - **`UUID`**
 
-  This option allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
+  Allows template administrators to edit the unique identifier of the template. By default, a system identifier is created. This identifier can be changed to a more readable one. This will typically be done for administrative metadata templates.
 
 
 ## Editing a template
