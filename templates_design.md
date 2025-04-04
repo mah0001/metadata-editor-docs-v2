@@ -100,7 +100,7 @@ You access the *Description* page of a template (other than custom templates) by
 - **Organization**: The organization that developed the template or for whom the template was developed.
 - **Author**: The author(s) of the template.
 - **Description**: A brief description of the template.
-- **Instructions**: A set of overall instructions related to the template (not the instructions related to each specific metadata element, which will be added in the template itself). The content of this element can be plain text or formatted text (using markdown syntax). 
+- **Instructions**: A set of overall instructions related to the template (not the instructions related to each specific metadata element, which will be added in the template itself). The content of this element can be plain text or formatted text (using markdown syntax; see https://www.markdownguide.org/basic-syntax/ for a guide on formatting text using markdown). 
 
 ![image](img/ME_UG_v1-0-0_template_description_page.png)
 
