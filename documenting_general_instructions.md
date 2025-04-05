@@ -179,7 +179,7 @@ The goal is to preserve information on at least the name, URL, and identifier of
 
 The content of the administrative metadata is determined by the administrative metadata template(s) selected for the project. If the project (meta)data is intended to be published in multiple platforms, multiple templates will be used for the project.
 
-The content of the administrative metadata section is not intended to be entered by data curators. They will typically be entered by system administrators. Entering administrative metadata therefore requires a specific riole/permission (see *Setting roles and permissions**).
+The content of the administrative metadata section is not intended to be entered by data curators. They will typically be entered by system administrators. Entering administrative metadata therefore requires a specific role/permission (see *Setting roles and permissions**).
 
 
 ## Project-level tools and options 
