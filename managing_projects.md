@@ -85,7 +85,7 @@ The project *Home* page contains the following components:
 
 - **Project validation.** Lists violations, if any, of standard requirements (schema validation) and user-defined template rules (template validation).
 
-- **Collaborators.** Lists registered users with access to the project, along with their assigned roles (View, Edit, Admin).
+- **Collaborators.** Lists registered users with access to the project, along with their assigned roles (*View*, *Edit*, *Admin*).
 
 - **Collections.** Shows the collections to which the project belongs, if any.
 
