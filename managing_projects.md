@@ -71,7 +71,7 @@ You can select multiple projects using the checkboxes next to the project titles
 
 ## The project home page
 
-Clicking on a project title in the *My Projects* page, or creating a new project, opens the project's home page. If you are already working on a project, you can access the home page by clicking *Home* in the navigation tree.
+Clicking on a project title in the *My Projects* page, or creating a new project, opens the project's *Home* page. If you are already working on a project, you can access the home page by clicking *Home* in the navigation tree.
 
 ![image](img/ME_UG_v1-0-0_managing_projects_project_home_page.png)
 
