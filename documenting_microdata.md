@@ -68,7 +68,7 @@ The DDI Codebook metadata standard used to document microdata has the following 
 
 In addition to these sections specific to the DDI Codebook metadata standard, the Metadata Editor includes sections common to all data types: *External resources*, *Tags*, *DataCite*, *Provenance*, and (optional) *Administrative metadata*. 
 
-The DDI-specific sections are described below. For instructions on sections common to all data types, refer to the **General instructions** chapter.
+The DDI-specific sections are described below. For instructions on sections common to all data types, refer to the chapter **General instructions**.
 
 > The description of metadata elements provided below corresponds to the metadata elements included in the default template XXXX provided with the Metadata Editor. The list, the groupings, and the label of the elements may differ if you use a different template.
 
@@ -87,7 +87,7 @@ The metadata entered for this section should be as comprehensive as possible. Yo
 
 Note that all dates should preferably be entered in ISO format (YYYY-MM-DD or YYYY-MM or YYYY).
 
-Refer to **General instructions** for information on importing metadata from an existing project, and on copy/pasting content in fields that allow it.
+Refer to chapter **General instructions** for information on importing metadata from an existing project, and on copy/pasting content in fields that allow it.
 
 By default, all content entered in the metadata entry page will consist of plain text (which will be saved in XML or JSON format). A few fields may allow entering formatted content (markdown, HTML, or LaTex formulas); which fields allow for such formating is determined in the template design.
 
