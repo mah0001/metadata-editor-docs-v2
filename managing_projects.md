@@ -17,7 +17,7 @@ All users, regardless of their roles and permissions, can access the *My Project
 ![image](img/ME_UG_v1-0-0_managing_projects_projects_list_page.png)
 
 The list of projects can be filtered by:
-- Data type
+- Type
 - Collection (if applicable)
 - Ownership (which distinguishes projects you own from projects shared with you by another user); you own a project if you created it, or if its ownership was transferred to you by another user.
 
