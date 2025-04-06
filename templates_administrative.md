@@ -4,7 +4,11 @@
 
 Administrative metadata refers to the metadata required for managing and operating data management and dissemination systems. Administrative metadata will only be used by large data cataloguing systems, and by data systems that require automation of processes. Not all users of the Metadata Editor will need administrative metadata.
 
-Unlike metadata intended for data users, administrative metadata is primarily used internally and is not shared externally. It contains essential instructions that guide software applications, such as data catalogs, in handling data storage, display, and accessibility parameters. For example, an organization may maintain two versions of a data catalog: one for internal use, the other one accessible to external users. While the descriptive and structural metadata of datasets will be the same for  both catalogs, the way the data and metadata are displayed and the data access conditions will likely differ. Administrative metadata will in such case be used to store instructions specific to each platform. Administrative metadata contribute to ensuring data governance principles and procedures, adherence to privacy protection rules, and compliance with the Bank’s Access to Information Policy (by including metadata on information classification of data assets, in particular flagging restricted and confidential information).
+Unlike metadata intended for data users, administrative metadata is primarily used internally and is not shared externally. It contains essential instructions that guide software applications, such as data catalogs, in handling data storage, display, and accessibility parameters. 
+
+For example: 
+- An organization may maintain two versions of a data catalog: one for internal use, the other one accessible to external users. While the descriptive and structural metadata of datasets will be the same for  both catalogs, the way the data and metadata are displayed and the data access conditions will likely differ. Administrative metadata will in such case be used to store instructions specific to each platform. In such case, administrative metadata contribute to ensuring compliance with data governance principles and procedures, and adherence to privacy protection rules, and compliance with the organization’s policies.
+- An organization that manages an on-line catalog of indicators (time series) may want to create administrative metadata for each indicator, informing the cataloguing application about the way the indicator data and metadata should be displayed (for example, identifying the kind of visaulization that should be displayed in the indicator's web page).  
 
 > The content of administrative metadata is specific to each organization and IT system. For that reason, no metadata standard is provided for administrative metadata. Instead, the metadata schema is entirely created "from scratch" using the Template Manager tool in the Metadata Editor. 
 
@@ -15,9 +19,9 @@ Metadata schemas created by an organization can then be used by the organization
 Administrative metadata is securely stored within the Metadata Editor and can be exported (as JSON files), and is accessible via APIs to allow data management and dissemination systems to retrieve and utilize it as needed. But administrative metadata is not included in metadata exported for public use.  
 
 
-## Creating administrative metadata schmeas (templates)
+## Creating administrative metadata templates
 
-Although administrative metadata schemas are specific to each organization and IT system, the Metadata Editor provdes a starter template named “Core administrative metadata”. This core template is not editable and cannot be used except to be duplicated and modified for creating new templates.
+Although administrative metadata schemas are specific to each organization and IT system, the Metadata Editor provides a starter template named “Core administrative metadata”. This core template is not editable and cannot be used except to be duplicated and modified for creating new templates.
 
 ![image](img/ME_UG_v1-0-0_template_administrative_manager.png)
 
@@ -61,4 +65,9 @@ In any project where the template is activated, the administrative template will
 
 ## Entering content in administrative templates
 
+- Assign metadata templates to a project (Home page - Administrative metadata"
+- Will be shown in project navigation tree
+- To be filled by authorized person (usally not a data curator)
+- All accessible vi API; can automate tasks
+   
 See section ***Administrative metadata*** in chapter **Documenting data - General instructions**
