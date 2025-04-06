@@ -7,27 +7,27 @@ Administrative metadata refers to the metadata required for managing and operati
 Unlike metadata intended for data users, administrative metadata is primarily used internally and is not shared externally. It contains essential instructions that guide software applications, such as data catalogs, in handling data storage, display, and accessibility parameters. 
 
 For example: 
-- An organization may maintain two versions of a data catalog: one for internal use, the other one accessible to external users. While the descriptive and structural metadata of datasets will be the same for  both catalogs, the way the data and metadata are displayed and the data access conditions will likely differ. Administrative metadata will in such case be used to store instructions specific to each platform. In such case, administrative metadata contribute to ensuring compliance with data governance principles and procedures, and adherence to privacy protection rules, and compliance with the organization’s policies.
-- An organization that manages an on-line catalog of indicators (time series) may want to create administrative metadata for each indicator, informing the cataloguing application about the way the indicator data and metadata should be displayed (for example, identifying the kind of visaulization that should be displayed in the indicator's web page).  
+- An organization may maintain two versions of a data catalog: one for internal use, the other one accessible to external users. While the descriptive and structural metadata to be displayed is the same for both versions of the catalog, the data access conditions may differ (for example, data may be openly accessible to internal users, but disseminated externally under different conditions). Administrative metadata may in that case be used to store information on the access policy to be applied to each version of the data catalog. 
+- An international organization that publishes time series of indicators in an on-line platform wants to include some viaualizations for each indicator. But not all types of data visualition apply to all indicators (for example, it would not make sense to show a choropleth world map of GDP per capita in local currency, as the estimates are not comparable across countries). In that case, administrative metadata can be used to indicate, for each indicator, what visualizations should be displayed in the platform.  
 
-> The content of administrative metadata is specific to each organization and IT system. For that reason, no metadata standard is provided for administrative metadata. Instead, the metadata schema is entirely created "from scratch" using the Template Manager tool in the Metadata Editor. 
+> The content of administrative metadata will be specific to each organization and IT system. For that reason, no metadata standard is provided for administrative metadata. Instead, administrative metadata templates (or *schemas*) are entirely created "from scratch" using the Template Manager tool in the Metadata Editor. 
 
-The creation of administrative metadata follows a structured approach similar to that of descriptive metadata. A set of metadata elements forms a structured schema (template). These elements are defined by IT specialists to ensure alignment with system functionalities and operational needs.
+The creation of administrative metadata follows a structured approach similar to that of descriptive metadata. A set of metadata elements forms a structured template. These elements are defined by IT specialists to ensure alignment with the organization's system functionalities and operational needs.
 
-Metadata schemas created by an organization can then be used by the organization to capture administrtaive metadata for any project. Each project can be assigned one or more administrative metadata templates. 
+Metadata schemas created by an organization can then be used by the organization to capture administrative metadata for any project. Each project can be assigned one or more administrative metadata templates. 
 
-Administrative metadata is securely stored within the Metadata Editor and can be exported (as JSON files), and is accessible via APIs to allow data management and dissemination systems to retrieve and utilize it as needed. But administrative metadata is not included in metadata exported for public use.  
+Administrative metadata will be stored within the Metadata Editor and can be exported (as JSON files). It will be accessible via API to allow data management and dissemination systems to retrieve and utilize it as needed. Administrative metadata is not included in metadata exported for public use.  
 
 
 ## Creating administrative metadata templates
 
-Although administrative metadata schemas are specific to each organization and IT system, the Metadata Editor provides a starter template named “Core administrative metadata”. This core template is not editable and cannot be used except to be duplicated and modified for creating new templates.
+Although administrative metadata schemas are specific to each organization and IT system, the Metadata Editor provides a starter template named **Core administrative metadata**. This core template is not editable. But it can be duplicated, and the copy can then be edited for creating custom templates.
 
 ![image](img/ME_UG_v1-0-0_template_administrative_manager.png)
 
-To create a new administrative template, select `DUPLICATE` in the list of options available for the template (trille-dot icon next to the template title). In the **Description** page, provide a name (at least), and other information describing the new template being created. Then `SAVE` the template.
+To create a new administrative template, select `DUPLICATE` in the list of options available for the template (triple-dot icon next to the template title). In the *Description* page, provide a name (at least), and other information describing the new template being created. Then `SAVE` the template.
 
-You may now start customizing the template by adding your own metadata elements. Start by removing all fields under the “Metadata” section in the navigation tree. To remove a field, select the field in the navigation tree and click on the right blue arrow `>`. This will result in an empty template, ready for customization. 
+You may now start customizing the template by adding your own metadata elements. Start by removing all fields under the *Metadata* section in the navigation tree (but do not delete the section/folder). To remove a field, select the field in the navigation tree and click on the right blue arrow `>`. After removing all fields, you will obtain an empty template, ready for customization. 
   > Do NOT remove the *Metadata* section. You cannot add elements directly under the container, so this folder is necessary.
 
 ![image](img/ME_UG_v1-0-0_template_administrative_delete_field.png)
@@ -37,9 +37,9 @@ Start adding the metadata elements you need. Select the *Metadata* folder in the
 ![image](img/ME_UG_v1-0-0_template_administrative_field_types.png)
 
 Once created, add the following information on the metadata element:
-- ***Key***: The *Key* defines the JSON path that will be used for storing the metadata. This is the identifier of the metadata element. It can only contain alphanumeric values. The key must be unique to each metadata element within the template.
-- ***Label***: Give a label to the new element (replace "untitled")
-- All other components of the page are identical to project templates. See section **Designing templates**.
+- ***Key***: The *Key* is the name under which the element will be stored in the JSON template file (the unique identifier of the metadata element). The key can only contain alphanumeric values, and must be unique to each metadata element within the template.
+- ***Label***: Give a label to the new element (replace the *untitled* label).
+- For all other components, see section **Designing templates**.
 
 ![image](img/ME_UG_v1-0-0_template_administrative_field_new_elements.png)
 
