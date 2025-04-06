@@ -56,18 +56,27 @@ To access the screen, click on SHARE in the template menu (accessed by clicking 
 
 A popup menu will open, with the option to share the template itself (tab SHARE), and to enter the list of collaborators authorized to enter content when the template is used in a project (in tab ACL). Add the collaborators, making sure to give them **Edit** permission.
 
-(![image](img/ME_UG_v1-0-0_template_administrative_share_popup.png)
+![image](img/ME_UG_v1-0-0_template_administrative_share_popup.png)
 
 In any project where the template is activated, the administrative template will be displayed in the navigation bar. Authorized users listed in ACL will be able to enter and edit content.
 
 ![image](img/ME_UG_v1-0-0_template_administrative_in_project.png)
 
 
-## Entering content in administrative templates
+## Adding administrative templates to a project 
 
-- Assign metadata templates to a project (Home page - Administrative metadata"
-- Will be shown in project navigation tree
-- To be filled by authorized person (usally not a data curator)
-- All accessible vi API; can automate tasks
+Administrative metadata templates are added to a project by selecting one or multiple administrative templates in the *Templates* frame of the project home page.
+
+![image](ME_UG_v1-0-0_template_administrative_template_frame.png)
+
+The added templates will be displayed in the navigation tree, under section *Administrative templates*.
+
+To remove a template from a project, select the template in the navigation tree and click on `DELETE`.
+
+![image](img/ME_UG_v1-0-0_template_administrative_navigation_delete.png)
+
+Content can then be filled out by an authorized person. 
+
+The content entered in the template can be exported as JSON, and is accessible via API (see chapter **Metadata Editor API**.
    
-See section ***Administrative metadata*** in chapter **Documenting data - General instructions**
+See also section ***Administrative metadata*** in chapter **Documenting data - General instructions**
