@@ -58,10 +58,6 @@ A popup menu will open, with the option to share the template itself (tab SHARE)
 
 ![image](img/ME_UG_v1-0-0_template_administrative_share_popup.png)
 
-In any project where the template is activated, the administrative template will be displayed in the navigation bar. Authorized users listed in ACL will be able to enter and edit content.
-
-![image](img/ME_UG_v1-0-0_template_administrative_in_project.png)
-
 
 ## Adding administrative templates to a project 
 
