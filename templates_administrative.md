@@ -63,7 +63,7 @@ A popup menu will open, with the option to share the template itself (tab SHARE)
 
 Administrative metadata templates are added to a project by selecting one or multiple administrative templates in the *Templates* frame of the project home page.
 
-![image](ME_UG_v1-0-0_template_administrative_template_frame.png)
+![image](img/ME_UG_v1-0-0_template_administrative_template_frame.png)
 
 The added templates will be displayed in the navigation tree, under section *Administrative templates*.
 
