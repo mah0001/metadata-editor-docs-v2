@@ -28,7 +28,7 @@ After logging in, click on your username in the top menu to open a dropdown menu
 
   You can also generate an API key from this page. An API key is required only if you plan to manage metadata programmatically using the Metadata Editor’s API with a programming language such as R or Python.
 
-  ⚠️ Important: **Keep your API key confidential**, as it embeds information about your profile and permissions. If you suspect that your API key has been compromised, delete it immediately and generate a new one. Refer to the section *The Metadata Editor API* for more details.
+  > ⚠️ Important: **Keep your API key confidential**. It is equivalent to a password to which your profile and permissions are associated. **If you suspect that your API key has been compromised, delete it immediately and generate a new one.** Refer to the section *The Metadata Editor API* for more details.
 
 - `Password`
 
