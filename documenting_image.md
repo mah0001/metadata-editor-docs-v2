@@ -108,89 +108,74 @@ Edit the thumbnail by selecting an image. It is highly recommended to select the
 
 ![image](img/ME_UG_v1-0-0_documenting_image_dcmi_information_on_metadata.png)
 
+
 ### Fill out the DCMI and additional sections (image description)
 
 We provide here some description and recommendations for the key metadata elements in the DCMI template.
 
-- **`type`** The Dublin Core schema is flexible and versatile, and can be used to document different types of resources. This element is used to document the type of resource being documented. The DCMI provides a list of suggested categories, including "image" which is the relevant type to be entered here. Some users may want to be more specific in the description of the type of resource, for example distinguishing color from black & white images. This distinction should not be made in this element; another element can be used for such purpose (like tags and tag groups). 
+**IMAGE DESCRIPTION** 
 
-- **`title`** The title of the photo. 
+- **`Resource type`** (*type*) The Dublin Core schema is flexible and versatile, and can be used to document different types of resources. This element is used to document the type of resource being documented. The DCMI provides a list of suggested categories, including "image" which is the relevant type to be entered here. Some users may want to be more specific in the description of the type of resource, for example distinguishing color from black & white images. This distinction should not be made in this element; another element can be used for such purpose (like tags and tag groups). 
 
-- **`caption`** A caption for the photo. 
+- **`date`** (*date*) The date when the photo was taken / the image was created, preferably entered in ISO 8601 format.
 
-- **`description`** A brief description of the content depicted in the image. This element will typically provide more detailed information than the title or caption. Note that other elements can be used to provide a more specific and "itemized" description of an image; the element `keywords` for example can be used to list labels associated with an image (possibly generated in an automated manner using machine learning tools).
+- **`Title`** (*title*) The title of the photo. 
 
-- **`topics`** The `topics` field indicates the broad substantive topic(s) that the image represents. A topic classification facilitates referencing and searches in electronic survey catalogs. Topics should be selected from a standard controlled vocabulary such as the [Council of European Social Science Data Archives (CESSDA) thesaurus](https://vocabularies.cessda.eu/vocabulary/TopicClassification).
-  - **`id`** The unique identifier of the topic. It can be a sequential number, or the ID of the topic in a controlled vocabulary.
-  - **`name`** The label of the topic associated with the data.  
-  - **`parent_id`** When a hierarchical (nested) controlled vocabulary is used, the `parent_id` field can be used to indicate a higher-level topic to which this topic belongs.
-  - **`vocabulary`** The name of the controlled vocabulary used, if any. 
-  - **`uri`** A link to the controlled vocabulary mentioned in field `vocabulary'.  
+- **`Caption`** (*caption*) A caption for the photo. 
 
-- **`keywords`** Words or phrases that describe salient aspects of an image content. Can be used for building keyword indexes and for classification and retrieval purposes. A controlled vocabulary can be employed. Keywords should be selected from a standard thesaurus, preferably an international, multilingual thesaurus.  
-  - **`name`** Keyword (or phrase). Keywords summarize the content or subject matter of the image. 
-  - **`vocabulary`** Controlled vocabulary from which the keyword is extracted, if any.  
-  - **`uri`** The URI of the controlled vocabulary used, if any.  
+- **`Description`** (*description*) A brief description of the content depicted in the image. This element will typically provide more detailed information than the title or caption. Note that other elements can be used to provide a more specific and "itemized" description of an image; the element `keywords` for example can be used to list labels associated with an image (possibly generated in an automated manner using machine learning tools).
 
-- **`creator`** The name of the person (or organization) who has taken the photo or created the image.
+- **`Keywords`** (*keywords*) Words or phrases that describe salient aspects of an image content. Can be used for building keyword indexes and for classification and retrieval purposes. A controlled vocabulary can be employed. Keywords should be selected from a standard thesaurus, preferably an international, multilingual thesaurus.  
+  - **`Keyword`** (*name*) Keyword (or phrase). Keywords summarize the content or subject matter of the image. 
+  - **`Vocabulary`** (*vocabulary*) Controlled vocabulary from which the keyword is extracted, if any.  
+  - **`URL`** (*uri*) The URI of the controlled vocabulary used, if any.  
 
-- **`contributor`** The contributor could be a person or organization, possibly a sponsoring organizations.
+- **`Topics`** (*topics*) The `topics` field indicates the broad substantive topic(s) that the image represents. A topic classification facilitates referencing and searches in electronic survey catalogs. Topics should be selected from a standard controlled vocabulary such as the [Council of European Social Science Data Archives (CESSDA) thesaurus](https://vocabularies.cessda.eu/vocabulary/TopicClassification).
+  - **`ID`** (*id*) The unique identifier of the topic. It can be a sequential number, or the ID of the topic in a controlled vocabulary.
+  - **`Topic`** (*name*) The label of the topic associated with the data.  
+  - **`Parent ID`** (*parent_id*) When a hierarchical (nested) controlled vocabulary is used, the `parent_id` field can be used to indicate a higher-level topic to which this topic belongs.
+  - **`Vocabulary`** (*vocabulary*) The name of the controlled vocabulary used, if any. 
+  - **`URL`** (*uri*) A link to the controlled vocabulary mentioned in field `vocabulary'.  
 
-- **`publisher`** The person or organization who publish the image.
+- **`country`** (*country*) The country shown in the image, if applicable. This information is highly relevant and will often be used as a filter (facet) in data catalogs. It is thus a "Recommended" field. An image will only represent part of a country, but we still want to capture this information in the metadata. Note that many organizations have their own policies on the naming and spelling of countries/regions/economies/territories, which data curators will have to comply with. In rare instances, the image may cover more than one country. The element is repeatable; multiple countries can be entered.
+  - **`Name`** (*name*) The name of the country/economy where the photo was taken.
+  - **`Code`** (*code*) The code of the country/economy mentioned in `name`. This will preferably be the ISO country code.  
 
-- **`date`** The date when the photo was taken / the image was created, preferably entered in ISO 8601 format.
+- **`Geographic coverage`** (*coverage*) In the Dublin Core, the coverage can be either temporal or geographic. In the use of the schema, `coverage` is used to document the geographic coverage of the image. This element complements the `country` element, and allows more specific information to be provided.
 
-- **`country`**
-  - **`name`** The name of the country/economy where the photo was taken.
-  - **`code`** The code of the country/economy mentioned in `name`. This will preferably be the ISO country code.  
+- **`GPS position`** The geographic location where the photo was taken. Some digital cameras equipped with GPS can, when the option is activated, capture and store in the EXIF metadata the exact geographic location where the photo was taken. 
+  - **`GPS latitude`** (*latitude*) The latitude of the geographic location where the photo was taken.
+  - **`GPS longitude`** (*longitude*) The longitude of the geographic location where the photo was taken.
+  - **`GPS altitude`** (*altitude*) The altitude of the geographic location where the photo was taken.  
 
-- **`coverage`** In the Dublin Core, the coverage can be either temporal or geographic. In the use of the schema, `coverage` is used to document the geographic coverage of the image. This element complements the `country` element, and allows more specific information to be provided.
+- **`Format`** (*format*) This refers to the image file format. It is typically expressed using a MIME format.
 
-- **`gps`** The geographic location where the photo was taken. Some digital cameras equipped with GPS can, when the option is activated, capture and store in the EXIF metadata the exact geographic location where the photo was taken. 
-  - **`latitude`** The latitude of the geographic location where the photo was taken.
-  - **`longitude`** The longitude of the geographic location where the photo was taken.
-  - **`altitude`** The altitude of the geographic location where the photo was taken.  
-      
-- **`format`** This refers to the image file format. It is typically expressed using a MIME format.
+- **`Languages`** (*languages*) The language(s) in which the image metadata (caption, title) is provided. This is a block of two elements (at least one must be provided for each language).
+  - **`Name`** (*name*) The name of the language.
+  - **`Code`** (*code*) The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.   
 
-- **`languages`** The language(s) in which the image metadata (caption, title) is provided. This is a block of two elements (at least one must be provided for each language).
-  - **`name`** The name of the language.
-  - **`code`** The code of the language. The use of [ISO 639-2](https://www.loc.gov/standards/iso639-2/php/code_list.php) (the alpha-3 code in Codes for the representation of names of languages) is recommended. Numeric codes must be entered as strings.   
+- **`Source`** (*source*) A related resource from which the described image is derived.
 
-- **`relations`** A list of related resources (images or of other type)
-  - **`name`** The name (title) of the related resource.
-  - **`type`** A brief description of the type of relation. A controlled vocabulary could be used.
-  - **`uri`** A link to the related resource being described.  
+- **`Relations`** (*relations*) A list of related resources (images or of other type)
+  - **`Name`** (*name*) The name (title) of the related resource.
+  - **`Type`** (*type*) A brief description of the type of relation. A controlled vocabulary could be used.
+  - **`URL`** (*uri*) A link to the related resource being described.  
 
-- **`rights`** The copyrights for the photograph. License is in another (common) element.
+- **`Note`** (*note*) Any additional information on the image, not captured in one of the other metadata elements.
 
-- **`source`** A related resource from which the described image is derived.
+**AUTHORS AND RIGHTS**
 
-- **`note`** Any additional information on the image, not captured in one of the other metadata elements.
+- **`Creator`** (*creator*) The name of the person (or organization) who has taken the photo or created the image.
+
+- **`Contributor`** (*contributor*) The contributor could be a person or organization, possibly a sponsoring organizations.
+
+- **`Publisher`** (*publisher*) The person or organization who publish the image.
+
+- **`Rights`** (*rights*) The copyrights for the photograph. License is in another (common) element.
+
   
-- **`license`** The license under which the image is published.
-  - **`name`** The name of the license.
-  - **`uri`** A URL where detailed information on the license / terms of use can be found.  
-  
-- **`album`** If your catalog contains many images, you will likely want to group them by album. Albums are collections of images organized by theme, period, location, photographer, or other criteria. One image can belong to more than one album. Albums are thus "virtual collections". 
-  - **`name`** A short name (label) given to the album.
-  - **`description`** A brief description of the album.
-  - **`owner`** Identification of the owner/custodian of the album. This can be the name of a person or an organization.
-  - **`uri`** A URL for the album.  
-
-### Fill out the *Tags* section
-
-
-### Add the external resources
-
-
-### Add information on provenance
-
-The **Provenance** container is used to document how, frow where, and when the image was acquired. It is used to ensure traceability. See section "Documenting - General instructions" for more information.
-
-
-
 ## Documenting an image using the IPTC option
+
 
 ### Create a new project
 
@@ -216,9 +201,9 @@ We provide here some description and recommendations for the key metadata elemen
 
 **TITLE STATEMENT**
                    
-- **`title`** (*tite*) The title is a shorthand reference for the digital image. It provides a short verbal and human readable name which can be a text and/or a numeric reference. It is not the same as the Headline (see below). Some may use the `title` field to store the file name of the image, though the field may be used in many ways. This element should not be used to provide the unique identifier of the image.
+- **`Title`** (*tite*) The title is a shorthand reference for the digital image. It provides a short verbal and human readable name which can be a text and/or a numeric reference. It is not the same as the Headline (see below). Some may use the `title` field to store the file name of the image, though the field may be used in many ways. This element should not be used to provide the unique identifier of the image.
 
-- **`headline`** (*headline*) A brief publishable summary of the contents of the image. Note that a headline is not the same as a title.
+- **`Headline`** (*headline*) A brief publishable summary of the contents of the image. Note that a headline is not the same as a title.
 
 - **`Globally unique identifier`** (*digitalImageGuid*) A globally unique identifier for the image. This identifier is created and applied by the creator of the digital image at the time of its creation. This value shall not be changed after that time. The identifier can be generated using an algorithm that would guarantee that the created identifier is globally unique. Device that create digital images like digital or video cameras or scanners usually create such an identifier at the time of the creation of the digital data, and add it to the metadata embedded in the image file (e.g., the EXIF metadata).IPTC’s requirements for unique ids are as follows:
   - It must be globally unique. Algorithms for this purpose exist.
@@ -242,8 +227,8 @@ We provide here some description and recommendations for the key metadata elemen
 - **`Source`** (*Source*) The name of a person or party who has a role in the content supply chain. The `source` can be different from the `creator` and from the entities listed in the Copyright Notice. 
 
 - **`Supplier`** (*supplier*) The supplier of the image (person or organization)
-  - **`name`** The name of the supplier of the image (person or organization). 
-  - **`identifiers`** The identifier for the most recent supplier of this image. This will not necessarily be the creator or the owner of the image.  
+  - **`Name`** (*name*) The name of the supplier of the image (person or organization). 
+  - **`Identifier`** (*identifiers*) The identifier for the most recent supplier of this image. This will not necessarily be the creator or the owner of the image.  
 
 - **`Supplier ID** (*imageSupplierImageId*) A unique identifier assigned by the image supplier to the image.
   
@@ -252,21 +237,21 @@ We provide here some description and recommendations for the key metadata elemen
 - **`Caption writer`** (*captionWriter*) An identifier, or the name, of the person involved in writing, editing or correcting the description of the image. 
 
 - **`Contact`** (*creatorContactInfo*) The creator’s contact information provides all necessary information to get in contact with the creator of this image and comprises a set of elements for proper addressing. Note that if the creator is also the licensor, his or her contact information should be provided in the `licensor` fields.  
-  - **`country`** The country name for the address of the person that created this image. 
-  - **`emailwork`** The work email address(es) for the creator of the image. Multiple email addresses can be given, in which case they should be separated by a comma. 
-  - **`region`** The state or province for the address of the creator of the image. 
-  - **`phonework`** The work phone number(s) for the creator of the image. Use the international format including the country code, such as +1 (123) 456789. Multiple numbers can be given, in which case they should be separated by a comma. 
-  - **`weburlwork`** The work web address for the creator of the image. Multiple addresses can be given, in which case they should be separated by a comma. 
-  - **`address`** The address of the creator of the image. This may comprise a company name. 
-  - **`city`** The city for the address of the person that created the image. 
-  - **`postalCode`** Enter the local postal code for the address of the person who created the image.
+  - **`country`** (*country*) The country name for the address of the person that created this image. 
+  - **`emailwork`** (*emailwork*) The work email address(es) for the creator of the image. Multiple email addresses can be given, in which case they should be separated by a comma. 
+  - **`region`** (*region*) The state or province for the address of the creator of the image. 
+  - **`phonework`** (*phonework*) The work phone number(s) for the creator of the image. Use the international format including the country code, such as +1 (123) 456789. Multiple numbers can be given, in which case they should be separated by a comma. 
+  - **`weburlwork`** (*weburlwork*) The work web address for the creator of the image. Multiple addresses can be given, in which case they should be separated by a comma. 
+  - **`address`** (*address*) The address of the creator of the image. This may comprise a company name. 
+  - **`city`** (*city*) The city for the address of the person that created the image. 
+  - **`postalCode`** (*postalCode*) Enter the local postal code for the address of the person who created the image.
 
 
 **CONTENT DESCRIPTION**
     
 - **`Description`** (*description*) A textual description, including captions, of the image. This describes the who, what, and why of what is happening in this image. This might include names of people, and/or their role in the action that is taking place within the image. Example: "The president of the Metadata Association delivers the keynote address".
 
-- **`Scene codes`** The `sceneCodes` describe the scene of a photo content. The [IPTC Scene-NewsCodes](http://cv.iptc.org/newscodes/scene) controlled vocabulary (published under a Creative Commons Attribution (CC BY) 4.0 license) should be used, where a scene is represented as a string of 6 digits. 
+- **`Scene codes`** (*sceneCodes*) The `sceneCodes` describe the scene of a photo content. The [IPTC Scene-NewsCodes](http://cv.iptc.org/newscodes/scene) controlled vocabulary (published under a Creative Commons Attribution (CC BY) 4.0 license) should be used, where a scene is represented as a string of 6 digits. 
    
   | code  | Label            | Description                       |
   |:-----:|:----------------:|-----------------------------------|
@@ -296,9 +281,9 @@ We provide here some description and recommendations for the key metadata elemen
   |012400 | movie scene      | Photos taken during the shooting of a movie or TV production. |
   
 - **`Scene codes labelled`** (*SceneCodesLabelled*) The `Scene codes` element described above only allows for the capture of codes. To improve discoverability (by indexing important keywords), not only the scene codes but also the scene description should be provided. The IPTC standard does not provide an element that allows the scene label and description to be entered. The `Scene codes labelled` is an element that we added to our schema. Ideally, curators will enter the scene codes in the element `Scene codes` to maintain full compatibility with the IPTC, and complement that information by also entering the codes and their description in the `Scene codes labelled` element. 
-  - **`code`** The code for the scene of a photo content. The [IPTC Scene-NewsCodes](http://cv.iptc.org/newscodes/scene) controlled vocabulary (published under a Creative Commons Attribution (CC BY) 4.0 license) should be used, where a scene is represented as a string of 6 digits. See table above. 
-  - **`label`** The label of the scene. See table above for examples. 
-  - **`description`** A more detailed description of the scene. See table above for examples.  
+  - **`Code`** (*code*) The code for the scene of a photo content. The [IPTC Scene-NewsCodes](http://cv.iptc.org/newscodes/scene) controlled vocabulary (published under a Creative Commons Attribution (CC BY) 4.0 license) should be used, where a scene is represented as a string of 6 digits. See table above. 
+  - **`Label`** (*label*) The label of the scene. See table above for examples. 
+  - **`Description`** (*description*) A more detailed description of the scene. See table above for examples.  
 
 - **`Subject codes`** (*subjectCodes*) Specifies one or more subjects from the [IPTC Subject-NewsCodes](http://cv.iptc.org/newscodes/subjectcode) controlled vocabulary to categorize the image. Each Subject is represented as a string of 8 digits. The vocabulary consists of about 1400 terms organized into 3 levels (users can decide to use only the first, or the first two levels; the more detail is provided, the better the discoverability of the image). The first level of the controlled vocabulary is as follows:
       
@@ -351,32 +336,32 @@ We provide here some description and recommendations for the key metadata elemen
   |05011004|     madrasa            | A school for teaching Islam|
  
 - **`Subject codes labelled`** (*subjectCodesLabelled*) The `Subject codes` element described above only allows for the capture of codes. To improve discoverability (by indexing important keywords), not only the subject codes but also the subject description should be provided. The IPTC standard does not provide an element that allows the subject label and description to be entered. The `subjectCodesLabelled` is an element that we added to our schema. Ideally, curators will enter the subject codes in the element `subjectCodes` to maintain full compatibility with the IPTC, and complement that information by also entering the codes and their description in the `Subject codes labelled` element.   
-  - **`code`** Specifies one or more subjects from the [IPTC Subject-NewsCodes](http://cv.iptc.org/newscodes/subjectcode) controlled vocabulary to categorize the image. Each Subject is represented as a string of 8 digits. The vocabulary consists of about 1400 terms organized into 3 levels (users can decide to use only the first, or the first two levels; the more detail is provided, the better the discoverability of the image). See examples in the table above. 
-  - **`label`** The label of the subject. See table above for examples. 
-  - **`description`** A more detailed description of the subject. See table above for examples.  
+  - **`Code`** (*code*) Specifies one or more subjects from the [IPTC Subject-NewsCodes](http://cv.iptc.org/newscodes/subjectcode) controlled vocabulary to categorize the image. Each Subject is represented as a string of 8 digits. The vocabulary consists of about 1400 terms organized into 3 levels (users can decide to use only the first, or the first two levels; the more detail is provided, the better the discoverability of the image). See examples in the table above. 
+  - **`Label`** (*label*) The label of the subject. See table above for examples. 
+  - **`Description`** (*description*) A more detailed description of the subject. See table above for examples.  
 
 - **`Keywords`** (*keywords*) Keywords (terms or phrases) to express the subject of the image. Keywords do not have to be taken from a controlled vocabulary.  
 
 - **``Event name``** (*eventName*) The name or a brief description of the event where the image was taken. If this is a sub-event of a larger event, mention both in the description. For example: "Opening statement, 1st International Conference on Metadata Standards, New York, November 2021". 
 
 - **`Location shown`** (*locationsShown*) This block of elements is used to document the location shown in the image. This information should be provided with as much detail as possible. It contains elements that can be used to provide a "nested" description of the location, from a high geographic level (world region) down to a very specific location (city and sub-location within a city). 
-  - **`name`** The full name of the location. 
-  - **`identifiers`** A globally unique identifier of the location shown. 
-  - **`worldRegion`** The name of a world region. This element is at the first (top) level of the top-down geographical hierarchy. 
-  - **`countryName`** The name of a country of a location. This element is at the second level of a top-down geographical hierarchy.  
-  - **`countryCode`** The ISO code of the country mentioned in `countryName`.   
-  - **`provinceState`** The name of a sub-region of the country - for example a province or a state name. This element is at the third level of a top-down geographical hierarchy.     
-  - **`city`** The name of the city. This element is at the fourth level of a top-down geographical hierarchy.  
-  - **`sublocation`** The sublocation name could either be the name of a sublocation to a city or the name of a well known location or (natural) monument outside a city. This element is at the fifth (lowest) level of a top-down geographical hierarchy.  
-  - **`gpsAltitude`** The altitude in meters of a WGS84 based position of this location. 
-  - **`gpsLatitude`** Latitude of a WGS84 based position of this location (in some cases, this information may be contained in the EXIF metadata). 
-  - **`gpsLongitude`** Longitude of a WGS84 based position of this location (in some cases, this information may be contained in the EXIF metadata).  
+  - **`Mame`** (*name*) The full name of the location. 
+  - **`Identifier`** (*identifiers*) A globally unique identifier of the location shown. 
+  - **`World region`** (*worldRegion*) The name of a world region. This element is at the first (top) level of the top-down geographical hierarchy. 
+  - **`Country name`** (*countryName*) The name of a country of a location. This element is at the second level of a top-down geographical hierarchy.  
+  - **`Country code`** (*countryCode*) The ISO code of the country mentioned in `countryName`.   
+  - **`Sub-region`** (*provinceState*) The name of a sub-region of the country - for example a province or a state name. This element is at the third level of a top-down geographical hierarchy.     
+  - **`City`** (*city*) The name of the city. This element is at the fourth level of a top-down geographical hierarchy.  
+  - **`Sub-location`** (*sublocation*) The sublocation name could either be the name of a sublocation to a city or the name of a well known location or (natural) monument outside a city. This element is at the fifth (lowest) level of a top-down geographical hierarchy.  
+  - **`GPS altitude`** (*gpsAltitude*) The altitude in meters of a WGS84 based position of this location. 
+  - **`GPS latitude`** (*gpsLatitude*) Latitude of a WGS84 based position of this location (in some cases, this information may be contained in the EXIF metadata). 
+  - **`GPS longitude`** (*gpsLongitude*) Longitude of a WGS84 based position of this location (in some cases, this information may be contained in the EXIF metadata).  
 
 - **`Genres`** (*genres*) Artistic, style, journalistic, product or other genre(s) of the image (expressed by a term from any Controlled Vocabulary)
-  - **`cvId`** The globally unique identifier of the Controlled Vocabulary the term is from.  
-  - **`cvTermName`** The natural language name of the term from a Controlled Vocabulary.  
-  - **`cvTermId`** The globally unique identifier of the term from a Controlled Vocabulary.  
-  - **`cvTermRefinedAbout`** Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary. May be used to refine the generic about relationship.  
+  - **`Vocabulary ID`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+  - **`term label`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+  - **`Term ID`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+  - **`About`** (*cvTermRefinedAbout*) Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary. May be used to refine the generic about relationship.  
 
 - **`Intellectual genre`** (*intellectualGenre*) A term to describe the nature of the image in terms of its intellectual or journalistic characteristics (for example "actuality", "interview", "background", "feature", "summary", "wrapup" for journalistic genres, or "daybook", "obituary", "press release", "transcript" for news category related genres. It is advised to use terms from a controlled vocabulary such as the [NewsCodes Scheme](http://cv.iptc.org/newscodes/genre) published by the IPTC under a Creative Commons Attribution (CC BY) 4.0 license. 
 
@@ -443,81 +428,81 @@ We provide here some description and recommendations for the key metadata elemen
 - **`Copyright notice`** (*copyrightNotice*) Contains any necessary copyright notice for claiming the intellectual property for this photograph and should identify the current owner of the copyright for the photograph. Other entities like the creator of the photograph may be added in the corresponding field. Notes on usage rights should be provided in "Rights usage terms". Example: ©2008 Jane Doe. If the copyright ownership must be expressed in a more controlled manner, use the fields "Copyright Owner", "Copyright Owner ID", "Copyright Owner Name" described below instead of the `copyrightNotice` element.  
 
 - **`Copyright owners`** (*copyrightOwners*) Owner or owners of the copyright in the licensed image, described in a structured format (as an alternative to the element `copyrightNotice` described above. This block serves the same purpose of identifying the rights holder/s for the image. The Copyright Owner, Image Creator and Licensor may be the same or different entities.
-  - **`name`** The name of the owner of the copyright in the licensed image. 
-  - **`role`** The role the entity.   
-  - **`identifiers`** The identifier of the owner of the copyright in the licensed image.  
+  - **`Name`** (*name*) The name of the owner of the copyright in the licensed image. 
+  - **`Role`** (*role*) The role the entity.   
+  - **`Identifier`** (*identifiers*) The identifier of the owner of the copyright in the licensed image.  
 
 - **`Usage terms`** (*usageTerms*) The licensing parameters of the image expressed in free-text. Enter instructions on how this image can legally be used. The PLUS fields of the IPTC Extension can be used in parallel to express the licensed usage in more controlled terms. 
 
 - **`Rights expression`** (*embdEncRightsExpr*) An embedded rights expression using a rights expression language which is encoded as a string. (Embedded Encoded Rights Expression (EERE) structure)
-  - **`encRightsExpr`** Rights Expression Language ID. An identifier of the rights expression language used by the rights expression.  
-  - **`rightsExprEncType`** The encoding type of the rights expression, identified by an IANA Media Type. 
-  - **`rightsExprLangId`** An embedded rights expression using any rights expression language.  @@@@ 
+  - **`Encoded rights expression`** (*encRightsExpr*) Rights Expression Language ID. An identifier of the rights expression language used by the rights expression.  
+  - **`Encoding type`** (*rightsExprEncType*) The encoding type of the rights expression, identified by an IANA Media Type. 
+  - **`Rights expression language ID`** (*rightsExprLangId*) An embedded rights expression using any rights expression language.  @@@@ 
 https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded-encoded-rights-expression-eere-structure
    
 - **`Linked rights expression`** (*linkedEncRightsExpr*) Link to Encoded Rights Expression.
-   - **`linkedRightsExpr`** The link to a web resource representing an encoded rights expression. 
-   - **`rightsExprEncType`** The encoding type of the rights expression, identified by an IANA Media Type.  
-   - **`rightsExprLangId`** The identifer of the rights expression language used by the rights expression.  
+   - **`Link to encoded rights expression`** (*linkedRightsExpr*) The link to a web resource representing an encoded rights expression. 
+   - **`Encoding type`** (*rightsExprEncType*) The encoding type of the rights expression, identified by an IANA Media Type.  
+   - **`Rights expression language ID`** (*rightsExprLangId*) The identifer of the rights expression language used by the rights expression.  
 
 - **`Web statement rights`** (*webstatementRights*) URL referencing a web resource providing a statement of the copyright ownership and usage rights of the image.  
 
 - **`Instructions to users`** (*instructions*) Any of a number of instructions from the provider or creator to the receiver of the image which might include any of the following: embargoes and other restrictions not covered by the "Rights Usage Terms" field; information regarding the original means of capture (scanning notes, colourspace info) or other specific text information that the user may need for accurate reproduction; additional permissions required when publishing; credits for publishing if they exceed the IIM length of the credit field.  
 
 - **`Property release status`** (*propertyReleaseStatus*) This summarizes the availability and scope of property releases authorizing usage of the properties appearing in the photograph. One value should be selected from a controlled vocabulary. It is recommended to apply the value PR-UPR very carefully and to check the wording of the property release thoroughly before applying it. 
-  - **`cvId`** The globally unique identifier of the Controlled Vocabulary the term is from.  
-  - **`cvTermName`** The natural language name of the term from a Controlled Vocabulary.  
-  - **`cvTermId`** The globally unique identifier of the term from a Controlled Vocabulary.  
-  - **`cvTermRefinedAbout`** Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
+  - **`Vocabulary ID`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+  - **`Term label`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+  - **`Term ID`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+  - **`About`** (*cvTermRefinedAbout*) Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
 
 - **`Property release documents`** (*propertyReleaseDocuments*)
-  - **`aboutCvTerms`** One or more topics, themes or entities the content is about, each one expressed by a term from a controlled vocabulary. 
-  - **`cvId`** The globally unique identifier of the Controlled Vocabulary the term is from.  
-  - **`cvTermName`** The natural language name of the term from a Controlled Vocabulary.  
-  - **`cvTermId`** The globally unique identifier of the term from a Controlled Vocabulary.  
-  - **`cvTermRefinedAbout`** Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
+  - **`aboutCvTerms`** (*aboutCvTerms*) One or more topics, themes or entities the content is about, each one expressed by a term from a controlled vocabulary. 
+  - **`cvId`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+  - **`cvTermName`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+  - **`cvTermId`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+  - **`About`** (*cvTermRefinedAbout*) Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
 
 
 **ART WORK, OBJECTS, PRODUCTS IN IMAGE**
 
 - **`Art work or object`** (*artworkOrObjects*) This block provides a set of metadata elements to be used to describe the object or artwork shown in the image.
-  - **`title`** A human readable name of the object or artwork shown in the image. 
-  - **`contentDescription`** A textual description of the content depicted in the object or artwork. 
-  - **`physicalDescription`** A textual description of the physical characteristics of the artwork or object, without reference to the content depicted. This would be used to describe the object type, materials,  techniques, and measurements. 
-  - **`creatorNames`** The name of the person(s) (possibly an organization) who created the object or artwork shown in the image. 
-  - **`creatorIdentifiers`** One or multiple globally unique identifier(s) for the artist who created the artwork or object shown in the image. This could be an identifier issued by an online registry of persons or companies. Make sure to enter these identifiers in the exact same sequence as the names entered in the field `creatorNames`. 
-  - **`contributionDescription`** A description of any contributions made to the artwork or object. It should include the type, date and location of contribution, and details about the contributor. 
-  - **`stylePeriod`** The style, historical or artistic period, movement, group, or school whose characteristics are represented in the artwork or object. It is advised to take the terms from a Controlled Vocabulary. 
-  - **`dateCreated`** The date and optionally the time the artwork or object shown in the image was created. 
-  - **`circaDateCreated`** The approximate date or range of dates associated with the creation and production of an artwork or object or its components. 
-  - **`source`** The name of the organization or body holding and registering the artwork or object in this image for inventory purposes. 
-  - **`sourceInventoryNr`** The inventory number issued by the organization or body holding and registering the artwork or object in the image. 
-  - **`sourceInventoryUrl`** A reference URL for the metadata record of the inventory maintained by the Source. 
-  - **`currentCopyrightOwnerName`** The name of the current owner of the copyright of the artwork or object. 
-  - **`currentCopyrightOwnerIdentifier`** A globally unique identifier for the current copyright owner e.g. issued by an online registry of persons or companies. 
-  - **`copyrightNotice`** Any necessary copyright notice for claiming the intellectual property for artwork or an object in the image and should identify the current owner of the copyright of this work with associated intellectual property rights. 
-  - **`currentLicensorName`** Name of the current licensor of the artwork or object. 
-  - **`currentLicensorIdentifier`** A globally unique identifier for the current licensor e.g. issued by an online registry of persons or companies.  
+  - **`Title`** (*title*) A human readable name of the object or artwork shown in the image. 
+  - **`Content description`** (*contentDescription*) A textual description of the content depicted in the object or artwork. 
+  - **`Physical description`** (*physicalDescription*) A textual description of the physical characteristics of the artwork or object, without reference to the content depicted. This would be used to describe the object type, materials,  techniques, and measurements. 
+  - **`Creator name`** (*creatorNames*) The name of the person(s) (possibly an organization) who created the object or artwork shown in the image. 
+  - **`Creator identifier`** (*creatorIdentifiers*) One or multiple globally unique identifier(s) for the artist who created the artwork or object shown in the image. This could be an identifier issued by an online registry of persons or companies. Make sure to enter these identifiers in the exact same sequence as the names entered in the field `creatorNames`. 
+  - **`Contribution description`** (*contributionDescription*) A description of any contributions made to the artwork or object. It should include the type, date and location of contribution, and details about the contributor. 
+  - **`Style period`** (*stylePeriod*) The style, historical or artistic period, movement, group, or school whose characteristics are represented in the artwork or object. It is advised to take the terms from a Controlled Vocabulary. 
+  - **`Date created`** (*dateCreated*) The date and optionally the time the artwork or object shown in the image was created. 
+  - **`Circa date created`** (*circaDateCreated*) The approximate date or range of dates associated with the creation and production of an artwork or object or its components. 
+  - **`Source`** (*source*) The name of the organization or body holding and registering the artwork or object in this image for inventory purposes. 
+  - **`Source inventory number`** (*sourceInventoryNr*) The inventory number issued by the organization or body holding and registering the artwork or object in the image. 
+  - **`Source inventory URL`** (*sourceInventoryUrl*) A reference URL for the metadata record of the inventory maintained by the Source. 
+  - **`Current copyright owner name`** (*currentCopyrightOwnerName*) The name of the current owner of the copyright of the artwork or object. 
+  - **`Current copyright owner identifier`** (*currentCopyrightOwnerIdentifier*) A globally unique identifier for the current copyright owner e.g. issued by an online registry of persons or companies. 
+  - **`Copyright notice`** (*copyrightNotice*) Any necessary copyright notice for claiming the intellectual property for artwork or an object in the image and should identify the current owner of the copyright of this work with associated intellectual property rights. 
+  - **`Current licensor name`** (*currentLicensorName*) Name of the current licensor of the artwork or object. 
+  - **`Current licensor ID`** (*currentLicensorIdentifier*) A globally unique identifier for the current licensor e.g. issued by an online registry of persons or companies.  
 
 - **`Products shown`** (*productsShown*) Details about a product shown in the image.
-  - **`description`** A textual description of the product. 
-  - **`gtin`** The [Global Trade Item Number (GTIN)](https://www.gs1.org/standards/id-keys/gtin) of the product (GTIN-8 to GTIN-14 codes can be used). 
-  - **`name`** The name of the product.  
-
+  - **`Name`** (*name*) The name of the product.  
+  - **`Description`** (*description*) A textual description of the product. 
+  - **`GTIN`** (*gtin*) The [Global Trade Item Number (GTIN)](https://www.gs1.org/standards/id-keys/gtin) of the product (GTIN-8 to GTIN-14 codes can be used). 
+  
 
 **PERSONS AND MODELS IN IMAGE**
 
 - **`Persons in image (list)`** (*personInImageNames*) This repeatable block of elements is used to provide information on the person(s) shown in the image.    
 
-- **``** (*personsShown*) Details about person(s) shown in the image. It is not required to list all, just those details which can be recognized.
-  - **`name`** The name of a person shown in the image. 
-  - **`description`** A textual description of the person. For example, you may include actions taken, emotional expressions shown and more. 
-  - **`identifiers`** Globally Unique identifiers of the person, such as those from [WikiData](https://www.wikidata.org/wiki/Wikidata:Main_Page).  
-  - **`characteristics`** A property or trait of the person, provided as a term selected from a Controlled Vocabulary. 
-    - **`cvId`** The globally unique identifier of the Controlled Vocabulary the term is from.  
-    - **`cvTermName`** The natural language name of the term from a Controlled Vocabulary.  
-    - **`cvTermId`** The globally unique identifier of the term from a Controlled Vocabulary.  
-    - **`cvTermRefinedAbout`** The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.   
+- **`Persons shown (itemized)`** (*personsShown*) Details about person(s) shown in the image. It is not required to list all, just those details which can be recognized.
+  - **`Name`** (*name*) The name of a person shown in the image. 
+  - **`Description`** (*description*) A textual description of the person. For example, you may include actions taken, emotional expressions shown and more. 
+  - **`Identifiers`** (*identifiers*) Globally Unique identifiers of the person, such as those from [WikiData](https://www.wikidata.org/wiki/Wikidata:Main_Page).  
+  - **`Characteristics`** (*characteristics*) A property or trait of the person, provided as a term selected from a Controlled Vocabulary. 
+    - **`Term label`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+    - **`Term ID`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+    - **`Vocabulary ID`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+    - **`About`** (*cvTermRefinedAbout*) The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.   
 
 - **`Model ages`** (*modelAges*) Age of the human model(s) at the time the image was taken. Be aware of any legal implications of providing ages for young models. Ages below 18 years should not be included.  
 
@@ -528,10 +513,10 @@ https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded
 - **`Model release documents`** (*modelReleaseDocuments*) Identifier associated with each Model Release.   
 
 - **`Model release status`** (*modelReleaseStatus*) Summarizes the availability and scope of model releases authorizing usage of the likenesses of persons appearing in the photograph.
-  - **`cvId`** The globally unique identifier of the Controlled Vocabulary the term is from.  
-  - **`cvTermName`** The natural language name of the term from a Controlled Vocabulary.  
-  - **`cvTermId`** The globally unique identifier of the term from a Controlled Vocabulary.  
-  - **`cvTermRefinedAbout`** The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary. May be used to refine the generic about relationship.   
+  - **`Term label`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+  - **`Term ID`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+  - **`Vocabulary ID`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+  - **`About`** (*cvTermRefinedAbout*) The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary. May be used to refine the generic about relationship.   
 
 
 **ORGANIZATIONS IN IMAGE**
@@ -560,24 +545,40 @@ https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded
 - **`Maximum available width`** (*maxAvailWidth*) The maximum available width in pixels of the original photo from which this photo has been derived by downsizing.
   
 - **`Registry entries`** (*registryEntries*) A structured element used to provide cataloguing information (i.e. an entry in a registry). It includes the unique identifier for the image issued by the registry and the registry’s organization identifier. 
-  - **`role`** An identifier of the reason and/or purpose for this Registry Entry.
-  - **`assetIdentifier`** A unique identifier created by the registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier is linked to a corresponding Registry Organization Identifier. Enter the unique identifier created by a registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier may be globally unique by itself, but it must be unique for the issuing registry. An input to this field should be made mandatory.
-  - **`registryIdentifier`** An identifier for the registry/organization which issued the corresponding Registry Image Id.   
+  - **`Role`** (*role*) An identifier of the reason and/or purpose for this Registry Entry.
+  - **`Asset identifier`** (*assetIdentifier*) A unique identifier created by the registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier is linked to a corresponding Registry Organization Identifier. Enter the unique identifier created by a registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier may be globally unique by itself, but it must be unique for the issuing registry. An input to this field should be made mandatory.
+  - **`Registry identifier`** (*registryIdentifier*) An identifier for the registry/organization which issued the corresponding Registry Image Id.   
 
 
 ### Fill out the *License* section
 
-Enter the name and URL of the license under which the image is published (if any).
+This section is common to both the DCMI and IPTC options.
 
+- **`License`** (*license*) Enter the name and URL of the license under which the image is published (if any).
+  - **`Name`** (*name*) The name of a person shown in the image. 
+  - **`Description`** (*description*) A textual description of the person. For example, you may include actions taken, emotional expressions shown and more.
+
+    
 ### Fill out the *Albums* section
 
-Enter information on the name, description, owner, and URL of the online album(s) in which the image is published. 
+This section is common to both the DCMI and IPTC options.
+
+- **`Album`** (*album*) Enter information on the name, description, owner, and URL of the online album(s) in which the image is published. 
+  - **`Name`** (*name*) The name (label) of the album. 
+  - **`Description`** (*description*) A brief description of the album.
+  - **`Owner`** (*owner*) The owner or custodian of the album.
+  - **`URL`** (*URL*) A link (URL) to the album.
+
 
 ### Fill out the *Tags* section
 
-See section *Documenting data - General instructions*.
+This section is common to both the DCMI and IPTC options.
+
+See section **Documenting data - General instructions**.
 
 ### Add the external resources
+
+This section is common to both the DCMI and IPTC options.
 
 External resources are all materials (and links) that relate to the image. This will typically include the image file itself, possibly in multiple resolutions. If provided in only one resolution, it is recommended to provide the highest resolution available. 
 
@@ -593,6 +594,8 @@ See also section *Documentation - General instructions*.
 
 
 ### Add information on provenance
+
+This section is common to both the DCMI and IPTC options.
 
 The **Provenance** container is used to document how, frow where, and when the image was acquired. It is used to ensure traceability. See section *Documenting data - General instructions* for more information.
 
