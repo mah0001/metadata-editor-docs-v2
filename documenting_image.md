@@ -247,14 +247,14 @@ We provide here some description and recommendations for the key metadata elemen
 - **`Caption writer`** (*captionWriter*) An identifier, or the name, of the person involved in writing, editing or correcting the description of the image. 
 
 - **`Contact`** (*creatorContactInfo*) The creator’s contact information provides all necessary information to get in contact with the creator of this image and comprises a set of elements for proper addressing. Note that if the creator is also the licensor, his or her contact information should be provided in the `licensor` fields.  
-  - **`country`** (*country*) The country name for the address of the person that created this image. 
-  - **`emailwork`** (*emailwork*) The work email address(es) for the creator of the image. Multiple email addresses can be given, in which case they should be separated by a comma. 
-  - **`region`** (*region*) The state or province for the address of the creator of the image. 
-  - **`phonework`** (*phonework*) The work phone number(s) for the creator of the image. Use the international format including the country code, such as +1 (123) 456789. Multiple numbers can be given, in which case they should be separated by a comma. 
-  - **`weburlwork`** (*weburlwork*) The work web address for the creator of the image. Multiple addresses can be given, in which case they should be separated by a comma. 
-  - **`address`** (*address*) The address of the creator of the image. This may comprise a company name. 
-  - **`city`** (*city*) The city for the address of the person that created the image. 
-  - **`postalCode`** (*postalCode*) Enter the local postal code for the address of the person who created the image.
+  - **`Country`** (*country*) The country name for the address of the person that created this image. 
+  - **`Email (work)`** (*emailwork*) The work email address(es) for the creator of the image. Multiple email addresses can be given, in which case they should be separated by a comma. 
+  - **`Region (State/Province)`** (*region*) The state or province for the address of the creator of the image. 
+  - **`Phone (work)`** (*phonework*) The work phone number(s) for the creator of the image. Use the international format including the country code, such as +1 (123) 456789. Multiple numbers can be given, in which case they should be separated by a comma. 
+  - **`URL`** (*weburlwork*) The work web address for the creator of the image. Multiple addresses can be given, in which case they should be separated by a comma. 
+  - **`Address`** (*address*) The address of the creator of the image. This may comprise a company name. 
+  - **`City`** (*city*) The city for the address of the person that created the image. 
+  - **`Postal code`** (*postalCode*) Enter the local postal code for the address of the person who created the image.
 
 
 **CONTENT DESCRIPTION**
@@ -351,6 +351,12 @@ We provide here some description and recommendations for the key metadata elemen
   - **`Description`** (*description*) A more detailed description of the subject. See table above for examples.  
 
 - **`Keywords`** (*keywords*) Keywords (terms or phrases) to express the subject of the image. Keywords do not have to be taken from a controlled vocabulary.  
+
+- **`Topics`** (*aboutCvTerms*) One or more topics, themes or entities the content is about, each one expressed by a term from a controlled vocabulary. 
+  - **`Vocabulary ID`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
+  - **`Term label`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
+  - **`Term ID`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
+  - **`Details`** (*cvTermRefinedAbout*) Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
 
 - **``Event name``** (*eventName*) The name or a brief description of the event where the image was taken. If this is a sub-event of a larger event, mention both in the description. For example: "Opening statement, 1st International Conference on Metadata Standards, New York, November 2021". 
 
@@ -466,11 +472,16 @@ https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded
   - **`About`** (*cvTermRefinedAbout*) Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
 
 - **`Property release documents`** (*propertyReleaseDocuments*)
-  - **`aboutCvTerms`** (*aboutCvTerms*) One or more topics, themes or entities the content is about, each one expressed by a term from a controlled vocabulary. 
-  - **`cvId`** (*cvId*) The globally unique identifier of the Controlled Vocabulary the term is from.  
-  - **`cvTermName`** (*cvTermName*) The natural language name of the term from a Controlled Vocabulary.  
-  - **`cvTermId`** (*cvTermId*) The globally unique identifier of the term from a Controlled Vocabulary.  
-  - **`About`** (*cvTermRefinedAbout*) Refined 'about' relationship of the CV-Term. The refined 'about' relationship of the term with the content. Optionally enter a refinement of the 'about' relationship of the term with the content of the image. This must be a globally unique identifier from a Controlled Vocabulary.  
+
+- **`Contact information`** (*creatorContactInfo*) Contact information for licensing and rights.
+  - **`Country`** (*country*) The country name for the address of the person that created this image. 
+  - **`Email (work)`** (*emailwork*) The work email address(es) for the creator of the image. Multiple email addresses can be given, in which case they should be separated by a comma. 
+  - **`Region (State/Province)`** (*region*) The state or province for the address of the creator of the image. 
+  - **`Phone (work)`** (*phonework*) The work phone number(s) for the creator of the image. Use the international format including the country code, such as +1 (123) 456789. Multiple numbers can be given, in which case they should be separated by a comma. 
+  - **`URL`** (*weburlwork*) The work web address for the creator of the image. Multiple addresses can be given, in which case they should be separated by a comma. 
+  - **`Address`** (*address*) The address of the creator of the image. This may comprise a company name. 
+  - **`City`** (*city*) The city for the address of the person that created the image. 
+  - **`Postal code`** (*postalCode*) Enter the local postal code for the address of the person who created the image.
 
 
 **ART WORK, OBJECTS, PRODUCTS IN IMAGE**
