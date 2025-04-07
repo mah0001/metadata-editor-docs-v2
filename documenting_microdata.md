@@ -137,14 +137,14 @@ We provide below a description of the metadata elements contained in the `Study 
 **SCOPE**
 
 - **`Keywords`** (*keywords*) Keywords are words or phrases that describe salient aspects of a data collection's content. The addition of keywords can significantly improve the discoverability of data. Keywords can summarize and improve the description of the content or subject matter of a study. For example, keywords "poverty", "inequality", "welfare", and "prosperity" could be attached to a household income survey used to generate poverty and inequality indicators (for which these keywords may not appear anywhere else in the metadata). A controlled vocabulary can be employed. Keywords can be selected from a standard thesaurus, preferably an international, multilingual thesaurus.  
-  - **`keyword`** (*keyword*) A keyword (or phrase).  
-  - **`vocab`** (*vocab*) The controlled vocabulary from which the keyword is extracted, if any.  
-  - **`URI`** (*uri*) The URI of the controlled vocabulary used, if any. 
+  - **`Keyword`** (*keyword*) A keyword (or phrase).  
+  - **`Vocabulary`** (*vocab*) The controlled vocabulary from which the keyword is extracted, if any.  
+  - **`URL`** (*uri*) The URI of the controlled vocabulary used, if any. 
 
 - **`Topics`** (*topics*) The `topics` field indicates the broad substantive topic(s) that the study covers. A topic classification facilitates referencing and searches in on-line data catalogs.
-  - **`topic`** (**) The label of the topic. Topics should be selected from a standard controlled vocabulary such as the [Council of European Social Science Data Archives (CESSDA) Topic Classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification). 
-  - **`vocab`** (*vocab*) The specification (name including the version) of the controlled vocabulary in use. 
-  - **`uri`** (*uri*) A link (URL) to the controlled vocabulary website.  
+  - **`Topic`** (**) The label of the topic. Topics should be selected from a standard controlled vocabulary such as the [Council of European Social Science Data Archives (CESSDA) Topic Classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification). 
+  - **`Vocabulary`** (*vocab*) The specification (name including the version) of the controlled vocabulary in use. 
+  - **`URL`** (*uri*) A link (URL) to the controlled vocabulary website.  
 
 
 **UNIVERSE AND GEOGRAPHIC COVERAGE**
@@ -152,8 +152,8 @@ We provide below a description of the metadata elements contained in the `Study 
 - **`Universe`** (*universe*) The universe is the group of persons (or other units of observations, like dwellings, facilities, or other) that are the object of the study and to which any analytic results refer. The universe will rarely cover the entire population of the country. Sample household surveys, for example, may not cover homeless, nomads, diplomats, community households. Population censuses do not cover diplomats. Facility surveys may be limited to facilities of a certain type (e.g., public schools). Try to provide the most detailed information possible on the population covered by the survey/census, focusing on excluded categories of the population. For household surveys, age, nationality, and residence commonly help to delineate a given universe, but any of a number of factors may be involved, such as sex, race, income, veteran status, criminal convictions, etc. In general, it should be possible to tell from the description of the universe whether a given individual or element (hypothetical or real) is a member of the population under study.
 
 - **`Country`** (*nation*) Indicates the country or countries (or "economies", or "territories") covered in the study (but not the sub-national geographic areas). If the study covers more than one country, they will be entered separately.
-  - **`name`** (*name*) The country name, even in cases where the study does not cover the entire country.  
-  - **`abbreviation`** (*abbreviation*) The `abbreviation` will contain a country code, preferably the 3-letter [ISO 3166-1 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). 
+  - **`Name`** (*name*) The country name, even in cases where the study does not cover the entire country.  
+  - **`Code`** (*abbreviation*) The `abbreviation` will contain a country code, preferably the 3-letter [ISO 3166-1 country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3). 
 
 - **`Geographic coverage`** (*geog_coverage*) Information on the geographic coverage of the study. This includes the total geographic scope of the data, and any additional levels of geographic coding provided in the variables. Typical entries will be "National coverage", "Urban areas", "Rural areas", "State of ...", "Capital city", etc. This does not describe where the data were collected; it describes which area the data are representative of. This means for example that a sample survey could be declared as having a national coverage even if some districts of the country where not included in the sample, as long as the sample is nationally representative.
   
@@ -185,17 +185,17 @@ We provide below a description of the metadata elements contained in the `Study 
   - **`Role`** (*role*) A succinct description of the specific contribution by the person or organization in the production of the data.  
 
 - **`Funding agencies`** (*funding_agencies*) The source(s) of funds for the production of the study. If different funding agencies sponsored different stages of the production process, use the `role` attribute to distinguish them. 
-  - **`name`** (*name*) The name of the funding agency.
-  - **`abbr`** (*abbr*) The abbreviation (acronym) of the funding agency mentioned in `name`.
-  - **`grant`** (*grant*) The grant number. If an agency has provided more than one grant, list them all separated with a ";".
-  - **`role`** (*role*) The specific contribution of the funding agency mentioned in `name`. This element is used when multiple funding agencies are listed to distinguish their specific contributions.  
+  - **`Name`** (*name*) The name of the funding agency.
+  - **`Abbreviation`** (*abbr*) The abbreviation (acronym) of the funding agency mentioned in `name`.
+  - **`Grant number`** (*grant*) The grant number. If an agency has provided more than one grant, list them all separated with a ";".
+  - **`Role`** (*role*) The specific contribution of the funding agency mentioned in `name`. This element is used when multiple funding agencies are listed to distinguish their specific contributions.  
 
 - **`Budget`** (*study_budget*) This is a free-text field, not a structured element. The budget of a study will ideally be described by budget line. The currency used to describe the budget should be specified. This element can also be used to document issues related to the budget (e.g., documenting possible under-run and over-run).
 
 - **`Other contributors`** (*oth_id*) This element is used to acknowledge any other people and organizations that have in some form contributed to the study. This does not include other producers which should be listed in `producers`, and financial sponsors which should be listed in the element `funding_agencies`.
-  - **`name`** (*name*) The name of the person or organization.
-  - **`affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
-  - **`role`** (*role*) A brief description of the specific role of the person or organization mentioned in `name`.
+  - **`Name`** (*name*) The name of the person or organization.
+  - **`Affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
+  - **`Role`** (*role*) A brief description of the specific role of the person or organization mentioned in `name`.
 
 
 **STUDY AUTHORIZATION**
@@ -254,36 +254,36 @@ Provides structured information on the agency that authorized the study, the dat
 **DATA COLLECTION**
 
 - **`Dates of data collection`** (*coll_dates*) Contains the date(s) when the data were collected, which may be different from the date the data refer to (see `time_periods` above). For example, data may be collected over a period of 2 weeks (`coll_dates`) about household expenditures during a reference week (`time_periods`) preceding the beginning of data collection. Use the event attribute to specify the "start" and "end" for each period entered.  
-  - **`start`** (*start*) Date the data collection started (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
-  - **`end`** (*end*) Date the data collection ended  (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
-  - **`cycle`** (*cycle*) Identification of the cycle of data collection. The `cycle` attribute permits specification of the relevant cycle, wave, or round of data. For example, a household consumption survey could visit households in four phases (one per quarter). Each quarter would be a cycle, and the specific dates of data collection for each quarter would be entered. 
+  - **`Start`** (*start*) Date the data collection started (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
+  - **`End`** (*end*) Date the data collection ended  (for the specified cycle, if any). Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
+  - **`Cycle`** (*cycle*) Identification of the cycle of data collection. The `cycle` attribute permits specification of the relevant cycle, wave, or round of data. For example, a household consumption survey could visit households in four phases (one per quarter). Each quarter would be a cycle, and the specific dates of data collection for each quarter would be entered. 
 
 - **`Time method`** (*time_method*) The time method or time dimension of the data collection. A controlled vocabulary can be used. The entries for this element may include "panel survey", "cross-section", "trend study", or "time-series".
 
 - **`Frequency`** (*frequency*) For data collected at more than one point in time, the frequency with which the data were collected. 
 
 - **`Time periods`** (*time_periods*) This refers to the time period (also known as span) covered by the data, not the dates of data collection.  
-  - **`start`** (*start*) The start date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
-  - **`end`** (end**) The end date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). Indicate open-ended dates with two decimal points (..) 
-  - **`cycle`** (*cycle*) The `cycle` attribute permits specification of the relevant cycle, wave, or round of data.  
+  - **`Start`** (*start*) The start date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). 
+  - **`End`** (end**) The end date for the cycle being described. Enter the date in ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). Indicate open-ended dates with two decimal points (..) 
+  - **`Cycle`** (*cycle*) The `cycle` attribute permits specification of the relevant cycle, wave, or round of data.  
 
 - **`Data collection sources`** (*sources*) A description of sources used for developing the methodology of the data collection.  
-  - **`name`** (*name*) The name and other information on the source. For example, "United States Internal Revenue Service Quarterly Payroll File" 
-  - **`origin`** (*origin*) For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified. This may not be relevant to survey data.
-  - **`characteristics`** (*characteristics*) Assessment of characteristics and quality of source material. This may not be relevant to survey data.   
+  - **`Name`** (*name*) The name and other information on the source. For example, "United States Internal Revenue Service Quarterly Payroll File" 
+  - **`Origin`** (*origin*) For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified. This may not be relevant to survey data.
+  - **`Characteristics`** (*characteristics*) Assessment of characteristics and quality of source material. This may not be relevant to survey data.   
 
 - **`Mode of data collection`** (*coll_mode*) The mode of data collection is the manner in which the interview was conducted or information was gathered. Ideally, a controlled vocabulary will be used to constrain the entries in this field (which could include items like "telephone interview", "face-to-face paper and pen interview", "face-to-face computer-assisted interviews (CAPI)", "mail questionnaire", "computer-aided telephone interviews (CATI)", "self-administered web forms", "measurement by sensor", and others.  
   This is a <u>repeatable</u> field, as some data collection activities implement multi-mode data collection (for example, a population census can offer respondents the options to submit information via web forms, telephone interviews, mailed forms, or face-to-face interviews. Note that in the API description (see screenshot above), the element is described as having type "null", not {}. This is due to the fact that the element can be entered either as a list (repeatable element) or as a string. 
 
 - **`Data collectors`** (*data_collectors*) The entity (individual, agency, or institution) responsible for administering the questionnaire or interview or compiling the data.
-  - **`name`** (*name*) In most cases, we will record here the name of the agency, not the name of interviewers. Only in the case of very small-scale surveys, with a very limited number of interviewers, the name of persons will be included as well.
-  - **`affiliation`** (*affiliation*) The affiliation of the data collector mentioned in `name`. 
-  - **`abbr`** (*abbr*) The abbreviation given to the agency mentioned in `name`. 
-  - **`role`** (*role*) The specific role of the person or agency mentioned in `name`.  
+  - **`Name`** (*name*) In most cases, we will record here the name of the agency, not the name of interviewers. Only in the case of very small-scale surveys, with a very limited number of interviewers, the name of persons will be included as well.
+  - **`Affiliation`** (*affiliation*) The affiliation of the data collector mentioned in `name`. 
+  - **`Abbreviation`** (*abbr*) The abbreviation given to the agency mentioned in `name`. 
+  - **`Role`** (*role*) The specific role of the person or agency mentioned in `name`.  
 
   - **`Collector training`** (*collector_training*) Describes the training provided to data collectors including interviewer training, process testing, compliance with standards etc. This set of elements is repeatable, to capture different aspects of the training process. 
-  - **`type`** (*type*) The type of training being described. For example, "Training of interviewers", "Training of controllers", "Training of cartographers", "Training on the use of tablets for data collection", etc. 
-  - **`training`** (*training*) A brief description of the training. This may include information on the dates and duration, audience, location, content, trainers, issues, etc. 
+  - **`Type`** (*type*) The type of training being described. For example, "Training of interviewers", "Training of controllers", "Training of cartographers", "Training on the use of tablets for data collection", etc. 
+  - **`Training`** (*training*) A brief description of the training. This may include information on the dates and duration, audience, location, content, trainers, issues, etc. 
 
 - **`Control operations`** (*control_operations*) This element will provide information on the oversight of the data collection, i.e. on methods implemented to facilitate data control performed by the primary investigator or by the data archive. 
 
@@ -318,14 +318,14 @@ Each activity will be documented separately. The [Generic Statistical Business P
 - **`Description`** (*activity_description*) A brief description of the activity. 
 
 - **`Participants`** (*participants*) A list of participants (persons or organizations) in the activity. This is a repeatable set of elements; each participant can be documented separately. 
-  - **`name`** (*name*) Name of the participating person or organization. 
-  - **`affiliation`** (*affiliation*) Affiliation of the person or organization mentioned in `name`. 
-  - **`role`** (*role*) Specific role (participation) of the person or organization mentioned in `name`.  
+  - **`Name`** (*name*) Name of the participating person or organization. 
+  - **`Affiliation`** (*affiliation*) Affiliation of the person or organization mentioned in `name`. 
+  - **`Role`** (*role*) Specific role (participation) of the person or organization mentioned in `name`.  
 
 - **`Resources`** (*resources*) A description of the data sources and other resources used to implement the activity. 
-  - **`name`** (*name*) The name of the resource. 
-  - **`origin`** (*origin*) The origin of the resource mentioned in `name`. 
-  - **`characteristics`** (*characteristics*) The characteristics of the resource mentioned in `name`.  
+  - **`Name`** (*name*) The name of the resource. 
+  - **`Origin`** (*origin*) The origin of the resource mentioned in `name`. 
+  - **`Characteristics`** (*characteristics*) The characteristics of the resource mentioned in `name`.  
 
 - **`Activity outcome`** (*outcome*) Description of the main outcome of the activity. 
 
@@ -337,8 +337,8 @@ This section lists the specific standards complied with during the execution of 
 - **`Standard compliance`** (*compliance_description*) A statement on compliance with standard quality assessment procedures. The list of these standards can be documented in the next element, `standards`.
 
 - **`Quality standards`** (*standards*) An itemized list of quality standards complied with during the execution of the study. 
-  - **`name`** (*name*) The name of the quality standard, if such a standard was used. Include the date when the standard was published, and the version of the standard with which the study is compliant, and the "URI" attribute includes .  
-  - **`producer`** (*producer*) The producer of the quality standard mentined in `name`.   
+  - **`Standard`** (*name*) The name of the quality standard, if such a standard was used. Include the date when the standard was published, and the version of the standard with which the study is compliant, and the "URI" attribute includes .  
+  - **`Producer`** (*producer*) The producer of the quality standard mentined in `name`.   
 
 - **`Other quality statement`** (*other_quality_statement*) Any additional statement on the quality of the data, entered as free text. This can be independent of any particular quality standard. 
 
@@ -351,10 +351,10 @@ This section lists the specific standards complied with during the execution of 
   - **`Evaluation type`** (*type*) The `type` attribute identifies the type of evaluation with or without the use of a controlled vocabulary.  
   - **`Evaluation process`** (*evaluation_process*) A description of the evaluation process. This may include information on the dates the evaluation was conducted, cost/budget, relevance, institutional or legal arrangements, et.  
   - **`Evaluators`** (*evaluator*) The evaluator element identifies the person(s) and/or organization(s) involved in the evaluation.  
-    - **`name`** (*name*) The name of the person or organization involved in the evaluation. 
-    - **`affiliation`** (*affiliation*) The affiliation of the individual or organization mentioned in `name`.  
-    - **`abbr`** (*abbr*) An abbreviation for the organization mentioned in `name`. 
-    - **`role`** (*role*) The specific role played by the individual or organization mentioned in `name` in the evaluation process. 
+    - **`Bame`** (*name*) The name of the person or organization involved in the evaluation. 
+    - **`Abbreviation`** (*abbr*) An abbreviation for the organization mentioned in `name`.
+    - **`Affiliation`** (*affiliation*) The affiliation of the individual or organization mentioned in `name`.  
+    - **`Role`** (*role*) The specific role played by the individual or organization mentioned in `name` in the evaluation process. 
   - **`Completion date`** (*completion_date*) The date the ex-post evaluation was completed.  
   - **`Evaluation outcomes`** (*outcomes*) A description of the outcomes of the evaluation. It may include a reference to an evaluation report. 
 
@@ -383,10 +383,10 @@ This section describes the access conditions and terms of use for the dataset. T
 **DEPOSITOR INFORMATION**
 
 - **`Depositor`** (*depositor*) The name of the person (or institution) who provided this study to the archive storing it.  
-  - **`name`**  (*name*) The name of the depositor. It can be an individual or an organization.
-  - **`abbr`** (*abbr*) The official abbreviation of the organization mentioned in `name`.
-  - **`affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
-  - **`uri`** (*uri*) A URL to the depositor  
+  - **`Name`**  (*name*) The name of the depositor. It can be an individual or an organization.
+  - **`Abbreviation`** (*abbr*) The official abbreviation of the organization mentioned in `name`.
+  - **`Affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
+  - **`URL`** (*uri*) A URL to the depositor  
 
 - **`Date of deposit`** (*deposit_date*) The date that the study was deposited with the archive that originally received it. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.  
 
@@ -394,10 +394,10 @@ This section describes the access conditions and terms of use for the dataset. T
 **DISTRIBUTOR INFORMATION**
 
 - **`Distributors`** (*distributors*) The organization(s) designated by the author or producer to generate copies of the study output including any necessary editions or revisions.
-  - **`name`** (*name*) The name of the distributor. It can be an individual or an organization.
-  - **`abbr`** (*abbr*) The official abbreviation of the organization mentioned in `name`. 
-  - **`affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`. 
-  - **`uri`** (*uri*) A URL to the ordering service or download facility on a Web site.  
+  - **`Name`** (*name*) The name of the distributor. It can be an individual or an organization.
+  - **`Abbreviation`** (*abbr*) The official abbreviation of the organization mentioned in `name`. 
+  - **`Affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`. 
+  - **`URL`** (*uri*) A URL to the ordering service or download facility on a Web site.  
 
 - **`Date of distribution`** (*distribution_date*) The date that the study was made available for distribution/presentation. The date should be entered in the ISO 8601 format (YYYY-MM-DD or YYYY-MM or YYYY). The exact date should be provided when possible.   
 
@@ -405,20 +405,20 @@ This section describes the access conditions and terms of use for the dataset. T
 **DATA ACCESS**
 
 - **`Access authority`** (*contact*) Names and addresses of individuals responsible for the study. Individuals listed as contact persons will be used as resource persons regarding problems or questions raised by users. 
-  - **`name`** (*name*) The name of the person or organization that can be contacted. 
-  - **`affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
-  - **`email`** (*email*) An email address for the contact mentioned in `name`.  
-  - **`uri`** (*uri*) A URL to the contact mentioned in `name`.  
-
+  - **`Name`** (*name*) The name of the person or organization that can be contacted. 
+  - **`Affiliation`** (*affiliation*) The affiliation of the person or organization mentioned in `name`.
+  - **`URL`** (*uri*) A URL to the contact mentioned in `name`.  
+  - **`Email`** (*email*) An email address for the contact mentioned in `name`.
+  - 
   - **`Confidentiality declaration`** (*conf_dec*) This element is used to determine if signing of a confidentiality declaration is needed to access a resource. We may indicate here what *Affidavit of Confidentiality* must be signed before the data can be accessed. Another option is to include this information in the next element (Access conditions). If there is no confidentiality issue, this field can be left blank.
-    - **`txt`** (*txt*) A statement on confidentiality and limitations to data use. This statement does not replace a more comprehensive data agreement (see `Access condition`). An example of statement could be the following: "Confidentiality of respondents is guaranteed by Articles N to NN of the National Statistics Act of [date]. Before being granted access to the dataset, all users have to formally agree: 
+    - **`Required`** (*required*) The "required" attribute is used to aid machine processing of this element. The default specification is "yes".
+    - **`Text`** (*txt*) A statement on confidentiality and limitations to data use. This statement does not replace a more comprehensive data agreement (see `Access condition`). An example of statement could be the following: "Confidentiality of respondents is guaranteed by Articles N to NN of the National Statistics Act of [date]. Before being granted access to the dataset, all users have to formally agree: 
       - To make no copies of any files or portions of files to which s/he is granted access except those authorized by the data depositor.  
       - Not to use any technique in an attempt to learn the identity of any person, establishment, or sampling unit not identified on public use data files.  
       - To hold in strictest confidence the identification of any establishment or individual that may be inadvertently revealed in any documents or discussion, or analysis. 
       - That such inadvertent identification revealed in her/his analysis will be immediately and in confidentiality brought to the attention of the data depositor."   
-    - **`required`** (*required*) The "required" attribute is used to aid machine processing of this element. The default specification is "yes".  
-    - **`form_url`** (*form_url*) The `"form_url` element is used to provide a link to an online confidentiality declaration form. 
-    - **`form_id`** (*form_id*) Indicates the number or ID of the confidentiality declaration form that the user must fill out.  
+    - **`Form ID`** (*form_id*) Indicates the number or ID of the confidentiality declaration form that the user must fill out.       
+    - **`Form URL`** (*form_url*) The `"form_url` element is used to provide a link to an online confidentiality declaration form. 
 
 - **`Access conditions`** (*conditions*) Indicates any additional information that will assist the user in understanding the access and use conditions of the data collection. 
 
@@ -429,11 +429,11 @@ This section describes the access conditions and terms of use for the dataset. T
 - **`Availability status`** (*status*) A statement of the data availability. An archive may need to indicate that a collection is unavailable because it is embargoed for a period of time, because it has been superseded, because a new edition is imminent, etc. This element will rarely be used. 
 
 - **`Special permissions`** (*spec_perm*) This element is used to determine if any special permissions are required to access a resource.        
-    - **`txt`** (*txt*) A statement on the special permissions required to access the dataset. 
-    - **`required`** (*required*) The `required` is used to aid machine processing of this element. The default specification is "yes".   
-    - **`form_url`** (*form_url*) The `form_url` is used to provide a link to a special on-line permissions form.  
-    - **`form_id`** (*form_id*) The "form_id" indicates the number or ID of the special permissions form that the user must fill out.   
-    
+    - **`Required`** (*required*) The `required` is used to aid machine processing of this element. The default specification is "yes".
+    - **`Text`** (*txt*) A statement on the special permissions required to access the dataset. 
+    - **`Form ID`** (*form_id*) The "form_id" indicates the number or ID of the special permissions form that the user must fill out.   
+    - **`Form URL`** (*form_url*) The `form_url` is used to provide a link to a special on-line permissions form.
+          
 - **`Restrictions`** (*restrictions*) Any restrictions on access to or use of the collection such as privacy certification or distribution restrictions should be indicated here. These can be restrictions applied by the author, producer, or distributor of the data. This element can for example contain a statement (extracted from the DDI documentation) like: "In preparing the data file(s) for this collection, the National Center for Health Statistics (NCHS) has removed direct identifiers and characteristics that might lead to identification of data subjects. As an additional precaution NCHS requires, under Section 308(d) of the Public Health Service Act (42 U.S.C. 242m), that data collected by NCHS not be used for any purpose other than statistical analysis and reporting. NCHS further requires that analysts not use the data to learn the identity of any persons or establishments and that the director of NCHS be notified if any identities are inadvertently discovered. Users ordering data are expected to adhere to these restrictions." 
 
 - **`Notes on access and use`** (*notes*) Any additional information related to data access that is not contained in the specific metadata elements provided in the section "Data access and use".
@@ -455,9 +455,10 @@ This section describes the access conditions and terms of use for the dataset. T
 
 - **`Contacts`** (*contact*) Users of the data may need further clarification and information on the terms of use and conditions to access the data. This set of elements is used to identify the contact persons who can be used as resource persons regarding problems or questions raised by the user community. 
     - **`Name`** (*name*) Name of the person. Note that in some cases, it might be better to provide a title/function than the actual name of the person. Keep in mind that people do not stay forever in their position. 
-    - **`Affiliation`** (*affiliation*) Affiliation of the person. 
-    - **`URL`** (*uri*) URI for the person; it can be the URL of the organization the person belongs to.  
+    - **`Affiliation`** (*affiliation*) Affiliation of the person.
     - **`Email`** (*email*) The `email` element is used to indicate an email address for the contact individual mentioned in `name`. Ideally, a generic email address should be provided. It is easy to configure a mail server in such a way that all messages sent to the generic email address would be automatically forwarded to some staff members.  
+    - **`URL`** (*uri*) URI for the person; it can be the URL of the organization the person belongs to.  
+
 
 ### Data files
 
@@ -593,22 +594,17 @@ The icons shown on top of the variable list perform the following actions on var
 The **Variable information** frame provides options to tag a variable as being a sample weight, to edit the type of the variable, the range, and the format of the data it contains, and to inform the application of values to be treated as missing values.   
 ![image](img/ME_UG_v1-0-0_documenting_microdata_variable_information.png)
 
-   - ***Is weight***
-
-      The **Is weigh** toggle is used to tag variables that are sample weights, if any.  
+   - ***Is weight*** The **Is weigh** toggle is used to tag variables that are sample weights, if any.
+     
     ![image](img/ME_UG_v1-0-0_documenting_microdata_weights.png)
 
-   - ***Interval type***
-      For numeric variables, the *interval type* can be set to *Continuous* or *Discrete*. This will impact how the data are documented and what summary statistics are produced (frequencies will not be calculated for continuous variables; variable categories will only be created for discrete variables). When data are imported, the application makes a best guess about the interval type. the data curator should browse through all variables to ensure the interval type has been properly set. 
+   - ***Interval type*** For numeric variables, the *interval type* can be set to *Continuous* or *Discrete*. This will impact how the data are documented and what summary statistics are produced (frequencies will not be calculated for continuous variables; variable categories will only be created for discrete variables). When data are imported, the application makes a best guess about the interval type. the data curator should browse through all variables to ensure the interval type has been properly set. 
 
-   - ***Type***
-     This option informs the system of the format type of the variable, with options *numeric*, *character* (string variables), and *fixed*.
+   - ***Type*** This option informs the system of the format type of the variable, with options *numeric*, *character* (string variables), and *fixed*.
 
-   - ***Min, Max, and Decimal point***
-      A range of valid values can be entered in this element; values outside the range will trigger a validation error.   
+   - ***Min, Max, and Decimal point*** A range of valid values can be entered in this element; values outside the range will trigger a validation error.   
      
-   - ***Missing***
-      The proper use of data requires proper treatment of missing values. The application (and data users) needs to know what values in the data files are to be considered as *missing*. When data are imported from Stata or SPSS, if the system missing values were used in the origial files, the missing values will be showns as *. But other values may represent missing values. In some survey datasets, the code 99 for example may be used to represent "unknown or unreported age*. When such values (other than system-missing) are used, they must be indicated as representing missing data, otherwise the summary statistics will be incorrect (e.g., 99 would be treated as a valid age eventhough it means "unreported"). One or multiple values representing *missing* can be entered for the variable. 
+   - ***Missing*** The proper use of data requires proper treatment of missing values. The application (and data users) needs to know what values in the data files are to be considered as *missing*. When data are imported from Stata or SPSS, if the system missing values were used in the origial files, the missing values will be showns as *. But other values may represent missing values. In some survey datasets, the code 99 for example may be used to represent "unknown or unreported age*. When such values (other than system-missing) are used, they must be indicated as representing missing data, otherwise the summary statistics will be incorrect (e.g., 99 would be treated as a valid age eventhough it means "unreported"). One or multiple values representing *missing* can be entered for the variable. 
   
 - **Variable documentation**
 
@@ -681,9 +677,9 @@ A micro-dataset can contain many variables. Some survey datasets include hundred
 - **`Variable definition`** This element provides a space to describe the variable in detail. Not all variables require a definition.
 
 - **`Concepts`** (*var_concept*) The general subject to which the parent element may be seen as pertaining. This element serves the same purpose as the keywords and topic classification elements, but at the variable description level. 
-  - **`title`** (**) The name (label) of the concept.     
-  - **`vocab`** (**) The controlled vocabulary, if any, from which the concept `title' was taken.   
-  - **`uri`** (**) The location for the controlled vocabulary mentioned in `vocab'.   
+  - **`Title`** (**) The name (label) of the concept.     
+  - **`Vocabulary`** (**) The controlled vocabulary, if any, from which the concept `title' was taken.   
+  - **`URL`** (**) The location for the controlled vocabulary mentioned in `vocab'.   
 
 - **`Standard categories`** This element is used to indicate that the codes used for a categorical variable are from a standard international or other classification, like COICOP, ISIC, ISO country codes, etc.
 
