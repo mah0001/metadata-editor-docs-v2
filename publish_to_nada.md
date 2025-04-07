@@ -32,9 +32,9 @@ The catalog configuration page will be displayed, where you must enter a short n
 
 To publish metadata in NADA, click on "Publish to NADA" in the Project page menu. In the **Publish to NADA** page, select a configured NADA catalog then enter the **Project options**. These options are as follows:
 - ***Overwrite if already exists?*** The options are Yes (overwrite) or No (do nothing). Answer the question on whether you want to overwrite the project if it has previously been published in the NADA catalog. A project is identified by its **Primary ID**. If a project already exists in NADA with the same primary ID, it will be overwritten if you answer **Yes**.  
-- ***Publish*** A project can be pushed to a NADA catalog and made immediately accessible to users of the data catalog (option **Publish**), or it can be pushed but under a **Draft** status, in which case only administrators of the NADA catalog will be able to view it (and will have to publish it themselves by changing the project status in the NADA administrator interface).
-- ***Data access*** You may publish your data in NADA, and set the access policy for the dataset. See the next section.
-- ***Collection*** If the selected NADA catalog contains collections, this option allows you to select the collection in which you want to publish your metadata. A list of collections (if any) available in the selected NADA catalog will be displayed as a drop-down menu. The project will then be "owned" by this collection. Note that a same project can be shown in multiple collections in a NADA catalog; only one collection will "own" (and administer) the project, the others will only "borrow" it. Publishing a project in multiple collections is done in NADA, not in the Metadata editor.  
+- ***Publish.*** A project can be pushed to a NADA catalog and made immediately accessible to users of the data catalog (option **Publish**), or it can be pushed but under a **Draft** status, in which case only administrators of the NADA catalog will be able to view it (and will have to publish it themselves by changing the project status in the NADA administrator interface).
+- ***Data access.*** You may publish your data in NADA, and set the access policy for the dataset. See the next section.
+- ***Collection.*** If the selected NADA catalog contains collections, this option allows you to select the collection in which you want to publish your metadata. A list of collections (if any) available in the selected NADA catalog will be displayed as a drop-down menu. The project will then be "owned" by this collection. Note that a same project can be shown in multiple collections in a NADA catalog; only one collection will "own" (and administer) the project, the others will only "borrow" it. Publishing a project in multiple collections is done in NADA, not in the Metadata editor.  
 
 ![image](img/ME_UG_v1-0-0_publish_to_nada_publish_frame_1.png)
 
@@ -64,7 +64,7 @@ It offers the following options:
 - **Licensed data files.** Registered users will have to submit a request for accessing the data, which will be processed by the NADA administrators. Data will be available for download after the user has been approved.
 - **Data accessible only in data enclave.** Data are not accessible from the NADA catalog. They are only accessible on-site. When this option is selected, the microdata file(s) should not be published to NADA.
 - **Data accessible from external repository.** Data are not accessible from the NADA catalog but from an external website. When this option is selected, the microdata file(s) should not be published to NADA. The URL to the external catalog must be provided.
-- 
+ 
   ![image](img/ME_UG_v1-0-0_publish_to_nada_data_access_external_repository.png)
   
 - **Data not available.** Data are not accessible from the NADA catalog or from any other source. When this option is selected, the microdata file(s) should not be published to NADA.
