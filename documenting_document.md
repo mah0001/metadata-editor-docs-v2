@@ -94,24 +94,24 @@ The **`Document description`** block contains the metadata elements used to desc
 - **`Editors`** (*editors*) If the source is a text within an edited volume, it should be listed under the name of the author of the text used, not under the name of the editor. The name of the editor should however be provided in the bibliographic citation, in accordance with a [reference style](https://awelu.srv.lu.se/sources-and-referencing/using-a-reference-style/elements-of-the-reference-list/). The information on an editor includes the editor's `first_name`, `initial`, `last_name`, and `affiliation`.  
 
 - **`Translators`** (*translators*) Information on translators, for publications that are translations of publication originally created in another language.
-  - **`first_name`** The first name of the translator.
-  - **`initial`** The initials of the translator.
-  - **`last_name`** The last name of the translator.
-  - **`affiliation`** The affiliation of the translator.  
+  - **`First name`** (*first_name*) The first name of the translator.
+  - **`Initial`** (*initial*) The initials of the translator.
+  - **`Last name`** (*last_name*) The last name of the translator.
+  - **`Affiliation`** (*affiliation*) The affiliation of the translator.  
 
 - **`Other contributors`** (*contributors*) These elements are used to acknowledge contributions to the production of the document, other than the ones for which specific metadata elements are provided (like `autors` or `translators`).
-  - **`first_name`** The first name of the contributor.
-  - **`initial`** The initials of the contributor.
-  - **`last_name`** The last name of the contributor. If the contributor is an organization, enter the name of the organization here.
-  - **`affiliation`** The affiliation of the contributor. 
-  - **`contribution`** A brief description of the specific contribution of the person to the document, e.g. "Design of the cover page", or "Proofreading".  
+  - **`First name`** (*first_name*) The first name of the contributor.
+  - **`Initial`** (*initial*) The initials of the contributor.
+  - **`Last name`** (*last_name*) The last name of the contributor. If the contributor is an organization, enter the name of the organization here.
+  - **`Affiliation`** (*affiliation*) The affiliation of the contributor. 
+  - **`Contribution`** (*contribution*) A brief description of the specific contribution of the person to the document, e.g. "Design of the cover page", or "Proofreading".  
 
 
 **BIBLIOGRAPHIC INFORMATION**
 
 - **`Bibliographic citation`** (*bibliographic_citation*) The bibliographic citation provides relevant information about the author and the publication. When using the element `bibliographic_citation`, the citation is provided as a single item. It should be provided in a standard style: Modern Language Association ([MLA](https://www.mla.org/)), American Psychological Association ([APA](https://apastyle.apa.org/)), or [Chicago](https://owl.purdue.edu/owl/research_and_citation/chicago_manual_17th_edition/cmos_formatting_and_style_guide/chicago_manual_of_style_17th_edition.html). Note that the schema provides an itemized list of all elements (BibTex fields) required to build a citation in a format of their choice. 
-  - **`style`** The citation style, e.g. "MLA", "APA", or "Chicago".
-  - **`citation`** The citation in the style mentioned in `style`.   
+  - **`Style`** (*style*) The citation style, e.g. "MLA", "APA", or "Chicago".
+  - **`Citation`** (*citation*) The citation in the style mentioned in `style`.   
 
   The elements that are required to form a complete bibliographic citation depend on the type of document. The table below, adapted from the [BibTex templates](https://www.bibtex.com/format/), provides a list of required and optional fields by type of document:
 
@@ -130,7 +130,7 @@ The **`Document description`** block contains the metadata elements used to desc
    | Report published by a school or other institution, usually numbered within a series | author, title, institution, year | type, number, address, month, note, key |  
    | Document with an author and title, but not  formally published | author, title, note | month, year, key |
 
-- **`Book title`*booktitle* (**) Title of a book, part of which is being cited. If you are documenting the book itself, this element will not be used; it is only used when <u>part of a book</u> is being documented.
+- **`Book title`** (*booktitle*) Title of a book, part of which is being cited. If you are documenting the book itself, this element will not be used; it is only used when <u>part of a book</u> is being documented.
 
 - **`Chapter`** (*chapter*) A chapter (or section) number. This element is only used to document a resource which has been extracted from a book.   
 
@@ -223,44 +223,44 @@ The **`Document description`** block contains the metadata elements used to desc
 - **`Scope`** (*scope*) A textual description of the topics covered in the document, which complements (but does not duplicate) the elements `description` and `topics` available in the schema.
  
 - **`Keywords`** (*keywords*) A list of keywords that provide information on the core content of the document. Keywords provide a convenient solution to improve the discoverability of the document, as it allows terms and phrases not found in the document itself to be indexed and to make a document discoverable by text-based search engines. A controlled vocabulary can be used (although not required), such as the [UNESCO Thesaurus](http://vocabularies.unesco.org/browser/thesaurus/en/). The list provided here can combine keywords from multiple controlled vocabularies and user-defined keywords.  
-  - **`name`** The keyword itself.
-  - **`vocabulary`** The controlled vocabulary (including version number or date) from which the keyword is extracted, if any.
-  - **`uri`** The URL of the controlled vocabulary from which the keyword is extracted, if any.
+  - **`Keyword`** (*name*) The keyword itself.
+  - **`Vocabulary`** (*vocabulary*) The controlled vocabulary (including version number or date) from which the keyword is extracted, if any.
+  - **`URL`** (*uri*) The URL of the controlled vocabulary from which the keyword is extracted, if any.
 
 - **`Topics`** (*topics*) Information on the topics covered in the document. A controlled vocabulary will preferably be used, for example the [CESSDA Topics classification](https://vocabularies.cessda.eu/vocabulary/TopicClassification), a typology of topics available in 11 languages; or the [Journal of Economic Literature (JEL) Classification System](https://en.wikipedia.org/wiki/JEL_classification_codes), or the [World Bank topics classification](https://documents.worldbank.org/en/publication/documents-reports/docadvancesearch). The list provided here can combine topics from multiple controlled vocabularies and user-defined topics. The element is a block of five fields: 
-  - **`id`** The identifier of the topic, taken from a controlled vocabulary.
-  - **`name`** The name (label) of the topic, preferably taken from a controlled vocabulary.
-  - **`parent_id`** The parent identifier of the topic (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
-  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
-  - **`uri`** The URL to the controlled vocabulary used, if any.
+  - **`ID`** (*id*) The identifier of the topic, taken from a controlled vocabulary.
+  - **`Topic`** (*name*) The name (label) of the topic, preferably taken from a controlled vocabulary.
+  - **`Parent ID`** (*parent_id*) The parent identifier of the topic (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`Vocabulary`** (*vocabulary*) The name (including version number) of the controlled vocabulary used, if any.
+  - **`URL`** (*uri*) The URL to the controlled vocabulary used, if any.
  
 - **`Themes`** (*themes*) A list of themes covered by the document. A controlled vocabulary will preferably be used. The list provided here can combine themes from multiple controlled vocabularies and user-defined themes. Note that `themes` will rarely be used as the elements `topics` and `disciplines` are more appropriate for most uses. This is a block of five fields:
-  - **`id`** The ID of the theme, taken from a controlled vocabulary.
-  - **`name`** The name (label) of the theme, preferably taken from a controlled vocabulary.
-  - **`parent_id`** The parent ID of the theme (ID of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
-  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
-  - **`uri`** The URL to the controlled vocabulary used, if any.  
+  - **`ID`** (*id*) The ID of the theme, taken from a controlled vocabulary.
+  - **`Theme`** (*name*) The name (label) of the theme, preferably taken from a controlled vocabulary.
+  - **`Parent ID`** (*parent_id*) The parent ID of the theme (ID of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`Vocabulary`** (*vocabulary*) The name (including version number) of the controlled vocabulary used, if any.
+  - **`URL`** (*uri*) The URL to the controlled vocabulary used, if any.  
 
 - **`Disciplines`** (*disciplines*) Information on the academic disciplines related to the content of the document. A controlled vocabulary will preferably be used, for example the one provided by the list of academic fields in [Wikipedia](https://en.wikipedia.org/wiki/List_of_academic_fields). The list provided here can combine disciplines from multiple controlled vocabularies and user-defined disciplines. This is a block of five elements: 
-  - **`id`** The identifier of the discipline, taken from a controlled vocabulary.
-  - **`name`** The name (label) of the discipline, preferably taken from a controlled vocabulary.
-  - **`parent_id`** The parent identifier of the discipline (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
-  - **`vocabulary`** The name (including version number) of the controlled vocabulary used, if any.
-  - **`uri`** The URL to the controlled vocabulary used, if any.  
+  - **`ID`** (*id*) The identifier of the discipline, taken from a controlled vocabulary.
+  - **`Discipline`** (*name*) The name (label) of the discipline, preferably taken from a controlled vocabulary.
+  - **`Parent ID`** (*parent_id*) The parent identifier of the discipline (identifier of the item one level up in the hierarchy), if a hierarchical controlled vocabulary is used.
+  - **`vocabulary`** (*vocabulary*) The name (including version number) of the controlled vocabulary used, if any.
+  - **`URL`** (*uri*) The URL to the controlled vocabulary used, if any.  
 
 - **`Table of contents`** (*toc*) The table of content of the document, provided as a single string element, i.e. with no structure (an structured alternative is provided with the field `toc_structured` described below). This element is also a rich source of indexable terms which can contribute to document discoverability; care should thus be taken to use it (or the `toc_structured` alternative) whenever possible.
 
-- **`Table of contents (structured)`** (**) This element is used as an alternative to `toc` to provide a structured table of content. The element contains a repeatable block of sub-elements which provides the possibility to define a hierarchical structure:
-  - **`id`** A unique identifier for the element of the table of content. For example, the `id` for Chapter 1 could be "1" while the `id` for section 1 of chapter 1 would be "11".
-  - **`parent_id`** The `id` of the parent section (e.g., if the table of content is divided into chapters, themselves divided into sections, the `parent_id` of a section would be the id of the chapter it belongs to.)
-  - **`name`** The label of this section of the table of content (e.g., the chapter or section title)
+- **`Table of contents (structured)`** (*toc_structured*) This element is used as an alternative to `toc` to provide a structured table of content. The element contains a repeatable block of sub-elements which provides the possibility to define a hierarchical structure:
+  - **`ID`** (*id*) A unique identifier for the element of the table of content. For example, the `id` for Chapter 1 could be "1" while the `id` for section 1 of chapter 1 would be "11".
+  - **`Parent ID`** (*parent_id*) The `id` of the parent section (e.g., if the table of content is divided into chapters, themselves divided into sections, the `parent_id` of a section would be the id of the chapter it belongs to.)
+  - **`Name`** (*name*) The label of this section of the table of content (e.g., the chapter or section title)
 
 
 **SPATIAL AND TEMPORAL COVERAGE** 
 
 - **`Countries`** (*ref_country*) The list of countries (or regions) covered by the document, if applicable. This is a repeatable block of two elements:
-  - **`name`** The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with.
-  - **`code`** The country/region code. It is recommended to use a standard list of countries codes, such as the [ISO 3166] (https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
+  - **`Name`** (*name*) The country/region name. Note that many organizations have their own policies on the naming of countries/regions/economies/territories, which data curators will have to comply with.
+  - **`Code`** (*code*) The country/region code. It is recommended to use a standard list of countries codes, such as the [ISO 3166] (https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes).
 
     Considering the importance of the geographic coverage of a document as a filter, the `ref_country` element deserves particular attention. Consistency in the use of country codes and country names is essential in a data catalog. The field `ref_country` will often be used as a filter (facet) in data catalogs. Therefore, make sure that you do not refer to a same country using different names (for example, the Democratic Republic of Congo should not be named "Congo, D.R." in some instances and "Congo, Dem.Rep." or "Democratic Republic of congo" in other instances). When a document is related to only part of a country, we still want to capture this information in the metadata. For example, the `ref_country` element for the document ["Sewerage and sanitation : Jakarta and Manila"](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/880091468095971513/sewerage-and-sanitation-jakarta-and-manila) will list "Indonesia" (code IDN) and "Philippines" (code PHL). 
 
@@ -274,9 +274,9 @@ The **`Document description`** block contains the metadata elements used to desc
 
 - **`Bounding box`** (*bbox*) This element is used to define one or multiple geographic bounding box(es), which are the rectangular fundamental geometric description of the geographic coverage of the data. A bounding box is defined by west and east longitudes and north and south latitudes, and includes the largest geographic extent of the dataset’s geographic coverage. The bounding box provides the geographic coordinates of the top left (north/west) and bottom-right (south/east) corners of a rectangular area. This element can be used in catalogs as the first pass of a coordinate-based search. The valid range of latitude in degrees is -90 and +90 for the southern and northern hemisphere, respectively. Longitude is in the range -180 and +180 specifying coordinates west and east of the Prime Meridian, respectively. This element will rarely be used for documenting publications. Bounding boxes are an optional element, but when a bounding box is defined, all four coordinates are required. 
 
-- **`Spatial coverage`** (**) This element provides another space for capturing information on the spatial coverage of a document, which complements the `ref_country`, `geographic_units`, and `bbox` elements. It can be used to qualify the geographic coverage of the document, in the form of a free text. For example, a report on refugee camps in the Cox's Bazar district of Bangladesh would have Bangladesh as reference country, "Cox's Bazar" as a geographic unit, and "Rohingya's refugee camps" as spatial coverage. 
+- **`Spatial coverage`** (*spatial_coverage*) This element provides another space for capturing information on the spatial coverage of a document, which complements the `ref_country`, `geographic_units`, and `bbox` elements. It can be used to qualify the geographic coverage of the document, in the form of a free text. For example, a report on refugee camps in the Cox's Bazar district of Bangladesh would have Bangladesh as reference country, "Cox's Bazar" as a geographic unit, and "Rohingya's refugee camps" as spatial coverage. 
 
-- **`Temporal coverage`** (**) Not all documents have a specific time coverage. When they do, it can be specified in this element.
+- **`Temporal coverage`** (*temporal_coverage*) Not all documents have a specific time coverage. When they do, it can be specified in this element.
 
   
 **ACCESS AND RIGHTS**
@@ -309,22 +309,22 @@ The **`Document description`** block contains the metadata elements used to desc
 **OTHER INFORMATION**
 
 - **`contacts`** (*contacts*) Contact information for a person or organization that can be contacted for inquiries related to the document.
-  - **`name`** The name of the contact. This can be a person or an organization..
-  - **`role`** The specific role of the person or organization mentioned in `contact`.
-  - **`affiliation`** The affiliation of the contact person. 
-  - **`email`** The email address of the contact person or organization. Personal emails should be avoided.  
-  - **`telephone`** The telephone number for the contact person or organization. Personal phone numbers should be avoided.  
-  - **`uri`** A link to an on-line resource related to the contact person or organization.  
+  - **`name`** (*name*) The name of the contact. This can be a person or an organization..
+  - **`role`** (*role*) The specific role of the person or organization mentioned in `contact`.
+  - **`affiliation`** (*affiliation*) The affiliation of the contact person. 
+  - **`email`** (*email*) The email address of the contact person or organization. Personal emails should be avoided.  
+  - **`telephone`** (*telephone*) The telephone number for the contact person or organization. Personal phone numbers should be avoided.  
+  - **`uri`** (*uri*) A link to an on-line resource related to the contact person or organization.  
 
 - **`Sources`** (*sources*) This element is used to describe the sources of different types (except data sources, which must be listed in the element "Data sources") that were used in the production of the document.
-  - **`source_origin`** For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified.
-  - **`source_char`** Characteristics of the source. Assessment of characteristics and quality of source material.
-  - **`source_doc`** Documentation and access to the source.
+  - **`source_origin`** (*source_origin*) For historical materials, information about the origin(s) of the sources and the rules followed in establishing the sources should be specified.
+  - **`source_char`** (*source_char*) Characteristics of the source. Assessment of characteristics and quality of source material.
+  - **`source_doc`** (*source_doc*) Documentation and access to the source.
     
 - **`Data sources`** (*data_sources*) Used to list the machine-readable data file(s) -if any- that served as the source(s) of data.
-  - **`name`** Name (title) of the dataset used as source. For example: "Bangladesh Demographic and Health Survey 2017-18"
-  - **`uri`** Link (URL) to the dataset or to a web page describing the dataset. For example: "https://www.dhsprogram.com/methodology/survey/survey-display-536.cfm"
-  - **`note`** Additional information on the data source. For example: "Household survey conducted by the National Institute of Population Research and Training, Medical Education and Family Welfare Division and Ministry of Health and Family Welfare. Data and documentation available at https://dhsprogram.com/)"
+  - **`name`** (*name*) Name (title) of the dataset used as source. For example: "Bangladesh Demographic and Health Survey 2017-18"
+  - **`uri`** (*uri*) Link (URL) to the dataset or to a web page describing the dataset. For example: "https://www.dhsprogram.com/methodology/survey/survey-display-536.cfm"
+  - **`note`** (*note*) Additional information on the data source. For example: "Household survey conducted by the National Institute of Population Research and Training, Medical Education and Family Welfare Division and Ministry of Health and Family Welfare. Data and documentation available at https://dhsprogram.com/)"
 
 - **`Reproducibility statement`** (*reproducibility.statement*) The "Reproducibility statement" is a general statement on reproducibility and replicability of the analysis (including data processing, tabulation, production of visualizations, modeling, etc.) being presented in the document.
 
@@ -335,25 +335,25 @@ The **`Document description`** block contains the metadata elements used to desc
 - **`Mandate`** (*mandate*) The legislative or other mandate under which the resource was produced.
 
 - **`Related resources`** (*relations*) References to related resources with a specification of the type of relationship.
-  - **`name`** The related resource. Recommended practice is to identify the related resource by means of a URL. If this is not possible or feasible, a string conforming to a formal identification system may be provided.
-  - **`type`** The type of relationship. The use of a controlled vocabulary is recommended. The Dublin Core proposes the following vocabulary: {`isPartOf, hasPart, isVersionOf, isFormatOf, hasFormat, references, isReferencedBy, isBasedOn, isBasisFor, replaces, isReplacedBy, requires, isRequiredBy`}. 
+  - **`name`** (*name*) The related resource. Recommended practice is to identify the related resource by means of a URL. If this is not possible or feasible, a string conforming to a formal identification system may be provided.
+  - **`type`** (*type*) The type of relationship. The use of a controlled vocabulary is recommended. The Dublin Core proposes the following vocabulary: {`isPartOf`, `hasPart`, `isVersionOf`, `isFormatOf`, `hasFormat`, `references`, `isReferencedBy`, `isBasedOn`, `isBasisFor`, `replaces`, `isReplacedBy`, `requires`, `isRequiredBy`}. 
 
 - **`Notes`** (*notes*) This field can be used to provide information on the document that does not belong to the other, more specific metadata elements provided in the schema.
 
 
 #### DataCite
 
-See section "Documenting - General instructions".
+See section **Documenting - General instructions**.
 
 
 #### Tags
 
-See section "Documenting - General instructions".
+See section **Documenting - General instructions**.
 
 
 #### Provenance 
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section *Documenting - General instructions*.
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section **Documenting - General instructions**.
 
 
 #### External resources
