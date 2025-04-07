@@ -10,6 +10,7 @@ This chapter explains how to document digital images using the Metadata Editor. 
 - **Provenance information**: Date, location, author, and source.
 - **Rights and privacy considerations**: Copyright/license details and privacy-related information (e.g., presence of identifiable individuals, especially minors), enabling users to use images legally, ethically, and responsibly.
 
+
 ## Metadata embedded in digital image files
 
 Some devices, such as digital cameras, automatically generate and embed metadata in image files. This metadata, known as EXIF (Exchangeable Image File Format), records:
@@ -20,7 +21,8 @@ Some devices, such as digital cameras, automatically generate and embed metadata
 
 EXIF metadata can be extracted or viewed using various tools. For instance, R packages such as *ExifTool* and *ExifR* allow extraction and processing of EXIF metadata, while applications like Flickr display EXIF content. However, beyond date, location, and unique identifiers, EXIF metadata provides little information relevant to identifying an image’s source or content.
 
-## Enhancing Metadata with Additional Descriptive Information
+
+## Enhancing metadata with additional descriptive information
 
 Since EXIF metadata lacks detailed content descriptions, curators must supplement it with additional information. Some of this metadata can be manually entered, while other elements can be automatically extracted using machine learning models or APIs. This information is structured and stored according to metadata standards supported by the Metadata Editor.
 
@@ -30,9 +32,10 @@ The Metadata Editor offers two mutually exclusive options for documenting images
 
 Both options are supplemented with a few common metadata elements, including cataloging parameters and unique identifiers.
 
-## IPTC and Dublin Core Standards
 
-### Dublin Core Standard
+## IPTC and Dublin Core standards
+
+### Dublin Core standard
 
 The Dublin Core (DCMI) standard consists of 15 core metadata elements, which are supplemented in the Metadata Editor with additional elements, primarily from the ImageObject schema of schema.org. This option provides a simpler, flexible approach to documenting images.
 
@@ -43,6 +46,7 @@ The IPTC Photo Metadata Standard (version 2019.1) is the most widely adopted sta
 - **IPTC Extension**: Provides additional elements for greater detail.
 
 IPTC metadata includes fields for time and geographic coverage, people and objects shown, usage rights, and more. Since the IPTC schema is highly detailed, curators will typically use only a subset of the available fields. Where applicable, the use of controlled vocabularies is recommended for consistency.
+
 
 ## Metadata structure and templates
 
@@ -55,6 +59,8 @@ To facilitate image documentation, the Metadata Editor includes two pre-configur
 
 
 ## Documenting an image using the Dublin Core option
+
+This section describes the documentation of an image using the Dublin Core (DCMI) option.
 
 The Dublin Core standard contains 15 core elements, which are generic and versatile enough to be used for documenting different types of resources. Other elements can be added to the specification to increase its relevancy for specific uses. We added a few elements inspired by the [ImageObject](https://schema.org/ImageObject) schema from schema.org to the 15 elements.
 
@@ -173,8 +179,12 @@ We provide here some description and recommendations for the key metadata elemen
 
 - **`Rights`** (*rights*) The copyrights for the photograph. License is in another (common) element.
 
+> This completes the Dublin Core set of metadata elements. When this information is complete, continue with the other sections (sections common to both the Dublin Core and the IPTC options).
+
   
 ## Documenting an image using the IPTC option
+
+This section describes the documentation of an image using the IPTC option.
 
 
 ### Create a new project
@@ -549,6 +559,8 @@ https://www.iptc.org/std/photometadata/specification/IPTC-PhotoMetadata#embedded
   - **`Asset identifier`** (*assetIdentifier*) A unique identifier created by the registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier is linked to a corresponding Registry Organization Identifier. Enter the unique identifier created by a registry and applied by the creator of the digital image. This value shall not be changed after being applied. This identifier may be globally unique by itself, but it must be unique for the issuing registry. An input to this field should be made mandatory.
   - **`Registry identifier`** (*registryIdentifier*) An identifier for the registry/organization which issued the corresponding Registry Image Id.   
 
+> This completes the IPTC set of metadata elements. When this information is complete, continue with the other sections (sections common to both the Dublin Core and the IPTC options).
+
 
 ### Fill out the *License* section
 
@@ -575,6 +587,7 @@ This section is common to both the DCMI and IPTC options.
 This section is common to both the DCMI and IPTC options.
 
 See section **Documenting data - General instructions**.
+
 
 ### Add the external resources
 
