@@ -20,7 +20,7 @@ After logging in, click on your username in the top menu to open a dropdown menu
 
 ![image](img/ME_UG_v1-0-0_user_menu.png)
 
-- `Profile` and API key
+- `Profile` and API keys
 
   Clicking on `Profile` opens a page displaying your profile details with an option to edit them.
 
