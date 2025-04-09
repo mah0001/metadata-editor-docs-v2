@@ -18,9 +18,13 @@ The API is for:
 ## Warnings and recommendations
 
 API requires a key.
+
 A key is specific to a registered user.
+
 The roles and permissions of the user are embedded in the key; what you can do after login, you can do using the API.
+
 API keys must be kept secret; do not share, not not enter in plain in you scripts! They are like your password.
+
 If your API is compromised, delete it immediately and generate a new one. Notify the administrator to investigate if the key has been used. 
 
 Additional security: enforce IP check (do not authorize the use of API from outside the organization).
