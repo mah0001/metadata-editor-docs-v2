@@ -9,10 +9,17 @@ Provide R package and Python library for facilitating use. See next chapters.
 
 ## Purposes
 
+Automate tasks. Gain in productivity and efficiency in many cases.
+
 The API is for:
-- Data curators: Create new projects; add, edit, delete content ; manage my projects
-- Administrators: generate reports
-- Users: Users here are typically administrators of data dissemination systems who will extract metadata from the Metadata Editor to publish them; these are not end-users as the ME is not a public-facing application 
+- Data curators:
+  - Create new projects;
+  - Migrate projects 
+  - Maintain projects: add, edit, delete content 
+  - Manage my projects
+- Administrators: Generate reports ; routine maintenance
+- Metadata users: Users here are typically administrators of data dissemination systems who will extract metadata from the Metadata Editor to publish them; these are not end-users as the ME is not a public-facing application
+  - Extract metadata for publishing (with filters, check timestamnp; etc. Exploit administrative metadata.  
 
 
 ## Warnings and recommendations
