@@ -1,7 +1,9 @@
 # Introduction to the Metadata Editor API
 
 Restful API.
+
 Use programming language
+
 Provide R package and Python library for facilitating use. See next chapters.
 
 
