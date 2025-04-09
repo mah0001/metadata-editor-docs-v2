@@ -30,7 +30,7 @@ If your API is compromised, delete it immediately and generate a new one. Notify
 Additional security: enforce IP check (do not authorize the use of API from outside the organization).
 
 
-## getting started
+## Getting started
 
 Generate an API key
 Quick examples:
