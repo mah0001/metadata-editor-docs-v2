@@ -324,7 +324,7 @@ See section **Documenting - General instructions**.
 
 #### Provenance 
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section **Documenting - General instructions**.
+The **Provenance** container is used to document how and when the project was acquired, if the project was extracted from an external catalog. It is used to ensure traceability. See section **Documenting - General instructions**.
 
 
 #### External resources
