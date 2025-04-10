@@ -15,7 +15,7 @@ The dataset we will document is a synthetic household survey dataset created for
 - Other: *synthetic_data_logo.jpg* (a logo for the survey, in JPG format)
 
 
-## Step 1: Create a new project and add a thumbnail
+## Step 1: Create a new project 
 
 To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The My projects page will be displayed, showing all projects you have previously created and those that have been shared with you by other data curators, if any. If you are using the application for the first time and no project has been shared with you, the project list will be empty. In the example below, we see that one project was previously created.
 
