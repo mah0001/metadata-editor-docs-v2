@@ -1,4 +1,4 @@
-# Documenting a publication of report
+# Documenting a publication or report
 
 The schema we describe here is the schema used for documents that will be listed as catalog entries and made searchable, not those that will be attached to datasets as external resources and for which the “external resource” metadata schema must be used (see Documenting: General instructions").
 
