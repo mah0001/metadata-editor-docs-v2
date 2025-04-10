@@ -4,6 +4,8 @@ In this Quick start example, we will document a research project titled *Double 
 
 The only file you need to reproduce this Quick-Start example is the image file *.../quick_start_files/scripts/llm_jeopardy_research.jpg* (or select any another JPG or PNG image of your choice).
 
+> This Quick Start section does not include detailed guidance on documenting research projects and scripts. For comprehensive instructions, see the chapter **Documenting Data – Research projects and scripts**. 
+
 
 ## Step 1: Create a new project and add a thumbnail
 
