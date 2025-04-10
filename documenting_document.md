@@ -61,7 +61,10 @@ The **`metadata_information`** section contains information not related to the d
 
 #### Document description
 
-The **`Document description`** block contains the metadata elements used to describe the document. We provide below instructions or recommendations for some of the metadata elements of the metadata schema. The label of the elements are the ones used in a Metadata editor template; the name (the key) of the corresponding element in the metadata elements are indicated between brackets.
+The **`Document description`** block contains the metadata elements used to describe the document. We provide below instructions or recommendations for some of the metadata elements of the metadata schema. 
+
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
+
 
 **TITLE STATEMENT**
 
