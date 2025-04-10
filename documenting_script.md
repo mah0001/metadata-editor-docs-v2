@@ -50,7 +50,6 @@ Then select (in the *Template* frame) the project template you want to use to do
 
 ### Enter metadata
 
-In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
 
 #### Metadata information
 
@@ -63,7 +62,10 @@ The Metadata information section in the navigation tree (in the Project page) co
 
 ![image](img/ME_UG_v1-0-0_documenting_script_project_description.png)
 
-We provide below a description of the metadata elements contained in the `Project description` section of the default metadata template provided in the Metadata Editor. Other templates may show a different selection, different labels, or present the elements in a different sequence. For each element, we provide between brackets the name (the *key*) of the element in the metadata standard. When you document a dataset, it is not expected that all these elements will be filled. Fill all required elements, all recommended elements when content can be made available, and fill as many as the other elements (the required and recommended elements will be those marked as *required* or *recommended* in the metadata standard or template).
+We provide below a description of the metadata elements contained in the `Project description` section of the default metadata template provided in the Metadata Editor. Other templates may show a different selection, different labels, or present the elements in a different sequence. When you document a dataset, it is not expected that all these elements will be filled. Fill all required elements, all recommended elements when content can be made available, and fill as many as the other elements (the required and recommended elements will be those marked as *required* or *recommended* in the metadata standard or template).
+
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
+
 
 **TITLE STATEMENT**
 
