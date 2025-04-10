@@ -50,6 +50,7 @@ Then select (in the *Template* frame) the project template you want to use to do
 
 ### Enter metadata
 
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
 
 #### Metadata information
 
