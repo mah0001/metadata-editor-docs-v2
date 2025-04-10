@@ -21,7 +21,14 @@ To make data processing and analysis scripts more discoverable and usable, we pr
 
 ## Preparing for the documentation
 
-[to do]
+Before you start documenting the project, it is highly recommended to organize all relevant resources in an optimal manner. This includes following best practice in the writing of scripts (and ideally adopting a relevant style guide), of naming the files containing your programs and scripts, or organizing a GitHub repository if you publish content on GitHib, and more.
+
+Resources related to best practice in code writing and reproducibility include (among others):
+- **World Bank Reproducible Research Catalog**: An online catalog of reproducible research by the World Bank, which makes use of the metadata standard documented in the chapter (https://reproducibility.worldbank.org/)
+- **Reproducible Research**: A wiki page by the World Bank DIME department (https://dimewiki.worldbank.org/Reproducible_Research)
+- **World Bank Reproducible Research Repository Resources**: (https://worldbank.github.io/wb-reproducible-research-repository/)
+- **PEP 8 – Style Guide for Python Code** (for Python users) (https://peps.python.org/pep-0008/)
+- **Tidyverse style guide** by the tidyverse team (for R users) (https://style.tidyverse.org/)
 
 
 ## Documenting the research project
