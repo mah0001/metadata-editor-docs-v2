@@ -51,6 +51,9 @@ The template includes a description of each metadata element it contains, which 
 
 We provide below some guidance on a selection of the metadata elements found in the metadata schema. A small number of these elements are marked as *required*. When documenting an indicator, it is advised to provide the most comprehensive information possible. 
 
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
+
+
 **TITLE STATEMENT**
 
 - **`Primary ID`** (*idno*) A unique identifier (ID) for the indicator. This is a required element. Most agencies will (and should) use a coherent coding convention to generate their indicators identifiers
