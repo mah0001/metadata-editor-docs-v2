@@ -35,9 +35,9 @@ The metadata schema we propose to document publications and reports is a combina
 See the **Quick start: Document** chapter for a quick introduction to the documentation of a publication or report. 
 
 
-### Create a project
+### Create a new project
 
-The first step in documenting a publication or report is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Document* as data type. This will open a new, untitled *Project* home page. 
+The first step in documenting a publication or report is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Document* as data type. This will open a new, untitled *Project Home* page. 
 
 ![image](img/ME_UG_v1-0-0_documenting_document_project_home_page.png)
 
@@ -45,9 +45,11 @@ In that page, edit the thumbnail and replace it with a screenshot of the documen
 
 Then select (in the *Template* frame) the project template you want to use to document the publication or report. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
+
 ### Enter metadata
 
 The proposed schema comprises two main blocks of elements, **`metadata_information`** and **`document_description`**. It also contains the `tags` element common to all our schemas. The `repository_id`, `published` and `overwrite` items in the schema are not metadata elements *per se*, but parameters used when publishing the metadata in a NADA catalog. 
+
 
 #### Metadata information
 
