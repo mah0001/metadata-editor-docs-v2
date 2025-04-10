@@ -6,6 +6,8 @@ The metadata we will enter in the Metadata Editor is the metadata published by t
 
 The only files you need to reproduce this Quick-start example are the image file that will be used as thumbnail (*.../quick_start_files/indicator/poverty_thumbnail.jpg*) and the CSV file (*quick_start_files/indicator/SI.POV.DDAY_countries_data*) that contains the list of countries and years for which the data are available in the WDI database (CSV file extracted from an Excel file downloaded on 13 February 2025 from the World Bank website at https://api.worldbank.org/v2/en/indicator/SI.POV.DDAY?downloadformat=excel).
 
+> This Quick Start section does not include detailed guidance on documenting indicators and time series. For comprehensive instructions, see the chapter **Documenting Data – Indicators**. 
+
 
 ## Step 1: Create a new project 
 
