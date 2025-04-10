@@ -1,6 +1,8 @@
 # Quick start: Microdata
 
-In this example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. This quick-start example only illustrates a few core features of the Metadata Editor. For a complete description of the features available for microdata documentation, please refer to section *Documenting Microdata*.
+In this example, we will document a survey dataset (microdata) using the DDI Codebook metadata standard. 
+
+> This Quick Start section does not include detailed guidance on documenting microdata. For comprehensive instructions, see the chapter **Documenting Data – Micropata**. 
 
 The dataset we will document is a synthetic household survey dataset created for a fictional country. The files needed to reproduce the example are provided in folder *.../quick_start_files/microdata*. Download and save the content of this folder in a local folder of your choice. The materials provided include:
 
