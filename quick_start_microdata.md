@@ -15,7 +15,7 @@ The dataset we will document is a synthetic household survey dataset created for
 - Other: *synthetic_data_logo.jpg* (a logo for the survey, in JPG format)
 
 
-**Step 1: Create a new project and add a thumbnail**
+## Step 1: Create a new project and add a thumbnail
 
 To begin, open the Metadata Editor in your web browser (the URL is determined by where you installed the application), and log in with your username and password. The My projects page will be displayed, showing all projects you have previously created and those that have been shared with you by other data curators, if any. If you are using the application for the first time and no project has been shared with you, the project list will be empty. In the example below, we see that one project was previously created.
 
@@ -36,7 +36,7 @@ We will use an image as thumbnail for the project. The thumbnail is optional; it
 Documenting a dataset (or a document in this case) consists of entering metadata in metadata entry forms defined by a *metadata template*. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
 
 
-**Step 2: Add descriptive metadata**
+##Step 2: Add descriptive metadata
 
 In the section *Document description / Metadata preparation*, enter the (optional) information on the metadata. Enter your name (as `Metadata producer`) and the `date` of the day in ISO format YYYY-MM-DD. This is the date when the metadata, not the dataset, was produced. Then click on `SAVE`.
 
@@ -103,7 +103,7 @@ The metadata elements in the template correspond to the content of the Excel fil
 | Citation requirement          | Data access / `Citation requirement`              | 
 
 
-**Step 3: Import and document the data files (section Study Description)**
+## Step 3: Import and document the data files (section Study Description)
 
 When all available descriptive information is entered in  *Study description*, click on *Data files* in the navigation bar. On the *Data files* page, click `IMPORT FILES`, select the two Stata data files to be imported (*WLD_2023_SYNTH-SVY-HLD-EN_v01_M.dta* and *WLD_2023_SYNTH-SVY-IND-EN_v01_M.dta*), and click `IMPORT`.
 
@@ -128,7 +128,7 @@ You will now document the data files they contain. First, click on the filename 
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_data_file_description.png)
 
 
-**Step 4: Document the variables**
+## Step 4: Document the variables
 
 Next, we will add or edit the variable-level information. In the navigation bar, select *Variables* for one of the data files (you will do that for both data files). 
 
@@ -189,7 +189,7 @@ The summary statistics will now display both the unweighted and weighted values.
 The summary statistics that are displayed in the Metadata Editor will be part of the saved metadata. As a last step in documenting variables, you should browse the variables to verify that the selected summary statistics for each variable are indeed meaningful. Statistics like *mean* or *standard deviation* should not be included for categorical variables.
 
 
-**Step 5: Add information on related resources**
+## Step 5: Add information on related resources
 
 Once you have entered the variable-level metadata for both files, you can finalize the documentation of the dataset by documenting and attaching *external resources* to the survey metadata. External resources include all materials that you want to make accessible to users when you publish the dataset in a catalog. This may include the microdata files if you want to disseminate them (openly or under restrictions). In this example, we will load the dataset and the two Excel files that contain respectively the questionnaire and the information on the survey. The two Stata files can be uploaded as one single ZIP file. Note that you could provide the data in more than one format, for example, you could export them to CSV and SPSS formats and include data files in these formats as external resources, for user convenience.
 
@@ -198,7 +198,7 @@ To create external resources, click on *External resources* in the navigation tr
 ![image](img/ME_UG_v1-0-0_quick_start_microdata_list_external_resources.png)
 
 
-**Step 6: Export and publish metadata**
+## Step 6: Export and publish metadata
 
 In the *Project* page, a menu of options will be available to you.
 
