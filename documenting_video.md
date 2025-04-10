@@ -38,7 +38,10 @@ The metadata information set is used to document the video metadata (not the vid
 
 ### Enter the video description
 
-The `Video description` section contains all elements that will be used to describe the video and its content. These are the elements that will be indexed and made searchable when published in a data catalog. We provide below a brief description and recommendations for the metadata elements included in the default metadata template in the Metadata Editor. The names between brackets are the names of the elements in the metadata standard. 
+The `Video description` section contains all elements that will be used to describe the video and its content. These are the elements that will be indexed and made searchable when published in a data catalog. We provide below a brief description and recommendations for the metadata elements included in the default metadata template in the Metadata Editor. 
+
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
+
 
 **TITLE STATEMENT**
 
