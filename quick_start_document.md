@@ -4,7 +4,7 @@ In this example, we will document a book titled *The Analysis of Household Surve
 
 In this Quick-start exercise, we assume that you want to publish information on the book in a data catalog, with a link to the World Bank's Open Knowledge Repository (i.e., we assume that you not plan to make the book directly available from your catalog). The only file you need to reproduce this Quick-Start example is the image file of the book's cover page (file *.../quick_start_files/document/cover_deaton_survey_analysis.jpg*), although you may use another image file of your choice.
 
-> This Quick Start section does not include detailed guidance on documenting publications. For comprehensive instructions, see the chapter **Documenting Data – Documents**.
+> This Quick Start section does not include detailed guidance on documenting publications. For comprehensive instructions, see the chapter **Documenting a publication or report**.
 
 
 ## Step 1: Create a new project and add a thumbnail
