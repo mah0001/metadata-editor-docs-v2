@@ -4,7 +4,7 @@
     * [Acknowledgments](intro_acknowledgments.md)
     * [Rationale and objective](intro_rationale.md)
     * [Introduction to metadata standards](intro_metadata_standards.md)
-    * [How to generate structured metadata?](intro_metadata_creation.md)
+    * [How to produce standard-compliant metadata?](intro_metadata_creation.md)
     
 * Specifications, installation, and upgrade
   
