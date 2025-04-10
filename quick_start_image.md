@@ -4,7 +4,7 @@ In this example, we will document an image extracted from the World Bank photo c
 
 The only file you need to reproduce this Quick-Start example is the image file *.../image/wb_photo_food_market.jpg* (feel free to use another image of your choice).
 
-> This Quick Start section does not include detailed guidance on documenting geographic data. For comprehensive instructions, see the chapter **Documenting Data – Images**.
+> This Quick Start section does not include detailed guidance on documenting images. For comprehensive instructions, see the chapter **Documenting Data – Images**.
 
 
 ## Step 1: Create a new project and add a thumbnail
