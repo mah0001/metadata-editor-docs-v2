@@ -114,6 +114,8 @@ Edit the thumbnail by selecting an image. It is highly recommended to select the
 
 ![image](img/ME_UG_v1-0-0_documenting_image_dcmi_information_on_metadata.png)
 
+In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
+
 
 ### Fill out the DCMI and additional sections (image description)
 
