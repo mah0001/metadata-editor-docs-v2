@@ -33,23 +33,32 @@ Resources related to best practice in code writing and reproducibility include (
 
 ## Documenting the research project
 
-### Creating a new project
+### Create a new project
+
+The first step in documenting a research project and its scripts is to create a new project. You do that by clicking on `CREATE NEW PROJECT` in the *My projects* page. Select *Script* as data type. This will open a new, untitled *Project Home* page.
 
 ![image](img/ME_UG_v1-0-0_documenting_script_create_new_project.png)
 
 ![image](img/ME_UG_v1-0-0_documenting_script_create_new_project_type.png)
 
+In that page, edit the thumbnail and replace it with an image of your choice (recommended, not required).
+
+Then select (in the *Template* frame) the project template you want to use to document the project. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
+
 ![image](img/ME_UG_v1-0-0_documenting_script_create_project_home_page.png)
 
 
-### Metadata information
+### Enter metadata
+
+
+#### Metadata information
 
 The Metadata information section in the navigation tree (in the Project page) contains elements intended to document the metadata being generated, i.e., metadata about the metadata. All content in this section is optional; it is however recommended practice to document the metadata as precisely as possible. This information will not be useful to data users, but it will be to catalog administrators. When metadata is shared across catalogs, the information entered in the `Information on metadata` provides transparency and clarity on the origin of the metadata.
 
 ![image](img/ME_UG_v1-0-0_documenting_script_metadata_information.png)
 
 
-### Project description
+#### Project description
 
 ![image](img/ME_UG_v1-0-0_documenting_script_project_description.png)
 
@@ -303,14 +312,26 @@ An alternative to this field is the `acknowledgment_statement` field (see below)
   - **`URL`** (*uri*) The URI of the agency or organization of the contact organization. This may be the same as the web page of the project or may be a permanent contact name at an institutional level and not project related. Eventually a project web site may be removed but there may still be need to have a contact. In this case, it is recommended to have a contact that is permanent.
 
 
-### Tags
+#### DataCite
+
+See section **Documenting - General instructions**.
 
 
-### External resources
+#### Tags
+
+See section **Documenting - General instructions**.
 
 
+#### Provenance 
+
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section **Documenting - General instructions**.
 
 
+#### External resources
+
+External resources are all materials (and links) that relate to the indicator. This will include the programs and scripts, documents, and other digital resources and links. These materials and links are added in the External resources container. Select *External resources* in the navigation tree, then on `CREATE RESOURCE`. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
+
+External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. Then click on `IMPORT` in the External resources page, and select the file. 
 
 
 
