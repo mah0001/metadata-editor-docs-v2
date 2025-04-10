@@ -1,4 +1,4 @@
-# Production of standard-compliant metadata
+# How to produce standard-compliant metadata?
 
 Standard-compliant metadata can be produced and edited through three main approaches: **using a Metadata Editor** software application, **programmatically** using a language like R or Python, or through **other metadata-enabled software** applications. Each approach offers distinct advantages depending on the level of automation, user expertise, and the specific type of data being documented.
 
