@@ -1,10 +1,10 @@
 # Documenting a publication or report
 
-The schema we describe here is the schema used for documents that will be listed as catalog entries and made searchable, not those that will be attached to datasets as external resources and for which the “external resource” metadata schema must be used (see Documenting: General instructions").
+> Note: The schema we describe here is the schema used to document publications and reports to be catalogued, not the schema used to documents resources that may be attached as external resources to data of any type, for which the *External resource* metadata schema is used (see ***Documenting Data: General instructions***).
 
-Librarians have developed specific standards to describe and catalog documents. The [MARC21](https://www.loc.gov/marc/bibliographic/) (**MA**chine-**R**eadable **C**ataloging) standard used by the United States Library of Congress is one of them. It provides a detailed structure for documenting bibliographic resources, and is the recommended standard for well-resourced document libraries.
+Librarians have developed various standards to describe and catalog documents. The [MARC21](https://www.loc.gov/marc/bibliographic/) (**MA**chine-**R**eadable **C**ataloging) standard used by the United States Library of Congress is one of them. It provides a detailed structure for documenting bibliographic resources, and is the recommended standard for well-resourced document libraries.
 
-For the purpose of cataloguing documents in a less-specialized repository intended to accommodate data of multiple types, we built our schema on a simpler but also highly popular standard, the **Dublin Core Metadata Element Set**. We will refer to this metadata specification, developed by the [Dublin Core Metadata Initiative](https://dublincore.org/), as the *Dublin Core*. The Dublin Core became an ISO standard (ISO 15836) in 2009. It consists of a list of fifteen core metadata elements, to which more specialized elements can be added. These fifteen elements, with a definition extracted from the Dublin Core [website](https://dublincore.org/), are the following:
+For the purpose of cataloguing documents in a less-specialized data repository, we propose a simplerschema, based on the **Dublin Core Metadata Element Set**. The Dublin Core standard, developed by the [Dublin Core Metadata Initiative](https://dublincore.org/), consists of a list of fifteen core metadata elements to which more specialized elements can be added. These fifteen elements are the following (with their definition extracted from the Dublin Core [website](https://dublincore.org/):
 
 |No | Element name         | Description                                                     | 
 |-- | -------------------- | --------------------------------------------------------------- | 
@@ -24,11 +24,12 @@ For the purpose of cataloguing documents in a less-specialized repository intend
 |14 | `title`              | A name given to the resource.                                    |
 |15 | `type`               | The nature or genre of the resource.                             |
 
-Due to its simplicity and versatility, this standard is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
+Due to its simplicity and versatility, the Dublin Core is widely used for multiple purposes. It can be used to document not only documents but also resources of other types like images or others. Documents that can be described using the MARC21 standard can be described using the Dublin Core, although not with the same granularity of information. The US Library of Congress provides a [mapping between the MARC and the Dublin Core](https://www.loc.gov/marc/marc2dc.html) metadata elements. 
 
-MARC 21 and the Dublin Core are used to document a resource (typically, the electronic file containing the document) and its content. Another schema, [BibTex](https://en.wikipedia.org/wiki/BibTeX), has been developed for the specific purpose of recording bibliographic citations. BibTex is a list of fields that may be used to generate bibliographic citations compliant with different bibliography styles. It applies to documents of multiple types: books, articles, reports, etc.  
+Another schema, [BibTex](https://en.wikipedia.org/wiki/BibTeX), has been developed for the specific purpose of recording bibliographic citations. BibTex is a list of fields that may be used to generate bibliographic citations compliant with different bibliography styles.  
 
-The metadata schema we propose to document publications and reports is a combination of Dublin Core, MARC21, and BibTex elements. The technical documentation of the schema and its API is available at https://ihsn.github.io/nada-api-redoc/catalog-admin/#tag/Documents.
+The metadata schema implemented in the Metadata Editor to document publications and reports is a combination of Dublin Core, MARC21, and BibTex elements. The technical documentation of the schema and its API is available at https://ihsn.github.io/nada-api-redoc/catalog-admin/#tag/Documents.
+
 
 ## Documenting the publication or report
 
@@ -41,23 +42,24 @@ The first step in documenting a publication or report is to create a new project
 
 ![image](img/ME_UG_v1-0-0_documenting_document_project_home_page.png)
 
-In that page, edit the thumbnail and replace it with a screenshot of the document cover page (recommended, not required).
+In that page, edit the thumbnail (optional, not required). It is recommended to use a screenshot of the document's cover page as thumbnail.
 
-Then select (in the *Template* frame) the project template you want to use to document the publication or report. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
+Then, in the *Template* frame of the project *Home* page, select the project template you want to use to document the publication or report. A default template is proposed; no action is needed if you want to use the default template. Otherwise, switch to another template by clicking on the template name in the **Templates** frame. Note that you can at any time change the template used for the documentation of a project. The selected template will determine what you see in the navigation tree and in the metadata entry pages, but switching from one template to another will not impact the metadata that has already been entered; no information will be deleted from the metadata.
 
 
 ### Enter metadata
 
-The proposed schema comprises two main blocks of elements, **`metadata_information`** and **`document_description`**. It also contains the `tags` element common to all our schemas. The `repository_id`, `published` and `overwrite` items in the schema are not metadata elements *per se*, but parameters used when publishing the metadata in a NADA catalog. 
+The metadata schema comprises two main blocks of elements, **`metadata_information`** and **`document_description`**. It also contains a few sets of elements common to all data types (*Tags*, *DataCite*, *Provenance*, *External resources*, and *Administrative metadata*).  
 
 
 #### Metadata information
 
-The **`metadata_information`** section contains information not related to the document itself but to its metadata. In other words, it contains "metadata on the metadata". This information is optional but we recommend to enter content at least in the `name` and `date` sub-elements, which indicate who generated the metadata and when. This information is not useful to end-users of document catalogs, but is useful to catalog administrators for two reasons:
+The **`metadata_information`** section contains information not related to the document itself but to its metadata. In other words, it contains metadata on the metadata. This information is optional but we recommend to enter content at least in the `name` and `date` sub-elements, which indicate who generated the metadata and when. This information is not useful to end-users of document catalogs, but is useful to catalog administrators for two reasons:
 
   - metadata compliant with standards are intended to be shared and used by inter-operable applications. Data catalogs offer opportunities to harvest (pull) information from other catalogs, or to publish (push) metadata in other catalogs. Metadata information helps to keep track of the provenance of metadata.
   
   - metadata for a same document may have been generated by more than one person or organization, or one version of the metadata can be updated and replaced with a new version. The `metadata information` helps catalog administrators distinguish and manage different versions of the metadata.
+
 
 #### Document description
 
@@ -358,7 +360,7 @@ See section **Documenting - General instructions**.
 
 #### Provenance 
 
-The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See section **Documenting - General instructions**.
+The **Provenance** container is used to document how and when the dataset was acquired. It is used to ensure traceability. See chapter **Documenting - General instructions**.
 
 
 #### External resources
@@ -366,3 +368,8 @@ The **Provenance** container is used to document how and when the dataset was ac
 External resources are all materials (and links) that relate to the indicator. This may include documents on methodology, scripts, photos and videos, and any other resource available in digital format. These materials and links are added to the documentation of an indicator in the External resources container. Select *External resources* in the navigation tree, then on `CREATE RESOURCE`. Enter the relevant information on the resource (at least a title), then provide either a filename (the file will then be uploaded on the server that hosts the Metadata Editor) or a URL to the resource.
 
 External resources that have already been created for another project can also be imported. To do that, they must first be exported as JSON or RDF from the other project. Then click on `IMPORT` in the External resources page, and select the file. 
+
+
+#### Administrative metadata
+
+One or multiple administrative metadata templates can be attached to the project. See See chapter **Documenting - General instructions** and **Administrtaive metadata**.
