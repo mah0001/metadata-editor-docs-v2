@@ -146,16 +146,14 @@ This section describes how to document a geographic dataset (vector or raster) u
 The metadata template provided with the Metadata Editor identifies metadata elements that are specific to vector or raster datasets, or to data services.
 
 
-### Prepare/extract information
+### Prepare your materials
 
-
-### Generate gallery
+Gather all information
+Organize the data and metadata in a folder
+Generate a gallery of images
 
 
 ### Create a project
-
-
-### Import metadata (from QGIS) 
 
 
 ### Extract metadata from data files 
@@ -185,11 +183,13 @@ We describe below the metadata elements included in the recommended templates. T
 
 In the list of metadata elements below, the *key* of each element in the metadata standard is provided between brackets next to the corresponding element's label in the template.
 
-**INTRODUCTION**
 
 - **`Primary ID`** (*description/idno*) The "Primary ID" (also referred to as IDNO) is a unique identification number used to identify the study (geographic dataset or service). A unique identifier is required for cataloguing purpose, so this element is declared as "Required". The identifier will allow users to cite the study properly. The identifier must be unique within the catalog. Ideally, it should also be globally unique; the recommended option is to obtain a Digital Object Identifier (DOI) for the study. Alternatively, the "Primary ID" can be constructed by an organization using a consistent scheme. The identifier should not contain blank spaces.
 
-- **`Language`** (*description/language*) Main language used in the metadata description.
+
+- **`Metadata language`** (*description/language*) Main language used in the metadata description. It is recommended to select a value from a controlled vocabulary, for example that provided by ISO 639-2.
+
+
 
 - **`Character set`** (*characterSet*) The character set encoding used in the dataset.
   - **`Characterset code`** (*characterSet/codeListValue*) 
@@ -824,32 +824,34 @@ The following ESRI projections could be relevant, in particular those in support
 **`Type`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/date/type*) Date type e.g. publication, revision, creation
 **`Edition`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/edition*) 
 **`Edition date`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/editionDate*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/identifier`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/identifier*) NOT-AVAILABLE
+
+**`Identifier`**
 **`Identifier authority`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/identifier/authority*) 
 **`Identifier code`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/identifier/code*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty*) NOT-AVAILABLE
+
+**`Cited responsible party`** 
 **`Individual name`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/individualName*) 
 **`Organisation name`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/organisationName*) 
 **`Position`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/positionName*) 
 **`Role`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/role*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/address`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
+**`Contact information`** 
 **`Email`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/phone`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
+**`Phone`** 
 **`Voice`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/phone/voice*) 
 **`Facsimile`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address*) NOT-AVAILABLE
+**`Address`** 
 **`Delivery point`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address/deliveryPoint*) 
 **`City`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address/city*) 
 **`Postal code`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address/postalCode*) 
 **`Country`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487442077/contactInfo/address/country*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource*) NOT-AVAILABLE
+**`Online resource`** 
 **`Name`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource/name*) 
 **`URL`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource/linkage*) 
 **`Description`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource/description*) 
 **`Protocol`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource/protocol*) 
 **`Function`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/citedResponsibleParty/section-1676487449053/contactInfo/onlineResource/function*) 
 **`Resource presentation`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/presentationForm*) 
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/series_section/specification/series`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/series_section/specification/series*) NOT-AVAILABLE
+**`Series`** 
 **`Name`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/series_section/specification/series/name*) 
 **`Issue`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/series_section/specification/series/issueIdentification*) Identification of the issue
 **`Page`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/series_section/specification/series/page*) 
