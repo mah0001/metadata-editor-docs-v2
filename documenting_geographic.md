@@ -343,182 +343,206 @@ In the list of metadata elements below, the *key* of each element in the metadat
   - **`Thesaurus name`** (*description/identificationInfo/descriptiveKeywords/thesaurusName*) A reference to a thesaurus (if applicable) from which the keywords are extracted. The thesaurus itself should then be documented as a citation.
 
 
-**
 
-**`description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints*) NOT-AVAILABLE
-**`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useLimitation*) 
-**`Access constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/accessConstraints*) Legal access constraints. The ISO 19139 provides a controlled vocabulary. These are the access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.
-**`Use constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useConstraints*) Use constraints. To be entered as free text. Filling this element will depend on the resource that is described. As best practice recommended to fill this element, this is where terms of use, disclaimers, preferred citation or* even data limitations can be captured
-**`Other constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/otherConstraints*) Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata.
-**`description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints*) NOT-AVAILABLE
-**`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/useLimitation*) Restrictions on the access and use of a resource or metadata.
-**``** (**) - If no conditions apply to the access and use of the resource, ‘no conditions apply’ shall be used. If conditions are unknown, ‘conditions unknown’ shall be used.
-**``** (**) - Descriptions of terms and conditions, including where applicable, the corresponding fees shall be provided through this element or a link (URL) where these terms and conditions are described.
-**``** (**) - For detailed information it is recommended to provide a link to a license type (e.g. http://creativecommons.org/licenses/by/3.0), a website or to a document containing the necessary information.
-**`Classification`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/classification*) Name of the handling restrictions on the resource. The ISO 19139 provides a controlled vocabulary.
-**`Classification system`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/classificationSystem*) Information on the system used to classify the information. Organizations may have their own system to classify the information.
-**`Description of the classification`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/handlingDescription*) Additional free-text description of the classification.
-**`Note on constraints`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/userNote*) Note to users (free text)
-**`description/identificationInfo/resourceSpecificUsage`** (*description/identificationInfo/resourceSpecificUsage*) NOT-AVAILABLE
-**`Specific usage`** (*description/identificationInfo/resourceSpecificUsage/specificUsage*) 
-**`Time stamp`** (*description/identificationInfo/resourceSpecificUsage/usageDateTime*) 
-**`User determined limitations`** (*description/identificationInfo/resourceSpecificUsage/userDeterminedLimitations*) 
-**`description/identificationInfo/resourceSpecificUsage/userContactInfo`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo*) NOT-AVAILABLE
-**`Individual name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/individualName*) 
-**`Organisation name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/organisationName*) 
-**`Position`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/positionName*) 
-**`Role`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/role*) 
-**`description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/address`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/address/electronicMailAddress*) 
-**`description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/facsimile*) 
-**`description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/city*) 
-**`Postal code`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/postalCode*) 
-**`Country`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/country*) 
-**`description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/name*) 
-**`URL`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/function*) 
-**`description/identificationInfo/aggregationInfo`** (*description/identificationInfo/aggregationInfo*) NOT-AVAILABLE
-**`Aggregate dataset name`** (*description/identificationInfo/aggregationInfo/aggregateDataSetName*) 
-**`Aggregate dataset identifier`** (*description/identificationInfo/aggregationInfo/aggregateDataSetIdentifier*) 
-**`Association type`** (*description/identificationInfo/aggregationInfo/associationType*) 
-**`Type of initiative`** (*description/identificationInfo/aggregationInfo/initiativeType*) 
-**`description/identificationInfo/extent/geographicElement/geographicBoundingBox`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox*) NOT-AVAILABLE
-**`West bound longitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/westBoundLongitude*) West
-**`East bound longitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/eastBoundLongitude*) East
-**`South bound latitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/southBoundLatitude*) South
-**`North bound latitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/northBoundLatitude*) North
-**`Geohash`** (*geohash*) 
-**`description/identificationInfo/extent/geographicElement/geohash`** (*description/identificationInfo/extent/geographicElement/geohash*) NOT-AVAILABLE
-**`Geohash`** (*description/identificationInfo/extent/geographicElement/geohash/geohash*) Geohash
-**`Note`** (*description/identificationInfo/extent/geographicElement/geohash/note*) Notes
-**`description/identificationInfo/extent/geographicElement`** (*description/identificationInfo/extent/geographicElement*) NOT-AVAILABLE
-**`Geographic description`** (*description/identificationInfo/extent/geographicElement/geographicDescription*) 
-**`description/identificationInfo/extent/geographicElement/geographicBoundingPolygon`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon*) NOT-AVAILABLE
-**`Polygon Identifier (ID)`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/id*) 
-**`Polygon`** (*geographicBoundingPolygon/polygon*) 
-**`description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon*) NOT-AVAILABLE
-**`Interior or exterior ring`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/ring*) 
-**`Type`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/type*) Type of geometry
-**`Coordinates`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/coordinates*) Coordinates of the polygon. The first and last coordinate pairs must be the same to close the polygon.
-**`Temporal element`** (*description/identificationInfo/extent/temporalElementExtent*) The temporal extent defines the time period covered by the content of the resource. Depending on the temporal characteristics of the dataset, this will consist in a Time period (made of a begin position and end position) or a time instant (made of a single time position) referencing date/time information according to ISO 8601.
-**``** (**) 
-**``** (**) This time period may be expressed as:
-**``** (**) - an individual date
-**``** (**) - an interval of dates (starting date and ending date)
-**``** (**) - a mix of individual dates and intervals of dates
-**`beginPosition`** (*description/identificationInfo/extent/temporalElementExtent/beginPosition*) Begin time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
-**`endPosition`** (*description/identificationInfo/extent/temporalElementExtent/endPosition*) End time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
-**`Vertical element`** (*description/identificationInfo/extent/verticalElement*) Spatial (vertical) extent element, providing two properties: minimum value, maximum value and vertical CRS (reference to the vertical coordinate reference system)
-**`Minimum value`** (*description/identificationInfo/extent/verticalElement/minimumValue*) 
-**`Maximum value`** (*description/identificationInfo/extent/verticalElement/maximumValue*) 
-**`Vertical CRS`** (*description/identificationInfo/extent/verticalElement/verticalCRS*) 
-**`Spatial representation type`** (*description/identificationInfo/spatialRepresentationType*) The spatial representation type of the dataset. Values should be selected from the following controlled vocabulary: {vector, grid, textTable, tin, stereoModel, video}
-**`Spatial resolution`** (*description/identificationInfo/spatialResolution*) The spatial resolution of the data as numeric value associated to a unit of measure. Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
-**``** (**) 
-**``** (**) EXAMPLES:
-**``** (**) - 50000 (e.g. 1:50000 scale map)
-**``** (**) - 0.25 (degrees)
-**``** (**) 
-**``** (**) NOTES:
-**``** (**) - For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
-**``** (**) - When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values
-**`Spatial resolution UOM`** (*description/identificationInfo/spatialResolution/uom*) 
-**`Value`** (*description/identificationInfo/spatialResolution/value*) 
-**`Language`** (*description/identificationInfo/language*) The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant).
-**``** (**) It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English).
-**``** (**) The list of all the codes is defined at http://www.loc.gov/standards/iso639-2/.
-**``** (**) Regional languages also are included in this list.
-**`description/identificationInfo/description/characterSet`** (*description/identificationInfo/description/characterSet*) NOT-AVAILABLE
-**`Codelist value`** (*description/identificationInfo/description/characterSet/codeListValue*) The dataset character set has to be documented in ISO 19115 when ISO 10646-1 is not used. This element is mandatory only if an encoding is used that is not based on UTF-8 (the dominant encoding of ISO 10646-1).
-**`Codelist`** (*description/identificationInfo/description/characterSet/codeList*) 
-**`Topic category`** (*description/identificationInfo/topicCategory*) The topic category is a high-level classification scheme to assist in the grouping and topic-based search of available spatial data resources.
-**``** (**) A correct categorization is very important to help users to search and find the resources they are looking for.
-**`description/identificationInfo/resourceFormat`** (*description/identificationInfo/resourceFormat*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/resourceFormat/name*) 
-**`Version`** (*description/identificationInfo/resourceFormat/version*) 
-**`Amendment number`** (*description/identificationInfo/resourceFormat/amendmentNumber*) Format version amendment number
-**`Format specification`** (*description/identificationInfo/resourceFormat/specification*) 
-**`File decompression technique`** (*description/identificationInfo/resourceFormat/fileDecompressionTechnique*) 
-**`description/identificationInfo/resourceFormat/formatDistributor/formatDistributor`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor*) NOT-AVAILABLE
-**`Individual name`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/individualName*) 
-**`Organisation name`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/organisationName*) 
-**`Position`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/positionName*) 
-**`Role`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/role*) 
-**`description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/address`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/address/electronicMailAddress*) 
-**`description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/facsimile*) 
-**`description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/city*) 
-**`Postal code`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/postalCode*) 
-**`Country`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/country*) 
-**`description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/name*) 
-**`URL`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/function*) 
-**`Supplemental information`** (*description/identificationInfo/supplementalInformation*) 
-**`description/identificationInfo/serviceIdentification`** (*description/identificationInfo/serviceIdentification*) NOT-AVAILABLE
-**`Service type`** (*description/identificationInfo/serviceIdentification/serviceType*) The type of service (as free text), e.g., OGC:WMS. This is a classification to assist in the search of available spatial data services.
-**`Service type version`** (*description/identificationInfo/serviceIdentification/serviceTypeVersion*) The version of the service e.g. 1.3.0
-**`description/identificationInfo/serviceIdentification/accessProperties`** (*description/identificationInfo/serviceIdentification/accessProperties*) NOT-AVAILABLE
-**`Fees`** (*description/identificationInfo/serviceIdentification/accessProperties/fees*) 
-**`Service availability date stamp`** (*description/identificationInfo/serviceIdentification/accessProperties/plannedAvailableDateTime*) 
-**`Ordering instructions`** (*description/identificationInfo/serviceIdentification/accessProperties/orderingInstructions*) 
-**`Turnaround`** (*description/identificationInfo/serviceIdentification/accessProperties/turnaround*) 
-**`description/identificationInfo/serviceIdentification/restrictions/legalConstraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints*) NOT-AVAILABLE
-**`Use limitation`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/useLimitation*) 
-**`Access constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/accessConstraints*) 
-**`Use constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/useConstraints*) 
-**`Other constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/otherConstraints*) 
-**`description/identificationInfo/serviceIdentification/restrictions/securityConstraints`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints*) NOT-AVAILABLE
-**`Use limitation`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/useLimitation*) 
-**`Classification`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/classification*) 
-**`Note on security classification`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/userNote*) 
-**`Classification system`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/classificationSystem*) 
-**`Handling description`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/handlingDescription*) 
-**`Keywords`** (*description/identificationInfo/serviceIdentification/keywords*) A keyword is defined by:
-**``** (**) - a keyword value ("keyword")
-**``** (**) - an optional originating controlled vocabulary which in ISO standard is referred to as “Thesaurus”. If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET - Concepts, the citation of the originating controlled vocabulary shall be provided.
-**``** (**) 
-**``** (**) It is better to select keyword values from a collection of terms linked and predefined (controlled vocabularies).
-**``** (**) 
-**``** (**) RECOMMENDATIONS
-**``** (**) If only one keyword is used, then for spatial dataset or spatial dataset series, the keyword:
-**``** (**) - shall describe the relevant data theme
-**``** (**) - shall be expressed in the language of the metadata
-**``** (**) 
-**``** (**) For example, a keyword that comes from GEMET - Concepts shall be cited as follows:
-**``** (**) - keyword: freshwater
-**``** (**) - thesaurus name: GEMET - Concepts, version 2.4
-**`Type`** (*description/identificationInfo/serviceIdentification/keywords/type*) 
-**`Keyword`** (*description/identificationInfo/serviceIdentification/keywords/keyword*) The keyword value is a commonly used word, formalized word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search.
-**``** (**) EXAMPLES:
-**``** (**) - Atmospheric conditions (INSPIRE Spatial Data Theme)
-**``** (**) - humanCatalogueViewer (spatial data service subcategory)
-**``** (**) - water springs (AGROVOC)
-**``** (**) - rain water (GEMET Concepts)
-**`Thesaurus name`** (*description/identificationInfo/serviceIdentification/keywords/thesaurusName*) The thesaurus name shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary. It is important to specify which version of the thesaurus was used to
-**``** (**) take the keyword value from.
+**LEGAL CONSTRAINTS** 
+
+- **`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useLimitation*) 
+- **`Access constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/accessConstraints*) Legal access constraints. The ISO 19139 provides a controlled vocabulary. These are the access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.
+- **`Use constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useConstraints*) Use constraints. To be entered as free text. Filling this element will depend on the resource that is described. As best practice recommended to fill this element, this is where terms of use, disclaimers, preferred citation or* even data limitations can be captured
+- **`Other constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/otherConstraints*) Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata.
+
+**SECURITY CONSTRAINTS`**
+
+- **`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/useLimitation*) Restrictions on the access and use of a resource or metadata.
+  - If no conditions apply to the access and use of the resource, ‘no conditions apply’ shall be used. If conditions are unknown, ‘conditions unknown’ shall be used.
+  - Descriptions of terms and conditions, including where applicable, the corresponding fees shall be provided through this element or a link (URL) where these terms and conditions are described.
+  - For detailed information it is recommended to provide a link to a license type (e.g. http://creativecommons.org/licenses/by/3.0), a website or to a document containing the necessary information.
+- **`Classification`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/classification*) Name of the handling restrictions on the resource. The ISO 19139 provides a controlled vocabulary.
+- **`Classification system`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/classificationSystem*) Information on the system used to classify the information. Organizations may have their own system to classify the information.
+- **`Description of the classification`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/handlingDescription*) Additional free-text description of the classification.
+- **`Note on constraints`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/userNote*) Note to users (free text)
+
+**RESOURCE SPECIFIC USAGE** 
+
+- **`Specific usage`** (*description/identificationInfo/resourceSpecificUsage/specificUsage*) 
+- **`Time stamp`** (*description/identificationInfo/resourceSpecificUsage/usageDateTime*) 
+- **`User determined limitations`** (*description/identificationInfo/resourceSpecificUsage/userDeterminedLimitations*) 
+- **`User contact information`** 
+  - **`Individual name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/individualName*) 
+  - **`Organisation name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/organisationName*) 
+  - **`Position`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/positionName*) 
+  - **`Role`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/role*) 
+  - **`Email`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/address/electronicMailAddress*) 
+  - **`Phone`** 
+    - **`Voice`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/voice*) 
+    - **`Facsimile`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/facsimile*) 
+  - **`Address`** 
+    - **`Delivery point`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/city*) 
+    - **`Postal code`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/country*) 
+  - **`Online resource`**
+    - **`Name`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/function*) 
+
+**AGGREGATION INFORRMATION**
+
+- **`Aggregate dataset name`** (*description/identificationInfo/aggregationInfo/aggregateDataSetName*) 
+- **`Aggregate dataset identifier`** (*description/identificationInfo/aggregationInfo/aggregateDataSetIdentifier*) 
+- **`Association type`** (*description/identificationInfo/aggregationInfo/associationType*) 
+- **`Type of initiative`** (*description/identificationInfo/aggregationInfo/initiativeType*) 
+
+**BOUNDING BOX`**
+
+- **`West bound longitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/westBoundLongitude*) West
+- **`East bound longitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/eastBoundLongitude*) East
+- **`South bound latitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/southBoundLatitude*) South
+- **`North bound latitude`** (*description/identificationInfo/extent/geographicElement/geographicBoundingBox/northBoundLatitude*) North
+
+**GEOHASH**  
+
+- **`Geohash`** (*description/identificationInfo/extent/geographicElement/geohash/geohash*) Geohash
+- **`Note`** (*description/identificationInfo/extent/geographicElement/geohash/note*) Notes
+  
+**GEOGRAPHIC ELEMENT**
+
+- **`Geographic description`** (*description/identificationInfo/extent/geographicElement/geographicDescription*) 
+- **`Geographic bounding polygon`** 
+  - **`Polygon Identifier (ID)`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/id*) 
+  - **`Polygon`** (*geographicBoundingPolygon/polygon*) 
+    - **`Interior or exterior ring`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/ring*) 
+    - **`Type`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/type*) Type of geometry
+    - **`Coordinates`** (*description/identificationInfo/extent/geographicElement/geographicBoundingPolygon/polygon/coordinates*) Coordinates of the polygon. The first and last coordinate pairs must be the same to close the polygon.
+
+**TEMPORAL ELEMENT** 
+The temporal extent defines the time period covered by the content of the resource. Depending on the temporal characteristics of the dataset, this will consist in a Time period (made of a begin position and end position) or a time instant (made of a single time position) referencing date/time information according to ISO 8601. This time period may be expressed as an individual date, an interval of dates (starting date and ending date), or a mix of individual dates and intervals of dates.
+  
+- **`beginPosition`** (*description/identificationInfo/extent/temporalElementExtent/beginPosition*) Begin time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
+- **`endPosition`** (*description/identificationInfo/extent/temporalElementExtent/endPosition*) End time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
+
+**VERTICAL ELEMENT** 
+Spatial (vertical) extent element, providing two properties: minimum value, maximum value and vertical CRS (reference to the vertical coordinate reference system)
+
+- **`Minimum value`** (*description/identificationInfo/extent/verticalElement/minimumValue*) 
+- **`Maximum value`** (*description/identificationInfo/extent/verticalElement/maximumValue*) 
+- **`Vertical CRS`** (*description/identificationInfo/extent/verticalElement/verticalCRS*) 
+
+**SPATIAL REPRESENTATION TYPE** 
+The spatial representation type of the dataset. Values should be selected from the following controlled vocabulary: {vector, grid, textTable, tin, stereoModel, video}
+
+- **`Spatial resolution`** (*description/identificationInfo/spatialResolution*) The spatial resolution of the data as numeric value associated to a unit of measure. Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
+EXAMPLES:
+- 50000 (e.g. 1:50000 scale map)
+- 0.25 (degrees)
+NOTES:
+- For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
+- When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values
+
+**SPATIAL RESOLUTION UOM`**  
+
+- **`Value`** (*description/identificationInfo/spatialResolution/value*) 
+
+**DATASET LANGUAGE** 
+The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant).
+It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English).
+The list of all the codes is defined at http://www.loc.gov/standards/iso639-2/.
+Regional languages also are included in this list.
+
+**CHARACTER SET**
+
+- **`Codelist value`** (*description/identificationInfo/description/characterSet/codeListValue*) The dataset character set has to be documented in ISO 19115 when ISO 10646-1 is not used. This element is mandatory only if an encoding is used that is not based on UTF-8 (the dominant encoding of ISO 10646-1).
+- **`Codelist`** (*description/identificationInfo/description/characterSet/codeList*) 
+
+**TOPIC CATEGORY** (*description/identificationInfo/topicCategory*) The topic category is a high-level classification scheme to assist in the grouping and topic-based search of available spatial data resources.
+A correct categorization is very important to help users to search and find the resources they are looking for.
+
+**RESOURCE FORMAT`** 
+
+- **`Name`** (*description/identificationInfo/resourceFormat/name*) 
+- **`Version`** (*description/identificationInfo/resourceFormat/version*) 
+- **`Amendment number`** (*description/identificationInfo/resourceFormat/amendmentNumber*) Format version amendment number
+- **`Format specification`** (*description/identificationInfo/resourceFormat/specification*) 
+- **`File decompression technique`** (*description/identificationInfo/resourceFormat/fileDecompressionTechnique*) 
+- **`Format distributor`** 
+  - **`Individual name`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/individualName*) 
+  - **`Organisation name`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/organisationName*) 
+  - **`Position`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/positionName*) 
+  - **`Role`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/role*) 
+  - **`Email`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/address/electronicMailAddress*) 
+  - **`Phone`** 
+    - **`Voice`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/voice*) 
+    -**`Facsimile`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/facsimile*)  
+  - **`Address`** 
+    - **`Delivery point`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/city*) 
+    - **`Postal code`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/country*) 
+  - **`Online resource`** 
+    - **`Name`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479549701/formatDistributor/contactInfo/onlineResource/function*) 
+
+**SIPPLEMENTAL INFORMATION** 
+
+- **`Service identification`**
+  - **`Service type`** (*description/identificationInfo/serviceIdentification/serviceType*) The type of service (as free text), e.g., OGC:WMS. This is a classification to assist in the search of available spatial data services.
+  - **`Service type version`** (*description/identificationInfo/serviceIdentification/serviceTypeVersion*) The version of the service e.g. 1.3.0
+  - **`Access properties`** 
+    - **`Fees`** (*description/identificationInfo/serviceIdentification/accessProperties/fees*) 
+    - **`Service availability date stamp`** (*description/identificationInfo/serviceIdentification/accessProperties/plannedAvailableDateTime*) 
+    - **`Ordering instructions`** (*description/identificationInfo/serviceIdentification/accessProperties/orderingInstructions*) 
+    - **`Turnaround`** (*description/identificationInfo/serviceIdentification/accessProperties/turnaround*) 
+  - **`Legal constraints`** 
+    - **`Use limitation`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/useLimitation*) 
+    - **`Access constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/accessConstraints*) 
+  - **`Use constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/useConstraints*) 
+  - **`Other constraints`** (*description/identificationInfo/serviceIdentification/restrictions/legalConstraints/otherConstraints*) 
+  - **`Security constraints`** 
+    - **`Use limitation`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/useLimitation*) 
+    - **`Classification`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/classification*) 
+    - **`Note on security classification`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/userNote*) 
+    - **`Classification system`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/classificationSystem*) 
+    - **`Handling description`** (*description/identificationInfo/serviceIdentification/restrictions/securityConstraints/handlingDescription*) 
+
+**KEYWORDS** 
+
+A keyword is defined by:
+- a keyword value ("keyword")
+- an optional originating controlled vocabulary which in ISO standard is referred to as “Thesaurus”. If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET - Concepts, the citation of the originating controlled vocabulary shall be provided.
+It is better to select keyword values from a collection of terms linked and predefined (controlled vocabularies).
+RECOMMENDATIONS
+If only one keyword is used, then for spatial dataset or spatial dataset series, the keyword:
+- shall describe the relevant data theme
+- shall be expressed in the language of the metadata
+For example, a keyword that comes from GEMET - Concepts shall be cited as follows:
+- keyword: freshwater
+- thesaurus name: GEMET - Concepts, version 2.4
+
+- **`Type`** (*description/identificationInfo/serviceIdentification/keywords/type*) 
+- **`Keyword`** (*description/identificationInfo/serviceIdentification/keywords/keyword*) The keyword value is a commonly used word, formalized word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search.
+EXAMPLES:
+  - Atmospheric conditions (INSPIRE Spatial Data Theme)
+  - humanCatalogueViewer (spatial data service subcategory)
+  - water springs (AGROVOC)
+  - rain water (GEMET Concepts)
+- **`Thesaurus name`** (*description/identificationInfo/serviceIdentification/keywords/thesaurusName*) The thesaurus name shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary. It is important to specify which version of the thesaurus was used to take the keyword value from.
+
 **`Coupled resource`** (*description/identificationInfo/serviceIdentification/coupledResource*) 
 **`Operation name`** (*description/identificationInfo/serviceIdentification/coupledResource/operationName*) 
 **`Identifier`** (*description/identificationInfo/serviceIdentification/coupledResource/identifier*) 
 **`Coupling type`** (*description/identificationInfo/serviceIdentification/couplingType*) 
+
 **`description/identificationInfo/serviceIdentification/containsOperations`** (*description/identificationInfo/serviceIdentification/containsOperations*) NOT-AVAILABLE
 **`Operation name`** (*description/identificationInfo/serviceIdentification/containsOperations/operationName*) 
 **`DCP`** (*description/identificationInfo/serviceIdentification/containsOperations/DCP*) 
 **`Operation description`** (*description/identificationInfo/serviceIdentification/containsOperations/operationDescription*) 
 **`Invocation name`** (*description/identificationInfo/serviceIdentification/containsOperations/invocationName*) 
+
 **`Parameters`** (*parameters*) 
 **`description/identificationInfo/serviceIdentification/containsOperations/parameters`** (*description/identificationInfo/serviceIdentification/containsOperations/parameters*) NOT-AVAILABLE
 **`Name`** (*description/identificationInfo/serviceIdentification/containsOperations/parameters/name*) 
@@ -527,6 +551,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
 **`Optionality`** (*description/identificationInfo/serviceIdentification/containsOperations/parameters/optionality*) 
 **`Repeatability`** (*description/identificationInfo/serviceIdentification/containsOperations/parameters/repeatability*) 
 **`Value type`** (*description/identificationInfo/serviceIdentification/containsOperations/parameters/valueType*) 
+
 **`Connect point`** (*connectPoint*) 
 **`description/identificationInfo/serviceIdentification/containsOperations/connectPoint`** (*description/identificationInfo/serviceIdentification/containsOperations/connectPoint*) NOT-AVAILABLE
 **`Linkage`** (*description/identificationInfo/serviceIdentification/containsOperations/connectPoint/linkage*) 
@@ -536,207 +561,217 @@ In the list of metadata elements below, the *key* of each element in the metadat
 **`Function`** (*description/identificationInfo/serviceIdentification/containsOperations/connectPoint/function*) 
 **`Operates on`** (*description/identificationInfo/serviceIdentification/operatesOn*) 
 **`uuidref`** (*description/identificationInfo/serviceIdentification/operatesOn/uuidref*) 
+
 **`description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation*) NOT-AVAILABLE
 **`Topology level`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/topologyLevel*) Topology level is the type of topology used in the vector spatial dataset. The ISO 19139 provides a controlled vocabulary.
-**``** (**) In most cases, vector datasets will be described as geometryOnly which covers common geometry types (points, lines, polygons).
-**`Geometric objects`** (*vectorSpatialRepresentation/geometricObjects*) 
-**`description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects*) NOT-AVAILABLE
-**`Type`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects/geometricObjectType*) The type of geometry handled. A controlled vocabulary is used. In the case of an homogeneous geometry type, a single geometricObjectselement can be defined. For complex geometries (mixture of various geometry types), one geometricObjects element will be defined for each geometry type.
-**`Count`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects/geometricObjectCount*) The number (count) of geometries in the dataset.
-**`description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation*) NOT-AVAILABLE
-**`Number of dimensions`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/numberOfDimensions*) Number of dimensions in the grid.
-**`Axis dimension properties`** (*gridSpatialRepresentation/axisDimensionProperties*) A list of each dimension including, for each dimension, the name, size, and resolution.
-**`description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties*) NOT-AVAILABLE
-**`Name`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/dimensionName*) The name of the dimension type: the ISO 19139 provides a controlled vocabulary with the following options: row, column, vertical, track, crossTrack, line, sample, and time. These options represent the following:
-**``** (**) - row: ordinate (y) axis
-**``** (**) - column: abscissa (x) axis
-**``** (**) - vertical: vertical (z) axis
-**``** (**) - track: along the direction of motion of the scan point
-**``** (**) - crossTrack: perpendicular to the direction of motion of the scan point
-**``** (**) - line: scan line of a sensor
-**``** (**) - sample: element along a scan line
-**``** (**) - time: duration
-**`Size`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/dimensionSize*) The length of the dimension.
-**`Resolution`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/resolution*) The dimension resolution: a resolution number associated to a unit of measurement. This is the resolution of the grid cell dimension. For example:
-**``** (**) - for longitude/latitude dimensions, and a grid at 1deg x 5deg, the ‘row’ dimension will have a resolution of 1 deg and the ‘column’ dimension will have a resolution of 5 deg
-**``** (**) - for a “vertical” dimension, this will represent the elevation step. For example, the vertical resolution of the mean Ozone concentration between 40m and 50m altitude at a location of longitude x/ latitude y would be 10 m.
-**``** (**) - similar: in case of a spatial-temporal grid, the “time” resolution will represent the time lag (e.g., 1 year, 1 month, 1 week, etc.) between two measures.
-**`Cell geometry`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/cellGeometry*) The type of geometry used for grid cells. Possible values are: point, area, voxel, and stratum. Most “grids” are commonly area-based, but in principle a grid goes beyond this and the grid cells can target a point, an area, or a volume.
-**``** (**) - point: each cell represents a point
-**``** (**) - area: each cell represents an area
-**``** (**) - voxel: each cell represents a volumetric measurement on a regular grid in a three dimensional space
-**``** (**) - stratum: height range for a single point vertical profile
-**`Transformation parameter availability`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/transformationParameterAvailability*) 
-**`Reference system`** (*description/referenceSystemInfo*) The reference system(s) typically (but not necessarily) applies to the geographic reference system of the dataset. Multiple reference systems can be listed if a dataset is distributed with different spatial reference systems. This block of elements may also apply to service metadata. A spatial web-service may support several map projections / geographic coordinate reference systems.
-**``** (**) 
-**``** (**) A reference system is defined by two properties:
-**``** (**) - the identifier of the reference system. The recommended practice is to use to the Spatial Reference IDentifier (SRID) number. For example, the SRID of the World Geodetic System (WGS 84) is 4326.
-**``** (**) - the code space of the source authority providing the SRID. The best practice is to use the EPSG authority code EPSG (as most of geographic reference systems are registered in it). Codes from other authorities can be used to define ad-hoc projections, for example:
-**``** (**) ESRI:54012 (Eckert IV equal area projection)
-**``** (**) EPSG:4326 (World Geodetic System 84 - aka WGS84), the system used for GPS
-**``** (**) EPSG:3857 (Web Mercator / Pseudo-Mercator) - widely used for map visualization from web map tile providers.
-**``** (**) 
-**``** (**) The main reference system registry is EPSG, which provides a “search by name” tool for users who need to find a SRID (global or local/country-specific). Other websites reference geographic systems, but are not authoritative sources including http://epsg.io/ and https://spatialreference.org/ The advantage of these sites is that they go beyond the EPSG registry, and handle other specific registries given by providers like ESRI.
-**``** (**) 
-**``** (**) The following ESRI projections could be relevant, in particular those in support of world equal-area projected maps (maps conserving area proportions):
-**``** (**) - ESRI:54012 (Eckert IV)
-**``** (**) - ESRI:54009 (Mollweide)
-**``** (**) - ESRI:54030 (Robinson)
-**`Code`** (*description/referenceSystemInfo/code*) 
-**`Code space`** (*description/referenceSystemInfo/codeSpace*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueDescription`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription*) NOT-AVAILABLE
-**`Compliance code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/complianceCode*) Boolean
-**`Language`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/language*) 
-**`Included with dataset`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/includedWithDataset*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation*) NOT-AVAILABLE
-**`Title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/title*) 
-**`Alternate title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/alternateTitle*) 
-**`Date`** (*featureCatalogueDescription/featureCatalogueCitation/date*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date*) NOT-AVAILABLE
-**`Date`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date/date*) 
-**`Type`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date/type*) Date type e.g. publication, revision, creation
-**`Edition`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/edition*) 
-**`Edition date`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/editionDate*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier*) NOT-AVAILABLE
-**`Identifier code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier/code*) 
-**`Identifier authority`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier/authority*) Identifier
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty*) NOT-AVAILABLE
-**`Individual name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/individualName*) 
-**`Organisation name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/organisationName*) 
-**`Position`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/positionName*) 
-**`Role`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/role*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/address`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/city*) 
-**`Country`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/country*) 
-**`Postal code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/postalCode*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/name*) 
-**`Description`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/description*) 
-**`URL`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/linkage*) 
-**`Protocol`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/function*) 
-**`Resource presentation`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/presentationForm*) 
-**`description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series*) NOT-AVAILABLE
-**`Series name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/name*) 
-**`Identification of the issue`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/issueIdentification*) 
-**`Page`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/page*) 
-**`Other citation details`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/otherCitationDetails*) 
-**`Collective title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/collectiveTitle*) 
-**`ISBN`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/ISBN*) 
-**`ISSN`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/ISSN*) 
-**`description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription*) NOT-AVAILABLE
-**`Content type`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/contentType*) 
-**`Dimension`** (*featureCatalogueDescription/coverageDescription/dimension*) List of coverage dimensions. Each dimension can be defined by a name and a type. For the type, a good practice is to rely on primitive data types defined in the XML Schema https://www.w3.org/2009/XMLSchema/XMLSchema.xsd
-**`description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension*) NOT-AVAILABLE
-**`Name`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension/name*) 
-**`Type`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension/type*) 
-**`description/distributionInfo/distributionFormat`** (*description/distributionInfo/distributionFormat*) NOT-AVAILABLE
-**`Name`** (*description/distributionInfo/distributionFormat/name*) 
-**`Version`** (*description/distributionInfo/distributionFormat/version*) 
-**`Amendment number`** (*description/distributionInfo/distributionFormat/amendmentNumber*) Format version amendment number
-**`Format specification`** (*description/distributionInfo/distributionFormat/specification*) 
-**`File decompression technique`** (*description/distributionInfo/distributionFormat/fileDecompressionTechnique*) 
-**`description/distributionInfo/distributionFormat/formatDistributor/formatDistributor`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor*) NOT-AVAILABLE
-**`Individual name`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/individualName*) 
-**`Organisation name`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/organisationName*) 
-**`Position`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/positionName*) 
-**`description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/address`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/address/electronicMailAddress*) 
-**`description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone/facsimile*) 
-**`Role`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/role*) 
-**`description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/city*) 
-**`Postal code`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/postalCode*) 
-**`Country`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/country*) 
-**`description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/name*) 
-**`URL`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/function*) 
-**`description/distributionInfo/distributor`** (*description/distributionInfo/distributor*) NOT-AVAILABLE
-**`Individual name`** (*description/distributionInfo/distributor/individualName*) 
-**`Organisation name`** (*description/distributionInfo/distributor/organisationName*) 
-**`Position`** (*description/distributionInfo/distributor/positionName*) 
-**`Role`** (*description/distributionInfo/distributor/role*) 
-**`description/distributionInfo/distributor/contactInfo/address`** (*description/distributionInfo/distributor/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/distributionInfo/distributor/contactInfo/address/electronicMailAddress*) 
-**`description/distributionInfo/distributor/contactInfo/phone`** (*description/distributionInfo/distributor/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/distributionInfo/distributor/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/distributionInfo/distributor/contactInfo/phone/facsimile*) 
-**`description/distributionInfo/distributor/section-1676485351151/contactInfo/address`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/city*) 
-**`Postal code`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/postalCode*) 
-**`Country`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/country*) 
-**`description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/name*) 
-**`URL`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/function*) 
-**`description/dataQualityInfo`** (*description/dataQualityInfo*) NOT-AVAILABLE
-**`Scope`** (*description/dataQualityInfo/scope*) Scope / hierarchy level targeted by the data quality information section. The ISO 19139 recommends the use of a controlled vocabulary.
-**`description/dataQualityInfo/report/DQ_DomainConsistency/result`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result*) NOT-AVAILABLE
-**`Name of measure`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/nameOfMeasure*) One or more measure names used for the data quality report.
-**`Measure identification`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/measureIdentification*) Identification of the measure, using a unique identifier (if applicable).
-**`Measure description`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/measureDescription*) A description of the measure.
-**`Evaluation method type`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/evaluationMethodType*) Type of evaluation method. The ISO 19139 recommends the use of a controlled vocabulary with the following options: directInternal, directExternal, indirect.
-**`Evaluation method description`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/evaluationMethodDescription*) Description of the evaluation method.
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure*) NOT-AVAILABLE
-**`Title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/title*) Citation of the evaluation procedure (as citation element).
-**`Alternate title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/alternateTitle*) 
-**`Date`** (*DQ_DomainConsistency/result/evaluationProcedure/date*) Date time when the report was established.
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/date`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/date*) NOT-AVAILABLE
-**`Date`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/date/date*) 
-**`Type`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/date/type*) Date type e.g. publication, revision, creation
-**`Edition`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/edition*) 
-**`Edition date`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/editionDate*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier*) NOT-AVAILABLE
-**`Identifier authority`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier/authority*) 
-**`Identifier code`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier/code*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result*) NOT-AVAILABLE
-**`Date and time`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/dateTime*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty*) NOT-AVAILABLE
-**`Individual name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/individualName*) 
-**`Organisation name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/organisationName*) 
-**`Position`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/positionName*) 
-**`Role`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/role*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/address`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/city*) 
-**`Postal code`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/postalCode*) 
-**`Country`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/country*) 
-**`description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/name*) 
-**`URL`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/function*) 
-**`Resource presentation`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/presentationForm*) 
-**`description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series*) NOT-AVAILABLE
-**`Name`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/name*) 
-**`Issue`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/issueIdentification*) Identification of the issue
-**`Page`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/page*) 
-**`Other citation details`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/otherCitationDetails*) 
-**`Collective title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/collectiveTitle*) 
-**`ISBN`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/ISBN*) 
-**`ISSN`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/ISSN*) 
-**`Date and time`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/dateTime*) 
+In most cases, vector datasets will be described as geometryOnly which covers common geometry types (points, lines, polygons).
+
+- **`Geometric objects`**
+  - **`Type`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects/geometricObjectType*) The type of geometry handled. A controlled vocabulary is used. In the case of an homogeneous geometry type, a single geometricObjectselement can be defined. For complex geometries (mixture of various geometry types), one geometricObjects element will be defined for each geometry type.
+  - **`Count`** (*description/spatialRepresentationInfo/section-1676484144220/vectorSpatialRepresentation/geometricObjects/geometricObjectCount*) The number (count) of geometries in the dataset.
+
+- **`Grid spatial representation`** 
+  - **`Number of dimensions`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/numberOfDimensions*) Number of dimensions in the grid.
+  - **`Axis dimension properties`** (*gridSpatialRepresentation/axisDimensionProperties*) A list of each dimension including, for each dimension, the name, size, and resolution.
+
+- **`Axis dimension properties`** 
+  - **`Name`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/dimensionName*) The name of the dimension type: the ISO 19139 provides a controlled vocabulary with the following options: row, column, vertical, track, crossTrack, line, sample, and time. These options represent the following:
+    - row: ordinate (y) axis
+    - column: abscissa (x) axis
+    - vertical: vertical (z) axis
+    - track: along the direction of motion of the scan point
+    - crossTrack: perpendicular to the direction of motion of the scan point
+    - line: scan line of a sensor
+    - sample: element along a scan line
+    - time: duration
+  - **`Size`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/dimensionSize*) The length of the dimension.
+  - **`Resolution`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/axisDimensionProperties/resolution*) The dimension resolution: a resolution number associated to a unit of measurement. This is the resolution of the grid cell dimension. For example:
+    - for longitude/latitude dimensions, and a grid at 1deg x 5deg, the ‘row’ dimension will have a resolution of 1 deg and the ‘column’ dimension will have a resolution of 5 deg
+    - for a “vertical” dimension, this will represent the elevation step. For example, the vertical resolution of the mean Ozone concentration between 40m and 50m altitude at a location of longitude x/ latitude y would be 10 m.
+    - similar: in case of a spatial-temporal grid, the “time” resolution will represent the time lag (e.g., 1 year, 1 month, 1 week, etc.) between two measures.
+  - **`Cell geometry`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/cellGeometry*) The type of geometry used for grid cells. Possible values are: point, area, voxel, and stratum. Most “grids” are commonly area-based, but in principle a grid goes beyond this and the grid cells can target a point, an area, or a volume.
+    - point: each cell represents a point
+    - area: each cell represents an area
+    - voxel: each cell represents a volumetric measurement on a regular grid in a three dimensional space
+    - stratum: height range for a single point vertical profile
+  - **`Transformation parameter availability`** (*description/spatialRepresentationInfo/gridSpatialRepresentation/gridSpatialRepresentation/transformationParameterAvailability*) 
+  - **`Reference system`** (*description/referenceSystemInfo*) The reference system(s) typically (but not necessarily) applies to the geographic reference system of the dataset. Multiple reference systems can be listed if a dataset is distributed with different spatial reference systems. This block of elements may also apply to service metadata. A spatial web-service may support several map projections / geographic coordinate reference systems. A reference system is defined by two properties:
+    - the identifier of the reference system. The recommended practice is to use to the Spatial Reference IDentifier (SRID) number. For example, the SRID of the World Geodetic System (WGS 84) is 4326.
+    - the code space of the source authority providing the SRID. The best practice is to use the EPSG authority code EPSG (as most of geographic reference systems are registered in it). Codes from other authorities can be used to define ad-hoc projections, for example:
+ESRI:54012 (Eckert IV equal area projection)
+EPSG:4326 (World Geodetic System 84 - aka WGS84), the system used for GPS
+EPSG:3857 (Web Mercator / Pseudo-Mercator) - widely used for map visualization from web map tile providers.
+The main reference system registry is EPSG, which provides a “search by name” tool for users who need to find a SRID (global or local/country-specific). Other websites reference geographic systems, but are not authoritative sources including http://epsg.io/ and https://spatialreference.org/ The advantage of these sites is that they go beyond the EPSG registry, and handle other specific registries given by providers like ESRI.
+The following ESRI projections could be relevant, in particular those in support of world equal-area projected maps (maps conserving area proportions):
+- ESRI:54012 (Eckert IV)
+- ESRI:54009 (Mollweide)
+- ESRI:54030 (Robinson)
+    - **`Code`** (*description/referenceSystemInfo/code*) 
+    - **`Code space`** (*description/referenceSystemInfo/codeSpace*) 
+
+- **`Feature catalogue description`** 
+  - **`Compliance code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/complianceCode*) Boolean
+  - **`Language`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/language*) 
+  - **`Included with dataset`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueDescription/includedWithDataset*)
+  
+- **`Feature catalogue citation`** 
+  - **`Title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/title*) 
+  - **`Alternate title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/alternateTitle*) 
+  - **`Date`** (*featureCatalogueDescription/featureCatalogueCitation/date*) 
+    - **`Date`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date/date*) 
+    - **`Type`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/date/type*) Date type e.g. publication, revision, creation
+    - **`Edition`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/edition*) 
+    - **`Edition date`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/editionDate*) 
+  - **`Feature catalog identifier`** 
+    - **`Identifier code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier/code*) 
+    - **`Identifier authority`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/identifier/authority*) Identifier
+  - **`citedResponsibleParty`**
+    - **`Individual name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/individualName*) 
+    - **`Organisation name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/organisationName*)    - **`Position`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/positionName*) 
+    - **`Role`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/role*) 
+    - **`Address`**
+      - **`Email`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
+    - **`Phone`**
+      - **`Voice`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone/voice*) 
+      - **`Facsimile`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
+    - **Address`**
+      - **`Delivery point`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/deliveryPoint*) 
+      - **`City`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/city*) 
+      - **`Country`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/country*) 
+      - **`Postal code`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484775072/contactInfo/address/postalCode*) 
+    - **Online resource`**
+      - **`Name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/name*) 
+      - **`Description`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/description*) 
+      - **`URL`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/linkage*) 
+      - **`Protocol`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/protocol*) 
+      - **`Function`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/citedResponsibleParty/section-1676484798167/contactInfo/onlineResource/function*) 
+
+**`Resource presentation`** 
+
+- **`Series`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-
+  - **`Series name`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/name*) 
+  - **`Identification of the issue`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/issueIdentification*) 
+  - **`Page`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/section-1676485939426/featureCatalogueDescription/featureCatalogueCitation/series/page*) 
+  - **`Other citation details`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/otherCitationDetails*) 
+  - **`Collective title`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/collectiveTitle*) 
+  - **`ISBN`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/ISBN*) 
+  - **`ISSN`** (*description/contentInfo/featureCatalogueDescription/featureCatalogueCitation/featureCatalogueDescription/featureCatalogueCitation/ISSN*) 
+
+- **`Coverage description`** 
+  - **`Content type`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/contentType*) 
+  - **`Dimension`** (*featureCatalogueDescription/coverageDescription/dimension*) List of coverage dimensions. Each dimension can be defined by a name and a type. For the type, a good practice is to rely on primitive data types defined in the XML Schema https://www.w3.org/2009/XMLSchema/XMLSchema.xsd
+    
+- **`Dimension`** 
+  - **`Name`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension/name*) 
+  - **`Type`** (*description/contentInfo/featureCatalogueDescription/coverageDescription/featureCatalogueDescription/coverageDescription/dimension/type*) 
+
+- **`Distribution format`** (*description/distributionInfo/distributionFormat*) NOT-AVAILABLE
+  - **`Name`** (*description/distributionInfo/distributionFormat/name*) 
+  - **`Version`** (*description/distributionInfo/distributionFormat/version*) 
+  - **`Amendment number`** (*description/distributionInfo/distributionFormat/amendmentNumber*) Format version amendment number
+  - **`Format specification`** (*description/distributionInfo/distributionFormat/specification*) 
+  - **`File decompression technique`** (*description/distributionInfo/distributionFormat/fileDecompressionTechnique*) 
+
+- **`Format distributor`** 
+  - **`Individual name`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/individualName*) 
+  - **`Organisation name`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/organisationName*) 
+  - **`Position`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/positionName*) 
+  - **`Address`** 
+    - **`Email`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/address/electronicMailAddress*) 
+  - **`Phone`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone*) NOT-AVAILABLE
+    - **`Voice`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone/voice*) 
+    - **`Facsimile`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/contactInfo/phone/facsimile*) 
+    - **`Role`** (*description/distributionInfo/distributionFormat/formatDistributor/formatDistributor/role*) 
+  - **`Address`** 
+    - **`Delivery point`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/city*) 
+    - **`Postal code`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484562938/formatDistributor/contactInfo/address/country*) 
+  - **`Online resource`** 
+    - **`Name`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/distributionInfo/distributionFormat/formatDistributor/section-1676484571929/formatDistributor/contactInfo/onlineResource/function*) 
+
+- **`Distributor`** 
+  - **`Individual name`** (*description/distributionInfo/distributor/individualName*) 
+  - **`Organisation name`** (*description/distributionInfo/distributor/organisationName*) 
+  - **`Position`** (*description/distributionInfo/distributor/positionName*) 
+  - **`Role`** (*description/distributionInfo/distributor/role*) 
+  - **`Address`**
+    - **`Email`** (*description/distributionInfo/distributor/contactInfo/address/electronicMailAddress*) 
+    - **`Phone`** 
+      - **`Voice`** (*description/distributionInfo/distributor/contactInfo/phone/voice*) 
+      - **`Facsimile`** (*description/distributionInfo/distributor/contactInfo/phone/facsimile*) 
+  - **`Address`** 
+    - **`Delivery point`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/city*) 
+    - **`Postal code`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/distributionInfo/distributor/section-1676485351151/contactInfo/address/country*) 
+  - **`Online resource`** 
+    - **`Name`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/distributionInfo/distributor/section-1676485358879/contactInfo/onlineResource/function*) 
+
+**DATA QUALITY INFORMATION`**
+
+- **`Scope`** (*description/dataQualityInfo/scope*) Scope / hierarchy level targeted by the data quality information section. The ISO 19139 recommends the use of a controlled vocabulary.
+  
+- **`Result`** 
+  - **`Name of measure`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/nameOfMeasure*) One or more measure names used for the data quality report.
+  - **`Measure identification`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/measureIdentification*) Identification of the measure, using a unique identifier (if applicable).
+  - **`Measure description`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/measureDescription*) A description of the measure.
+  - **`Evaluation method type`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/evaluationMethodType*) Type of evaluation method. The ISO 19139 recommends the use of a controlled vocabulary with the following options: directInternal, directExternal, indirect.
+  - **`Evaluation method description`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/evaluationMethodDescription*) Description of the evaluation method.
+
+- **`Evaluation procedure`**
+  - **`Title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/title*) Citation of the evaluation procedure (as citation element).
+  - **`Alternate title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/alternateTitle*) 
+  - **`Date`** (*DQ_DomainConsistency/result/evaluationProcedure/date*) Date time when the report was established.
+  - **`Type`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/date/type*) Date type e.g. publication, revision, creation
+  - **`Edition`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/edition*) 
+  - **`Edition date`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/editionDate*) 
+  - **Identifier`**
+    - **`Identifier authority`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier/authority*) 
+    - **`Identifier code`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/identifier/code*) 
+  - **`Result`** 
+    - **`Date and time`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/dateTime*) 
+  - **`Cited responsible party`** 
+    - **`Individual name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/individualName*) 
+    - **`Organisation name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/organisationName*) 
+    - **`Position`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/positionName*) 
+    - **`Role`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/role*) 
+    - **`Address`** 
+      - **`Email`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
+      - **`phone`** 
+        - **`Voice`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone/voice*) 
+        - **`Facsimile`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/contactInfo/phone/facsimile*) 
+      - **`address`** 
+        - **`Delivery point`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/deliveryPoint*) 
+        - **`City`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/city*) 
+       - **`Postal code`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/postalCode*) 
+       - **`Country`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486382816/contactInfo/address/country*) 
+      - **`Online resource`** 
+        - **`Name`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/name*) 
+       - **`URL`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/linkage*) 
+        - **`Description`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/description*) 
+        - **`Protocol`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/protocol*) 
+        - **`Function`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/citedResponsibleParty/section-1676486391064/contactInfo/onlineResource/function*) 
+
+- **`Resource presentation`**  
+  - **`Series`** 
+    - **`Name`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/name*) 
+    - **`Issue`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/issueIdentification*) Identification of the issue
+    - **`Page`** (*description/dataQualityInfo/report/section-1676486651592/section-1676486975620/specification/series/page*) 
+    - **`Other citation details`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/otherCitationDetails*) 
+    - **`Collective title`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/collectiveTitle*) 
+    - **`ISBN`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/ISBN*) 
+    - **`ISSN`** (*description/dataQualityInfo/report/section-1676486651592/DQ_DomainConsistency/result/evaluationProcedure/ISSN*) 
+    - **`Date and time`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/dateTime*) 
+
 **`description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification*) NOT-AVAILABLE
 **`Title`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/title*) 
 **`Alternate title`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/specification/alternateTitle*) 
@@ -782,123 +817,130 @@ In the list of metadata elements below, the *key* of each element in the metadat
 **`description/dataQualityInfo/report/DQ_DomainConsistency/result/result`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result*) NOT-AVAILABLE
 **`Explanation`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/explanation*) 
 **`Pass`** (*description/dataQualityInfo/report/DQ_DomainConsistency/result/result/pass*) Indication of the conformance result.
-**``** (**) - true if conformant
-**``** (**) - false if not conformant
-**``** (**) - null (blank) if not evaluated
+- true if conformant
+- false if not conformant
+- null (blank) if not evaluated
 
-**`description/dataQualityInfo/lineage/lineage`** (*description/dataQualityInfo/lineage/lineage*) NOT-AVAILABLE
+**LINEAGE** 
 
 **`Lineage statement`** (*description/dataQualityInfo/lineage/lineage/statement*) Lineage is “a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this element is free text.” This element is not applicable to geographic services.
-**``** (**) 
-**``** (**) RECOMMENDATIONS:
-**``** (**) - If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
-**``** (**) - The use of acronyms should be avoided. If used, their meaning should be explained.
-**`description/dataQualityInfo/lineage/lineage/processStep`** (*description/dataQualityInfo/lineage/lineage/processStep*) NOT-AVAILABLE
-**`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/description*) Description of the process step performed.
-**`Rationale`** (*description/dataQualityInfo/lineage/lineage/processStep/rationale*) Rationale of the process step.
-**`Date`** (*description/dataQualityInfo/lineage/lineage/processStep/dateTime*) Date of the processing.
-**`Processor`** (*processor*) Contact(s) acting as processor(s) for the target step.
-**`description/dataQualityInfo/lineage/lineage/processStep/processor`** (*description/dataQualityInfo/lineage/lineage/processStep/processor*) NOT-AVAILABLE
-**`Individual name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/individualName*) 
-**`Organisation name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/organisationName*) 
-**`Position`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/positionName*) 
-**`Role`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/role*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/address`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/address/electronicMailAddress*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone/facsimile*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/city*) 
-**`Postal code`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/postalCode*) 
-**`Country`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/country*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/name*) 
-**`URL`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/function*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation*) NOT-AVAILABLE
-**`Title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/title*) 
-**`Alternate title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/alternateTitle*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source`** (*description/dataQualityInfo/lineage/lineage/processStep/source*) NOT-AVAILABLE
-**`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/source/description*) 
-**`Date`** (*sourceCitation/date*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/date`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/date*) NOT-AVAILABLE
-**`Date`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/date/date*) 
-**`Type`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/date/type*) Date type e.g. publication, revision, creation
-**`Edition`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/edition*) 
-**`Edition date`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/editionDate*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier*) NOT-AVAILABLE
-**`Identifier authority`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier/authority*) 
-**`Identifier code`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier/code*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty*) NOT-AVAILABLE
-**`Individual name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/individualName*) 
-**`Organisation name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/organisationName*) 
-**`Position`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/positionName*) 
-**`Role`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/role*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/address`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone/voice*) 
-**`Facsimile`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/deliveryPoint*) 
-**`City`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/city*) 
-**`Postal code`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/postalCode*) 
-**`Country`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/country*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/name*) 
-**`URL`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/linkage*) 
-**`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/description*) 
-**`Protocol`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/protocol*) 
-**`Function`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/function*) 
-**`Resource presentation`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/presentationForm*) 
-**`description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series*) NOT-AVAILABLE
-**`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/name*) 
-**`Issue`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/issueIdentification*) Identification of the series issue
-**`Page`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/page*) 
-**`Other citation details`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/otherCitationDetails*) 
-**`Collective title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/collectiveTitle*) 
-**`ISBN`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/ISBN*) 
-**`ISSN`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/ISSN*) 
-**`description/metadataMaintenance`** (*description/metadataMaintenance*) NOT-AVAILABLE
-**`Metadata maintenance and update frequency`** (*description/metadataMaintenance/maintenanceAndUpdateFrequency*) The metadata maintenance and update frequency elements provide information on the maintenance of the metadata including the frequency of updates. This is a free text element. The information should be chosen from values recommended by the ISO 19139 controlled vocabulary with the following options: continual, daily, weekly, fortnightly, monthly, quarterly, biannually, annually, asNeeded, irregular, notPlanned, unknown.
 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation`** (*portrayalCatalogueInfo/portrayalCatalogueCitation*) NOT-AVAILABLE
-**`Title`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/title*) 
-**`Alternate title`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/alternateTitle*) 
-**`Date`** (*date*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/date`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/date*) NOT-AVAILABLE
-**`Date`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/date/date*) 
-**`Type`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/date/type*) Date type e.g. publication, revision, creation
-**`Edition`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/edition*) 
-**`Edition date`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/editionDate*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/identifier`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/identifier*) NOT-AVAILABLE
-**`Identifier authority`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/identifier/authority*) 
-**`Identifier code`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/identifier/code*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty*) NOT-AVAILABLE
-**`Individual name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/individualName*) 
-**`Organisation name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/organisationName*) 
-**`Position`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/positionName*) 
-**`Role`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/role*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone*) NOT-AVAILABLE
-**`Voice`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone/voice*) 
-**`Facsimile`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/address`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/address*) NOT-AVAILABLE
-**`Email`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address*) NOT-AVAILABLE
-**`Delivery point`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/deliveryPoint*) 
-**`City`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/city*) 
-**`Postal code`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/postalCode*) 
-**`Country`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/country*) 
-**`portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource*) NOT-AVAILABLE
-**`Name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/name*) 
-**`URL`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/linkage*) 
-**`Description`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/description*) 
-**`Protocol`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/protocol*) 
-**`Function`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/function*) 
+RECOMMENDATIONS:
+- If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
+- The use of acronyms should be avoided. If used, their meaning should be explained.
+  
+- **`Process step`**
+  - **`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/description*) Description of the process step performed.
+  - **`Rationale`** (*description/dataQualityInfo/lineage/lineage/processStep/rationale*) Rationale of the process step.
+  - **`Date`** (*description/dataQualityInfo/lineage/lineage/processStep/dateTime*) Date of the processing.
+  - **`Processor`** (*processor*) Contact(s) acting as processor(s) for the target step.
+
+- **`Processor`** 
+  - **`Individual name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/individualName*) 
+  - **`Organisation name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/organisationName*) 
+  - **`Position`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/positionName*) 
+  - **`Role`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/role*) 
+  - **`Address`** 
+    - **`Email`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/address/electronicMailAddress*) 
+    - **`Phone`** 
+    - **`Voice`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone/voice*) 
+    - **`Facsimile`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/contactInfo/phone/facsimile*) 
+  - **`Address`** 
+    - **`Delivery point`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/deliveryPoint*) 
+    - **`City`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/city*) 
+    - **`Postal code`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/postalCode*) 
+    - **`Country`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487859880/contactInfo/address/country*) 
+  - **`Online resource`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource*) NOT-AVAILABLE
+    - **`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/name*) 
+    - **`URL`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/linkage*) 
+    - **`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/description*) 
+    - **`Protocol`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/protocol*) 
+    - **`Function`** (*description/dataQualityInfo/lineage/lineage/processStep/processor/section-1676487869001/contactInfo/onlineResource/function*) 
+
+- **`Source citation`** 
+  - **`Title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/title*) 
+  - **`Alternate title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/alternateTitle*) 
+  - **`Source`** 
+    - **`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/source/description*) 
+    - **`Date`** (*sourceCitation/date*)
+      - **`Date`** (*sourceCitation/date*) 
+      - **`Type`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/date/type*) Date type e.g. publication, revision, creation
+  - **`Edition`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/edition*) 
+  - **`Edition date`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/editionDate*) 
+  - **`Identifier`** 
+    - **`Identifier authority`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier/authority*) 
+    - **`Identifier code`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/identifier/code*) 
+  - **`Cited responsible party`** 
+    - **`Individual name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/individualName*) 
+    - **`Organisation name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/organisationName*) 
+    - **`Position`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/positionName*) 
+    - **`Role`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/role*) 
+    - **`Address`** 
+      - **`Email`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
+      - **`Phone`** 
+        - **`Voice`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone/voice*) 
+        - **`Facsimile`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
+      - **`Address`** 
+        - **`Delivery point`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/deliveryPoint*) 
+        - **`City`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/city*) 
+        - **`Postal code`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/postalCode*) 
+        - **`Country`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488006215/contactInfo/address/country*) 
+      - **`Online resource`** 
+        - **`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/name*) 
+        - **`URL`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/linkage*) 
+        - **`Description`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/description*) 
+        - **`Protocol`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/protocol*) 
+        - **`Function`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/citedResponsibleParty/section-1676488011368/contactInfo/onlineResource/function*) 
+
+- **`Resource presentation`**  
+  - **`Series`** 
+    - **`Name`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/name*) 
+    - **`Issue`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/issueIdentification*) Identification of the series issue
+    - **`Page`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/series_section/sourceCitation/series/page*) 
+    - **`Other citation details`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/otherCitationDetails*) 
+    - **`Collective title`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/collectiveTitle*) 
+    - **`ISBN`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/ISBN*) 
+    - **`ISSN`** (*description/dataQualityInfo/lineage/lineage/processStep/source/sourceCitation/ISSN*) 
+
+**`Metadata maintenance`** 
+
+- **`Metadata maintenance and update frequency`** (*description/metadataMaintenance/maintenanceAndUpdateFrequency*) The metadata maintenance and update frequency elements provide information on the maintenance of the metadata including the frequency of updates. This is a free text element. The information should be chosen from values recommended by the ISO 19139 controlled vocabulary with the following options: continual, daily, weekly, fortnightly, monthly, quarterly, biannually, annually, asNeeded, irregular, notPlanned, unknown.
+
+**Portrayal catalogue**
+
+- **`Portrayal catalogue citation`**
+  - **`Title`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/title*) 
+  - **`Alternate title`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/alternateTitle*) 
+  - **`Date`** (*date*) 
+    - **`Date`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/date/date*) 
+    - **`Type`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/date/type*) Date type e.g. publication, revision, creation
+  - **`Edition`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/edition*) 
+  - **`Edition date`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/editionDate*) 
+  - **`Identifier`**
+    - **`Identifier authority`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/identifier/authority*) 
+    - **`Identifier code`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/identifier/code*) 
+  - **`Cited responsible party`** 
+    - **`Individual name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/individualName*) 
+    - **`Organisation name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/organisationName*) 
+    - **`Position`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/positionName*) 
+    - **`Role`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/role*) 
+    - **`Phone`** 
+      - **`Voice`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone/voice*) 
+      - **`Facsimile`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/phone/facsimile*) 
+    - **`Address`** 
+      - **`Email`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/contactInfo/address/electronicMailAddress*) 
+      - **`Address`** 
+        - **`Delivery point`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/deliveryPoint*) 
+        - **`City`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/city*) 
+        - **`Postal code`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/postalCode*) 
+        - **`Country`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489185668/contactInfo/address/country*) 
+    - **`Online resource`** 
+      - **`Name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/name*) 
+      - **`URL`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/linkage*) 
+      - **`Description`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/description*) 
+      - **`Protocol`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/protocol*) 
+      - **`Function`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/citedResponsibleParty/section-1676489193500/contactInfo/onlineResource/function*) 
+
 **`Resource presentation`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/presentationForm*) 
 **`portrayalCatalogueInfo/portrayalCatalogueCitation/series_section/series`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/series_section/series*) NOT-AVAILABLE
 **`Name`** (*portrayalCatalogueInfo/portrayalCatalogueCitation/series_section/series/name*) 
@@ -979,6 +1021,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
 **`description/feature_catalogue/featureType/carrierOfCharacteristics`** (*description/feature_catalogue/featureType/carrierOfCharacteristics*) NOT-AVAILABLE
 **`Member name`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/memberName*) Name of the property member of the feature type.
 **`Definition`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/definition*) Definition of the property member.
+
 **`description/feature_catalogue/featureType/carrierOfCharacteristics/cardinality`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/cardinality*) NOT-AVAILABLE
 **`Cardinality lower`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/cardinality/lower*) Definition of the member type cardinality. The cardinality is set of two properties: lower cardinality (lower) and upper cardinality (upper). For simple tabular datasets, the cardinality will be 1-1. Multiple cardinalities (eg. 1-N, N-N) apply particularly to feature catalogues/types that describe relational databases.
 **`Cardinality upper`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/cardinality/upper*) Definition of the member type cardinality. The cardinality is set of two properties: lower cardinality (lower) and upper cardinality (upper). For simple tabular datasets, the cardinality will be 1-1. Multiple cardinalities (eg. 1-N, N-N) apply particularly to feature catalogues/types that describe relational databases.
@@ -990,11 +1033,13 @@ In the list of metadata elements below, the *key* of each element in the metadat
 **`Label`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/listedValue/label*) 
 **`Code`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/listedValue/code*) 
 **`Definition`** (*description/feature_catalogue/featureType/carrierOfCharacteristics/listedValue/definition*) 
-**`Tags`** (*tags*) Tags, especially when organized in tag groups, provide a powerful and flexible solution to enable custom facets (filters) in data catalogs.
-**`Tag`** (*tags/tag*) A user-defined tag.
-**`Tag group`** (*tags/tag_group*) A user-defined group (optional) to which the tag belongs. Grouping tags allows implementation of controlled facets in data catalogs.
-![image](https://github.com/user-attachments/assets/da3257eb-286b-4842-bb6b-6133356f82ba)
 
+**TAGS** 
+
+Tags, especially when organized in tag groups, provide a powerful and flexible solution to enable custom facets (filters) in data catalogs.
+  - **`Tag`** (*tags/tag*) A user-defined tag.
+  - **`Tag group`** (*tags/tag_group*) A user-defined group (optional) to which the tag belongs. Grouping tags allows implementation of controlled facets in data catalogs.
+![image](https://github.com/user-attachments/assets/da3257eb-286b-4842-bb6b-6133356f82ba)
 
 
 ### Generate gallery
@@ -1010,5 +1055,4 @@ To document a geographic data service in the Metadata Editor, it is recommended 
 ### Generate gallery
 
 
-## Generating metadata using geometa (R package)
 
