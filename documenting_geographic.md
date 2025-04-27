@@ -8,18 +8,30 @@ The ISO 19100 standards have been designed to cover the large scope of geographi
                                                   
 Geographic information metadata standards cover three types of resources: (i) datasets (which can be of vector or raster type), (ii) data structure definitions, and (iii) data services. Each one of these three components is the object of a specific standard. To support their implementation, a common XML specification (ISO 19139) covering the three standards has been developed. The geographic metadata standard is however a very complex standard. Its use requires expertise not only in data documentation, but also in the use of geospatial data. We provide in this chapter some information that readers who are not familiar with geographic data may find useful to better understand the purpose and use of the geographic metadata standards.
 
-## Documenting geographic datasets and services
-
-**Geographic data services** refers to  operations or set of operations that allows users to access, manipulate, transform, analyze, or visualize geographic data over a network or system. It’s not the data itself — it’s the functionality provided to interact with the data. In other words, a geographic data service is something you can call or use to work with geographic data without downloading the full dataset first. Geographic data servies are documented using metadata elements from the ISO 19119 metadata standard. The elements of ISO 19119 are included in the XML specification ISO 19139.
+## Documenting geographic datasets, series, and services
 
 **Geographic datasets** Geographic datasets refers to the actual stored data about the Earth’s features, phenomena, or events. Geographic datasets "identify and depict geographic locations, boundaries and characteristics of features on the surface of the earth. Geographic datasets can be vector data (points, lines, polygons) or raster data (grids, pixels, imagery). They include geographic coordinates (e.g., latitude and longitude) and data associated to geographic locations (...)". (Source: https://www.fws.gov/gis/) The ISO 19115 standard defines the structure and content of the metadata to be used to document geographic datasets. The ISO 19115 standard is split into two parts covering:
-- **vector data** (ISO 19115-1), and 
-- **raster data** including imagery and gridded data (ISO 19115-2). 
+- ***vector data*** (ISO 19115-1), and 
+- ***raster data*** including imagery and gridded data (ISO 19115-2). 
 The elements of ISO 19115 are included in the XML specification ISO 19139.
 
 *Vector* and *raster* spatial datasets are built with different structures and formats. The following summarizes how these two categories differ and how they can be processed using the R software. The descriptions of vector and raster data provided in this chapter are adapted from:
    - https://gisgeography.com/spatial-data-types-vector-raster/
    - https://datacarpentry.org/organization-geospatial/02-intro-vector-data/index.html]
+
+**Geographic datasets series** Geographic datasets can be organized in ***series***. In ISO 19139 (and ISO 19115), *series* refers to a collection of related datasets that are grouped together because they share a common purpose, theme, method of production, or spatial/temporal extent. In other words, a series is a set of datasets that are logically connected and can be described together at a higher level.
+
+Examples:
+- A series of annual land use maps for different years (2000, 2005, 2010, etc.).
+- A collection of satellite images covering different tiles of a country.
+- A set of topographic maps produced at the same scale for different regions.
+
+In the metadata, some elements in the ISO 19139 are dedicated to provide information on series. You can describe the series itself at a general level. Then you can have metadata for individual datasets linked to that series. This helps avoid duplication — common information is stored once at the series level, and dataset-level metadata can focus on the differences. In ISO 19139 XML, you will often see fields like:
+- resourceScope set to series (to show you are describing a series, not a single dataset);
+- aggregationInfo to link datasets to their series or services.
+
+**Geographic data services** refers to  operations or set of operations that allows users to access, manipulate, transform, analyze, or visualize geographic data over a network or system. It’s not the data itself — it’s the functionality provided to interact with the data. In other words, a geographic data service is something you can call or use to work with geographic data without downloading the full dataset first. Geographic data servies are documented using metadata elements from the ISO 19119 metadata standard. The elements of ISO 19119 are included in the XML specification ISO 19139.
+
 
 ### Vector data 
 
@@ -199,16 +211,11 @@ In the list of metadata elements below, the *key* of each element in the metadat
 
 - **`Hierarchy level`** (*description/hierarchyLevel*) This is the type of resource being described by the metadata and it is filled in with a value from a classification of the resource based on its scope. The choice of Resource Type will be probably the first decision made by the user and it will define the metadata elements that should be filled.
 
-  The hierarchy level defines the scope of the resource. It indicates whether the resource is a collection, a dataset, a series, a service, or another type of resource. The ISO 19139 provides a controlled vocabulary for this element. It is recommended but not mandatory to make use of it. The most relevant levels for the purpose of cataloguing geographic data and services are dataset (for both raster and vector data), service (a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behavior), and series. Series will be used when the data represent an ordered succession, in time or in space; this will typically apply to time series, but it can also be used to describe other types of series (e.g., a series of ocean water temperatures collected at a succession of depths).
-
-  NOTES:
-  - dataset: is an identifiable data that can be accessed separately. A dataset can be a part of a whole (series) or a segregate resource.
-  - series: is a collection of resources or related datasets that share the same product specification.
-  - service: technologies providing availability and access to spatial information, for example, web map services, web feature services, web coverage services, web processing services, catalogue web services, etc.
+  The hierarchy level defines the scope of the resource. It indicates whether the resource is a collection, a dataset, a series, a service, or another type of resource. The ISO 19139 provides a controlled vocabulary for this element. It is recommended but not mandatory to make use of it. The most relevant levels for the purpose of cataloguing geographic data and services are **dataset** (for raster and vector datasets), **series** (collections of related da)tasets that share a common purpose, and **service**. 
 
 - **`Hierarchy level name`** (*description/hierarchyLevelName*) The "hierarchy level name" provides an alternative to describe hierarchy levels, using free text instead of a controlled vocabulary. The use of "hierarchy level" is preferred to the use of "hierarchy level name".
 
-- **`contact`** (*description/contact*) NOT-AVAILABLE
+- **`Contact information`** 
   - **`Individual name`** (*description/contact/individualName*) The responsible party (person) in charge of the feature catalogue production.
   - **`Organisation name`** (*description/contact/organisationName*) The responsible party (organization) in charge of the feature catalogue production.
   - **`Position`** (*description/contact/positionName*) 
@@ -218,7 +225,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
     - **`Phone`** 
       - **`Voice`** (*description/contact/contactInfo/phone/voice*) 
       - **`Facsimile`** (*description/contact/contactInfo/phone/facsimile*) 
-    - **`Address`** (*description/contact/section-1676477188264/contactInfo/address*) NOT-AVAILABLE
+    - **`Physical address`** (*description/contact/section-1676477188264/contactInfo/address*) NOT-AVAILABLE
       - **`Delivery point`** (*description/contact/section-1676477188264/contactInfo/address/deliveryPoint*) Physical address - Street, building number, etc.
       - **`City`** (*description/contact/section-1676477188264/contactInfo/address/city*) Physical address - City name
       - **`Postal code`** (*description/contact/section-1676477188264/contactInfo/address/postalCode*) Physical address - Postal code
@@ -230,7 +237,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
       - **`Protocol`** (*description/contact/section-1676477380255/contactInfo/onlineResource/protocol*) Web protocol used to get the resource, e.g., FTP, HTTP. In case of a basic HTTP, the ISO 19139 suggests the value "WWW:LINK-1.0-http–link". For geographic standard data services, it is recommended to fill this element with the appropriate protocol identifier. For an OGC Web Map Service (WMS) link for example, use "OGC:WMS-1.1.0-http-get-map"
       - **`Function`** (*description/contact/section-1676477380255/contactInfo/onlineResource/function*) Function (purpose) of the online resource.
 
-- **`Date stamp`** (*description/dateStamp*) Date and time when the metadata record was created or updated. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00).
+- **`Metadata date stamp`** (*description/dateStamp*) Date and time when the metadata record was created or updated. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00).
 
 - **`Metadata standard version`** (*description/metadataStandardVersion*) The version of the metadata standard being used. It is good practice to enter the standard’s inception/revision year. ISO standards are revised with an average periodicity of 10-year. Although the ISO TC211 geographic information metadata standards have been reviewed, it is still accepted to refer to the original version of the standard as many information systems/catalogs still make use of that version. The recommended values are:
   - in the case of vector dataset metadata: ISO 19115:2003
@@ -247,26 +254,23 @@ In the list of metadata elements below, the *key* of each element in the metadat
 
 **IDENTIFICATION** 
 
-***CITATION*** 
+- **`Title`** (*description/identificationInfo/citation/title*) Title of the resource (dataset, series, or service).
 
-- **`Title`** (*description/identificationInfo/citation/title*) Title of the resource.
+- **`Alternate title`** (*description/identificationInfo/citatio)n/alternateTitle*) An alternate title (if applicable)
 
-- **`Alternate title`** (*description/identificationInfo/citation/alternateTitle*) An alternate title (if applicable)
-
-- **`Date`** (*description/identificationInfo/citation/date*) Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
-  The following types will often be used:
-  - Date of publication: This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication. Date of publication differs from the temporal extent. For example, a dataset might have been published in March 2009 (2009-03-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
-  - Date of last revision: This date describes when the resource was last revised, if the resource has been revised. Date of revision differs from the temporal extent. For example, a dataset might have been revised in April 2009 (2009-04-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
-  - Date of creation: This date describes when the resource was created. Date of creation differs from the temporal extent. For example, a dataset might have been created in February 2009 (2009-02-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+- **`Resource date`** (*description/identificationInfo/citation/date*) Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
   - **`Date`** (*description/identificationInfo/citation/date/date*) The date, in ISO format.
-  - **`Type`** (*description/identificationInfo/citation/date/type*) The type of date should be provided, and selected from the controlled vocabulary proposed by the ISO 19139.
+  - **`Type`** (*description/identificationInfo/citation/date/type*) The type of date should be provided, and selected from the controlled vocabulary proposed by the ISO 19139. The following date types will often be used:
+  - *Date of publication*: This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication. Date of publication differs from the temporal extent. For example, a dataset might have been published in March 2009 (2009-03-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+  - *Date of last revision*: This date describes when the resource was last revised, if the resource has been revised. Date of revision differs from the temporal extent. For example, a dataset might have been revised in April 2009 (2009-04-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
+  - *Date of creation*: This date describes when the resource was created. Date of creation differs from the temporal extent. For example, a dataset might have been created in February 2009 (2009-02-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
 
 - **`Edition`** (*description/identificationInfo/citation/edition*) Edition of the resource.
 
 - **`Edition date`** (*description/identificationInfo/citation/editionDate*) Edition date, in ISO format.
 
 - **`Identifier`** (*description/identificationInfo/citation/identifier*) 
-  - **`Identifier`** (*description/identificationInfo/citation/identifier/code*) A value uniquely identifying an object within a namespace.
+  - **`Identifier code`** (*description/identificationInfo/citation/identifier/code*) A value uniquely identifying an object within a namespace.
   - **`Authority`** (*description/identificationInfo/citation/identifier/authority*) A unique persistent identifier for the metadata. If a DOI is available for the resource, the DOI should be entered here. The same file identifier should be used if no other persistent identifier is available.
 
 - **`Responsible party`** (*description/identificationInfo/citation/citedResponsibleParty*) 
@@ -278,7 +282,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
   - **`Phone`**
     - **`Voice`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/voice*) 
     - **`Facsimile`** (*description/identificationInfo/citation/citedResponsibleParty/contactInfo/phone/facsimile*) 
-  - **`Address`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address*) NOT-AVAILABLE
+  - **`Physical address`** 
     - **`Delivery point`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/deliveryPoint*) 
     - **`City`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/city*) 
     - **`Postal code`** (*description/identificationInfo/citation/citedResponsibleParty/section-1676478323711/contactInfo/address/postalCode*) 
@@ -330,7 +334,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
 
 **POINT OF CONTACT**
 
-- **`Contact`**
+- **`Point of contact`**
   - **`Individual name`** (*description/identificationInfo/pointOfContact/individualName*) 
   - **`Organisation name`** (*description/identificationInfo/pointOfContact/organisationName*) 
   - **`Position`** (*description/identificationInfo/pointOfContact/positionName*) 
@@ -340,7 +344,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
       - **`Voice`** (*description/identificationInfo/pointOfContact/contactInfo/phone/voice*) 
       - **`Facsimile`** (*description/identificationInfo/pointOfContact/contactInfo/phone/facsimile*) 
     - **`Email`** (*description/identificationInfo/pointOfContact/contactInfo/address/electronicMailAddress*) 
-    - **`Address`** 
+    - **`Physical address`** 
       - **`Delivery point`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/deliveryPoint*) 
       - **`City`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/city*) 
       - **`Postal code`** (*description/identificationInfo/pointOfContact/section-1676479710348/contactInfo/address/postalCode*) 
@@ -392,6 +396,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
 - **`Use constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/useConstraints*) Use constraints. To be entered as free text. Filling this element will depend on the resource that is described. As best practice recommended to fill this element, this is where terms of use, disclaimers, preferred citation or* even data limitations can be captured
 - **`Other constraints`** (*description/identificationInfo/resourceConstraints/section-1676478956897/legalConstraints/otherConstraints*) Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata.
 
+
 **SECURITY CONSTRAINTS`**
 
 - **`Use limitation`** (*description/identificationInfo/resourceConstraints/section-1676478978376/securityConstraints/useLimitation*) Restrictions on the access and use of a resource or metadata.
@@ -417,7 +422,7 @@ In the list of metadata elements below, the *key* of each element in the metadat
   - **`Phone`** 
     - **`Voice`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/voice*) 
     - **`Facsimile`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/contactInfo/phone/facsimile*) 
-  - **`Address`** 
+  - **`Physical address`** 
     - **`Delivery point`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/deliveryPoint*) 
     - **`City`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/city*) 
     - **`Postal code`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479119224/contactInfo/address/postalCode*) 
@@ -429,12 +434,14 @@ In the list of metadata elements below, the *key* of each element in the metadat
     - **`Protocol`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/protocol*) 
     - **`Function`** (*description/identificationInfo/resourceSpecificUsage/userContactInfo/section-1676479152000/contactInfo/onlineResource/function*) 
 
+
 **AGGREGATION INFORMATION**
 
 - **`Aggregate dataset name`** (*description/identificationInfo/aggregationInfo/aggregateDataSetName*) 
 - **`Aggregate dataset identifier`** (*description/identificationInfo/aggregationInfo/aggregateDataSetIdentifier*) 
 - **`Association type`** (*description/identificationInfo/aggregationInfo/associationType*) 
 - **`Type of initiative`** (*description/identificationInfo/aggregationInfo/initiativeType*) 
+
 
 **BOUNDING BOX`**
 
@@ -486,7 +493,7 @@ NOTES:
 - For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
 - When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values
 
-**SPATIAL RESOLUTION UOM`**  
+**SPATIAL RESOLUTION Unit of Measure (UOM)**  
 
 - **`Spatial resolution value`** (*description/identificationInfo/spatialResolution/value*) 
 
@@ -521,7 +528,7 @@ A correct categorization is very important to help users to search and find the 
   - **`Phone`** 
     - **`Voice`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/voice*) 
     - **`Facsimile`** (*description/identificationInfo/resourceFormat/formatDistributor/formatDistributor/contactInfo/phone/facsimile*)  
-  - **`Address`** 
+  - **`Physical address`** 
     - **`Delivery point`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/deliveryPoint*) 
     - **`City`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/city*) 
     - **`Postal code`** (*description/identificationInfo/resourceFormat/formatDistributor/section-1676479533357/formatDistributor/contactInfo/address/postalCode*) 
@@ -577,6 +584,7 @@ EXAMPLES:
   - water springs (AGROVOC)
   - rain water (GEMET Concepts)
 - **`Thesaurus name`** (*description/identificationInfo/serviceIdentification/keywords/thesaurusName*) The thesaurus name shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary. It is important to specify which version of the thesaurus was used to take the keyword value from.
+
 
 - **`Coupled resource`**  
   - **`Operation name`** (*description/identificationInfo/serviceIdentification/coupledResource/operationName*) 
