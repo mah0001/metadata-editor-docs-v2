@@ -493,13 +493,13 @@ The spatial representation type of the dataset. Values should be selected from t
 
 - **`Spatial resolution`** (*description/identificationInfo/spatialResolution*) The spatial resolution of the data as numeric value associated to a unit of measure. Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
 EXAMPLES:
-- 50000 (e.g. 1:50000 scale map)
-- 0.25 (degrees)
+  - 50000 (e.g. 1:50000 scale map)
+  - 0.25 (degrees)
 NOTES:
-- For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
-- When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values
+  - For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
+  - When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values
 
-**SPATIAL RESOLUTION Unit of Measure (UOM)**  
+**SPATIAL RESOLUTION UNIT OF MEASURE (UOM)**  
 
 - **`Spatial resolution value`** (*description/identificationInfo/spatialResolution/value*) 
 
