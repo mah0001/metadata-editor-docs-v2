@@ -10,6 +10,8 @@ Geographic information metadata standards cover three types of resources: (i) da
 
 ## Documenting geographic datasets, series, and services
 
+**GEOGRAPHIC DATASETS**
+
 **Geographic datasets** Geographic datasets refers to the actual stored data about the Earth’s features, phenomena, or events. Geographic datasets "identify and depict geographic locations, boundaries and characteristics of features on the surface of the earth. Geographic datasets can be vector data (points, lines, polygons) or raster data (grids, pixels, imagery). They include geographic coordinates (e.g., latitude and longitude) and data associated to geographic locations (...)". (Source: https://www.fws.gov/gis/) The ISO 19115 standard defines the structure and content of the metadata to be used to document geographic datasets. The ISO 19115 standard is split into two parts covering:
 - ***vector data*** (ISO 19115-1), and 
 - ***raster data*** including imagery and gridded data (ISO 19115-2). 
@@ -18,6 +20,8 @@ The elements of ISO 19115 are included in the XML specification ISO 19139.
 *Vector* and *raster* spatial datasets are built with different structures and formats. The following summarizes how these two categories differ and how they can be processed using the R software. The descriptions of vector and raster data provided in this chapter are adapted from:
    - https://gisgeography.com/spatial-data-types-vector-raster/
    - https://datacarpentry.org/organization-geospatial/02-intro-vector-data/index.html]
+
+**GEOGRAPHIC DATASETS SERIES**
 
 **Geographic datasets series** Geographic datasets can be organized in ***series***. In ISO 19139 (and ISO 19115), *series* refers to a collection of related datasets that are grouped together because they share a common purpose, theme, method of production, or spatial/temporal extent. In other words, a series is a set of datasets that are logically connected and can be described together at a higher level.
 
@@ -29,6 +33,8 @@ Examples:
 In the metadata, some elements in the ISO 19139 are dedicated to provide information on series. You can describe the series itself at a general level. Then you can have metadata for individual datasets linked to that series. This helps avoid duplication — common information is stored once at the series level, and dataset-level metadata can focus on the differences. In ISO 19139 XML, you will often see fields like:
 - resourceScope set to series (to show you are describing a series, not a single dataset);
 - aggregationInfo to link datasets to their series or services.
+
+**GEOGRAPHIC DATA SERVICES**
 
 **Geographic data services** refers to  operations or set of operations that allows users to access, manipulate, transform, analyze, or visualize geographic data over a network or system. It’s not the data itself — it’s the functionality provided to interact with the data. In other words, a geographic data service is something you can call or use to work with geographic data without downloading the full dataset first. Geographic data servies are documented using metadata elements from the ISO 19119 metadata standard. The elements of ISO 19119 are included in the XML specification ISO 19139.
 
