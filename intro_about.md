@@ -35,9 +35,37 @@ The technical documentation of the metadata standards supported by the Metadata 
 
 ### Software license
   
-The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit) with the following additional qualifications related to the World Bank's Privileges and Immunities:
+The Metadata Editor is published as open-source software under the MIT License (https://opensource.org/license/mit) with additional terms for international organizations:
 
-*provide text of IGO here*
+***MIT LICENSE***
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+***ADDITIONAL TERMS FOR INTERGOVERNMENTAL ORGANIZATIONS***
+
+Where the Licensor is an intergovernmental organization (IGO), the following additional terms shall apply:
+
+1.	**Privileges and Immunities**. Nothing in this License shall constitute or be interpreted as a waiver, express or implied, of any privileges and immunities that apply to the Licensor pursuant to international law, treaties, or the Licensor's constituent documents, including immunity from jurisdiction and execution.
+
+2.	**Dispute Resolution**. Any dispute arising under this License that involves the Licensor shall be resolved, to the extent not settled amicably, through the following procedures:
+- First, by non-binding mediation conducted in accordance with rules designated by the Licensor, or, if none, the UNCITRAL Mediation Rules;
+- Failing settlement within 45 days, by final and binding arbitration in accordance with the UNCITRAL Arbitration Rules then in force, by a sole arbitrator, conducted in English, seated at the Licensor's headquarters, and conducted remotely when practicable.
+
+3.	**Interpretation under International Law**. This License shall be interpreted in accordance with general principles of international law, including those reflected in the Berne Convention (1971), the WIPO Copyright Treaty (1996), and the Universal Copyright Convention (1971). No provision shall be interpreted in a manner that derogates from the legal status of the Licensor under international law.
+
+4.	**No Waiver**. No provision of this License shall be deemed waived and no breach consented to unless expressly agreed in writing and signed by the Licensor.
+
+5.	**No Ongoing Support or Maintenance**. Nothing in this License shall be construed to create an obligation on the part of the Licensor to provide updates, maintenance, support or any form of continued service for the software once released.
+
+6.	**Entire Agreement**. This License constitutes the entire agreement between the Licensee and the Licensor concerning the Work and supersedes any additional terms submitted by You. No modification shall be effective unless agreed in writing by both parties.
+
+7.	**Severability**. If any provision of this License is held to be unenforceable, it shall be interpreted to give effect to its purpose to the extent permitted by applicable law, and the remainder of the License shall remain in full force and effect.
+
+8.	**Precedence**. In the event of any inconsistency between these Additional Terms for IGOs and the terms of the MIT License, these Additional Terms for IGOs shall prevail. 
 
 
 ### User Guide license 
@@ -50,4 +78,3 @@ This User Guide is licensed under the Creative Commons Attribution 4.0 Internati
 ### Disclaimer
 
 The Metadata Editor is provided "as is", without any warranties or guarantees, express or implied. The World Bank makes no representations regarding the accuracy, reliability, completeness, or suitability of the software for any particular purpose. Users assume full responsibility for the installation, configuration, and use of the application. The World Bank shall not be liable for any direct, indirect, incidental, consequential, or special damages arising from the use or inability to use the software. By using the Metadata Editor, users acknowledge and accept that they are solely responsible for ensuring that their use of the application complies with applicable laws, policies, and data governance requirements. Nothing herein shall constitute or be considered to be a limitation upon or a waiver of the privileges and immunities of any of the member institutions of The Work Bank Group, which are specifically reserved.
-
