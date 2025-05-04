@@ -10,7 +10,6 @@
   
     * [Technical specifications](tech_technical_specifications.md)
     * [Installation](tech_installation.md)
-    * [Upgrading](tech_upgrading.md)
     * [Migrating content from Nesstar or NADA](tech_migrating.md)
     
 * Login, logout, and password
