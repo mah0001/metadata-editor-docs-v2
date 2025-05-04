@@ -1,5 +1,4 @@
-# Metadata Editor [beta] - User Manual
-
+# Metadata Editor 1.0 - User Guide
 
 
 
