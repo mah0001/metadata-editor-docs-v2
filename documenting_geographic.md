@@ -492,8 +492,8 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 
 - **`Spatial resolution`** The spatial resolution of the data as numeric value associated to a unit of measure. Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
   - **`Spatial resolution UOM`** Spatial resolution unit of measure 
-  - **`Spatial resolution value`** (*description/identificationInfo/spatialResolution/value*) 
-  EXAMPLES:
+  - **`Spatial resolution value`**  
+    EXAMPLES:
     - 50000 (e.g. 1:50000 scale map)
     - 0.25 (degrees)
   NOTES:
