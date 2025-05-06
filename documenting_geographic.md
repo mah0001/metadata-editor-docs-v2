@@ -739,9 +739,9 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 **TAGS** 
 
 Tags, especially when organized in tag groups, provide a powerful and flexible solution to enable custom facets (filters) in data catalogs.
-  - **`Tag`** (*tags/tag*) A user-defined tag.
-  - **`Tag group`** (*tags/tag_group*) A user-defined group (optional) to which the tag belongs. Grouping tags allows implementation of controlled facets in data catalogs.
-![image](https://github.com/user-attachments/assets/da3257eb-286b-4842-bb6b-6133356f82ba)
+  - **`Tag`** A user-defined tag.
+  - **`Tag group`** A user-defined group (optional) to which the tag belongs. Grouping tags allows implementation of controlled facets in data catalogs.
+    
 
 
 ## Save, export, and use the metadata
