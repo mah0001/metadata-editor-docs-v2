@@ -626,7 +626,7 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
     - **`Date and time`** 
     - **`Responsible party`** 
       - **`Individual name`** 
-      - **`Organisation name`** ) 
+      - **`Organisation name`** 
       - **`Email`**  
       - **`Phone`**
       - **`Address`** 
