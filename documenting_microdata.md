@@ -72,6 +72,7 @@ The DDI-specific sections are described below. For instructions on sections comm
 
 > The description of metadata elements provided below corresponds to the metadata elements included in the default template XXXX provided with the Metadata Editor. The list, the groupings, and the label of the elements may differ if you use a different template.
 
+
 ### Document description
 
 The **Document description** section of the navigation tree contains elements intended to document the metadata being generated ("metadata about the metadata"). In the DDI jargon, the *document* is the DDI-compliant metadata file (XML or JSON) that contains the structured metadata related to the dataset. This section corresponds to the section **Information on metadata** in other standards. 
