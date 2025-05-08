@@ -21,7 +21,7 @@ You will use the JPG file *HDX_BGD_camps_thumbnail.jpg* as a thumbnail (or you m
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_edit_thumbnail.png)
 
-Documenting a dataset consists of entering metadata in metadata entry forms defined by a metadata template. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template.
+Documenting a dataset consists of entering metadata in metadata entry forms defined by a metadata template. When you create a new project, a default template is automatically selected. We will use this template, so there is no need to switch template. The template we will use is named *Geospatial - Inspire/Gemini with additional elements* (version 1.0). It contains the metadata elements recommended by the INSPIRE directive of the European Union and the GEMINI specification from the United Kingdom, to which a few elements have been added.
 
 
 ## Step 2: Enter metadata
@@ -30,21 +30,38 @@ On the left navigation tree, select *Metadata information / Information on metad
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
-You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select *Description / Introduction* and enter the required `Primary ID` (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another project). 
+You can now start entering the metadata related to the geographic dataset itself. In the navigation tree, first select *Description / Metadata* and enter the required information on the type of resource ("Dataset") in the field `Hierarchy level` and the required `Primary ID` (a unique identifier of your choice, e.g., JD_GEO_001; if you want to publish the document in a NADA catalog, make sure that this same identifier is not used by another user or for another project). 
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_identifiers.png)
 
 Then proceed with the other sections in the navigation tree and fill out the following elements using the information provided in the HDX website, also provided below (see *Additional information* section in web page https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh). The metadata template is a bit complex, due to the complexity of the underlying ISO 19139 metadata standard.
-- ***Language:*** English
+
+- ***Type of dataset (hierarchy level) :***  Dataset
+- ***Metadata date:*** (enter the date you are documenting the dataset)
+- ***Metadata language:*** English
+- ***Metadata contact:*** Enter your name and the date you are documenting the dataset.
+- ***Metadata standard used:*** ISO 19139
+- ***Dataset website:*** https://data.humdata.org/dataset/outline-of-camps-sites-of-rohingya-refugees-in-cox-s-bazar-bangladesh
+- ***Metadata update:*** Not planned
 - ***Title:*** Outline of camps of Rohingya refugees in Cox's Bazar, Bangladesh
+- ***Source:*** RRRC, Inter Sector Coordination Group (ISCG), Site Management Sector, UNHCR, IOM
 - ***Description:*** This spatial database contains the outline of the camps, settlements, and sites where Rohingya refugees are staying in Cox's Bazar, Bangladesh.
 - ***Time period of the dataset:*** January 20, 2018 - April 05, 2024
 - ***Modified:*** 19 May 2024
 - ***Expected update frequency:*** As needed
 - ***Location:*** Bangladesh
-- ***Source:*** RRRC, Inter Sector Coordination Group (ISCG), Site Management Sector, UNHCR, IOM
+- ***Topics:*** Society
+- ***Keywords:*** settlements; refugee crisis; refugees ; forced displacement ; refugee camps
+- ***Dataset language:*** English
+- ***Presentation form:*** Digital map
+- ***Status:*** Completed
+- ***Bounding box (W/E/S/N):*** 88.0844222351 ; 92.6727209818 ; 20.670883287 ; 26.4465255803
+- ***Geographic description:*** Bangladesh
+- ***Temporal element:*** From 2018-01-20 to 2024-04-05
 - ***Contributor:*** Inter Sector Coordination Group (ISCG)
-- ***Methodology:*** These polygons were digitized through a combination of methodologies, originally using VHR satellite imagery and GPS points collected in the field, verified and amended according to Shelter-CCCM Sector, RRRC, Camp in Charge (CiC) officers inputs, with technical support from other partners.
+- ***Spatial representation type:*** Vector
+- ***Frequency of updates:*** As needed
+- ***Methodology (lineage):*** These polygons were digitized through a combination of methodologies, originally using VHR satellite imagery and GPS points collected in the field, verified and amended according to Shelter-CCCM Sector, RRRC, Camp in Charge (CiC) officers inputs, with technical support from other partners.
 - ***Caveats/Comments:*** The camps are continuously expanding, and Camp Boundaries are structured around the GoB, RRRC official governance structure of the camps, taking into account the potential new land allocation. The database is kept as accurate as possible, given these challenges.
 - ***License:*** Public Domain / No Restrictions (https://data.humdata.org/faqs/licenses)
 - ***Tags:*** geodata ; populated places-settlements ; refugee crisis ; refugees 
@@ -57,22 +74,28 @@ This information can be entered in the Metadata Editor as follows:
 
 | Information from HDX      | Corresponding element in the metadata template                              | 
 | ------------------------- | ----------------------------------------------------------------------------| 
-| Language                  | Description / Introduction / `Language`                                     |
-| Title                     | Description / Identification / Citation / `Title`                           |
-| Description               | Description / Identification / Abstract, purpose,credit,status / `Abstract` |
-| Time period of the dataset| Description / Identification / Citation / `Date` (creation and lastUpdate)  | 
-| Modified                  | Description / Identification / Citation / `Date` (released)                 |
-| Expected update frequency | Description / Identification / Resource maintenance / `Frequency`           |
-| Location                  | Description / Identification / Extent / `Geographic element` (Geo. descr.)  |
-| Source                    | Description / Identification / Citation / Responsible party / `Org. name`   |
-| Contributor               | Description / Identification / Abstract, purpose,credit,status / `Credit`   | 
-| Methodology               | Description / Identification / Abstract, purpose,credit,status / `Abstract` | 
-| Caveats/Comments          | Description / Data quality / `Lineage statement` (scope = Dataset)          | 
-| License                   | Description / Identification / Resource constraints / `Legal` (license)     | 
-| Tags                      | Description / Descriptive keywords / `Keywords` (Keyword column)            | 
-| File formats              | Description / Resource format / `Name` (enter as 3 resource formats)        | 
-| Content of the layers     | Description / Feature catalogue / `Name` (for the 14 features)              | 
-
+| Type of dataset           | Description / Metadata / `Hierarchy level`                                  |
+| Metadata date             | Description / Metadata / `Metadata date`                                    |
+| Metadata language         | Description / Metadata / `Language`                                         |
+| Metadata contact          | Description / Metadata / `Metadata contact`                                 |
+| Metadata standard name    | Description / Metadata / `Metadata standard name`                           |
+| Dataset website           | Description / Metadata / `Dataset URI`                                      |
+| Metadata update           | Description / Metadata / `Metadata maintenance and update frequency`        |
+| Title                     | Description / Identification / Dataset identification / `Title`                           |
+| Source                    | Description / Identification / Dataset identification / Responsible party / `Org. name`   |
+| Time period of the dataset| Description / Identification / Dataset identification / `Date` (creation and lastUpdate)  | 
+| Modified                  | Description / Identification / Dataset identification / `Date` (released)                 |
+| Description               | Description / Identification / Dataset identification / `Abstract`                        |
+| Topics                    | Description / Identification / Dataset identification / `Topics`                          |
+| Keywords                  | Description / Identification / Dataset identification / `Keywords`                        |
+| Dataset language          | Description / Identification / Dataset identification / `Language`                        |
+| Presentation form         | Description / Identification / Dataset identification / `Presentation form`               |
+| Status                    | Description / Identification / Purpose, credit and status / `Status`                      |
+| Bounding box              | Description / Identification / Extent (g,t,v) / `Geographic element` / `Bounding box`     |
+| Spatial represent. type   | Description / Identification / Spatial representation and resolution / `Spatial represent. type`|
+| Expected update frequency | Description / Identification / Frequency of update / `Resource maintenance`                |
+| License                   | Description / Identification / Legal constraints / `Use constraints`                       | 
+| Methodology               | Description / Data quality / Data quality / `Lineage statement` (scope = Dataset)          | 
 
 After entering all available information, click on `SAVE`. Click on *Preview* in the navigation tree to view all information you have entered so far.
 
