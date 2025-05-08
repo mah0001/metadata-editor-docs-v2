@@ -26,7 +26,7 @@ Documenting a dataset consists of entering metadata in metadata entry forms defi
 
 ## Step 2: Enter metadata
 
-On the left navigation tree, select *Metadata information / Information on metadata* to enter optional elements used to capture information on who documented the dataset and when. Enter your `name` as netadata producer, and the `date` of the day in ISO format (YYYY-MM-DD). This is the date when the metadata, not the dataset, was produced. Then click on `SAVE`.
+On the left navigation tree, select *Document description* to enter optional elements used to capture information on who documented the dataset and when. Enter your `name` as netadata producer, and the `date` of the day in ISO format (YYYY-MM-DD). This is the date when the metadata, not the dataset, was produced. Then click on `SAVE`.
 
 ![image](img/ME_UG_v1-0-0_quick_start_geographic_metadata_information_save.png)
 
