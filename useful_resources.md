@@ -19,6 +19,7 @@
 - **R package MetadataEditR**: a R package, available on GitHub, to support the use of the Metadata Editor API and to automate tasks
 - **Python Library**: PyMetadataEditor: a Python library, available on GitHub, to support the use of the Metadata Editor API and to automate tasks
 - **AI tools** for metadata evaluation and enhancement: a collection of AI tools developed by the World Bank Office of the Chief Statistician
+- **Nesstar Exporter**: An executable program (for Windows only) allowing export of content from files saved in [.Nesstar] format. This can be used for batch export of Nesstar files, to migrate content to the Metadata Editor. 
   
 ## Training and advocacy materials (forthcoming)
 
