@@ -220,19 +220,19 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 - **`Metadata language`** Main language used in the metadata description. It is recommended to select a value from a controlled vocabulary, for example that provided by ISO 639-2.
 
 - **`Metadata contact`** 
-  - **`Individual name`** The responsible party (person) in charge of the feature catalogue production.
-  - **`Organisation name`** The responsible party (organization) in charge of the feature catalogue production.
-  - **`Email`** 
-  - **`Phone`**  
+  - **`Individual name`** The responsible party (person) in charge of the metadata production.
+  - **`Organisation name`** The responsible party (organization) in charge of the metadata production.
+  - **`Email`** Enter the email address of the contact person for this metadata. To ensure continuity and long-term accessibility, avoid using personal email addresses. Use a role-based or institutional email account (e.g., help@myorganization.org) that remains valid even if individual staff members change.
+  - **`Phone`** Enter the phone number for contacting the person or team responsible for the metadata. To ensure continuity and accessibility, avoid using personal or direct mobile numbers. Instead, provide a general or role-based contact number (e.g., a departmental line or help desk number) that will remain valid even if individual staff members change. 
   - **`Address`** 
       - **`Delivery point`** Physical address - Street, building number, etc.
       - **`City`** Physical address - City name
       - **`Postal code`** Physical address - Postal code
       - **`Country`** Physical address - Country name
     - **`Online resource`** 
-      - **`Name`** Name of the online resource. In case of a geographic standard data services, this should be filled with the identifier of the resource as published in the service. Example, for an OGC Web Map Service (WMS), we will use the layer name.
+      - **`Name`** Name of the online resource.
       - **`Description`** Description of the online resource
-      - **`URL`** URL of the online resource. In case of a geographic standard data services, only the base URL should be provided, without any service parameter.
+      - **`URL`** URL of the online resource. 
 
 - **`Metadata standard name`** The name of the geographic metadata standard used to describe the resource. The recommended values are:
   - in the case of vector dataset metadata: ISO 19115 Geographic information - Metadata
@@ -264,19 +264,19 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 - **`Collective title`** A title in case the resource is part of a broader resource (e.g., data collection).
 
 - **`Responsible party`**  
-  - **`Organisation name`**  
-  - **`Individual name`** 
-  - **`Email`** 
-  - **`Phone`** 
-  - **`Physical address`** 
-    - **`Delivery point`** 
-    - **`City`** 
-    - **`Postal code`**  
-    - **`Country`** 
-  - **`Online resource`** 
-    - **`Name`** 
-    - **`Description`** 
-    - **`URL`** 
+  - **`Individual name`** The responsible party (person) in charge of the dataset or service.
+  - **`Organisation name`** The responsible party (organization) in charge of the dataset or service.
+  - **`Email`** Enter the email address of the contact person for this dataset. To ensure continuity and long-term accessibility, avoid using personal email addresses. Use a role-based or institutional email account (e.g., help@myorganization.org) that remains valid even if individual staff members change.
+  - **`Phone`** Enter the phone number for contacting the person or team responsible for the dataset or service. To ensure continuity and accessibility, avoid using personal or direct mobile numbers. Instead, provide a general or role-based contact number (e.g., a departmental line or help desk number) that will remain valid even if individual staff members change. 
+  - **`Address`** 
+      - **`Delivery point`** Physical address - Street, building number, etc.
+      - **`City`** Physical address - City name
+      - **`Postal code`** Physical address - Postal code
+      - **`Country`** Physical address - Country name
+    - **`Online resource`** 
+      - **`Name`** Name of the online resource. In case of a geographic standard data services, this should be filled with the identifier of the resource as published in the service. Example, for an OGC Web Map Service (WMS), we will use the layer name.
+      - **`Description`** Description of the online resource
+      - **`URL`** URL of the online resource. In case of a geographic data services, only the base URL should be provided, without any service parameter.
 
 - **`Reference dates`** Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
   - **`Date`** The date, in ISO format.
@@ -313,7 +313,7 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 
 - **`Dataset character set`**
   - **`Codelist value`** The dataset character set has to be documented in ISO 19115 when ISO 10646-1 is not used. This element is mandatory only if an encoding is used that is not based on UTF-8 (the dominant encoding of ISO 10646-1).
-  - **`Codelist URI`** 
+  - **`Codelist URI`** A URL to the codelist.
 
 - **`Dataset language`** The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant).
   It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English).
@@ -323,41 +323,41 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 - **`Presentation form`** Form in which the resource is made available. The ISO 19139 recommends a controlled vocabulary. For a geospatial dataset or web-layer, the value "Map digital" will be preferred.
 
 - **`Contacts`** This is the description of the person or organization responsible for the establishment, management, maintenance or distribution of the resource. This description shall include at least the name of the organization and contact email address. The name of the organization should be given in full, without abbreviations. It is recommended to use institutional email instead of personal emails.
-  - **`Individual name`** 
-  - **`Organisation name`**  
-  - **`Phone`** 
-  - **`Email`**  
-  - **`Physical address`** 
-    - **`Delivery point`** 
-    - **`City`** 
-    - **`Postal code`**  
-    - **`Country`**  
-  - **`Online resource`** 
-    - **`Name`**  
-    - **`URL`** 
-    - **`Description`** 
+  - **`Individual name`** The responsible party (person).
+  - **`Organisation name`** The responsible party (organization).
+  - **`Email`** Enter the email address of the contact person. To ensure continuity and long-term accessibility, avoid using personal email addresses. Use a role-based or institutional email account (e.g., help@myorganization.org) that remains valid even if individual staff members change.
+  - **`Phone`** Enter the phone number for contacting the person or team. To ensure continuity and accessibility, avoid using personal or direct mobile numbers. Instead, provide a general or role-based contact number (e.g., a departmental line or help desk number) that will remain valid even if individual staff members change. 
+  - **`Address`** 
+      - **`Delivery point`** Physical address - Street, building number, etc.
+      - **`City`** Physical address - City name
+      - **`Postal code`** Physical address - Postal code
+      - **`Country`** Physical address - Country name
+    - **`Online resource`** 
+      - **`Name`** Name of the online resource. 
+      - **`Description`** Description of the online resource
+      - **`URL`** URL of the online resource. 
 
 **SERVICE IDENTIFICATION** (this section applies to services only, not to datasets)
 
 - **`Service type`** The type of service (as free text), e.g., OGC:WMS. This is a classification to assist in the search of available spatial data services.
 - **`Service type version`** The version of the service e.g. 1.3.0
 - **`Access properties`** 
-  - **`Fees`** 
-  - **`Service availability date`**  
-  - **`Ordering instructions`**  
-  - **`Turnaround`**  
-- **`Restrictions`**
+  - **`Fees`** Indicates any costs associated with accessing or obtaining the dataset. If there is no charge, specify "None" or "Free of charge".
+  - **`Service availability date`** The date when the dataset or related service becomes (or became) available to users. This helps users know when they can access the resource.
+  - **`Ordering instructions`** Describes how users can request or obtain the dataset, including any steps, forms, or systems required to place an order. 
+  - **`Turnaround`** The expected time between placing an order and receiving the dataset or service. This helps users plan their data requests accordingly. 
+- **`Restrictions`** Information about any limitations or conditions on accessing or using the dataset or service. This may refer to legal, security, or other types of restrictions.
   - **`Legal constraints`**  
-    - **`Use limitation`**  
-    - **`Access constraints`**  
-    - **`Use constraints`**
-    - **`Other constraints`**  
+    - **`Use limitation`** Describes any legal conditions or obligations that limit how the dataset or service can be used (e.g., copyright, licensing terms). 
+    - **`Access constraints`** Identifies legal restrictions on who can access the dataset or service (e.g., restricted to registered users, internal use only). 
+    - **`Use constraints`** Specifies legal restrictions on how the dataset or service can be used once accessed (e.g., no redistribution, attribution required).
+    - **`Other constraints`** Lists any additional legal or contractual conditions not covered by the above fields. This can include terms of service, end-user license agreements, or disclaimers. 
   - **`Security constraints`** 
-    - **`Use limitation`** 
-    - **`Classification`**  
-    - **`Note on security classification`**  
-    - **`Classification system`** 
-    - **`Handling description`** 
+    - **`Use limitation`** Describes any restrictions based on security policies that affect how the dataset or service may be used.
+    - **`Classification`** Indicates the security level assigned to the dataset or service (e.g., Unclassified, Confidential, Secret), following the organization’s classification scheme. 
+    - **`Note on security classification`** Provides explanatory text or justification for the assigned security classification. 
+    - **`Classification system`** Specifies the formal system or policy under which the security classification is defined (e.g., national security guidelines, internal protocols).
+    - **`Handling description`** Details instructions for how the dataset or service must be handled to comply with its security classification (e.g., encryption, access logging).
 
 - **`Keywords`** 
     A keyword is defined by:
@@ -381,11 +381,14 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
     - rain water (GEMET Concepts)
   - **`Thesaurus name`** The thesaurus name shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary. It is important to specify which version of the thesaurus was used to take the keyword value from.
 
-- **`Coupled resource`**  
-  - **`Operation name`** 
-  - **`Identifier`** 
+- **`Coupled resource`** Refers to the dataset(s) that the service operates on or delivers. This links the service to the specific geographic data it provides access to or processes. 
+  - **`Operation name`** The name of a specific function or operation that the service provides (e.g., GetMap, GetFeature). This typically corresponds to standard service operations like those in OGC Web Services.
+  - **`Identifier`** A unique code or reference that identifies the service or dataset in a catalog or registry. It ensures consistency and supports interoperability across systems.
 
-- **`Coupling type`**  
+- **`Coupling type`** Describes how tightly the service is connected to the dataset. Common values include:
+  - Tight: The service is designed to work only with a specific dataset.
+  - Loose: The service can operate on multiple datasets.
+ -- Mixed: The service has both tightly and loosely coupled operations. 
 
 - **`Operations contained in service`** 
   - **`Operation name`** 
