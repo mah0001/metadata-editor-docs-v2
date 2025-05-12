@@ -26,6 +26,11 @@ Ensure your server meets the following minimum specifications:
 
 To run the Metadata Editor, you will need:
 
+**OS**:
+- Windows
+- Linux
+- MacOS
+
 **Web server**:
 - Apache 2.4 or later
 - IIS 6/7.x or later
@@ -88,15 +93,46 @@ $ git clone https://github.com/mah0001/pydatatools
 
 #### Configuring the database
 
-Step 1: Create Database and User
-- Create a new database (e.g., metadata_editor).
-- Create a database user with a secure password.
-- Grant this user access to the metadata_editor database.
+**Step 1: Create Database and User**
 
-Step 2: Update Database Configuration
-- Navigate to the editor/application/config/ folder.
-- Copy or rename database.sample.php to database.php.
-- Open database.php in a text editor and update the following fields:
+Use command line, PHPMyAdmin or any other database client tool to connect to your database server.
+
+
+To connect via command line:
+
+```
+$ mysql -u root -p
+```
+
+
+Create database and user account:
+
+- Create a new database (e.g., metadata_editor).
+
+```
+CREATE DATABASE metadata_editor;
+```
+
+Create a database user with a secure password.
+
+```
+CREATE USER 'editor_user'@'localhost' IDENTIFIED BY 'replace-this-with-password';
+```
+
+
+Grant this user access to the metadata_editor database.
+
+```
+GRANT ALL PRIVILEGES ON metadata_editor.* TO 'editor_user'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+
+**Step 2: Update Database Configuration**
+
+- Navigate to the `editor/application/config/` folder.
+- Copy or rename `database.sample.php` to `database.php`.
+- Open `database.php` in a text editor and update the following fields:
    - `hostname` - ip address or the machine name where database is hosted
    - `username` - database user name 
    - `password` - database password
@@ -144,8 +180,13 @@ $ chmod -R 775 datafiles files logs
 #### Running the installer
 
 - Open a web browser and navigate to the Editor installation URL. For example: http://your-domain/editor-folder-name, or http://localhost/editor-folder-name.
+
+![image](img/ME_UG_v1-0-0_me_installer.png)
+
 - Check that all settings are marked with a green tick and fix any that are not on your webserver before running the installer. 
 - Click on the `Install Database` button and complete the form to create an initial Site Administrator account.
+
+![image](img/ME_UG_v1-0-0_me_installer_registration.png)
  
 ⚠️ Note: Use a complex password (at least 12 characters, including uppercase, numbers, and special characters) to enhance security.
 
@@ -164,15 +205,13 @@ $ chmod -R 775 datafiles files logs
 
    ```
 	$ nohup python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000 &
-
    ```
+
+![image](img/ME_UG_v1-0-0_pydatatools_run.png)
+
 
 The Metadata Editor and PyDataTools should now be operational.  
 
-
-### Configuring a user authentication system
-
-Configure a user authentication system by:
 
 
 ### Email configurations
@@ -225,8 +264,6 @@ If you have filled in the email configurations (`application/config/email.php`),
 
 The Metadata Editor will operate as a central metadata repository. For a production level installation, it is therefore essential that you implement a proper backup system, with automatic backups as appropriate.
 
-
-## Installing on a personnal computer
 
 
 
