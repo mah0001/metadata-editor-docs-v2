@@ -418,19 +418,7 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
     - **`Classification system`** Specifies the formal system or policy under which the security classification is defined (e.g., national security guidelines, internal protocols).
     - **`Handling description`** Details instructions for how the dataset or service must be handled to comply with its security classification (e.g., encryption, access logging).
 
-- **`Keywords`** 
-    A keyword is defined by:
-    - a keyword value ("keyword")
-    - an optional originating controlled vocabulary which in ISO standard is referred to as “Thesaurus”. If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET - Concepts, 
-    the citation of the originating controlled vocabulary shall be provided.
-    It is better to select keyword values from a collection of terms linked and predefined (controlled vocabularies).
-    RECOMMENDATIONS
-    If only one keyword is used, then for spatial dataset or spatial dataset series, the keyword:
-    - shall describe the relevant data theme
-    - shall be expressed in the language of the metadata
-    For example, a keyword that comes from GEMET - Concepts shall be cited as follows:
-    - keyword: freshwater
-    - thesaurus name: GEMET - Concepts, version 2.4
+- **`Keywords`** A keyword is defined by (i) a keyword value ("keyword"); (ii) an optional originating controlled vocabulary which in ISO standard is referred to as “Thesaurus”. If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET - Concepts; (iii) the citation of the originating controlled vocabulary shall be provided. It is better to select keyword values from a collection of terms linked and predefined (controlled vocabularies). If only one keyword is used, then for spatial dataset or spatial dataset series, the keyword (i) shall describe the relevant data theme; (ii) shall be expressed in the language of the metadata. For example, a keyword that comes from GEMET - Concepts shall be cited as follows: keyword: freshwater ; thesaurus name: GEMET - Concepts, version 2.4
   - **`Type`** 
   - **`Keyword`** The keyword value is a commonly used word, formalized word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search.
   EXAMPLES:
