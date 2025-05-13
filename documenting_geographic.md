@@ -142,16 +142,14 @@ The Metadata Editor is also provided with recommended templates that only contai
 
 ### INSPIRE - Infrastructure for Spatial Information in Europe
 
-The INSPIRE geographic metadata template refers to a standardized set of metadata elements that organizations in Europe must use to describe geographic datasets and services under the INSPIRE Directive. It aims to create a European-wide, interoperable spatial data infrastructure to support environmental policies and activities that impact the environment.
-
-The INSPIRE metadata template is based mainly on ISO 19115 (for datasets) and ISO 19119 (for services), but it specifies exactly which metadata elements are mandatory, conditional, or optional for INSPIRE compliance. It also sometimes restricts choices or defines controlled vocabularies (for example, for topics, keywords, spatial scope) to ensure harmonization across countries. The rules are detailed in the INSPIRE Metadata Regulation (Commission Regulation (EC) No 1205/2008) and its technical guidelines.
+The EU INSPIRE Directive (Infrastructure for Spatial Information in the European Community), adopted in 2007, establishes a legal framework for the creation of a unified spatial data infrastructure across the European Union. Its goal is to enable the sharing, discovery, and use of interoperable spatial data among public authorities, policymakers, and the public, particularly to support environmental policies and activities that may impact the environment. INSPIRE requires EU Member States to document, harmonize, and provide access to spatial datasets and services related to 34 environmental themes, including land use, transport networks, and biodiversity. The Directive mandates the use of standardized metadata (based on ISO 19115 and ISO 19139), common data specifications, and network services (discovery, view, download, etc.), ensuring that spatial information is easily searchable and accessible across borders and administrative levels.
 
 See the INSPIRE knowledge base at https://knowledge-base.inspire.ec.europa.eu/index_en
 
 
 ### UK GEMINI 2.3
 
-GEMINI is the UK standard for spatial metadata. It's based on ISO 19139 and takes into account the needs of INSPIRE too. 
+The UK GEMINI (GEo-spatial Metadata INteroperability Initiative) standard is the United Kingdom's national metadata standard for describing geographic datasets and services. Developed by the Association for Geographic Information (AGI) and maintained by the UK Metadata Working Group, GEMINI ensures consistent and interoperable metadata across UK public sector organizations. It is based on and fully compatible with international standards ISO 19115 for geographic information and ISO 19139 for XML encoding. GEMINI supports the requirements of the UK Location Programme and the European INSPIRE Directive, enabling efficient discovery, access, and use of spatial data through standardized metadata elements such as dataset identification, spatial and temporal extent, quality, access constraints, and responsible organizations.
 
 See:
 - https://guidance.data.gov.uk/publish_and_manage_data/harvest_or_add_data/harvest_data/gemini/#gemini-and-iso-19139-metadata
@@ -167,9 +165,68 @@ The metadata template provided with the Metadata Editor identifies metadata elem
 
 ### Prepare your materials
 
-Before you start documenting a geographic dataset, collect and organize the dataset and the related materials (documentation, logo, others) in a folder (and subfolders as useful). No structure is imposed. The objective is to ensure that materials are not scattered across folders and drives.
+As a data curator preparing a geographic dataset for documentation using the ISO 19139 standard, it is essential to ensure that the dataset and all supporting materials are complete, well-organized, and ready for standardized metadata creation. Below are core recommendations for preparing a dataset prior to its documentation:
 
-If you plan to provide one or multiple previews of the datasets, generate these previews and save them as image files (e.g., JPEG).
+1. Ensure Dataset Completeness and Consistency
+
+- Verify that the dataset is finalized, with complete records and no missing key attributes or geometries.
+- Check for consistency in coordinate systems, units of measurement, and naming conventions across all layers or features.
+- Ensure the dataset is in a recognized and interoperable format (e.g., GeoPackage, shapefile, GML, GeoJSON).
+
+2. Confirm Spatial Reference Information
+
+- Identify and record the Coordinate Reference System (CRS) used, including the full name and EPSG code.
+- If multiple CRSs are used, provide clear documentation and justification.
+- Check the vertical reference system if vertical data is present.
+
+3. Prepare Descriptive and Contextual Information
+
+- Write a clear and concise title and abstract for the dataset that accurately describes its content and purpose.
+- Define the geographic extent (bounding box or polygon), temporal extent, and data collection period.
+- Identify the data theme or subject area (e.g., hydrography, land cover, administrative boundaries).
+
+4. Identify Data Lineage and Quality Information
+
+- Document the origin of the data, including source datasets, data capture methods, and any processing steps applied.
+- Record known limitations, accuracy, and quality assessments (e.g., positional accuracy, completeness).
+- Note any validation or quality control procedures performed.
+
+5. Organize Supporting Files and Graphics
+- Prepare any graphic overviews (e.g., thumbnail maps, sample visualizations) to be referenced in metadata.
+- Assemble distribution files and note their formats and versions (e.g., ZIP, GeoTIFF, CSV).
+- Collect legal documents, such as terms of use, licenses, and access conditions.
+
+6. Identify Responsible Parties
+- Record the organization or person responsible for creating, maintaining, and distributing the dataset.
+- Include contact information with roles (e.g., point of contact, metadata author, distributor).
+
+7. Determine Access and Use Constraints
+   
+- Identify and clearly state any restrictions on access or limitations on use, including intellectual property rights.
+- Prepare text for disclaimers, preferred citations, or user guidance.
+
+9. Review Related Resources and Linkages
+
+- List any related datasets, services, or documents (e.g., methodology reports, feature catalogues).
+- Collect unique identifiers, such as UUIDs, for related resources when available.
+
+10. Validate the Dataset’s Technical Readiness
+
+- Ensure file names and field names follow naming conventions (e.g., no special characters, reasonable length).
+- Verify that all attribute fields are well-documented, with field names, definitions, and value domains.
+- Check that feature types are defined consistently and that geometry types are valid and appropriate.
+
+11. Maintain Versioning and Update Information
+
+- Record the dataset version, date of last update, and frequency of updates.
+- Keep track of historical versions if applicable, for transparency and reproducibility.
+
+12. Generate Images for the Graphic Overview Section
+
+- Create at least one graphic overview image that visually summarizes the dataset (e.g., a map showing coverage or key features).
+- Ensure the image is clear, appropriately scaled, and provides useful context for users.
+- Include a descriptive file name, brief caption, and file format (e.g., PNG, JPEG).
+- Save the image in a standard resolution and aspect ratio suitable for web display and embedding in metadata tools.
 
 
 ### Create a project
