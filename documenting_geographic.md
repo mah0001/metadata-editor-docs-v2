@@ -508,25 +508,36 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 
 **GRAPHIC OVERVIEW**
 
-- **`Graphic overview`** 
-  - **`File name`** 
-  - **`File description`** 
-  - **`File type`** 
+- **`Graphic overview`** A graphic or image that provides a quick visual representation of the dataset or service. The purpose is to help users quickly understand the nature, coverage, or content of the resource without needing to inspect the full data. Common examples include (i) a map thumbnail showing the dataset’s spatial extent; (ii) a sample chart or diagram illustrating data features; and (iii) a logo or icon representing the service.
+  - **`File name`** The location or URL of the image file. This can be a relative or absolute path.
+  - **`File description`** A textual description of the image’s content or purpose. The purpose is to provide context to help users interpret what the image represents. For example: "Overview map of dataset coverage" or "Elevation model sample visualization"
+  - **`File type`** The format or file type of the image. For example, "jpeg" or "png". 
 
 
 **FREQUENCY OF UPDATE**
 
-- **`Frequency`** Maintenance and update frequency
-- **`Maintenance note`** Maintenance note.
+This section of the metadata describes how often the dataset or service is maintained, updated, or revised. It helps users understand how current or dynamic the resource is, and whether it is suitable for time-sensitive applications.
+
+- **`Frequency`** (Maintenance and update frequency) This indicates how often updates or maintenance actions are performed on the dataset or service. Common values include:
+   - continual – Data is repeatedly and frequently updated.
+   - daily – Updated every day.
+   - weekly – Updated every week.
+   - monthly – Updated every month.
+   - annually – Updated every year.
+   - asNeeded – Updated when necessary (no regular schedule).
+   - irregular – Updated at unpredictable intervals.
+   - notPlanned – No updates are planned.
+   - unknown – Frequency is unknown.
+- **`Maintenance note`** Maintenance note.A free-text note providing additional information about the maintenance strategy, versioning policy, or details about how updates are applied. This can be used to explain specific conditions, responsible parties, data revision processes, or known limitations in maintenance.
 
 
 **SPECIFIC USAGE** 
 
-- **`Resource specific usage`**
-  - **`Specific usage`**
-  - **`Time (date)`** 
-  - **`User determined limitations`**  
-  - **`Contacts`** 
+- **`Resource specific usage`** This element describes how the resource (dataset or service) has been or can be used, including information on usage contexts, limitations, and responsible parties. The purpose is to help users understand real-world applications of the resource and any constraints or conditions that affect its use.
+  - **`Specific usage`** A free-text description of a particular use or application of the dataset or service. For example, "Used for land cover classification analysis", or "Applied in coastal erosion monitoring projects".
+  - **`Time (date)`** The date or time period when the resource was used in the specific context.
+  - **`User determined limitations`** A description of limitations identified by the user during the actual use of the resource. Examples: (i) "Data resolution was insufficient for urban-scale planning."; (ii) "Dataset lacks recent updates beyond 2020." 
+  - **`Contacts`** Information about the individual or organization who used the resource or can provide details about its use.
     - **`Individual name`** 
     - **`Organisation name`**  
     - **`Email`** 
@@ -544,12 +555,29 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
     
 **LEGAL CONSTRAINTS**
 
-- **`Legal constraints`**
-  - **`Use limitation`** 
-  - **`Access constraints`** Legal access constraints. The ISO 19139 provides a controlled vocabulary. These are the access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource.
-  - **`Use constraints`** Use constraints. To be entered as free text. Filling this element will depend on the resource that is described. As best practice recommended to fill this element, this is where terms of use, disclaimers, preferred citation or* even data limitations can be captured
-  - **`Other constraints`** Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata.
-
+- **`Legal constraints`** A metadata section that documents legal or regulatory limitations on the access to, or use of, the dataset or service. The purpose is to inform users of any intellectual property rights, licensing terms, privacy protections, access restrictions, and required citations or disclaimers associated with the resource.
+  - **`Use limitation`** A free-text description of limitations on the use of the resource imposed by law or policy. Examples: (i) "Restricted to academic research only."; (ii) "Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)." ; (iii) "Redistribution prohibited without prior written consent."
+  - **`Access constraints`** Describes legal constraints on accessing the dataset or service (e.g. due to privacy, confidentiality, or licensing). The ISO 19139 provides a controlled vocabulary. These are the access constraints applied to assure the protection of privacy or intellectual property, and any special restrictions or limitations on obtaining the resource. Common values from the controlled vocabulary are:
+    - copyright – Copyright-protected
+    - intellectualPropertyRights – IP rights apply
+    - license – License restrictions apply
+    - privacy – Limited to protect personal or sensitive information
+    - confidential – Only authorized users may access
+    - restricted – Access limited for other reasons
+    - otherRestrictions – Other restrictions apply
+    - unrestricted – No legal access constraints
+  - **`Use constraints`** Describes how the data may or may not be used, usually entered as free text. While Access constraints controls who can access, Use constraints controls what users can do with the data once accessed. Typical content:
+    - Terms of use
+    - Disclaimers
+    - Preferred citations
+    - Attribution requirements
+    - Data limitations (if legal in nature)
+   Examples: (9) "Users must cite the source when publishing results."; (ii) "Not for navigation or emergency use."; (iii) "Use of data is subject to the terms described at https://example.org/license"
+  - **`Other constraints`** Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata. Use cases include:
+    - Mandatory citation format
+    - Mandated attribution wording
+    - Data sharing policies
+    - Jurisdiction-specific legal notes
 
 **RESOURCE FORMAT`** 
 
