@@ -313,13 +313,15 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 
 **DATASET IDENTIFICATION**
 
-- **`Title`** Title of the resource (dataset, series, or service).
+These elements are used to clearly and uniquely identify a geographic dataset and establish its relationship to other resources. Proper identification is essential for users to understand the nature, scope, and context of the dataset.
 
-- **`Alternate title`** An alternate title (if applicable)
+- **`Title`** The primary name by which the dataset, series, or service is known. It should be unique, concise, and descriptive, reflecting the content and scope of the resource. The title helps users discover and distinguish the dataset from others. Example: "Land Use Map of Northern Ireland, 2022 Edition"
 
-- **`Collective title`** A title in case the resource is part of a broader resource (e.g., data collection).
+- **`Alternate title`** An alternative name used to refer to the dataset. This may include abbreviations, translated titles, project names, or legacy titles. Including alternate titles improves discoverability, especially when datasets are known by different names in different contexts or languages. Example: "NI_LU_2022", or "Carte de l’occupation du sol – Irlande du Nord, 2022"
 
-- **`Responsible party`**  
+- **`Collective title`** The title of a larger resource or collection of which this dataset is a part. This element is used when the dataset is a component of a series, such as a national spatial data infrastructure collection, a thematic series, or a multi-part publication. It helps group related datasets under a common collection title and supports hierarchical or thematic navigation. Example: "UK National Land Use Dataset Series"
+
+- **`Responsible party`** The Responsible party element identifies the individual or organization that has a specific role in relation to the dataset being documented. This includes responsibilities such as authoring, publishing, maintaining, or distributing the dataset. The purposes are to: (i) ensure users know who to contact for more information, assistance, or clarification; (ii) Enhance transparency, traceability, and accountability ; and (iii) Support data governance and helps with data stewardship and maintenance over time.
   - **`Individual name`** The responsible party (person) in charge of the dataset or service.
   - **`Organisation name`** The responsible party (organization) in charge of the dataset or service.
   - **`Email`** Enter the email address of the contact person for this dataset. To ensure continuity and long-term accessibility, avoid using personal email addresses. Use a role-based or institutional email account (e.g., help@myorganization.org) that remains valid even if individual staff members change.
@@ -334,49 +336,75 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
       - **`Description`** Description of the online resource
       - **`URL`** URL of the online resource. In case of a geographic data services, only the base URL should be provided, without any service parameter.
 
-- **`Reference dates`** Date(s) associated to a resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
+- **`Reference dates`** Date(s) associated to the resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
   - **`Date`** The date, in ISO format.
   - **`Type`** The type of date should be provided, and selected from the controlled vocabulary proposed by the ISO 19139. The following date types will often be used:
     - *Date of publication*: This is the date of publication of the resource when available, or the date of entry into force. There may be more than one date of publication. Date of publication differs from the temporal extent. For example, a dataset might have been published in March 2009 (2009-03-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
     - *Date of last revision*: This date describes when the resource was last revised, if the resource has been revised. Date of revision differs from the temporal extent. For example, a dataset might have been revised in April 2009 (2009-04-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
     - *Date of creation*: This date describes when the resource was created. Date of creation differs from the temporal extent. For example, a dataset might have been created in February 2009 (2009-02-15) but the covered information was collected over the year 2008 (temporal extent from 2008-01-01 to 2008-12-31).
 
-- **`Abstract`** This is a brief narrative summary of the content of the resource. The abstract provides a clear and concise statement that enables the reader to understand the content of the data or service.
-  RECOMMENDATIONS
-  1. The resource abstract is a succinct description that can include:
-    - A brief summary with the most important details that summarize the data or service
-    - Coverage: linguistic transcriptions of the extent or location in addition to the bounding box
-    - Main attributes
-    - Data sources
-    - Legal references
-    - Importance of the work
-  2. Do not use unexplained acronyms.
-  3. Summarize the most important details in the first sentence or first 100 characters.
+- **`Abstract`** This is a brief narrative summary of the content of the resource. The abstract provides a clear and concise statement that enables the reader to understand the content of the data or service. The following is recommended:
+  - The resource abstract must be a succinct description that can include:
+     - A brief summary with the most important details that summarize the data or service
+     - Coverage: linguistic transcriptions of the extent or location in addition to the bounding box
+     - Main attributes
+     - Data sources
+     - Legal references
+     - Importance of the work
+  - Do not use unexplained acronyms.
+  - Summarize the most important details in the first sentence or first 100 characters.
 
 - **`Additional information`** Any other descriptive information about the resource that doesn’t fit into other elements​
 
-- **`Topics`** The topic category is a high-level classification scheme to assist in the grouping and topic-based search of available spatial data resources.
-  A correct categorization is very important to help users to search and find the resources they are looking for.
+- **`Topics`** The Topics element refers to the broad thematic categories under which the dataset can be classified. These topics are often linked to established taxonomies or classification schemes, such as those used in national or international data repositories. The purpose is to help users quickly identify the general subject area of a dataset (e.g., environment, economics, transportation, etc.). Topics are often selected from predefined, standardized lists or ontologies, such as the United Nations’ "Statistical Theme" classification or domain-specific controlled vocabularies (e.g., "land use," "biodiversity"). Examples: "Agriculture"; "Urban Planning"; "Climate Change". This classification is useful for large data portals, data aggregators, or metadata systems where users may want to filter or explore datasets based on high-level thematic areas.
 
-- **`Keywords`** 
+- **`Keywords`** The Keywords element allows for more granular and specific terms that describe the dataset's content. These can be used to identify particular concepts, places, techniques, or any other relevant aspect that the dataset addresses. Keywords help users narrow down search results to find datasets that closely match their specific needs or queries. They are often free-text terms chosen by the dataset creators or curators. Keywords should include relevant technical terms, geographical locations, data formats, measurement units, or any other descriptors that might aid in discovering datasets.
+  Example: "Soil Quality"; "Flood Risk Modeling"; "Carbon Emissions".
+  In contrast to topics, keywords are typically more flexible and specific, often tailored to a particular dataset or user needs. They are usually entered as free text but may also follow controlled vocabulary schemes depending on the application.
   - **`Type`** Keywords type. The ISO 19139 provides a recommended controlled vocabulary.
   - **`Keyword`** The keyword itself. When possible, existing vocabularies should be preferred to writing free-text keywords. An example of global vocabulary is the Global Change Master Directory that could be a valuable source to reference data domains / disciplines, or the UNESCO Thesaurus.
   - **`Thesaurus name`** A reference to a thesaurus (if applicable) from which the keywords are extracted. The thesaurus itself should then be documented as a citation.
 
-- **`Resource identifiers`** 
-  - **`Identifier`** A value uniquely identifying an object within a namespace.
-  - **`Authority`** A unique persistent identifier for the metadata. If a DOI is available for the resource, the DOI should be entered here. The same file identifier should be used if no other persistent identifier is available.
+- **`Resource identifiers`** The Resource identifiers element is used to specify unique identifiers for a resource, ensuring that it can be consistently referenced and accessed. These identifiers are critical for distinguishing between different datasets or resources and for enabling their retrieval or citation.
+  - **`Identifier`** The Identifier is a unique value assigned to an object (in this case, a dataset or resource) within a particular namespace. It is used to uniquely reference the resource, ensuring that it can be identified and distinguished from other resources. The purpose is to provide a permanent and unique way to reference a dataset, resource, or entity, making it easier for users, systems, or software to locate or retrieve the resource.
+    The identifier can take different formats, such as a DOI (Digital Object Identifier), URI (Uniform Resource Identifier), or URN (Uniform Resource Name). It could also be a custom identifier depending on the institution or system. Examples: 
+"doi:10.1234/abcd1234"; "urn:example:dataset:123456" ; "http://example.org/datasets/12345".
+   The identifier is crucial for ensuring that datasets or resources are easily findable and retrievable, especially in large repositories or distributed systems.
+  - **`Authority`** The Authority refers to the organization or system that is responsible for assigning or managing the Identifier. This ensures that the identifier has been issued by a recognized, trusted authority and can be linked back to an official registry or system. The purpose is to identify the entity responsible for managing and ensuring the persistence of the identifier. It provides context to users about where the identifier originates and whether it can be trusted for long-term access. Example: "International DOI Foundation (for DOI-based identifiers)"; "European Data Portal (for datasets related to EU resources)".
+   The Authority typically represents a well-known organization or service that assigns and maintains identifiers, ensuring consistency and reliability for long-term data reference.
 
-- **`Dataset character set`**
-  - **`Codelist value`** The dataset character set has to be documented in ISO 19115 when ISO 10646-1 is not used. This element is mandatory only if an encoding is used that is not based on UTF-8 (the dominant encoding of ISO 10646-1).
-  - **`Codelist URI`** A URL to the codelist.
+- **`Dataset character set`** The Dataset character set refers to the character encoding standard used for representing the textual content of a geographic dataset. Character encoding is essential for ensuring that text data is stored, displayed, and interpreted correctly across different systems, software, and platforms. The Dataset character set element helps document which character encoding scheme is applied to the dataset, particularly if it deviates from the most common standards, such as UTF-8. The purpose is to specify the encoding format for text data within the dataset. This ensures compatibility and correct interpretation of text when the dataset is shared or accessed by different systems.
+    - **`Codelist value`** The Codelist value element is used to reference the specific value from a predefined codelist that corresponds to the dataset's character encoding. Codelists are collections of standardized values used to describe or categorize certain elements. In the context of character sets, the codelist provides standard identifiers for commonly used encoding schemes. The purpose is to identify the specific character set in use by referencing a standardized value from a predefined list. Examples: "UTF-8" (code representing the UTF-8 character set); "ISO-8859-1" (code representing ISO Latin-1 character set). The Codelist value ensures that the encoding used is recognized and standardized, facilitating the exchange and interpretation of datasets.
+  - **`Codelist URI`** The Codelist URI refers to the Uniform Resource Identifier (URI) that links to the specific codelist that contains the predefined values used in the Codelist value. A URI is a string that provides a unique reference to a resource, in this case, a codelist that defines the character sets used. The URI should point to a standardized, authoritative codelist that can be consulted for valid encoding options. The purpose is to provide a link to the codelist containing the relevant encoding options, enabling the reader or system to check and reference the standard list of accepted character encodings. Examples:
+      - http://www.iso.org/iso-10646-1 (link to the official ISO 10646-1 standard codelist)
+      - http://www.w3.org/TR/encoding (link to W3C encoding codelist)
+   By providing the Codelist URI, the metadata makes it clear where to find the official list of encoding schemes, ensuring consistency and reference to accepted standards.
 
 - **`Dataset language`** The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant).
   It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English).
   The list of all the codes is defined at http://www.loc.gov/standards/iso639-2/.
   Regional languages also are included in this list.
 
-- **`Presentation form`** Form in which the resource is made available. The ISO 19139 recommends a controlled vocabulary. For a geospatial dataset or web-layer, the value "Map digital" will be preferred.
+- **`Presentation form`** The Presentation form element in the context of metadata (such as ISO 19139) refers to the way in which the dataset or resource is presented or made available for use. This element specifies the format or mode of delivery of the data, providing essential details about how the data is structured, represented, or visually displayed for users.
+  Purpose: Presentation form helps users understand how the data will be consumed, interacted with, or visualized. It indicates the physical or logical structure of the data and guides users in selecting the appropriate tools or methods to work with the resource.
+   Examples of Presentation form:
+     - Digital: The data is in a digital format (e.g., a file that can be read by computer software).
+     - Image: The data is represented as a graphic or map image, such as a JPEG, PNG, or TIFF format.
+     - Vector data: The data is represented in a vector format (e.g., shapefiles, GeoJSON) suitable for use in Geographic Information Systems (GIS).
+     - Text: The data is in textual form, such as a document, report, or database.
+     - Spreadsheet: The data is presented in a tabular format, like an Excel spreadsheet or CSV file.
+     - Service: The data is made available through a web service, such as a WMS (Web Map Service) or WFS (Web Feature Service).
+     - Audio/Video: The data might be multimedia, such as a video or audio file.
+
+   The Presentation form element often uses a codelist, which is a set of predefined values that represent different formats and types of presentation. These codelists standardize the types of data presentation, ensuring consistency across datasets. For example, a dataset could have the following presentation forms:
+      - Map: The data is shown in a map format.
+      - Report: The data is presented in a report, perhaps in a PDF or DOC format.
+      - Tabular: The data is provided in a table format.
+
+   Why is it important?
+     - Clarifies data format: By specifying the presentation form, the metadata ensures that users know the format they are working with, allowing them to make decisions about how to access or use the data.
+     - Improves interoperability: Understanding the presentation form helps ensure that systems, tools, and users can interact with the data properly, reducing errors or confusion.
+     - Ensures proper visualization: If the dataset is visual (like a map or image), the presentation form indicates the type of visualization, helping users to prepare appropriate viewing tools.
 
 - **`Contacts`** This is the description of the person or organization responsible for the establishment, management, maintenance or distribution of the resource. This description shall include at least the name of the organization and contact email address. The name of the organization should be given in full, without abbreviations. It is recommended to use institutional email instead of personal emails.
   - **`Individual name`** The responsible party (person).
