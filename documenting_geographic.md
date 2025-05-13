@@ -581,9 +581,9 @@ This section of the metadata describes how often the dataset or service is maint
 
 **RESOURCE FORMAT`** 
 
-- **`Resource format`** 
-  - **`Name`** 
-  - **`Version`** 
+- **`Resource format`** The format of the resource, describing the file format, encoding, or structure used to store or represent the dataset or service. This metadata element helps users understand the type of file(s) they are dealing with, whether it's a dataset, document, or service, and the technology or software needed to process or interpret the resource. The purpose is to specify the file format(s) (such as CSV, JSON, NetCDF, or GeoTIFF) or the service format (e.g., WMS, WFS) that the resource is delivered in.
+  - **`Name`** The name of the format used to store or represent the resource. This could refer to the type of file (e.g., CSV, GeoTIFF, XML, JSON), the technology (e.g., WMS for Web Map Service), or the application-specific format (e.g., Shapefile for vector data).
+  - **`Version`** The version of the format used. This helps identify specific versions of a format that may have different features, capabilities, or compatibility issues. Version information is important for ensuring the correct version of a format is used, as formats can evolve over time (e.g., a new version of GeoTIFF might support different compression methods).
 
 
 **REFERENCE SYSTEM**
