@@ -52,7 +52,10 @@ The figure below provides an example of vector data extracted from [Open Street 
 
 **Raster data** are made up of pixels, also referred to as *grid cells*. Satellite imagery and other remote sensing data are raster datasets. Grid cells in raster data are usually (but not necessarily) regularly-spaced and square. Data stored in a raster format is arranged in a grid without storing the coordinates of each cell (pixel). The coordinates of the corner points and the spacing of the grid can be used to calculate (rather than to store) the coordinates of each location in a grid.
 
-Any given pixel in a grid stores one or more values (in one or more bands). For example, each cell (pixel) value in a satellite image has a red, a green, and a blue value. Cells in raster data could represent anything from elevation, temperature, rainfall, land cover, population density, or others. (Source: https://worldbank.github.io/OpenNightLights/tutorials/mod2_1_data_overview.html) 
+Any given pixel in a grid stores one or more values (in one or more bands). In geographic raster datasets, ***bands*** represent separate layers of data values within a raster. Each band corresponds to a matrix of values for the same spatial extent, often representing measurements in different spectral ranges or thematic data layers. For example:
+- In satellite imagery, one band may capture red light, another green, another blue, and others might capture infrared or thermal information.
+- In a digital elevation model, a single band might contain elevation values only.
+- In a multi-variable raster dataset, different bands may represent different variables (e.g., temperature, salinity).
 
 Raster data can be **discrete** or **continuous**. Discrete rasters have distinct themes or categories. For example, one grid cell can represent a land cover class, or a soil type. In a discrete raster, each thematic class can be discretely defined (usually represented by an integer) and distinguished from other classes. In other words, each cell is definable and its value applies to the entire area of the cell. For example, the value 1 for a class might indicate "urban area", value 2 "forest", and value 3 "others". Continuous (or non-discrete) rasters are grid cells with gradual changing values, which could for example represent elevation, temperature, or an aerial photograph.
 
