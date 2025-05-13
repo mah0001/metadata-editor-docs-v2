@@ -734,13 +734,16 @@ Examples: "CSV" (Comma Separated Values); "GeoTIFF" (for geospatial data); "JSON
 
 **FEATURE CATALOGUE**
 
-- **`Name`** Name of the feature catalogue.
-- **`Scope`** Subject domain(s) of feature types defined in this feature catalogue.
-- **`Fields of application`** One or more fields of applications for this feature catalogue.
-- **`Version number`** Version number of this feature catalogue, which may include both a major version number or letter and a sequence of minor release numbers or letters, such as ‘3.2.4a.’ The format of this attribute may differ between cataloguing authorities.
-- **`Version date`** Version date in ISO 8601 format.
-- **`Version date type`** 
-- **`Producer`** 
+A Feature Catalogue defines the types of features and their attributes used in a dataset. It describes the content and structure of geographic features, enabling consistency, interoperability, and understanding when sharing or using data.
+
+- **`Name`** The official title or name of the feature catalogue. The purpose is to identify the catalogue referenced or used by the dataset. Example: "Topographic Features Catalogue v2"
+- **`Scope`** Describes the subject or domain covered by the feature catalogue. The purpose is to clarify the thematic or spatial extent, or the application domain (e.g., marine data, cadastral data). Example: "Hydrographic data for coastal management"
+- **`Fields of application`** Describes the subject or domain covered by the feature catalogue. The purpose is to clarify the thematic or spatial extent, or the application domain (e.g., marine data, cadastral data). Example: "Hydrographic data for coastal management".
+- **`Version number`** The identifier for the specific version of the feature catalogue. The purpose is to ensure clarity when multiple versions exist; essential for version control and traceability. Example: "2.1".
+- **`Version date`** The date the version of the feature catalogue was published or became effective. The purpose is to indicate the timeliness of the catalogue. Example: "2023-11-01" (date should be entered in ISO 8601 format).
+- **`Version date type`** Specifies the type of date provided for the version (e.g., creation, publication, revision). This is usually drawn from ISO 19115 date types like: creation; publication; revision.
+
+- **`Producer`** The organization or authority responsible for creating and maintaining the feature catalogue. The purpose is to provide attribution and a point of contact for updates or clarification.
   - **`Individual name`** 
   - **`Organisation name`** 
   - **`Email`** 
@@ -753,26 +756,28 @@ Examples: "CSV" (Comma Separated Values); "GeoTIFF" (for geospatial data); "JSON
   - **`Online resource`** 
       - **`Name`** 
       - **`URL`** 
-      - **`Description`** 
-- **`Functional language`** Formal functional language in which the feature operation formal definition occurs in this feature catalogue.
-- **`Feature type`** 
-  - **`Type name`** Text string that uniquely identifies this feature type within the feature catalogue that contains this feature type.
-  - **`Definition`** Definition of the feature type.
-  - **`Code`** Code that uniquely identifies this feature type within the feature catalogue that contains this feature type.
-  - **`Is abstract`** Indicates if the feature type is abstract or not
-  - **`Aliases`** One or more aliases as equivalent names of the feature type.
-  - **`Carrier of characteristics`** 
-    - **`Member name`** Name of the property member of the feature type.
-    - **`Definition`** Definition of the property member.
-    - **`Cardinality lower`** Definition of the member type cardinality. The cardinality is set of two properties: lower cardinality (lower) and upper cardinality (upper). For simple tabular datasets, the cardinality will be 1-1. Multiple cardinalities (eg. 1-N, N-N) apply particularly to feature catalogues/types that describe relational databases.
-    - **`Cardinality upper`** Definition of the member type cardinality. The cardinality is set of two properties: lower cardinality (lower) and upper cardinality (upper). For simple tabular datasets, the cardinality will be 1-1. Multiple cardinalities (eg. 1-N, N-N) apply particularly to feature catalogues/types that describe relational databases.
-    - **`Code`** Code for the attribute member of the feature type. Corresponds to the actual column name in an attributes table.
-    - **`Measurement unit`** Measurement unit of the values (in case of the feature member corresponds to a measurable variable)
-    - **`Value type`** Type of value. A good practice is to rely on primitive data types defined in the XML Schema https://www.w3.org/2009/XMLSchema/XMLSchema.xsd
+      - **`Description`**
+        
+- **`Functional language`** The Functional language element specifies the primary natural language(s) used within the resource being described, such as a dataset, service, document, or feature catalogue. This is not the metadata language (which is recorded separately); it refers specifically to the language used within the content of the resource itself (e.g., labels, feature names, field values, or descriptive text in a dataset or service). The purpose is to help users understand the language context of the resource and to support multilingual data discovery, access, and interoperability. For example, a user searching for resources in Spanish can filter results using this metadata element. In ISO 19139, this will be represented using a code from the ISO 639-2 three-letter language codes. It may include multiple entries if the resource uses more than one language.
+  
+- **`Feature type`** A Feature type defines a category of real-world geographic entities that share common characteristics (attributes, relationships, and operations). Feature types are the core elements of a feature catalogue, which describes the structure and semantics of data in a geographic dataset.
+  - **`Type name`** The unique name assigned to the feature type. The purpose is to identify the feature class (e.g., Building, Road, Parcel).
+  - **`Definition`** A textual explanation of the meaning of the feature type. TThe purpose is to describe what the feature represents in the real world. Example: A natural or artificial channel through which water flows.
+  - **`Code`** A unique identifier for the feature type (often used in systems or standards). The purpose is to enable machine-readable identification and mapping across systems.
+  - **`Is abstract`** Indicates whether this feature type is abstract. If true, this feature type cannot have instances; it must be specialized (subtyped). Value: Boolean (true/false)
+  - **`Aliases`** Alternative names used for the feature type. The purpose is to support interoperability and usability in multilingual or multi-standard environments. Example: Stream, Creek (as aliases for Watercourse)
+  - **`Carrier of characteristics`** A carrier of characteristics defines the attributes or properties associated with the feature type (these are sometimes called feature attributes or feature properties).
+    - **`Member name`** The name of the attribute or characteristic. Example: FlowRate, Name, Length
+    - **`Definition`** Description of the meaning or role of the attribute. Example: The volume of water passing a point per unit of time.
+    - **`Cardinality lower`** The minimum number of times this attribute may occur for a single feature instance. Example: 0 (optional), 1 (mandatory). 
+    - **`Cardinality upper`** The maximum number of times this attribute may occur. Example: 1, * (unbounded)
+    - **`Code`** A unique identifier for the attribute within the feature catalogue. This corresponds to the actual column name in an attributes table.
+    - **`Measurement unit`** The unit of measure for the attribute, if it is quantitative. Example: m³/s for FlowRate
+    - **`Value type`** The data type of the attribute value. Examples: CharacterString, Integer, Real, Date, Boolean
     - **`Listed values`** List of controlled value(s) used in the attribute member. Each value corresponds to an object compound by 1) a label, 2) a code (as contained in the dataset), 3) a definition. This element will be used when the feature member relates to reference datasets, such as code lists or registers. e.g., list of countries, land cover types, etc.
-      - **`Label`** 
-      - **`Code`** 
-      - **`Definition`**  
+      - **`Label`** The human-readable name of the value. Example: Perennial
+      - **`Code`** A machine-readable identifier of the value. Example: PER
+      - **`Definition`** The description of what the code/label means. Example: A watercourse that flows continuously throughout the year. 
 
 
 **TAGS** 
