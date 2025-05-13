@@ -244,9 +244,9 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
   - in the case of grid/imagery dataset metadata: ISO 19115-2:2009
   - in the case of service metadata: ISO 19119:2005
 
-- **`Metadata character set`** The character set encoding used in the dataset.
-  - **`Characterset code`**  
-  - **`Codelist used`**  
+- **`Metadata character set`** This element specifies the character encoding used in the metadata record itself — i.e., how the text in the metadata is encoded. The purpose is to ensure that software applications can correctly interpret and display the metadata text, especially in multilingual or international contexts.
+  - **`Characterset code`** This is the value element within the Metadata character set field. It contains the actual code (or abbreviation) representing the character set. It contains a code from a predefined list of values (controlled vocabulary), for example: "utf8". 
+  - **`Codelist used`**  Refers to the controlled vocabulary or authoritative list from which the Characterset code value is taken. The purpose is to provide a reference to the standardized list of valid character set codes, ensuring interoperability and consistent interpretation across systems.
 
 - **`Dataset URI`** A unique resource identifier for the dataset, such as a web link that uniquely identifies the dataset. The use of a Digital Object Identifier (DOI) is recommended.
 
@@ -390,27 +390,27 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
   - Loose: The service can operate on multiple datasets.
  -- Mixed: The service has both tightly and loosely coupled operations. 
 
-- **`Operations contained in service`** 
-  - **`Operation name`** 
-  - **`DCP`** 
-  - **`Operation description`** 
-  - **`Invocation name`** 
-  - **`Parameters`** 
-    - **`Name`** 
-    - **`Direction`** 
-    - **`Description`** 
-    - **`Optionality`** 
-    - **`Repeatability`** 
-    - **`Value type`** 
-  - **`Connect point`** 
-    - **`Linkage`** 
-    - **`Name`** 
-    - **`Description`** 
-    - **`Protocol`** 
-    - **`Function`** 
+- **`Operations contained in service`** The elements listed in this group are used to describe the operations supported by a service, how those operations can be invoked, and the technical parameters needed for execution. These elements are used to provide detailed documentation of service capabilities. Operations contained in service contains a list of all operations (i.e., service functions or actions) that the service supports.
+  - **`Operation name`** The name of the operation supported by the service. Example: "GetFeature", "GetMap", "DescribeCoverage".
+  - **`DCP`** (Distributed Computing Platform) Specifies the protocol or platform used to invoke the operation. The purpose is to indicate how the operation can be accessed over a network.
+  - **`Operation description`** A free-text explanation of what the operation does.
+  - **`Invocation name`** The formal name used to call the operation (e.g., in a WSDL or API). Example: "GetMap" (used in service interface)
+  - **`Parameters`** Describes the input and output parameters of the operation. Each operation may have multiple parameters.
+    - **`Name`** The name of the parameter. For example: "bbox", "format", "layers"
+    - **`Direction`** Indicates whether the parameter is an input to, or output from, the operation.
+    - **`Description`** A textual description of the purpose and content of the parameter.
+    - **`Optionality`** Indicates whether the parameter is optional or mandatory.
+    - **`Repeatability`** Indicates whether the parameter can occur multiple times (true or false).
+    - **`Value type`** Describes the data type or value domain of the parameter. For example: string, integer, URI, geometry, enumeration of values.
+  - **`Connect point`** Describes how and where to invoke the operation (i.e., its endpoint).
+    - **`Linkage`** The URL or URI to access the operation.
+    - **`Name`** A label or name for the resource (not the same as the operation name).
+    - **`Description`** A textual description of the online resource.
+    - **`Protocol`** The protocol used to communicate with the service endpoint.
+    - **`Function`** Describes the intended function of the online resource (e.g., download, information, search).
       
-- **`Operates on`** 
-    - **`uuidref`** 
+- **`Operates on`** The element establishes a link between a service metadata record and the dataset(s) it serves. This element identifies the datasets that the service operates on — i.e., the resources that the service accesses, modifies, or delivers. It allows the metadata for a service to explicitly point to the metadata of the dataset(s) it supports, thereby facilitating dataset-service linkage. It can either contain embedded metadata for the dataset or (more commonly) a reference to a separate dataset metadata record.
+    - **`uuidref`** A UUID (Universal Unique Identifier) reference to an external dataset metadata record. The purpose is to link the service metadata to a separate dataset metadata record stored elsewhere in a metadata catalog or registry.
 
 
 **PURPOSE, CREDIT AND STATUS**
@@ -468,25 +468,27 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
     - **`East bound longitude`** Eastern-most coordinate of the limit of the dataset extent, expressed in longitude in decimal degrees.
     - **`South bound latitude`** Southern-most coordinate of the limit of the dataset extent, expressed in latitude in decimal degrees.
     - **`North bound latitude`** Northern-most coordinate of the limit of the dataset extent, expressed in latitude in decimal degrees.
-- **`Geohash`**
-  - **`Geohash`** 
-  - **`Note`** 
-- **`Geographic description`** 
-- **`Bounding polygon`** 
-  - **`Polygon identifier (ID)`** 
-  - **`Polygon`** 
-    - **`Interior or exterior ring`**  
-    - **`Type`** Type of geometry
-    - **`Coordinates`** Coordinates of the polygon. The first and last coordinate pairs must be the same to close the polygon.
+- **`Geohash`** A short alphanumeric string representing a spatial location or bounding box using the Geohash encoding. The purpose is to provide a compact, human-readable, and indexable way to encode geographic areas.
+  - **`Geohash`** The geohash is not explicitly defined in ISO 19139, but often used in profiles, extensions, or auxiliary metadata to support spatial search, indexing, or approximate location. For example, "u4pruydqqvj" represents a specific area near New York City. Geohashes can vary in length; more characters mean higher precision.
+  - **`Note`** A descriptive or explanatory note about the Geohash value — e.g., resolution, use, limitations. For example, "Geohash at 8-character precision (~19 meters accuracy)."
+- **`Geographic description`** A textual or coded description of the geographic area covered by the dataset or service. The purpose is to provide a named place or coded region (e.g., country, administrative unit) as a way to describe geographic extent, especially when precise coordinates or geometry are not available. This useful for indexing metadata by regions or matching data to known administrative areas.
+- **`Bounding polygon`** A polygonal shape describing the precise spatial coverage of the dataset or service. The purpose is to provide more accurate spatial boundaries than a bounding box, especially for irregular or non-rectangular areas.
+  - **`Polygon identifier (ID)`** A unique identifier assigned to the polygon for referencing or validation. The purpose is to allow referencing this specific geometry within the metadata or from external systems.
+  - **`Polygon`** A geometric object that defines the shape and extent of the area covered. This is defined in GML (Geography Markup Language), typically using EPSG:4326 (WGS 84) as the coordinate system.
+    - **`Interior or exterior ring`** Rings that define the boundary of the polygon. Each ring is defined with a list of coordinates.
+       - Exterior ring: The outer boundary of the polygon.
+       - Interior ring: One or more holes within the polygon (optional). 
+    - **`Type`** The type of geometry used to represent the area. Common types are Polygon (a single closed area), MultiPolygon (a set of multiple polygons), and Envelope (a bounding rectangle).
+    - **`Coordinates`** Coordinates of the polygon. These are the longitude-latitude pairs that define the polygon boundary. Each pair is ordered as <longitude> <latitude>, separated by spaces. The first and last coordinates must be the same to close the polygon.
 
 **`Temporal element`** The temporal extent defines the time period covered by the content of the resource. Depending on the temporal characteristics of the dataset, this will consist in a Time period (made of a begin position and end position) or a time instant (made of a single time position) referencing date/time information according to ISO 8601. This time period may be expressed as an individual date, an interval of dates (starting date and ending date), or a mix of individual dates and intervals of dates.
   - **`beginPosition`** Begin time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
   - **`endPosition`** End time position. Requires an extended ISO 8601 formatted combined UTC date and time string (2009-11-17T10:00:00)
 
-- **`Vertical element`** Spatial (vertical) extent element, providing two properties: minimum value, maximum value and vertical CRS (reference to the vertical coordinate reference system)
-  - **`Minimum value`** 
-  - **`Maximum value`** 
-  - **`Vertical CRS`** 
+- **`Vertical element`** The vertical extent of the dataset or service, specifying the range of altitudes or depths it covers. The purpose is to document the vertical dimension (e.g., elevation above sea level, ocean depth) relevant to the data or service. This is essential for datasets that include 3D or altitude-related information, such as terrain models, atmospheric data, oceanographic observations, or data collected at specific depths.
+  - **`Minimum value`** The lowest vertical value covered by the dataset or service. This is the lower bound of the vertical extent, typically in meters. It can be negative for data below a reference level (e.g., sea level).
+  - **`Maximum value`** The highest vertical value covered by the dataset or service. This is the upper bound of the vertical extent.
+  - **`Vertical CRS`** The coordinate reference system used to interpret the vertical values. The purpose is to ensure clarity and interoperability by specifying the reference surface or datum for elevation or depth.
 
 
 **SPATIAL REPRESENTATION AND RESOLUTION** 
