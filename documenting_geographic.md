@@ -784,9 +784,9 @@ This section of the metadata document describes the quality of the resource by i
 -**`Lineage`**
   - **`Lineage statement`** Lineage is “a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this element is free text.” This element is not applicable to geographic services.
   
-  RECOMMENDATIONS:
-  - If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
-  - The use of acronyms should be avoided. If used, their meaning should be explained.
+     RECOMMENDATIONS:
+     - If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
+     - The use of acronyms should be avoided. If used, their meaning should be explained.
 
 
 **DISTRIBUTION**
