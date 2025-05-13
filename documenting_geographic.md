@@ -297,22 +297,23 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
       - **`URL`** URL of the online resource. 
 
 - **`Metadata standard name`** The name of the geographic metadata standard used to describe the resource. The recommended values are:
-  - in the case of vector dataset metadata: ISO 19115 Geographic information - Metadata
-  - in the case of grid/imagery dataset metadata: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data
-  - in the case of service metadata: ISO 19119 Geographic information - Services
+  - In the case of vector dataset metadata: ISO 19115 Geographic information - Metadata
+  - In the case of grid/imagery dataset metadata: ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data
+  - In the case of service metadata: ISO 19119 Geographic information - Services
 
 - **`Metadata standard version`** The version of the metadata standard being used. It is good practice to enter the standard’s inception/revision year. ISO standards are revised with an average periodicity of 10-year. Although the ISO TC211 geographic information metadata standards have been reviewed, it is still accepted to refer to the original version of the standard as many information systems/catalogs still make use of that version. The recommended values are:
-  - in the case of vector dataset metadata: ISO 19115:2003
-  - in the case of grid/imagery dataset metadata: ISO 19115-2:2009
-  - in the case of service metadata: ISO 19119:2005
-
-- **`Metadata character set`** This element specifies the character encoding used in the metadata record itself — i.e., how the text in the metadata is encoded. The purpose is to ensure that software applications can correctly interpret and display the metadata text, especially in multilingual or international contexts.
-  - **`Characterset code`** This is the value element within the Metadata character set field. It contains the actual code (or abbreviation) representing the character set. It contains a code from a predefined list of values (controlled vocabulary), for example: "utf8". 
-  - **`Codelist used`**  Refers to the controlled vocabulary or authoritative list from which the Characterset code value is taken. The purpose is to provide a reference to the standardized list of valid character set codes, ensuring interoperability and consistent interpretation across systems.
+  - In the case of vector dataset metadata: ISO 19115:2003
+  - In the case of grid/imagery dataset metadata: ISO 19115-2:2009
+  - In the case of service metadata: ISO 19119:2005
 
 - **`Dataset URI`** A unique resource identifier for the dataset, such as a web link that uniquely identifies the dataset. The use of a Digital Object Identifier (DOI) is recommended.
 
 - **`Metadata maintenance and update frequency`** The metadata maintenance and update frequency elements provide information on the maintenance of the metadata including the frequency of updates. This is a free text element. The information should be chosen from values recommended by the ISO 19139 controlled vocabulary with the following options: continual, daily, weekly, fortnightly, monthly, quarterly, biannually, annually, asNeeded, irregular, notPlanned, unknown.
+
+- **`Metadata character set`** This element specifies the character encoding used in the metadata record itself — i.e., how the text in the metadata is encoded. The purpose is to ensure that software applications can correctly interpret and display the metadata text, especially in multilingual or international contexts.
+  - **`Characterset code`** This is the value element within the Metadata character set field. It contains the actual code (or abbreviation) representing the character set. It contains a code from a predefined list of values (controlled vocabulary), for example: "utf8". 
+  - **`Codelist used`** Refers to the controlled vocabulary or authoritative list from which the Characterset code value is taken. The purpose is to provide a reference to the standardized list of valid character set codes, ensuring interoperability and consistent interpretation across systems.
+
 
 
 **IDENTIFICATION** 
@@ -321,11 +322,11 @@ This section is not specific to geographic datasets. It corresponds to the *Docu
 
 These elements are used to clearly and uniquely identify a geographic dataset and establish its relationship to other resources. Proper identification is essential for users to understand the nature, scope, and context of the dataset.
 
-- **`Title`** The primary name by which the dataset, series, or service is known. It should be unique, concise, and descriptive, reflecting the content and scope of the resource. The title helps users discover and distinguish the dataset from others. Example: "Land Use Map of Northern Ireland, 2022 Edition"
+- **`Title`** The primary name by which the dataset, series, or service is known. It should be unique, concise, and descriptive, reflecting the content and scope of the resource. The title helps users discover and distinguish the dataset from others. Example: "Land Use Map of Northern Ireland, 2022 Edition".
 
-- **`Alternate title`** An alternative name used to refer to the dataset. This may include abbreviations, translated titles, project names, or legacy titles. Including alternate titles improves discoverability, especially when datasets are known by different names in different contexts or languages. Example: "NI_LU_2022", or "Carte de l’occupation du sol – Irlande du Nord, 2022"
+- **`Alternate title`** An alternative name used to refer to the dataset. This may include abbreviations, translated titles, project names, or legacy titles. Including alternate titles improves discoverability, especially when datasets are known by different names in different contexts or languages. Example: "NI_LU_2022", or "Carte de l’occupation du sol – Irlande du Nord, 2022".
 
-- **`Collective title`** The title of a larger resource or collection of which this dataset is a part. This element is used when the dataset is a component of a series, such as a national spatial data infrastructure collection, a thematic series, or a multi-part publication. It helps group related datasets under a common collection title and supports hierarchical or thematic navigation. Example: "UK National Land Use Dataset Series"
+- **`Collective title`** The title of a larger resource or collection of which this dataset is a part. This element is used when the dataset is a component of a series, such as a national spatial data infrastructure collection, a thematic series, or a multi-part publication. It helps group related datasets under a common collection title and supports hierarchical or thematic navigation. Example: "UK National Land Use Dataset Series".
 
 - **`Responsible party`** The Responsible party element identifies the individual or organization that has a specific role in relation to the dataset being documented. This includes responsibilities such as authoring, publishing, maintaining, or distributing the dataset. The purposes are to: (i) ensure users know who to contact for more information, assistance, or clarification; (ii) Enhance transparency, traceability, and accountability ; and (iii) Support data governance and helps with data stewardship and maintenance over time.
   - **`Individual name`** The responsible party (person) in charge of the dataset or service.
@@ -339,7 +340,7 @@ These elements are used to clearly and uniquely identify a geographic dataset an
       - **`Country`** Physical address - Country name
     - **`Online resource`** 
       - **`Name`** Name of the online resource. In case of a geographic standard data services, this should be filled with the identifier of the resource as published in the service. Example, for an OGC Web Map Service (WMS), we will use the layer name.
-      - **`Description`** Description of the online resource
+      - **`Description`** Description of the online resource.
       - **`URL`** URL of the online resource. In case of a geographic data services, only the base URL should be provided, without any service parameter.
 
 - **`Reference dates`** Date(s) associated to the resource. This may include different types of dates. The metadata shall contain a date of publication, revision or creation of the resource.
@@ -360,7 +361,7 @@ These elements are used to clearly and uniquely identify a geographic dataset an
   - Do not use unexplained acronyms.
   - Summarize the most important details in the first sentence or first 100 characters.
 
-- **`Additional information`** Any other descriptive information about the resource that doesn’t fit into other elements​
+- **`Additional information`** Any other descriptive information about the resource that doesn’t fit into other elements​.
 
 - **`Topics`** The Topics element refers to the broad thematic categories under which the dataset can be classified. These topics are often linked to established taxonomies or classification schemes, such as those used in national or international data repositories. The purpose is to help users quickly identify the general subject area of a dataset (e.g., environment, economics, transportation, etc.). Topics are often selected from predefined, standardized lists or ontologies, such as the United Nations’ "Statistical Theme" classification or domain-specific controlled vocabularies (e.g., "land use," "biodiversity"). Examples: "Agriculture"; "Urban Planning"; "Climate Change". This classification is useful for large data portals, data aggregators, or metadata systems where users may want to filter or explore datasets based on high-level thematic areas.
 
@@ -379,17 +380,7 @@ These elements are used to clearly and uniquely identify a geographic dataset an
   - **`Authority`** The Authority refers to the organization or system that is responsible for assigning or managing the Identifier. This ensures that the identifier has been issued by a recognized, trusted authority and can be linked back to an official registry or system. The purpose is to identify the entity responsible for managing and ensuring the persistence of the identifier. It provides context to users about where the identifier originates and whether it can be trusted for long-term access. Example: "International DOI Foundation (for DOI-based identifiers)"; "European Data Portal (for datasets related to EU resources)".
    The Authority typically represents a well-known organization or service that assigns and maintains identifiers, ensuring consistency and reliability for long-term data reference.
 
-- **`Dataset character set`** The Dataset character set refers to the character encoding standard used for representing the textual content of a geographic dataset. Character encoding is essential for ensuring that text data is stored, displayed, and interpreted correctly across different systems, software, and platforms. The Dataset character set element helps document which character encoding scheme is applied to the dataset, particularly if it deviates from the most common standards, such as UTF-8. The purpose is to specify the encoding format for text data within the dataset. This ensures compatibility and correct interpretation of text when the dataset is shared or accessed by different systems.
-    - **`Codelist value`** The Codelist value element is used to reference the specific value from a predefined codelist that corresponds to the dataset's character encoding. Codelists are collections of standardized values used to describe or categorize certain elements. In the context of character sets, the codelist provides standard identifiers for commonly used encoding schemes. The purpose is to identify the specific character set in use by referencing a standardized value from a predefined list. Examples: "UTF-8" (code representing the UTF-8 character set); "ISO-8859-1" (code representing ISO Latin-1 character set). The Codelist value ensures that the encoding used is recognized and standardized, facilitating the exchange and interpretation of datasets.
-  - **`Codelist URI`** The Codelist URI refers to the Uniform Resource Identifier (URI) that links to the specific codelist that contains the predefined values used in the Codelist value. A URI is a string that provides a unique reference to a resource, in this case, a codelist that defines the character sets used. The URI should point to a standardized, authoritative codelist that can be consulted for valid encoding options. The purpose is to provide a link to the codelist containing the relevant encoding options, enabling the reader or system to check and reference the standard list of accepted character encodings. Examples:
-      - http://www.iso.org/iso-10646-1 (link to the official ISO 10646-1 standard codelist)
-      - http://www.w3.org/TR/encoding (link to W3C encoding codelist)
-   By providing the Codelist URI, the metadata makes it clear where to find the official list of encoding schemes, ensuring consistency and reference to accepted standards.
-
-- **`Dataset language`** The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant).
-  It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English).
-  The list of all the codes is defined at http://www.loc.gov/standards/iso639-2/.
-  Regional languages also are included in this list.
+- **`Dataset language`** The dataset language, defaulted to the language of the metadata. This refers to the language(s) used within the resource (dataset, series, or service if relevant). It is recommended to use the alpha-3 codes of ISO 639-2. Use only three-letter codes from in ISO 639-2/B (bibliographic codes, example "eng" for English). The list of all the codes is defined at http://www.loc.gov/standards/iso639-2/. Regional languages also are included in this list.
 
 - **`Presentation form`** The Presentation form element in the context of metadata (such as ISO 19139) refers to the way in which the dataset or resource is presented or made available for use. This element specifies the format or mode of delivery of the data, providing essential details about how the data is structured, represented, or visually displayed for users.
   Purpose: Presentation form helps users understand how the data will be consumed, interacted with, or visualized. It indicates the physical or logical structure of the data and guides users in selecting the appropriate tools or methods to work with the resource.
@@ -424,8 +415,17 @@ These elements are used to clearly and uniquely identify a geographic dataset an
       - **`Country`** Physical address - Country name
     - **`Online resource`** 
       - **`Name`** Name of the online resource. 
-      - **`Description`** Description of the online resource
+      - **`Description`** Description of the online resource.
       - **`URL`** URL of the online resource. 
+
+- **`Dataset character set`** The Dataset character set refers to the character encoding standard used for representing the textual content of a geographic dataset. Character encoding is essential for ensuring that text data is stored, displayed, and interpreted correctly across different systems, software, and platforms. The Dataset character set element helps document which character encoding scheme is applied to the dataset, particularly if it deviates from the most common standards, such as UTF-8. The purpose is to specify the encoding format for text data within the dataset. This ensures compatibility and correct interpretation of text when the dataset is shared or accessed by different systems.
+    - **`Codelist value`** The Codelist value element is used to reference the specific value from a predefined codelist that corresponds to the dataset's character encoding. Codelists are collections of standardized values used to describe or categorize certain elements. In the context of character sets, the codelist provides standard identifiers for commonly used encoding schemes. The purpose is to identify the specific character set in use by referencing a standardized value from a predefined list. Examples: "UTF-8" (code representing the UTF-8 character set); "ISO-8859-1" (code representing ISO Latin-1 character set). The Codelist value ensures that the encoding used is recognized and standardized, facilitating the exchange and interpretation of datasets.
+  - **`Codelist URI`** The Codelist URI refers to the Uniform Resource Identifier (URI) that links to the specific codelist that contains the predefined values used in the Codelist value. A URI is a string that provides a unique reference to a resource, in this case, a codelist that defines the character sets used. The URI should point to a standardized, authoritative codelist that can be consulted for valid encoding options. The purpose is to provide a link to the codelist containing the relevant encoding options, enabling the reader or system to check and reference the standard list of accepted character encodings. Examples:
+      - http://www.iso.org/iso-10646-1 (link to the official ISO 10646-1 standard codelist)
+      - http://www.w3.org/TR/encoding (link to W3C encoding codelist)
+   By providing the Codelist URI, the metadata makes it clear where to find the official list of encoding schemes, ensuring consistency and reference to accepted standards.
+
+
 
 **SERVICE IDENTIFICATION** (this section applies to services only, not to datasets)
 
@@ -475,7 +475,7 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 - **`Coupling type`** Describes how tightly the service is connected to the dataset. Common values include:
   - Tight: The service is designed to work only with a specific dataset.
   - Loose: The service can operate on multiple datasets.
- -- Mixed: The service has both tightly and loosely coupled operations. 
+  - Mixed: The service has both tightly and loosely coupled operations. 
 
 - **`Operations contained in service`** The elements listed in this group are used to describe the operations supported by a service, how those operations can be invoked, and the technical parameters needed for execution. These elements are used to provide detailed documentation of service capabilities. Operations contained in service contains a list of all operations (i.e., service functions or actions) that the service supports.
   - **`Operation name`** The name of the operation supported by the service. Example: "GetFeature", "GetMap", "DescribeCoverage".
@@ -502,8 +502,8 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 **PURPOSE, CREDIT AND STATUS**
 
-- **`Purpose`** A description of why the dataset or resource was created—in other words, its intended use or application.
-  Expectations for the "purpose" element:
+    - Any targeted users or communities (e.g., researchers, environmental agencies).
+- **`Purpose`** A description of why the dataset or resource was created—in other words, its intended use or application. The expectations are as follows:
   - Content: A clear, concise explanation of the rationale behind the dataset's creation. This could include:
     - The objective of the data collection effort.
     - The decision-making context or policy needs the data supports.
@@ -529,10 +529,8 @@ These elements are used to clearly and uniquely identify a geographic dataset an
     - Use formal names of organizations or projects to support discoverability and proper attribution.
     - Do not use this field for legal constraints or licensing
 
-- **`Status`** This element specifies the current state or progress of the dataset or resource. It is a mandatory element in ISO 19115 metadata, as it helps users understand whether the dataset is completed, ongoing, planned, or obsolete.
-  Expectation:
-  - Content: A code from a controlled vocabulary defined by ISO 19115. The expected value is taken from the MD_ProgressCode code list.
-  - Common values include:
+- **`Status`** This element specifies the current state or progress of the dataset or resource. It is a mandatory element in ISO 19115 metadata, as it helps users understand whether the dataset is completed, ongoing, planned, or obsolete. The expectations are as follows:
+  - Content: A code from a controlled vocabulary defined by ISO 19115. The expected value is taken from the MD_ProgressCode code list. Common values include:
     - completed – data collection and processing are finished
     - historicalArchive – no longer maintained but archived for reference
     - obsolete – superseded by a newer dataset
