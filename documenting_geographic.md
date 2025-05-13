@@ -423,20 +423,25 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 **SERVICE IDENTIFICATION** (this section applies to services only, not to datasets)
 
-- **`Service type`** The type of service (as free text), e.g., OGC:WMS. This is a classification to assist in the search of available spatial data services.
-- **`Service type version`** The version of the service e.g. 1.3.0
-- **`Access properties`** 
+- **`Service type`** This element defines the type or category of service being described. It identifies the general functionality the service provides, usually by referencing a controlled vocabulary such as the OGC service taxonomy (e.g., WMS for Web Map Service, WFS for Web Feature Service, CSW for Catalogue Service for the Web, etc.). The purpose is to allow users and systems to understand what kind of operations the service supports and how to interact with it. It is often expressed as a text string, and may optionally include a URI that identifies the type in a controlled vocabulary.
+
+- **`Service type version`** This element specifies the version of the service type being described. Different versions may support different operations, parameters, or protocols. Example: For a WMS service, this might be 1.3.0 or 1.1.1. The purpose is to ensure clients can interact with the service using the correct protocol version and avoid compatibility issues.
+
+- **`Access properties`** This is a general category that includes metadata about how users or systems can access and use the service.
   - **`Fees`** Indicates any costs associated with accessing or obtaining the dataset. If there is no charge, specify "None" or "Free of charge".
   - **`Service availability date`** The date when the dataset or related service becomes (or became) available to users. This helps users know when they can access the resource.
   - **`Ordering instructions`** Describes how users can request or obtain the dataset, including any steps, forms, or systems required to place an order. 
   - **`Turnaround`** The expected time between placing an order and receiving the dataset or service. This helps users plan their data requests accordingly. 
+
 - **`Restrictions`** Information about any limitations or conditions on accessing or using the dataset or service. This may refer to legal, security, or other types of restrictions.
-  - **`Legal constraints`**  
-    - **`Use limitation`** Describes any legal conditions or obligations that limit how the dataset or service can be used (e.g., copyright, licensing terms). 
-    - **`Access constraints`** Identifies legal restrictions on who can access the dataset or service (e.g., restricted to registered users, internal use only). 
+  
+  - **`Legal constraints`** This element specifies legal restrictions or obligations governing access to and use of the service. These may include intellectual property rights, licensing terms, or usage policies. 
+    - **`Use limitation`** A free text field to describe any legal conditions or obligations that limit how the dataset or service can be used (e.g., “For non-commercial use only”, “Must cite the source”). 
+    - **`Access constraints`** Controlled vocabulary values (e.g., “copyright”, “license”, “intellectual property rights”) that define legal limitations on accessing the service.
     - **`Use constraints`** Specifies legal restrictions on how the dataset or service can be used once accessed (e.g., no redistribution, attribution required).
-    - **`Other constraints`** Lists any additional legal or contractual conditions not covered by the above fields. This can include terms of service, end-user license agreements, or disclaimers. 
-  - **`Security constraints`** 
+    - **`Other constraints`** Lists any additional legal or contractual conditions not covered by the above fields. This can include terms of service, end-user license agreements, or disclaimers.
+      
+  - **`Security constraints`** This element describes any limitations or requirements related to the confidentiality, integrity, or availability of the service.
     - **`Use limitation`** Describes any restrictions based on security policies that affect how the dataset or service may be used.
     - **`Classification`** Indicates the security level assigned to the dataset or service (e.g., Unclassified, Confidential, Secret), following the organization’s classification scheme. 
     - **`Note on security classification`** Provides explanatory text or justification for the assigned security classification. 
@@ -444,13 +449,17 @@ These elements are used to clearly and uniquely identify a geographic dataset an
     - **`Handling description`** Details instructions for how the dataset or service must be handled to comply with its security classification (e.g., encryption, access logging).
 
 - **`Keywords`** A keyword is defined by (i) a keyword value ("keyword"); (ii) an optional originating controlled vocabulary which in ISO standard is referred to as “Thesaurus”. If the keyword value originates from a controlled vocabulary (thesaurus, ontology), for example GEMET - Concepts; (iii) the citation of the originating controlled vocabulary shall be provided. It is better to select keyword values from a collection of terms linked and predefined (controlled vocabularies). If only one keyword is used, then for spatial dataset or spatial dataset series, the keyword (i) shall describe the relevant data theme; (ii) shall be expressed in the language of the metadata. For example, a keyword that comes from GEMET - Concepts shall be cited as follows: keyword: freshwater ; thesaurus name: GEMET - Concepts, version 2.4
-  - **`Type`** 
-  - **`Keyword`** The keyword value is a commonly used word, formalized word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search.
-  EXAMPLES:
+  - **`Type`** Indicates the type or role of the keywords, using a controlled vocabulary. Common types include:
+     - theme – describes the topic or subject matter (e.g., "elevation", "imagery")
+     - place – refers to a geographic location (e.g., "France", "Amazon Basin")
+     - stratum – refers to a layer or vertical component (e.g., "atmosphere", "surface")
+     - temporal – relates to a time period (e.g., "2020", "historical")
+     This allows metadata users and search engines to interpret keywords correctly and refine search results based on thematic, spatial, or temporal filters.
+  - **`Keyword`** The keyword value is a commonly used word, formalized word or phrase used to describe the subject. While the topic category is too coarse for detailed queries, keywords help narrowing a full text search and they allow for structured keyword search. Examples:
     - Atmospheric conditions (INSPIRE Spatial Data Theme)
     - humanCatalogueViewer (spatial data service subcategory)
     - water springs (AGROVOC)
-    - rain water (GEMET Concepts)
+    - rain water (GEMET -GEneral Multilingual Environmental Thesaurus- Concepts)
   - **`Thesaurus name`** The thesaurus name shall include at least the title and a reference date (date of publication, date of last revision or of creation) of the originating controlled vocabulary. It is important to specify which version of the thesaurus was used to take the keyword value from.
 
 - **`Coupled resource`** Refers to the dataset(s) that the service operates on or delivers. This links the service to the specific geographic data it provides access to or processes. 
@@ -502,15 +511,14 @@ These elements are used to clearly and uniquely identify a geographic dataset an
     - Distinguish it from other elements like abstract (which describes the content) or useConstraints (which explains how the data may or may not be used).
     - Be specific enough to support discovery and evaluation by potential users.
 
-- **`Credit`** This element is used to acknowledge individuals, organizations, or agencies that contributed to the creation, funding, or provision of the dataset or resource.
-  Expectation:
+- **`Credit`** This element is used to acknowledge individuals, organizations, or agencies that contributed to the creation, funding, or provision of the dataset or resource. The expectations are as follows:
   - Content: A free-text acknowledgment of contributors, typically including:
     - Data producers
     - Funders or sponsors
     - Collaborating institutions
     - Partner organizations
     - Any person or group whose contribution should be recognized
-  - Best Practices:
+  - Best practices:
     - Be accurate and complete—credit all major contributors to avoid disputes or omission.
     - Use formal names of organizations or projects to support discoverability and proper attribution.
     - Do not use this field for legal constraints or licensing
@@ -526,10 +534,10 @@ These elements are used to clearly and uniquely identify a geographic dataset an
     - planned – data collection or production is intended but not started
     - required – data is needed but not yet available
     - underDevelopment – in the process of being created
-  Best Practices:
-  - Use only values from the official code list.
-  - Choose the code that best reflects the life cycle stage of the dataset.
-  - Be consistent across related metadata records if the status applies to multiple datasets in a series.
+  - Best practices:
+    - Use only values from the official code list.
+    - Choose the code that best reflects the life cycle stage of the dataset.
+    - Be consistent across related metadata records if the status applies to multiple datasets in a series.
 
 
 **EXTENT (GEOGRAPHIC, TEMPORAL, VERTICAL)**
