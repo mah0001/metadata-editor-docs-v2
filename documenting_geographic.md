@@ -167,61 +167,63 @@ The metadata template provided with the Metadata Editor identifies metadata elem
 
 As a data curator preparing a geographic dataset for documentation using the ISO 19139 standard, it is essential to ensure that the dataset and all supporting materials are complete, well-organized, and ready for standardized metadata creation. Below are core recommendations for preparing a dataset prior to its documentation:
 
-1. Ensure Dataset Completeness and Consistency
+**1. Ensure dataset completeness and consistency**
 
 - Verify that the dataset is finalized, with complete records and no missing key attributes or geometries.
 - Check for consistency in coordinate systems, units of measurement, and naming conventions across all layers or features.
 - Ensure the dataset is in a recognized and interoperable format (e.g., GeoPackage, shapefile, GML, GeoJSON).
 
-2. Confirm Spatial Reference Information
+**2. Confirm spatial reference information**
 
 - Identify and record the Coordinate Reference System (CRS) used, including the full name and EPSG code.
 - If multiple CRSs are used, provide clear documentation and justification.
 - Check the vertical reference system if vertical data is present.
 
-3. Prepare Descriptive and Contextual Information
+**3. Prepare descriptive and contextual information**
 
 - Write a clear and concise title and abstract for the dataset that accurately describes its content and purpose.
 - Define the geographic extent (bounding box or polygon), temporal extent, and data collection period.
 - Identify the data theme or subject area (e.g., hydrography, land cover, administrative boundaries).
 
-4. Identify Data Lineage and Quality Information
+**4. Identify data lineage and quality information**
 
 - Document the origin of the data, including source datasets, data capture methods, and any processing steps applied.
 - Record known limitations, accuracy, and quality assessments (e.g., positional accuracy, completeness).
 - Note any validation or quality control procedures performed.
 
-5. Organize Supporting Files and Graphics
+**5. Organize supporting files and graphics**
+
 - Prepare any graphic overviews (e.g., thumbnail maps, sample visualizations) to be referenced in metadata.
 - Assemble distribution files and note their formats and versions (e.g., ZIP, GeoTIFF, CSV).
 - Collect legal documents, such as terms of use, licenses, and access conditions.
 
-6. Identify Responsible Parties
+**6. Identify responsible parties**
+
 - Record the organization or person responsible for creating, maintaining, and distributing the dataset.
 - Include contact information with roles (e.g., point of contact, metadata author, distributor).
 
-7. Determine Access and Use Constraints
+**7. Determine access and use constraints**
    
 - Identify and clearly state any restrictions on access or limitations on use, including intellectual property rights.
 - Prepare text for disclaimers, preferred citations, or user guidance.
 
-9. Review Related Resources and Linkages
+**8. Review related resources and linkages**
 
 - List any related datasets, services, or documents (e.g., methodology reports, feature catalogues).
 - Collect unique identifiers, such as UUIDs, for related resources when available.
 
-10. Validate the Dataset’s Technical Readiness
+**9. Validate the dataset’s technical readiness**
 
 - Ensure file names and field names follow naming conventions (e.g., no special characters, reasonable length).
 - Verify that all attribute fields are well-documented, with field names, definitions, and value domains.
 - Check that feature types are defined consistently and that geometry types are valid and appropriate.
 
-11. Maintain Versioning and Update Information
+**10. Maintain versioning and update information**
 
 - Record the dataset version, date of last update, and frequency of updates.
 - Keep track of historical versions if applicable, for transparency and reproducibility.
 
-12. Generate Images for the Graphic Overview Section
+**11. Generate images for the Graphic Overview section**
 
 - Create at least one graphic overview image that visually summarizes the dataset (e.g., a map showing coverage or key features).
 - Ensure the image is clear, appropriately scaled, and provides useful context for users.
