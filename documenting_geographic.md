@@ -546,6 +546,18 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 **EXTENT (GEOGRAPHIC, TEMPORAL, VERTICAL)**
 
+In metadata terms, Extent provides information about the geographic area, time period, and/or vertical range to which the data applies.
+
+Types of extents:
+- Geographic Extent: Describes the spatial coverage, typically using bounding boxes or geographic identifiers 
+- Temporal Extent: Specifies the time period the data covers.
+- Vertical Extent: Indicates the vertical range (e.g., altitude or depth) covered by the data.
+
+The Extent element is crucial because it:
+- Helps users determine if a dataset is relevant for their area or time of interest.
+- Supports discovery and filtering in spatial data catalogs.
+- Enables automated data integration and analysis processes.
+- 
 **`Geographic element`** 
   - **`Bounding box`** This is the extent of the resource in the geographic space, given as a bounding box. Defining the coordinates of a rectangle representing the resource area on a map allows the discovery by geographical area. Provide the coordinates bounding the limits of the dataset, by means of four properties:
     - **`West bound longitude`** Western-most coordinate of the limit of the dataset extent, expressed in longitude in decimal degrees.
@@ -577,14 +589,11 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 **SPATIAL REPRESENTATION AND RESOLUTION** 
 
-- **`Spatial representation type`** The spatial representation type of the dataset. Values should be selected from the following controlled vocabulary: {vector, grid, textTable, tin, stereoModel, video}
+- **`Spatial representation type`** The spatial representation type of the dataset. Values should be selected from the following controlled vocabulary: {vector, grid, textTable, tin, stereoModel, video}.
 
-- **`Spatial resolution`** The spatial resolution of the data as numeric value associated to a unit of measure. Spatial resolution refers to the level of detail of the data set. It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
-  - **`Spatial resolution UOM`** Spatial resolution unit of measure 
-  - **`Spatial resolution value`**  
-    EXAMPLES:
-    - 50000 (e.g. 1:50000 scale map)
-    - 0.25 (degrees)
+- **`Spatial resolution`** The Spatial resolution element describes the level of spatial detail in a dataset. It can refer to how close together observations are made (e.g., pixel size in raster data or minimum mapping unit in vector data). It shall be expressed as a set of zero to many resolution distances (typically for gridded data and imagery-derived products) or equivalent scales (typically for maps or map-derived products). An equivalent scale is generally expressed as an integer value expressing the scale denominator. A resolution distance shall be expressed as a numerical value associated with a unit of length.
+  - **`Spatial resolution UOM`** The unit of measure for the spatial resolution distance. Common units: "m" for meters, "km" for kilometers, or custom URIs referencing a units catalog.
+  - **`Spatial resolution value`** This is the numerical value of the resolution, usually representing the smallest distance that can be reliably distinguished in the dataset. For example: a raster dataset with 30-meter resolution would have a spatial resolution value of 30. 
   NOTES:
     - For services, it is not possible to express the restriction of a service concerning the spatial resolution in the current version of ISO 19119. While the problem is addressed by the standardization community, spatial resolution restrictions for services shall be expressed in the Abstract.
     - When two equivalent scales or two ground sample distances are expressed, the spatial resolution is an interval bounded by these two values.
@@ -594,7 +603,7 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 - **`Graphic overview`** A graphic or image that provides a quick visual representation of the dataset or service. The purpose is to help users quickly understand the nature, coverage, or content of the resource without needing to inspect the full data. Common examples include (i) a map thumbnail showing the dataset’s spatial extent; (ii) a sample chart or diagram illustrating data features; and (iii) a logo or icon representing the service.
   - **`File name`** The location or URL of the image file. This can be a relative or absolute path.
-  - **`File description`** A textual description of the image’s content or purpose. The purpose is to provide context to help users interpret what the image represents. For example: "Overview map of dataset coverage" or "Elevation model sample visualization"
+  - **`File description`** A textual description of the image’s content or purpose. The purpose is to provide context to help users interpret what the image represents. For example: "Overview map of dataset coverage" or "Elevation model sample visualization".
   - **`File type`** The format or file type of the image. For example, "jpeg" or "png". 
 
 
@@ -602,17 +611,18 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 This section of the metadata describes how often the dataset or service is maintained, updated, or revised. It helps users understand how current or dynamic the resource is, and whether it is suitable for time-sensitive applications.
 
-- **`Frequency`** (Maintenance and update frequency) This indicates how often updates or maintenance actions are performed on the dataset or service. Common values include:
-   - continual – Data is repeatedly and frequently updated.
-   - daily – Updated every day.
-   - weekly – Updated every week.
-   - monthly – Updated every month.
-   - annually – Updated every year.
-   - asNeeded – Updated when necessary (no regular schedule).
-   - irregular – Updated at unpredictable intervals.
-   - notPlanned – No updates are planned.
-   - unknown – Frequency is unknown.
-- **`Maintenance note`** Maintenance note.A free-text note providing additional information about the maintenance strategy, versioning policy, or details about how updates are applied. This can be used to explain specific conditions, responsible parties, data revision processes, or known limitations in maintenance.
+- **`Resource maintenance`** This is a container element that provides information about routine or planned maintenance of the dataset.
+   - **`Frequency`** (Maintenance and update frequency) This indicates how often updates or maintenance actions are performed on the dataset or service. Common values include:
+      - continual – Data is repeatedly and frequently updated.
+      - daily – Updated every day.
+      - weekly – Updated every week.
+      - monthly – Updated every month.
+      - annually – Updated every year.
+      - asNeeded – Updated when necessary (no regular schedule).
+      - irregular – Updated at unpredictable intervals.
+      - notPlanned – No updates are planned.
+      - unknown – Frequency is unknown.
+   - **`Maintenance note`** A free-text note providing additional information about the maintenance strategy, versioning policy, or details about how updates are applied. This can be used to explain specific conditions, responsible parties, data revision processes, or known limitations in maintenance.
 
 
 **SPECIFIC USAGE** 
