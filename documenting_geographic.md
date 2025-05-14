@@ -587,7 +587,7 @@ The Extent element is crucial because it:
   - **`Vertical CRS`** The coordinate reference system used to interpret the vertical values. The purpose is to ensure clarity and interoperability by specifying the reference surface or datum for elevation or depth.
 
 
-**SPATIAL REPRESENTATION AND RESOLUTION** 
+**SPATIAL REPRESENTATION TYPE AND RESOLUTION** 
 
 - **`Spatial representation type`** The spatial representation type of the dataset. Values should be selected from the following controlled vocabulary: {vector, grid, textTable, tin, stereoModel, video}.
 
@@ -699,15 +699,15 @@ This section of the metadata describes how often the dataset or service is maint
  
 **SPATIAL REPRESENTATION**
 
-Spatial representation describes how spatial data is represented — that is, the method used to encode the spatial characteristics of the dataset.
+Spatial representation describes how spatial data is represented — that is, the method used to encode the spatial characteristics of the dataset. This element provides structured metadata about the type and structure of spatial data in the resource. It helps users understand how location data is stored and whether the format fits their needs.
 
-- **`Vector data`**
+- **`Vector data`** For data consisting of points, lines, and polygons (e.g., shapefiles, geoJSON, feature classes in GIS), spatial representation includes Geometric objects (type and count of geometric features) and topology level (which describes topological complexity, e.g., planar graph).
   - **`Topology level`** Topology level is the type of topology used in the vector spatial dataset. The ISO 19139 provides a controlled vocabulary. In most cases, vector datasets will be described as geometryOnly which covers common geometry types (points, lines, polygons).
   - **`Geometric objects`**
     - **`Type`** The type of geometry handled. A controlled vocabulary is used. In the case of an homogeneous geometry type, a single geometricObjectselement can be defined. For complex geometries (mixture of various geometry types), one geometricObjects element will be defined for each geometry type.
     - **`Count`** The number (count) of geometries in the dataset.
 
-- **`Grid data`**
+- **`Grid data`** For grid/raster data (e.g., satellite imagery, gridded climate data), spatial representation includes: Cell size and orientation; Transformation parameters (if georeferenced); and Whether the grid is georectified or georeferenceable.
   - **`Number of dimensions`** Number of dimensions in the grid.
   - **`Axis dimension properties`** A list of each dimension including, for each dimension, the name, size, and resolution.
     - **`Name`** The name of the dimension type: the ISO 19139 provides a controlled vocabulary with the following options: row, column, vertical, track, crossTrack, line, sample, and time. These options represent the following:
