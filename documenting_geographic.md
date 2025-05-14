@@ -636,12 +636,12 @@ This section of the metadata describes how often the dataset or service is maint
     - **`Organisation name`** The responsible party (organization). 
     - **`Email`** Enter the email address of the contact person. To ensure continuity and long-term accessibility, avoid using personal email addresses. Use a role-based or institutional email account (e.g., help@myorganization.org) that remains valid even if individual staff members change.
     - **`Phone`** Enter the phone number for contacting the person or team. To ensure continuity and accessibility, avoid using personal or direct mobile numbers. Instead, provide a general or role-based contact number (e.g., a departmental line or help desk number) that will remain valid even if individual staff members change.
-    - **`Address`** 
+    - **`Address`** Physical address of the person or organization.
       - **`Delivery point`** Physical address - Street, building number, etc.
       - **`City`** Physical address - City name
       - **`Postal code`** Physical address - Postal code
       - **`Country`** Physical address - Country name
-    - **`Online resource`**
+    - **`Online resource`** Description and link to an online resource
     - **`Name`** Name of the online resource. 
     - **`URL`** URL of the online resource. 
     - **`Description`** Description of the online resource
