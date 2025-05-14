@@ -666,7 +666,7 @@ This section of the metadata describes how often the dataset or service is maint
     - Preferred citations
     - Attribution requirements
     - Data limitations (if legal in nature)
-   Examples: (9) "Users must cite the source when publishing results."; (ii) "Not for navigation or emergency use."; (iii) "Use of data is subject to the terms described at https://example.org/license"
+   Examples: (i) "Users must cite the source when publishing results."; (ii) "Not for navigation or emergency use."; (iii) "Use of data is subject to the terms described at https://example.org/license".
   - **`Other constraints`** Any other legal restrictions and legal prerequisites for accessing and using the resource or metadata. Use cases include:
     - Mandatory citation format
     - Mandated attribution wording
@@ -698,6 +698,8 @@ This section of the metadata describes how often the dataset or service is maint
 
  
 **SPATIAL REPRESENTATION**
+
+Spatial representation describes how spatial data is represented — that is, the method used to encode the spatial characteristics of the dataset.
 
 - **`Vector data`**
   - **`Topology level`** Topology level is the type of topology used in the vector spatial dataset. The ISO 19139 provides a controlled vocabulary. In most cases, vector datasets will be described as geometryOnly which covers common geometry types (points, lines, polygons).
