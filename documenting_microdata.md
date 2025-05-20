@@ -600,7 +600,7 @@ The **Variable information** frame provides options to tag a variable as being a
 
    - ***Is weight*** The **Is weigh** toggle is used to tag variables that are sample weights, if any.
      
-    ![image](img/ME_UG_v1-0-0_documenting_microdata_weights.png)
+![image](img/ME_UG_v1-0-0_documenting_microdata_weights.png)
 
    - ***Interval type*** For numeric variables, the *interval type* can be set to *Continuous* or *Discrete*. This will impact how the data are documented and what summary statistics are produced (frequencies will not be calculated for continuous variables; variable categories will only be created for discrete variables). When data are imported, the application makes a best guess about the interval type. the data curator should browse through all variables to ensure the interval type has been properly set. 
 
