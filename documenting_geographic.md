@@ -800,11 +800,11 @@ This section of the metadata document describes the quality of the resource by i
      - If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
      - The use of acronyms should be avoided. If used, their meaning should be explained.
 
-  - **`Process steps`**
-     - **`Description`**
-     - **`Rationale`**
-     - **`Date`**
-     - **`Processor`**
+  - **`Process steps`** The process history may be described by information on the source data used and the main transformation steps that took place in creating the current data set (series). It consists of a list of events or transformations applied during dataset production.
+     - **`Description`** A textual description of the process that was executed (e.g., "resampled from 1m to 10m grid", or "aggregated by region"). This describes what was done during the process step.
+     - **`Rationale`** An explanation of why the process step was undertaken (e.g., "to harmonize resolution with other datasets"). This documents the intent or justification behind the processing.
+     - **`Date`** The date and time at which the process step was completed. This supports tracking the sequence and timing of processing events.
+     - **`Processor`** The party (organization or individual) responsible for executing the process step. This identifies who performed the processing, ensuring accountability and traceability.
         - **`Individual name`**
         - **`Organisation name`**
         - **`Role`**
@@ -819,15 +819,15 @@ This section of the metadata document describes the quality of the resource by i
           - **`Name`**
           - **`URL`**
           - **`Description`**
-     - **`Source`**
-        - **`Title`**
-        - **`Description`**
-        - **`Date`**
-           - **`Date`**
-           - **`Type`**
-        - **`Identifier authority`**
-        - **`Identifier code`**
-        - **`Responsible party`**
+     - **`Source`** Specifies the input data used in the process step. 
+        - **`Title`** The name of the source dataset or resource. This provides a short reference to the input data.
+        - **`Description`** Details about the content and role of the source dataset. This helps users understand the nature and function of the input data.
+        - **`Date`** Represents one or more dates associated with the source data (e.g., publication date, creation date).
+           - **`Date`** The date itself (e.g., 2024-12-27).
+           - **`Type`** The type of date (e.g., creation, publication, revision).
+        - **`Identifier authority`** The organization responsible for assigning the identifier (e.g., a DOI registration agency). This establishes provenance and authority of the identifier.  
+        - **`Identifier code`** A unique string or code used to identify the source dataset (e.g., DOI, catalogue ID).
+        - **`Responsible party`** An individual or organization responsible for the source dataset (e.g., data producer or publisher).
           - **`Individual name`**
           - **`Organisation name`**
           - **`Position`**
@@ -845,8 +845,33 @@ This section of the metadata document describes the quality of the resource by i
             - **`Description`**
             - **`Protocol`**
             - **`Function`**
-        - **`Resource presentation`**
- 
+        - **`Resource presentation`** The form in which the source resource is presented (e.g., mapDigital, documentDigital).
+
+
+**CONTENT**
+
+- **`Coverage description`** This section is used to describe the content and structure of a gridded dataset (e.g., imagery, elevation models, multi-band raster data). It describes the attributes or characteristics of the coverage data, which are typically structured in a grid or other regular pattern. It includes general information about the contents and structure of the dataset.
+  - **`Content type`** Indicates the type of information represented in the coverage (e.g., physical measurement, thematic classification, etc.). Examples: image, thematicClassification, physicalMeasurement
+  - **`Dimension`** Represents the axes or bands of the data — typically refers to spectral, temporal, or other data dimensions.
+    - **`Band`** A specific type of range dimension used to describe spectral bands in a raster (e.g., a satellite image or multispectral scan).
+      - **`Band name`** Name or identifier for the spectral band (e.g., “Red”, “Band_1”).
+      - **`Band type`** A label describing the band function (e.g., "reflectance", "temperature").
+      - **`Band description`** Narrative text describing what the band measures.
+      - **`Minimum value`** The smallest possible or observed value in the band.
+      - **`Maximum value`** The largest possible or observed value in the band.
+      - **`Band unit identifier`** Unique identifier for the unit of measurement (often a URI).
+      - **`Band unit name`** The name of the measurement unit (e.g., "W/m²/sr/μm").
+      - **`Band unit quantity type`** The physical quantity measured (e.g., "radiance", "temperature").
+      - **`Band peak response`** Wavelength or frequency where the band is most sensitive.
+      - **`Band bits per value`** Number of bits used to encode each pixel value in the band.
+      - **`Band tone gradation`** Number of gradations (distinct values) that can be represented.
+      - **`Band scale factor`** Scale multiplier applied to stored pixel values to get physical values.
+      - **`Band offset`** Offset added to scaled pixel values to get physical values.
+    - **`Range dimension`** A general description of a data dimension (not necessarily a spectral band).
+      - **`Range dimension name`** Label for the dimension (e.g., "Time", "Elevation").
+      - **`Range dimension type`** Type or purpose of the dimension.
+      - **`Range dimension description`** Explanation of the role or content of the range dimension.
+
 **DISTRIBUTION**
 
 - **`Distribution format`** The Distribution format element specifies the format in which the resource (such as data or metadata) is distributed or made available to users. This element helps to describe the technical format of the resource as it is provided for download, transfer, or access through an external service. It identifies the file format or structure in which the resource is presented to the users. The purpose is to describe the format in which a resource is distributed, making it easier for users to know in what format the data or resource is provided. 
@@ -875,7 +900,7 @@ Examples: "CSV" (Comma Separated Values); "GeoTIFF" (for geospatial data); "JSON
 A Feature Catalogue defines the types of features and their attributes used in a dataset. It describes the content and structure of geographic features, enabling consistency, interoperability, and understanding when sharing or using data.
 
 - **`Name`** The official title or name of the feature catalogue. The purpose is to identify the catalogue referenced or used by the dataset. Example: "Topographic Features Catalogue v2"
-- **`Scope`** Describes the subject or domain covered by the feature catalogue. The purpose is to clarify the thematic or spatial extent, or the application domain (e.g., marine data, cadastral data). Example: "Hydrographic data for coastal management"
+- **`Scope`** Describes the subject or domain covered by the feature catalogue. The purpose is to clarify the thematic or spatial extent, or the application domain (e.g., marine data, cadastral data). Example: "Hydrographic data for coastal management".
 - **`Fields of application`** Describes the subject or domain covered by the feature catalogue. The purpose is to clarify the thematic or spatial extent, or the application domain (e.g., marine data, cadastral data). Example: "Hydrographic data for coastal management".
 - **`Version number`** The identifier for the specific version of the feature catalogue. The purpose is to ensure clarity when multiple versions exist; essential for version control and traceability. Example: "2.1".
 - **`Version date`** The date the version of the feature catalogue was published or became effective. The purpose is to indicate the timeliness of the catalogue. Example: "2023-11-01" (date should be entered in ISO 8601 format).
@@ -917,20 +942,11 @@ A Feature Catalogue defines the types of features and their attributes used in a
       - **`Code`** A machine-readable identifier of the value. Example: PER
       - **`Definition`** The description of what the code/label means. Example: A watercourse that flows continuously throughout the year. 
 
-
 **TAGS** 
 
 Tags, especially when organized in tag groups, provide a powerful and flexible solution to enable custom facets (filters) in data catalogs.
   - **`Tag`** A user-defined tag.
   - **`Tag group`** A user-defined group (optional) to which the tag belongs. Grouping tags allows implementation of controlled facets in data catalogs.
-    
-
-
-## Save, export, and use the metadata
-
-Save package
-Export ISO 19139
-Export JSON
-Publish to NADA
+   
 
 
