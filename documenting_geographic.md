@@ -502,7 +502,6 @@ These elements are used to clearly and uniquely identify a geographic dataset an
 
 **PURPOSE, CREDIT AND STATUS**
 
-    - Any targeted users or communities (e.g., researchers, environmental agencies).
 - **`Purpose`** A description of why the dataset or resource was created—in other words, its intended use or application. The expectations are as follows:
   - Content: A clear, concise explanation of the rationale behind the dataset's creation. This could include:
     - The objective of the data collection effort.
