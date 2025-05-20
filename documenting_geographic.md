@@ -738,7 +738,19 @@ This section of the metadata document describes the quality of the resource by i
 
 - **`Scope`** Describes the scope or extent of the quality evaluation. It indicates which part of the resource (e.g., dataset, attribute, metadata) the quality assessment applies to. Examples: "Dataset level"; "Attribute level"; "Metadata level"; "Feature level". The ISO 19139 recommends the use of a controlled vocabulary.
   
-- **`Report`** The Report section documents the specific quality measures and the methods used to evaluate the data quality. It provides detailed information on the data quality measures taken and the process by which they were assessed.
+- **`Report`** The Report section documents the specific quality measures and the methods used to evaluate the data quality. It provides detailed information on the data quality measures taken and the process by which they were assessed. Each report will include the following key elements: information on the measure (what was measured), a description of the evaluation method (how the quality was evaluated, e.g., direct internal check, external test), and the result (the outcome of the evaluation, e.g., quantitative result, pass/fail). There can be multiple report entries (`element types`), each representing a different dimension of quality.
+  - **`Element type`** Each report details one quality evaluation, the `element type`, such as Completeness, Logical consistency, Positional accuracy, Temporal accuracy, or Thematic accuracy. The Element type must be selected from the following controlled vocabulary: 
+    - "DQ_CompletenessOmission"	
+    - "DQ_CompletenessCommission"	
+    - "DQ_ConceptualConsistency"	
+    - "DQ_DomainConsistency"	
+    - "DQ_FormatConsistency"	
+    - "DQ_TopologicalConsistency"	
+    - "DQ_PositionalAccuracy"	
+    - "DQ_ThematicAccuracy"	
+    - "DQ_TemporalAccuracy"	
+    - "DQ_QuantitativeAttributeAccuracy"	
+    - "DQ_UsabilityElement"	
   - **`Name of measure`** The name of the quality measure used to evaluate the dataset's quality. This could refer to specific accuracy measures, completeness, consistency, or other quality indicators. Examples: "Positional accuracy"; "Logical consistency"; "Completeness"; "Temporal accuracy", "Thematic accuracy".
   - **`Measure identification`** An identifier for the specific quality measure, often referencing standards, documents, or predefined measurement systems. Examples: "ISO 19157:2013"; "FGDC-STD-007.3-1998".
   - **`Measure description`** A detailed description of the quality measure used, explaining its purpose, how it was applied, and any specific methodologies or protocols followed. Example: "This measure evaluates the accuracy of the spatial location of each feature compared to the actual location using high-precision GPS data."
@@ -746,37 +758,15 @@ This section of the metadata document describes the quality of the resource by i
   - **`Evaluation method description`** A description of the evaluation method, detailing how the quality was assessed and the procedures followed. Example: "Accuracy assessment performed by comparing GPS-derived points with the dataset’s coordinates using a root mean square error calculation."
   - **`Evaluation procedure`** The Evaluation procedure documents the specific process used for evaluating the quality measure.
     - **`Title`** The title of the evaluation procedure, describing the assessment process. Example: "Spatial accuracy evaluation procedure".
-    - **`Alternate title`** An alternative title for the evaluation procedure, if one exists, which could be an abbreviation or informal name. Example: "Accuracy assessment methodology"
-    - **`Date`** The date related to the evaluation procedure, indicating when the evaluation was conducted or published.
+    - **`Dates`** The date related to the evaluation procedure, indicating when the evaluation was conducted or published.
       - **`Date`** The actual date when the evaluation was performed.
       - **`Type`** Specifies the type of date, such as creation, publication, or last modified.
-    - **`Edition`** The edition of the evaluation procedure, if applicable (e.g., version number). Example: "1st Edition", or "Version 2.0".
-    - **`Edition date`** The date when the edition of the evaluation procedure was published or revised. Example: "2022-12-27".
     - **`Identifier authority`** The authority that issued or controls the identifier for the evaluation procedure. 
     - **`Identifier code`** The code or unique identifier used to reference the evaluation procedure. Examples: "ISO-19157:2013"; "FGDC-STD-007.3-1998".
-    - **`Date and time`** The exact date and time of the evaluation procedure. Example: "2022-12-27T14:30:00Z"
-    - **`Responsible party`** The organization or individual responsible for carrying out the evaluation procedure.
-      - **`Individual name`** 
-      - **`Organisation name`** 
-      - **`Email`**  
-      - **`Phone`**
-      - **`Address`** 
-        - **`Delivery point`**  
-        - **`City`** 
-        - **`Postal code`** 
-        - **`Country`** 
-      - **`Online resource`** 
-        - **`Name`** 
-        - **`URL`** 
-        - **`Description`**  
-    - **`Resource presentation`**  The Resource presentation element specifies how the resource is presented or made available for use. This can refer to the format, structure, or method of distribution of the resource, such as whether it's in a tabular format, graphical format, or some other presentation style. This element describes the way users can access or view the resource, focusing on its format and access method. The element describes how the resource (e.g., dataset, map, report) is presented to users or consumers.
-   
-    - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ check structure
-      
-  - **Date and time`**
-  - **Result of consistency check`** The Result of consistency check element documents the findings of any consistency checks performed on the data or resource. These checks are typically conducted to ensure that the data conforms to established standards, rules, or expected values, helping verify its validity and reliability. This element is used to record the outcomes of these checks, which can include the results of tests for consistency, accuracy, logical integrity, or any other form of validation.
-    - **`Title`** The title of the consistency check performed. This could describe the specific test or procedure used to verify the data’s quality or conformity. Example: "Positional Accuracy Consistency Check"; "Attribute Consistency Test"
-    - **`Date`** 
+
+  - **Conformance result`** The Result of consistency check element documents the findings of any consistency checks performed on the data or resource. These checks are typically conducted to ensure that the data conforms to established standards, rules, or expected values, helping verify its validity and reliability. This element is used to record the outcomes of these checks, which can include the results of tests for consistency, accuracy, logical integrity, or any other form of validation.
+    - **`Title`** The title of the consistency check performed. This could describe the specific test or procedure used to verify the data’s quality or conformity. Example: "Positional Accuracy Consistency Check"; "Attribute Consistency Test".
+    - **`Dates`** 
       - **`Date`** The date when the consistency check was performed or completed. This indicates when the check was conducted, which helps provide context for the data's current validity. 
       - **`Type`** The type of date related to the consistency check. This refers to the nature of the date, such as whether it is the date of creation, date of publication, or date of revision. Example: (i) "Creation" (Indicates that the date marks the creation of the check) ; "Revision" (Indicates that the check was revised at this date)
     - **`Responsible party`** The party responsible for carrying out the consistency check or for ensuring the data's consistency. This typically refers to an individual, organization, or group that conducted the check or is accountable for the quality and validity of the data.
@@ -796,7 +786,13 @@ This section of the metadata document describes the quality of the resource by i
     - **`Resource presentation`** The Resource presentation element specifies how a resource is provided, accessed, or presented to users. It indicates the format or method of delivery, such as a document, dataset, map, or service, and how the resource is structured or made available for users to interact with or utilize. This is important for understanding how a resource can be accessed and what type of presentation or output format users can expect when interacting with the data. Example: "PDF document", "CSV file", "Web service", "GeoTIFF", "Shapefile". The element describes the presentation format of the resource, indicating whether it is downloadable, interactive, or available through a service.
     - **`Explanation`** The Explanation element provides additional context or a more detailed description about a specific process, measurement, or result related to the resource. It can include clarification about how a result was obtained, how a test was performed, or why a certain decision was made. This is important for transparency, providing users with the rationale or detailed information behind the data, quality assessments, or any checks that have been carried out. Example: "The resource was assessed using a positional accuracy check, and the dataset passed the consistency check due to correct geospatial coordinates within the acceptable range." This field is used to give further details and clarification on why a result or value was recorded in the metadata.
     - **`Pass`** The Pass element indicates the outcome of a conformance check or validation test conducted on the resource. This is a boolean indicator (True or False) that specifies whether the resource has passed or failed a specific conformance test. If not evaluated, the value may be left blank (null). This helps the user understand the conformance status of the resource in terms of whether it meets certain predefined quality or technical standards. Values: True (the resource has successfully met the required standard or passed the test, indicating conformance) ; False (the resource did not meet the required standard, indicating non-conformance) ; Null/Blank (the resource has not been evaluated, and no conformance status is available). Example: If a dataset has been checked for consistency, a Pass value of "True" would mean that the dataset passed the check, whereas "False" would indicate that it did not meet the required standard. This element is used to track and report the results of quality control or validation tests performed on the resource.
-
+- **`Quantitative result`** Quantitative results that describe the outcome of a data quality evaluation using numeric measures. These results provide detailed metadata about the type of result, the units used, and the actual values.
+   - **`Value type`** The type of data used to express the result value(s). This indicates the data type (e.g., Real, Integer, Text) of the values listed under value.
+   - **`Value unit identifier`** A unique ID for the unit of measure (usually a URI). This enables referencing a well-defined, controlled unit.
+   - **`Value unit name`** Human-readable name of the unit (e.g., "metre", "seconds"). This makes the unit understandable without resolving the identifier.  
+   - **`Value unit quantity type`** Type of quantity measured (e.g., Length, Time, Angle). This indicates the conceptual type of measurement for which the unit is appropriate.
+   - **`Value`** The actual numeric result(s) of the evaluation. This represents the measured outcome of the data quality check.
+  
 -**`Lineage`**
   - **`Lineage statement`** Lineage is “a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this element is free text.” This element is not applicable to geographic services.
   
@@ -804,7 +800,53 @@ This section of the metadata document describes the quality of the resource by i
      - If a data provider has a procedure for the quality management of their spatial data set (series) then the appropriate ISO data quality elements and measures should be used to evaluate and report (in the metadata) the results. If not, the Lineage metadata element (defined in the Implementing Rules for Metadata) should be used to describe the overall quality of a spatial data set (series).
      - The use of acronyms should be avoided. If used, their meaning should be explained.
 
-
+  - **`Process steps`**
+     - **`Description`**
+     - **`Rationale`**
+     - **`Date`**
+     - **`Processor`**
+        - **`Individual name`**
+        - **`Organisation name`**
+        - **`Role`**
+        - **`Email`**
+        - **`Phone`**
+        - **`Address`**
+          - **`Delivery point`**
+          - **`City`**
+          - **`Postal code`**
+          - **`Country`**
+        - **`Online resource`**
+          - **`Name`**
+          - **`URL`**
+          - **`Description`**
+     - **`Source`**
+        - **`Title`**
+        - **`Description`**
+        - **`Date`**
+           - **`Date`**
+           - **`Type`**
+        - **`Identifier authority`**
+        - **`Identifier code`**
+        - **`Responsible party`**
+          - **`Individual name`**
+          - **`Organisation name`**
+          - **`Position`**
+          - **`Role`**
+          - **`Email`**
+          - **`Phone`**
+          - **`Address`**
+            - **`Delivery point`**
+            - **`City`**
+            - **`Postal code`**
+            - **`Country`**
+          - **`Online resource`**
+            - **`Name`**
+            - **`URL`**
+            - **`Description`**
+            - **`Protocol`**
+            - **`Function`**
+        - **`Resource presentation`**
+ 
 **DISTRIBUTION**
 
 - **`Distribution format`** The Distribution format element specifies the format in which the resource (such as data or metadata) is distributed or made available to users. This element helps to describe the technical format of the resource as it is provided for download, transfer, or access through an external service. It identifies the file format or structure in which the resource is presented to the users. The purpose is to describe the format in which a resource is distributed, making it easier for users to know in what format the data or resource is provided. 
